@@ -4,6 +4,7 @@ title:  "Classification metrics"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/classification-metrics"
 parent: "Machine learning"
+nav_order: 6
 ---
 
 # Classification metrics

@@ -4,6 +4,7 @@ title:  "Logistic regression"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/logistic-regression"
 parent: "Machine learning"
+nav_order: 5
 ---
 
 # Logistic regression
