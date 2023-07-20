@@ -4,6 +4,7 @@ title:  "Overfit & Underfit"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/overfit-underfit"
 parent: "Machine learning"
+nav_order: 7
 ---
 
 # Overfit & Underfit
