@@ -4,6 +4,7 @@ title:  "Machine learning"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning"
 has_children: true
+nav_order: 2
 ---
 
 # Tổng hợp các bài viết về Machine learning
