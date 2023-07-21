@@ -2,9 +2,10 @@
 layout: "default"
 title:  "Convolution neural network"
 author: "Nguyễn Hữu Minh"
-permalink: "/deep-learning/convolution-neural-network"
-parent: "Deep learning"
-nav_order: 3
+permalink: "/deep-learning/computer-vision/convolution-neural-network"
+parent: "Computer vision"
+grand_parent: "Deep learning"
+nav_order: 1
 ---
 
 # Convolution neural network
