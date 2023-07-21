@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Overfit & Underfit"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/overfit-underfit"

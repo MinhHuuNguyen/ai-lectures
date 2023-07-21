@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Audio processing"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/audio-processing"

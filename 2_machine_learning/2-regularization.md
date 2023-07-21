@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Regularization"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/regularization"

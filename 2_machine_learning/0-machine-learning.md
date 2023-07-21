@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Machine learning"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning"

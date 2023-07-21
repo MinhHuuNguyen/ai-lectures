@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "ARIMA"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/arima"

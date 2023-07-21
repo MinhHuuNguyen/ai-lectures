@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Convolution neural network"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/computer-vision/convolution-neural-network"

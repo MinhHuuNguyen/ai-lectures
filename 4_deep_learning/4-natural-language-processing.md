@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Natural language processing"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/natural-language-processing"

@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Logistic regression"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/logistic-regression"

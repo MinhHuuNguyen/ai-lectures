@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Computer vision"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/computer-vision"

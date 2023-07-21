@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Reinforcement learning"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/reinforcement-learning"

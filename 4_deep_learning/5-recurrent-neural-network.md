@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Recurrent neural network"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/recurrent-neural-network"

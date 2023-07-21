@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Deep learning"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning"

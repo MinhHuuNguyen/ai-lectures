@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Adam optimization"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/adam-optimization"

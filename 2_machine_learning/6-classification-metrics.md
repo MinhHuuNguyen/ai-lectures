@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Classification metrics"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/classification-metrics"

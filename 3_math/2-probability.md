@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Probability"
 author: "Nguyễn Hữu Minh"
 permalink: "/math/probability"

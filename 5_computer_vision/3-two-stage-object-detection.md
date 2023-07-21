@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Two-stage object detection"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/computer-vision/two-stage-object-detection"
