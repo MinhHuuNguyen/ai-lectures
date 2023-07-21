@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Vector & matrix"
 author: "Nguyễn Hữu Minh"
 permalink: "/math/vector-matrix"

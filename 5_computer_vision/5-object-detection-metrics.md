@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Object detection metrics"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/computer-vision/object-detection-metrics"

@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Text to speech"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/text-to-speech"

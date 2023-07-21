@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Weakly, semi & self supervised learning"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/weakly-semi-self-supervised-learning"

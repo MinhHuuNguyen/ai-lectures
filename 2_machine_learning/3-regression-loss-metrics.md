@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Regression loss & metrics"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/regression-loss-metrics"

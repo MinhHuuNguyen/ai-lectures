@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Time series"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/time-series"

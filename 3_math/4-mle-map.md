@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "MLE & MAP"
 author: "Nguyễn Hữu Minh"
 permalink: "/math/mle-map"

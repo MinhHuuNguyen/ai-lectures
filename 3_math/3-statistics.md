@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Statistics"
 author: "Nguyễn Hữu Minh"
 permalink: "/math/statistics"

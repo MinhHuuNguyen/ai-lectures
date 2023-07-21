@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Derivative"
 author: "Nguyễn Hữu Minh"
 permalink: "/math/derivative"

@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title:  "Gradient descent"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/gradient-descent"
