@@ -4,6 +4,7 @@ title:  "Computer vision"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/computer-vision"
 parent: "Deep learning"
+has_children: true
 nav_order: 2
 ---
 
