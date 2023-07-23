@@ -15,21 +15,21 @@ if __name__ == '__main__':
     print(df)
     
     for _, row in df.iterrows():
-        out_folder_path = os.path.join('..', '0_practice_coding', row.out_folder, 'data')
-        out_file_path = os.path.join(out_folder_path, row.dataset_name)
+        out_folder_path = os.path.join('..', '0_practice_coding', row.out_folder)
 
-        if os.path.exists(out_file_path):
+        if os.path.exists(os.path.join(out_folder_path, row.dataset_name)):
             continue
 
         print(f'Downloading ... {row.dataset_name}')
         os.system(f'wget -q {encode_url(row.onedrive_url)}')
 
-        if not os.path.exists(out_folder_path):
-            os.makedirs(out_folder_path, exist_ok=True)
-        os.system(f'cp content {out_folder_path}')
-
         print(f'Unzipping ...')
-        unzip_cmd_str = f'unzip {os.path.join(out_folder_path, "content")} -d {out_folder_path}'
-        os.system(unzip_cmd_str)
+        os.makedirs('data', exist_ok=True)
+        os.system('unzip content -d data')
         os.system(f'rm content')
-        os.system(f'rm {os.path.join(out_folder_path, "content")}')
+
+        print(f'Symlinking ...')
+        os.makedirs(out_folder_path, exist_ok=True)
+        from_link = os.path.abspath(os.path.join("data", row.dataset_name))
+        to_link = os.path.abspath(os.path.join(out_folder_path, row.dataset_name))
+        os.system(f'ln -s {from_link} {to_link}')

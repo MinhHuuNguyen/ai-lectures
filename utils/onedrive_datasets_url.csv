@@ -1,5 +1,9 @@
 dataset_name,onedrive_url,out_folder
 "dog_cat_dataset","https://1drv.ms/u/s!Ar6AxGyENvlVgasyX6hj4gtrtBbMnw?e=Qdao2Q","1_image_classification"
 "covid19_tweets_dataset","https://1drv.ms/u/s!Ar6AxGyENvlVgasw5fnIqr7WBm8BBA?e=6TA4wP","2_text_classification"
+"speech_emotion_dataset","https://1drv.ms/u/s!Ar6AxGyENvlVgaszAmYyJMI83-0vyw?e=p37fzw","3_audio_classification"
+"demand_forecasting_dataset","https://1drv.ms/u/s!Ar6AxGyENvlVgatE5xCcJj8tfXhI9w?e=FPlDMS","4_time_series_forecasting"
 "predict_future_sales","https://1drv.ms/u/s!Ar6AxGyENvlV7EEQ9NnzFEVK1cWI?e=nYOELh","5_predict_future_sales"
-"LG_Innotek_Data","https://1drv.ms/u/s!Ar6AxGyENvlV8AimLZe64-yAk4nO?e=EEJ8bf","lg_innotek"
+"house_prices_dataset","https://1drv.ms/u/s!Ar6AxGyENvlVgasxfrudpx4I6LSeCg?e=IDNvHp","6_house_prices_regression"
+"brain_tumor_dataset","https://1drv.ms/u/s!Ar6AxGyENvlVgatDloMrDYEFf1fg2Q?e=9BcseO","7_brain_tumor_detection"
+"lg_innotek_data","https://1drv.ms/u/s!Ar6AxGyENvlV8AimLZe64-yAk4nO?e=EEJ8bf","lg_innotek"
