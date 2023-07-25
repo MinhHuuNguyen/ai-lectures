@@ -23,7 +23,7 @@ def train_test_split_by_list(data_dict, test_size):
     for label, img_paths in data_dict.items():
         labels = [label] * len(img_paths)
         train_img_paths, val_img_paths, train_labels, val_labels = train_test_split(
-            img_paths, labels, test_size=test_size, random_state=42
+            img_paths, labels, test_size=test_size, random_state=204
         )
         train_labels_idx = [class_idx] * len(train_labels)
         val_labels_idx = [class_idx] * len(val_labels)
@@ -72,13 +72,13 @@ def show_random_images(image_paths):
     plt.show()
 
 
-def create_img_data_generator(df, img_size, batch_size):
+def create_img_data_generator(df, img_size, batch_size, mode='binary'):
     img_data_generator = ImageDataGenerator().flow_from_dataframe(
         dataframe=df,
         x_col='image_path',
         y_col='label',
         target_size=(img_size, img_size),
         batch_size=batch_size,
-        class_mode='binary'
+        class_mode=mode
     )
     return img_data_generator

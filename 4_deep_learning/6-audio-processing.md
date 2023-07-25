@@ -15,7 +15,7 @@ Sự va chạm này dẫn đến việc có những điểm trong không gian c�
 Sóng này truyền tải năng lượng từ điểm này đến điểm kia trong không gian.
 Đây cũng là lý do tại sao trong chân không, chúng ta không nghe thấy âm thanh.
 
-<img src="https://miro.medium.com/v2/resize:fit:1400/0*jKGCXKRYNkuGIaq8" style="width: 700px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121942&authkey=%21APYyLdlB_40Bpa0" style="width: 600px;"/>
 
 ### 1.1. Chu kỳ (Period) - Tần số (Frequency)
 
@@ -24,7 +24,7 @@ Tần số là nghịch đảo của chu kỳ, là số lượng bước sóng h
 
 Trong thực tế, ta cảm nhận được tần số thông qua cao độ của âm thanh, âm thanh có cao độ càng cao thì tần số càng lớn và ngược lại.
 
-<img src="https://miro.medium.com/v2/resize:fit:1400/0*QawoaOSTNCKuzd_m" style="width: 700px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121943&authkey=%21AAF_Eb65tBewhzc" style="width: 600px;"/>
 
 ### 1.2. Cường độ (Intensity)
 
@@ -57,14 +57,14 @@ Thay vì việc thu thập tất cả các giá trị trong tín hiệu analog l
 Thông thường, ta lấy 44,100 giá trị mỗi giây của âm thanh, lúc này, âm thanh sẽ có tần số là 44.1 kHz.
 Giá trị này giúp ta xây dựng âm thanh phù hợp nhất với ngưỡng nghe của con người.
 
-<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sSy2DlUoJx27zzpQax0aeg.jpeg" style="width: 700px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121944&authkey=%21AKPtJcqSeIFl-so" style="width: 700px;"/>
 
 ### 2.2. Quantization
 
 Trong khi kỹ thuật Sampling chia đều các khoảng thời gian, kỹ thuật Qauntization chia đều giá trị cường độ của âm thanh thành các khoảng bằng nhau, cụ thể là các giá trị nguyên.
 Từ đó, khi ta thu thập cường độ của âm thanh tại một mốc thời gian bất kỳ (các mốc thời gian không nhất thiết phải cách đều nhau), ta sẽ lấy giá trị cường độ nguyên gần nhất với giá trị cường độ đúng tại mốc thời gian đó.
 
-<img src="https://dwellangle.files.wordpress.com/2008/05/adc_sinewave3.png" style="width: 700px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121945&authkey=%21ANeZGReiIrTGDWw" style="width: 700px;"/>
 
 ## 3. Spectrograms
 
@@ -81,7 +81,7 @@ Ta có thể phân rã sóng âm tổng hợp thành các sóng âm đơn thành
 Spectrum là tập hợp của các tần số mà kết hợp lại với nhau tạo thành một âm thanh nào đó.
 Biểu đồ spectrum bao gồm giá trị tần số tương ứng với từng sóng đơn và biên độ của chúng.
 
-<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*yfJw9Jgf5c-bUQi9vWxaCQ.jpeg" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121946&authkey=%21ABhdPYPhsu5he0w" style="width: 500px;"/>
 
 Tần số nhỏ nhất trong spectrum được gọi là tần số nền tảng (fundamental frequency), các tần số là bội số của tần số nền tảng được gọi là harmonic frequency.
 
@@ -94,7 +94,7 @@ Hình ảnh của spectrum lại biểu diễn một góc nhìn khác của âm 
 Cách biểu diễn này được gọi là Frequency Domain.
 Khi ta quan sát được Frequency Domain, ta đang quan sát nó trong một khoảnh khắc trên trục thời gian.
 
-<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*4QTvJNX2XsQlSJQQXbFLDg.png" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121947&authkey=%21APfQDuKO3zxumA4" style="width: 500px;"/>
 
 
 ### 3.3. Spectrograms
@@ -103,7 +103,7 @@ Kết hợp thông tin từ Time Domain và Frequency Domain, ta thu được Sp
 Trên hình ảnh của Spectrograms, ta có trục x là thời gian, trục y là tần số, màu sắc trên Spectrograms có thể được coi như là trục thứ 3 biểu diễn biên độ của âm thanh.
 Ở những điểm màu sáng, ta có biên độ của sóng ở tần số đó và thời điểm đó lớn, và ngược lại, ở những điểm màu tối, ta có biên độ của sóng ở tần số đó và thời điểm đó nhỏ.
 
-<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*-JBPPXW1uFULrRxno7qNBA.png" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121948&authkey=%21AP4Xr3EZ9t6-5tg" style="width: 500px;"/>
 
 Rõ ràng, ta thấy với việc kết hợp thêm thông tin về tần số, ta thu được hình ảnh về Spectrograms chứa nhiều thông tin hơn so với hình ảnh biểu diễn sóng âm như thông thường (chỉ gồm thông tin về biên độ theo thời gian).
 
@@ -111,25 +111,24 @@ Với sự xuất hiện của Spectrograms, ta có thể dễ dàng sử dụng
 
 <!-- Bổ sung Mel Spectrograms -->
 
-<img src="https://drive.google.com/uc?id=1H-vkv5XNYKWPVY4U9tROZIHUkveJDSOG" style="height: 600px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121949&authkey=%21AF2UjWPyJwm-WxA" style="height: 600px;"/>
 
-
-<img src="https://drive.google.com/uc?id=1UFcRIg-BK_7k3H5QRflr9qvE6OKyWj8N" style="height: 600px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121950&authkey=%21ABqdOXyQUp8nGFM" style="height: 600px;"/>
 
 ## 4. Các bài toán Audio processing
 
 - Audio classification: là bài toán phân lớp các đoạn audio thành càng lớp khác nhau. Bài toán này có ứng dụng nhiều trong việc nhận diện và đánh giá cảm xúc của khách hàng thông qua lời feedback
 
-<img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*3MadXYXhtHr-XZNPs-1GXg.png" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121951&authkey=%21AIXPGsHwE1MdRmI" style="width: 500px;"/>
 
 - Audio separation and segmentation: là bài toán phân tách các đối tượng trong một đoạn âm thanh. Bài toán này có ứng dụng trong việc tách lời nói của các nhân vật từ cùng một đoạn audio, tách lời và nhạc từ bài hát, tách nội dung và âm thanh background từ đoạn âm thanh ...
 
-<img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*eVMDzSty94rzU3CwE1UuUQ.jpeg" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121952&authkey=%21AKZ3waFat9iz0IY" style="width: 500px;"/>
 
 - Audio generation: là bài toán sinh ra các đoạn audio. Bài toán này có thể nhận đầu vào là các dạng dữ liệu khác nhau như đoạn văn bản (Text to speech), hình ảnh nốt nhạc, hoặc đơn giản là nhiễu. Trong đó, bài toán Text to speech là bài toán phổ biến nhất do nó có thể kế thừa kết quả của các mô hình xử lý ngôn ngữ tự nhiên NLP
 
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*-Vukfw0xSzMvlBbfKZvJiw.png" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121953&authkey=%21ABx-ovyfRlzj3lI" style="width: 500px;"/>
 
 - Speech to text: Đây là hai bài toán quan trọng nhất trong xử lý âm thanh. Bài toán speech to text mang lại một hướng tiếp cận mới cho hầu hết các bài toán xử lý âm thanh. Thay vì ta giải quyết các bài toán trên dữ liệu audio, nếu ta xây dựng được một mô hình Speech to text tốt, ta hoàn toàn có thể giải quyết các bài toán đó thông qua các mô hình NLP
 
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*tcXXvpNXYY61uIfE1ps-4Q.png" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2121954&authkey=%21AMqjRWtH7utfIVA" style="width: 500px;"/>

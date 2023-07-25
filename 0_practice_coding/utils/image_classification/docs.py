@@ -11,6 +11,6 @@ def print_cnn_docs():
         5. Dense(units, activation, ...) \n
         https://keras.io/api/layers/core_layers/dense/ \n
         6. Dropout(rate) \n
-        https://keras.io/api/layers/regularization_layers/dropout/ \n
+        https://keras.io/api/layers/regularization_layers/dropout/
     '''
     print(docs_str)
