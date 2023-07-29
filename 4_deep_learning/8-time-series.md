@@ -40,7 +40,7 @@ Time-step features là những đặc trưng mà ta có thể lấy được tr�
 
 Time-step feature cơ bản nhất là time dummy, đánh dấu mỗi mốc thời gian trên bộ dữ liệu là một time index lần lượt từ đầu đến hết các mốc.
 
-<img src="https://www.kaggleusercontent.com/kf/126573838/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..B_L7TzmdGgU5H3WL2jjfOA.XlYnyYMKTbr7Oi9u2GuG0Oi-XsbyHcMb9D_vWwSatPALmxb6jX7UpIpZSGRA8ahH-aQFTWNqzog5CeNKuYP3GM8knhkjndONX3pglpQgpNixw9sevbffU6koNpKdtGNPUPV7IAk3FsHx3yAJID0ms8ivD5lQHhqCCjppVL3fedu6CCgSSLGNcbqqOzKfUScs2iPrJKKSAdeysO7eP2DodKT1lDCfeK3EavutoFYbitvPfwEkqZXTBNr5nKIpp1txx9YInxO_y1ot7sDWFDv1roTmpIr_stQvFteigd7A4kTUNWJAxh5xcYDi-Xu8a17biGKfHST7AvbLjYBVSz1mX5jGV4U26OvYBLK-Qn7zqVmRvTOf7mtQotSyMPefIMTccUNifcg3xbn81UeCsOUh0wDtFp4x8Mj2zACoDRv6djpScWCNHn_AI80Ie6GYRz7tpeZ4ApM6NpfTCRV5TPnQFYVsfoTHCc88vJkwDB0XxiUpPvmndAQhohc9Vww_ABy1s-xLM-YugY5Q8dLLsFR6SICyAeeLVDGkLNX5Nmo0LiJa-FsdUCRfQ8Y7fgMXByG1sEHmDFEJFxs3PoCKYoCyFytYhKiIQyZYXXwM8eaWzhdGUuotoRGUYsSNfG2ckCYrGzSxH28DCVJGr_H3QjORGt0cIWOKOG2g1r85BacvYNdXZWjZFprUF0W3Vt3TFxSO.ff7Q9qc2IaCgLBBkepBIAg/__results___files/__results___5_0.png" style="width: 1000px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2122706&authkey=%21ABaYv_AV1wRdTSQ" style="width: 1000px;"/>
 
 Time-step features thể hiện tính phụ thuộc của dữ liệu vào thời gian.
 Hay nói cách khác, chuỗi dữ liệu phụ thuộc vào thời gian có nghĩa là giá trị của dữ liệu có thể được dự đoán từ thời điểm mà dữ liệu đó xảy ra.
@@ -54,7 +54,7 @@ Lag features là những đặc trưng mà ta có thể lấy được từ dữ
 Lag features có thể được xây dựng bằng việc dịch chuyển các quan sát của dữ liệu đi một số mốc thời gian nhất định.
 Nếu ta dịch chuyển các quan sát của dữ liệu đi một mốc thời gian, ta được 1-step lag feature, tương tự với n-step lag feature.
 
-<img src="https://www.kaggleusercontent.com/kf/126573838/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..B_L7TzmdGgU5H3WL2jjfOA.XlYnyYMKTbr7Oi9u2GuG0Oi-XsbyHcMb9D_vWwSatPALmxb6jX7UpIpZSGRA8ahH-aQFTWNqzog5CeNKuYP3GM8knhkjndONX3pglpQgpNixw9sevbffU6koNpKdtGNPUPV7IAk3FsHx3yAJID0ms8ivD5lQHhqCCjppVL3fedu6CCgSSLGNcbqqOzKfUScs2iPrJKKSAdeysO7eP2DodKT1lDCfeK3EavutoFYbitvPfwEkqZXTBNr5nKIpp1txx9YInxO_y1ot7sDWFDv1roTmpIr_stQvFteigd7A4kTUNWJAxh5xcYDi-Xu8a17biGKfHST7AvbLjYBVSz1mX5jGV4U26OvYBLK-Qn7zqVmRvTOf7mtQotSyMPefIMTccUNifcg3xbn81UeCsOUh0wDtFp4x8Mj2zACoDRv6djpScWCNHn_AI80Ie6GYRz7tpeZ4ApM6NpfTCRV5TPnQFYVsfoTHCc88vJkwDB0XxiUpPvmndAQhohc9Vww_ABy1s-xLM-YugY5Q8dLLsFR6SICyAeeLVDGkLNX5Nmo0LiJa-FsdUCRfQ8Y7fgMXByG1sEHmDFEJFxs3PoCKYoCyFytYhKiIQyZYXXwM8eaWzhdGUuotoRGUYsSNfG2ckCYrGzSxH28DCVJGr_H3QjORGt0cIWOKOG2g1r85BacvYNdXZWjZFprUF0W3Vt3TFxSO.ff7Q9qc2IaCgLBBkepBIAg/__results___files/__results___9_0.png" style="width: 500px;"/>
+<img src="https://onedrive.live.com/embed?resid=55F936846CC480BE%2122707&authkey=%21AGdDhbwaY885KHc" style="width: 500px;"/>
 
 Lag features là thể hiện tính phụ thuộc của dữ liệu vào dữ liệu quá khứ, còn gọi là serial dependence.
 Cụ thể hơn, đối với lag feature, ta không quan trọng về mặt tuyệt đối của thời gian, ta chỉ quan tâm về tính tương đối giữa các dữ liệu xảy ra trước và các dữ liệu xảy ra sau.
