@@ -84,7 +84,7 @@ Tính thời vụ thường xảy ra dựa theo sự tuần hoàn của thế gi
 
 Có hai loại đặc trưng của tính thời vụ: Indicators và Fourier features
 
-### 4.1. Seasonal plot và seasonal indicators
+#### 2.4.1. Seasonal plot và seasonal indicators
 
 Tương tự với Moving average plot được sử dụng để giúp quan sát xu hướng của time series, seasonal plot được sử dụng để giúp quan sát tính thời vụ của time series.
 
@@ -113,7 +113,7 @@ Với việc mã hoá seasonal indicators, ta có thể mô phỏng được tí
 
 Seasonal indicators phù hợp với những thời vụ ngắn và có ít quan sát (ví dụ như tính thời vụ theo tuần với các quan sát dữ liệu hàng ngày).
 
-### 4.2. Fourier features
+#### 2.4.2. Fourier features
 
 Fourier features phù hợp với những thời vụ dài và có nhiều quan sát (ví dụ như tính thời vụ theo năm với các quan sát dữ liệu hàng ngày).
 Mã hoá và tạo ra các đặc trưng cho từng quan sát (từng ngày) sẽ khiến cho mô hình cần nhiều tham số để mô phỏng được tính thời vụ.
