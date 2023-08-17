@@ -11,145 +11,45 @@ nav_order: 4
 
 ## 1. Giới thiệu chung về deep learning
 
-Deep learning là một lĩnh vực con của Machine learning.
-Tuy nhiên, trong khoảng 10 năm trở lại đây, Deep learning đã có những bước chuyển mình mạnh mẽ để mang lại rất nhiều những ứng dụng thực tiễn dành cho người dùng.
+Deep Learning là một phân nhánh quan trọng của Machine Learning, tập trung vào việc xây dựng và huấn luyện các mô hình máy tính được gọi là mạng neuron nhân tạo để tự động học và hiểu thông tin từ dữ liệu.
+Tuy nhiên, trong thời gian trở lại đây, Deep learning đã có những bước chuyển mình mạnh mẽ để mang lại rất nhiều những ứng dụng thực tiễn dành cho người dùng.
 
-<img src="https://i.imgur.com/NWfeUDg.jpeg" style="width: 400px;"/>
+<img src="https://i.imgur.com/NWfeUDg.jpeg" style="width: 600px;"/>
 
-Hai lý do chính dẫn đến sự phát triển vượt bậc của Deep learning trong những năm trở lại đây:
-- Sự bùng nổ của dữ liệu: càng ngày chúng ta càng có nhiều dữ liệu được sinh ra với rất nhiều các thể loại khác nhau và các mô hình deep learning thì luôn khai thác rất tốt sự dồi dào của dữ liệu.
-- Sự phát triển của phần cứng máy tính: song hành với lượng lớn dữ liệu, các mô hình deep learning cũng cần có hệ thống phần cứng mạnh mẽ để sẵn sàng huấn luyện hàng tỷ dữ liệu trong thời gian dài.
+Deep Learning là sự mô phỏng cách mà hệ thống thần kinh của con người xử lý thông tin.
+"Deep" trong Deep Learning ám chỉ rằng chúng ta sử dụng nhiều lớp ẩn, trong đó mỗi lớp chứa các đơn vị xử lý gọi là neuron.
+Mỗi neuron nhận đầu vào, tính toán và truyền kết quả tới lớp tiếp theo. Quá trình này diễn ra qua nhiều lớp, tạo ra khả năng học và hiểu các đặc trưng phức tạp từ dữ liệu.
+Những đặc trưng này có thể được sử dụng để dự đoán, phân loại hoặc thậm chí tạo ra nội dung mới.
 
-## 2. Kiến trúc mạng nơ ron - Neural network
+## 2. Sự bùng nổ của deep learning
+Các lý do chính dẫn đến sự phát triển vượt bậc của deep learning trong những năm trở lại đây:
 
-Được lấy cảm hứng từ mạng nơ ron sinh học trong bộ não của con người, neural network là kiến trúc mạng gồm rất nhiều các nơ ron kết nối với nhau theo một trật tự nhất định.
+### Dữ liệu lớn và đa dạng
 
-<img src="https://askabiologist.asu.edu/sites/default/files/resources/articles/neuron_anatomy.jpg" style="width: 600px;"/>
+Mạng neuron cần một lượng lớn dữ liệu để học hiệu quả.
+Với sự phát triển của Internet và các thiết bị kỹ thuật số, khối lượng dữ liệu khổng lồ được tạo ra và thu thập từ nhiều nguồn khác nhau, cung cấp nguồn dữ liệu đa dạng cho việc huấn luyện mô hình Deep Learning.
 
+### Tiến bộ trong tính toán
 
-Các nơ ron trong neural network được kết nối với nhau tạo thành các lớp (layer). Ta có lớp nhận đầu vào được gọi là input layer, các lớp tính toán ở giữa được gọi là hidden layer, lớp trả đầu ra được gọi là output layer.
+Sự phát triển của phần cứng, đặc biệt là các đơn vị xử lý đồ họa (GPU), đã làm tăng khả năng tính toán.
+Điều này cho phép huấn luyện mô hình Deep Learning nhanh hơn và mạnh mẽ hơn, giúp giải quyết các bài toán phức tạp hơn.
 
-<img src="https://tikz.net/wp-content/uploads/2021/12/neural_networks-001.png" style="width: 600px;"/>
+### Kiến thức về lý thuyết và kiến thức trong lĩnh vực
 
-Trong neural network có rất nhiều các loại layer khác nhau, có các chức năng khác nhau.
-Trong nội dung bài này, chúng ta sẽ nghiên cứu về một số các loại layer cơ bản nhất.
+Các nghiên cứu và phát triển trong lĩnh vực trí tuệ nhân tạo đã cung cấp kiến thức sâu sắc về cấu trúc và hoạt động của mạng neuron.
+Điều này giúp các nhà nghiên cứu và nhà phát triển xây dựng và tinh chỉnh các mô hình Deep Learning hiệu quả hơn.
 
-### 2.1. Linear layer
+### Ứng dụng rộng rãi
+Sự thành công của Deep Learning trong nhiều ứng dụng quan trọng như xử lý ảnh, dự đoán ngôn ngữ tự nhiên và điều khiển tự động đã làm tăng sự quan tâm và đầu tư trong lĩnh vực này.
 
-Linear layer là layer đơn giản nhất nhưng nền tảng để xây dựng neural network.
-Cụ thể, linear layer thực hiện phép biến đổi tuyến tính (linear transformation) thông qua phép toán nhân ma trận.
+### Cộng đồng nghiên cứu và chia sẻ thông tin
+Cộng đồng nghiên cứu và phát triển trong lĩnh vực Deep Learning đã tạo ra một môi trường hỗ trợ, nơi các ý tưởng và kiến thức mới được chia sẻ, và những công cụ và thư viện mã nguồn mở được phát triển để giúp người khác tạo ra các ứng dụng sử dụng Deep Learning dễ dàng hơn.
 
-$$
-y = WX
-$$
+## 3. Ứng dụng và Thành tựu
 
-trong đó:
-- X là ma trận đầu vào của linear layer
-- W là trọng số của neural network tại linear layer đó
-- y là ma trận đầu ra của linear layer, kết quả của phép biến đổi tuyến tính
+Deep Learning đã mang lại những tiến bộ đáng kinh ngạc.
+Các mô hình như Convolutional Neural Networks (CNN) đã thúc đẩy khả năng nhận diện hình ảnh, trong khi Recurrent Neural Networks (RNN) đã nâng cao khả năng xử lý chuỗi dữ liệu như ngôn ngữ tự nhiên.
+Deep Learning đã đạt được những kết quả ấn tượng như AlphaGo đánh bại kỳ thủ hàng đầu thế giới, và hỗ trợ trong việc phát triển ô tô tự lái.
 
-### 2.2. Activation layer
-
-Chúng ta đã cùng nhau nghiên cứu về một số các logistic activation layer như Sigmoid, Softmax, Tanh.
-Bên cạnh các layer đó, còn rất nhiều các activation layer khác.
-Các activation layer được đặt xen kẽ giữa các linear layer với vai trò giúp cho các linear layer có nghĩa.
-Điều này đồng nghĩa với việc, nếu không có các activation layer đặt giữa các linear layer thì nhiều các linear layer đặt chồng lên nhau cũng không khác gì so với việc chỉ có một linear layer.
-
-#### 2.2.1. ReLU
-
-Khác với Sigmoid hay Softmax thường dược đặt ở layer cuối cùng trong neural network, ReLU (Rectified-Linear Unit) là một activation layer thường được đặt giữa các linear layer nằm giữa của neural network.
-
-$$
-y = max(0, x)
-$$
-
-trong đó:
-- x là giá trị đầu vào của hàm ReLU
-- y là giá trị đầu ra của hàm ReLU
-
-Khi sử dụng hàm ReLU cho một vector hoặc ma trận, ta sử dụng hàm ReLU cho từng phần tử trên vector hay ma trận.
-
-<img src="https://www.researchgate.net/profile/Yingzhi-Zhang-4/publication/351263278/figure/fig6/AS:1018784072601600@1619908459755/ReLU-operation-on-single-depth-slice.ppm" style="width: 600px;"/>
-
-#### 2.2.2. Leaky ReLU
-
-Một vấn đề khi sử dụng hàm ReLU là vanishing gradient tại những vị trí có giá trị nhỏ hơn hoặc bằng 0.
-Do đó, Leaky ReLU giúp cải thiện vấn đề này.
-
-$$
-y = max(\gamma x, x)
-$$
-
-trong đó:
-- x là giá trị đầu vào của hàm ReLU
-- $\gamma$ là giá trị rất nhỏ, thường được lựa chọn là 0.1
-- y là giá trị đầu ra của hàm ReLU
-
-<img src="https://miro.medium.com/v2/resize:fit:1400/1*ypsvQH7kvtI2BhzR2eT_Sw.png" style="width: 600px;"/>
-
-### 2.3. Normalization layer
-
-Đối với các neural network các phức tạp và có kích thước mô hình lớn, quá trình huấn luyện càng khó khăn và bất ổn định.
-Sự bất ổn định có thể dẫn đến việc neural network có kết quả huấn luyện rất kém.
-
-Sự ra đời của các Normalization layer, và cụ thể là Batch normalization layer đã giúp cải thiện đáng kể tình trạng này.
-Các normalization layer nói chung giúp chuẩn hoá đầu ra của mỗi layer trong neural network từ đó giúp ổn định hoá quá trình huấn luyện.
-
-<img src="https://kharshit.github.io/img/batch_normalization.png" style="width: 400px;"/>
-
-Bên cạnh Batch normalization layer, ta còn một số các normalization layer khác như Layer normalization layer, Instance normalization layer, Group normalization layer ...
-
-### 2.4. Dropout layer
-
-Chúng ta đã bàn luận về hiện tượng overfit trong các mô hình machine learning, trong neural network, hiện tượng overfit cũng là một vấn đề nan giải.
-Ta có Dropout layer là một lớp giúp phần nào đó giảm bớt vấn đề overfit.
-
-Cụ thể, dropout layer sẽ ngẫu nhiên lựa chọn một số các nơ ron trong neural network, chính xác hơn là lựa chọn ngẫu nhiên một số các trọng số của mô hình và gán giá trị bằng 0.
-Từ đó, ta sẽ giảm được độ phức tạp của neural network, từ đó giảm được hiện tượng overfit.
-
-<img src="https://www.baeldung.com/wp-content/uploads/sites/4/2020/05/2-1-2048x745-1.jpg" style="width: 1000px;"/>
-
-## 3. Loss function và Optimization
-
-### 3.1. Loss function
-
-Chúng ta đã cùng nhau nghiên cứu về khá nhiều các loại hàm loss khác nhau và cụ thể cho từng bài toán khác nhau.
-
-Đối với bài toán Regression ta có một số hàm loss như
-- Mean absolute error
-
-$$
-MAE(\hat{y}, y) = \frac{1}{N}\sum_{i=1}^{N} |\hat{y}_i - y_i|
-$$
-
-- Mean squared error
-
-$$
-MSE(\hat{y}, y) = \frac{1}{N}\sum_{i=1}^{N} (\hat{y}_i - y_i)^2
-$$
-
-Đối với bài toán Classification ta có một số hàm loss như
-- Binary cross entropy
-
-$$
-BCE(\hat{y}, y) = - \sum_{i=1}^{N} (y^i \log \hat{y}^i + (1 - y^i) \log(1 - \hat{y}^i))
-$$
-
-- Categorical cross entropy hay cross entropy
-
-$$
-CE(\hat{y}, y) = - \sum_{i=1}^{N} \sum_{j=1}^{K} (y^{ij} \log \hat{y}^{ij})
-$$
-
-### 3.2. Optimization
-
-Chúng ta đã cùng nhau nghiên cứu về khá nhiều các thuật toán tối ưu khác nhau biến thể từ Gradient descent như: Stochastic gradient descent (SGD), Momentum, Nesterov accelerated gradient (NAG) ...
-
-## 4. Model feedforward và backpropagation
-
-<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/7-Figure1-1-1.png" style="width: 500px;"/>
-
-Feedforward là quá trình neural network nhận đầu vào input layer, thực hiện các phép tính toán qua các linear layer, activation layer, normalization layer ... để trả đầu ra output layer.
-
-Ngược lại với feedforward, sau khi đưa kết quả dự đoán của neural network vào hàm loss và tính toán giá trị loss, Backpropagation là quá trình tính toán giá trị đạo hàm của hàm loss theo từng trọng số của neural network.
-Sau khi tính được giá trị gradient tương ứng với mỗi trọng số, neural network thực hiện cập nhật lại các trọng số này theo thuật toán tối ưu dựa trên gradient descent.
+Deep Learning không chỉ đánh dấu sự cách mạng trong lĩnh vực Machine Learning mà còn ảnh hưởng đến cuộc sống hàng ngày của chúng ta.
+Từ ứng dụng y tế, thị trường tài chính, đến công nghiệp sản xuất và nhiều lĩnh vực khác, Deep Learning đã mở ra không gian sáng tạo mới.
