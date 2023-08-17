@@ -9,18 +9,7 @@ nav_order: 1
 
 # Deep learning và neural network
 
-## 1. Giới thiệu chung về deep learning
-
-Deep learning là một lĩnh vực con của Machine learning.
-Tuy nhiên, trong khoảng 10 năm trở lại đây, Deep learning đã có những bước chuyển mình mạnh mẽ để mang lại rất nhiều những ứng dụng thực tiễn dành cho người dùng.
-
-<img src="https://i.imgur.com/NWfeUDg.jpeg" style="width: 400px;"/>
-
-Hai lý do chính dẫn đến sự phát triển vượt bậc của Deep learning trong những năm trở lại đây:
-- Sự bùng nổ của dữ liệu: càng ngày chúng ta càng có nhiều dữ liệu được sinh ra với rất nhiều các thể loại khác nhau và các mô hình deep learning thì luôn khai thác rất tốt sự dồi dào của dữ liệu.
-- Sự phát triển của phần cứng máy tính: song hành với lượng lớn dữ liệu, các mô hình deep learning cũng cần có hệ thống phần cứng mạnh mẽ để sẵn sàng huấn luyện hàng tỷ dữ liệu trong thời gian dài.
-
-## 2. Kiến trúc mạng nơ ron - Neural network
+## 1. Kiến trúc mạng nơ ron - Neural network
 
 Được lấy cảm hứng từ mạng nơ ron sinh học trong bộ não của con người, neural network là kiến trúc mạng gồm rất nhiều các nơ ron kết nối với nhau theo một trật tự nhất định.
 
@@ -34,7 +23,7 @@ Các nơ ron trong neural network được kết nối với nhau tạo thành c
 Trong neural network có rất nhiều các loại layer khác nhau, có các chức năng khác nhau.
 Trong nội dung bài này, chúng ta sẽ nghiên cứu về một số các loại layer cơ bản nhất.
 
-### 2.1. Linear layer
+### 1.1. Linear layer
 
 Linear layer là layer đơn giản nhất nhưng nền tảng để xây dựng neural network.
 Cụ thể, linear layer thực hiện phép biến đổi tuyến tính (linear transformation) thông qua phép toán nhân ma trận.
@@ -48,14 +37,14 @@ trong đó:
 - W là trọng số của neural network tại linear layer đó
 - y là ma trận đầu ra của linear layer, kết quả của phép biến đổi tuyến tính
 
-### 2.2. Activation layer
+### 1.2. Activation layer
 
 Chúng ta đã cùng nhau nghiên cứu về một số các logistic activation layer như Sigmoid, Softmax, Tanh.
 Bên cạnh các layer đó, còn rất nhiều các activation layer khác.
 Các activation layer được đặt xen kẽ giữa các linear layer với vai trò giúp cho các linear layer có nghĩa.
 Điều này đồng nghĩa với việc, nếu không có các activation layer đặt giữa các linear layer thì nhiều các linear layer đặt chồng lên nhau cũng không khác gì so với việc chỉ có một linear layer.
 
-#### 2.2.1. ReLU
+#### 1.2.1. ReLU
 
 Khác với Sigmoid hay Softmax thường dược đặt ở layer cuối cùng trong neural network, ReLU (Rectified-Linear Unit) là một activation layer thường được đặt giữa các linear layer nằm giữa của neural network.
 
@@ -71,7 +60,7 @@ Khi sử dụng hàm ReLU cho một vector hoặc ma trận, ta sử dụng hàm
 
 <img src="https://www.researchgate.net/profile/Yingzhi-Zhang-4/publication/351263278/figure/fig6/AS:1018784072601600@1619908459755/ReLU-operation-on-single-depth-slice.ppm" style="width: 600px;"/>
 
-#### 2.2.2. Leaky ReLU
+#### 1.2.2. Leaky ReLU
 
 Một vấn đề khi sử dụng hàm ReLU là vanishing gradient tại những vị trí có giá trị nhỏ hơn hoặc bằng 0.
 Do đó, Leaky ReLU giúp cải thiện vấn đề này.
@@ -87,7 +76,7 @@ trong đó:
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*ypsvQH7kvtI2BhzR2eT_Sw.png" style="width: 600px;"/>
 
-### 2.3. Normalization layer
+### 1.3. Normalization layer
 
 Đối với các neural network các phức tạp và có kích thước mô hình lớn, quá trình huấn luyện càng khó khăn và bất ổn định.
 Sự bất ổn định có thể dẫn đến việc neural network có kết quả huấn luyện rất kém.
@@ -99,7 +88,7 @@ Các normalization layer nói chung giúp chuẩn hoá đầu ra của mỗi lay
 
 Bên cạnh Batch normalization layer, ta còn một số các normalization layer khác như Layer normalization layer, Instance normalization layer, Group normalization layer ...
 
-### 2.4. Dropout layer
+### 1.4. Dropout layer
 
 Chúng ta đã bàn luận về hiện tượng overfit trong các mô hình machine learning, trong neural network, hiện tượng overfit cũng là một vấn đề nan giải.
 Ta có Dropout layer là một lớp giúp phần nào đó giảm bớt vấn đề overfit.
@@ -109,9 +98,9 @@ Từ đó, ta sẽ giảm được độ phức tạp của neural network, từ
 
 <img src="https://www.baeldung.com/wp-content/uploads/sites/4/2020/05/2-1-2048x745-1.jpg" style="width: 1000px;"/>
 
-## 3. Loss function và Optimization
+## 2. Loss function và Optimization
 
-### 3.1. Loss function
+### 2.1. Loss function
 
 Chúng ta đã cùng nhau nghiên cứu về khá nhiều các loại hàm loss khác nhau và cụ thể cho từng bài toán khác nhau.
 
@@ -141,11 +130,11 @@ $$
 CE(\hat{y}, y) = - \sum_{i=1}^{N} \sum_{j=1}^{K} (y^{ij} \log \hat{y}^{ij})
 $$
 
-### 3.2. Optimization
+### 2.2. Optimization
 
 Chúng ta đã cùng nhau nghiên cứu về khá nhiều các thuật toán tối ưu khác nhau biến thể từ Gradient descent như: Stochastic gradient descent (SGD), Momentum, Nesterov accelerated gradient (NAG) ...
 
-## 4. Model feedforward và backpropagation
+## 3. Model feedforward và backpropagation
 
 <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/7-Figure1-1-1.png" style="width: 500px;"/>
 
