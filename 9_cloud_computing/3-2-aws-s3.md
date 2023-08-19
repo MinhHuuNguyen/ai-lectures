@@ -1,0 +1,10 @@
+---
+layout: "post"
+title:  "AWS S3"
+author: "Nguyễn Hữu Minh"
+permalink: "/cloud-computing/amazon-web-service/aws-s3"
+parent: "Amazon Web Service"
+nav_order: 2
+---
+
+# AWS S3
