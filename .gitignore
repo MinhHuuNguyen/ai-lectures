@@ -4,7 +4,6 @@
 __pycache__
 
 # Datasets
-data
 dog_cat_dataset
 covid19_tweets_dataset
 speech_emotion_dataset
@@ -14,3 +13,4 @@ house_prices_dataset
 brain_tumor_dataset
 lg_innotek_data
 image_data
+brain_tumor_coco
