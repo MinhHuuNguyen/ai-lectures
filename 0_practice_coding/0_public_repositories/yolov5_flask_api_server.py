@@ -30,8 +30,7 @@ def route_predict_path():
 
 @app.route('/predict_file', methods=['POST'])
 def route_predict_file():
-    request_data = request.files['file']
-    print(request_data)
+    request_data = request.data
     image = Image.open(BytesIO(request_data))
 
     results = predict(image)
