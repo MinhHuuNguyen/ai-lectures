@@ -2,9 +2,10 @@
 layout: "post"
 title:  "Recurrent neural network"
 author: "Nguyễn Hữu Minh"
-permalink: "/deep-learning/recurrent-neural-network"
-parent: "Deep learning"
-nav_order: 5
+permalink: "/deep-learning/natural-language-processing/recurrent-neural-network"
+parent: "Natural language processing"
+grand_parent: "Deep learning"
+nav_order: 1
 ---
 
 # Recurrent neural network

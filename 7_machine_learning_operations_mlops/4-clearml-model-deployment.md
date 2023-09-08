@@ -1,10 +1,10 @@
 ---
 layout: "post"
-title:  "ClearML installation"
+title:  "ClearML Model Deployment"
 author: "Nguyễn Hữu Minh"
-permalink: "/mlops/clearml-installation"
+permalink: "/mlops/clearml-model-deployment"
 parent: "Machine learning operations (MLOps)"
-nav_order: 1
+nav_order: 4
 ---
 
-# ClearML installation
+# ClearML Model Deployment

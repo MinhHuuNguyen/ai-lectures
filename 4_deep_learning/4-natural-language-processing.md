@@ -4,6 +4,7 @@ title:  "Natural language processing"
 author: "Nguyễn Hữu Minh"
 permalink: "/deep-learning/natural-language-processing"
 parent: "Deep learning"
+has_children: true
 nav_order: 4
 ---
 

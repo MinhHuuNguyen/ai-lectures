@@ -1,10 +1,10 @@
 ---
 layout: "post"
-title:  "ClearML installation"
+title:  "ClearML Experiments Tracking"
 author: "Nguyễn Hữu Minh"
-permalink: "/mlops/clearml-installation"
+permalink: "/mlops/clearml-experiments-tracking"
 parent: "Machine learning operations (MLOps)"
-nav_order: 1
+nav_order: 3
 ---
 
-# ClearML installation
+# ClearML Experiments Tracking
