@@ -8,7 +8,7 @@ grand_parent: "Cloud computing"
 nav_order: 1
 ---
 
-# Các dịch vụ lưu trữ và database của Google Cloud Platform
+# Các dịch vụ lưu trữ của Google Cloud Platform
 
 ## 1. Google Cloud Storage
 

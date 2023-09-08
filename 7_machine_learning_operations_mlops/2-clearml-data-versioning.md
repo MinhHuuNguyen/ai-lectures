@@ -1,10 +1,10 @@
 ---
 layout: "post"
-title:  "ClearML installation"
+title:  "ClearML Data Versioning"
 author: "Nguyễn Hữu Minh"
-permalink: "/mlops/clearml-installation"
+permalink: "/mlops/clearml-data-versioning"
 parent: "Machine learning operations (MLOps)"
-nav_order: 1
+nav_order: 2
 ---
 
-# ClearML installation
+# ClearML Data Versioning
