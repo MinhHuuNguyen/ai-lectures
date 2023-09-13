@@ -3,3 +3,4 @@ azure-cognitiveservices-vision-computervision
 google-cloud-translate
 google-cloud-vision
 matplotlib
+openai
