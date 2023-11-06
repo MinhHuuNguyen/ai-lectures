@@ -128,6 +128,8 @@ Kết hợp nhiều biến đổi lại với nhau để tạo ra sự đa dạn
     - Tính trung bình có trọng số tương ứng cho nhãn của hai hình ảnh.
 - Mix Up giúp mô hình học được tính toàn cầu của các đối tượng và giảm thiểu overfitting bằng cách tạo ra đa dạng trong dữ liệu huấn luyện.
 
+<img src="https://www.researchgate.net/profile/Zihan-Yang-4/publication/357823193/figure/fig4/AS:1169970583080960@1655954132026/Sample-images-using-the-Mixup-Cutout-and-Cutmix-augmentation-methods-40.ppm" style="width: 800px;"/>
+
 ### 3.2. Cut Out:
 
 - Mục tiêu của Cut Out là ẩn đi một phần ngẫu nhiên của hình ảnh bằng một hình chữ nhật đen.
@@ -147,5 +149,3 @@ Kết hợp nhiều biến đổi lại với nhau để tạo ra sự đa dạn
     - Tính trung bình có trọng số của hai nhãn tương ứng với vùng hình vuông.
 - Cut Mix tạo ra hình ảnh mới chứa thông tin từ cả hai hình ảnh gốc và giảm bớt thông tin về đối tượng ban đầu.
 Điều này đặt ra một thách thức học hỏi cho mô hình.
-
-<img src="https://www.researchgate.net/profile/Zihan-Yang-4/publication/357823193/figure/fig4/AS:1169970583080960@1655954132026/Sample-images-using-the-Mixup-Cutout-and-Cutmix-augmentation-methods-40.ppm" style="width: 800px;"/>
