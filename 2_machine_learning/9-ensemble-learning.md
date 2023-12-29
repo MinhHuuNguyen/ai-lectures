@@ -4,7 +4,7 @@ title:  "Ensemble Learning"
 author: "Nguyễn Hữu Minh"
 permalink: "/machine-learning/ensemble-learning"
 parent: "Machine learning"
-nav_order: 8
+nav_order: 9
 ---
 
 # Ensemble Learning
