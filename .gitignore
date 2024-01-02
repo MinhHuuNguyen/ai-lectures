@@ -14,3 +14,10 @@ brain_tumor_dataset
 lg_innotek_data
 image_data
 brain_tumor_coco
+
+# Checkpoint files
+*.pth
+*.pt
+
+# Logs
+events.out.tfevents*
