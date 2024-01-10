@@ -18,6 +18,7 @@ brain_tumor_coco
 # Checkpoint files
 *.pth
 *.pt
+*.onnx
 
 # Logs
 events.out.tfevents*
