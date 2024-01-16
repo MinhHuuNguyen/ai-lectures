@@ -1,2 +1,6 @@
 data
 .vector_cache
+lightning_logs
+ckpts
+csv_logs
+tb_logs
