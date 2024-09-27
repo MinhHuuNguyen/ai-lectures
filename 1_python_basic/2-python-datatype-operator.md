@@ -1,11 +1,11 @@
 ---
 slug: python-datatype-operator
 time: 12/23/2021
-title: "Kiểu dữ liệu và toán tử trong Python"
+title: Kiểu dữ liệu và toán tử trong Python
 description: "Để bắt đầu với bất kỳ ngôn ngữ lập trình nào, và Python cũng không ngoại lệ, chúng ta cần hiểu rõ về kiểu dữ liệu và toán tử cơ bản."
 author: "Nguyễn Hữu Minh"
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0-syllabus/images/python-logo.png
-tags:
+tags: [python]
 is_highlight: false
 ---
 

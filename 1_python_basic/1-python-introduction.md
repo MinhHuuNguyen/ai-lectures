@@ -1,7 +1,7 @@
 ---
 slug: python-introduction
 time: 12/19/2021
-title: "Giới thiệu chung về ngôn ngữ lập trình Python"
+title: Giới thiệu chung về ngôn ngữ lập trình Python
 description: Bài viết này sẽ giới thiệu một số ứng dụng và lý do khiến Python trở nên phổ biến.
 author: Nguyễn Hữu Minh
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0-syllabus/images/python-logo.png
