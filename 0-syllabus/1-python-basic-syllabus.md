@@ -1,43 +1,41 @@
 ---
 slug: python-basic-syllabus
-time: 11/09/2024
-title: "Syllabus: Python cơ bản"
+time: 12/12/2021
+title: "Syllabus: PYTHON CƠ BẢN"
 description: Python là một ngôn ngữ lập trình được sử dụng rộng rãi trong thời gian gần đây. Bài viết này sẽ tổng hợp danh sách một số kiến thức cơ bản nhất về Python.
 author: Nguyễn Hữu Minh
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0-syllabus/images/python-logo.png
-tags:
-is_highlight: false
+tags: [python, syllabus]
+is_highlight: true
 ---
 
 ## Bài 0: Cài đặt môi trường lập trình Python với pip và Anaconda
+1. Cài đặt pip và virtualenv
+2. Cài đặt Anaconda
+3. Cài đặt và sử dụng Jupyter Notebook
+
+([bài viết chi tiết](/blog/python-installation/))
 
 ## Bài 1: Giới thiệu chung về ngôn ngữ lập trình Python
-1. Tại sao ngôn ngữ lập trình Python lại phổ biến?
-2. Các ứng dụng của Python
+1. Tại sao ngôn ngữ lập trình Python lại phổ biến? Và các ứng dụng của Python
+2. Một số thao tác cơ bản với Python
 
-## Bài 2: Một số thao tác cơ bản với Python
-1. Import thư viện trong Python
-2. Comment trong Python
-3. Biến dữ liệu trong Python
+([bài viết chi tiết](/blog/python-introduction/))
 
-## Bài 3: Kiểu dữ liệu trong Python
-1. Khái quát về kiểu dữ liệu cơ bản trong Python
-2. Nhóm kiểu dữ liệu số học và giá trị chân lý
-3. Nhóm kiểu dữ liệu dạng chuỗi
-4. Nhóm kiểu dữ liệu tập hợp
-5. Nhóm kiểu dữ liệu từ điển
-6. So sánh và ép kiểu giữa các kiểu dữ liệu
+## Bài 2: Kiểu dữ liệu và toán tử trong Python
+1. Các kiểu dữ liệu cơ bản trong Python
+2. So sánh và ép kiểu giữa các kiểu dữ liệu
+3. Toán tử trong Python
 
-## Bài 4: Toán tử trong Python
-1. Toán tử số học
-2. Toán tử so sánh
-3. Toán tử logic
+([bài viết chi tiết](/blog/python-datatype-operator/))
 
-## Bài 5: Câu lệnh điều kiện trong Python
+## Bài 3: Câu lệnh điều kiện trong Python
 1. Câu lệnh `if`, `if-else` và `if-elif-else`
 2. Câu lệnh `pass`
 
-## Bài 6: Vòng lặp trong Python
+([bài viết chi tiết](/blog/python-condition/))
+
+## Bài 4: Vòng lặp trong Python
 1. Vòng lặp `for`
 2. Vòng lặp `while`
 3. Câu lệnh `break`
@@ -45,6 +43,10 @@ is_highlight: false
 5. Câu lệnh `else` trong vòng lặp
 6. Vòng lặp lồng nhau
 
-## Bài 7: Hàm trong Python
+([bài viết chi tiết](/blog/python-loop/))
+
+## Bài 5: Hàm trong Python
 1. Xây dựng hàm với câu lệnh `def`
 2. Xây dựng hàm lambda
+
+([bài viết chi tiết](/blog/python-function/))
