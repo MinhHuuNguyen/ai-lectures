@@ -1,15 +1,13 @@
 ---
-slug: machine-learning
-time: "11/09/2024"
-title: "Machine learning"
-description: "Machine Learning (ML) là một phần của trí tuệ nhân tạo (AI) mà chúng ta dùng để xây dựng các mô hình hoặc chương trình máy tính có khả năng tự học từ dữ liệu."
-author: "Nguyễn Hữu Minh"
-banner_url: "https://tenten.vn/tin-tuc/wp-content/uploads/2023/08/1cG6U1qstYDijh9bPL42e-Q.jpg"
-tags:
+slug: linear-regression-logistic-regression
+time: 11/09/2024
+title: Mô hình Linear Regression và Logistic Regression
+description: Mô hình Linear regression và Logistic regression là hai mô hình cơ bản nhất trong Machine Learning, được sử dụng rộng rãi trong giải quyết các bài toán regression và classification. Phép toán căn bản nhất của hai mô hình này là phép biến đổi tuyến tính. Bài viết này sẽ giới thiệu về ý tưởng chung của hai mô hình, cũng như cách mà hai mô hình này sử dụng phép biến đổi tuyến tính để giải quyết bài toán.
+author: Nguyễn Hữu Minh
+banner_url: 
+tags: [machine-learning]
 is_highlight: false
 ---
-
-# Logistic regression
 
 ## 1. Ý tưởng chung của logistic regresion
 
