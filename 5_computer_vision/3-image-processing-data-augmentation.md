@@ -5,7 +5,7 @@ title: Xử lý ảnh (Image processing) và tăng cường dữ liệu (Data au
 description:
 author: Nguyễn Hữu Minh
 banner_url: 
-tags:
+tags: [deep-learning, computer-vision]
 is_highlight: false
 ---
 

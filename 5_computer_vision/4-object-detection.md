@@ -5,7 +5,7 @@ title: Giới thiệu chung về bài toán Object detection
 description:
 author: Nguyễn Hữu Minh
 banner_url: 
-tags:
+tags: [deep-learning, computer-vision]
 is_highlight: false
 ---
 

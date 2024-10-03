@@ -5,7 +5,7 @@ title: Giới thiệu bài toán Image segmentation
 description:
 author: Nguyễn Hữu Minh
 banner_url: 
-tags:
+tags: [deep-learning, computer-vision]
 is_highlight: false
 ---
 

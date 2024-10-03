@@ -5,7 +5,7 @@ title: Mô hình mạng nơ ron tích chập - Convolutional Neural Network (CNN
 description:
 author: Nguyễn Hữu Minh
 banner_url: 
-tags: [deep-learning]
+tags: [deep-learning, computer-vision]
 is_highlight: false
 ---
 

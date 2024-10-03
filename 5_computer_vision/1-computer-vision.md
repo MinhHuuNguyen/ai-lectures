@@ -5,7 +5,7 @@ title: Giới thiệu chung về Thị giác máy tính - Computer Vision
 description:
 author: Nguyễn Hữu Minh
 banner_url: 
-tags: [deep-learning]
+tags: [deep-learning, computer-vision]
 is_highlight: false
 ---
 

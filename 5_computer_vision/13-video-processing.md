@@ -5,7 +5,7 @@ title: Các mô hình xử lý dữ liệu video
 description:
 author: Nguyễn Hữu Minh
 banner_url: 
-tags:
+tags: [deep-learning, computer-vision]
 is_highlight: false
 ---
 
