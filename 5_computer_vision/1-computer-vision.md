@@ -1,7 +1,7 @@
 ---
 slug: computer-vision
 time: 11/09/2024
-title: Giới thiệu chung về Computer Vision
+title: Giới thiệu chung về Thị giác máy tính - Computer Vision
 description:
 author: Nguyễn Hữu Minh
 banner_url: 
