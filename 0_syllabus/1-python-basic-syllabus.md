@@ -4,7 +4,7 @@ time: 12/12/2021
 title: "Syllabus: PYTHON CƠ BẢN"
 description: Python là một ngôn ngữ lập trình được sử dụng rộng rãi trong thời gian gần đây. Bài viết này sẽ tổng hợp danh sách một số kiến thức cơ bản nhất về Python.
 author: Nguyễn Hữu Minh
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0-syllabus/images/python-logo.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0_syllabus/images/python-logo.png
 tags: [python, syllabus]
 is_highlight: true
 is_published: true
