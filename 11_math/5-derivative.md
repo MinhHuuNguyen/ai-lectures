@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: 
 tags:
 is_highlight: false
+is_published: false
 ---
 
 # Đạo hàm với vector và ma trận

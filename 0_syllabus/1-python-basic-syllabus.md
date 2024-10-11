@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0-syllabus/images/python-logo.png
 tags: [python, syllabus]
 is_highlight: true
+is_published: true
 ---
 
 ## Bài 0: Cài đặt môi trường lập trình Python với pip và Anaconda

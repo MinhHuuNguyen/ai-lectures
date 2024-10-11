@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url:
 tags: [python, syllabus]
 is_highlight: false
+is_published: false
 ---
 
 ## Bài 1: Giới thiệu thư viện tính toán khoa học NumPy

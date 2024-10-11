@@ -7,4 +7,5 @@ author: Nguyễn Hữu Minh
 banner_url: 
 tags: [deep-learning, pytorch]
 is_highlight: false
+is_published: false
 ---

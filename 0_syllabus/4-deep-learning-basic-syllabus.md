@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: 
 tags: [deep-learning, syllabus]
 is_highlight: false
+is_published: false
 ---
 
 ## Bài 1: Giới thiệu chung về Deep Learning

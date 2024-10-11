@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: 
 tags: [machine-learning]
 is_highlight: false
+is_published: false
 ---
 
 ## 1. Ý tưởng chung của logistic regresion

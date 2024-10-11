@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: 
 tags:
 is_highlight: false
+is_published: false
 ---
 
 # Maximum likelihood estimation và Maximum a posteriori estimation

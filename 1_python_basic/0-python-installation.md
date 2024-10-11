@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0-syllabus/images/python-logo.png
 tags: [python]
 is_highlight: true
+is_published: true
 ---
 
 ## 1. Cài đặt pip và virtualenv

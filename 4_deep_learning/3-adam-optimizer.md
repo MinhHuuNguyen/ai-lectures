@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: 
 tags: [deep-learning]
 is_highlight: false
+is_published: false
 ---
 # Các biến thể và nâng cấp của thuật toán Gradient Descent
 

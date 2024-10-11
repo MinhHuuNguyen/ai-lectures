@@ -7,6 +7,7 @@ author: Nguyễn Hữu Minh
 banner_url: 
 tags:
 is_highlight: false
+is_published: false
 ---
 
 # Bài Tập Xác Suất Thống Kê
