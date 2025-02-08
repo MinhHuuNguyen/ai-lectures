@@ -1,14 +1,16 @@
 ---
-slug: machine-learning-basic-syllabus
 time: 07/05/2022
-title: "Syllabus: Machine Learning cơ bản"
+title: "Series MACHINE LEARNING CƠ BẢN"
 description: Machine Learning là một lĩnh vực nghiên cứu trong trí tuệ nhân tạo, mà mục tiêu là phát triển các kỹ thuật giúp máy tính học từ dữ liệu. Bài viết này sẽ tổng hợp danh sách một số kiến thức cơ bản nhất về Machine Learning như các thuật toán ML cơ bản, cách chia dữ liệu, cách đánh giá mô hình, cách tinh chỉnh mô hình ...
-author: Nguyễn Hữu Minh
 banner_url: 
 tags: [machine-learning, syllabus]
 is_highlight: false
-is_published: false
+is_published: true
 ---
+
+## Bài 0: Giới thiệu chung về Trí tuệ nhân tạo Artificial Intelligence
+
+([bài viết chi tiết](/blog/gioi-thieu-chung-ve-tri-tue-nhan-tao-artificial-intelligence/))
 
 ## Bài 1: Giới thiệu chung về Machine Learning
 
