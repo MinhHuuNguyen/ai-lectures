@@ -1,27 +1,26 @@
 ---
-slug: python-basic-syllabus
 time: 12/12/2021
-title: "Syllabus: PYTHON CƠ BẢN"
-description: Python là một ngôn ngữ lập trình được sử dụng rộng rãi trong thời gian gần đây. Bài viết này sẽ tổng hợp danh sách một số kiến thức cơ bản nhất về Python.
-author: Nguyễn Hữu Minh
+title: "Series PYTHON CƠ BẢN"
+description: Python là một ngôn ngữ lập trình được sử dụng rộng rãi trong thời gian gần đây trong lĩnh vực trí tuệ nhân tạo, khoa học dữ liệu, phân tích dữ liệu, và nhiều lĩnh vực khác. Bài viết này sẽ giới thiệu về các kiến thức cơ bản về Python mà bạn cần biết để bắt đầu học lập trình với ngôn ngữ này.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0_syllabus/images/python-logo.png
-tags: [python, syllabus]
-is_highlight: true
+tags: [python, series]
+is_highlight: false
 is_published: true
 ---
 
-## Bài 0: Cài đặt môi trường lập trình Python với pip và Anaconda
+## Bài 0: Cài đặt môi trường lập trình Python
 1. Cài đặt pip và virtualenv
-2. Cài đặt Anaconda
-3. Cài đặt và sử dụng Jupyter Notebook
+2. Cài đặt Anaconda - Miniconda
+3. Thực thi các câu lệnh Python
 
-([bài viết chi tiết](/blog/python-installation/))
+([bài viết chi tiết](/blog/cai-dat-moi-truong-lap-trinh-python/))
 
 ## Bài 1: Giới thiệu chung về ngôn ngữ lập trình Python
-1. Tại sao ngôn ngữ lập trình Python lại phổ biến? Và các ứng dụng của Python
-2. Một số thao tác cơ bản với Python
+1. Tại sao ngôn ngữ lập trình Python lại phổ biến?
+2. Các ứng dụng của ngôn ngữ lập trình Python
+3. Một số thao tác lập trình cơ bản với Python
 
-([bài viết chi tiết](/blog/python-introduction/))
+([bài viết chi tiết](/blog/gioi-thieu-chung-ve-ngon-ngu-lap-trinh-python/))
 
 ## Bài 2: Kiểu dữ liệu và toán tử trong Python
 1. Các kiểu dữ liệu cơ bản trong Python
