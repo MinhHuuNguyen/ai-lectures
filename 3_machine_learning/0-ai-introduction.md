@@ -28,8 +28,6 @@ Kể từ thời điểm ra đời đến nay, ChatGPT nói riêng và các côn
 
 AlphaGo là một hệ thống trí tuệ nhân tạo phát triển bởi Google DeepMind, được thiết kế để chơi cờ vây. Nó đã gây tiếng vang lớn trong cộng đồng khoa học máy tính và cờ vây khi năm 2016, AlphaGo đã đánh bại Lee Sedol - một trong những kỳ thủ hàng đầu thế giới - trong một trận đấu cờ vây trực tiếp.
 
-<img src="https://drive.google.com/uc?id=1Uo5mjLBRjJrkON-XVWJtaZXvLj08gaS9" style="width: 1200px;"/>
-
 AlphaGo không chỉ đơn thuần là một chương trình máy tính chơi cờ vây, mà còn ứng dụng kỹ thuật học sâu và học tăng cường để phân tích và đưa ra quyết định trong trò chơi.
 Hệ thống này đã đạt được một khả năng đánh cờ đáng kinh ngạc, thậm chí khi đối mặt với những nước đi sáng tạo và phức tạp mà trước đây được xem là khó khăn đối với máy tính.
 
@@ -79,7 +77,7 @@ Siri đã trở thành một phần quan trọng trong việc tương tác với
 Hệ thống điểm tín dụng xã hội (Social Credit Score) của Chính phủ Trung Quốc là một chương trình theo dõi và đánh giá hành vi của công dân và doanh nghiệp dựa trên nhiều tiêu chí khác nhau.
 Mục tiêu chính của chương trình là tạo ra một hệ thống xác định mức độ đáng tin cậy của các cá nhân và tổ chức trong xã hội, từ đó ảnh hưởng đến quyền lợi và ưu đãi mà họ có được.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_social_credit_score.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_social_credit_score.jpeg" style="width: 800px;"/>
 
 Hệ thống này sử dụng thông tin từ nhiều nguồn khác nhau như hành vi mua sắm, thanh toán tài chính, việc thực hiện nghĩa vụ công dân, và hoạt động trực tuyến để tính toán điểm tín dụng của mỗi cá nhân và doanh nghiệp.
 Những người có điểm cao có thể được hưởng ưu đãi như vay tiền dễ dàng hơn, du lịch dễ dàng hơn, và nhiều quyền lợi khác.

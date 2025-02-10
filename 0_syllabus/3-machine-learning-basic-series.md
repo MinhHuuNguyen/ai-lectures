@@ -12,9 +12,9 @@ is_published: true
 
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-tri-tue-nhan-tao-artificial-intelligence/))
 
-## Bài 1: Giới thiệu chung về Machine Learning
+## Bài 1: Các nhóm bài toán và mô hình Machine Learning
 
-([bài viết chi tiết](/blog/machine-learning-introduction/))
+([bài viết chi tiết](/blog/cac-nhom-bai-toan-va-mo-hinh-machine-learning/))
 
 ## Bài 2: Mô hình Linear Regression và Logistic Regression
 
