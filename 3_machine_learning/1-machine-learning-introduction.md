@@ -67,7 +67,7 @@ Tóm lại, bài toán phân cụm là quá trình tìm cách nhóm các điểm
 
 Bài toán giảm chiều dữ liệu (Dimension Reduction) là một phần quan trọng trong Machine Learning, hướng tới việc giảm số lượng biến đầu vào trong dữ liệu mà vẫn giữ lại thông tin quan trọng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/dimension-reduction.jpeg" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/dimensionality_reduction.jpeg" style="width: 1200px;"/>
 
 Mục tiêu chính của bài toán này là giảm chiều của dữ liệu mà vẫn duy trì tính chất quan trọng và giảm thiểu sự phức tạp.
 
@@ -84,7 +84,7 @@ Tóm lại, bài toán giảm chiều dữ liệu nhằm mục tiêu giảm số
 
 Loại này kết hợp giữa học có giám sát và học không giám sát, hoặc học từ dữ liệu không được gán nhãn một cách tự động.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/semi-self-supervised.jpeg" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/semi_self_supervised.jpg" style="width: 1200px;"/>
 
 Tóm lại, học bán giám sát và học tự giám sát là những phương pháp kết hợp giữa học có giám sát và học không giám sát, giúp cải thiện hiệu suất và khả năng tự học của mô hình trong khi giảm thiểu chi phí thu thập, xử lý và gán nhãn dữ liệu.
 
@@ -92,17 +92,17 @@ Tóm lại, học bán giám sát và học tự giám sát là những phương
 
 Để xây dựng một mô hình Machine Learning hiệu quả, chúng ta cần tuân thủ một quy trình làm việc cụ thể.
 Quy trình này bao gồm các bước chính sau:
-- Bước 1: **Thu thập dữ liệu**: Bước này bao gồm Data Extraction - Trích xuất dữ liệu từ nhiều nguồn khác nhau và Data Collection - Thu thập và lưu trữ vào trong các kho dữ liệu hoặc cơ sở dữ liệu.
-- Bước 2: **Xử lý dữ liệu**: Dữ liệu sau khi được lưu trữ có thể được xử lý với các thao tác như:
+- **Bước 1: Thu thập dữ liệu**: Bước này bao gồm Data Extraction - Trích xuất dữ liệu từ nhiều nguồn khác nhau và Data Collection - Thu thập và lưu trữ vào trong các kho dữ liệu hoặc cơ sở dữ liệu.
+- **Bước 2: Xử lý dữ liệu**: Dữ liệu sau khi được lưu trữ có thể được xử lý với các thao tác như:
     - Data labelling - Gán nhãn dữ liệu: Dữ liệu được đưa vào trong các Annotation Tool - Công cụ gán nhãn dữ liệu để con người gán nhãn.
     - Data analysis - Phân tích dữ liệu: Dữ liệu được phân tích để hiểu rõ hơn về đặc trưng và cấu trúc của dữ liệu.
     - Data preprocessing - Tiền xử lý dữ liệu: Dữ liệu được tiền xử lý để chuẩn hóa, làm sạch và chuẩn bị cho quá trình huấn luyện mô hình.
     Dữ liệu sau khi được tiền xử lý sẽ được chia thành các tập dữ liệu con như training set, validation set và test set để sử dụng trong quá trình training và evaluate mô hình.
-- Bước 3: **Huấn luyện mô hình**: Ta lự chọn một mô hình phù hợp và huấn luyện mô hình trên tập dữ liệu đã được tiền xử lý ở trên.
+- **Bước 3: Huấn luyện mô hình**: Ta lự chọn một mô hình phù hợp và huấn luyện mô hình trên tập dữ liệu đã được tiền xử lý ở trên.
     - Trong giai đoạn huấn luyện - training phase, mô hình sẽ được học trên bộ dữ liệu train và được đánh giá trên bộ dữ liệu validation để điều chỉnh tham số, tối ưu hoá độ chính xác.
     - Thông thường, sau khi train và validate, mô hình sẽ được đánh giá trên bộ dữ liệu test để đánh giá lần cuối về hiệu suất của mô hình.
     - Quá trình huấn luyện mô hình có thể được lặp lại nhiều lần để cải thiện hiệu suất của mô hình, cũng như việc ta có thể lựa chọn nhiều mô hình khác nhau trong giai đoạn này.
-- Bước 4: **Dự đoán và triển khai**: Trong số các mô hình đã được huấn luyện ở trên, ta chọn một mô hình tốt nhất và sử dụng nó để dự đoán kết quả cho dữ liệu mới và triển khai mô hình trong môi trường thực tế.
+- **Bước 4: Dự đoán và triển khai**: Trong số các mô hình đã được huấn luyện ở trên, ta chọn một mô hình tốt nhất và sử dụng nó để dự đoán kết quả cho dữ liệu mới và triển khai mô hình trong môi trường thực tế.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/workflow.jpeg" style="width: 1200px;"/>
 

@@ -13,27 +13,27 @@ is_published: true
 2. Cài đặt Anaconda - Miniconda
 3. Thực thi các câu lệnh Python
 
-([bài viết chi tiết](/blog/cai-dat-moi-truong-lap-trinh-python/))
+([bài viết chi tiết](/blog/cai-dat-moi-truong-lap-trinh-python))
 
 ## Bài 1: Giới thiệu chung về ngôn ngữ lập trình Python
 1. Tại sao ngôn ngữ lập trình Python lại phổ biến?
 2. Các ứng dụng của ngôn ngữ lập trình Python
 3. Một số thao tác lập trình cơ bản với Python
 
-([bài viết chi tiết](/blog/gioi-thieu-chung-ve-ngon-ngu-lap-trinh-python/))
+([bài viết chi tiết](/blog/gioi-thieu-chung-ve-ngon-ngu-lap-trinh-python))
 
 ## Bài 2: Kiểu dữ liệu và toán tử trong Python
 1. Các kiểu dữ liệu cơ bản trong Python
 2. So sánh và ép kiểu giữa các kiểu dữ liệu
 3. Toán tử trong Python
 
-([bài viết chi tiết](/blog/python-datatype-operator/))
+([bài viết chi tiết](/blog/python-datatype-operator))
 
 ## Bài 3: Câu lệnh điều kiện trong Python
 1. Câu lệnh `if`, `if-else` và `if-elif-else`
 2. Câu lệnh `pass`
 
-([bài viết chi tiết](/blog/python-condition/))
+([bài viết chi tiết](/blog/python-condition))
 
 ## Bài 4: Vòng lặp trong Python
 1. Vòng lặp `for`
@@ -43,10 +43,10 @@ is_published: true
 5. Câu lệnh `else` trong vòng lặp
 6. Vòng lặp lồng nhau
 
-([bài viết chi tiết](/blog/python-loop/))
+([bài viết chi tiết](/blog/python-loop))
 
 ## Bài 5: Hàm trong Python
 1. Xây dựng hàm với câu lệnh `def`
 2. Xây dựng hàm lambda
 
-([bài viết chi tiết](/blog/python-function/))
+([bài viết chi tiết](/blog/python-function))
