@@ -10,9 +10,31 @@ is_published: true
 
 ## Bài 0: Giới thiệu chung về Trí tuệ nhân tạo Artificial Intelligence
 
+### 1. Một số ví dụ nổi tiếng về Trí tuệ nhân tạo
+
+### 2. Trí tuệ nhân tạo - Artificial Intelligence, Máy học - Machine Learning và Học sâu - Deep Learning
+
+### 3. So sánh giữa Lập trình truyền thống và Machine Learning
+
+### 4. Xây dựng Trí tuệ nhân tạo như thế nào?
+
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-tri-tue-nhan-tao-artificial-intelligence))
 
 ## Bài 1: Các nhóm bài toán và mô hình Machine Learning
+
+### 1. Các nhóm chính của bài toán và mô hình Machine Learning
+
+### 2. Nhóm Học có giám sát - Supervised learning
+
+### 3. Nhóm Học không giám sát - Unsupervised learning
+
+### 4. Nhóm Học tăng cường - Reinforcement learning
+
+### 5. Nhóm Học bán giám sát - Semi-supervised learning và Học tự giám sát - Self-supervised learning
+
+### 6. Workflow để xây dựng được mô hình Machine Learning
+
+### 7. Thư viện Scikit-learn
 
 ([bài viết chi tiết](/blog/cac-nhom-bai-toan-va-mo-hinh-machine-learning))
 

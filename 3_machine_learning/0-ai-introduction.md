@@ -72,7 +72,7 @@ Siri có khả năng thực hiện nhiều nhiệm vụ, bao gồm gửi tin nh�
 Với các phiên bản cập nhật liên tục, Siri ngày càng được cải tiến về khả năng hiểu và phản hồi tự nhiên, từ việc nhận dạng giọng nói đến khả năng hiểu ngữ cảnh và mục đích của người dùng.
 Siri đã trở thành một phần quan trọng trong việc tương tác với các thiết bị của Apple, mang lại sự tiện ích và tương tác trực quan cho người dùng.
 
-### 2.4. Social Credit Score - China government
+### 1.6. Social Credit Score - China government
 
 Hệ thống điểm tín dụng xã hội (Social Credit Score) của Chính phủ Trung Quốc là một chương trình theo dõi và đánh giá hành vi của công dân và doanh nghiệp dựa trên nhiều tiêu chí khác nhau.
 Mục tiêu chính của chương trình là tạo ra một hệ thống xác định mức độ đáng tin cậy của các cá nhân và tổ chức trong xã hội, từ đó ảnh hưởng đến quyền lợi và ưu đãi mà họ có được.
@@ -85,8 +85,9 @@ Ngược lại, những người có điểm thấp có thể gặp khó khăn t
 
 Hệ thống điểm tín dụng xã hội của Trung Quốc đã nhận nhiều ý kiến trái chiều, với một số người cho rằng nó có thể đảm bảo tính trật tự và đạo đức trong xã hội, trong khi những người khác lo ngại về việc xâm phạm quyền riêng tư và nguy cơ rơi vào việc kiểm soát quá mức từ phía chính quyền.
 
-### 1.5. Các ứng dụng trong các lĩnh vực khác nhau
+### 1.7. Các ứng dụng trong các lĩnh vực khác nhau
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_others.png" style="width: 1200px;"/>
 
 ## 2. Trí tuệ nhân tạo - Artificial Intelligence, Máy học - Machine Learning và Học sâu - Deep Learning
 
@@ -162,3 +163,10 @@ Python có nhiều thư viện hỗ trợ mạnh mẽ cho:
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/tools_libraries.png" style="width: 1200px;"/>
 
 Ngoài ngôn ngữ lập trình Python và các thư viện nói trên, với sự quan tâm dành cho Deep learning, những Kỹ sư Trí tuệ nhân tạo cũng có thể cần sử dụng đến ngôn ngữ lập trình khác như C++, CUDA ...
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/skills_knowledge.jpeg" style="width: 1200px;"/>
+
+Bên cạnh việc sử dụng các ngôn ngữ lập trình và thư viện, để xây dựng mô hình trí tuệ nhân tạo, chúng ta cần có kiến thức về:
+- Toán học: Đại số tuyến tính, xác suất thống kê, giải tích, ...
+- Lập trình: Ngôn ngữ lập trình Python, database, điện toán đám mây ...
+- Kiến thức chuyên ngành: Tài chính, kinh doanh, y học, ...
