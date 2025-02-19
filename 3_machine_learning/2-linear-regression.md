@@ -221,7 +221,7 @@ Bài viết tiếp theo sẽ giới thiệu về phương pháp tối ưu Gradie
 
 Để đánh giá chất lượng của mô hình Linear Regression nói chung và các mô hình regression, bên cạnh các giá trị loss như MSE, MAE, ta còn sử dụng một số chỉ số đánh giá khác.
 
-### 6.1. R-squared (R2)
+### 6.1. R-squared (R2 - Coefficient of determination)
 
 R-squared là một chỉ số đánh giá mô hình phổ biến được sử dụng trong các bài toán Regression.
 R-squared đo lường mức độ biến thiên của giá trị dự đoán so với giá trị thực tế.
