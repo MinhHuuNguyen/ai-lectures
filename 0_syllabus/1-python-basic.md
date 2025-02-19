@@ -1,6 +1,6 @@
 ---
 time: 12/12/2021
-title: "Series PYTHON CƠ BẢN"
+title: "[SERIES] Ngôn ngữ lập trình Python cơ bản"
 description: Python là một ngôn ngữ lập trình được sử dụng rộng rãi trong thời gian gần đây trong lĩnh vực trí tuệ nhân tạo, khoa học dữ liệu, phân tích dữ liệu, và nhiều lĩnh vực khác. Bài viết này sẽ giới thiệu về các kiến thức cơ bản về Python mà bạn cần biết để bắt đầu học lập trình với ngôn ngữ này.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0_syllabus/images/python-logo.png
 tags: [python, series]
