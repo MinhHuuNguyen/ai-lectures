@@ -56,7 +56,7 @@ is_published: true
 ([bài viết chi tiết](/blog/vong-lap-trong-python))
 
 ## Bài 5: Hàm trong Python
-1. Xây dựng hàm với câu lệnh `def`
-2. Xây dựng hàm lambda
+1. Hàm đơn giản với câu lệnh `def`
+2. Hàm lambda
 
-([bài viết chi tiết](/blog/python-function))
+([bài viết chi tiết](/blog/ham-trong-python))
