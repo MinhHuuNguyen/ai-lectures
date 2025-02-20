@@ -35,10 +35,14 @@ is_published: true
 ([bài viết chi tiết](/blog/kieu-du-lieu-va-toan-tu-trong-python))
 
 ## Bài 3: Câu lệnh điều kiện trong Python
-1. Câu lệnh `if`, `if-else` và `if-elif-else`
-2. Câu lệnh `pass`
+1. Câu lệnh `if`
+2. Câu lệnh `if-else`
+3. Câu lệnh `if-elif-else`
+4. Câu lệnh `pass`
+5. Câu lệnh `if` lồng nhau
+6. Cấu trúc một dòng - Inline structure
 
-([bài viết chi tiết](/blog/python-condition))
+([bài viết chi tiết](/blog/cau-lenh-dieu-kien-trong-python))
 
 ## Bài 4: Vòng lặp trong Python
 1. Vòng lặp `for`
