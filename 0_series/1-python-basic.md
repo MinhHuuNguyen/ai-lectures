@@ -23,11 +23,16 @@ is_published: true
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-ngon-ngu-lap-trinh-python))
 
 ## Bài 2: Kiểu dữ liệu và toán tử trong Python
-1. Các kiểu dữ liệu cơ bản trong Python
-2. So sánh và ép kiểu giữa các kiểu dữ liệu
-3. Toán tử trong Python
+1. Kiểm tra kiểu dữ liệu của một biến
+2. Kiểu dữ liệu số học và giá trị chân lý
+3. Kiểu dữ liệu xâu chuỗi
+4. Kiểu dữ liệu tập hợp `set`
+5. Kiểu dữ liệu từ điển `dict`
+6. Ép kiểu giữa các kiểu dữ liệu
+7. Toán tử trong Python
+8. Luyện tập với các kiểu dữ liệu cơ bản trong Python
 
-([bài viết chi tiết](/blog/python-datatype-operator))
+([bài viết chi tiết](/blog/kieu-du-lieu-va-toan-tu-trong-python))
 
 ## Bài 3: Câu lệnh điều kiện trong Python
 1. Câu lệnh `if`, `if-else` và `if-elif-else`
