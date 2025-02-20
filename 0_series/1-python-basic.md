@@ -46,13 +46,14 @@ is_published: true
 
 ## Bài 4: Vòng lặp trong Python
 1. Vòng lặp `for`
-2. Vòng lặp `while`
-3. Câu lệnh `break`
-4. Câu lệnh `continue`
-5. Câu lệnh `else` trong vòng lặp
-6. Vòng lặp lồng nhau
+2. Một số hàm hỗ trợ vòng lặp `for`
+3. Vòng lặp `while`
+4. Vòng lặp lồng nhau
+5. Câu lệnh `break`
+6. Câu lệnh `continue`
+7. Câu lệnh `else` trong vòng lặp
 
-([bài viết chi tiết](/blog/python-loop))
+([bài viết chi tiết](/blog/vong-lap-trong-python))
 
 ## Bài 5: Hàm trong Python
 1. Xây dựng hàm với câu lệnh `def`
