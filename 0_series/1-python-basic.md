@@ -30,7 +30,6 @@ is_published: true
 5. Kiểu dữ liệu từ điển `dict`
 6. Ép kiểu giữa các kiểu dữ liệu
 7. Toán tử trong Python
-8. Luyện tập với các kiểu dữ liệu cơ bản trong Python
 
 ([bài viết chi tiết](/blog/kieu-du-lieu-va-toan-tu-trong-python))
 

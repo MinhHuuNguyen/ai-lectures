@@ -386,6 +386,399 @@ print(1 in c) # True
 print(6 in c) # False
 ```
 
-## 8. Luyện tập với các kiểu dữ liệu cơ bản trong Python
+---
 
-### Bài tập 1: Tính tổng các phần tử trong list
+## Luyện tập
+
+<details>
+<summary>Câu hỏi trắc nghiệm</summary>
+
+**1. Kiểu dữ liệu nào dưới đây là kiểu số nguyên trong Python?**
+
+**A.** `int`
+
+**B.** `float`
+
+**C.** `complex`
+
+**D.** `bool`
+
+**2. Giá trị của biểu thức `type(3.14)` là gì?**
+
+**A.** `<class 'int'>`
+
+**B.** `<class 'float'>`
+
+**C.** `<class 'complex'>`
+
+**D.** `<class 'decimal.Decimal'>`
+
+**3. Kết quả của `bool(0)` là gì?**
+
+**A.** `True`
+
+**B.** `False`
+
+**C.** `None`
+
+**D.** `Error` 
+
+**4. Kết quả của biểu thức `2 ** 3` là gì?**
+
+**A.** `6`
+
+**B.** `8`
+
+**C.** `9`
+
+**D.** `Error`
+
+**5. Phép toán `//` trong Python dùng để làm gì?**
+
+**A.** Phép chia lấy phần nguyên
+
+**B.** Phép chia lấy dư
+
+**C.** Phép nhân
+
+**D.** Phép luỹ thừa
+
+**6. Kiểu dữ liệu nào có thể chứa các giá trị không thay đổi sau khi được khởi tạo?**
+
+**A.** `list`
+
+**B.** `set`
+
+**C.** `tuple`
+
+**D.** `dict`
+
+**7. Kết quả của `5 % 2` là gì?**
+
+**A.** `2.5`
+
+**B.** `1`
+
+**C.** `2`
+
+**D.** `0`
+
+**8. Tập hợp trong Python (`set`) có thể chứa các phần tử trùng lặp không?**
+
+**A.** Có
+
+**B.** Không
+
+**9. Kết quả của `bool("")` là gì?**
+
+**A.** `True`
+
+**B.** `False`
+
+**C.** `None`
+
+**D.** `Error`
+
+**10. Biến nào dưới đây có kiểu `dict`?**
+
+**A.** `{"name": "Alice", "age": 25}`
+
+**B.** `[1, 2, 3]`
+
+**C.** `(4, 5, 6)`
+
+**D.** `{7, 8, 9}`
+
+**11. Giá trị của biểu thức `4 == 4.0` là gì?**
+
+**A.** `True`
+
+**B.** `False`
+
+**C.** `None`
+
+**D.** `Error`
+
+**12. Kết quả của `10 / 3` là gì?**
+
+**A.** `3`
+
+**B.** `3.3`
+
+**C.** `3.3333333333333335`
+
+**D.** `3.5`
+
+**13. Phép toán nào sau đây được dùng để nối hai chuỗi trong Python?**
+
+**A.** `+`
+
+**B.** `*`
+
+**C.** `-`
+
+**D.** `/`
+
+**14. Kết quả của `len("Python")` là gì?**
+
+**A.** `5`
+
+**B.** `6`
+
+**C.** `7`
+
+**D.** `Error`
+
+**15. Phép toán `not` trong Python dùng để làm gì?**
+
+**A.** Đảo ngược giá trị của một biểu thức logic
+
+**B.** So sánh hai giá trị
+
+**C.** Kiểm tra sự tồn tại của một phần tử
+
+**D.** Kết hợp hai biểu thức logic
+
+</details>
+
+<details>
+<summary>Đáp án</summary>
+
+**1. A.** `int`
+
+**2. B.** `<class 'float'>`
+
+**3. B.** `False`
+
+**4. B.** `8`
+
+**5. A.** Phép chia lấy phần nguyên
+
+**6. C.** `tuple`
+
+**7. B.** `1`
+
+**8. B.** Không
+
+**9. B.** `False`
+
+**10. A.** `{"name": "Alice", "age": 25}`
+
+**11. A.** `True`
+
+**12. C.** `3.3333333333333335`
+
+**13. A.** `+`
+
+**14. B.** `6`
+
+**15. A.** Đảo ngược giá trị của một biểu thức logic
+
+</details>
+
+<details>
+<summary>Bài tập thực hành</summary>
+
+**1. Tính diện tích hình tròn:** Viết chương trình nhập bán kính của hình tròn và tính diện tích của nó. (Sử dụng công thức: `S = π * r^2`)
+
+**2. Hoán đổi hai số:** Viết chương trình hoán đổi giá trị của hai số nguyên mà không dùng biến tạm.
+
+**3. Chuyển đổi nhiệt độ:** Viết chương trình chuyển đổi nhiệt độ từ độ Celsius sang độ Fahrenheit. (Công thức: F = C * 9/5 + 32)
+
+**4. Xử lý chuỗi (String):** Viết chương trình nhận một string từ người dùng, thực hiện: chuyển string thành chữ in hoa, đếm số lần xuất hiện của từng ký tự trong string và đảo ngược string.
+
+**5. Xử lý danh sách (List):** Viết chương trình thực hiện nhập một list số nguyên từ người dùng (cách nhau bởi dấu cách), thêm 3 số thực mới vào trong list, tạo một list thứ 2 gồm 5 phần tử số thực và thêm các phần từ của list thứ 1 vào list thứ 2, tính tổng và giá trị trung bình của list thứ 2, sắp xếp list thứ 2 theo thứ tự tăng dần.
+
+**6. Xử lý bộ dữ liệu không thay đổi (Tuple):** Viết chương trình thực hiện nhập một tuple gồm các số nguyên từ người dùng, in ra số lớn nhất và nhỏ nhất trong tuple, đếm số lần xuất hiện của một số bất kỳ (nhập từ bàn phím).
+
+**7. Xử lý tập hợp (Set):** Viết chương trình thực hiện nhập hai tập hợp số nguyên từ người dùng, tìm các phần tử chung của hai tập hợp, tìm các phần tử chỉ xuất hiện trong tập hợp thứ nhất, tìm các phần tử chỉ xuất hiện trong tập hợp thứ hai, tìm các phần tử không chung của hai tập hợp.
+
+**8. Xử lý từ điển (Dictionary):** Viết chương trình thực hiện nhập danh sách sinh viên gồm tên và điểm (từ bàn phím), in ra danh sách sinh viên có điểm cao nhất.
+
+</details>
+
+<details>
+<summary>Lời giải</summary>
+
+1.
+
+```python
+import math
+
+r = float(input("Nhập bán kính của hình tròn: "))
+area = math.pi * r ** 2
+print("Diện tích của hình tròn là:", area)
+
+# Output
+# Nhập bán kính của hình tròn: 5
+# Diện tích của hình tròn là: 78.53981633974483
+```
+
+2.
+
+```python
+a = int(input("Nhập số a: "))
+b = int(input("Nhập số b: "))
+
+a, b = b, a
+
+print("Sau khi hoán đổi: a =", a, ", b =", b)
+
+# Output
+# Nhập số a: 5
+# Nhập số b: 10
+# Sau khi hoán đổi: a = 10 , b = 5
+```
+
+3.
+
+```python
+celsius = float(input("Nhập nhiệt độ theo độ Celsius: "))
+fahrenheit = celsius * 9/5 + 32
+print("Nhiệt độ theo độ Fahrenheit là:", fahrenheit)
+
+# Output
+# Nhập nhiệt độ theo độ Celsius: 37
+# Nhiệt độ theo độ Fahrenheit là: 98.6
+```
+
+4.
+
+```python
+text = input("Nhập một chuỗi: ")
+
+# Chuyển thành chữ in hoa
+upper_text = text.upper()
+print("Chuỗi in hoa:", upper_text)
+
+# Đếm số lần xuất hiện của từng ký tự
+char_count = {char: text.count(char) for char in set(text)}
+print("Số lần xuất hiện của từng ký tự:", char_count)
+
+# Đảo ngược chuỗi
+reversed_text = text[::-1]
+print("Chuỗi đảo ngược:", reversed_text)
+
+# Output
+# Nhập một chuỗi: Hello, World!
+# Chuỗi in hoa: HELLO, WORLD!
+# Số lần xuất hiện của từng ký tự: {'o': 2, 'r': 1, 'd': 1, 'l': 3, 'H': 1, 'W': 1, 'e': 1, ',': 1, ' ': 1}
+# Chuỗi đảo ngược: !dlroW ,olleH
+```
+
+5.
+
+```python
+# Nhập list số nguyên
+number_list = [2, 3, 5, 7, 11]
+print("List số nguyên:", number_list)
+
+# Thêm 3 số thực mới vào list
+number_list.append(13.5)
+number_list.append(17.7)
+number_list.append(19.9)
+print("List sau khi thêm số thực:", number_list)
+
+# Tạo list thứ 2 gồm 5 số thực
+float_list = [1.1, 2.2, 3.3, 4.4, 5.5]
+
+# Thêm các phần tử của list thứ 1 vào list thứ 2
+float_list.extend(number_list)
+print("List thứ 2 sau khi thêm các phần tử của list thứ 1:", float_list)
+
+# Tính tổng và giá trị trung bình của list thứ 2
+total = sum(float_list)
+average = total / len(float_list)
+print("Tổng các phần tử trong list thứ 2:", total)
+print("Giá trị trung bình của list thứ 2:", average)
+
+# Sắp xếp list thứ 2 theo thứ tự tăng dần
+float_list.sort()
+print("List thứ 2 sau khi sắp xếp:", float_list)
+
+# Output
+# List số nguyên: [2, 3, 5, 7, 11]
+# List sau khi thêm số thực: [2, 3, 5, 7, 11, 13.5, 17.7, 19.9]
+# List thứ 2 sau khi thêm các phần tử của list thứ 1: [1.1, 2.2, 3.3, 4.4, 5.5, 2, 3, 5, 7, 11, 13.5, 17.7, 19.9]
+# Tổng các phần tử trong list thứ 2: 92.6
+# Giá trị trung bình của list thứ 2: 6.276923076923077
+# List thứ 2 sau khi sắp xếp: [1.1, 2, 2.2, 3, 3.3, 4.4, 5, 5.5, 7, 11, 13.5, 17.7, 19.9]
+```
+
+6.
+
+```python
+# Nhập tuple số nguyên
+number_tuple = (2, 3, 5, 7, 11)
+print("Tuple số nguyên:", number_tuple)
+
+# In ra số lớn nhất và nhỏ nhất trong tuple
+print("Số lớn nhất trong tuple:", max(number_tuple))
+print("Số nhỏ nhất trong tuple:", min(number_tuple))
+
+# Đếm số lần xuất hiện của một số bất kỳ
+num = int(input("Nhập một số nguyên: "))
+print("Số lần xuất hiện của số", num, "trong tuple:", number_tuple.count(num))
+
+# Output
+# Tuple số nguyên: (2, 3, 5, 7, 11)
+# Số lớn nhất trong tuple: 11
+# Số nhỏ nhất trong tuple: 2
+# Nhập một số nguyên: 5
+# Số lần xuất hiện của số 5 trong tuple: 1
+```
+
+7.
+
+```python
+# Nhập hai tập hợp số nguyên
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+print("Tập hợp 1:", set1)
+print("Tập hợp 2:", set2)
+
+# Tìm các phần tử chung của hai tập hợp
+common_elements = set1.intersection(set2)
+print("Các phần tử chung của hai tập hợp:", common_elements)
+
+# Tìm các phần tử chỉ xuất hiện trong từng tập hợp
+unique_elements = set1.difference(set2)
+print("Các phần tử chỉ xuất hiện trong tập hợp thứ nhất:", unique_elements)
+unique_elements = set2.difference(set1)
+print("Các phần tử chỉ xuất hiện trong tập hợp thứ hai:", unique_elements)
+
+# Tìm các phần tử không chung của hai tập hợp
+non_common_elements = set1.symmetric_difference(set2)
+print("Các phần tử không chung của hai tập hợp:", non_common_elements)
+
+# Output
+# Tập hợp 1: {1, 2, 3, 4, 5}
+# Tập hợp 2: {4, 5, 6, 7, 8}
+# Các phần tử chung của hai tập hợp: {4, 5}
+# Các phần tử chỉ xuất hiện trong tập hợp thứ nhất: {1, 2, 3}
+# Các phần tử chỉ xuất hiện trong tập hợp thứ hai: {8, 6, 7}
+# Các phần tử không chung của hai tập hợp: {1, 2, 3, 6, 7, 8}
+```
+
+8.
+
+```python
+# Nhập danh sách sinh viên
+students = {
+    'Alice': 8.5,
+    'Bob': 7.5,
+    'Charlie': 9.0,
+    'David': 8.0
+}
+print("Danh sách sinh viên:", students)
+
+# In ra sinh viên có điểm cao nhất
+max_student = max(students, key=students.get)
+print("Sinh viên có điểm cao nhất:", max_student)
+
+# Output
+# Danh sách sinh viên: {'Alice': 8.5, 'Bob': 7.5, 'Charlie': 9.0, 'David': 8.0}
+# Sinh viên có điểm cao nhất: Charlie
+```
+
+</details>

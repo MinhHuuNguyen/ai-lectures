@@ -403,3 +403,414 @@ else:
 # 4
 # End of loop
 ```
+
+---
+
+## Luyện tập
+
+<details>
+<summary>Câu hỏi trắc nghiệm</summary>
+
+**1. Lệnh nào dưới đây được sử dụng để tạo vòng lặp trong Python?**
+
+**A.** `for`  
+
+**B.** `while`  
+
+**C.** Cả A và B  
+
+**D.** `loop`
+
+**2. Kết quả của đoạn code sau là gì?**
+
+```python
+for i in range(3):
+    print(i, end=" ")
+```
+
+**A.** `0 1 2`
+
+**B.** `1 2 3`
+
+**C.** `0 1 2 3`
+
+**D.** `1 2`
+
+**3. Lệnh nào để dừng vòng lặp sớm trong Python?**
+
+**A.** `continue`
+
+**B.** `stop`
+
+**C.** `break`
+
+**D.** `exit`
+
+**4. Đoạn mã sau in ra gì?**
+
+```python
+x = 0
+while x < 3:
+    x += 1
+print(x)
+```
+
+**A.** `0`
+
+**B.** `1`
+
+**C.** `3`
+
+**D.** `2`
+
+**5. Kết quả của đoạn mã sau là gì?**
+
+```python
+for i in range(2, 5):
+    print(i, end=", ")
+```
+
+**A.** `2, 3, 4, `
+
+**B.** `2, 3, 4, 5,`
+
+**C.** `2 3 4`
+
+**D.** `2, 3, 4`
+
+**6. Lệnh `continue` trong vòng lặp có tác dụng gì?**
+
+**A.** Dừng vòng lặp
+
+**B.** Bỏ qua phần còn lại của vòng lặp hiện tại và tiếp tục vòng tiếp theo
+
+**C.** Kết thúc chương trình
+
+**D.** Không có tác dụng
+
+**7. Câu lệnh `for i in range(5, 0, -1)` có ý nghĩa gì?**
+
+**A.** Lặp từ 0 đến 5
+
+**B.** Lặp từ 5 đến 1 giảm dần
+
+**C.** Lặp từ 5 đến 0 giảm dần
+
+**D.** Lặp vô hạn
+
+**8. Vòng lặp `while` nào dưới đây là vòng lặp vô hạn?**
+
+**A.** `while i < 10:`
+
+**B.** `while True:`
+
+**C.** `while False:`
+
+**D.** `while i == 10:`
+
+**9. Lệnh `else` trong vòng lặp `while` được thực thi khi nào?**
+
+**A.** Khi vòng lặp kết thúc bình thường
+
+**B.** Khi vòng lặp bị `break`
+
+**C.** Khi vòng lặp không có điều kiện
+
+**D.** Khi gặp `continue`
+
+**10. Kết quả của đoạn mã sau là gì?**
+
+```python
+for i in range(3):
+    if i == 1:
+        break
+    print(i)
+```
+
+**A.** `0 1 2`
+
+**B.** `0`
+
+**C.** `1`
+
+**D.** Không in gì cả
+
+**11. Điều gì xảy ra khi `range(10, 0, -2)` được sử dụng trong vòng lặp `for`?**
+
+**A.** Lặp từ 10 đến 1 với bước nhảy -2
+
+**B.** Lặp từ 10 đến 0 với bước nhảy -2
+
+**C.** Lặp từ 10 đến -2 với bước nhảy -2
+
+**D.** Lặp từ 0 đến 10 với bước nhảy 2
+
+**12. Trong Python, vòng lặp `while` thực thi khi nào?**
+
+**A.** Khi điều kiện là False
+
+**B.** Khi điều kiện là True
+
+**C.** Khi điều kiện không xác định
+
+**D.** Chỉ khi có biến đếm
+
+**13. Kết quả của đoạn mã sau là gì?**
+
+```python
+for i in range(1, 6, 2):
+    print(i, end=" ")
+```
+
+**A.** `1 2 3 4 5`
+
+**B.** `1 3 5`
+
+**C.** `1 2 3 5`
+
+**D.** `1 4 5`
+
+**14. Vòng lặp nào phù hợp nhất để lặp qua danh sách `my_list = [10, 20, 30]`?**
+
+**A.** `for i in my_list:`
+
+**B.** `while i in my_list:`
+
+**C.** `for i range(my_list):`
+
+**D.** `loop my_list:`
+
+**15. Cách nào tốt nhất để lặp qua các chỉ mục của danh sách` my_list = [10, 20, 30]`?**
+
+**A.** `for i in my_list:`
+
+**B.** `for i in range(len(my_list)):`
+
+**C.** `while i < len(my_list):`
+
+**D.** `for i, val in my_list:`
+
+</details>
+
+<details>
+<summary>Đáp án</summary>
+
+**1. C.** Cả A và B
+
+**2. A.** `0 1 2`
+
+**3. C.** `break`
+
+**4. C.** `3`
+
+**5. A.** `2, 3, 4, `
+
+**6. B.** Bỏ qua phần còn lại của vòng lặp hiện tại và tiếp tục vòng tiếp theo
+
+**7. B.** Lặp từ 5 đến 1
+
+**8. B.** `while True:`
+
+**9. A.** Khi vòng lặp kết thúc bình thường
+
+**10. B.** `0`
+
+**11. A.** Lặp từ 10 đến 1 với bước nhảy -2
+
+**12. B.** Khi điều kiện là `True`
+
+**13. B.** `1 3 5`
+
+**14. A.** `for i in my_list:`
+
+**15. B.** `for i in range(len(my_list)):`
+
+</details>
+
+<details>
+<summary>Bài tập thực hành</summary>
+
+**1. In dãy số từ 1 đến 10:** Viết chương trình in ra các số từ 1 đến 10 bằng vòng lặp `for` và `while`.
+
+**2. Tính tổng các số từ 1 đến n:** Nhập vào một số nguyên dương `n`, tính tổng các số từ `1` đến `n`.
+
+**3. In các số chẵn từ 1 đến 20:** Viết chương trình in ra tất cả các số chẵn từ `1` đến `20`.
+
+**4. In bảng cửu chương:** Viết chương trình in bảng cửu chương từ `2` đến `9`.
+
+**5. Đảo ngược số nguyên:** Nhập vào một số nguyên dương, đảo ngược số đó.
+
+**6. Tính giai thừa của một số:** Viết chương trình tính giai thừa của một số nguyên dương n. (Giai thừa n! = n * (n-1) * ... * 1.)
+
+**7. Kiểm tra số Palindrome:** Nhập vào một số nguyên dương, kiểm tra xem số đó có phải là số Palindrome không (số Palindrome là số đối xứng, tức là số đọc từ trái sang phải và từ phải sang trái đều giống nhau).
+
+**8. Tính tổng chữ số của một số nguyên:** Viết chương trình nhập một số nguyên dương và tính tổng các chữ số của số đó.
+
+**9. In tam giác số:** Nhập vào số nguyên `n`, in ra tam giác số có `n` dòng.
+
+**10. Tạo danh sách số Fibonacci:** Nhập vào số nguyên `n`, in ra dãy Fibonacci có `n` phần tử.
+
+</details>
+
+<details>
+<summary>Lời giải</summary>
+
+1.
+
+```python
+# Sử dụng for loop
+print('Sử dụng for loop:')
+for i in range(1, 11):
+    print(i, end=' ')
+
+# Sử dụng while loop
+n = 1
+print('Sử dụng while loop:')
+while n <= 10:
+    print(n, end=' ')
+    n += 1
+
+# Output
+# Sử dụng for loop:
+# 1 2 3 4 5 6 7 8 9 10
+# Sử dụng while loop:
+# 1 2 3 4 5 6 7 8 9 10
+```
+
+2.
+
+```python
+n = int(input("Nhập số nguyên dương n: "))
+sum_n = sum(range(1, n + 1))
+print("Tổng từ 1 đến", n, "là:", sum_n)
+
+# Output
+# Nhập số nguyên dương n: 5
+# Tổng từ 1 đến 5 là: 15
+```
+
+3.
+
+```python
+for i in range(2, 21, 2):
+    print(i, end=' ')
+
+# Output
+# 2 4 6 8 10 12 14 16 18 20
+```
+
+4.
+
+```python
+for i in range(2, 10):
+    print(f"Bảng cửu chương {i}:")
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i*j}")
+    print()
+
+# Output
+# Bảng cửu chương 2:
+# 2 x 1 = 2
+# 2 x 2 = 4
+# 2 x 3 = 6
+# 2 x 4 = 8
+# 2 x 5 = 10
+# 2 x 6 = 12
+# ...
+```
+
+5.
+
+```python
+n = int(input("Nhập số nguyên dương: "))
+reversed_n = 0
+while n > 0:
+    reversed_n = reversed_n * 10 + n % 10
+    n //= 10
+print("Số sau khi đảo ngược là:", reversed_n)
+
+# Output
+# Nhập số nguyên dương: 12345
+# Số sau khi đảo ngược là: 54321
+```
+
+6.
+
+```python
+num = int(input("Nhập một số nguyên dương: "))
+factorial = 1
+
+if num < 0:
+    print("Không thể tính giai thừa của số âm.")
+elif num == 0:
+    print("Giai thừa của 0 là 1.")
+else:
+    for i in range(1, num + 1):
+        factorial *= i
+    print("Giai thừa của", num, "là", factorial)
+
+# Output
+# Nhập một số nguyên dương: 5
+# Giai thừa của 5 là 120
+```
+
+7.
+
+```python
+n = input("Nhập số nguyên: ")
+if n == n[::-1]:
+    print("Là số Palindrome")
+else:
+    print("Không phải số Palindrome")
+
+# Output
+# Nhập số nguyên: 12321
+# Là số Palindrome
+```
+
+8.
+
+```python
+num = int(input("Nhập một số nguyên dương: "))
+total = 0
+while num > 0:
+    total += num % 10
+    num //= 10
+
+print("Tổng các chữ số của số nguyên là:", total)
+
+# Output
+# Nhập một số nguyên dương: 12345
+# Tổng các chữ số của số nguyên là: 15
+```
+
+9.
+
+```python
+n = int(input("Nhập số dòng của tam giác: "))
+for i in range(1, n + 1):
+    print(" ".join(str(x) for x in range(1, i + 1)))
+
+# Output
+# Nhập số dòng của tam giác: 5
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+```
+
+10.
+
+```python
+n = int(input("Nhập số phần tử Fibonacci: "))
+fibo = [0, 1]
+for i in range(2, n):
+    fibo.append(fibo[-1] + fibo[-2])
+print("Dãy Fibonacci:", fibo[:n])
+
+# Output
+# Nhập số phần tử Fibonacci: 10
+# Dãy Fibonacci: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+```
+</details>

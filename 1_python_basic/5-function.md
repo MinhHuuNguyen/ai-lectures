@@ -283,3 +283,386 @@ print('f = ', f)
 # Output:
 # f = 15
 ```
+
+---
+
+## Luyện tập
+
+<details>
+<summary>Câu hỏi trắc nghiệm</summary>
+
+**1. Hàm `def` trong Python dùng để làm gì?**
+
+**A.** Định nghĩa một biến
+
+**B.** Định nghĩa một lớp
+
+**C.** Định nghĩa một hàm
+
+**D.** Định nghĩa một module  
+
+**2. Hàm `lambda` trong Python còn được gọi là gì?**
+
+**A.** Hàm vô danh
+
+**B.** Hàm tĩnh
+
+**C.** Hàm toàn cục
+
+**D.** Hàm có tham số động  
+
+**3. Hàm `lambda` có thể có bao nhiêu biểu thức?**
+
+**A.** Không giới hạn
+
+**B.** Chỉ một biểu thức
+
+**C.** Tối đa ba biểu thức
+
+**D.** Không có biểu thức nào  
+
+**4. Khi nào nên sử dụng `lambda` thay vì `def`?**
+
+**A.** Khi cần định nghĩa một hàm nhanh, ngắn gọn
+
+**B.** Khi cần tạo một hàm phức tạp với nhiều dòng code
+
+**C.** Khi cần một hàm có nhiều câu lệnh
+
+**D.** Khi cần sử dụng vòng lặp trong hàm  
+
+**5. Kết quả của đoạn code sau là gì?**
+
+```python
+add = lambda x, y: x + y
+print(add(3, 5))
+```
+
+**A.** `3`
+
+**B.** `5`
+
+**C.** `8`
+
+**D.** Lỗi
+
+**6. Điều nào là đúng về hàm `lambda`?**
+
+**A.** Có thể chứa nhiều câu lệnh
+
+**B.** Luôn trả về `None`
+
+**C.** Có thể có nhiều tham số nhưng chỉ một biểu thức
+
+**D.** Không thể gán cho biến
+
+**7. Hàm `def` có thể trả về giá trị không?**
+
+**A.** Có, khi sử dụng từ khóa `return`
+
+**B.** Không, hàm def không thể trả về giá trị
+
+**C.** Chỉ trả về giá trị nếu gọi lại chính nó
+
+**D.** Luôn trả về `None`
+
+**8. Kết quả của đoạn code sau là gì?**
+
+```python
+def func():
+    return lambda x: x * 2
+
+double = func()
+print(double(4))
+```
+
+**A.** `8`
+
+**B.** `4`
+
+**C.** `Lỗi`
+
+**D.** `None`
+
+**9. Câu nào đúng về hàm `lambda`?**
+
+**A.** Không thể truyền làm đối số cho các hàm khác
+
+**B.** Không thể trả về một giá trị
+
+**C.** Có thể sử dụng trong `map()`, `filter()`, `sorted()`
+
+**D.** Không thể được gán vào một biến
+
+**10. Kết quả của đoạn code sau là gì?**
+
+```python
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)
+```
+
+**A.** `[1, 2, 3, 4]`
+
+**B.** `[2, 4, 6, 8]`
+
+**C.** `[1, 4, 9, 16]`
+
+**D.** Lỗi
+
+**11. Hàm `lambda` có thể có bao nhiêu tham số?**
+
+**A.** Chỉ một tham số
+
+**B.** Chỉ hai tham số
+
+**C.** Không giới hạn số lượng tham số
+
+**D.** Không có tham số nào
+
+**12. Điều nào là đúng về sự khác biệt giữa `lambda` và `def`?**
+
+**A.** Hàm `lambda` có thể chứa nhiều dòng lệnh hơn `def`
+
+**B.** Hàm `def` có thể chứa nhiều dòng lệnh hơn `lambda`
+
+**C.** Hàm `lambda` có thể có nhiều câu lệnh và vòng lặp
+
+**D.** Không có sự khác biệt nào
+
+**13. Cách nào đúng để viết hàm `lambda` tính tổng hai số?**
+
+**A.** `lambda x y: x + y`
+
+**B.** `lambda (x, y): x + y`
+
+**C.** `lambda x, y: x + y`
+
+**D.** `lambda: x + y`
+
+**14. Kết quả của đoạn code sau là gì?**
+
+```python
+func = lambda x: x if x > 0 else -x
+print(func(-10))
+```
+
+**A.** `-10`
+
+**B.** `10`
+
+**C.** `0`
+
+**D.** Lỗi
+
+**15. Điều nào sau đây là sai về hàm `lambda`?**
+
+**A.** Có thể trả về giá trị
+
+**B.** Có thể có nhiều dòng lệnh
+
+**C.** Có thể có nhiều tham số
+
+**D.** Có thể dùng với `map()` và `filter()`
+
+</details>
+
+<details>
+<summary>Đáp án</summary>
+
+**1. C.** Định nghĩa một hàm
+
+**2. A.** Hàm vô danh
+
+**3. B.** Chỉ một biểu thức
+
+**4. A.** Khi cần định nghĩa một hàm nhanh, ngắn gọn
+
+**5. C.** 8
+
+**6. C.** Có thể có nhiều tham số nhưng chỉ một biểu thức
+
+**7. A.** Có, khi sử dụng từ khóa `return`
+
+**8. A.** 8
+
+**9. C.** Có thể sử dụng trong `map()`, `filter()`, `sorted()`
+
+**10. C.** [1, 4, 9, 16]
+
+**11. C.** Không giới hạn số lượng tham số
+
+**12. B.** Hàm def có thể chứa nhiều dòng lệnh hơn lambda
+
+**13. C.** `lambda x, y: x + y`
+
+**14. B.** 10
+
+**15. B.** Có thể có nhiều dòng lệnh
+
+</details>
+
+<details>
+<summary>Bài tập thực hành</summary>
+
+**1. Viết hàm tính tổng hai số:** Viết một hàm `def` nhận vào hai số và trả về tổng của chúng.
+
+**2. Viết hàm lambda tính bình phương của một số:** Sử dụng hàm lambda để tính bình phương của một số.
+
+**3. Viết hàm kiểm tra số chẵn:** Viết một hàm def nhận vào một số nguyên và trả về True nếu số đó là số chẵn, ngược lại trả về False.
+
+**4. Viết hàm lambda kiểm tra số lẻ:** Sử dụng lambda để kiểm tra một số có phải là số lẻ hay không.
+
+**5. Viết hàm tính giai thừa của một số:** Viết hàm def để tính giai thừa của một số nguyên dương.
+
+**6. Viết hàm lambda tính tổng hai số:** Viết một hàm lambda để tính tổng hai số.
+
+**7. Viết hàm đếm số nguyên tố trong một danh sách:** Viết một hàm def nhận vào một danh sách số nguyên và trả về số lượng số nguyên tố trong danh sách.
+
+**8. Sử dụng hàm lambda để sắp xếp danh sách tuple theo phần tử thứ hai:** Cho danh sách các tuple [(1, 5), (2, 3), (3, 8)]. Hãy sử dụng lambda để sắp xếp danh sách theo phần tử thứ hai.
+
+**9. Viết hàm lambda tìm số lớn nhất trong ba số:** Sử dụng lambda để tìm số lớn nhất trong ba số.
+
+**10. Viết hàm đếm số lần xuất hiện của ký tự trong chuỗi:** Viết hàm def nhận vào một chuỗi và một ký tự, trả về số lần ký tự đó xuất hiện trong chuỗi.
+
+</details>
+
+<details>
+<summary>Lời giải</summary>
+
+1.
+
+```python
+def add(a, b):
+    return a + b
+
+c = add(1, 2)
+print('c = ', c)
+
+# Output:
+# c = 3
+```
+
+2.
+
+```python
+square = lambda x: x ** 2
+
+y = square(3)
+print('y = ', y)
+
+# Output:
+# y = 9
+```
+
+3.
+
+```python
+def is_even(n):
+    return n % 2 == 0
+
+print(is_even(2))
+print(is_even(3))
+
+# Output:
+# True
+# False
+```
+
+4.
+
+```python
+is_odd = lambda n: n % 2 != 0
+
+print(is_odd(2))
+print(is_odd(3))
+
+# Output:
+# False
+# True
+```
+
+5.
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
+
+# Output:
+# 120
+```
+
+6.
+
+```python
+add = lambda a, b: a + b
+
+c = add(1, 2)
+print('c = ', c)
+
+# Output:
+# c = 3
+```
+
+7.
+
+```python
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def count_prime(lst):
+    return sum([is_prime(x) for x in lst])
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(count_prime(lst))
+
+# Output:
+# 4
+```
+
+8.
+
+```python
+lst = [(1, 5), (2, 3), (3, 8)]
+lst.sort(key=lambda x: x[1])
+print(lst)
+
+# Output:
+# [(2, 3), (1, 5), (3, 8)]
+```
+
+9.
+
+```python
+max_num = lambda a, b, c: max(a, b, c)
+
+print(max_num(1, 2, 3))
+
+# Output:
+# 3
+```
+
+10.
+
+```python
+def count_char(s, c):
+    return s.count(c)
+
+s = 'hello, world!'
+
+print(count_char(s, 'l'))
+
+# Output:
+# 3
+```
+
+</details>
