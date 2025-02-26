@@ -1,9 +1,7 @@
 ---
-slug: data-analysis-with-python-syllabus
 time: 01/09/2022
 title: "Syllabus: DATA ANALYSIS WITH PYTHON"
 description: Python được sử dụng nhiều trong thời gian gần đây trong lĩnh vực phân tích dữ liệu nhờ vào các thư viện mạnh mẽ như Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn. Bài viết này sẽ tổng hợp danh sách một số kiến thức cơ bản nhất về các thư viện phục vụ cho việc phân tích dữ liệu với Python.
-author: Nguyễn Hữu Minh
 banner_url:
 tags: [python, syllabus]
 is_highlight: false

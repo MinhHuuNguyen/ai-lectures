@@ -3,7 +3,7 @@ time:
 title: Giới thiệu chung về Trí tuệ nhân tạo Artificial Intelligence
 description: Trí tuệ nhân tạo - Artificial Intelligence là một lĩnh vực nghiên cứu và ứng dụng các phương pháp máy tính để mô phỏng và mở rộng khả năng tư duy của con người. Trong những năm gần đây, AI đã phát triển mạnh mẽ và đóng góp rất nhiều ứng dụng từ hỗ trợ con người đến tự động hóa các công việc. Bài giới thiệu này sẽ giới thiệu chung về Trí tuệ nhân tạo - AI, Máy học - Machine Learning và Học sâu - Deep Learning.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/ai_vs_ml_vs_dl.png
-tags: [python, series]
+tags: [machine-learning , deep-learning]
 is_highlight: false
 is_published: true
 ---
