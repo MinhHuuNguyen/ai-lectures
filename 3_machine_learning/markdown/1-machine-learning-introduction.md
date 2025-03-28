@@ -1,5 +1,5 @@
 ---
-time: 11/09/2024
+time: 07/12/2022
 title: Các nhóm bài toán và mô hình Machine Learning
 description: Machine learning được chia thành nhiều nhóm bài toán và mô hình khác nhau, mỗi nhóm giải quyết một loại bài toán cụ thể. Bài viết này sẽ giới thiệu về các nhóm bài toán và mô hình Machine Learning phổ biến và quy trình đơn giản nhất để xây dựng mô hình ML.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/problems_algorithms.jpeg

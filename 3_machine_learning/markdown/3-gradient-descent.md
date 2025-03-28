@@ -1,5 +1,5 @@
 ---
-time: 11/09/2024
+time: 07/19/2022
 title: Thuật toán tối ưu Gradient Descent
 description: Trong Machine Learning, ta thường dùng phép toán đạo hàm để tối ưu hàm loss. Tuy nhiên, trong đa số các trường hợp, việc tính đạo hàm của hàm loss là không thể hoặc rất khó khăn, đặc biệt khi kiến trúc mô hình phức tạp và bộ dữ liệu lớn. Trong bài viết này, chúng ta sẽ tìm hiểu về thuật toán tối ưu Gradient Descent, một trong những phương pháp phổ biến nhất để tối ưu hàm loss trong Machine Learning.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/banner.png

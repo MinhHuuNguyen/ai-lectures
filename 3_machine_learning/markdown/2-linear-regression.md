@@ -1,5 +1,5 @@
 ---
-time:
+time: 07/16/2022
 title: Mô hình Linear Regression
 description: Mô hình Linear Regression là một trong những mô hình đơn giản nhất trong các Machine Learning. Mô hình Linear Regression thường được sử dụng để dự đoán giá trị của một biến liên tục dựa trên một hoặc nhiều biến đầu vào.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price.png
