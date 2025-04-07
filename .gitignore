@@ -4,16 +4,8 @@
 __pycache__
 
 # Datasets
-dog_cat_dataset
-covid19_tweets_dataset
-speech_emotion_dataset
-demand_forecasting_dataset
-predict_future_sales
-house_prices_dataset
-brain_tumor_dataset
-lg_innotek_data
-image_data
-brain_tumor_coco
+3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/dog_cat_dataset
+3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/results
 
 # Checkpoint files
 *.pth
