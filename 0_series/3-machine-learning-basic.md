@@ -29,7 +29,7 @@ is_published: true
 
 ([bài viết chi tiết](/blog/cac-nhom-bai-toan-va-mo-hinh-machine-learning))
 
-## Bài 2: Mô hình Linear Regression
+## Bài 2: Mô hình hồi quy tuyến tính Linear Regression
 
 1. Bài toán dự đoán giá nhà
 2. Kiến trúc mô hình
@@ -38,21 +38,36 @@ is_published: true
 5. Phương pháp tối ưu mô hình
 6. Chỉ số đánh giá mô hình
 
-([bài viết chi tiết](/blog/mo-hinh-linear-regression))
+([bài viết chi tiết](/blog/mo-hinh-hoi-quy-tuyen-tinh-linear-regression))
 
 ## Bài 3:  Thuật toán tối ưu Gradient Descent
 
 1. Nhắc lại về bài toán Khảo sát hàm số
-2. Thuật toán Gradient Descent với 1 biến
-3. Thuật toán Gradient Descent với nhiều biến
+2. Ý tưởng của thuật toán Gradient Descent
+3. Ảnh hưởng của các tham số trong thuật toán Gradient Descent
 
 ([bài viết chi tiết](/blog/thuat-toan-toi-uu-gradient-descent))
 
-## Bài 4: Mô hình Logistic Regression
+## Bài 4: Mô hình hồi quy logistic Logistic Regression
 
-([bài viết chi tiết](/blog/mo-hinh-logistic-regression))
+1. Bài toán phân lớp nhị phân - Binary classification
+2. Ý tưởng chung của logistic regression
+3. Hàm kích hoạt Sigmoid
+4. Bài toán phân lớp nhiều label - Multi-label classification
+5. Bài toán phân lớp nhiều lớp - Multi-class classification
+6. Hàm kích hoạt Softmax
+7. Hàm kích hoạt Tanh
+
+([bài viết chi tiết](/blog/mo-hinh-hoi-quy-logistic-logistic-regression))
 
 ## Bài 5: Metrics đánh giá cho bài toán classification
+
+1. Chỉ số Accuracy
+2. Bài toán về sản phẩm tốt và sản phẩm lỗi trong hàng hoá
+3. Confusion matrix
+4. Precision - Recall - F score - Specificity
+5. Confusion matrix đối với bài toán multi-class classification
+6. Chỉ số ROC - AUC
 
 ([bài viết chi tiết](/blog/metrics-danh-gia-cho-bai-toan-classification))
 
