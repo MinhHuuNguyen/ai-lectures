@@ -2,7 +2,7 @@
 time: 07/26/2022
 title: Mô hình hồi quy logistic Logistic regression
 description: Mô hình Linear regression là mô hình đơn giản để giải quyết bài toán regression, còn đối với bài toán classification, ta có mô hình Logistic regression. Mô hình Logistic regression có thể giải quyết bài toán phân lớp nhị phân (binary classification), bài toán phân lớp nhiều label (multi-label classification) và bài toán phân lớp nhiều lớp (multi-class classification).
-banner_url: 
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/classification_banner.webp
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -23,7 +23,7 @@ Giá trị này có thể được hiểu như xác suất mà điểm dữ li�
 Thông thường, giá trị này là 0.5.
 Nếu giá trị đầu ra của mô hình lớn hơn ngưỡng này, ta sẽ phân loại điểm dữ liệu đó thuộc lớp positive, ngược lại, ta sẽ phân loại điểm dữ liệu đó thuộc lớp negative.
 
-<img src="hình ảnh dog cat binary classification" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/dog_cat_binary_classification.jpeg" style="width: 600px;"/>
 
 Ví dụ: Xét bài toán phân lớp nhị phân với dữ liệu ảnh và hai lớp dữ liệu là chó và mèo.
 - Ta có thể quy ước lớp chó là lớp positive (label được mã hoá là số 1) và lớp mèo là lớp negative (label được mã hoá là số 0).
@@ -32,7 +32,7 @@ Giả sử, với một hình ảnh nào đó, mô hình trả đầu ra là 0.8
 - Giả sử, ta chọn ngưỡng tự tin là 0.5, lúc này, với giá trị đầu ra là 0.8, ta sẽ phân loại hình ảnh đó thuộc lớp chó (lớp positive).
 Một giả sử khác, nếu ta chọn ngưỡng tự tin là 0.9, lúc này, với giá trị đầu ra là 0.8, ta sẽ phân loại hình ảnh đó thuộc lớp mèo (lớp negative).
 
-<img src="hình ảnh mạng nơ ron logistic regression với 1 output" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/logistic_regression_1_output.png" style="width: 600px;"/>
 
 ## 2. Ý tưởng chung của logistic regression
 
@@ -72,7 +72,7 @@ Giá trị đầu ra của hàm Sigmoid có thể được hiểu như giá tr�
 Nhược điểm của hàm Sigmoid là hàm có gradient rất nhỏ khi đầu vào là các giá trị rất lớn lớn hoặc rất nhỏ.
 Điều này dẫn đến hiện tượng vanishing gradient, làm cho việc tối ưu mô hình trở nên khó khăn hơn.
 
-<img src="hình ảnh mạng nơ ron logistic regression với hàm Sigmoid và 1 output" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/logistic_regression_sigmoid_output.png" style="width: 600px;"/>
 
 ### 3.2. Hàm loss Binary Cross Entropy
 
