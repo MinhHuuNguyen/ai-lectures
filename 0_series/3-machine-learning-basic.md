@@ -66,8 +66,8 @@ is_published: true
 2. Bài toán về sản phẩm tốt và sản phẩm lỗi trong hàng hoá
 3. Confusion matrix
 4. Precision - Recall - F score - Specificity
-5. Confusion matrix đối với bài toán multi-class classification
-6. Chỉ số ROC - AUC
+5. Confusion matrix trong bài toán multi-class classification
+<!-- 6. Chỉ số ROC - AUC -->
 
 ([bài viết chi tiết](/blog/metrics-danh-gia-cho-bai-toan-classification))
 
