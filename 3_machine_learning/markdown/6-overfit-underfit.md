@@ -2,7 +2,7 @@
 time: 08/02/2022
 title: Hiện tượng Overfit và Underfit
 description: Trong quá trình huấn luyện mô hình machine learning, ta thường gặp phải hiện tượng overfit và underfit. Hai hiện tượng này khiến cho việc huấn luyện mô hình gặp nhiều khó khăn và gây ra sự sai sót trong quá trình đánh giá mô hình.
-banner_url: 
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/banner.png
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -15,7 +15,7 @@ Trong đó, bộ dữ liệu train đại diện cho những dữ liệu mà mô
 
 Việc lựa chọn mô hình machine learning phù hợp để học bộ dữ liệu train và cho kết quả dự đoán tốt trên bộ dữ liệu test là điều quan trọng nhất trong quá trình huấn luyện nhưng ko dễ để thực hiện.
 
-<img src="hình ảnh tương quan giữa độ phức tạp của mô hình và của bộ dữ liệu" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/model_vs_data_complexity.png" style="width: 500px;"/>
 
 Trong quá trình huấn luyện mô hình machine learning, ta cần xem xét đến độ phức tạp của mô hình tương quan với độ phức tạp của bộ dữ liệu train.
 - Độ phức tạp của mô hình thể hiện khả năng mà mô hình có thể học được những quy luật, xu hướng trong bộ dữ liệu train.
@@ -116,6 +116,8 @@ trong đó:
 - $L_{reg}$ là hàm ràng buộc (regularization function) của mô hình.
 - $\lambda$ là tham số điều chỉnh độ mạnh của regularization.
 - Nếu $\lambda$ = 0, mô hình sẽ không bị regularization.
+
+Kỹ thuật regularization còn được gọi là weight decay hay weight regularization.
 
 ### 4.2. Các loại regularization
 

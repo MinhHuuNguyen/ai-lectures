@@ -73,4 +73,20 @@ is_published: true
 
 ## Bài 6: Hiện tượng Overfit và Underfit
 
+1. Tương quan giữa dữ liệu và mô hình trong quá trình huấn luyện
+2. Hiện tượng Underfitting
+3. Hiện tượng Overfitting
+4. Kỹ thuật Regularization
+5. Vai trò của bộ dữ liệu validation
+
 ([bài viết chi tiết](/blog/hien-tuong-overfit-va-underfit))
+
+## Bài 7: Mô hình K-Nearest Neighbors (KNN)
+
+1. Tổng quan
+2. Các bước của thuật toán
+3. Công thức tính khoảng cách
+4. Ưu điểm và nhược điểm của KNN
+5. Các biến thể nâng cấp của KNN
+
+([bài viết chi tiết](/blog/mo-hinh-k-nearest-neighbors-knn))
