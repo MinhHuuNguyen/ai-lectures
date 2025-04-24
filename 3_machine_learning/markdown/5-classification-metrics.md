@@ -2,7 +2,7 @@
 time: 07/30/2022
 title: Metrics đánh giá cho bài toán classification
 description: Bài toán classification là một trong những bài toán phổ biến nhất trong machine learning. Để đánh giá được chất lượng của mô hình sao cho chính xác và khách quan nhất, ta cần xây dựng bộ các metrics đánh giá cho bài toán classification. Có nhiều metrics khác nhau cho bài toán classification, các chỉ số này có những điểm mạnh và điểm yếu riêng. Trong bài viết này, ta sẽ cùng nhau tìm hiểu về các metrics đánh giá cho bài toán classification.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/banner.png
 tags: [machine-learning]
 is_highlight: false
 is_published: true
