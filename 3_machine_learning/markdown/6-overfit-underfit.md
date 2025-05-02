@@ -49,7 +49,7 @@ Biểu hiện của hiện tượng underfit là giá trị loss của mô hình
 
 Ta chỉ cần quan sát thấy giá trị loss trên bộ train thấp là đã có thể nhận biết được mô hình đang bị underfit, giá trị loss trên bộ test thấp là điều hiển nhiên kéo theo.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/underfit_loss.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/underfit_loss.png" style="width: 800px;"/>
 
 Ngoài chỉ số loss, ta cũng có thể sử dụng các chỉ số khác như accuracy, precision, recall, ... đối với bài toán classification hay R2 score ... đối với bài toán regression để đánh giá hiện tượng underfit.
 
@@ -82,7 +82,7 @@ Nhưng chỉ cần khác một chút, đưa cho mô hình những điểm dữ l
 Biểu hiện của hiện tượng overfit là giá trị loss của mô hình trên cả bộ train và bộ test đều giảm dần trong giai đoạn đầu.
 Tuy nhiên, sau một thời gian, giá trị loss trên bộ train tiếp tục giảm nhưng giá trị loss trên bộ test lại tăng lên.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/overfit_loss.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/overfit_loss.png" style="width: 800px;"/>
 
 Ngoài chỉ số loss, ta cũng có thể sử dụng các chỉ số khác như accuracy, precision, recall, ... đối với bài toán classification hay R2 score ... đối với bài toán regression trên cả bộ dữ liệu train và bộ dữ liệu test để đánh giá hiện tượng overfit.
 
@@ -175,6 +175,14 @@ Ta sẽ phân tích và cải thiện mô hình dựa trên kết quả trên b�
 
 Việc xuất hiện thêm bộ dữ liệu validation sẽ giúp ta có được một cái nhìn tổng quan hơn về mô hình.
 Mô hình cần phải cho ra những dự đoán tốt trên cả ba bộ dữ liệu train, validation và test.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/train_vs_val_vs_test.png" style="width: 800px;"/>
+
+| **Giai đoạn** | **Mục đích chính** | **Ý chính cần nhớ** |
+|---------------|-------------------|---------------------|
+| **Training Set** | Cung cấp phần lớn dữ liệu cho thuật toán để nó học được các trọng số/tham số. | Phần dữ liệu duy nhất dùng để *huấn luyện* mô hình. |
+| **Validation Set** | Kiểm tra hiệu suất trong quá trình phát triển—hướng dẫn chọn siêu tham số và dừng sớm để tránh overfitting. | Giống một “bài kiểm tra thử” khi bạn còn đang tinh chỉnh mô hình. |
+| **Test Set** | Giữ lại đến cuối cùng để đánh giá khả năng khái quát thực sự trên dữ liệu chưa từng thấy. | Cho ra điểm số một lần, khách quan, để báo cáo hoặc so sánh các mô hình. |
 
 Tóm lại, với ba bộ dữ liệu train, validation và test:
 - Nếu mô hình học kém trên bộ train, mô hình bị underfit.

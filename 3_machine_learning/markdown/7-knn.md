@@ -2,7 +2,7 @@
 time: 08/05/2022
 title: Mô hình K-Nearest Neighbors (KNN)
 description: KNN là một trong những mô hình machine learning đơn giản và dễ hiểu nhất, có thể được sử dụng cho cả bài toán phân loại và hồi quy.
-banner_url: 
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/banner.png
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -13,6 +13,8 @@ is_published: true
 K-Nearest Neighbors (KNN) là một trong những thuật toán học có giám sát (supervised learning) đơn giản và trực quan, có thể áp dụng cho cả bài toán phân loại (classification) và hồi quy (regression).
 
 Nguyên lý cơ bản của KNN: để dự đoán nhãn (class đối với bài toán classification) hay giá trị (value đối với bài toán regression) của một điểm dữ liệu mới, KNN tìm K điểm dữ liệu “gần nhất” trong tập huấn luyện rồi dùng thông tin từ các điểm đó để đưa ra dự đoán.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/classification_vs_regression.png" style="width: 500px;"/>
 
 ## 2. Các bước của thuật toán
 
@@ -41,6 +43,8 @@ trong đó:
 
 Khoảng cách Euclidean thường được sử dụng trong đa số các trường hợp.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/euclidean.png" style="width: 500px;"/>
+
 ### 3.2. Khoảng cách Manhattan
 
 Khoảng cách Manhattan (hay còn gọi là khoảng cách L1) được tính bằng tổng các khoảng cách tuyệt đối giữa các thành phần của hai vector. Nó được tính bằng công thức:
@@ -49,6 +53,8 @@ $$ d(x, y) = \sum_{i=1}^{n} |x_i - y_i| $$
 
 trong đó:
 - $x_i$ và $y_i$ là các thành phần của vector $x$ và $y$.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/manhattan.png" style="width: 500px;"/>
 
 ### 3.3. Khoảng cách Minkowski
 
@@ -61,6 +67,8 @@ trong đó:
 Khi $p=1$, nó trở thành khoảng cách Manhattan, và khi $p=2$, nó trở thành khoảng cách Euclidean.
 - $x_i$ và $y_i$ là các thành phần của vector $x$ và $y$.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/minkowski_dist.png" style="width: 500px;"/>
+
 ### 3.4. Khoảng cách Cosine
 
 Khoảng cách Cosine đo lường độ tương đồng giữa hai vector bằng cách tính cosine của góc giữa chúng. Nó được tính bằng công thức:
@@ -70,6 +78,8 @@ $$ d(x, y) = 1 - \frac{x \cdot y}{||x|| \cdot ||y||} $$
 trong đó:
 - $x \cdot y$ là tích vô hướng của hai vector $x$ và $y$.
 - $||x||$ và $||y||$ là độ dài (norm) của vector $x$ và $y$.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/cosine.png" style="width: 500px;"/>
 
 ## 4. Ưu điểm và nhược điểm của KNN
 
@@ -90,6 +100,8 @@ Có thể sử dụng trọng số cho các láng giềng dựa trên khoảng c
 Trọng số có thể được tính bằng cách sử dụng hàm khoảng cách, ví dụ như:
 $$ w(x_i) = \frac{1}{d(x, x_i)} $$
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/weighted_knn.png" style="width: 500px;"/>
+
 Ví dụ: Xét 1 điểm dữ liệu mới $x$ và 3 điểm láng giềng gần nhất $x_1$, $x_2$, $x_3$ thuộc các lớp $C_1$, $C_1$, $C_2$ với khoảng cách tương ứng là $d_1$, $d_2$, $d_3$. Ta có thể tính trọng số cho các lớp như sau:
 $$ w(C_1) = \frac{1}{d_1} + \frac{1}{d_2} $$
 $$ w(C_2) = \frac{1}{d_3} $$
@@ -99,6 +111,8 @@ Sau đó, lớp có trọng số lớn nhất sẽ được chọn làm dự đo
 
 Trong một số vùng của không gian dữ liệu, các điểm huấn luyện có thể tập trung dày đặc (mật độ cao), trong khi ở vùng khác lại thưa thớt.
 Dùng cùng một giá trị K cho tất cả các điểm dữ liệu có thể không phải là lựa chọn tốt nhất, có thể khiến ở vùng thưa dữ liệu ta phải “vươn” rất xa để lấy đủ.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/dynamic-k-knn.png" style="width: 500px;"/>
 
 Ta có một số chiến lược để điều chỉnh giá trị K cho từng điểm dữ liệu:
 - **Dựa vào khoảng cách:** Thay vì đếm đúng K láng giềng, ta hướng tới "lấy tất cả các điểm trong bán kính R cố định", hoặc lập bán kính sao cho luôn có ít nhất K_min hoặc K_max điểm trong bán kính đó.
