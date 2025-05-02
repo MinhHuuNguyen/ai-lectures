@@ -14,7 +14,7 @@ K-Nearest Neighbors (KNN) là một trong những thuật toán học có giám 
 
 Nguyên lý cơ bản của KNN: để dự đoán nhãn (class đối với bài toán classification) hay giá trị (value đối với bài toán regression) của một điểm dữ liệu mới, KNN tìm K điểm dữ liệu “gần nhất” trong tập huấn luyện rồi dùng thông tin từ các điểm đó để đưa ra dự đoán.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/classification_vs_regression.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/classification_vs_regression.png" style="width: 1000px;"/>
 
 ## 2. Các bước của thuật toán
 
