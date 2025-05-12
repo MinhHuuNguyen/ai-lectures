@@ -16,7 +16,7 @@ Câu hỏi mà SVM đặt ra là: "Trong các đường phân lớp được t�
 
 Mô hình SVM đề xuất ra các tiêu chí và phương pháp để tìm ra đường phân lớp tốt nhất trong số các đường phân lớp có thể có.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/banner.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/comparison.png" style="width: 600px;"/>
 
 ## 2. Công thức tính khoảng cách từ 1 điểm
 
@@ -151,7 +151,7 @@ trong đó giá trị $\xi_i$ có các trường hợp sau:
 - Nếu điểm dữ liệu được phân lớp đúng và nằm trong margin, thì $\xi_i = d_i$ và $d_i < 1$.
 - Nếu điểm dữ liệu bị phân lớp sai, thì $\xi_i = d_i$ và $d_i \geq 1$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/c_value_comparison.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/c_value_comparison.png" style="width: 900px;"/>
 
 Tham số $C$ là trong hàm mục tiêu trên là tham số điều chỉnh để cân bằng giữa độ rộng của margin và số điểm dữ liệu bị phân lớp sai hoặc nằm trong vùng nguy hiểm.
 - $C$ càng lớn thì độ rộng của margin càng nhỏ, số lượng điểm dữ liệu bị phân lớp sai hoặc nằm trong vùng nguy hiểm càng ít.
