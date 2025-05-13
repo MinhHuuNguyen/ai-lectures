@@ -18,7 +18,7 @@ Mô hình này được sử dụng rộng rãi trong các bài toán phân lo�
 
 ## 2. Một số kiến thức trong xác suất thống kê
 
-Tham khảo một số khái niệm về xác suất thống kê trong bài viết [này]().
+Tham khảo một số khái niệm về xác suất thống kê trong bài viết [này](/blog/mot-so-khai-niem-co-ban-trong-xac-suat).
 
 Mô hình Naive Bayes Classification là một mô hình phân loại dựa vào định lý Bayes.
 Định lý Bayes được phát biểu như sau:
@@ -184,9 +184,9 @@ $$ P(w|y) = \frac{N(w, y)}{N(y)} $$
 
 $$ P(w|y) = \frac{N(w, y) + 1}{N(y) + |V|} $$
 
-Từ công thức trên, ta tính toán được các xác suất tương ứng với mỗi từ trong từ điển $V$ như sau:
+Từ công thức trên, ta tính toán được các xác suất tương ứng với mỗi từ trong từ điển $V$ như sau, đối với lớp Positive $P(w|y=Positive)$ và đối với lớp Negative $P(w|y=Negative)$:
 
-| Từ trong từ điển $V$ | $P(w|y=Positive)$ | $P(w|y=Negative)$ |
+| Từ trong từ điển $V$ | Đối với lớp Positive | Đối với lớp Negative |
 | --------------------- | ------------------ | ------------------ |
 | tôi                   | $\frac{2+1}{3+19} = 0.15$ | $\frac{0+1}{3+19} = 0.05$ |
 | thích                 | $\frac{1+1}{3+19} = 0.10$ | $\frac{0+1}{3+19} = 0.05$ |

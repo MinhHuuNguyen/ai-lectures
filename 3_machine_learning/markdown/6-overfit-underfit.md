@@ -129,8 +129,8 @@ Có nhiều loại hàm $L_{reg}$ khác nhau, nhưng phổ biến nhất là hai
 $$ L_{1} = \sum_{i=1}^{n} |w_i| $$
 - **L2 regularization** (Ridge Regression): Hàm $L_{2}$ là tổng các giá trị bình phương của các tham số trong mô hình.
 $$ L_{2} = \sum_{i=1}^{n} w_i^2 $$
-- **Elastic Net**: Hàm $L_{\text{elastic_net}}$ là tổng các giá trị tuyệt đối và bình phương của các tham số trong mô hình.
-$$ L_{\text{elastic_net}} = \sum_{i=1}^{n} |w_i| + \sum_{i=1}^{n} w_i^2 $$
+- **Elastic Net**: Hàm $L_{elastic net}$ là tổng các giá trị tuyệt đối và bình phương của các tham số trong mô hình.
+$$ L_{elastic net} = \sum_{i=1}^{n} |w_i| + \sum_{i=1}^{n} w_i^2 $$
 
 trong đó $w_i$ là các tham số trong mô hình.
 
