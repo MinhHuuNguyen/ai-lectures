@@ -18,6 +18,8 @@ Trong ví dụ về tung xúc xắc, biến ngẫu nhiên là số chấm thu đ
 **Không gian mẫu (sample space) là tập hợp tất cả các giá trị mà một biến ngẫu nhiên có thể nhận.**
 Trong ví dụ về tung xúc xắc, không gian mẫu là tập hợp tất cả các khả năng mà mặt trên của xúc xắc có thể nhận, cụ thể là 1 chấm, 2 chấm, 3 chấm, 4 chấm, 5 chấm, và 6 chấm.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11_math/images/2-probability/random_variable_sample_space.png" style="width: 800px;"/>
+
 **Biến cố (event) là một sự kiện xảy ra giúp ta nhận được một kết quả của biến ngẫu nhiên.**
 Trong ví dụ về tung xúc xắc, biến cố là sự kiện ta tung xúc xắc.
 

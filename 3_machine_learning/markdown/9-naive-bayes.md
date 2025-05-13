@@ -137,6 +137,10 @@ $$ y_{pred} = \arg\max_{y} \left( \sum_{i=1}^{n} \log(P(x_i|y)) + \log(P(y)) \ri
 
 Xét ví dụ bài toán Phân lớp văn bản: Phân lớp các lời nhận xét về món ăn thành 2 lớp: tích cực và tiêu cực.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/food_positive_negative.png" style="width: 600px;"/>
+
+Ta có bộ dữ liệu train như sau:
+
 | Văn bản                      | Nhãn     |
 | ---------------------------- | -------- |
 | tôi thích món ăn này         | Positive |
