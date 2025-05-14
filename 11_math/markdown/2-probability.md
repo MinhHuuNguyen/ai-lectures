@@ -18,13 +18,15 @@ Trong ví dụ về tung xúc xắc, biến ngẫu nhiên là số chấm thu đ
 **Không gian mẫu (sample space) là tập hợp tất cả các giá trị mà một biến ngẫu nhiên có thể nhận.**
 Trong ví dụ về tung xúc xắc, không gian mẫu là tập hợp tất cả các khả năng mà mặt trên của xúc xắc có thể nhận, cụ thể là 1 chấm, 2 chấm, 3 chấm, 4 chấm, 5 chấm, và 6 chấm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11_math/images/2-probability/random_variable_sample_space.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11_math/images/2-probability/random_variable_sample_space.png" style="width: 600px;"/>
 
 **Biến cố (event) là một sự kiện xảy ra giúp ta nhận được một kết quả của biến ngẫu nhiên.**
 Trong ví dụ về tung xúc xắc, biến cố là sự kiện ta tung xúc xắc.
 
 **Kết quả (outcome) là giá trị mà biến ngẫu nhiên nhận được sau khi biến cố xảy ra.**
 Trong ví dụ về tung xúc xắc, sau khi tung xúc xắc, ta thu được kết quả là 1 chấm chả hạn.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11_math/images/2-probability/event_outcome.png" style="width: 600px;"/>
 
 Khi ta thực hiện lặp đi lặp lại nhiều lần, ta có thể thu được nhiều kết quả khác nhau đối với cùng biến ngẫu nhiên, sẽ có những kết quả xuất hiện nhiều lần hơn các kết quả khác, sẽ có những kết quả xuất hiện ít lần hơn các lần khác, sẽ có những kết quả có số lần xuất hiện xấp xỉ nhau.
 
@@ -38,6 +40,8 @@ Trong ví dụ trên về việc tung xúc xắc, ta đang xét đến một bi�
 Mỗi kết quả đầu ra trong không gian mẫu sẽ có một giá trị xác suất tương ứng, giá trị xác suất này không âm và có tổng bằng 1.
 
 $$ \sum_{x} p(x) = 1 $$
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11_math/images/2-probability/discrete_continuous.png" style="width: 600px;"/>
 
 **Biến ngẫu nhiên liên tục là biến ngẫu nhiên mà không gian mẫu của nó là một khoảng giá trị cho trước, hay nói cách khác, không gian mẫu của nó là một tập hợp con của tập số thực.**
 Khoảng giá trị này có thể là hữu hạn (ví dụ: thời gian làm bài thi của một học sinh, nằm trong khoảng từ 0 phút đến 180 phút) hoặc là vô hạn (ví dụ: thời gian di chuyển từ điểm A đến điểm B của một chiếc xe).
@@ -126,3 +130,91 @@ Trong đó:
 - $p(x)$ là xác suất biên của biến ngẫu nhiên $x$.
 
 Định lý Bayes được sử dụng rất nhiều, đặc biệt trong các mô hình Machine Learning như Naive Bayes, Gaussian Mixture Model (GMM), Hidden Markov Model (HMM) ...
+
+
+## 3. Một số phân phối xác suất phổ biến
+
+#### 3.1. Phân phối Bernoulli (Bernoulli distribution)
+
+Phân phối Bernoulli là một phân phối rời rạc mô tả biến ngẫu nhiên nhị phân: nó mô tả trường hợp khi đầu ra chỉ nhận một trong hai giá trị $x ∈ {0, 1}$.
+
+Phân phối Bernoulli được mô tả bằng một tham số $\lambda \in [0, 1]$ và là xác suất để $x = 1$, ký hiệu là $p(x) = \text{Bern}_x [\lambda]$.
+Phân phối của mỗi giá trị đầu ra là:
+- $p(x = 1) = \lambda$ 
+- $p(x = 0) = 1 - p(x = 1) = 1 - \lambda$
+
+Hai đẳng thức này thường được viết gọn lại trở thành hàm mật độ xác suất:
+
+$$
+p(x) = \lambda^x (1 - \lambda)^{1 - x}
+$$
+
+Phân phối này được áp dụng trong các bài toán phân loại nhị phân như fraud/normal transaction, human/non-human in scence ...
+
+#### 3.2. Phân phối phân loại (Categorical distribution)
+
+Phân phối phân loại là dạng tổng quát của phân phối Bernoulli.
+Thay vì biến ngẫu nhiên nhị phân của phân phối Bernoulli, biến ngẫu nhiên trong phân phối phân loại có thể nhận một trong nhiều giá trị từ một tập hợp $\{1, 2, \dots, K\}$.
+
+Nếu có $K$ giá trị đầu ra có thể đạt được, phân phối phân loại sẽ được mô tả bởi $K$ tham số và viết dưới dạng vector: $\lambda = [\lambda_1, \lambda_2, \dots, \lambda_K]$ với các $\lambda_K$ không âm và có tổng bằng 1.
+Mỗi giá trị $\lambda_K$ thể hiện xác suất để biến ngẫu nhiên nhận giá trị $K$, ký hiệu là $p(x) = \text{Cat}_x [\lambda]$.
+
+Trong thực tế, ta thường ký hiệu tập hợp các giá trị đầu ra $\{1, 2, \dots, K\}$ dưới dạng one-hot $\mathbf{x} \in \{\mathbf{e}_1, \mathbf{e}_2, \dots, \mathbf{e}_K\}$ với $\mathbf{e}_K$ là vector gồm K phần tử, trong đó phần từ thứ $K$ bằng 1 còn các phần tử còn lại bằng 0.
+
+Từ đó, xác suất để biến ngẫu nhiên $x$ nhận giá trị $\mathbf{e}_k$ được xác nhận như sau:
+
+$$
+p(\mathbf{x} = \mathbf{e}_k) = \prod_{j=1}^K \lambda_j^{x_j} = \lambda_k
+$$
+
+Tích này sẽ gồm các thừa số $\lambda_j^{x_j} = 1$ ở các vị trí $x_j = 0, \forall j \neq k$ và thừa số $\lambda_j^{x_j} = \lambda_k$ ở vị trí $x_j = 1, j = k$.
+
+#### 3.3. Phân phối chuẩn một biến (Univariate normal distribution)
+
+Phân phối chuẩn là phân phối mô tả biến ngẫu nhiên liên tục nhận giá trị $x \in (-\infty, \infty)$
+
+Phân phối chuẩn được mô tả bởi hai tham số: kỳ vọng (mean) $\mu$ và phương sai (variance) $\sigma^2$ (hoặc độ lệch chuẩn (standard deviation) $\sigma$), được ký hiệu là $p(x) = \text{Norm}_x [\mu, \sigma^2]$.
+Trong đó, $\mu$ thể hiện vị trí đỉnh, nơi có mật độ xác suất cao nhất, $\sigma$ thể hiện độ rộng của phân phối, $\sigma$ lớn đồng nghĩa với phân phối có đầu ra biến đổi mạnh, $\sigma$ nhỏ đồng nghĩa với phân phối có đầu ra ổn định.
+
+Hàm mật độ xác suất của phân phối chuẩn một biến là:
+
+$$
+p(x) = \frac{1}{\sqrt{2\pi \sigma^2}}\exp \left( -\frac{(x - \mu)^2}{2\sigma^2}\right)
+$$
+
+<img src="https://drive.google.com/uc?id=1k82lCzAdXdqm1CMvSBWt3WCxBLwM2Lej" style="height: 400px;"/>
+
+<img src="https://drive.google.com/uc?id=1wivq36A2IQvP4fr1p7mB2BZJ21WKmRgk" style="height: 400px;"/>
+
+#### 3.4. Phân phối chuẩn nhiều biến (Multivariate normal distribution)
+
+Phân phối chuẩn nhiều biến là dạng tổng quát của phân phối chuẩn một biến, được sử dụng để mô tả biến ngẫu nhiên liên tục nhiều chiều.
+
+Giả sử ta xét biến ngẫu nhiên $D$ chiều, phân phối chuẩn nhiều biến được mô tả bởi hai tham số vector kỳ vọng (mean vector) $\mu \in R^D$ và ma trận hiệp phương sai (covariance matrix) $\Sigma \in \mathbb{S}_{++}^D$ là một ma trận đối xứng xác định dương.
+Hàm mật độ xác suất có dạng:
+
+$$
+p(\mathbf{x}) = \frac{1}{(2\pi)^{D/2} |\Sigma|^{1/2}} \exp \left(\frac{1}{2} (\mathbf{x} - \mu)^T \Sigma^{-1} (\mathbf{x} - \mu)\right)
+$$
+
+Vì sao ma trận hiệp phương sai lại là ma trận đối xứng xác định dương?
+Ma trận hiệp phương sai là một ma trận vuông, trong đó:
+- các phần tử nằm trên đường chéo chính lần lượt là phương sai của từng biến.
+- các phần từ còn lại (không nằm trên đường chéo) là các hiệp phương sai của đôi một hai biến ngẫu nhiên khác nhau trong tập hợp.
+Do đó, ma trận hiệp phương sai luôn đối xứng qua đường chéo chính và các phần từ trên đường chéo chính luôn dương nên các trị riêng chính của chúng luôn dương và ma trận xác định dương.
+
+Hiệp phương sai là độ đo sự biến thiên cùng nhau của hai biến ngẫu nhiên (phân biệt với phương sai - đo mức độ biến thiên của một biến).
+Giá trị hiệp phương sai nằm trong khoảng từ $(-\infty, \infty)$ trong đó giá trị dương biểu thị rằng cả hai biến chuyển động theo cùng một hướng, giá trị âm biểu thị rằng cả hai biến chuyển động ngược chiều nhau, giá trị bằng không biểu thị hai biến không có tương quan với nhau.
+
+<img src="https://drive.google.com/uc?id=1TmUL87kD28oCxuy1tg2IAtJhCJgQR20y" style="height: 400px;"/>
+
+
+<img src="https://drive.google.com/uc?id=1trvh8PVcchDi19YnPaEPGDWXC3pDwQyS" style="height: 400px;"/>
+
+
+#### 3.5. Phân phối đều (Uniform distribution)
+Trái ngược với phân phối chuẩn, nơi mà có những giá trị có xác suất cao hơn các giá trị khác, phân phối đều được sử dụng để mô tả biến ngẫu nhiên liên tục có xác suất nhận các giá trị kết quả là như nhau.
+
+<img src="https://drive.google.com/uc?id=1UlN1cS3iimqWB5EfcgyeM1Hv9JhEPiaJ" style="height: 400px;"/>
+
+Phân phối đều thường được sử dụng trong việc tạo mẫu dữ liệu trong quá trình thống kê và phân tích dữ liệu.
