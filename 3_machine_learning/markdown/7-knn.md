@@ -18,12 +18,18 @@ Nguyên lý cơ bản của KNN: để dự đoán nhãn (class đối với bà
 
 ## 2. Các bước của thuật toán
 
-- **Bước 1:** Chọn số lượng K (số lượng láng giềng gần nhất).
+- **Bước 1:** Chọn số K là số lượng láng giềng gần nhất mà ta sẽ xét với mỗi điểm dữ liệu đầu vào trong tương lai.
+
 - **Bước 2:** Mã hoá các điểm dữ liệu trong bộ dữ liệu train thành các vector đặc trưng trong không gian nhiều chiều.
+
 - **Bước 3:** Lưu trữ các vector đặc trưng của các điểm dữ liệu trong bộ dữ liệu train.
+
 - **Bước 4:** Với một điểm dữ liệu mới, mã hoá nó thành vector đặc trưng trong không gian nhiều chiều giống như các điểm dữ liệu trong bộ dữ liệu train.
+
 - **Bước 5:** Tính toán khoảng cách giữa vector đặc trưng của điểm dữ liệu mới và các vector đặc trưng của các điểm dữ liệu trong bộ dữ liệu train.
+
 - **Bước 6:** Sắp xếp và chọn ra K điểm dữ liệu gần nhất với điểm dữ liệu mới.
+
 - **Bước 7:**
     - Đối với bài toán classification: Chọn lớp xuất hiện nhiều nhất trong K điểm gần nhất làm dự đoán cho điểm dữ liệu mới.
     - Đối với bài toán regression: Tính giá trị trung bình của K điểm gần nhất làm dự đoán cho điểm dữ liệu mới.

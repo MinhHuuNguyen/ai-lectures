@@ -315,7 +315,7 @@ Sau khi phân nhánh, ta sẽ có 2 nhánh là Smooth và Rough.
 
 ### 5.6. Kết quả
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/10-decision-tree/example_results.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/10-decision-tree/example_results.png" style="width: 400px;"/>
 
 ## 6. Decision Tree với bài toán hồi quy
 
@@ -368,11 +368,13 @@ Các ngưỡng này sẽ phụ thuộc vào từng bài toán cụ thể và t�
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/10-decision-tree/prune.png" style="width: 1000px;"/>
 
 Do đó, một cách khác là kỹ thuật **cắt tỉa (pruning)**.
-- Bước 1: Xây dựng một Decision Tree hoàn chỉnh với tất cả các nhánh và lá.
+- **Bước 1:** Xây dựng một Decision Tree hoàn chỉnh với tất cả các nhánh và lá.
 Lúc này, mô hình sẽ có độ chính xác 100% trên bộ dữ liệu huấn luyện.
-- Bước 2: Cắt tỉa các nhánh và lá không cần thiết, một số nhánh sẽ trở thành lá và độ chính xác trên bộ dữ liệu huấn luyện sẽ giảm xuống.
-- Bước 3: Đánh giá độ chính xác của quá trình cắt tỉa
-    - Cách 1: Sử dụng bộ dữ liệu kiểm tra để đánh giá độ chính xác của mô hình.
-    - Cách 2: Thêm số hạng regularization vào hàm loss.
+- **Bước 2:** Cắt tỉa các nhánh và lá không cần thiết, một số nhánh sẽ trở thành lá và độ chính xác trên bộ dữ liệu huấn luyện sẽ giảm xuống.
+- **Bước 3:** Đánh giá độ chính xác của quá trình cắt tỉa
+    - **Cách 1:** Sử dụng bộ dữ liệu kiểm tra để đánh giá độ chính xác của mô hình.
+    Thử cắt tỉa các nhánh và lá không cần thiết, nếu độ chính xác trên bộ dữ liệu kiểm tra tăng lên thì tiếp tục cắt tỉa.
+    Nếu độ chính xác trên bộ dữ liệu kiểm tra giảm xuống thì dừng lại.
+    - **Cách 2:** Thêm số hạng regularization vào hàm loss.
     Vai trò của số hạng regularization là để giảm thiểu độ phức tạp của mô hình.
     Tương tự như số lượng trọng số w trong các mô hình tuyến tính, số hạng regularization là một hàm số đo độ phức tạp của mô hình thông qua số lượng nhánh và lá.

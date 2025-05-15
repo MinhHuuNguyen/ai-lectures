@@ -90,3 +90,49 @@ is_published: true
 5. Các biến thể nâng cấp của KNN
 
 ([bài viết chi tiết](/blog/mo-hinh-k-nearest-neighbors-knn))
+
+## Bài 8: Mô hình Support Vector Machine (SVM)
+
+1. Tổng quan
+2. Công thức tính khoảng cách từ 1 điểm
+3. Mô hình SVM - Hard Margin SVM
+4. Tối ưu mô hình Hard Margin SVM
+5. Mô hình Soft Margin SVM
+6. Mô hình Kernel SVM
+
+([bài viết chi tiết](/blog/mo-hinh-support-vector-machine-svm))
+
+## Bài 9: Mô hình Naive Bayes Classification
+
+1. Tổng quan
+2. Một số kiến thức trong xác suất thống kê
+3. Mô hình Naive Bayes Classification
+4. Ví dụ minh hoạ
+5. Ưu và nhược điểm của Naive Bayes Classification
+
+([bài viết chi tiết](/blog/mo-hinh-naive-bayes-classification))
+
+## Bài 10: Mô hình Decision Tree
+
+1. Tổng quan
+2. Các khái niệm trong Decision Tree
+3. Hàm Entropy
+4. Decision Tree với hàm Entropy
+5. Ví dụ minh hoạ
+6. Decision Tree với bài toán hồi quy
+7. Ưu và nhược điểm của mô hình
+
+([bài viết chi tiết](/blog/mo-hinh-decision-tree))
+
+## Bài 11: Mô hình K-means Clustering
+
+1. Tổng quan
+2. Các bước của thuật toán
+3. Công thức tính khoảng cách
+4. Tối ưu trong mô hình K-means
+5. Phương pháp lựa chọn số lượng cụm
+6. Ưu điểm và nhược điểm của mô hình
+7. Các biến thể nâng cấp của mô hình K-means Clustering
+
+([bài viết chi tiết](/blog/mo-hinh-k-means-clustering))
+
