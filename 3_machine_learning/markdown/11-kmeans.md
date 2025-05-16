@@ -122,7 +122,7 @@ $$ c_{j} = \frac{1}{m} \sum_{i=1}^{m} x_{i} $$
 
 Từ đó, ta có thể tính toán lại tâm cụm $c_j$ bằng cách lấy trung bình của tất cả các điểm dữ liệu trong cụm đó.
 
-## 5. Ưu điểm và nhược điểm của mô hình
+## 5. Ưu và nhược điểm của mô hình
 
 - Ưu điểm:
     - Đơn giản, dễ hiểu và dễ triển khai.
@@ -168,7 +168,7 @@ for k in K:
     inertia.append(km.inertia_)
 ```
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/elbow_method.png" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/elbow_method.png" style="width: 800px;"/>
 
 ### 6.2. Phương pháp Silhouette
 
@@ -195,9 +195,9 @@ for k in K:
     silhouette_scores.append(score)
 ```
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/silhouette_method.png" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/silhouette_method.png" style="width: 800px;"/>
 
-## 7. Các biến thể nâng cấp của mô hình K-means Clustering
+## 7. Các biến thể nâng cấp của mô hình
 
 ### 7.1. K-means++
 
