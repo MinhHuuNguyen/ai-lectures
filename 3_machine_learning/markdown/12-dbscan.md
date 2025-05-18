@@ -219,6 +219,7 @@ Cả hai hàng xóm của $C$ đều đã được xử lý, ta không cần tí
 
 - **Bước 8**: Chọn điểm tiếp theo trong bộ dữ liệu chưa được xử lý là $D$.
 Viết vào bảng:
+
 | Điểm | Reachability Distance | Core Distance          |
 | ---- | --------------------- | ---------------------- |
 | A    | ∞ (from init)         | 1.41                   |
