@@ -1,6 +1,6 @@
 ---
 time: 08/23/2022
-title: Mô hình t-SNE
+title: Mô hình tSNE
 description: Các feature vectors trong các bài toán machine learning thực tế có thể có số chiều rất lớn và số lượng các điểm dữ liệu cũng lớn dần theo thời gian. Điều này có thể được gọi là Curse of Dimensionality, Lời nguyền của số chiều. Trong các thuật toán giảm chiều dữ liệu, t-SNE là một đại diện nổi bật cho phương pháp giảm chiều dữ liệu phi tuyến tính.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/banner.png
 tags: [machine-learning]
@@ -15,15 +15,15 @@ Curse of Dimensionality (Lời nguyền của số chiều) là cách nói ám c
 Vấn đề này xảy ra khi ta phải làm việc với các bộ dữ liệu có các feature vectors có số chiều rất lớn, tới vài nghìn và số lượng các điểm dữ liệu rất lớn.
 Vì vậy, giảm số chiều dữ liệu là một bước quan trọng trong nhiều bài toán.
 
-Có hai loại chính của giảm chiều dữ liệu:
-- Giảm chiều dữ liệu tuyến tính:
+Có hai loại chính của mô hình giảm chiều dữ liệu:
+- **Giảm chiều dữ liệu tuyến tính**:
 Chiếu dữ liệu từ không gian nhiều chiều sang không gian ít chiều hơn thông qua các phép biến đổi tuyến tính.
 Đại diện là mô hình Principal Component Analysis (PCA).
-- Giảm chiều dữ liệu phi tuyến tính:
+- **Giảm chiều dữ liệu phi tuyến tính**:
 Tìm ra mối quan hệ giữa các điểm dữ liệu và cố gắng duy trì được mối quan hệ này trên không gian mới có số chiều thấp hơn.
 Đại diện là mô hình t-distributed Stochastic Neighbor Embedding (t-SNE).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/idea.png" width="400"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/idea.png" width="600"/>
 
 t-distributed Stochastic Neighbor Embedding (t-SNE) là một phương pháp giảm chiều dữ liệu phi tuyến tính được ra đời từ năm 2008 bởi Laurens van der Maaten và Geoffrey Hinton.
 
@@ -31,14 +31,18 @@ t-SNE duy trì các cặp điểm dữ liệu gần nhau trong không gian ban �
 
 ## 2. Công thức tính khoảng cách KL divergence
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/kl_divergence.png" width="700"/>
+
 Tham khảo về khái niệm, ý nghĩa và cách tính toán giá trị khoảng cách KL divergence trong bài viết [này](/blog/cac-phan-phoi-xac-suat).
 
 ## 3. Các bước của thuật toán
 
-Giả sử ta có một bộ dữ liệu gồm $m$ điểm dữ liệu $x_1, x_2, \dots, x_m \in R^n$.
+Giả sử ta có một bộ dữ liệu gồm $m$ điểm dữ liệu $x_1, x_2, ..., x_m \in R^n$.
 Ta cần giảm số chiều của dữ liệu từ $n$ xuống $k$ với $k < n$.
 
-Nghĩa là bộ dữ liệu sau khi giảm chiều sẽ có dạng $x_1, x_2, \dots, x_m \in R^k$.
+Nghĩa là bộ dữ liệu sau khi giảm chiều sẽ có dạng $x_1, x_2, ..., x_m \in R^k$.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/data_3d.png" width="500"/>
 
 ### 3.1. Bước 1: Tính ma trận xác suất tương đồng
 
@@ -51,7 +55,7 @@ Ta có công thức tính xác suất điều kiện như sau:
 $$ p_{j|i} = \frac{\exp(-\|x_i - x_j\|^2 / 2\sigma_i^2)}{\sum_{k \neq i} \exp(-\|x_i - x_k\|^2 / 2\sigma_i^2)} $$
 trong đó:
 - $p_{j|i}$ là xác suất điểm $x_i$ được chọn làm điểm gần nhất của điểm $x_j$.
-- $\sigma_i$ là độ lệch chuẩn của điểm $x_i$.
+- $\sigma_i$ là phương sai của điểm $x_i$.
 
 Sau đó, ta tính xác suất tương đồng $p_{ij}$ giữa hai điểm $x_i$ và $x_j$ bằng cách đối xứng hóa xác suất điều kiện:
 
@@ -61,6 +65,10 @@ trong đó:
 - $m$ là số lượng điểm dữ liệu trong bộ dữ liệu.
 - $p_{i|j}$ là xác suất điểm $x_j$ được chọn làm điểm gần nhất của điểm $x_i$.
 - $p_{j|i}$ là xác suất điểm $x_i$ được chọn làm điểm gần nhất của điểm $x_j$.
+
+Các giá trị trên đường chéo của ma trận xác suất tương đồng $P$ là $p_{ii} = 0$.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/p_matrixx.png" width="500"/>
 
 Mô hình t-SNE sẽ tính toán ma trận xác suất tương đồng $P$ để đo đạc khoảng cách (sự tương đồng) giữa các điểm dữ liệu trong không gian nhiều chiều.
 
@@ -75,7 +83,23 @@ Với mỗi điểm dữ liệu $x_i \in R^n$, t-SNE sẽ khởi tạo một đi
 
 Từ các điểm dữ liệu $y_i$, t-SNE sẽ tính ma trận xác suất tương đồng $Q$ giữa các điểm dữ liệu trong không gian ít chiều.
 
+$$ q_{j|i} = \frac{\exp(-\|y_i - y_j\|^2 / 2\sigma_i^2)}{\sum_{k \neq i} \exp(-\|y_i - y_k\|^2 / 2\sigma_i^2)} $$
+trong đó:
+- $q_{j|i}$ là xác suất điểm $y_i$ được chọn làm điểm gần nhất của điểm $y_j$.
+- $\sigma_i$ là phương sai của điểm $y_i$.
+- $y_i$ là điểm dữ liệu thứ $i$ trong không gian ít chiều.
+- $y_j$ là điểm dữ liệu thứ $j$ trong không gian ít chiều.
+
+Trong không gian ít chiều, t-SNE khởi tạo các điểm dữ liệu $y_i$ với phương sai $\sigma_i = \frac{1}{\sqrt{2}}$.
+Từ đó, ta có công thức tính xác suất tương đồng giữa hai điểm dữ liệu $y_i$ và $y_j$ như sau:
+
+$$ q_{j|i} = \frac{\exp(-\|y_i - y_j\|^2)}{\sum_{k \neq i} \exp(-\|y_i - y_k\|^2)} $$
+
+Các giá trị trên đường chéo của ma trận xác suất tương đồng $Q$ là $q_{ii} = 0$.
+
 ### 3.3. Bước 3: Tối ưu hàm mất mát
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/train_progress.gif" width="1200"/>
 
 Hàm mất mát của t-SNE được định nghĩa bằng hàm KL divergence giữa ma trận xác suất tương đồng $P$ trong không gian nhiều chiều và ma trận xác suất tương đồng $Q$ trong không gian ít chiều.
 Ta có công thức tính KL divergence như sau:
