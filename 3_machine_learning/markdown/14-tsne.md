@@ -42,7 +42,7 @@ Ta cần giảm số chiều của dữ liệu từ $n$ xuống $k$ với $k < n
 
 Nghĩa là bộ dữ liệu sau khi giảm chiều sẽ có dạng $x_1, x_2, ..., x_m \in R^k$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/data_3d.png" width="500"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/data_3d.png" width="500"/>
 
 ### 3.1. Bước 1: Tính ma trận xác suất tương đồng
 
@@ -68,7 +68,7 @@ trong đó:
 
 Các giá trị trên đường chéo của ma trận xác suất tương đồng $P$ là $p_{ii} = 0$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/p_matrixx.png" width="500"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/p_matrixx.png" width="500"/>
 
 Mô hình t-SNE sẽ tính toán ma trận xác suất tương đồng $P$ để đo đạc khoảng cách (sự tương đồng) giữa các điểm dữ liệu trong không gian nhiều chiều.
 
@@ -99,7 +99,7 @@ Các giá trị trên đường chéo của ma trận xác suất tương đồn
 
 ### 3.3. Bước 3: Tối ưu hàm mất mát
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/train_progress.gif" width="1200"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/train_progress.gif" width="1200"/>
 
 Hàm mất mát của t-SNE được định nghĩa bằng hàm KL divergence giữa ma trận xác suất tương đồng $P$ trong không gian nhiều chiều và ma trận xác suất tương đồng $Q$ trong không gian ít chiều.
 Ta có công thức tính KL divergence như sau:
