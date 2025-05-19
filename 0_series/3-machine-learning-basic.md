@@ -67,7 +67,6 @@ is_published: true
 3. Confusion matrix
 4. Precision - Recall - F score - Specificity
 5. Confusion matrix trong bài toán multi-class classification
-<!-- 6. Chỉ số ROC - AUC -->
 
 ([bài viết chi tiết](/blog/metrics-danh-gia-cho-bai-toan-classification))
 
@@ -131,8 +130,40 @@ is_published: true
 3. Công thức tính khoảng cách
 4. Tối ưu trong mô hình K-means
 5. Phương pháp lựa chọn số lượng cụm
-6. Ưu điểm và nhược điểm của mô hình
-7. Các biến thể nâng cấp của mô hình K-means Clustering
+6. Ưu và nhược điểm của mô hình
+7. Các biến thể nâng cấp của mô hình
 
 ([bài viết chi tiết](/blog/mo-hinh-k-means-clustering))
 
+## Bài 12: Mô hình DBSCAN
+
+1. Tổng quan
+2. Các khái niệm được định nghĩa trong mô hình DBSCAN
+3. Các bước của thuật toán
+4. Ưu và nhược điểm của mô hình
+5. Mẹo lựa chọn các tham số đầu vào cho mô hình
+6. Các biến thể nâng cấp của mô hình
+
+([bài viết chi tiết](/blog/mo-hinh-dbscan))
+
+## Bài 13: Mô hình PCA
+
+1. Tổng quan
+2. Giá trị riêng và vector riêng (Eigenvalues và Eigenvectors)
+3. Ma trận hiệp phương sai (Covariance matrix)
+4. Các bước của thuật toán
+5. Ví dụ minh hoạ
+6. Ưu và nhược điểm của mô hình
+7. Các biến thể nâng cấp của mô hình
+
+([bài viết chi tiết](/blog/mo-hinh-pca))
+
+## Bài 14: Mô hình t-SNE
+
+1. Tổng quan
+2. Công thức tính khoảng cách KL divergence
+3. Các bước của thuật toán
+4. Ưu và nhược điểm của mô hình
+5. Các biến thể nâng cấp của mô hình
+
+([bài viết chi tiết](/blog/mo-hinh-tsne))

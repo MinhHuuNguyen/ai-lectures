@@ -126,11 +126,14 @@ Trong đó:
 ## 6. Ưu và nhược điểm của mô hình
 
 - **Ưu điểm**:
-    - Giữ lại được các thông tin quan trọng nhất trong dữ liệu.
+    - **Đơn giản và hiệu quả**: PCA là phương pháp tuyến tính, dễ hiểu, dễ triển khai và tính toán nhanh.
+    - **Bảo toàn phương sai tối đa***: PCA giữ lại nhiều thông tin nhất có thể bằng cách tối đa hóa phương sai.
+    - **Có thể sử dụng trong mô hình hóa**: Các thành phần chính (principal components) có thể được dùng trong các mô hình học máy khác như hồi quy, phân loại.
 
 - **Nhược điểm**:
-    - Đối với các bộ dữ liệu mà vai trò của các đặc trưng là như nhau, việc loại bỏ đi một số đặc trưng sẽ làm mất đi lượng thông tin lớn.
-    - Việc tính toán với toàn bộ bộ dữ liệu có thể gây tốn lượng lớn tài nguyên với những bộ dữ liệu lớn.
+    - **Tuyến tính**: Không nắm bắt được các mối quan hệ phi tuyến trong dữ liệu.
+    - **Bộ dữ liệu phức tạp**: Đối với các bộ dữ liệu mà vai trò của các đặc trưng là như nhau, việc loại bỏ đi một số đặc trưng sẽ làm mất đi lượng thông tin lớn.
+    - **Hiệu năng tính toán**: Việc tính toán với toàn bộ bộ dữ liệu có thể gây tốn lượng lớn tài nguyên với những bộ dữ liệu lớn.
 
 ## 7. Các biến thể nâng cấp của mô hình
 
