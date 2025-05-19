@@ -45,7 +45,7 @@ Nói cách khác, mô hình K-means Clustering giúp phân chia dữ liệu thà
 
 ## 3. Công thức tính khoảng cách Euclidean
 
-Khoảng cách Euclidean là khoảng cách phổ biến nhất được sử dụng trong KNN. Nó được tính bằng công thức:
+Khoảng cách Euclidean là khoảng cách phổ biến nhất được sử dụng trong Machine Learning. Nó được tính bằng công thức:
 
 $$ d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2} $$
 

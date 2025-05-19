@@ -35,7 +35,7 @@ DBSCAN là một trong những thuật toán phân cụm phổ biến nhất tro
 Trước khi đi vào các bước hoạt động của thuật toán DBSCAN, chúng ta cần tìm hiểu một số khái niệm được định nghĩa trong mô hình này.
 Các khái niệm này sẽ giúp chúng ta hiểu rõ hơn về cách mà thuật toán hoạt động.
 
-Điều kiện tiên quyết để bắt đầu thuật toán là ta cần lựa chọn 2 tham số đầu vào cho mô hình DBSCAN là $eps$ và $minSample$ (hoặc %minPts$).
+Điều kiện tiên quyết để bắt đầu thuật toán là ta cần lựa chọn 2 tham số đầu vào cho mô hình DBSCAN là $eps$ và $minSample$ (hoặc $minPts$).
 
 ### 2.1. Epsilon Neighborhood
 
@@ -54,8 +54,10 @@ Trong bộ dữ liệu $D$, một điểm dữ liệu $p$ được gọi là **c
 ### 2.3. Directly Density Reachable
 
 Với hai giá trị $eps$ và $minSample$, một điểm dữ liệu $q$ được gọi là **directly density reachable** từ một điểm dữ liệu $p$ nếu $p$ là một **core point** và $q$ nằm trong vùng lận cận epsilon của $p$.
-- $ q \in N_{eps}(p)$
-- $ |N_{eps}(p)| \geq min_sample$
+
+$$ q \in N_{eps}(p) $$
+
+$$ |N_{eps}(p)| \geq min_sample $$
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/directly_density_reachable.png" width="400"/>
 
@@ -97,15 +99,15 @@ Với các khái niệm đã được định nghĩa ở trên, chúng ta sẽ �
     - **Bước 3**:
         - Nếu điểm dữ liệu $p$ chưa thuộc về bất kỳ cụm nào, tiếp tục lượt lặp với điểm dữ liệu này.
         - Nếu điểm dữ liệu $p$ đã thuộc về một cụm nào đó, đi đến lượt lặp với điểm dữ liệu tiếp theo.
-    - **Bước 4**: Lấy hết các điểm dữ liệu trong vùng lận cận epsilon của điểm dữ liệu $p$, ta được tập hợp p_seed_list.
-        - Nếu số lượng trong p_seed_list nhỏ hơn $minSample$, đánh dấu điểm dữ liệu này là **noise** và tiếp tục với điểm dữ liệu tiếp theo.
-        - Nếu số lượng trong p_seed_list lớn hơn hoặc bằng $minSample$, ta kết luận **p là một core point** và gán tất cả các điểm dữ liệu trong p_seed_list vào cụm $C_i$.
-    - Thực hiện vòng lặp với tất cả các điểm dữ liệu trong p_seed_list để mở rộng cụm $C_i$, giả sử với điểm dữ liệu đang xét là $q$.
-        - **Bước 5**: Lấy hết các điểm dữ liệu trong vùng lận cận epsilon của điểm dữ liệu $q$, ta được tập hợp q_seed_list.
-            - Nếu số lượng trong q_seed_list nhỏ hơn $minSample$, tiếp tục với điểm dữ liệu tiếp theo trong p_seed_list.
-            - Nếu số lượng trong q_seed_list lớn hơn hoặc bằng $minSample$, ta kết luận **q là một core point** và gán tất cả các điểm dữ liệu trong q_seed_list vào cụm $C_i$.
-        - **Bước 6**: Kết thúc vòng lặp với tất cả các điểm dữ liệu trong q_seed_list.
-    - **Bước 7**: Kết thúc vòng lặp với tất cả các điểm dữ liệu trong p_seed_list.
+    - **Bước 4**: Lấy hết các điểm dữ liệu trong vùng lận cận epsilon của điểm dữ liệu $p$, ta được tập hợp pSeedList.
+        - Nếu số lượng trong pSeedList nhỏ hơn $minSample$, đánh dấu điểm dữ liệu này là **noise** và tiếp tục với điểm dữ liệu tiếp theo.
+        - Nếu số lượng trong pSeedList lớn hơn hoặc bằng $minSample$, ta kết luận **p là một core point** và gán tất cả các điểm dữ liệu trong pSeedList vào cụm $C_i$.
+    - Thực hiện vòng lặp với tất cả các điểm dữ liệu trong pSeedList để mở rộng cụm $C_i$, giả sử với điểm dữ liệu đang xét là $q$.
+        - **Bước 5**: Lấy hết các điểm dữ liệu trong vùng lận cận epsilon của điểm dữ liệu $q$, ta được tập hợp qSeedList.
+            - Nếu số lượng trong qSeedList nhỏ hơn $minSample$, tiếp tục với điểm dữ liệu tiếp theo trong pSeedList.
+            - Nếu số lượng trong qSeedList lớn hơn hoặc bằng $minSample$, ta kết luận **q là một core point** và gán tất cả các điểm dữ liệu trong qSeedList vào cụm $C_i$.
+        - **Bước 6**: Kết thúc vòng lặp với tất cả các điểm dữ liệu trong qSeedList.
+    - **Bước 7**: Kết thúc vòng lặp với tất cả các điểm dữ liệu trong pSeedList.
 - **Bước 8**: Kết thúc vòng lặp với tất cả các điểm dữ liệu trong bộ dữ liệu $D$.
 - **Bước 9**: Trả về các cụm $C_1, C_2, \ldots, C_n$ và các điểm dữ liệu được đánh dấu là **noise**.
 
@@ -132,7 +134,7 @@ Ta sẽ dựa vào những kết quả quan sát trên để tinh chỉnh các t
 
 ## 6. Các biến thể nâng cấp của mô hình
 
-## 6.1. OPTICS
+### 6.1. OPTICS
 OPTICS (Ordering Points To Identify the Clustering Structure) là một biến thể, được phát triển để giải quyết một số nhược điểm của DBSCAN.
 - Không yêu cầu người dùng phải xác định các tham số $eps$.
 - Có thể phát hiện các cụm có mật độ khác nhau.
@@ -194,7 +196,7 @@ Viết các giá trị vào bảng:
 - **Bước 5**: Tính các Reachability Distance từ $A$ của các điểm hàng xóm của $A$ là $B$ và $C$.
 Reachability Distance được tính bằng công thức sau:
 
-$$ reachability_distance(p, q) = max(core_distance(p), dist(p, q)) $$
+$$ reachabilityDistance(p, q) = max(coreDistance(p), dist(p, q)) $$
 
 Thêm điểm $B$ và $C$ vào hàng ưu tiên xử lý.
 Viết vào trong bảng theo thứ tự tăng dần của Reachability Distance.
@@ -269,3 +271,10 @@ Viết vào bảng:
 | D    | ∞ (from init)         | 8.48                   | 1    |
 | E    | 9.22 (from core distance E)| 9.22              | 1    |
 | F    | ∞ (from init)         | 72.01                  | noise|
+
+### 6.2. Các biến thể khác
+
+- **HDBSCAN (Hierarchical DBSCAN)**: Xây dựng cây phân cụm phân cấp dựa trên mật độ, sau đó tự động chọn ngưỡng "ổn định" (stability) để cho ra cụm cuối mà không yêu cầu tham số $eps$ cố định.
+- **DBSCAN++**: Tăng tốc tìm k-láng giềng bằng cách dùng phép chia vùng không gian (space partitioning) và sampling thông minh, giữ độ chính xác xấp xỉ nhưng nhanh hơn.
+Xử lý clustering trên tập dữ liệu siêu lớn (triệu–tỷ điểm).
+- **LDBSCAN (Local DBSCAN)**: Tính toán cục bộ tham số $eps$ và $minSample$ dựa trên phân bố khoảng cách k-láng giềng cho mỗi điểm, giúp thích nghi với biến thiên cục bộ.
