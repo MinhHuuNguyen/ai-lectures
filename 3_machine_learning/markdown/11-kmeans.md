@@ -238,3 +238,4 @@ Sử dụng kernel function để ánh xạ dữ liệu sang không gian mới.
 Tách được cụm có hình dạng phức tạp (phi tuyến).
 - **X-Means:** Tự động xác định số lượng cụm K.
 Mở rộng K-Means bằng cách kiểm tra chia thêm cụm dựa trên BIC (Bayesian Information Criterion).
+- **...**

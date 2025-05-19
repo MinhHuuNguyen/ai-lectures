@@ -278,3 +278,4 @@ Viết vào bảng:
 - **DBSCAN++**: Tăng tốc tìm k-láng giềng bằng cách dùng phép chia vùng không gian (space partitioning) và sampling thông minh, giữ độ chính xác xấp xỉ nhưng nhanh hơn.
 Xử lý clustering trên tập dữ liệu siêu lớn (triệu–tỷ điểm).
 - **LDBSCAN (Local DBSCAN)**: Tính toán cục bộ tham số $eps$ và $minSample$ dựa trên phân bố khoảng cách k-láng giềng cho mỗi điểm, giúp thích nghi với biến thiên cục bộ.
+- **...**
