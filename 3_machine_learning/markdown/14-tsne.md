@@ -31,9 +31,12 @@ t-SNE duy trì các cặp điểm dữ liệu gần nhau trong không gian ban �
 
 ## 2. Công thức tính khoảng cách KL divergence
 
+Tham khảo về khái niệm, ý nghĩa và cách tính toán giá trị khoảng cách KL divergence trong bài viết [này](/blog/cac-phan-phoi-xac-suat).
+
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/kl_divergence.png" width="700"/>
 
-Tham khảo về khái niệm, ý nghĩa và cách tính toán giá trị khoảng cách KL divergence trong bài viết [này](/blog/cac-phan-phoi-xac-suat).
+Một cách khái quát, KL divergence (viết đầy đủ là Kullback–Leibler divergence) dùng để đo mức độ khác biệt giữa hai phân phối xác suất. 
+KL divergence không phải là một khoảng cách thực sự mà là một thước đo độ mất mát thông tin khi ta dùng phân phối $Q$ để xấp xỉ phân phối $P$.
 
 ## 3. Các bước của thuật toán
 

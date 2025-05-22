@@ -38,6 +38,19 @@ Tham khảo về khái niệm, ý nghĩa và cách tính toán giá trị riêng
 
 Tham khảo về khái niệm, ý nghĩa và cách tính toán ma trận hiệp phương sai (covariance matrix) trong bài viết [này](/blog/cac-phan-phoi-xac-suat).
 
+Một cách khái quát, ma trận hiệp phương sai là một ma trận vuông, trong đó:
+- Các phần tử nằm trên đường chéo chính lần lượt là phương sai của từng biến.
+- Các phần từ còn lại (không nằm trên đường chéo) là các hiệp phương sai của đôi một hai biến ngẫu nhiên khác nhau trong tập hợp.
+
+Trong đó:
+- Giá trị phương sai thể hiện độ phân tán của một biến ngẫu nhiên.
+    - Phương sai càng lớn, độ phân tán của biến càng lớn.
+    - Phương sai càng nhỏ, độ phân tán của biến càng nhỏ.
+- Giá trị hiệp phương sai thể hiện mối quan hệ giữa hai biến ngẫu nhiên.
+    - Nếu hiệp phương sai dương, hai biến có xu hướng tăng hoặc giảm cùng nhau.
+    - Nếu hiệp phương sai âm, một biến tăng trong khi biến còn lại giảm.
+    - Nếu hiệp phương sai bằng 0, hai biến không có mối quan hệ tuyến tính với nhau.
+
 ## 4. Các bước của thuật toán
 
 Giả sử ta có một bộ dữ liệu gồm $m$ điểm dữ liệu $x_1, x_2, ..., x_m \in R^n$.
