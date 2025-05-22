@@ -34,6 +34,10 @@ Nói cách khác, PCA sẽ đánh giá mức độ quan trọng của từng chi
 
 Tham khảo về khái niệm, ý nghĩa và cách tính toán giá trị riêng (eigenvalues) và vector riêng (eigenvectors) trong bài viết [này](/blog/gia-tri-rieng-eigenvalues-va-vector-rieng-eigenvectors).
 
+Một cách khái quát, giá trị riêng và vector riêng là các khái niệm trong đại số tuyến tính, giúp mô tả các thuộc tính của một ma trận vuông.
+
+Từ giá trị riêng và vector riêng, ta có thể tìm được các thành phần quan trọng, cấu thành nên ma trận đó.
+
 ## 3. Ma trận hiệp phương sai (Covariance matrix)
 
 Tham khảo về khái niệm, ý nghĩa và cách tính toán ma trận hiệp phương sai (covariance matrix) trong bài viết [này](/blog/cac-phan-phoi-xac-suat).
