@@ -40,7 +40,7 @@ is_published: true
 
 ([bài viết chi tiết](/blog/mo-hinh-hoi-quy-tuyen-tinh-linear-regression))
 
-## Bài 3:  Thuật toán tối ưu Gradient Descent
+## Bài 3: Thuật toán tối ưu Gradient Descent
 
 1. Nhắc lại về bài toán Khảo sát hàm số
 2. Ý tưởng của thuật toán Gradient Descent
@@ -167,3 +167,12 @@ is_published: true
 5. Các biến thể nâng cấp của mô hình
 
 ([bài viết chi tiết](/blog/mo-hinh-tsne))
+
+## Bài 15: Mô hình mạng nơ ron đơn giản Neural network
+
+1. Tổng quan
+2. Mối quan hệ giữa hàm XOR và mạng nơ ron
+3. Kiến trúc và các lớp trong mạng nơ ron
+4. Huấn luyện mạng nơ ron
+
+([bài viết chi tiết](/blog/mo-hinh-mang-no-ron-don-gian-neural-network))
