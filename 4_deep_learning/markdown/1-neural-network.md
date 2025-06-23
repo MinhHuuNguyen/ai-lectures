@@ -2,8 +2,8 @@
 time: 08/30/2022
 title: Mô hình mạng nơ ron đơn giản Neural network
 description: Mô hình mạng nơ ron đơn giản Neural network là một mô hình tính toán lấy cảm hứng từ cấu trúc và hoạt động của bộ não con người. Mô hình mạng nơ ron đơn giản là nền tảng cho sự phát triển của các mô hình mạng nơ ron phức tạp hơn được sử dụng trong các mô hình Trí tuệ nhân tạo nổi tiếng hiện nay.
-banner_url:
-tags: [machine-learning]
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/banner.png
+tags: [deep-learning]
 is_highlight: false
 is_published: true
 ---
@@ -79,7 +79,7 @@ trong đó:
 
 Khi sử dụng hàm ReLU cho một vector hoặc ma trận, ta sử dụng hàm ReLU cho từng phần tử trên vector hay ma trận.
 
-<img src="" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/relu_activation.png" style="width: 600px;"/>
 
 Các activation layer, đặc biệt là ReLU được đặt xen kẽ giữa các linear layer với vai trò giúp cho các linear layer có nghĩa.
 Điều này đồng nghĩa với việc, nếu không có các activation layer đặt giữa các linear layer thì nhiều các linear layer đặt chồng lên nhau cũng không khác gì so với việc chỉ có một linear layer.
@@ -90,14 +90,32 @@ Ví dụ:
 
 #### 3.2.2. Một số biến thể của ReLU
 
-- **Leaky ReLU**: Giải quyết hiện tượng vanishing gradient tại những vị trí có giá trị nhỏ hơn hoặc bằng 0 của ReLU.
+##### Leaky ReLU: Giải quyết hiện tượng vanishing gradient tại những vị trí có giá trị nhỏ hơn hoặc bằng 0 của ReLU.
 
 $$ y = max(\gamma x, x) $$
 
 trong đó:
 - x là giá trị đầu vào của hàm ReLU
-- $\gamma$ là giá trị rất nhỏ, thường được lựa chọn là 0.1
+- $\gamma$ là giá trị rất nhỏ, thường được lựa chọn là 0.01
 - y là giá trị đầu ra của hàm ReLU
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/leaky_relu_activation.png" style="width: 600px;"/>
+
+##### Parametric ReLU (PReLU): Giống như Leaky ReLU nhưng $\gamma$ là một trọng số của mô hình, được học trong quá trình huấn luyện mô hình.
+
+##### Exponential Linear Unit (ELU): Giải quyết hiện tượng vanishing gradient tại những vị trí có giá trị nhỏ hơn hoặc bằng 0 của ReLU.
+
+$$ y = \begin{cases}
+x & \text{if } x > 0 \\
+\alpha (e^x - 1) & \text{if } x \le 0
+\end{cases} $$
+
+trong đó:
+- x là giá trị đầu vào của hàm ReLU
+- $\alpha$ là một trọng số của mô hình, thường được lựa chọn là 1
+- y là giá trị đầu ra của hàm ReLU
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/elu_activation.png" style="width: 600px;"/>
 
 ### 3.3. Normalization layer
 
@@ -172,4 +190,4 @@ Ngược lại với quá trình Model feedforward, sau khi đưa kết quả d�
 
 Quá trình Backpropagation là quá trình tính toán đạo hàm tương ứng với mỗi trọng số của mô hình nhằm phục vụ cho quá trình tối ưu mô hình bằng thuật toán Gradient descent.
 Trong thực tế, ta sẽ không sử dụng thuật toán Gradient descent nguyên bản mà ta sẽ sử dụng các biến thể nâng cấp của Gradient descent nhằm cải thiện hiệu suất và giúp tối ưu mô hình đến giá trị tối ưu tốt hơn.
-Bài viết giới thiệu cụ thể về Các biến thể nâng cấp của Gradient descent, các bạn có thể xem ở [đây](/blog/
+Bài viết giới thiệu cụ thể về Các biến thể nâng cấp của Gradient descent, các bạn có thể xem ở [đây](/blog/cac-bien-the-nang-cap-cua-gradient-descent).
