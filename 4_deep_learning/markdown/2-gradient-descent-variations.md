@@ -182,6 +182,8 @@ Adam là một biến thể rất phổ biến và mạnh mẽ của thuật to�
 
 Adam tận dụng thông tin từ gradient và moment của các bước cập nhật trước đó để điều chỉnh learning rate cho từng tham số.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/adam.png" style="width: 600px;"/>
+
 Ý tưởng chính là kết hợp cả yếu tố "momentum" (theo dõi hướng di chuyển trước) và yếu tố "adaptive learning rate" (tự động điều chỉnh learning rate) để cải thiện tốc độ hội tụ và ổn định của quá trình tối ưu hóa.
 
 ### 5.1. Thành phần "momentum"
