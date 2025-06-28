@@ -1,142 +1,164 @@
 ---
 time: 10/01/2022
 title: Các biến thể nâng cấp của thuật toán tối ưu Gradient descent
-description:
-banner_url:
-tags: [machine-learning]
+description: Gradient Descent là một thuật toán tối ưu hóa quan trọng trong Machine Learning, nhưng có thể gặp một số vấn đề trong quá trình hội tụ. Trong bài viết này, chúng ta sẽ tìm hiểu về các biến thể nâng cấp của Gradient Descent như Stochastic Gradient Descent (SGD), Mini-batch Gradient Descent, Momentum Gradient Descent, Nesterov Accelerated Gradient (NAG), và các thuật toán tối ưu hóa khác như AdaGrad, RMSProp, Adam, và nhiều biến thể khác.
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/banner.png
+tags: [deep-learning]
 is_highlight: false
 is_published: true
 ---
-# Các biến thể và nâng cấp của thuật toán Gradient Descent
 
 ## 1. Nhắc lại về Gradient Descent
 
-Cho hàm loss \( L \) với các trọng số \( \mathbf{w} \):
+Bài viết giới thiệu cụ thể về thuật toán tối ưu Gradient descent nguyên bản, các bạn có thể xem ở [đây](/blog/thuat-toan-toi-uu-gradient-descent).
 
-**Bước 1. Gradient Calculation (Tính toán gradient):**
-- Tính gradient của hàm loss \( L \) theo các trọng số \( \mathbf{w} \).
-- Gradient này cho biết hướng tăng lên nhanh nhất của hàm loss.
+Công thức cập nhật trọng số của mô hình trong thuật toán Gradient Descent nguyên bản là:
 
-   \[ \nabla L(\mathbf{w}) = \left( \frac{\partial L}{\partial w_1}, \frac{\partial L}{\partial w_2}, ..., \frac{\partial L}{\partial w_n} \right) \]
+$$ w^{t+1} = w^t - \eta \cdot L'(w^t) $$
 
-**Bước 2. Parameter Update (Cập nhật trọng số):**
-- Cập nhật các trọng số \( \mathbf{w} \) bằng cách điều chỉnh chúng theo hướng ngược lại với gradient, nhằm giảm thiểu hàm loss.
-- Khoảng cách di chuyển theo gradient được điều chỉnh bởi một trọng số gọi là learning rate.
+Cụ thể hơn, thuật toán Gradient Descent nguyên bản cần tính toán đạo hàm của hàm mất mát $L$ tại điểm $w^t$ trên toàn bộ bộ dữ liệu huấn luyện.
 
-   \[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \alpha \cdot \nabla L(\mathbf{w_{t}}) \]
+Do đó, ta có thể viết lại như sau:
 
-   Trong đó:
-   - \( \mathbf{w} \) là vector các trọng số cần cập nhật.
-   - \( \alpha \) là learning rate, là một số dương nhỏ thể hiện bước di chuyển trong mỗi vòng lặp. Giá trị learning rate quyết định độ lớn của bước cập nhật.
+$$ w^{t+1} = w^t - \eta \cdot L'(w^t, X, y) $$
 
-Gradient Descent là một phương pháp quan trọng để điều chỉnh trọng số của mô hình dựa trên đạo hàm của hàm mất mát.
+Trong bài viết này, chúng ta sẽ tìm hiểu về các biến thể nâng cấp của Gradient Descent để giải quyết một số vấn đề trong quá trình hội tụ.
 
-Tuy nhiên, việc sử dụng chỉ Gradient Descent có thể gặp một số vấn đề, và đó là lý do tại sao chúng ta cần các thuật toán tối ưu hóa khác để cải thiện quá trình học.
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/problems.png" style="width: 600px;"/>
 
-## 2. Stochastic Gradient Descent (SGD) và Mini-batch Gradient descent
+Các biến thể nâng cấp này giúp giải quyết ba vấn đề chính của thuật toán Gradient Descent nguyên bản:
+- **Vấn đề 1:** Gradient descent phải tính toán với tất cả các phần tử trong bộ dữ liệu cho mỗi lần cập nhật trọng số của mô hình.
+- **Vấn đề 2:** Gradient descent phụ thuộc vào việc khởi tạo giá trị trọng số ban đầu.
+- **Vấn đề 3:** Gradient descent phụ thuộc vào việc lựa chọn learning rate.
 
-Từ thuật toán Gradient Descent, chúng ta có thể nâng cấp lên hai biến thể khác là Stochastic Gradient Descent (SGD) và Mini-batch Gradient Descent.
+## 2. Vấn đề: Gradient descent phải tính toán với tất cả các phần tử trong bộ dữ liệu cho mỗi lần cập nhật trọng số của mô hình
 
-Cả hai biến thể này được thiết kế để tối ưu hóa quá trình cập nhật tham số trong quá trình huấn luyện mô hình.
+Từ thuật toán Gradient Descent, chúng ta có thể nâng cấp lên hai biến thể khác là Stochastic Gradient Descent (SGD) và Mini-batch Gradient Descent giúp giải quyết vấn đề này.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_sgd_mini_batch_gd.png" style="width: 600px;"/>
+
+Trong hai biến thể này, chúng ta sẽ không tính toán gradient dựa trên toàn bộ dữ liệu huấn luyện, từ đó, giảm thiểu thời gian tính toán và tăng tốc độ hội tụ của thuật toán.
 
 ### 2.1. Stochastic Gradient Descent (SGD)
 
-Trong SGD, thay vì tính gradient dựa trên toàn bộ dữ liệu huấn luyện, chúng ta chỉ chọn một điểm dữ liệu ngẫu nhiên từ tập huấn luyện để tính gradient.
+Trong Stochastic Gradient Descent (SGD), thay vì tính gradient dựa trên toàn bộ dữ liệu huấn luyện, chúng ta chỉ chọn một điểm dữ liệu ngẫu nhiên từ tập dữ liệu huấn luyện để tính gradient.
 
-SGD thường có tốc độ hội tụ nhanh hơn so với Gradient Descent vì mỗi vòng lặp chỉ tính toán và cập nhật một phần nhỏ của dữ liệu.
+SGD thường có tốc độ hội tụ nhanh hơn so với Gradient Descent vì mỗi vòng lặp chỉ tính toán và cập nhật trọng số với một điểm dữ liệu của bộ dữ liệu.
 
-**Parameter Update với Stochastic Gradient Descent:**
+Công thức cập nhật trọng số của mô hình trong thuật toán Stochastic Gradient Descent là:
 
-\[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \alpha \cdot \nabla L(\mathbf{w_{t}}; x_i, y_i) \]
+$$ w^{t+1} = w^t - \eta \cdot L'(w^t, x_i, y_i) $$
 
-Trong đó:
-- \( \mathbf{w} \) là vector các tham số cần cập nhật.
-- \( \alpha \) là learning rate.
-- \( \nabla L(\mathbf{w}; x_i, y_i) \) là gradient của hàm loss \( L \) tính từ điểm dữ liệu \( x_i \) và giá trị thực tế \( y_i \).
+Ở đây, thay vì tính đạo hàm trên toàn bộ bộ dữ liệu $L'(w^t, X, y)$, chúng ta chỉ tính đạo hàm tại một điểm dữ liệu ngẫu nhiên $(x_i, y_i)$ trong bộ dữ liệu huấn luyện $L'(w^t, x_i, y_i)$.
 
 Bằng cách áp dụng gradient tính từ một điểm dữ liệu ngẫu nhiên, SGD thường hội tụ nhanh hơn so với Gradient Descent, nhưng cũng có thể tạo ra sự dao động trong quá trình hội tụ.
+Điều này xảy ra do trong bộ dữ liệu có thể chứa những điểm dữ liệu ngoại lai (outlier) hoặc những điểm dữ liệu nhiễu (noise) và nó có thể khiến cho quá trình huấn luyện mô hình trở nên không ổn định.
 
-Điều này có thể được kiểm soát bằng cách điều chỉnh learning rate hoặc sử dụng các phương pháp tối ưu hóa khác.
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_sgd_mini_batch_gd.gif" style="width: 600px;"/>
 
 ### 2.2. Mini-batch Gradient descent
 
-Mini-batch Gradient Descent là sự kết hợp giữa Gradient Descent và SGD.
-Nó có thể tận dụng hiệu suất tính toán của các thư viện và đồng thời giảm tối đa sự không ổn định của SGD.
+Mini-batch Gradient Descent là thuật toán tối ưu nằm ở giữa của Gradient Descent nguyên bản và Stochastic Gradient Descent (SGD).
+Mini-batch Gradient Descent:
+- Không yêu cầu tính toán đạo hàm trên cả bộ dữ liệu như Gradient Descent nguyên bản.
+Từ đó, tăng tốc thời gian hội tụ của quá trình huấn luyện mô hình.
+- Không tính toán đạo hàm trên duy nhất một điểm dữ liệu riêng lẻ như SGD.
+Từ đó, độ ổn định của quá trình huấn luyện mô hình được cải thiện.
 
-Trong biến thể này, chúng ta chia dữ liệu huấn luyện thành các mini-batch nhỏ.
-Mỗi vòng lặp, chúng ta tính gradient dựa trên một mini-batch và cập nhật tham số.
+Trong Mini-batch Gradient Descent, chúng ta chia dữ liệu huấn luyện thành các mini-batch nhỏ gồm một số lượng điểm dữ liệu nhất định như 32, 64, 128, v.v.
+Mỗi vòng lặp, chúng ta tính gradient dựa trên một mini-batch và cập nhật trọng số của mô hình.
 
-**Parameter Update với Mini-batch Gradient Descent:**
+Công thức cập nhật trọng số của mô hình trong thuật toán Mini-batch Gradient Descent là:
 
-\[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \alpha \cdot \nabla L(\mathbf{w_{t}}; X_{\text{batch}}, y_{\text{batch}}) \]
+$$ w^{t+1} = w^t - \eta \cdot L'(w^t, X_{batch}, y_{batch}) $$
 
-Trong đó:
-- \( \mathbf{w} \) là vector các tham số cần cập nhật.
-- \( \alpha \) là learning rate.
-- \( \nabla L(\mathbf{w}; X_{\text{batch}}, y_{\text{batch}}) \) là gradient của hàm loss \( L \) tính từ một mini-batch \( X_{\text{batch}} \) các điểm dữ liệu và tương ứng \( y_{\text{batch}} \) các giá trị thực tế.
+Ở đây, thay vì tính đạo hàm trên toàn bộ bộ dữ liệu $L'(w^t, X, y)$ hay $L'(w^t, x_i, y_i)$, chúng ta tính đạo hàm với một batch các điểm dữ liệu ngẫu nhiên $(X_{batch}, y_{batch})$ trong bộ dữ liệu huấn luyện $L'(w^t, X_{batch}, y_{batch})$.
 
-Kích thước của mini-batch là một tham số quan trọng, và lựa chọn này có thể ảnh hưởng đến tốc độ hội tụ và tính ổn định của thuật toán.
+Kích thước của mini-batch là một siêu tham số (hyper-parameter) quan trọng, và lựa chọn này có thể ảnh hưởng đến tốc độ hội tụ và tính ổn định của thuật toán.
+Về lý thuyết, kích thước mini-batch càng lớn thì quá trình hội tụ càng ổn định, nhưng khối lượng tính toán sẽ tăng lên.
 
-## 3. Momentum Gradient Descent
+## 3. Vấn đề: Gradient descent phụ thuộc vào việc khởi tạo giá trị trọng số ban đầu
 
-Momentum Gradient Descent thêm một yếu tố "momentum" để lưu trữ thông tin về các hướng di chuyển trước đó của các bước cập nhật. Điều này giúp thuật toán "nhớ" hướng di chuyển trước đó và giúp cho quá trình cập nhật tham số mượt mà hơn.
+### 3.1. Momentum Gradient Descent
 
-**Parameter Update với Momentum:**
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/momentum.png" style="width: 600px;"/>
 
-\[ \mathbf{v_{t}} = \beta \cdot \mathbf{v_{t-1}} + (1 - \beta) \cdot \nabla L(\mathbf{w_{t}}) \]
-\[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \alpha \cdot \mathbf{v_{t}} \]
+Momentum Gradient Descent thêm một yếu tố "momentum" để lưu trữ thông tin về hướng và độ lớn của các bước di chuyển trước đó của các bước cập nhật.
+Điều này giúp thuật toán "nhớ" hướng di chuyển trước đó và giúp cho quá trình cập nhật trọng số của mô hình mượt mà hơn.
 
-Trong đó:
-- \( \mathbf{v} \) là vector "momentum", lưu trữ thông tin về các hướng di chuyển trước đó.
-- \( \beta \) là hệ số momentum, thường được đặt trong khoảng từ 0.8 đến 0.99.
-- \( \alpha \) là learning rate.
+Công thức cập nhật trọng số của mô hình trong thuật toán Momentum Gradient Descent là:
 
-Momentum Gradient Descent giúp làm giảm bớt sự dao động trong quá trình cập nhật tham số, đồng thời tăng tốc độ hội tụ. Nó đặc biệt hiệu quả khi đối mặt với các bề mặt hàm lồi gần như ngang hoặc khi có sự biến đổi lớn trong các gradient cục bộ.
+$$ w^{t+1} = w^t - \eta \cdot v^t $$
+
+trong đó, vector "momentum" $v^t$ được cập nhật dựa vào $v^{t-1}$ theo công thức:
+
+$$ v^{t} = \beta \cdot v^{t-1} + (1 - \beta) \cdot L'(w^t) $$
+
+Trong công thức trên, $\beta$ là hệ số momentum, thường được đặt trong khoảng từ 0.8 đến 0.99.
+
+Momentum Gradient Descent giúp làm giảm bớt sự dao động trong quá trình cập nhật trọng số, đồng thời tăng tốc độ hội tụ. Nó đặc biệt hiệu quả khi đối mặt với các bề mặt hàm lồi gần như ngang hoặc khi có sự biến đổi lớn trong các gradient cục bộ.
 
 Lựa chọn hệ số momentum và learning rate là quan trọng để đạt được hiệu suất tốt nhất cho Momentum Gradient Descent.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_momentum_gd_nag.gif" style="width: 600px;"/>
 
-## 4. Nesterov Accelerated Gradient (NAG)
+### 3.2. Nesterov Accelerated Gradient (NAG)
 
-NAG cải tiến Momentum Gradient Descent bằng cách tính gradient tại vị trí ước tính tham số tiếp theo, trước khi thực sự cập nhật tham số bằng công thức của Momentum. Điều này giúp tạo ra một dự đoán tốt hơn về hướng di chuyển tiếp theo và làm giảm sự dao động.
+Nesterov Accelerated Gradient (NAG) cải tiến Momentum Gradient Descent bằng cách tính gradient tại vị trí **ước tính** trọng số tiếp theo, trước khi **thực sự** cập nhật trọng số của mô hình bằng công thức của Momentum.
+Điều này giúp tạo ra một dự đoán tốt hơn về hướng di chuyển tiếp theo và làm giảm sự dao động.
 
-**Parameter Update với NAG:**
+Công thức cập nhật trọng số của mô hình trong thuật toán Nesterov Accelerated Gradient là:
 
-\[ \mathbf{v_{t}} = \beta \cdot \mathbf{v_{t-1}} + (1 - \beta) \cdot \nabla L(\mathbf{w_{t}} - \beta \cdot \mathbf{v_{t-1}}) \]
-\[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \alpha \cdot \mathbf{v_{t}} \]
+$$ w^{t+1} = w^t - \eta \cdot v^t $$
 
-Trong đó:
-- \( \mathbf{v} \) là vector "momentum" được tính dựa trên dự đoán gradient ở vị trí tiếp theo.
-- \( \beta \) là hệ số momentum, thường được đặt trong khoảng từ 0.8 đến 0.99.
-- \( \alpha \) là learning rate.
+Để tính được $v^t$ trong công thức trên, ta cần **ước tính** trọng số tiếp theo bằng:
+
+$$ w^{t+1}_{\text{estimated}} = w^t - \beta \cdot v^{t-1} $$
+
+Sau đó, vector "momentum" $v^t$ của NAG được cập nhật theo công thức:
+
+$$ v^{t} = \beta \cdot v^{t-1} + (1 - \beta) \cdot L'(w^{t+1}_{\text{estimated}}) $$
+
+Trong công thức trên, $\beta$ là hệ số momentum, thường được đặt trong khoảng từ 0.8 đến 0.99.
 
 NAG giúp tăng tốc quá trình hội tụ và giảm sự dao động so với Momentum Gradient Descent. 
-
 Lựa chọn hệ số momentum và learning rate vẫn quan trọng để đạt được hiệu suất tốt cho Nesterov Accelerated Gradient.
 
-## 5. Adaptive Gradient Algorithm (AdaGrad)
+## 4. Vấn đề: Gradient descent phụ thuộc vào việc lựa chọn learning rate
 
-Trong các biến thể cơ bản của Gradient Descent, việc sử dụng cùng một learning rate cho tất cả các tham số có thể gây ra vấn đề về tốc độ hội tụ và ổn định.
+Trong các biến thể cơ bản của Gradient Descent, ta sử dụng cùng một learning rate cho tất cả các trọng số của mô hình và trong thực tế, điều này gây ra vấn đề về tốc độ hội tụ và sự ổn định trong quá trình hội tụ.
 
-AdaGrad là một biến thể của thuật toán tối ưu hóa Gradient Descent, được cải tiến để tự động điều chỉnh learning rate cho từng tham số dựa trên tần suất xuất hiện của gradient của tham số đó trong quá trình tối ưu hóa.
+Nói cách khác, mỗi trọng số của mô hình có vai trò khác nhau trong quá trình mô hình tính toán ra giá trị dự đoán.
+Do đó, việc sử dụng cùng một learning rate cho tất cả các trọng số là không hợp lý.
 
-Ý tưởng chính của AdaGrad là giảm learning rate cho các tham số có gradient lớn và tăng learning rate cho các tham số có gradient nhỏ. Điều này giúp cải thiện hiệu suất tối ưu hóa trên các tham số có sự biến đổi khác nhau.
+Để giải quyết vấn đề này, chúng ta có thể sử dụng các thuật toán tối ưu **adaptive learning rate** để mỗi trọng số của mô hình có thể có một learning rate khác nhau.
 
-**Parameter Update với AdaGrad:**
+### 4.1. Adaptive Gradient Algorithm (AdaGrad)
 
-\[ \mathbf{G_{t}} = \mathbf{G_{t-1}} + (\nabla L(\mathbf{w_{t}}))^2 \]
-\[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \frac{\alpha}{\sqrt{\mathbf{G_{t}} + \epsilon}} \cdot \nabla L(\mathbf{w_{t}}) \]
+Adaptive Gradient Algorithm (AdaGrad) là một biến thể Gradient Descent, được cải tiến để tự động điều chỉnh learning rate cho từng trọng số dựa trên tần suất xuất hiện của gradient của trọng số đó trong quá trình tối ưu hóa.
 
-Trong đó:
-- \( \mathbf{G} \) là ma trận đường chéo lưu trữ tổng bình phương các gradient tính từ trước.
-- \( \nabla L(\mathbf{w}) \) là gradient của hàm chi phí \( L \).
-- \( \alpha \) là learning rate,.
-- \( \epsilon \) là một số nhỏ được thêm vào để tránh chia cho 0.
+Ý tưởng chính của AdaGrad là giảm learning rate cho các trọng số có gradient lớn và tăng learning rate cho các trọng số có gradient nhỏ.
+Điều này giúp cải thiện hiệu suất tối ưu hóa trên các trọng số có sự biến đổi khác nhau.
 
-AdaGrad tự động điều chỉnh learning rate dựa trên lịch sử gradient, giúp tối ưu hóa hiệu quả hơn trên các tham số có biến đổi khác biệt.
-Tuy nhiên, cần lưu ý về vấn đề giảm learning rate quá mức sau một thời gian dài.
+Trong AdaGrad, chúng ta lưu trữ tổng bình phương của gradient tính từ trước trong một ma trận đường chéo $G$.
 
-## 6. Root Mean Square Propagation (RMSProp)
+$$ G_{t} = G_{t-1} + (L'(w_{t}))^2 $$
+
+Công thức cập nhật trọng số của mô hình trong thuật toán Adaptive Gradient Algorithm là:
+
+$$ w_{t+1} = w_{t} - \frac{\eta}{\sqrt{G_{t}} + \epsilon} \cdot L'(w_{t}) $$
+
+trong công thức trên, giá trị learning rate thật sự được sử dụng cho mỗi trọng số được tính toán lại dựa trên giá trị learning rate khởi tạo ban đầu theo ma trận đường chéo $G$.
+
+AdaGrad tự động điều chỉnh learning rate dựa trên lịch sử gradient của từng trọng số, giúp tối ưu hóa hiệu quả hơn trên các trọng có biến đổi khác biệt.
+Điều này cũng giúp việc lựa chọn learning rate trở nên dễ dàng hơn.
+
+Tuy nhiên, một vấn đề của AdaGrad là sau một thời gian dài, learning rate có thể giảm quá mức do việc tích luỹ tổng bình phương gradient, dẫn đến quá trình hội tụ chậm lại.
+Điều này có thể xảy ra khi các trọng số không còn thay đổi nhiều nữa, và learning rate trở nên quá nhỏ để tiếp tục cập nhật trọng số.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_ada_grad_rms_prop.png" style="width: 600px;"/>
+
+### 4.2. Root Mean Square Propagation (RMSProp)
 
 Trong một số trường hợp, AdaGrad có thể dẫn đến việc giảm learning rate quá mức sau một thời gian, khiến quá trình hội tụ chậm lại.
 RMSProp giải quyết vấn đề này bằng cách thay đổi cách tính tổng bình phương gradient trong công thức cập nhật.
@@ -144,81 +166,63 @@ RMSProp giải quyết vấn đề này bằng cách thay đổi cách tính t�
 Thay vì tích luỹ tổng bình phương gradient qua tất cả các vòng lặp như AdaGrad, RMSProp sử dụng một hệ số giảm dần để giảm dần độ quan trọng của gradient cũ trong quá trình tính toán.
 Điều này giúp làm giảm tốc độ giảm learning rate sau thời gian dài, tạo ra một tốc độ hội tụ ổn định hơn.
 
-**Parameter Update với RMSProp:**
+$$ E[L'(w_{t})^2] = \beta \cdot E[L'(w_{t-1})^2] + (1 - \beta) \cdot (L'(w_{t}))^2 $$
 
-\[ \mathbf{E}[\nabla L(\mathbf{w_{t}})^2] = \beta \cdot \mathbf{E}[\nabla L(\mathbf{w_{t-1}})^2] + (1 - \beta) \cdot (\nabla L(\mathbf{w_{t}}))^2 \]
-\[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \frac{\alpha}{\sqrt{\mathbf{E}[\nabla L(\mathbf{w_{t}})^2] + \epsilon}} \cdot \nabla L(\mathbf{w_{t}}) \]
+Công thức cập nhật trọng số của mô hình trong thuật toán Root Mean Square Propagation là:
 
-Trong đó:
-- \( \mathbf{E}[\nabla L(\mathbf{w})^2] \) là giá trị kỳ vọng của bình phương gradient, được tính dựa trên một hệ số giảm dần \( \beta \).
-- \( \nabla L(\mathbf{w}) \) là gradient của hàm chi phí \( L \).
-- \( \alpha \) là learning rate.
-- \( \epsilon \) là một số nhỏ để tránh chia cho 0.
+$$ w_{t+1} = w_{t} - \frac{\eta}{\sqrt{E[L'(w_{t})^2]} + \epsilon} \cdot L'(w_{t}) $$
 
 RMSProp giúp kiểm soát sự biến đổi của gradient và learning rate, giúp tối ưu hóa ổn định hơn trong quá trình huấn luyện.
 Điều này đặc biệt hữu ích khi tối ưu hóa các mô hình phức tạp và khi gradient có biến đổi lớn.
 
-## 7. Adaptive Moment Estimation (Adam)
+## 5. Adaptive Moment Estimation (Adam)
 
-Adam là một biến thể của thuật toán tối ưu hóa Gradient Descent, được thiết kế để kết hợp cả Momentum và RMSProp.
+Adam là một biến thể rất phổ biến và mạnh mẽ của thuật toán tối ưu hóa Gradient Descent, được thiết kế để kết hợp những điểm mạnh của cả Momentum và RMSProp.
 Đây là một thuật toán phổ biến và mạnh mẽ được sử dụng trong học máy để tối ưu hóa các mô hình.
 
 Adam tận dụng thông tin từ gradient và moment của các bước cập nhật trước đó để điều chỉnh learning rate cho từng tham số.
+
 Ý tưởng chính là kết hợp cả yếu tố "momentum" (theo dõi hướng di chuyển trước) và yếu tố "adaptive learning rate" (tự động điều chỉnh learning rate) để cải thiện tốc độ hội tụ và ổn định của quá trình tối ưu hóa.
 
-**Parameter Update với Adam:**
+### 5.1. Thành phần "momentum"
 
-\[ \mathbf{v_{t}} = \beta_1 \cdot \mathbf{v_{t-1}} + (1 - \beta_1) \cdot \nabla L(\mathbf{w_{t}}) \]
-\[ \mathbf{E_{t}} = \beta_2 \cdot \mathbf{E_{t-1}} + (1 - \beta_2) \cdot (\nabla L(\mathbf{w_{t}}))^2 \]
-\[ \hat{\mathbf{v}}_{t} = \frac{\mathbf{v}_{t}}{1 - \beta_1^t} \]
-\[ \hat{\mathbf{E}}_{t} = \frac{\mathbf{E}_{t}}{1 - \beta_2^t} \]
-\[ \mathbf{w_{t+1}} = \mathbf{w_{t}} - \frac{\alpha}{\sqrt{\hat{\mathbf{E}}_{t} + \epsilon}} \cdot \hat{\mathbf{v}}_{t}\]
+Adam giữ lại phần tử "momentum" từ thuật toán Gradient Descent với Moment, trong đó vector $v$ lưu trữ thông tin về hướng di chuyển trước đó.
+Điều này giúp Adam "nhớ" sự di chuyển trước đó và giảm sự dao động trong quá trình cập nhật.
 
-Trong đó:
-- \( \mathbf{v} \) là vector moment, lưu trữ thông tin về hướng di chuyển trước.
-- \( \mathbf{E} \) là vector ước tính của bình phương gradient, giúp điều chỉnh learning rate dựa trên biến đổi của gradient.
-- \( \beta_1 \) và \( \beta_2 \) là các hệ số moment, thường trong khoảng từ 0.8 đến 0.999.
-- \( \alpha \) là learning rate, tỷ lệ học.
-- \( \epsilon \) là một số nhỏ để tránh chia cho 0.
-- \( t \) là số vòng lặp.
+$$ v_{t} = \beta_1 \cdot v_{t-1} + (1 - \beta_1) \cdot L'(w_{t}) $$
 
-**Moment (Momentum) Component:**
-Adam giữ lại phần tử "momentum" từ thuật toán Gradient Descent với Moment, trong đó vector \( \mathbf{v} \) lưu trữ thông tin về hướng di chuyển trước đó. Điều này giúp Adam "nhớ" sự di chuyển trước đó và giảm sự dao động trong quá trình cập nhật.
+### 5.2. Thành phần "adaptive learning rate"
 
-**Adaptive Learning Rate Component:**
-Tương tự như RMSProp, Adam cũng sử dụng một vector \( \mathbf{E} \) để theo dõi biến đổi của gradient. Tuy nhiên, thay vì sử dụng tổng bình phương gradient như trong RMSProp, Adam sử dụng giá trị kỳ vọng của bình phương gradient.
+Tương tự như RMSProp, Adam cũng sử dụng một vector $E_{t}$ để theo dõi biến đổi của gradient.
 
-**Bias Correction:**
-Adam thêm bước điều chỉnh để loại bỏ sự bias của \( \mathbf{v} \) và \( \mathbf{E} \) tại các vòng lặp ban đầu. Điều này được thực hiện bằng cách chia \( \mathbf{v} \) và \( \mathbf{E} \) cho một lũy thừa của hệ số \( \beta_1 \) và \( \beta_2 \) tương ứng. Quá trình này đảm bảo rằng trong giai đoạn đầu của huấn luyện, khi \( t \) còn nhỏ, các giá trị này không bị ảnh hưởng bởi việc khởi tạo ban đầu.
+$$ E_{t} = \beta_2 \cdot E_{t-1} + (1 - \beta_2) \cdot (L'(w_{t}))^2 $$
 
-Kết hợp cả hai yếu tố "momentum" và "adaptive learning rate" giúp Adam tự động điều chỉnh learning rate cho từng tham số dựa trên lịch sử gradient và moment. Điều này giúp tối ưu hóa hiệu quả hơn trong các ngữ cảnh phức tạp, giảm tình trạng hội tụ chậm và sự dao động.
+### 5.3. Thành phần "bias correction"
 
-## 8. Một số biến thể khác của Gradient descent
+Adam thêm bước điều chỉnh để loại bỏ sự bias của $v$ và $E$ tại các vòng lặp ban đầu.
 
-### 8.1. Nadam (Nesterov-accelerated Adaptive Moment Estimation):
+Điều này được thực hiện bằng cách chia $v$ và $E$ cho một lũy thừa của hệ số $\beta_1$ và $\beta_2$ tương ứng. Quá trình này đảm bảo rằng trong giai đoạn đầu của huấn luyện, các giá trị này không bị ảnh hưởng bởi việc khởi tạo ban đầu.
 
-Kết hợp cả Nesterov Accelerated Gradient và Adam. Nadam kết hợp yếu tố moment và adaptive learning rate để cải thiện tốc độ hội tụ.
+$$ \hat{v}_{t} = \frac{v_{t}}{1 - \beta_1^t} $$
 
-### 8.2. Adadelta:
+$$ \hat{E}_{t} = \frac{E_{t}}{1 - \beta_2^t} $$
 
-Tương tự như RMSProp, nhưng sử dụng tỷ lệ chia của các bước cập nhật trước đó để điều chỉnh learning rate.
+### 5.4. Công thức cập nhật trọng số
 
-### 8.3. AMSGrad (Adaptive Moment Estimation for AMSGrad):
+Công thức cập nhật trọng số của mô hình trong thuật toán Adam là:
 
-Một biến thể của Adam nhằm khắc phục vấn đề của RMSProp và Adam trong việc ổn định learning rate.
+$$ w_{t+1} = w_{t} - \frac{\eta}{\sqrt{\hat{E}_{t}} + \epsilon} \cdot \hat{v}_{t} $$
 
-### 8.4. RAdam (Rectified Adam):
+Ta thường sử dụng các giá trị $\beta_1 = 0.9$ và $\beta_2 = 0.999$ cho các tham số của Adam, cùng với một learning rate khởi tạo thường là $0.001$.
 
-Một biến thể của Adam với cách cập nhật tốt hơn cho trạng thái không ổn định trong quá trình đầu tối ưu hóa.
+Kết hợp cả hai yếu tố "momentum" và "adaptive learning rate" giúp Adam tự động điều chỉnh learning rate cho từng tham số dựa trên lịch sử gradient và moment.
 
-### 8.5. FTRL-Proximal (Follow The Regularized Leader):
+Điều này giúp tối ưu hóa hiệu quả hơn trong các ngữ cảnh phức tạp, giảm tình trạng hội tụ chậm và sự dao động.
 
-Sử dụng kỹ thuật Follow The Regularized Leader để tối ưu hóa, thường được sử dụng trong các bài toán tối ưu hóa lớn với dữ liệu thưa.
+Một rule-of-thumb trong việc huấn luyện mô hình deep learning, **Nếu bạn không chắc chắn về thuật toán tối ưu nào nên sử dụng, hãy bắt đầu với Adam.**
 
-### 8.6. Yogi:
+## 6. Một số biến thể khác của Gradient descent
 
-Một biến thể của Adam nhằm cải thiện tốc độ hội tụ trong trường hợp có nhiễu trong dữ liệu.
-
-### 8.7. Lookahead:
-
-Kết hợp cả Adam và Nesterov Accelerated Gradient để cải thiện tốc độ hội tụ và khắc phục vấn đề của Adam khi gặp các vùng hẹp.
+- **Nadam (Nesterov-accelerated Adaptive Moment Estimation):** Kết hợp cả Nesterov Accelerated Gradient và Adam.
+- **Adadelta:** Một biến thể của AdaGrad, không cần lưu trữ tổng bình phương gradient, mà sử dụng một cửa sổ trượt để tính toán.
+- **RAdam (Rectified Adam):** Một biến thể của Adam với cách cập nhật tốt hơn cho trạng thái không ổn định trong quá trình đầu tối ưu hóa.
