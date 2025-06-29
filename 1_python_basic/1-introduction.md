@@ -2,7 +2,7 @@
 time: 12/19/2021
 title: Giới thiệu chung về ngôn ngữ lập trình Python
 description: Bài viết này sẽ giới thiệu một số ứng dụng và lý do khiến Python trở nên phổ biến. Ngoài ra, chúng ta cũng sẽ tìm hiểu một số thao tác lập trình cơ bản với Python như import thư viện, comment, đặt tên biến dữ liệu, ...
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0_series/images/python-logo.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python-logo.png
 tags: [python]
 is_highlight: false
 is_published: true
