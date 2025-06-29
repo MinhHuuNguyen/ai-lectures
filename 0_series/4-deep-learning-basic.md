@@ -17,75 +17,75 @@ is_published: true
 
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-tri-tue-nhan-tao-artificial-intelligence))
 
-## Bài 1: Mô hình mạng nơ ron đơn giản Neural network
+## Bài 1: Mạng nơ ron đơn giản Neural network
 
 1. Tổng quan
 2. Mối quan hệ giữa hàm XOR và mạng nơ ron
 3. Kiến trúc và các lớp trong mạng nơ ron
 4. Huấn luyện mạng nơ ron
 
-([bài viết chi tiết](/blog/mo-hinh-mang-no-ron-don-gian-neural-network/))
+([bài viết chi tiết](/blog/mang-no-ron-don-gian-neural-network/))
 
 ## Bài 2: Các biến thể nâng cấp của thuật toán tối ưu Gradient descent
 
 1. Nhắc lại về Gradient Descent
-2. Stochastic Gradient Descent (SGD) và Mini-batch Gradient descent
-3. Momentum Gradient Descent
-4. Nesterov Accelerated Gradient (NAG)
-5. Adaptive Gradient Algorithm (AdaGrad)
-6. Root Mean Square Propagation (RMSProp)
-7. Adaptive Moment Estimation (Adam)
-8. Một số biến thể khác của Gradient descent
+2. Vấn đề: Gradient descent phải tính toán với tất cả các phần tử trong bộ dữ liệu cho mỗi lần cập nhật trọng số của mô hình
+3. Vấn đề: Gradient descent phụ thuộc vào việc khởi tạo giá trị trọng số ban đầu
+4. Vấn đề: Gradient descent phụ thuộc vào việc lựa chọn learning rate
+5. Adaptive Moment Estimation (Adam)
+6. Một số biến thể khác của Gradient descent
 
-([bài viết chi tiết](/blog/
+([bài viết chi tiết](/blog/cac-bien-the-nang-cap-cua-thuat-toan-toi-uu-gradient-descent/))
 
-## Bài 3: Giới thiệu chung về AI tạo sinh Generative AI
+## Bài 3: AI tạo sinh Generative AI
 
+([bài viết chi tiết](/blog/ai-tao-sinh-generative-ai/))
 
-## Bài 4: Giới thiệu chung về Thị giác máy tính Computer Vision
+## Bài 4: Thị giác máy tính Computer Vision
 
 1. Giới thiệu chung về lĩnh vực Computer vision
 2. Các bài toán con của Computer vision
 3. Ảnh raster và ảnh vector trong máy tính
 4. Workflow trong quá trình giải quyết bài toán Computer vision
 
-([bài viết chi tiết](/blog/
+([bài viết chi tiết](/blog/thi-giac-may-tinh-computer-vision/))
 
-## Bài 5: Mô hình mạng nơ ron tích chập Convolutional Neural Network
+## Bài 5: Mạng nơ ron tích chập Convolutional Neural Network
 
-([bài viết chi tiết](/blog
+([bài viết chi tiết](/blog/mang-no-ron-tich-chap-convolutional-neural-network/))
 
-## Bài 6: Giới thiệu chung về Xử lý ngôn ngữ tự nhiên Natural Language Processing
+## Bài 6: Xử lý ngôn ngữ tự nhiên Natural Language Processing
 
-([bài viết chi tiết](/blog
+([bài viết chi tiết](/blog/xu-ly-ngon-ngu-tu-nhien-natural-language-processing/))
 
-## Bài 7: Mô hình mạng nơ ron hồi quy - Recurrent Neural Network
+## Bài 7: Mạng nơ ron hồi quy Recurrent Neural Network
 
-([bài viết chi tiết](/blog
+([bài viết chi tiết](/blog/mang-no-ron-hoi-quy-recurrent-neural-network/))
 
-## Bài 8: Sử dụng AI trong hệ thống tìm kiếm
+## Bài 8: Cơ chế Attention
 
+([bài viết chi tiết](/blog/co-che-attention/))
 
-## Bài 9: Giới thiệu chung về Âm thanh máy tính Computer Audition
+## Bài 9: Sử dụng AI trong hệ thống tìm kiếm
 
-([bài viết chi tiết](/blog
+([bài viết chi tiết](/blog/su-dung-ai-trong-he-thong-tim-kiem/))
 
-## Bài 10: Giới thiệu chung về Chuỗi thời gian Time Series
+## Bài 10: Âm thanh máy tính Computer Audition
 
-([bài viết chi tiết](/blog
+([bài viết chi tiết](/blog/am-thanh-may-tinh-computer-audition/))
 
-## Bài 11: Giới thiệu chung về Học tăng cường Reinforcement Learning
+## Bài 11: Chuỗi thời gian Time Series
 
-([bài viết chi tiết](/blog
+([bài viết chi tiết](/blog/gioi-thieu-chung-ve-chuoi-thoi-gian-time-series/))
 
-## Bài 12: Cơ chế Transfer Learning
+## Bài 12: Học tăng cường Reinforcement Learning
 
-([bài viết chi tiết](/blog/
+([bài viết chi tiết](/blog/gioi-thieu-chung-ve-hoc-tang-cuong-reinforcement-learning/))
 
-## Bài 13: Weakly, Semi và Self Supervised Learning
+## Bài 13: Transfer Learning và Weakly, Semi, Self Supervised Learning
 
-([bài viết chi tiết](/blog
+([bài viết chi tiết](/blog/transfer-learning-va-weakly-semi-self-supervised-learning/))
 
 ## Bài 14: Nén mô hình mạng nơ ron - Model Compression
 
-([bài viết chi tiết](/blog/
+([bài viết chi tiết](/blog/nen-mo-hinh-mang-no-ron-model-compression/))
