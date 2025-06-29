@@ -46,7 +46,8 @@ is_published: true
 1. Giới thiệu chung về lĩnh vực Computer vision
 2. Các bài toán con của Computer vision
 3. Ảnh raster và ảnh vector trong máy tính
-4. Workflow trong quá trình giải quyết bài toán Computer vision
+4. Không gian màu Color Space
+5. Workflow dự án Computer vision
 
 ([bài viết chi tiết](/blog/thi-giac-may-tinh-computer-vision/))
 
