@@ -14,14 +14,14 @@ Computer Vision (Thị giác máy tính) là một lĩnh vực nghiên cứu và
 
 Bằng cách sử dụng các kỹ thuật từ phân tích đặc trưng cục bộ (feature extraction) cho đến các mô hình học sâu (deep learning), hệ thống Computer Vision có thể thực hiện các nhiệm vụ phong phú như object recognition, face detection, image segmentation, depth estimation hay motion tracking ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/general.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/general.png" style="width: 1000px;"/>
 
 Nhờ tiềm năng phân tích hình ảnh với độ chính xác cao và khả năng xử lý tự động quy mô lớn, Computer Vision đã trở thành công nghệ then chốt trong nhiều ứng dụng thực tiễn: từ ô tô tự lái (autonomous driving) sử dụng camera để phát hiện chướng ngại vật, hệ thống giám sát an ninh (surveillance) tự động cảnh báo khi phát hiện hành vi bất thường, đến hỗ trợ chẩn đoán y khoa (medical imaging) giúp phát hiện sớm các bất thường trên X-quang hay MRI.
 
 Các mô hình giải quyết bài toán Computer vision thường hoạt động trên dữ liệu dạng hình ảnh hoặc video.
 Bên cạnh hình ảnh và video được chụp bằng máy ảnh thông thường, các mô hình computer vision còn có thể sử dụng những dạng hình ảnh đặc biệt như ảnh chụp x quang, ảnh sóng âm, ảnh sóng điện từ ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/data.gif" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/data.gif" style="width: 1000px;"/>
 
 Bên cạnh dữ liệu hình ảnh, các mô hình computer vision có thể còn sử dụng thêm các thông tin đến từ các dữ liệu loại khác để giúp gia tăng chất lượng của mô hình.
 
@@ -31,13 +31,13 @@ Bên cạnh dữ liệu hình ảnh, các mô hình computer vision có thể c�
 
 Là bài toán phân lớp nhận đầu vào là ảnh và trả đầu ra là lớp tương ứng với ảnh đó.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/classification.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/classification.png" style="width: 1000px;"/>
 
 ### 2.2. Nhận diện đối tượng - Object detection:
 
 Là bài toán kết hợp giữa hai bài toán object localization và object classification.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/object_detection.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/object_detection.png" style="width: 1000px;"/>
 
 Trong đó, mô hình giải quyết bài toán object detection đầu tiên sẽ định vị vị trí có thể chứa đối tượng trong ảnh (object localization), sau đó mô hình sẽ thực hiện phân lớp đối tượng để nhận diện đối tượng đó là đối tượng nào (object classification)
 
@@ -48,17 +48,17 @@ Bài toán này có thể chia thành hai dạng chính là semantic segmentatio
 
 **Semantic segmentation** là một dạng khác của bài toán classification, trong đó, mô hình, thay vì phân lớp trên cả ảnh, sẽ phân lớp từng pixel trên ảnh thuộc lớp nào
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/semantic_segmentation.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/semantic_segmentation.png" style="width: 1000px;"/>
 
 **Instance segmentation:** là một phiên bản cao hơn của semantic segmentation, bên cạnh việc phân lớp các pixel trên ảnh thuộc lớp nào, đối với những pixel thuộc cùng một lớp, mô hình cần phải phân lớp rõ pixel đó thuộc đối tượng nào
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/instance_segmentation.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/instance_segmentation.png" style="width: 1000px;"/>
 
 ### 2.4. Sinh ảnh - Image generation:
 
 Là bài toán yêu cầu mô hình sinh ra dữ liệu ảnh mới từ một số điều kiện ban đầu.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/image_synthesis_translation.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/image_synthesis_translation.png" style="width: 1000px;"/>
 
 Bên trong của bài toán Image generation gồm một số bài toán con như:
 
@@ -66,11 +66,11 @@ Bên trong của bài toán Image generation gồm một số bài toán con nh�
 
 **Image-to-image translation:** sinh ảnh mới từ ảnh ban đầu
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/text_to_image.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/text_to_image.png" style="width: 500px;"/>
 
 **Text-to-image translation:** sinh ảnh mới từ văn bản mô tả
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/inpainting_outpainting.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/inpainting_outpainting.png" style="width: 500px;"/>
 
 **Inpainting:** vẽ thêm hình ảnh vào khoảng trống trong ảnh ban đầu
 
@@ -80,7 +80,7 @@ Bên trong của bài toán Image generation gồm một số bài toán con nh�
 
 Là bài toán xây dựng một câu hoặc một đoạn văn mô tả một ảnh đầu vào.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/captioning.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/captioning.png" style="width: 1000px;"/>
 
 Bài toán này thường được giải quyết bằng cách kết hợp giữa mô hình xử lý ảnh và mô hình xử lý ngôn ngữ tự nhiên (NLP).
 
@@ -88,7 +88,7 @@ Bài toán này thường được giải quyết bằng cách kết hợp giữ
 
 Là bài toán sắp xếp các ảnh theo thứ tự ưu tiên dựa trên một số tiêu chí nhất định, có thể là độ liên quan, độ đẹp, độ phù hợp với một chủ đề nào đó ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/ranking.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/ranking.png" style="width: 1000px;"/>
 
 ### 2.7. Nhóm các bài toán liên quan đến khuôn mặt - Face ecosystem:
 
@@ -100,20 +100,20 @@ Face recognition gồm hai bài toán con là:
     - **Face indentification:** nhận đầu vào là một ảnh gương mặt người và trả đầu ra là định danh của gương mặt đó
     - **Face verification:** nhận đầu vào là hai ảnh gương mặt người và trả đầu ra là kết quả hai gương mặt có phải của cùng một người hay không.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/face_ecosystem.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/face_ecosystem.png" style="width: 1000px;"/>
 
 ### 2.8. Phân cụm ảnh - Image clustering:
 
 Là bài toán làm việc với hình ảnh không có nhãn, ta phân cụm các ảnh tương tự nhau thành một nhóm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/clustering.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/clustering.png" style="width: 1000px;"/>
 
 ### 2.9. Các bài toán liên quan đến video
 
 Bên cạnh hình ảnh, video cũng là một loại dữ liệu quan trọng nhận được nhiều sự quan tâm trong computer vision.
 Hầu như các bài toán trên dữ liêu hình ảnh đều có thể được áp dụng cho video như video classification, video object detection, video segmentation, video captioning ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/tracking.gif" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/tracking.gif" style="width: 1000px;"/>
 
 Nếu ta coi video là một chuỗi các hình ảnh được sắp xếp với nhau theo trình tự thời gian, ta hoàn toàn có thể sử dụng các mô hình xử lý dữ liệu ảnh để áp dụng cho video.
 Tuy nhiên, rào cản và cũng là bài toán lớn nhất mà các mô hình xử lý video cần phải giải quyết là khối lượng tính toán lớn, dẫn đến thời gian xử lý lâu và chi phí vận hành hệ thống lớn.
@@ -150,7 +150,7 @@ Các định dạng phổ biến:
 - Không phù hợp lưu trữ ảnh chụp với màu sắc phức tạp.
 - Khó sử dụng trực tiếp trong các thuật toán pixel-based.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/vector_raster.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/vector_raster.png" style="width: 500px;"/>
 
 ### 3.2. Ảnh raster (bitmap)
 
@@ -192,7 +192,7 @@ Một số xử lý chỉ cần làm trên kênh sáng (grayscale) hoặc kênh 
 Hai không gian màu phổ biến nhất trong computer vision là RGB và HSV.
 Một số không gian màu khác ít được sử dụng hơn như CIE LAB, CMYK ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/cymk.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/cymk.png" style="width: 500px;"/>
 
 ### 4.1. Không gian màu RGB
 
@@ -205,7 +205,7 @@ $256 \times 256 \times 256 = 16,777,216$
 
 Với việc mỗi điểm ảnh được cấu thành từ ba giá trị màu R - G - B, một ảnh bất kỳ sẽ được biểu diễn bởi một ma trận có kích thước $H \times W \times 3$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/rgb.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/rgb.png" style="width: 500px;"/>
 
 Trong một số thư viện như OpenCV, ảnh RGB thường được lưu trữ theo thứ tự BGR (Blue, Green, Red) thay vì RGB.
 
@@ -219,7 +219,7 @@ Kênh alpha có giá trị từ 0 (hoàn toàn trong suốt) đến 255 (hoàn t
 
 Không gian màu HSV là một cách tự nhiên hơn để mô tả màu sắc, dựa trên 3 số liệu: H (Hue - Vùng màu), S (Saturation - Độ bão hòa) và V (Value - Độ sáng).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/hsv.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/hsv.png" style="width: 500px;"/>
 
 HSV thường được sử dụng khi ta cần phân tích kỹ hơn về vùng sáng vùng tối của ảnh hay vùng có độ tương phản cao và vùng có độ tương phản thấp.
 
