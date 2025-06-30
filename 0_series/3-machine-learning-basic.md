@@ -4,7 +4,7 @@ title: "[SERIES] Machine Learning cơ bản"
 description: Machine Learning là một lĩnh vực nghiên cứu trong trí tuệ nhân tạo, mà mục tiêu là phát triển các kỹ thuật giúp máy tính học từ dữ liệu. Bài viết này sẽ tổng hợp danh sách một số kiến thức cơ bản nhất về Machine Learning như các thuật toán ML cơ bản, cách chia dữ liệu, cách đánh giá mô hình, cách tinh chỉnh mô hình ...
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/ai_vs_ml_vs_dl.png
 tags: [machine-learning, series]
-is_highlight: false
+is_highlight: true
 is_published: true
 ---
 
