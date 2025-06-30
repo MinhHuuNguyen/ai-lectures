@@ -22,7 +22,7 @@ Convolution layer là một tầng biến đổi ma trận đầu vào để là
 
 Công thức của phép convolution được tính như sau:
 
-$$ y_{11} = (x_{11} ∗ w_{11} + x_{12} ∗ w_{12} + x_{13} ∗ w_{13}) + (x_{21} ∗ w_{21} + x_{22} ∗w_{22} + x_{23} ∗ w_{23}) + (x_{31} ∗ w_{31} + x_{32} ∗ w_{32} + x_{33} ∗ w_{33}) $$
+$$y_{11} = (x_{11} ∗ w_{11} + x_{12} ∗ w_{12} + x_{13} ∗ w_{13}) + (x_{21} ∗ w_{21} + x_{22} ∗w_{22} + x_{23} ∗ w_{23}) + (x_{31} ∗ w_{31} + x_{32} ∗ w_{32} + x_{33} ∗ w_{33})$$
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/convolution.gif" style="width: 1000px;"/>
 
