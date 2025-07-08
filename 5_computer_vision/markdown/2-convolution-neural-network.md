@@ -62,7 +62,7 @@ $$ \left( n - k + 1 \right) \times \left( n - k + 1 \right) $$
 Thông thường kernel là ma trận vuông, có kích thước là $3 \times 3$, $5 \times 5$, $7 \times 7$ ...
 Trong một số trường hợp đặc biệt, kernel có thể là ma trận chữ nhật.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/kernel_size.gif" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/kernel_size.gif" style="width: 600px;"/>
 
 ### 2.2. Stride
 
@@ -71,7 +71,7 @@ Stride là một tham số quan trọng trong phép convolution, nó xác địn
 
 Với stride bằng 1, ta dịch chuyển kernel đến pixel ngay tiếp theo để tiếp tục tính toán, trong khi với stride bằng 2, ta dịch chuyển 2 bước.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/stride.gif" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/stride.gif" style="width: 600px;"/>
 
 Nếu kích thước của ma trận đầu vào là $n \times n$, kích thước của kernel là $k \times k$ và stride là $s$, thì kích thước của ma trận đầu ra sẽ là:
 
@@ -82,7 +82,7 @@ $$ \left( \frac{n - k}{s} + 1 \right) \times \left( \frac{n - k}{s} + 1 \right) 
 Padding là thao tác mà ta bổ sung thêm một số pixel vào xung quanh của ma trận đầu vào trước khi tính toán convolution.
 Padding giúp cho kích thước của ma trận đầu ra giống với kích thước của ma trận đầu vào.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/padding.gif" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/padding.gif" style="width: 600px;"/>
 
 Kiểu padding phổ biến nhất là zero padding (hay black padding) tức là ta sẽ thêm các pixel có giá trị bằng 0 vào xung quanh ma trận đầu vào.
 Một số kiểu padding khác như:
@@ -127,7 +127,7 @@ Max pooling và Average pooling là hai kỹ thuật pooling nền tảng, góp 
 
 Max pooling và Average pooling đều thực hiện phép chia feature maps thành các ô có kích thước là một tham số được xác định trước, sau đó thực hiện phép tính toán trên từng ô.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/pooling.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/pooling.png" style="width: 600px;"/>
 
 Nếu kích thước đầu vào của feature maps là $n \times n$ và kích thước của ô là $k \times k$, thì kích thước của ma trận đầu ra sẽ là:
 
@@ -148,7 +148,7 @@ Trong khi đó, adaptive pooling hay RoI pooling tiếp cận việc chia featur
 Adaptive pooling hay RoI pooling xác định trước kích thước đầu ra, sau đó chia đều feature maps input theo tỷ lệ kích thước của output.
 Điều này giúp cho ta luôn đảm bảo được chính xác kích thước của output cho dù input có kích thước bất kỳ.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/adaptive_pooling.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/adaptive_pooling.png" style="width: 600px;"/>
 
 Sau khi thực hiện chia feature maps thành các ô, adaptive pooling cũng sẽ thực hiện max hoặc average pooling trên từng ô để tạo ra output cuối cùng.
 Do đó, hiệu ứng của adaptive max pooling cũng tương tự như max pooling, trong khi adaptive average pooling cũng tương tự như average pooling.
@@ -158,7 +158,7 @@ Do đó, hiệu ứng của adaptive max pooling cũng tương tự như max poo
 Global pooling là một kỹ thuật pooling đặc biệt, nó không chia feature maps thành các ô mà thực hiện phép tính toán trên toàn bộ feature maps.
 Nói cách khác, global pooling sẽ biến đổi một features maps trực tiếp thành một vector.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/global_pooling.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/global_pooling.png" style="width: 600px;"/>
 
 Global max pooling sẽ lấy giá trị lớn nhất của toàn bộ feature maps làm giá trị đầu ra, trong khi global average pooling sẽ tính trung bình các giá trị của toàn bộ feature maps làm giá trị đầu ra.
 Tuy nhiên, do biến đổi toàn bộ feature maps thành vector, hiệu ứng của global max pooling và global average pooling sẽ khó nhận biết so với max pooling và average pooling.
@@ -181,7 +181,7 @@ Ví dụ, nếu ma trận đầu ra có kích thước là $n \times m$, thì Fl
 Convolution transpose layer là một layer đặc biệt trong CNN, nó thực hiện phép toán ngược lại với phép toán convolution.
 Nếu như đối với phép toán convolution, ma trận đầu vào được biến đổi thành ma trận đầu ra nhỏ hơn, thì đối với phép toán convolution transpose, ma trận đầu vào sẽ được biến đổi thành ma trận đầu ra lớn hơn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/convolution_transpose.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/convolution_transpose.gif" style="width: 1000px;"/>
 
 Convolution transpose layer thường được sử dụng trong các mô hình giải quyết bài toán phân đoạn ảnh (image segmentation) như U-Net hay những mô hình sinh ra dữ liệu ảnh như GANs hay Diffusion models.
 
@@ -201,7 +201,7 @@ VGG là một trong những mô hình CNN đầu tiên được xây dựng vớ
 - Mô hình VGG sử dụng các layer max pooling với kích thước kernel là $2 \times 2$ và stride là 2, do đó, kích thước của ma trận đầu ra sẽ giảm đi một nửa so với kích thước của ma trận đầu vào.
 - Mô hình VGG sử dụng các layer fully connected để đưa ra kết quả dự đoán cuối cùng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/vgg.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/vgg.png" style="width: 800px;"/>
 
 Mô hình VGG, ở thời điểm nó ra đời, đã đạt được kết quả rất tốt trên bộ dữ liệu ImageNet và trở thành một trong những mô hình CNN phổ biến nhất trong lĩnh vực computer vision.
 
@@ -233,16 +233,16 @@ Các hình ảnh trong phần này được lấy từ bài báo trên.
 
 ResNet được xây dựng dựa trên ý tưởng về việc sử dụng các residual connection để giải quyết vấn đề vanishing gradient trong các mô hình CNN sâu và ResNet là một ý tưởng cực kỳ đột phá ở thời điểm nó ra đời.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/residual_connection.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/residual_connection.png" style="width: 400px;"/>
 
 Residual connection là một kết nối giữa đầu vào và đầu ra của một layer convolution, giúp cho gradient có thể được lan truyền thông qua hai đường, một đường đi qua layer convolution và một đường đi thẳng từ đầu vào đến đầu ra.
 Điều này giúp cho gradient có thể được lan truyền qua các layer sâu mà không bị mất đi, giúp mô hình học được các đặc tính của ảnh đầu vào.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/residual_connection_example.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/residual_connection_example.png" style="width: 800px;"/>
 
 ResNet hướng đến việc xây dựng mô hình CNN rất sâu, rất nhiều layer, rất nhiều trọng số giúp ResNet trở thành một mô hình CNN trích xuất đặc trưng của hình ảnh rất tốt, học được trên những bộ dữ liệu lớn và phức tạp.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/resnet.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/resnet.png" style="width: 800px;"/>
 
 ResNet có một số phiên bản nổi tiếng là ResNet-18, ResNet-34, ResNet-50, ResNet-101, ResNet-152, ResNet-200 được sử dụng với các bộ dữ liệu có kích thước khác nhau.
 ResNet đã đạt được kết quả rất tốt trên bộ dữ liệu ImageNet và trở thành một trong những mô hình CNN pretrained phổ biến nhất trong lĩnh vực computer vision.
@@ -255,10 +255,19 @@ Một số phiên bản mô hình nâng cấp hơn của ResNet:
 
 ### 4.4. MobileNet
 
-MobileNet là một kiến trúc mô hình CNN được phát triển bởi Google vào năm 2017, được thiết kế đặc biệt để chạy trên các thiết bị di động và nhúng.
-MobileNet, như tên gọi của nó, là một mô hình CNN siêu gọn nhẹ, có thể chạy được trên các thiết bị di động.
+MobileNet là một kiến trúc mô hình CNN được phát triển bởi Google vào năm 2017.
+Bài báo công bố mô hình MobileNet là [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861).
+Các hình ảnh trong phần này được lấy từ bài báo trên.
 
-MobileNet có số lượng trọng số của mô hình rất ít (nếu so sánh với VGG hay ResNet) nhờ sử dụng một layer convolution đặc biệt gọi là Depthwise Separable Convolution.
+MobileNet, như tên gọi của nó, là một mô hình CNN siêu gọn nhẹ, có thể chạy được trên các thiết bị di động và nhúng với tài nguyên tính toán hạn chế.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/mobile_net.png" style="width: 1000px;"/>
+
+MobileNet có số lượng trọng số của mô hình rất ít (nếu so sánh với VGG hay ResNet) nhờ sử dụng một layer convolution đặc biệt gọi là depthwise separable convolution gồm hai bước:
+- Depthwise convolution: thực hiện phép convolution với kernel kích thước $k \times k$ trên từng kênh của ảnh đầu vào, tức là mỗi kênh sẽ được xử lý riêng biệt.
+- Pointwise convolution: thực hiện phép convolution với kernel kích thước $1 \times 1$ trên toàn bộ ảnh đầu vào, tức là kết hợp các kênh của ảnh đầu vào lại với nhau.
+Điều này giúp giảm số lượng trọng số của mô hình rất nhiều, từ đó giảm kích thước của mô hình và tăng tốc độ tính toán.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/depthwise_separable_convolution.png" style="width: 600px;"/>
 
 Tất nhiên là với kích thước mô hình nhỏ hơn nhiều, trong một số bài toán và bộ dữ liệu cụ thể, MobileNet không thể cạnh tranh được với ResNet hay VGG hay các kiến trúc CNN khác về độ chính xác, tuy nhiên, với lợi thế về tốc độ tính toán rất nhanh, MobileNet vẫn thường được sử dụng trong một số thiết bị di động hoặc trong một số trường hợp cần mô hình nhỏ trong thực tế.
