@@ -86,9 +86,9 @@ Padding giúp cho kích thước của ma trận đầu ra giống với kích t
 
 Kiểu padding phổ biến nhất là zero padding (hay black padding) tức là ta sẽ thêm các pixel có giá trị bằng 0 vào xung quanh ma trận đầu vào.
 Một số kiểu padding khác như:
-- Reflection padding: lấy các pixel ở cạnh của ma trận đầu vào để lấp đầy các pixel ở cạnh của ma trận đầu vào.
-- Replication padding: lấy các pixel ở cạnh của ma trận đầu vào để lấp đầy các pixel ở cạnh của ma trận đầu vào.
-- Circular padding: lấy các pixel ở cạnh của ma trận đầu vào để lấp đầy các pixel ở cạnh của ma trận đầu vào, nhưng thay vì lấy các pixel ở cạnh, ta sẽ lấy các pixel ở đối diện với cạnh đó.
+- Replication padding: lấy các pixel ở biên của ma trận đầu vào và nhân bản chúng vào các pixel padding lân cận.
+- Reflection padding: lấy các pixel đối xứng qua pixel ở biên của ma trận đầu vào để điền vào các pixel padding.
+- Circular padding: lấy các pixel ở biên của ma trận đầu vào và nối chúng lại với nhau theo chiều vòng tròn.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/other_padding.png" style="width: 1000px;"/>
 

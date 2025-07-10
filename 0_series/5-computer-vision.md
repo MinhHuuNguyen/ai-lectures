@@ -22,7 +22,7 @@ is_published: true
 
 1. Công thức của phép nhân tích chập Convolution
 2. Các tham số quan trọng của phép convolution
-3. Mạng nơ ron tích chập Convolution Neural Network CNN
+3. Kiến trúc mạng nơ ron tích chập Convolution Neural Network CNN
 4. Các mô hình CNN nổi tiếng
 
 ([bài viết chi tiết](/blog/mang-no-ron-tich-chap-convolutional-neural-network/))
