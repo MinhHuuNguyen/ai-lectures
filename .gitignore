@@ -6,6 +6,7 @@ __pycache__
 # Datasets
 3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/dog_cat_dataset
 3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/results
+7_computer_audition/notebook/1-computer-audition/audio_as_image
 
 # Checkpoint files
 *.pth
