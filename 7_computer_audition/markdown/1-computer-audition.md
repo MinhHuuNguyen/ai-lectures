@@ -77,7 +77,7 @@ Có hai kỹ thuật thường được dùng trong ADC: Sampling và Quantizati
 
 ### 3.1. Sampling
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_sampling.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_sampling.png" style="width: 1000px;"/>
 
 Thay vì việc thu thập tất cả các giá trị trong tín hiệu analog liên tục, ý tưởng của Sampling là việc lấy ra các giá trị theo từng khoảng cố định và đều nhau.
 
@@ -86,7 +86,7 @@ Giá trị này giúp ta xây dựng âm thanh phù hợp nhất với ngưỡng
 
 ### 3.2. Quantization
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_quantization.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_quantization.png" style="width: 1000px;"/>
 
 Trong khi kỹ thuật Sampling lấy các giá trị đều theo các khoảng thời gian, kỹ thuật Qauntization chia đều giá trị cường độ của âm thanh thành các khoảng bằng nhau, cụ thể là các giá trị nguyên.
 
@@ -138,7 +138,7 @@ Hình ảnh biểu diễn sóng âm mà ta thường quan sát là mối quan h�
 - Trục y biểu diễn biên độ theo từng thời điểm trên trục thời gian.
 Cách biểu diễn này được gọi là Time Domain.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/time_domain.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/time_domain.png" style="width: 1000px;"/>
 
 Hình ảnh của spectrum lại biểu diễn một góc nhìn khác của âm thanh, mô tả mối quan hệ giữa biên độ và tần số:
 - Trục x biểu diễn tần số
@@ -146,7 +146,7 @@ Hình ảnh của spectrum lại biểu diễn một góc nhìn khác của âm 
 Cách biểu diễn này được gọi là Frequency Domain.
 Khi ta quan sát được Frequency Domain, ta đang quan sát nó trong một khoảnh khắc trên trục thời gian.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/frequency_domain.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/frequency_domain.png" style="width: 1000px;"/>
 
 #### Spectrogram
 
@@ -156,7 +156,7 @@ Tuy nhiên, với sự phát triển của deep learning và đặc biệt là c
 
 Ta hoàn toàn có thể chuyển hoá được audio thành hình ảnh thông qua Spectrogram và xử lý audio thông qua xử lý hình ảnh của Spectrogram.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/spectrogram.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/spectrogram.png" style="width: 1000px;"/>
 
 Kết hợp thông tin từ Time Domain và Frequency Domain, ta thu được Spectrogram.
 - Trục x là thời gian
@@ -176,7 +176,7 @@ Mel-spectrograms là một biến thể của Spectrogram, trong đó trục t�
 Thang đo Mel là một thang đo phi tuyến tính, trong đó các tần số thấp được phân bố dày đặc hơn so với các tần số cao.
 Nói cách khác, trong thang đo Mel, khoảng cách giữa các tần số được giảm đi ở các tần số thấp và mở rộng ra ở các tần số cao.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mel_spectrogram.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mel_spectrogram.png" style="width: 1000px;"/>
 
 Ví dụ, nhìn vào trục tần số của Mel-spectrogram, ta thấy rằng khoảng cách giữa các tần số thấp là rất nhỏ, trong khi khoảng cách giữa các tần số cao là rất lớn.
 
@@ -189,7 +189,7 @@ Mel-frequency Cepstral Coefficients (MFCC) là một tập hợp các đặc tr�
 
 MFCC được tính toán từ Mel-spectrogram, bằng cách áp dụng biến đổi Discrete Cosine Transform (DCT) lên Mel-spectrogram để giảm số lượng đặc trưng và giữ lại các thông tin quan trọng nhất.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mfcc.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mfcc.png" style="width: 1000px;"/>
 
 MFCC giúp giảm thiểu ảnh hưởng của nhiễu và biến đổi trong quá trình thu thập âm thanh, đồng thời giữ lại các thông tin quan trọng về âm thanh.
 MFCC thường được sử dụng trong các mô hình học sâu để xử lý âm thanh, vì nó cung cấp một tập hợp các đặc trưng âm thanh có thể được sử dụng để huấn luyện các mô hình phân loại âm thanh hoặc nhận dạng giọng nói.
