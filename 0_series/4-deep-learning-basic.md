@@ -58,6 +58,12 @@ is_published: true
 
 ## Bài 5: Âm thanh máy tính Computer Audition
 
+1. Giới thiệu chung về lĩnh vực Computer audition
+2. Các bài toán con của Computer audition
+3. Tín hiệu analog và tín hiệu số
+4. Các đặc trưng của âm thanh
+5. Workflow dự án Computer audition
+
 ([bài viết chi tiết](/blog/am-thanh-may-tinh-computer-audition/))
 
 ## Bài 6: AI tạo sinh Generative AI
