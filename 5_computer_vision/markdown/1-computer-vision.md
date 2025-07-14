@@ -83,6 +83,7 @@ Là bài toán xây dựng một câu hoặc một đoạn văn mô tả một �
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/captioning.png" style="width: 1000px;"/>
 
 Bài toán này thường được giải quyết bằng cách kết hợp giữa mô hình xử lý ảnh và mô hình xử lý ngôn ngữ tự nhiên (NLP).
+Image captioning là bài toán đòi hỏi mô hình vừa có khả năng hiểu và lưu giữ được thông tin hình ảnh và sinh ra đoạn văn bản mô tả đúng ngữ pháp và chân thực.
 
 ### 2.6. Xếp hạng ảnh - Image ranking:
 
