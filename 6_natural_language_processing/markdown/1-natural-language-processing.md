@@ -15,7 +15,7 @@ Natural language processing (NLP) là một lĩnh con của machine learning và
 Các mô hình giải quyết bài toán NLP thường hoạt động trên dữ liệu dạng văn bản, cụ thể hơn, dữ liệu có thể là một câu, một từ, một đoạn văn bản hay một tập hợp các từ.
 Một số mô hình deep learning thường kết hợp dữ liệu dạng văn bản với các loại dữ liệu khác để máy tính có khả năng phân tích và đưa ra câu trả lời giống với con người.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/nlp.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/nlp.png" style="width: 500px;"/>
 
 Các bài toán NLP đã thu hút được sự quan tâm từ rất lâu, tuy nhiên, những mô hình giải quyết bài toán NLP cổ điển thường khó đạt được đến độ chân thật như con người.
 Lý do nằm ở tính phức tạp và trừu tượng trong ngôn ngữ của con người.
@@ -24,12 +24,12 @@ Một ví dụ điển hình là câu nói: "Các cổ động viên hôm nay th
 Với góc nhìn con người, ta dễ dàng hiểu rằng từ "đốt cháy" ở đây mang nghĩa bóng, thể hiện cho tinh thần cổ vũ của "các cổ động viên".
 Tuy nhiên, đối với máy tính, không dễ dàng để phân biệt được nghĩa của từ "đốt cháy" ở đây so với "đốt cháy" bằng lửa.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/fire.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/fire.png" style="width: 500px;"/>
 
 Một lý do khác dẫn đến tính phức tạp trong các bài toán NLP với các mô hình cũ là vấn đề về đa ngôn ngữ.
 Trên thế giới có khoảng 200 quốc gia với rất nhiều ngôn ngữ khác nhau, mỗi ngôn ngữ lại có những đặc điểm về từ vựng khác nhau, đặc điểm về ngữ pháp khác nhau ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/multi_lingual.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/multi_lingual.png" style="width: 500px;"/>
 
 Điều này là một rào cản khá lớn khi ta cố gắng xây dựng được mô hình NLP đa ngôn ngữ, và thông thường, trong các mô hình NLP, ngôn ngữ tiếng anh thường có chất lượng tốt nhất do có lượng dữ liệu nhiều.
 
@@ -39,7 +39,7 @@ Trên thế giới có khoảng 200 quốc gia với rất nhiều ngôn ngữ k
 
 Là bài toán đơn giản nhất trong NLP, mô hình giải quyết nhận đầu vào là một đoạn văn bản và trả đầu ra là lớp tương ứng với đoạn văn bản đó.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/classification.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/classification.png" style="width: 800px;"/>
 
 Bài toán text classification có rất nhiều ứng dụng trong việc phân tích văn bản nói chung như đánh giá email spam, đánh giá cảm xúc của người dùng thông qua feedback, đánh giá xu hướng tích cực hay tiêu cực trên mạng xã hội, kiểm tra lỗi chính tả ...
 
@@ -47,7 +47,7 @@ Bài toán text classification có rất nhiều ứng dụng trong việc phân
 
 Là bài toán khá quan trọng trong NLP tập trung vào việc phân tích ngữ pháp của văn bản.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/pos.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/pos.png" style="width: 800px;"/>
 
 Cụ thể, PoS tagging tập trung vào việc phân loại các từ trong đoạn văn bản là từ loại gì (chủ ngữ, động từ, giới từ, mạo từ ...)
 
@@ -57,6 +57,8 @@ Là bài toán phân lớp các thực thể trong văn bản, nhận đầu và
 
 Tuỳ thuộc vào từng bộ dữ liệu mà ta sẽ có danh sách các thực thể khác nhau, tuy nhiên, một số thực thể phổ biên trong bài NER là tên người, địa điểm, thời gian, số điện thoại, email ...
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/ner.png" style="width: 1000px;"/>
+
 Bên cạnh việc sử dụng các mô hình machine learning, ta cũng có thể sử dụng biểu thức chính quy (regular expression) để xác định một số thực thể trong văn bản.
 
 ### 2.4. Sequence-to-sequence (seq2seq)
@@ -65,7 +67,7 @@ Là bài toán quan trọng nhất trong NLP, nhận đầu vào là một đo�
 
 Đây là bài toán khó nhất trong NLP do tính phức tạp của ngôn ngữ tự nhiên, tuy nhiên, seq2seq lại có rất nhiều ứng dụng thực tiễn trong cuộc sống.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/seq2seq.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/seq2seq.png" style="width: 600px;"/>
 
 seq2seq có rất nhiều các bài toán con cụ thể hơn.
 
@@ -83,7 +85,7 @@ Có hai trường phái của các bài toán summarization:
 
 Là bài toán dịch tự động, nhận đầu vào là một đoạn văn bản ở ngôn ngữ thứ nhất và trả đầu ra là kết quả dịch đoạn văn bản đó sang một ngôn ngữ khác.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/translation.png" style="width: 300px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/translation.png" style="width: 500px;"/>
 
 Ở giai đoạn trước, mỗi mô hình dịch máy thường được huấn luyện trên một cặp ngôn ngữ nhất định, tuy nhiên, hiện nay, với sự phát triển của các mô hình ngôn ngữ lớn (large language model), ta có thể xây dựng được các mô hình dịch máy đa ngôn ngữ.
 
@@ -102,7 +104,7 @@ Từ năm 2022, với sự phát triển của các mô hình ngôn ngữ lớn 
 Là bài toán tự động hoàn thành đoạn văn bản theo đoạn văn bản đầu vào.
 Các mô hình auto completion đã được tích hợp rất nhiều trong các công cụ soạn thảo văn bản, giúp người dùng tiết kiệm thời gian và công sức trong việc soạn thảo văn bản.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/auto_completion.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/auto_completion.png" style="width: 700px;"/>
 
 Một ví dụ rất mạnh mẽ của mô hình auto completion là các phần mềm soạn thảo lập trình như GitHub Copilot, Cursor, chỉ cần nhập một vài từ khoá, mô hình sẽ tự động hoàn thành đoạn code thậm chí cả file code hoặc nhiều file code khác nhau cho người dùng.
 
@@ -121,7 +123,7 @@ Biểu thức chính quy (Regular expression - Regex) là phương pháp xây d�
 
 Cụ thể hơn, khi xây dựng Regex, ta xây dựng các luật để lọc hoặc tìm kiếm các chuỗi văn bản theo các mẫu đã định trước.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/regex.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/regex.png" style="width: 800px;"/>
 
 Ví dụ:
 ```python
@@ -181,7 +183,7 @@ Cách tokenization đơn giản nhất là chia đoạn văn bản thành các t
 Tuy nhiên, với các ngôn ngữ khác nhau hoặc với các mô hình và các bộ dữ liệu khác nhau thì cách tokenization có thể khác nhau.
 Thông thường, mỗi mô hình NLP sẽ có một bộ tokenization riêng biệt.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/tokenization.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/tokenization.png" style="width: 800px;"/>
 
 Từ các token trong bộ dữ liệu, ta có thể xây dựng được từ điển (vocabulary) cho mô hình. Từ điển bao gồm các token và index tương ứng của token đó.
 
@@ -216,7 +218,7 @@ Tuy nhiên, với các mô hình NLP seq2seq, quá trình này thường không 
 Word embedding là quá trình mã hoá các từ trong đoạn văn bản thành dạng số.
 Quá trình này giúp mô hình có thể hiểu được mối quan hệ giữa các từ và từ đó cải thiện hiệu suất của mô hình.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/llm.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/embedding.png" style="width: 700px;"/>
 
 Một số phương pháp word embedding phổ biến là: **Bag of words (BoW)**, **Term Frequency-Inverse Document Frequency (TF-IDF)**, **Word2Vec**, **GloVe**, **FastText** ...
 
@@ -227,7 +229,7 @@ Mô hình ngôn ngữ lớn (Large language model - LLM) là các mô hình deep
 Các mô hình ngôn ngữ lớn thường sử dụng kiến trúc Transformer, một kiến trúc mạng nơ-ron được giới thiệu bởi Google vào năm 2017.
 Kiến trúc Transformer cho phép mô hình xử lý các chuỗi dữ liệu dài một cách hiệu quả và có khả năng học được các mối quan hệ phức tạp giữa các từ trong đoạn văn bản.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/llm.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/llm.png" style="width: 800px;"/>
 
 Các mô hình ngôn ngữ lớn đã đạt được những thành tựu vượt bậc trong các bài toán NLP, đặc biệt là trong các bài toán seq2seq như dịch máy, tóm tắt văn bản, trả lời tự động ...
 Một số mô hình ngôn ngữ lớn nổi tiếng là: **ChatGPT**, **Claude**, **Gemini** ...
