@@ -102,6 +102,8 @@ Từ năm 2022, với sự phát triển của các mô hình ngôn ngữ lớn 
 Là bài toán tự động hoàn thành đoạn văn bản theo đoạn văn bản đầu vào.
 Các mô hình auto completion đã được tích hợp rất nhiều trong các công cụ soạn thảo văn bản, giúp người dùng tiết kiệm thời gian và công sức trong việc soạn thảo văn bản.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/auto_completion.png" style="width: 1000px;"/>
+
 Một ví dụ rất mạnh mẽ của mô hình auto completion là các phần mềm soạn thảo lập trình như GitHub Copilot, Cursor, chỉ cần nhập một vài từ khoá, mô hình sẽ tự động hoàn thành đoạn code thậm chí cả file code hoặc nhiều file code khác nhau cho người dùng.
 
 ### 2.5. Đặt tiêu đề cho ảnh - Image captioning:
@@ -115,7 +117,52 @@ Image captioning là bài toán đòi hỏi mô hình vừa có khả năng hi�
 
 ## 3. Biểu thức chính quy Regular expression
 
+Biểu thức chính quy (Regular expression - Regex) là phương pháp xây dựng nhóm các ký tự, ký hiệu viết ra theo quy luật tạo thành các mẫu (pattern), nó được sử dụng để tìm kiếm văn bản (text).
+
+Cụ thể hơn, khi xây dựng Regex, ta xây dựng các luật để lọc hoặc tìm kiếm các chuỗi văn bản theo các mẫu đã định trước.
+
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/regex.png" style="width: 1000px;"/>
+
+Ví dụ:
+```python
+import re
+# Tìm kiếm các số điện thoại trong đoạn văn bản
+text = "Số điện thoại của tôi là 0123456789, số điện thoại của bạn là 0987654321"
+pattern = r'\d{10}'  # Mẫu tìm kiếm các chuỗi số có độ dài 10
+matches = re.findall(pattern, text)
+print(matches)  # Output: ['0123456789', '0987654321']
+```
+
+Một số quy tắc viết Regex:
+| Ký hiệu | Ý nghĩa |
+| --- | --- |
+| `.` | Bất kỳ ký tự nào |
+| `\d` | Bất kỳ chữ số nào (0-9) |
+| `\D` | Bất kỳ ký tự nào không phải chữ số |
+| `\w` | Bất kỳ ký tự chữ cái hoặc số (a-z, A-Z, 0-9, _) |
+| `\W` | Bất kỳ ký tự nào không phải chữ cái hoặc số |
+| `\s` | Bất kỳ ký tự khoảng trắng (space, tab, newline) |
+| `\S` | Bất kỳ ký tự nào không phải khoảng trắng |
+| `^` | Bắt đầu chuỗi |
+| `$` | Kết thúc chuỗi |
+| `*` | Lặp lại 0 hoặc nhiều lần |
+| `+` | Lặp lại 1 hoặc nhiều lần |
+| `?` | Lặp lại 0 hoặc 1 lần |
+| `{n}` | Lặp lại đúng n lần |
+| `{n,}` | Lặp lại ít nhất n lần |
+| `{n,m}` | Lặp lại từ n đến m lần |
+| ... | ... |
+
+Một số Regex phổ biến và ý nghĩa:
+
+| Regex | Ý nghĩa |
+| --- | --- |
+| `\d{3}-\d{3}-\d{4}` | Số điện thoại định dạng xxx-xxx-xxxx |
+| `\w+@\w+\.\w+` | Địa chỉ email định dạng xxx@xxx.xxx |
+| `https?://[^\s]+` | URL bắt đầu bằng http:// hoặc https:// |
+| `\b[A-Z][a-z]*\b` | Từ bắt đầu bằng chữ hoa và theo sau là chữ thường |
+
+Regex là một công cụ rất hữu ích trong quá trình xử lý dữ liệu văn bản, giúp ta dễ dàng lọc và tìm kiếm các chuỗi văn bản theo các mẫu đã định trước.
 
 ## 4. Workflow dự án Natural language processing
 
@@ -124,33 +171,69 @@ Tương tự như workflow nói chung trong quá trình xây dựng mô hình de
 Tuy nhiên, đối với NLP, bước tiền xử lý dữ liệu đòi hỏi những thao tác đặc thù với dữ liệu dạng văn bản.
 Những thao tác này được gọi chung là **Text processing**.
 
-Thông thường, trong hầu hết các bài toán NLP, quá trình text processing bao gồm rất nhiều các bước như:
-- 
+Thông thường, trong hầu hết các bài toán NLP, quá trình **Text processing** bao gồm rất nhiều các bước như:
 
-## 5. Mô hình ngôn ngữ lớn Large language model
+### 4.1. Tokenization
+
+Chia một đoạn văn bản thành các đơn vị nhỏ hơn, thường là các từ hoặc câu, được gọi là token.
+
+Cách tokenization đơn giản nhất là chia đoạn văn bản thành các từ bằng cách sử dụng dấu cách (space) làm ranh giới.
+Tuy nhiên, với các ngôn ngữ khác nhau hoặc với các mô hình và các bộ dữ liệu khác nhau thì cách tokenization có thể khác nhau.
+Thông thường, mỗi mô hình NLP sẽ có một bộ tokenization riêng biệt.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/tokenization.png" style="width: 1000px;"/>
+
+Từ các token trong bộ dữ liệu, ta có thể xây dựng được từ điển (vocabulary) cho mô hình. Từ điển bao gồm các token và index tương ứng của token đó.
+
+### 4.2. Lemmatization và Stemming
+
+Lemmatization và Stemming là hai kỹ thuật xử lý ngôn ngữ tự nhiên để chuẩn hoá các từ về dạng cơ bản của chúng.
+
+- **Stemming**: Là quá trình loại bỏ các hậu tố (suffix) của từ để đưa từ về dạng gốc.
+Ví dụ, "running", "ran", "runner" sẽ được chuyển thành "run".
+Stemming thường sử dụng các thuật toán đơn giản và không cần từ điển.
+
+- **Lemmatization**: Là quá trình chuyển đổi từ về dạng cơ bản của nó dựa trên ngữ cảnh và từ điển.
+Ví dụ, "better" sẽ được chuyển thành "good".
+Lemmatization thường phức tạp hơn và cần từ điển để xác định dạng cơ bản của từ.
+
+Đối với các mô hình NLP cổ điển hoặc những mô hình NLP giải quyết các bài toán đơn giản như phân loại văn bản ..., Stemming và Lemmatization thường được sử dụng để giảm thiểu số lượng từ trong từ điển và cải thiện hiệu suất của mô hình.
+
+Tuy nhiên, với các mô hình NLP seq2seq, quá trình này thường không cần thiết do mô hình đã được huấn luyện trên một lượng dữ liệu rất lớn và có khả năng hiểu được ngữ cảnh của từ.
+
+### 4.3. Stop words
+
+Stop words là các từ xuất hiện rất nhiều trong các đoạn văn bản nhưng những từ này lại không mang lại nhiều ý nghĩa.
+
+Ví dụ, các từ như "the", "is", "and", "a", "to" ... thường được coi là stop words trong tiếng anh.
+
+Đối với các mô hình NLP cổ điển hoặc những mô hình NLP giải quyết các bài toán đơn giản như phân loại văn bản ..., việc loại bỏ stop words là cần thiết để giảm thiểu số lượng từ trong từ điển và cải thiện hiệu suất của mô hình.
+
+Tuy nhiên, với các mô hình NLP seq2seq, quá trình này thường không cần thiết do mô hình đã được huấn luyện trên một lượng dữ liệu rất lớn và có khả năng hiểu được ngữ cảnh của từ.
+
+### 4.4. Word embedding
+
+Word embedding là quá trình mã hoá các từ trong đoạn văn bản thành dạng số.
+Quá trình này giúp mô hình có thể hiểu được mối quan hệ giữa các từ và từ đó cải thiện hiệu suất của mô hình.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/llm.png" style="width: 1000px;"/>
 
+Một số phương pháp word embedding phổ biến là: **Bag of words (BoW)**, **Term Frequency-Inverse Document Frequency (TF-IDF)**, **Word2Vec**, **GloVe**, **FastText** ...
 
+## 5. Mô hình ngôn ngữ lớn Large language model
 
+Mô hình ngôn ngữ lớn (Large language model - LLM) là các mô hình deep learning được huấn luyện trên một lượng dữ liệu văn bản rất lớn, giúp mô hình có khả năng hiểu và sinh ra văn bản giống với con người.
 
+Các mô hình ngôn ngữ lớn thường sử dụng kiến trúc Transformer, một kiến trúc mạng nơ-ron được giới thiệu bởi Google vào năm 2017.
+Kiến trúc Transformer cho phép mô hình xử lý các chuỗi dữ liệu dài một cách hiệu quả và có khả năng học được các mối quan hệ phức tạp giữa các từ trong đoạn văn bản.
 
-- Sentence tokenization: Chia một đoạn văn bản thành các câu
-- Word tokenization: Chia một đoạn văn bản thành các từ
-- Text lemmatization và stemming: xử lý các dạng ngữ pháp của từ (VD: "am, are, is" trở thành "be", "dog, dogs, dog’s, dogs’" trở thành "dog"). Stemming gồm các thao tác thô như loại bỏ các hậu tố (suffix) trong các từ. Lemmatization sử dụng từ điển và các phép phân tích hình thái học của từ (morphological analysis) để làm sạch dữ liệu text.
-- Xử lý stop words: Stop words bao gồm các từ xuất hiện rất nhiều trong các đoạn văn bản nhưng những từ này lại không mang lại nhiều ý nghĩa. Tuy vậy, danh sách các stop words có thể khác nhau phụ thuộc vào cụ thể bộ dữ liệu và bài toán NLP.
-- Word embedding: là quá trình mã hoá các từ trong đoạn văn bản thành dạng số. Khái quát hơn, ta mã hoá đoạn văn bản trở thành vector và từ đó các mô hình machine learning sẽ tính toán trên các vector này.
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/llm.png" style="width: 1000px;"/>
 
-Tóm lại, đầu vào của quá trình text processing là dữ liệu dạng văn bản và trả đầu ra là dữ liệu đã được làm sạch dưới dạng vector mã hoá để sẵn sàng đưa vào trong mô hình machine learning.
+Các mô hình ngôn ngữ lớn đã đạt được những thành tựu vượt bậc trong các bài toán NLP, đặc biệt là trong các bài toán seq2seq như dịch máy, tóm tắt văn bản, trả lời tự động ...
+Một số mô hình ngôn ngữ lớn nổi tiếng là: **ChatGPT**, **Claude**, **Gemini** ...
 
+Một số kỹ thuật thường được sử dụng trong quá trình huấn luyện các mô hình ngôn ngữ lớn là **Self-supervised learning**, **Transfer learning**, **Instruction tuning**, **Reinforcement learning from human feedback (RLHF)** ...
 
-Một công cụ khá hữu ích trong quá trình xử lý dữ liệu text là Biểu thức chính quy (Regular expression - Regex).
-Regex là phương pháp xây dựng nhóm các ký tự, ký hiệu viết ra theo quy luật tạo thành các mẫu (pattern), nó được sử dụng để tìm kiếm văn bản (text).
-Cụ thể hơn, khi xây dựng Regex, ta xây dựng các luật để lọc hoặc lấy ra được những đoạn text.
-Điều này giúp quá trình làm sạch dữ liệu text trở nên dễ dàng và hiệu quả hơn.
+Các mô hình ngôn ngữ lớn hiện nay, không những có khả năng xử lý các bài toán NLP, mà còn có thể kết hợp để giải quyết các bài toán trên các loại dữ liệu khác như hình ảnh, âm thanh, video ...
 
-<img src="https://miro.medium.com/v2/resize:fit:1036/1*WfLCo4Ql59kxq_0frEe7xQ.png" style="width: 1200px;"/>
-
-<!-- ## 4. Text tokenization và word embedding -->
-
-
+Các mô hình ngôn ngữ lớn đã mở ra một kỷ nguyên mới trong lĩnh vực NLP, giúp máy tính có khả năng hiểu và sinh ra văn bản giống với con người, từ đó cải thiện hiệu suất của các ứng dụng NLP trong cuộc sống hàng ngày.
