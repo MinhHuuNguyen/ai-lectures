@@ -7,11 +7,13 @@ requires-python = ">=3.12"
 dependencies = [
     "jupyter>=1.1.1",
     "keras>=3.10.0",
+    "keras-preprocessing>=1.1.2",
     "matplotlib>=3.10.3",
+    "nltk>=3.9.1",
     "notebook>=7.4.4",
-    "opencv-python>=4.12.0.88",
+    "numpy==1.26.0",
     "pandas>=2.3.1",
     "scikit-learn>=1.7.1",
     "seaborn>=0.13.2",
-    "tensorflow>=2.19.0",
+    "tensorflow>=2.18.1",
 ]

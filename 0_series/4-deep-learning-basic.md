@@ -66,21 +66,27 @@ is_published: true
 
 ([bài viết chi tiết](/blog/am-thanh-may-tinh-computer-audition/))
 
-## Bài 6: AI tạo sinh Generative AI
+## Bài 6: Xử lý ngôn ngữ tự nhiên Natural language processing
 
-([bài viết chi tiết](/blog/ai-tao-sinh-generative-ai/))
-
-## Bài 7: Xử lý ngôn ngữ tự nhiên Natural Language Processing
+1. Giới thiệu chung về lĩnh vực Natural language processing
+2. Các bài toán con của Natural language processing
+3. Biểu thức chính quy Regular expression
+4. Workflow dự án Natural language processing
+5. Mô hình ngôn ngữ lớn Large language model
 
 ([bài viết chi tiết](/blog/xu-ly-ngon-ngu-tu-nhien-natural-language-processing/))
 
-## Bài 8: Mạng nơ ron hồi quy Recurrent Neural Network
+## Bài 7: Mạng nơ ron hồi quy Recurrent Neural Network
 
 ([bài viết chi tiết](/blog/mang-no-ron-hoi-quy-recurrent-neural-network/))
 
-## Bài 9: Cơ chế Attention
+## Bài 8: Cơ chế Attention và mô hình Transformer
 
-([bài viết chi tiết](/blog/co-che-attention/))
+([bài viết chi tiết](/blog/co-che-attention-va-mo-hinh-transformer/))
+
+## Bài 9: AI tạo sinh Generative AI
+
+([bài viết chi tiết](/blog/ai-tao-sinh-generative-ai/))
 
 ## Bài 10: Sử dụng AI trong hệ thống tìm kiếm
 

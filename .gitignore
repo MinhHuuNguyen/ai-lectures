@@ -12,6 +12,7 @@ __pycache__
 *.pth
 *.pt
 *.onnx
+checkpoint*.weights.h5
 
 # Logs
 events.out.tfevents*
