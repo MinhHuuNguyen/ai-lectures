@@ -19,7 +19,7 @@ RNN tính toán giá trị đầu ra phụ thuộc vào cả các phép tính tr
 
 Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications](https://www.mdpi.com/2078-2489/15/9/517) giúp mô tả chi tiết kiến trúc bên trong của một cell trong mô hình LSTM.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/unfold_rnn.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/unfold_rnn.png" style="width: 600px;"/>
 
 trong đó:
 - $x_i$ là giá trị tại vị trí (thời điểm) thứ $i$ của chuỗi đầu vào
@@ -36,7 +36,7 @@ Ví dụ: Xét bài toán dịch máy từ tiếng anh sang tiếng việt
 
 Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks (RNNs): A gentle Introduction and Overview](https://arxiv.org/abs/1912.05911).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/feedforward_vs_recurrent.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/feedforward_vs_recurrent.png" style="width: 900px;"/>
 
 Một số thành phần mang lại sự khác biệt giữa ý tưởng của RNN và mạng nơ ron truyền thống (Feedforward Neural Network):
 - Đầu tiên là $h_i$, $h_i$ được tính bằng $h_i = f(W_X x_i + W_H h_{i-1})$.
@@ -161,7 +161,7 @@ Ví dụ, đối với bài toán điền từ còn thiếu trong câu, ta cần
 
 Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks (RNNs): A gentle Introduction and Overview](https://arxiv.org/abs/1912.05911).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/bidirectional_rnn.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/bidirectional_rnn.png" style="width: 600px;"/>
 
 Từ đó, ta có thể coi mô hình Bidirectional RNN là việc chồng 2 mạng RNN ngược hướng lên nhau.
 Lúc này đầu ra được tính toán dựa vào cả 2 trạng thái ẩn của 2 mạng RNN ngược hướng này.
@@ -171,7 +171,7 @@ Một phiên bản khác của Bidirectional RNN là Deep Bidirectional RNN - RN
 
 Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications](https://www.mdpi.com/2078-2489/15/9/517).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/bilstm.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/bilstm.png" style="width: 600px;"/>
 
 Ngoài ra, ta cũng có thể áp dụng ý tưởng này cho LSTM, từ đó, ta có BiLSTM - LSTM hai chiều.
 
@@ -182,16 +182,16 @@ Hình ảnh dưới đây được lấy từ bài báo này.
 
 Đây là biến thể giúp cung cấp thêm thông tin về cell state trong các thời điểm cần đưa ra quyết định loại bỏ thông tin khỏi cell state (của Forget Layer Gate), bổ sung thông tin vào cell state (của Input Layer Gate) hay bổ sung thông tin vào kết quả đầu ra (của Output Layer Gate).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/peephole_connections.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/peephole_connections.png" style="width: 1000px;"/>
 
 Hình trên mô tả các đường được thêm vào mọi cổng, nhưng cũng có những nghiên cứu chỉ thêm cho một vài cổng mà thôi.
 
 ### 4.3. LSTM với coupled forget - input gates
 
-Đây là biến thể giúp LSTM cân bằng giữa phần "quên" và phần bổ sung thêm.
+Ở biến thể này, Forget Layer Gate và Input Layer Gate được kết hợp lại với nhau thành một cổng duy nhất giúp cân bằng giữa phần "quên" và phần bổ sung thêm.
 Ta chỉ thêm thông tin mới vào cell state khi ta quên bớt thông tin gì đó hoặc ngược lại, ta chỉ quên bớt thông tin gì đó nếu ta bổ sung thêm thông tin mới vào cell state.
 
-<img src="" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/coupled_input_forget_gate.png" style="width: 1000px;"/>
 
 ### 4.4. Gated Recurrent Unit (GRU)
 
@@ -200,4 +200,4 @@ GRU cũng kết hợp cell state và hidden state lại với nhau để tạo r
 
 Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications](https://www.mdpi.com/2078-2489/15/9/517).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/gru.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/gru.png" style="width: 600px;"/>
