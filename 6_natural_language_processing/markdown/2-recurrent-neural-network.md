@@ -191,6 +191,8 @@ Hình trên mô tả các đường được thêm vào mọi cổng, nhưng cũ
 Ở biến thể này, Forget Layer Gate và Input Layer Gate được kết hợp lại với nhau thành một cổng duy nhất giúp cân bằng giữa phần "quên" và phần bổ sung thêm.
 Ta chỉ thêm thông tin mới vào cell state khi ta quên bớt thông tin gì đó hoặc ngược lại, ta chỉ quên bớt thông tin gì đó nếu ta bổ sung thêm thông tin mới vào cell state.
 
+Hình ảnh này được lấy từ bài báo [LSTM: A Search Space Odyssey](https://arxiv.org/abs/1503.04069).
+
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/coupled_input_forget_gate.png" style="width: 1000px;"/>
 
 ### 4.4. Gated Recurrent Unit (GRU)
