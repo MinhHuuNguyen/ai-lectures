@@ -1,18 +1,23 @@
 ---
-slug: recurrent-neural-network
-time: 11/09/2024
-title: Mô hình mạng nơ ron hồi quy - Recurrent Neural Network (RNN)
-description:
-author: Nguyễn Hữu Minh
+time: 02/23/2023
+title: Mạng nơ ron hồi quy Recurrent neural network
+description: 
 banner_url: 
-tags: [deep-learning]
+tags: [deep-learning, natural-language-processing]
 is_highlight: false
-is_published: false
+is_published: true
 ---
 
-# Recurrent neural network
+## 1. Ý tưởng "hồi quy" trong kiến trúc mạng nơ ron
 
-## 1. Giới thiệu chung về Recurrent neural network (RNN)
+## 2. Vấn đề phụ thuộc xa của RNN
+
+## 3. Kiến trúc mô hình Long short-term memory (LSTM)
+
+## 4. Các biến thể của RNN nói chung và LSTM nói riêng
+
+
+
 
 Mạng nơ ron hồi quy (RNN) là mô hình rất phổ biến trong thời gian trước với những kết quả đầy hứa hẹn trên các bài toán xử lý ngôn ngữ tự nhiên (NLP).
 Cho dù ở thời điểm hiện tại, với sự phát triển của cơ chế Attention và các mô hình Transformer đạt kết quả cao trên các bài toán xử lý ngôn ngữ, ý tưởng về cơ chế hoạt động của các mô hình RNN vẫn đáng chú ý và được áp dụng trong một số trường hợp cụ thể.

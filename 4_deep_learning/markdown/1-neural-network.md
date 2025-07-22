@@ -29,8 +29,9 @@ Xét hàm XOR với đầu vào là 2 biến nhị phân $x_1$ và $x_2$ và đ�
 | 1     | 1     | 0   |
 
 Ta có thể phát biểu hàm XOR như sau: "Nếu $x_1$ và $x_2$ khác nhau thì $y$ bằng 1, nếu giống nhau thì $y$ bằng 0".
+Hình ảnh này được lấy từ bài báo [– Understanding LSTM - a tutorial into Long Short-Term Memory Recurrent Neural Networks](https://arxiv.org/abs/1909.09586).
 
-<img src="" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/xor.png" style="width: 600px;"/>
 
 Hàm XOR là một ví dụ kinh điển cho thấy giới hạn của các mô hình tuyến tính, không thể dùng một mô hình tuyến tính để học và mô phỏng được hàm XOR.
 Điều này là nền tảng cho sự ra đời của các mô hình mạng nơ ron phức tạp hơn.
@@ -43,6 +44,10 @@ Ta có lớp nhận đầu vào được gọi là input layer, các lớp tính
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/dnn.png" style="width: 800px;"/>
 
 Với kiến trúc này, neural network cho phép sử dụng rất nhiều các loại layer khác nhau, có các chức năng khác nhau.
+
+Hình ảnh này được lấy từ bài báo [– Understanding LSTM - a tutorial into Long Short-Term Memory Recurrent Neural Networks](https://arxiv.org/abs/1909.09586) giúp mô tả chi tiết hơn vị trí của các phép toán bên trong của một nơ ron.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/inside_neuron.png" style="width: 800px;"/>
 
 Ngoài ra, với kiến trúc gồm các layer, neural network cho phép người dùng tăng / giảm kích thước của mô hình dễ dàng thông qua việc tăng / giảm số lượng layer và tăng / giảm kích thước của từng layer.
 

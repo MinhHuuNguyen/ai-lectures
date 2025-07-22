@@ -78,31 +78,36 @@ is_published: true
 
 ## Bài 7: Mạng nơ ron hồi quy Recurrent Neural Network
 
+1. Ý tưởng "hồi quy" trong kiến trúc mạng nơ ron
+2. Vấn đề phụ thuộc xa của RNN
+3. Kiến trúc mô hình Long short-term memory (LSTM)
+4. Các biến thể của RNN nói chung và LSTM nói riêng
+
 ([bài viết chi tiết](/blog/mang-no-ron-hoi-quy-recurrent-neural-network/))
 
 ## Bài 8: Cơ chế Attention và mô hình Transformer
 
 ([bài viết chi tiết](/blog/co-che-attention-va-mo-hinh-transformer/))
 
-## Bài 9: AI tạo sinh Generative AI
-
-([bài viết chi tiết](/blog/ai-tao-sinh-generative-ai/))
-
-## Bài 10: Sử dụng AI trong hệ thống tìm kiếm
-
-([bài viết chi tiết](/blog/su-dung-ai-trong-he-thong-tim-kiem/))
-
-## Bài 11: Chuỗi thời gian Time Series
+## Bài 9: Chuỗi thời gian Time Series
 
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-chuoi-thoi-gian-time-series/))
 
-## Bài 12: Học tăng cường Reinforcement Learning
+## Bài 10: AI tạo sinh Generative AI
+
+([bài viết chi tiết](/blog/ai-tao-sinh-generative-ai/))
+
+## Bài 11: Học tăng cường Reinforcement Learning
 
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-hoc-tang-cuong-reinforcement-learning/))
 
-## Bài 13: Transfer Learning và Weakly, Semi, Self Supervised Learning
+## Bài 12: Transfer Learning và Weakly, Semi, Self Supervised Learning
 
 ([bài viết chi tiết](/blog/transfer-learning-va-weakly-semi-self-supervised-learning/))
+
+## Bài 13: Sử dụng AI trong hệ thống tìm kiếm
+
+([bài viết chi tiết](/blog/su-dung-ai-trong-he-thong-tim-kiem/))
 
 ## Bài 14: Nén mô hình mạng nơ ron - Model Compression
 
