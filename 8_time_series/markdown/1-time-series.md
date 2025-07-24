@@ -31,7 +31,7 @@ Timestamps thường biểu diễn một thời điểm chính xác như: ngày,
 
 Ví dụ: "2023-03-01 12:00:00" là một timestamp xác định thời điểm chính xác.
 
-<img src="" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/timestamp_period.png" style="width: 1000px;"/>
 
 Period là một khoảng thời gian có độ dài cố định, giữa hai timestamp như: một ngày, tháng, năm, hoặc quý.
 Nó biểu thị một khoảng thời gian liền kề, thay vì một điểm thời gian cụ thể như timestamp.
@@ -154,7 +154,7 @@ Cụ thể hơn, đối với lag feature, ta không quan trọng về mặt tuy
 
 Với các bài toán mà mỗi điểm dữ liệu được xem xét là độc lập với một điểm dữ liệu khác, ta có thể chia bộ dữ liệu thành các tập train, validation, test một cách hoàn toàn ngẫu nhiên.
 
-<img src="" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/train_val_test.png" style="width: 800px;"/>
 
 Tuy nhiên, với các bài toán Time series, ta cần phải chia bộ dữ liệu theo thứ tự thời gian, để đảm bảo rằng các điểm dữ liệu trong tập validation và test không được sử dụng trong quá trình huấn luyện mô hình.
 
