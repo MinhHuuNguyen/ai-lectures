@@ -85,11 +85,19 @@ is_published: true
 
 ([bài viết chi tiết](/blog/mang-no-ron-hoi-quy-recurrent-neural-network/))
 
-## Bài 8: Cơ chế Attention và mô hình Transformer
+## Bài 8: Cơ chế Attention Attention Mechanism
 
-([bài viết chi tiết](/blog/co-che-attention-va-mo-hinh-transformer/))
+1. Giới thiệu chung về Attention Mechanism
+2. Cơ chế Attention cơ bản
+3. Một số phiên bản của cơ chế Attention
 
-## Bài 9: Dự báo chuỗi thời gian Time Series Forecasting
+([bài viết chi tiết](/blog/co-che-attention-attention-mechanism/))
+
+## Bài 9: seq2seq và mô hình Transformer
+
+([bài viết chi tiết](/blog/seq2seq-va-mo-hinh-transformer/))
+
+## Bài 10: Dự báo chuỗi thời gian Time Series Forecasting
 
 1. Giới thiệu chung về Chuỗi thời gian Time Series
 2. Các khái niệm cơ bản trong Time series
@@ -99,22 +107,22 @@ is_published: true
 
 ([bài viết chi tiết](/blog/du-bao-chuoi-thoi-gian-time-series-forecasting/))
 
-## Bài 10: AI tạo sinh Generative AI
+## Bài 11: AI tạo sinh Generative AI
 
 ([bài viết chi tiết](/blog/ai-tao-sinh-generative-ai/))
 
-## Bài 11: Học tăng cường Reinforcement Learning
+## Bài 12: Học tăng cường Reinforcement Learning
 
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-hoc-tang-cuong-reinforcement-learning/))
 
-## Bài 12: Transfer Learning và Weakly, Semi, Self Supervised Learning
+## Bài 13: Transfer Learning và Weakly, Semi, Self Supervised Learning
 
 ([bài viết chi tiết](/blog/transfer-learning-va-weakly-semi-self-supervised-learning/))
 
-## Bài 13: Sử dụng AI trong hệ thống tìm kiếm
+## Bài 14: Sử dụng AI trong hệ thống tìm kiếm
 
 ([bài viết chi tiết](/blog/su-dung-ai-trong-he-thong-tim-kiem/))
 
-## Bài 14: Nén mô hình mạng nơ ron - Model Compression
+## Bài 15: Nén mô hình mạng nơ ron - Model Compression
 
 ([bài viết chi tiết](/blog/nen-mo-hinh-mang-no-ron-model-compression/))

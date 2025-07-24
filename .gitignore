@@ -16,3 +16,10 @@ checkpoint*.weights.h5
 
 # Logs
 events.out.tfevents*
+
+# Documentation and presentations
+*.pdf
+*.pptx
+*.ppt
+*.docx
+*.doc
