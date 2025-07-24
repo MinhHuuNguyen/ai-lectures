@@ -17,7 +17,7 @@ Từ đó, ý tưởng chính của Recurrent Neural Network (RNN) là sử dụ
 RNN được gọi là hồi quy bởi lẽ chúng thực hiện cùng một tác vụ cho tất cả các phần tử của một chuỗi đầu vào.
 RNN tính toán giá trị đầu ra phụ thuộc vào cả các phép tính trước đó.
 
-Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications](https://www.mdpi.com/2078-2489/15/9/517) giúp mô tả chi tiết kiến trúc bên trong của một cell trong mô hình LSTM.
+Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications](https://www.mdpi.com/2078-2489/15/9/517) giúp mô tả ý tưởng hồi quy của RNN.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/unfold_rnn.png" style="width: 600px;"/>
 
@@ -26,27 +26,25 @@ trong đó:
 - $h_i$ là giá trị trạng thái của RNN tại vị trí (thời điểm) thứ $i$
 - $y_i$ là giá trị tại vị trí (thời điểm) thứ $i$ của chuỗi đầu ra
 
-Ví dụ: Xét bài toán dịch máy từ tiếng anh sang tiếng việt
-- Với câu tiếng anh đầu vào là "I love you", ta sẽ có chuỗi đầu vào là $x_1 = I$, $x_2 = love$, $x_3 = you$.
-- Với câu tiếng việt đầu ra là "Tôi yêu bạn", ta sẽ có chuỗi đầu ra là $y_1 = Tôi$, $y_2 = yêu$, $y_3 = bạn$.
+**Ví dụ:** Xét bài toán dịch máy từ tiếng anh sang tiếng việt
+- Với câu tiếng anh đầu vào là **"I love you"**, ta sẽ có chuỗi đầu vào là **$x_1 =$ "I"**, **$x_2 =$ "love"**, **$x_3 =$ "you"**.
+- Với câu tiếng việt đầu ra là "Tôi yêu bạn", ta sẽ có chuỗi đầu ra là **$y_1 =$ "Tôi"**, **$y_2 =$ "yêu"**, **$y_3 =$ "bạn"**.
 - Khi đó, ta sẽ có các trạng thái như sau:
-    - $h_1$ là trạng thái của RNN tại thời điểm đầu tiên (với input là Tôi)
-    - $h_2$ là trạng thái của RNN tại thời điểm thứ hai (với input là yêu và thông tin ở thời điểm trước đó là Tôi)
-    - $h_3$ là trạng thái của RNN tại thời điểm thứ ba (với input là bạn và thông tin ở thời điểm trước đó là Tôi yêu).
+    - **$h_1$** là trạng thái của RNN tại thời điểm đầu tiên (với input là **"I"**)
+    - **$h_2$** là trạng thái của RNN tại thời điểm thứ hai (với input là **"love"** và thông tin ở thời điểm trước đó là **"I"**)
+    - **$h_3$** là trạng thái của RNN tại thời điểm thứ ba (với input là **"you"** và thông tin ở thời điểm trước đó là **"I love"**).
 
-Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks (RNNs): A gentle Introduction and Overview](https://arxiv.org/abs/1912.05911).
+Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks (RNNs): A gentle Introduction and Overview](https://arxiv.org/abs/1912.05911) so sánh ý tưởng của mạng nơ ron truyền thống (Feedforward Neural Network) và RNN, bên trái là mạng nơ ron truyền thống, bên phải là RNN.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/feedforward_vs_recurrent.png" style="width: 900px;"/>
 
 Một số thành phần mang lại sự khác biệt giữa ý tưởng của RNN và mạng nơ ron truyền thống (Feedforward Neural Network):
-- Đầu tiên là $h_i$, $h_i$ được tính bằng $h_i = f(W_X x_i + W_H h_{i-1})$.
+- Đầu tiên $h_i$ được tính bằng $h_i = f(W_X x_i + W_H h_{i-1})$.
 Với $i = 0$, tức là ở vị trí đầu tiên trọng mạng, lúc này ta chưa có giá trị $h_{-1}$.
 Khi đó, ta thường khởi tạo ngẫu nhiên $h_{-1}$ hoặc khởi tạo $h_{-1}$ là vector 0.
-- Tiếp theo là bộ trọng số $W_X, W_H, W_Y$.
-Khác với việc mỗi lớp có bộ trọng số riêng trong mạng nơ ron truyền thông, trong RNN, $W_X, W_H, W_Y$ được sử dụng chung cho tất cả các lớp.
+- Tiếp theo, trong RNN, $W_X, W_H, W_Y$ được sử dụng chung cho tất cả các lớp.
 Do đó, kết quả đầu ra tại mỗi thời điểm của RNN phụ thuộc hoàn toàn vào giá trị đầu vào và giá trị trạng thái ở thời điểm đó.
-- Cuối cùng là giá trị đầu ra của lớp cuối cùng.
-Với việc số lượng các lớp của RNN không được xác định trước, điều này dẫn đến một câu hỏi về việc khi nào vòng lặp hồi quy sẽ kết thúc.
+- Cuối cùng, với việc số lượng các lớp của RNN không được xác định trước, điều này dẫn đến một câu hỏi về việc khi nào vòng lặp hồi quy sẽ kết thúc.
 Trong xử lý ngôn ngữ tự nhiên, có một từ đặc biệt được gọi là "từ kết thúc" và khi mô hình RNN tính toán đầu ra là "từ kết thúc" thì vòng lặp hồi quy của mô hình RNN sẽ dừng lại.
 
 Với ý tưởng trên, về lý thuyết, RNN có khả năng nhớ các thông tin được tính toán ở các bước trước đó.
@@ -64,7 +62,7 @@ Do đó, ta rút ra, với khoảng cách tới thông tin có được cần đ
 
 Ví dụ tiếp theo, với câu “Tôi được sinh ra và lớn lên ở Pháp. Món ăn ưa thích của tôi là bánh mì và tôi thường chơi bóng đá vào buổi chiều. Tôi có thể nói được ba ngoại ngữ, trong đó, tôi nói lưu loát nhất là tiếng Pháp.”.
 Rõ ràng là các thông tin gần “tôi nói lưu loát nhất là” chỉ có phép ta biết được đằng sau nó sẽ là tên của một ngôn ngữ nào đó.
-Do đó, ta cần phải có thêm ngữ cảnh “Tôi lớn lên ở Pháp.” thì mới có thể suy luận được.
+Do đó, ta cần phải có thêm ngữ cảnh “Tôi được sinh ra và lớn lên ở Pháp.” thì mới có thể suy luận được.
 
 ### 2.2. Backpropagation Through Time (BPTT)
 
@@ -146,7 +144,7 @@ Bot: "Chào Minh."
 Minh: "Tôi là một kỹ sư Trí tuệ nhân tạo. Sở thích của tôi là chơi đá bóng và đọc sách. Bạn có thể gợi ý cho tôi một vài cuốn sách hay được không?"
 Bot: "Chắc chắn rồi, Minh. Bạn muốn đọc về thể thao hay công nghệ?"
 Minh: "Tôi muốn đọc về công nghệ."
-Bot: "Một số cuốn sách hay về công nghệ mà tôi biết là: 'Artificial Intelligence: A Modern Approach' của Stuart Russell và Peter Norvig, 'Deep Learning' của Ian Goodfellow, Yoshua Bengio và Aaron Courville."
+Bot: "Một số cuốn sách hay về công nghệ mà tôi biết là: 'Artificial Intelligence: A Modern Approach' của Stuart Russell và Peter Norvig."
 ```
 
 Ở đây, Bot cần phải ghi nhớ sở thích của Minh và thông tin muốn đọc sách về công nghệ, cụ thể là về Trí tuệ nhân tạo.
@@ -193,7 +191,7 @@ Ta chỉ thêm thông tin mới vào cell state khi ta quên bớt thông tin g�
 
 Hình ảnh này được lấy từ bài báo [LSTM: A Search Space Odyssey](https://arxiv.org/abs/1503.04069).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/coupled_input_forget_gate.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/2-recurrent-neural-network/coupled_input_forget_gate.png" style="width: 800px;"/>
 
 ### 4.4. Gated Recurrent Unit (GRU)
 

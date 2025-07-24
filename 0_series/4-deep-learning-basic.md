@@ -89,9 +89,15 @@ is_published: true
 
 ([bài viết chi tiết](/blog/co-che-attention-va-mo-hinh-transformer/))
 
-## Bài 9: Chuỗi thời gian Time Series
+## Bài 9: Dự báo chuỗi thời gian Time Series Forecasting
 
-([bài viết chi tiết](/blog/gioi-thieu-chung-ve-chuoi-thoi-gian-time-series/))
+1. Giới thiệu chung về Chuỗi thời gian Time Series
+2. Các khái niệm cơ bản trong Time series
+3. Time-step features và Lag features
+4. Feature engineering xử lý đặc trưng trong Time series
+5. Các nhóm mô hình dự báo chuỗi thời gian
+
+([bài viết chi tiết](/blog/du-bao-chuoi-thoi-gian-time-series-forecasting/))
 
 ## Bài 10: AI tạo sinh Generative AI
 
