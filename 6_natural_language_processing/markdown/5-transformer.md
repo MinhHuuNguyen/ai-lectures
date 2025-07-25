@@ -114,6 +114,21 @@ Hình ảnh dưới đây được lấy từ bài báo, là thống kê về k�
 
 DistilBERT sử dụng phương pháp **Knowledge Distillation** để giảm kích thước mô hình và là một phiên bản nhẹ hơn của BERT với kích thước mô hình nhỏ hơn (chỉ 66 triệu tham số so với 110 triệu của BERT-Base), thời gian dự đoán nhanh hơn (60% so với BERT-Base) và hiệu suất được duy trì gần như tương đương với BERT-Base (97% hiệu suất của BERT-Base).
 
+### BART
+
+Mô hình BART (Bidirectional and Auto-Regressive Transformers) được giới thiệu bởi Facebook AI vào năm 2019 trong bài báo ["BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension"](https://arxiv.org/abs/1910.13461).
+
+BART kết hợp giữa BERT và GPT, sử dụng kiến trúc Transformer với cả phần Encoder và Decoder.
+Hình ảnh dưới đây được lấy từ bài báo, mô tả kiến trúc của BART.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bart.png" style="width: 800px;"/>
+
+BART được huấn luyện theo phương pháp **Denoising Autoencoder**, tức là mô hình sẽ học cách phục hồi một chuỗi văn bản bị nhiễu (noisy) về trạng thái ban đầu.
+BART có thể được sử dụng cho nhiều tác vụ NLP khác nhau như sinh văn bản, dịch máy, tóm tắt văn bản, v.v.
+BART có thể được sử dụng như một mô hình pretrained cho các tác vụ NLP khác nhau bằng cách fine-tune mô hình với các tập dữ liệu cụ thể.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bart_train.png" style="width: 800px;"/>
+
 #### Pho-BERT
 
 Mô hình Pho-BERT được giới thiệu bởi VinAI Research vào năm 2020 trong bài báo ["PhoBERT: Pre-trained Language Models for Vietnamese"](https://arxiv.org/abs/2003.00744).
