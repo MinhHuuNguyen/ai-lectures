@@ -96,10 +96,13 @@ Hai bước đầu trong thuật toán Gradient Descent (khởi tạo giá trị
 
 Trong thực tế, ta thường khởi tạo ngẫu nhiên giá trị $x^0$, và sau này, trong các phiên bản nâng cấp của thuật toán Gradient Descent, ta sẽ cải thiện bằng cách sử dụng các phương pháp khởi tạo giá trị $x^0$ tốt hơn hoặc tinh chỉnh thuật toán để giảm thiểu ảnh hưởng của giá trị khởi tạo.
 
-<p float="left">
+<p style="float: left;">
     <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/x_0_5_learning_rate_0p1.gif" style="width: 500px;"/>
+</p>
+<p style="float: right;">
     <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/x_0_-3_learning_rate_0p1.gif" style="width: 500px;"/>
 </p>
+<br style="clear: both;"/>
 
 Giá trị $\eta$ trong thuật toán Gradient Descent còn được gọi là learning rate, là một tham số quan trọng, ảnh hưởng đến tốc độ hội tụ và khả năng hội tụ của thuật toán.
 
@@ -109,14 +112,20 @@ Sau này, trong các phiên bản nâng cấp của thuật toán Gradient Desce
 
 Khi ta chọn giá trị learning rate quá nhỏ, thuật toán sẽ hội tụ rất chậm, và có thể mất rất nhiều thời gian để thuật toán hội tụ.
 
-<p float="left">
+<p style="float: left;">
     <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/x_0_5_learning_rate_0p1.gif" style="width: 500px;"/>
+</p>
+<p style="float: right;">
     <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/x_0_5_learning_rate_0p01.gif" style="width: 500px;"/>
 </p>
+<br style="clear: both;"/>
 
 Ngược lại, khi ta chọn giá trị learning rate quá lớn, thuật toán có thể không hội tụ được, và giá trị của hàm loss có thể tăng lên sau mỗi lần cập nhật.
 
-<p float="left">
+<p style="float: left;">
     <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/x_0_5_learning_rate_0p1.gif" style="width: 500px;"/>
+</p>
+<p style="float: right;">
     <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/x_0_5_learning_rate_0p99.gif" style="width: 500px;"/>
 </p>
+<br style="clear: both;"/>
