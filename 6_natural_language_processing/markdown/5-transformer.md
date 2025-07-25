@@ -2,7 +2,7 @@
 time: 03/04/2023
 title: Mô hình Transformer
 description: Mô hình seq2seq (sequence-to-sequence) là kiến trúc mạng nơ-ron được sử dụng để chuyển đổi một chuỗi đầu vào thành một chuỗi đầu ra. Tuy nhiên, mô hình seq2seq truyền thống gặp khó khăn trong việc xử lý các chuỗi dài do phụ thuộc vào RNN/LSTM. Năm 2017, Transformer ra mắt đã giải quyết vấn đề này bằng cách sử dụng cơ chế Attention hoàn toàn, cho phép mô hình học được mối quan hệ giữa các từ trong chuỗi mà không cần tuần tự.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/seq2seq.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/banner.png
 tags: [deep-learning, natural-language-processing]
 is_highlight: true
 is_published: true
@@ -263,7 +263,7 @@ Kết quả cuối cùng từ token [CLS] thường được nối với một m
 ViT cho phép mô hình học được mối quan hệ toàn cục giữa các vùng ảnh ngay từ các lớp đầu, khác với CNN chỉ kết hợp thông tin khu vực nhỏ tại từng bước tích chập.
 Trên các tập dữ liệu lớn (như ImageNet21k), ViT đã vượt qua hoặc đạt hiệu năng tương đương với mạng CNN hàng đầu.
 
-Tuy vậy, ViT cần huấn luyện trên dữ liệu khổng lồ và tốn nhiều tài nguyên tính toán, trong khi CNN vẫn giữ ưu thế với dữ liệu nhỏ vì có sẵn nhiều “tiên nghiệm” về thị giác (định nghĩa cục bộ, không gian cố định).
+Tuy vậy, ViT cần huấn luyện trên dữ liệu khổng lồ và tốn nhiều tài nguyên tính toán, trong khi CNN vẫn giữ ưu thế với dữ liệu nhỏ vì có sẵn nhiều “tiền nhiệm” về thị giác (định nghĩa cục bộ, không gian cố định).
 
 Vision Transformer là bước tiến hướng đến mô hình thị giác “đồng nhất” với NLP: nó biểu diễn hình ảnh dưới dạng chuỗi token và tận dụng cơ chế attention để nhận diện đối tượng, phân lớp ảnh...
 Một số ví dụ ứng dụng gần gũi là phân loại ảnh (ví dụ nhận diện chó và mèo), phát hiện vật thể, hoặc kết hợp với mô hình ngôn ngữ để trả lời câu hỏi dựa trên ảnh.

@@ -8,14 +8,37 @@ is_highlight: true
 is_published: true
 ---
 
-## 1. Giới thiệu chung về Attention Mechanism
+## 1. Mô hình Seq2Seq truyền thống
+
+Mô hình Encoder-Decoder (Seq2Seq) bao gồm hai thành phần chính: một bộ mã hoá (Encoder) và một bộ giải mã (Decoder).
+
+Trong bài toán xử lý ngôn ngữ tự nhiên, cả Encoder và Decoder thường là mạng RNN/LSTM/GRU, trong đó:
+- Encoder nhận chuỗi đầu vào và chuyển thành một vector ngữ cảnh tổng quát.
+- Decoder lấy vector này và tạo từng phần tử chuỗi đầu ra mới.
+
+Điểm đặc biệt của mô hình này là nó có thể xử lý các bài toán dịch máy machine translation, tóm tắt văn bản text summarization, hỏi đáp question answering, nơi độ dài chuỗi đầu vào và đầu ra có thể khác nhau.
+Mô hình Seq2Seq đã mang lại kết quả ấn tượng trong các tác vụ NLP này.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/seq2seq.png" style="width: 1000px;"/>
+
+Trong thực tế, kiến trúc thường bao gồm:
+- Encoder: xử lý chuỗi đầu vào và sinh ra trạng thái ẩn cuối cùng (vector ngữ cảnh) chứa thông tin chung về toàn bộ đầu vào.
+- Decoder: hoạt động như một mô hình ngôn ngữ điều kiện, lấy vector ngữ cảnh cộng thêm đầu ra trước đó để dự đoán phần tử tiếp theo của chuỗi đầu ra.
+
+Mô hình Seq2Seq cổ điển có hạn chế là phải nén toàn bộ thông tin vào một vector cố định, khiến nó gặp khó khăn với các câu quá dài.
+Đặc biệt, khi chuỗi đầu vào dài, vector ngữ cảnh có thể không đủ để lưu trữ tất cả thông tin cần thiết, dẫn đến mất mát ngữ nghĩa và giảm hiệu suất.
+
+Đây cũng chính là vấn đề phụ thuộc xa long-term dependencies đã được đề cập trong bài viết về RNN/LSTM.
+
+## 2. Giới thiệu chung về Attention Mechanism
 
 Vấn đề mà Attention đặt ra để giải quyết là làm thế nào để mô hình học sâu có thể tập trung vào các phần quan trọng của dữ liệu đầu vào, tương tự như cách con người chú ý đến các chi tiết nổi bật trong một bức tranh hoặc một đoạn văn.
 
-Trước khi có cơ chế Attention, các mô hình học sâu thường sử dụng RNN hoặc LSTM để xử lý chuỗi dữ liệu như trong bài toán xử lý ngôn ngữ tự nhiên (NLP).
-Tuy nhiên, các mô hình này gặp khó khăn khi phải mã hóa toàn bộ chuỗi đầu vào có độ dài khác nhau thành một vector cố định, dẫn đến mất mát thông tin quan trọng.
+Trong các bài toán xử lý ngôn ngữ tự nhiên, Attention cho phép mô hình học được mối quan hệ giữa các từ trong câu mà không cần phải tuần tự qua từng từ, từ đó cải thiện khả năng hiểu ngữ nghĩa và ngữ cảnh của mô hình.
 
-Trong thị giác máy tính, các mô hình CNN sử dụng kernel tập trung vào việc trích xuất các đặc trưng cục bộ mà không thể nắm bắt được mối quan hệ toàn cục giữa các phần của hình ảnh.
+Hơn nữa, Attention cũng giúp mô hình vượt qua giới hạn về vector ngữ cảnh có độ dài cố định, từ đó, xử lý các chuỗi đầu vào dài mà không gặp phải vấn đề mất mát thông tin như trong mô hình Seq2Seq truyền thống.
+
+Ngoài ra, trong thị giác máy tính, các mô hình CNN sử dụng kernel tập trung vào việc trích xuất các đặc trưng cục bộ mà không thể nắm bắt được mối quan hệ toàn cục giữa các phần của hình ảnh.
 Điều này dẫn đến việc mô hình không thể hiểu được ngữ cảnh tổng thể của hình ảnh.
 
 Ưu điểm chính của Attention là không hạn chế vị trí (toàn cục), nắm bắt phụ thuộc dài hạn. Ví dụ, Attention có thể xem xét toàn bộ chuỗi cùng lúc (thay vì tuần tự như RNN), và không hạn chế phạm vi cục bộ như CNN.
