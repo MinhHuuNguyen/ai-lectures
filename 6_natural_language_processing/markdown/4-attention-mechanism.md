@@ -97,6 +97,7 @@ Xét ví dụ gồm một token dạng text là "dog" và một hình ảnh ch�
 - Value của token "dog", "cat", "bird" trong hình ảnh lần lượt là vector $V_{dog}$, $V_{cat}$, $V_{bird}$, mỗi vector có độ dài $d_v$.
 
 **1. Tính độ tương đồng giữa Query và các Key:**
+
 Để tính độ tương đồng giữa Query và các Key, ta sử dụng dot product để đo lường mức độ liên quan giữa chúng.
 Công thức tính toán là:
 
@@ -136,10 +137,10 @@ Additive Attention (còn gọi là Bahdanau Attention) là cơ chế attention �
 
 Ở phiên bản này, thay vì sử dụng dot product để tính độ tương đồng giữa Query và Key, ta sẽ sử dụng một hàm phi tuyến tính (thường là một mạng nơ-ron đơn giản) để kết hợp Query và Key.
 
-$$ \text{score}(Q, K_i) = v_a^T \tanh(W_a Q + U_a K_i) $$
+$$ \text{score}(Q, K_i) = V_a^T \tanh(W_a Q + U_a K_i) $$
 
 Trong đó:
-- $v_a$, $W_a$, $U_a$ là các ma trận trọng số được học trong quá trình huấn luyện.
+- $V_a$, $W_a$, $U_a$ là các ma trận trọng số được học trong quá trình huấn luyện.
 - $\tanh$ là hàm kích hoạt phi tuyến tính.
 
 Hàm softmax vẫn được sử dụng để chuẩn hoá các giá trị độ tương đồng thành trọng số, và quá trình kết hợp Value cũng tương tự như trong cơ chế Attention cơ bản.
@@ -204,7 +205,7 @@ Từ đó, ta có thể xác định được từ nào là quan trọng nhất 
 Sau khi đưa vector embedding của các token của câu trên qua Self-Attention, ta sẽ thu được một biểu diễn mới cho mỗi token dựa trên mối quan hệ của token đó với các token khác trong câu.
 Tổng quan, các biểu diễn mới của từng token này sẽ thể hiện ngữ cảnh của câu một cách tốt hơn.
 
-### 3.6. Sparse, Local và Global Attention
+### 3.5. Sparse, Local và Global Attention
 
 Với chuỗi rất dài (hàng nghìn token), Attention chuẩn tốn $O(n^2)$ bộ nhớ và thời gian, nên các biến thể sparse/local được đề xuất.
 
@@ -227,7 +228,7 @@ Các cơ chế trên hướng đến mục tiêu cân bằng giữa hiệu quả
 Các kỹ thuật này giảm chi phí so với Transformer gốc, nhưng có thể hy sinh một phần khả năng phát hiện phụ thuộc xa (tuy nhiên thường chấp nhận được trong thực tế).
 Ví dụ, Longformer có thể xử lý văn bản dài hàng nghìn từ với bộ nhớ thấp hơn, nhờ tính chất local+global attention.
 
-### 3.7. Cross-Attention trong mô hình Encoder-Decoder
+### 3.6. Cross-Attention trong mô hình Encoder-Decoder
 
 Ý tưởng của Cross-Attention được giới thiệu đầu tiên từ bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017 nhưng không được gọi là Cross-Attention.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả cách thức hoạt động của Cross-Attention.
@@ -240,7 +241,7 @@ Trong mô hình Encoder-Decoder, Cross-Attention là cơ chế cho phép Decoder
 Ở đây Query lấy từ Decoder (hoặc từ embedding của bước đầu ra trước), còn Key/Value lấy từ đầu ra của Encoder và các bước đầu ra trước đó của Decoder.
 Điều này cho phép Decoder khi sinh từ tại vị trí $i$ có thể “hỏi” thông tin từ toàn bộ chuỗi đầu vào đã mã hóa.
 
-### 3.8. Flash Attention
+### 3.7. Flash Attention
 
 FlashAttention là một kỹ thuật tối ưu hóa trong mô hình Transformer, được thiết kế để tăng tốc tính toán attention và giảm sử dụng bộ nhớ, đặc biệt là trong các mô hình lớn như GPT, BERT, hay ViT.
 
