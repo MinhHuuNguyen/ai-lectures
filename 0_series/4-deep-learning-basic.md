@@ -87,15 +87,22 @@ is_published: true
 
 ## Bài 8: Cơ chế Attention Attention Mechanism
 
-1. Giới thiệu chung về Attention Mechanism
-2. Cơ chế Attention cơ bản
-3. Một số phiên bản của cơ chế Attention
+1. Mô hình seq2seq truyền thống
+2. Giới thiệu chung về Attention Mechanism
+3. Cơ chế Attention cơ bản
+4. Một số phiên bản của cơ chế Attention
 
 ([bài viết chi tiết](/blog/co-che-attention-attention-mechanism/))
 
-## Bài 9: seq2seq và mô hình Transformer
+## Bài 9: Mô hình Transformer
 
-([bài viết chi tiết](/blog/seq2seq-va-mo-hinh-transformer/))
+1. Mô hình Transformer
+2. Mô hình BERT và các biến thể
+3. Mô hình GPT và các biến thể
+4. Mô hình T5
+5. Mô hình Vision Transformer (ViT)
+
+([bài viết chi tiết](/blog/mo-hinh-transformer/))
 
 ## Bài 10: Dự báo chuỗi thời gian Time Series Forecasting
 
@@ -107,9 +114,12 @@ is_published: true
 
 ([bài viết chi tiết](/blog/du-bao-chuoi-thoi-gian-time-series-forecasting/))
 
-## Bài 11: AI tạo sinh Generative AI
+## Bài 11: Trí tuệ nhân tạo tạo sinh Generative AI
 
-([bài viết chi tiết](/blog/ai-tao-sinh-generative-ai/))
+1. Giới thiệu chung về Generative AI
+
+
+([bài viết chi tiết](/blog/tri-tue-nhan-tao-tao-sinh-generative-ai/))
 
 ## Bài 12: Học tăng cường Reinforcement Learning
 
