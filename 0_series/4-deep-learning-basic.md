@@ -117,7 +117,10 @@ is_published: true
 ## Bài 11: Trí tuệ nhân tạo tạo sinh Generative AI
 
 1. Giới thiệu chung về Generative AI
-
+2. Mô hình ngôn ngữ lớn (Large Language Model - LLM)
+3. Mô hình tạo ảnh (Generative Image Models) và mô hình ngôn ngữ hình ảnh (Vision Language Models - VLM)
+4. Rủi ro và thách thức của Generative AI
+5. Cơ hội nghề nghiệp và tương lai của Generative AI
 
 ([bài viết chi tiết](/blog/tri-tue-nhan-tao-tao-sinh-generative-ai/))
 
