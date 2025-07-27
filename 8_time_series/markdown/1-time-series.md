@@ -16,7 +16,7 @@ Khác với dữ liệu độc lập thông thường, các quan sát thời gia
 Đặc điểm quan trọng của dữ liệu chuỗi thời gian là mỗi quan sát có thứ tự tự nhiên theo thời gian, và giá trị hiện tại thường phụ thuộc vào các giá trị trong quá khứ.
 Vì vậy, bài toán chính với dữ liệu chuỗi thời gian là dự báo (forecasting) – tức dự đoán các giá trị tương lai dựa trên lịch sử đã có, thay vì bài toán dự đoán thông thường.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/forecasting.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/forecasting.png" style="width: 600px;"/>
 
 Dự báo chuỗi thời gian là một trong những kỹ thuật được ứng dụng rộng rãi trong kinh doanh, tài chính, chuỗi cung ứng, và nhiều lĩnh vực khác.
 Ví dụ: dự báo doanh số bán hàng tuần tới dựa trên doanh số các tuần trước, dự báo nhiệt độ ngày mai dựa trên nhiệt độ các ngày trước đó.
@@ -31,7 +31,7 @@ Timestamps thường biểu diễn một thời điểm chính xác như: ngày,
 
 Ví dụ: "2023-03-01 12:00:00" là một timestamp xác định thời điểm chính xác.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/timestamp_period.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/timestamp_period.png" style="width: 800px;"/>
 
 Period là một khoảng thời gian có độ dài cố định, giữa hai timestamp như: một ngày, tháng, năm, hoặc quý.
 Nó biểu thị một khoảng thời gian liền kề, thay vì một điểm thời gian cụ thể như timestamp.
@@ -150,7 +150,7 @@ Cụ thể hơn, đối với lag feature, ta không quan trọng về mặt tuy
 
 Với các bài toán mà mỗi điểm dữ liệu được xem xét là độc lập với một điểm dữ liệu khác, ta có thể chia bộ dữ liệu thành các tập train, validation, test một cách hoàn toàn ngẫu nhiên.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/train_val_test.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/train_val_test.png" style="width: 500px;"/>
 
 Tuy nhiên, với các bài toán Time series, ta cần phải chia bộ dữ liệu theo thứ tự thời gian, để đảm bảo rằng các điểm dữ liệu trong tập validation và test không được sử dụng trong quá trình huấn luyện mô hình.
 
@@ -172,7 +172,7 @@ Khi dữ liệu có giá trị quá nhỏ có thể dẫn đến vanishing gradi
 Khi các đặc trưng có thang đo khác nhau, thuật toán có thể hội tụ chậm hoặc không hội tụ do gradient bị lệch về một đặc trưng nhất định có giá trị lớn hơn.
 Ta đưa tất cả các đặc trưng về cùng một thang đo, từ đó cải thiện hiệu quả của quá trình huấn luyện mô hình.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/normalization_standardization.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/normalization_standardization.png" style="width: 600px;"/>
 
 Chuẩn hoá dữ liệu (normalization) là quá trình biến đổi dữ liệu về một khoảng giá trị nhất định, thường là từ 0 đến 1.
 Chuẩn hoá thường được sử dụng khi dữ liệu không có giả định phân phối chuẩn; dữ liệu rải rác, phi tuyến tính, hoặc có các giá trị ngoại lai (outliers).
@@ -220,9 +220,9 @@ Seasonal plot chia chuỗi thời gian thành khoảng thời gian nhất địn
 
 Ví dụ: Đối với dữ liệu doanh thu theo ngày của một nhà hàng trong năm 2023, ta có thể chia chuỗi thời gian thành các khoảng 7 ngày (theo tuần) để quan sát sự thay đổi doanh thu trong từng ngày trong tuần.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/seasonal_time_series.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/seasonal_time_series.png" style="width: 1000px;"/>
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/seasonal_plot.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/seasonal_plot.png" style="width: 1000px;"/>
 
 Seasonal indicators mã hoá các mốc thời gian trong time series về dạng one-hot theo chu kỳ thời vụ mà ta lựa chọn.
 Seasonal indicators phù hợp với những thời vụ ngắn và có ít quan sát (ví dụ như tính thời vụ theo tuần với các quan sát dữ liệu hàng ngày).
@@ -245,11 +245,11 @@ Với việc mã hoá seasonal indicators, ta có thể mô phỏng được tí
 Fourier features phù hợp với những thời vụ dài và có nhiều quan sát (ví dụ như tính thời vụ theo năm với các quan sát dữ liệu hàng ngày).
 Fourier features hướng đến việc mô phỏng lại hình dáng của tính thời vụ trong time series thông qua cặp hai đường cong sin và cos.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/fourier_basis.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/fourier_basis.png" style="width: 1000px;"/>
 
 Trong thực tế, để tính toán Fourier features, ta sẽ khởi tạo một số cặp đường cong sin và cos nhất định, sau đó sử dụng Linear Regression để tính toán ra các trọng số của đường cong sin và cos của mỗi cặp sao cho ta có thể mô phỏng được gần nhất đường cong thể hiện tính thời vụ của time series.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/fourier_approximation.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/fourier_approximation.png" style="width: 1000px;"/>
 
 ### 4.5. Tạo đặc trưng thể hiện xu hướng
 
@@ -258,7 +258,7 @@ Moving average là cách tính trung bình của dữ liệu chuỗi thời gian
 
 Moving average giúp giảm bớt được sự dao động của dữ liệu trong quãng thời gian ngắn, tạo điều kiện giúp ta quan sát xu hướng trong quãng thời gian dài chính xác và dễ dàng hơn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/moving_average.gif" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/8_time_series/images/1-time-series/moving_average.gif" style="width: 1000px;"/>
 
 ## 5. Các nhóm mô hình dự báo chuỗi thời gian
 
