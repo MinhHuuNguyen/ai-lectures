@@ -72,18 +72,14 @@ Nội dung chi tiết mô hình Transformer và các mô hình LLM có thể đ�
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm.png" style="width: 600px;"/>
 
-Ví dụ: ChatGPT của OpenAI là một ứng dụng tiêu biểu của LLM.
-Nó được xây dựng dựa trên dòng mô hình GPT-3.5/GPT-4, đã được huấn luyện trên lượng dữ liệu văn bản đồ sộ.
-Nhờ đó, ChatGPT có thể trả lời hầu hết các câu hỏi, hỗ trợ viết thư, bài luận, làm thơ, viết mã lập trình, thảo luận nhiều chủ đề... một cách lưu loát tự nhiên.
-Điểm đặc biệt là ChatGPT tương tác dưới dạng hội thoại, nhớ ngữ cảnh các câu trước đó và phản hồi như một người trợ lý thông minh.
-
-Thành công của ChatGPT đã thúc đẩy một cuộc đua phát triển LLM trên toàn cầu: Gemini của Google, Claude của Anthropic, LLaMA của Meta, DeepSeek ...
-Những mô hình này có thể sinh ra văn bản mạch lạc, trả lời câu hỏi, dịch thuật, viết mã ...
+Một số mô hình tiêu biểu như: **ChatGPT** của OpenAI, **Gemini** của Google, **Claude** của Anthropic, **LLaMA** của Meta, **DeepSeek** của DeepSeek AI Lab, **Mistral** của Mistral AI, **Grok** của xAI ...
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm2slm.png" style="width: 600px;"/>
 
 Trong thời gian gần đây, một hướng nghiên cứu mới cũng nhận được nhiều sự quan tâm là Small Language Model (SLM) - mô hình ngôn ngữ nhỏ.
 SLM là các mô hình ngôn ngữ có kích thước nhỏ hơn LLM nhưng vẫn có khả năng sinh văn bản chất lượng cao.
+
+Một số mô hình SLM tiêu biểu như: **LLaMA 2** của Meta, **Mistral 7B** của Mistral AI, **Falcon** của TII, **Qwen-7B** của Alibaba ...
 
 ## 3. Mô hình tạo ảnh (Generative Image Models) và mô hình ngôn ngữ hình ảnh (Vision Language Models - VLM)
 
@@ -92,16 +88,12 @@ Hai phương pháp kỹ thuật nổi bật để sinh ảnh bằng AI hiện na
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/vlm.png" style="width: 600px;"/>
 
-Ví dụ: Một số mô hình tiêu biểu bao gồm:
-- **DALL-E** (OpenAI): mô hình sử dụng kỹ thuật diffusion kết hợp với transformer, cho phép tạo ảnh từ mô tả văn bản tự do.
-- **Midjourney**: dịch vụ tạo ảnh AI nổi tiếng (truy cập qua Discord) cho ra các tác phẩm nghệ thuật kỹ thuật số phong cách đa dạng dựa trên lời mô tả của người dùng.
-- **Stable Diffusion**: mô hình mã nguồn mở phổ biến, cho phép cộng đồng tùy biến để tạo ảnh, vẽ tranh, tô màu, v.v., chạy được với tài nguyên hạn chế hơn so với các mô hình đóng.
-- **Imagen** (Google), **Adobe Firefly** (Adobe), v.v. phục vụ cho các mục đích tạo ảnh khác nhau.
-
 Những mô hình này đã chứng minh khả năng sáng tạo vô hạn về thị giác.
 Từ một dòng prompt (mô tả) ngắn gọn, AI có thể vẽ ra chân dung, phong cảnh, tranh biếm họa, thiết kế sản phẩm ... theo phong cách tùy chọn.
 
 Năm 2021, sự xuất hiện của DALL-E rồi Midjourney, Stable Diffusion đã đánh dấu thời kỳ nghệ thuật do AI tạo ra đạt chất lượng cao và rất chân thực chỉ từ các lời gợi ý văn bản
+
+Một số mô hình tiêu biểu như: **DALL-E** của OpenAI, **Midjourney**, **Stable Diffusion** của Stability AI, **Imagen** của Google, **Adobe Firefly** của Adobe ...
 
 ## 4. Rủi ro và thách thức của Generative AI
 
@@ -184,10 +176,10 @@ Bên cạnh việc “to hơn”, các nghiên cứu cũng đang làm cho mô h�
 
 Một xu hướng khác là phổ cập và thương mại hóa GenAI trong mọi ngóc ngách đời sống.
 Sau thành công của ChatGPT, các “ông lớn” công nghệ đua nhau tích hợp AI tạo sinh vào sản phẩm của mình:
-- Microsoft tích hợp GPT-4 vào bộ Office (Copilot cho Word, Excel, PowerPoint giúp soạn thảo và phân tích tự động)
-- Google tích hợp AI vào Gmail và Google Docs (hỗ trợ viết email, tài liệu)
-- Adobe thêm AI tạo hình ảnh vào Photoshop (tính năng Generative Fill)
-- Amazon đưa AI vào trợ lý nhà thông minh Alexa
+- Microsoft tích hợp GPT-4 vào **bộ Office** (Copilot cho Word, Excel, PowerPoint giúp soạn thảo và phân tích tự động)
+- Google tích hợp AI vào **Gmail** và **Google Docs** (hỗ trợ viết email, tài liệu)
+- Adobe thêm AI tạo hình ảnh vào **Photoshop** (tính năng Generative Fill)
+- Amazon đưa AI vào **trợ lý nhà thông minh Alexa**
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/career.png" style="width: 600px;"/>
 
