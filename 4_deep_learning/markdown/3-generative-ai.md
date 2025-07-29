@@ -1,5 +1,5 @@
 ---
-time: 11/09/2024
+time: 03/20/2023
 title: Trí tuệ nhân tạo tạo sinh Generative AI
 description: Trí tuệ nhân tạo tạo sinh (Generative AI) là lĩnh vực nghiên cứu và ứng dụng trong trí tuệ nhân tạo nhằm tạo ra nội dung mới, bao gồm văn bản, hình ảnh, âm thanh và video. Các mô hình GenAI như GPT, DALL-E, Stable Diffusion đã đạt được những tiến bộ đáng kể trong việc tạo ra nội dung chất lượng cao, mở ra nhiều cơ hội mới trong các lĩnh vực sáng tạo, nghệ thuật và truyền thông. Tuy nhiên, nó cũng đặt ra những thách thức về đạo đức, bảo mật và quyền sở hữu trí tuệ cần được giải quyết.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm.png
@@ -7,6 +7,8 @@ tags: [deep-learning, generative-ai]
 is_highlight: true
 is_published: true
 ---
+
+***Note: Một số nội dung trong bài viết này được cập nhật trong thời gian gần đây.***
 
 ## 1. Giới thiệu chung về Generative AI
 
@@ -59,8 +61,9 @@ Các ứng dụng của GenAI rất đa dạng và đang ngày càng mở rộng
 
 ## 2. Mô hình ngôn ngữ lớn (Large Language Model - LLM)
 
-Mô hình Ngôn ngữ Lớn (Large Language Model – LLM) là một loại mô hình học sâu có quy mô cực lớn được huấn luyện trên lượng dữ liệu văn bản khổng lồ.
-Các LLM thường có hàng chục đến hàng trăm tỷ tham số, học từ hàng triệu trang văn bản (toàn bộ Wikipedia, sách, web ...) để nắm bắt ngữ pháp, ý nghĩa ngôn ngữ và kiến thức thế giới.
+Mô hình Ngôn ngữ Lớn (Large Language Model – LLM) là các mô hình học sâu có quy mô cực lớn được huấn luyện trên lượng dữ liệu văn bản khổng lồ.
+Các LLM thường có hàng chục đến hàng trăm tỷ tham số, học từ hàng triệu trang văn bản (toàn bộ Wikipedia, sách, web ...) để nắm bắt ngữ pháp, ý nghĩa ngôn ngữ và kiến thức thế giới, có khả năng hiểu và sinh ngôn ngữ tự nhiên.
+LLM là nền tảng của GenAI trong xử lý ngôn ngữ tự nhiên – chúng được xem như bộ não của nhiều hệ thống AI hiện đại.
 
 Kiến trúc nền tảng của đa số LLM hiện đại là Transformer và sử dụng các kỹ thuật huấn luyện đặc biệt như Masked Language Modeling (MLM), Standard Language Modeling (SLM), Reinforcement Learning from Human Feedback (RLHF) ...
 Kết quả là LLM học được cách dự đoán từ ngữ tiếp theo trong một ngữ cảnh, LLM có khả năng sinh ra văn bản lưu loát, mạch lạc về nhiều chủ đề.
@@ -75,6 +78,7 @@ Nhờ đó, ChatGPT có thể trả lời hầu hết các câu hỏi, hỗ tr�
 Điểm đặc biệt là ChatGPT tương tác dưới dạng hội thoại, nhớ ngữ cảnh các câu trước đó và phản hồi như một người trợ lý thông minh.
 
 Thành công của ChatGPT đã thúc đẩy một cuộc đua phát triển LLM trên toàn cầu: Gemini của Google, Claude của Anthropic, LLaMA của Meta, DeepSeek ...
+Những mô hình này có thể sinh ra văn bản mạch lạc, trả lời câu hỏi, dịch thuật, viết mã ...
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm2slm.png" style="width: 600px;"/>
 

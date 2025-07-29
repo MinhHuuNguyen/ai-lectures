@@ -224,18 +224,25 @@ Một số phương pháp word embedding phổ biến là: **Bag of words (BoW)*
 
 ## 5. Mô hình ngôn ngữ lớn Large language model
 
-Mô hình ngôn ngữ lớn (Large language model - LLM) là các mô hình deep learning được huấn luyện trên một lượng dữ liệu văn bản rất lớn, giúp mô hình có khả năng hiểu và sinh ra văn bản giống với con người.
+Mô hình Ngôn ngữ Lớn (Large Language Model – LLM) là các mô hình học sâu có quy mô cực lớn được huấn luyện trên lượng dữ liệu văn bản khổng lồ.
+Các LLM thường có hàng chục đến hàng trăm tỷ tham số, học từ hàng triệu trang văn bản (toàn bộ Wikipedia, sách, web ...) để nắm bắt ngữ pháp, ý nghĩa ngôn ngữ và kiến thức thế giới, có khả năng hiểu và sinh ngôn ngữ tự nhiên.
 
-Các mô hình ngôn ngữ lớn thường sử dụng kiến trúc Transformer, một kiến trúc mạng nơ-ron được giới thiệu bởi Google vào năm 2017.
-Kiến trúc Transformer cho phép mô hình xử lý các chuỗi dữ liệu dài một cách hiệu quả và có khả năng học được các mối quan hệ phức tạp giữa các từ trong đoạn văn bản.
+Kiến trúc nền tảng của đa số LLM hiện đại là Transformer và sử dụng các kỹ thuật huấn luyện đặc biệt như Masked Language Modeling (MLM), Standard Language Modeling (SLM), Reinforcement Learning from Human Feedback (RLHF) ...
+Kết quả là LLM học được cách dự đoán từ ngữ tiếp theo trong một ngữ cảnh, LLM có khả năng sinh ra văn bản lưu loát, mạch lạc về nhiều chủ đề.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/llm.png" style="width: 800px;"/>
+Nội dung chi tiết mô hình Transformer và các mô hình LLM có thể được tìm thấy trong [bài viết này](/blog/mo-hinh-transformer).
 
-Các mô hình ngôn ngữ lớn đã đạt được những thành tựu vượt bậc trong các bài toán NLP, đặc biệt là trong các bài toán seq2seq như dịch máy, tóm tắt văn bản, trả lời tự động ...
-Một số mô hình ngôn ngữ lớn nổi tiếng là: **ChatGPT**, **Claude**, **Gemini** ...
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm.png" style="width: 600px;"/>
 
-Một số kỹ thuật thường được sử dụng trong quá trình huấn luyện các mô hình ngôn ngữ lớn là **Self-supervised learning**, **Transfer learning**, **Instruction tuning**, **Reinforcement learning from human feedback (RLHF)** ...
+Ví dụ: ChatGPT của OpenAI là một ứng dụng tiêu biểu của LLM.
+Nó được xây dựng dựa trên dòng mô hình GPT-3.5/GPT-4, đã được huấn luyện trên lượng dữ liệu văn bản đồ sộ.
+Nhờ đó, ChatGPT có thể trả lời hầu hết các câu hỏi, hỗ trợ viết thư, bài luận, làm thơ, viết mã lập trình, thảo luận nhiều chủ đề... một cách lưu loát tự nhiên.
+Điểm đặc biệt là ChatGPT tương tác dưới dạng hội thoại, nhớ ngữ cảnh các câu trước đó và phản hồi như một người trợ lý thông minh.
 
-Các mô hình ngôn ngữ lớn hiện nay, không những có khả năng xử lý các bài toán NLP, mà còn có thể kết hợp để giải quyết các bài toán trên các loại dữ liệu khác như hình ảnh, âm thanh, video ...
+Thành công của ChatGPT đã thúc đẩy một cuộc đua phát triển LLM trên toàn cầu: Gemini của Google, Claude của Anthropic, LLaMA của Meta, DeepSeek ...
+Những mô hình này có thể sinh ra văn bản mạch lạc, trả lời câu hỏi, dịch thuật, viết mã ...
 
-Các mô hình ngôn ngữ lớn đã mở ra một kỷ nguyên mới trong lĩnh vực NLP, giúp máy tính có khả năng hiểu và sinh ra văn bản giống với con người, từ đó cải thiện hiệu suất của các ứng dụng NLP trong cuộc sống hàng ngày.
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm2slm.png" style="width: 600px;"/>
+
+Trong thời gian gần đây, một hướng nghiên cứu mới cũng nhận được nhiều sự quan tâm là Small Language Model (SLM) - mô hình ngôn ngữ nhỏ.
+SLM là các mô hình ngôn ngữ có kích thước nhỏ hơn LLM nhưng vẫn có khả năng sinh văn bản chất lượng cao.

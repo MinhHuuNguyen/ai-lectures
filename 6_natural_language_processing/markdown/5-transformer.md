@@ -8,7 +8,7 @@ is_highlight: true
 is_published: true
 ---
 
-*Note: Một số nội dung trong bài viết này được cập nhật trong thời gian gần đây.*
+***Note: Một số nội dung trong bài viết này được cập nhật trong thời gian gần đây.***
 
 ## 1. Mô hình Transformer
 
