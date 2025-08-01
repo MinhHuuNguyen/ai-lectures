@@ -30,12 +30,18 @@ Một số mô hình tiêu biểu như: **ChatGPT** của OpenAI, **Gemini** c�
 AI Agent là một thực thể phần mềm AI tự chủ, được thiết kế để thực hiện một nhiệm vụ cụ thể hoặc giải quyết một vấn đề trong phạm vi xác định mà không cần người giám sát liên tục.
 Một AI Agent có thể tiếp nhận đầu vào, xử lý thông tin, và thực hiện hành động để đạt mục tiêu đề ra.
 
+Hình ảnh dưới đây được lấy từ bài báo [Executable Code Actions Elicit Better LLM Agents](https://arxiv.org/abs/2402.01030) mô tả một ví dụ về AI Agent tên là **CodeAct**.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/code_act_agent_example.png" style="width: 1000px;"/>
+
 Khác với các hệ thống tự động hoá thông thường, AI Agent có mức độ "linh hoạt" cao hơn, đưa ra các output dựa tương ứng với các input và ngữ cảnh cụ thể mà không cần phải lập trình cứng (hard-code) cho từng tình huống.
 Chính vì sự linh hoạt này, AI Agent có thể được áp dụng trong nhiều lĩnh vực khác nhau như trợ lý ảo, chatbot, hệ thống tự động hoá quy trình (RPA), và nhiều ứng dụng AI khác.
 
 Mặc dù có thể hoạt động độc lập, mỗi AI Agent thường chỉ đảm trách một nhiệm vụ hẹp, trong phạm vi hay domain cụ thể đã được định trước.
 
-<img src="" style="width: 600px;"/>
+Hình ảnh dưới đây được lấy từ bài báo [THE LANDSCAPE OF EMERGING AI AGENT ARCHITECTURES FOR REASONING, PLANNING, AND TOOL CALLING: A SURVEY](https://arxiv.org/abs/2404.11584v1).
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/single_vs_multi_agent_compare.png" style="width: 800px;"/>
 
 Dưới góc độ kỹ thuật của deep learning, khái niệm Agent không phải là mới.
 Khái niệm Agent đã xuất hiện trong lĩnh vực Reinforcement Learning (RL) từ những năm 1990, nơi các tác tử (agents) học cách tương tác với môi trường (environment) để tối đa hoá phần thưởng (reward).
@@ -116,7 +122,7 @@ Một trong những vấn đề lớn nhất là **ảo giác (hallucination)**,
 Mô hình có thể “ảo tưởng” (hallucinate) tạo ra thông tin vô căn cứ mà trông rất có vẻ thuyết phục, gây hiểu lầm cho người dùng.
 Một kỹ thuật thường được dùng để giảm thiểu hiện tượng này là **Retrieval-Augmented Generation (RAG)**, trong đó mô hình sẽ truy vấn cơ sở dữ liệu bên ngoài để lấy thêm thông tin trước khi tạo ra câu trả lời.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/llm_rag.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/llm_rag.png" style="width: 600px;"/>
 
 RAG (Retrieval-Augmented Generation – Tạo sinh có truy xuất thông tin) là một kỹ thuật kết hợp giữa mô hình generative và hệ thống truy xuất thông tin nhằm nâng cao độ chính xác và khả năng cập nhật kiến thức của mô hình AI.
 Thay vì chỉ dựa vào dữ liệu huấn luyện tĩnh, một mô hình sử dụng RAG sẽ truy vấn một cơ sở tri thức bên ngoài (như bằng công cụ tìm kiếm, cơ sở dữ liệu, kho tài liệu ...) và kết hợp các thông tin đã tìm kiếm được vào prompt làm đầu vào cho mô hình LLM.
@@ -125,7 +131,7 @@ Nói cách khác, RAG bổ sung thêm bước retrieval (truy xuất) vào giữ
 
 Phương pháp này giúp giảm ảo giác (hallucination) của LLM (do câu trả lời được neo vào các tài liệu thực), đồng thời cho phép hệ thống cập nhật thông tin theo thời gian thực mà không cần huấn luyện lại mô hình nền tảng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/llm_rag.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/llm_rag_example.png" style="width: 1000px;"/>
 
 Hình ảnh trên được lấy từ bài báo [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997) mô tả quá trình RAG đơn giản gồm các bước:
 - **Bước 1: Indexing** Thu thập, xử lý và lưu trữ tài liệu vào vector database.
@@ -142,12 +148,12 @@ Quá trình này được thực hiện bằng việc tác động vào mô hìn
 **Act** là quá trình LLM lựa chọn các hàm cụ thể và chuẩn bị các tham số để gọi hàm.
 Các kết quả return của hàm sẽ được tiếp tục sử dụng làm giàu cho prompt của LLM và ta kỳ vọng rằng những kết quả này sẽ giúp LLM đưa ra các thông tin hay câu trả lời chính xác hơn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/react_example_1.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/react_example_1.png" style="width: 1000px;"/>
 
 **ReAct** là một phương pháp kết hợp giữa Reasoning và Action, được giới thiệu trong bài báo [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629).
 ReAct xen kẽ Reasoning và Action trong quá trình LLM xử lý một tác vụ, cho phép mô hình vừa suy luận vừa thực hiện hành động một cách linh hoạt.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/react_example_2.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/react_example_2.png" style="width: 1000px;"/>
 
 Việc kết hợp xen kẽ giữa Reasoning và Action giúp mô hình LLM tận dụng tốt hơn các kết quả thu được từ các hàm đã gọi (Act), từ đó, đưa ra tiếp tục quyết định về việc có nên gọi thêm các hàm khác hay không, hoặc tiếp tục suy luận để đi tới đáp án cuối cùng.
 
@@ -176,7 +182,7 @@ Long Term Memory thường được sử dụng để cải thiện khả năng 
 
 Ví dụ, với danh sách các tools như sau, hình ảnh này được lấy từ bài báo [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/tools.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/tools.png" style="width: 1000px;"/>
 
 Các tools được sử dụng trong bài báo này đa dạng gồm:
 - Sử dụng một mô hình ngôn ngữ khác (Question Answering, Machine Translation)
@@ -298,6 +304,18 @@ Bằng cách này, LLM có thể học được cách sử dụng các tools m�
 
 ### 3.4. Kiến trúc tổng quát
 
+Một kiến trúc tổng quát của AI Agent có thể được mô tả như sau:
+- **Input:** Nhận đầu vào từ người dùng, có thể là câu hỏi, yêu cầu hoặc thông tin cần xử lý.
+- **Reasoning:** Sử dụng mô hình LLM để suy luận và hiểu ngữ cảnh của đầu vào. Tạo plan gồm các bước truy xuất dữ liệu hoặc gọi hàm cần thiết.
+- **Memory:** Truy xuất dữ liệu từ Long Term Memory hoặc Short Term Memory nếu cần thiết.
+- **Act:** Thực hiện các hành động cần thiết, có thể là gọi hàm, truy xuất dữ liệu từ cơ sở dữ liệu, hoặc tương tác với các hệ thống bên ngoài.
+- **Output:** Tạo ra câu trả lời hoặc hành động cuối cùng dựa trên kết quả từ Reasoning và Act.
+- **Feedback Loop:** Nhận phản hồi từ người dùng và cập nhật Memory để cải thiện hiệu suất trong các lần tương tác sau.
+
+Hình ảnh dưới đây là một ví dụ kiến trúc tổng quát của AI Agent, được lấy từ bài báo [THE LANDSCAPE OF EMERGING AI AGENT ARCHITECTURES FOR REASONING, PLANNING, AND TOOL CALLING: A SURVEY](https://arxiv.org/abs/2404.11584v1).
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/code_act_agent_example.png" style="width: 1000px;"/>
+
 ## 4. Công cụ xây dựng AI Agent
 
 | Lớp trong “stack” Agentic AI *điển hình*     | Ví dụ sản phẩm                                               |
@@ -313,7 +331,7 @@ Foundation models, giống như cái tên của nó, là các mô hình nền t�
 Các mô hình này thường là các mô hình ngôn ngữ lớn (LLM) như ChatGPT, Claude, Gemini, LLaMA, v.v.
 Chúng được coi là "bộ não" của các AI Agent, cung cấp khả năng hiểu ngôn ngữ tự nhiên, sinh văn bản, và thực hiện các tác vụ phức tạp khác.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/foundation_models.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/foundation_models.png" style="width: 600px;"/>
 
 ### 4.2. Agent Framework và Reasoning
 
@@ -322,11 +340,11 @@ Mỗi công cụ có mục tiêu và cách tiếp cận hơi khác nhau, nhưng 
 
 Các framework này giúp các nhà phát triển dễ dàng hơn trong việc triển khai loop ReAct, quản lý memory, chọn công cụ ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/agent_framework.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/agent_framework.png" style="width: 700px;"/>
 
 ### 4.3. Low‑/No‑code Automation & Integration
 
 Các công cụ tự động hoá và tích hợp không cần mã (low-code/no-code) đang trở thành xu hướng trong việc xây dựng AI Agent.
 Chúng cho phép người dùng không chuyên về lập trình có thể tạo ra các quy trình tự động hoá phức tạp bằng cách kéo thả các thành phần, kết nối các API và dịch vụ khác nhau mà không cần viết mã hoặc chỉ cần viết rất ít mã.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/automation_tools.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/automation_tools.png" style="width: 700px;"/>
