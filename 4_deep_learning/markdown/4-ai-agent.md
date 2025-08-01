@@ -32,7 +32,7 @@ Một AI Agent có thể tiếp nhận đầu vào, xử lý thông tin, và th�
 
 Hình ảnh dưới đây được lấy từ bài báo [Executable Code Actions Elicit Better LLM Agents](https://arxiv.org/abs/2402.01030) mô tả một ví dụ về AI Agent tên là **CodeAct**.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/code_act_agent_example.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/code_act_agent_example.png" style="width: 1000px;"/>
 
 Khác với các hệ thống tự động hoá thông thường, AI Agent có mức độ "linh hoạt" cao hơn, đưa ra các output dựa tương ứng với các input và ngữ cảnh cụ thể mà không cần phải lập trình cứng (hard-code) cho từng tình huống.
 Chính vì sự linh hoạt này, AI Agent có thể được áp dụng trong nhiều lĩnh vực khác nhau như trợ lý ảo, chatbot, hệ thống tự động hoá quy trình (RPA), và nhiều ứng dụng AI khác.
@@ -41,7 +41,7 @@ Mặc dù có thể hoạt động độc lập, mỗi AI Agent thường chỉ 
 
 Hình ảnh dưới đây được lấy từ bài báo [THE LANDSCAPE OF EMERGING AI AGENT ARCHITECTURES FOR REASONING, PLANNING, AND TOOL CALLING: A SURVEY](https://arxiv.org/abs/2404.11584v1).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/single_vs_multi_agent_compare.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/single_vs_multi_agent_compare.png" style="width: 600px;"/>
 
 Dưới góc độ kỹ thuật của deep learning, khái niệm Agent không phải là mới.
 Khái niệm Agent đã xuất hiện trong lĩnh vực Reinforcement Learning (RL) từ những năm 1990, nơi các tác tử (agents) học cách tương tác với môi trường (environment) để tối đa hoá phần thưởng (reward).
@@ -314,7 +314,7 @@ Một kiến trúc tổng quát của AI Agent có thể được mô tả như 
 
 Hình ảnh dưới đây là một ví dụ kiến trúc tổng quát của AI Agent, được lấy từ bài báo [THE LANDSCAPE OF EMERGING AI AGENT ARCHITECTURES FOR REASONING, PLANNING, AND TOOL CALLING: A SURVEY](https://arxiv.org/abs/2404.11584v1).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/code_act_agent_example.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/auto_gpt_architecture.png" style="width: 1000px;"/>
 
 ## 4. Công cụ xây dựng AI Agent
 
