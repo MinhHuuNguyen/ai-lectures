@@ -1,13 +1,11 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
+time: 10/18/2022
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags: [deep-learning]
+banner_url:
+tags: [machine-learning]
 is_highlight: false
-is_published: false
+is_published: true
 ---
 
 # Model compression
@@ -31,7 +29,7 @@ Phân loại Quantization:
 - **Static Quantization**: Số lượng bit cần lưu trữ cho trọng số không thay đổi.
 - **Quantization-aware training**: Huấn luyện mô hình với một số lượng bit cố định cho trọng số.
 
-<img src="https://apple.github.io/coremltools/docs-guides/_images/quantization-technique.png" style="width: 700px;"/>
+<img src="https://apple.github.io/coremltools/docs-guides/_images/quantization-technique.png" style="width: 1200px;"/>
 
 ### 2.2. Pruning (Cắt tỉa)
 
@@ -39,7 +37,7 @@ Phân loại Quantization:
 - Các trọng số không quan trọng thường có giá trị gần bằng 0 hoặc rất nhỏ.
 - Việc loại bỏ các trọng số không quan trọng giúp giảm dung lượng mô hình, tăng tốc độ tính toán và giảm tài nguyên cần thiết cho việc triển khai mô hình.
 
-<img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/remove_neuron.png" style="width: 600px;"/>
+<img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/remove_neuron.png" style="width: 1200px;"/>
 
 ### 2.3. Knowledge distillation (Truyền thụ kiến thức)
 
@@ -47,7 +45,7 @@ Phân loại Quantization:
 - Mô hình mạnh hơn thường có kích thước lớn và phức tạp, trong khi mô hình mới cần có kích thước nhỏ và tốc độ tính toán nhanh.
 - Knowledge distillation giúp mô hình mới học được kiến thức từ mô hình mạnh hơn, giảm kích thước mô hình và tăng tốc độ tính toán.
 
-<img src="https://editor.analyticsvidhya.com/uploads/30818Knowledge%20Distillation%20Flow%20Chart%201.2.jpg" style="width: 800px;"/>
+<img src="https://editor.analyticsvidhya.com/uploads/30818Knowledge%20Distillation%20Flow%20Chart%201.2.jpg" style="width: 1200px;"/>
 
 
 ### 2.4. Low-rank approximation (Xấp xỉ ma trận hạng thấp)
@@ -55,4 +53,4 @@ Phân loại Quantization:
 - Low-rank approximation là phương pháp xấp xỉ ma trận trọng số của mô hình bằng cách phân rã ma trận trọng số thành tích của hai ma trận có hạng thấp hơn.
 - Việc xấp xỉ ma trận trọng số giúp giảm dung lượng mô hình, tăng tốc độ tính toán và giảm tài nguyên cần thiết cho việc triển khai mô hình.
 
-<img src="https://dustinstansbury.github.io/theclevermachine/assets/images/svd-data-compression/low-rank-approximation.png" style="width: 600px;"/>
+<img src="https://dustinstansbury.github.io/theclevermachine/assets/images/svd-data-compression/low-rank-approximation.png" style="width: 1200px;"/>
