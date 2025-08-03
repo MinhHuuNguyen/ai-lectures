@@ -82,7 +82,7 @@ Agentic AI được đặc trưng bởi bốn năng lực chính:
 
 ### 2.1. Function Calling
 
-Kỹ thuật Function Calling, được giới thiệu bởi OpenAI, cho phép người dùng định nghĩa các hàm (functions) hoặc API, từ đó, mô hình LLM sẽ có thể sinh ra các output dưới dạng JSON để quyết định có nên gọi hàm hay không?, nên gọi hàm nào? và với các tham số gì?.
+Kỹ thuật Function Calling, được giới thiệu bởi OpenAI qua bài viết [Function calling and other API updates](https://openai.com/index/function-calling-and-other-api-updates/), cho phép người dùng định nghĩa các hàm (functions) hoặc API, từ đó, mô hình LLM sẽ có thể sinh ra các output dưới dạng JSON để quyết định có nên gọi hàm hay không?, nên gọi hàm nào? và với các tham số gì?.
 Đây là phương pháp để kết nối mô hình LLM với các hệ thống bên ngoài, cho phép mô hình thực hiện các hành động cụ thể dựa trên đầu ra của nó.
 
 Hình ảnh dưới đây là ví dụ mà OpenAI giới thiệu về cách sử dụng kỹ thuật Function Calling trong mô hình LLM của họ.
@@ -90,6 +90,8 @@ Hình ảnh dưới đây là ví dụ mà OpenAI giới thiệu về cách sử
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/function_calling_1.png" style="width: 1000px;"/>
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/function_calling_2.png" style="width: 1000px;"/>
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/function_calling_3.png" style="width: 1000px;"/>
 
 Ở thời điểm mà Function Calling ra đời, LLM được yêu cầu cần sinh ra output với cấu trúc chính xác để có thể xác định được hàm nào sẽ được gọi và các tham số cần thiết.
 Tuy nhiên, với sự phát triển của các mô hình LLM hiện đại, hầu như tất cả các LLM hiện nay đều có thể sinh ra output với cấu trúc chính xác khi cần thiết.
