@@ -1,16 +1,12 @@
 ---
-slug: reinforcement-learning
-time: 11/09/2024
-title: Giới thiệu chung về Học tăng cường - Reinforcement Learning
+time: 03/17/2023
+title: Học tăng cường Reinforcement Learning
 description:
-author: Nguyễn Hữu Minh
 banner_url: 
-tags: [deep-learning]
+tags: [deep-learning, reinforcement-learning]
 is_highlight: false
-is_published: false
+is_published: true
 ---
-
-# Reinforcement learning
 
 ## 1. Giới thiệu chung về Reinforcement learning
 
@@ -41,7 +37,7 @@ trong đó:
 
 Mục tiêu chính của quá trình huấn luyện mô hình Reinforcement learning là tìm ra Policy tối ưu nhất để Agent có thể tối đa hóa Reward (Phần thưởng) mà nó nhận được.
 
-<img src="https://www.kdnuggets.com/wp-content/uploads/awan_reinforcement_learning_newbies_1.png" style="width: 600px;"/>
+<img src="https://www.kdnuggets.com/wp-content/uploads/awan_reinforcement_learning_newbies_1.png" style="width: 1200px;"/>
 
 ### 2.2. Environment (Môi trường)
 
@@ -89,7 +85,7 @@ trong đó:
     - Reward của môi trường là điểm số mà Pacman nhận được.
     - Value function của môi trường là cách tính điểm số của Pacman.
 
-<img src="https://thanhnien.mediacdn.vn/uploaded/badiep/2020_05_22/pacman-1485801405751_OAIG.jpg" style="width: 400px;"/>
+<img src="https://thanhnien.mediacdn.vn/uploaded/badiep/2020_05_22/pacman-1485801405751_OAIG.jpg" style="width: 1200px;"/>
 
 ### 3.2. Ví dụ về Robot lau nhà
 
@@ -113,7 +109,7 @@ trong đó:
     - Reward của môi trường là phản hồi tích cực hoặc tiêu cực từ người dùng.
     - Value function của môi trường là cách mà người dùng đánh giá câu trả lời của ChatGPT.
 
-<img src="https://orchardviewcolor.com/wp-content/uploads/2023/01/AI-graphicsindustry-chat-header.jpg" style="width: 1000px;"/>
+<img src="https://orchardviewcolor.com/wp-content/uploads/2023/01/AI-graphicsindustry-chat-header.jpg" style="width: 1200px;"/>
 
 ## 3. So sánh Reinforcement learning với Supervised learning
 
