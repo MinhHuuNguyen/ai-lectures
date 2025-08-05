@@ -128,14 +128,24 @@ is_published: true
 
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-hoc-tang-cuong-reinforcement-learning/))
 
-## Bài 13: Transfer Learning và Weakly, Semi, Self Supervised Learning
+## Bài 13: Transfer learning, weakly, semi, un và self supervised learning
 
-([bài viết chi tiết](/blog/transfer-learning-va-weakly-semi-self-supervised-learning/))
+1. Các vấn đề đối khi huấn luyện mô hình Supervised learning
+2. Giới thiệu về Transfer learning
+3. Zero shot, one shot, few shot learning
+4. Các bài toán trong weakly supervised learning
+5. Giới thiệu về semi supervised learning
+6. Giới thiệu về self supervised learning
+7. Contrastive Language-Image Pre-Training (CLIP)
 
-## Bài 14: Sử dụng AI trong hệ thống tìm kiếm
+([bài viết chi tiết](/blog/transfer-learning-weakly-semi-un-va-self-supervised-learning/))
 
-([bài viết chi tiết](/blog/su-dung-ai-trong-he-thong-tim-kiem/))
+## Bài 14: Nén mô hình mạng nơ ron Model Compression
 
-## Bài 15: Nén mô hình mạng nơ ron - Model Compression
+1. Giới thiệu chung về Model Compression
+2. Model Quantization (Lượng tử hóa mô hình)
+3. Model Pruning (Cắt tỉa mô hình)
+4. Knowledge distillation (Truyền thụ kiến thức)
+5. Matrix low-rank approximation (Xấp xỉ ma trận hạng thấp)
 
 ([bài viết chi tiết](/blog/nen-mo-hinh-mang-no-ron-model-compression/))
