@@ -126,7 +126,13 @@ is_published: true
 
 ## Bài 12: Học tăng cường Reinforcement Learning
 
-([bài viết chi tiết](/blog/gioi-thieu-chung-ve-hoc-tang-cuong-reinforcement-learning/))
+1. Giới thiệu chung về Reinforcement learning
+2. Các khái niệm cơ bản trong Reinforcement learning
+3. Quá trình quyết định Markov (Markov Decision Process - MDP)
+4. Phương pháp Monte Carlo
+5. Phân nhóm các thuật toán Reinforcement learning
+
+([bài viết chi tiết](/blog/hoc-tang-cuong-reinforcement-learning/))
 
 ## Bài 13: Transfer learning, weakly, semi, un và self supervised learning
 
