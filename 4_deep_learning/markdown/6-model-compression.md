@@ -5,7 +5,7 @@ description: Các mô hình mạng nơ ron có kích thước lớn và phức t
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/banner.png
 tags: [machine-learning, deep-learning]
 is_highlight: false
-is_published: true
+is_published: false
 ---
 
 ## 1. Giới thiệu chung về Model Compression
@@ -63,3 +63,17 @@ is_published: true
 - Low-rank approximation là phương pháp xấp xỉ ma trận trọng số của mô hình bằng cách phân rã ma trận trọng số thành tích của hai ma trận có hạng thấp hơn.
 - Việc xấp xỉ ma trận trọng số giúp giảm dung lượng mô hình, tăng tốc độ tính toán và giảm tài nguyên cần thiết cho việc triển khai mô hình.
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/low_rank_approximation.png" style="width: 900px;"/>
+
+
+<!-- # Quantization
+https://amirgholami.org/assets/papers/2021_A_Survey_of_Quantization_Methods_for_Efficient_Neural_Network_Inference.pdf
+https://arxiv.org/pdf/2505.10689
+# Pruning
+https://arxiv.org/pdf/2308.06767
+# Knowledge distillation
+https://arxiv.org/pdf/2006.05525
+# Low rank approximation
+https://arxiv.org/pdf/1606.06511
+# LoRA
+https://arxiv.org/pdf/2106.09685 -->
