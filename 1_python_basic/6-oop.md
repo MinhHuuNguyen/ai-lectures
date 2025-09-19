@@ -22,7 +22,7 @@ Ví dụ:
 - Trong lập trình trí tuệ nhân tạo, một đối tượng có thể là một mô hình học máy (machine learning model) với các thuộc tính như trọng số (weights), cấu trúc mạng (architecture), và các phương thức như huấn luyện (train), dự đoán (predict).
 
 
-OOP là một phương pháp để mô hình hóa các sự vật cụ thể như ô tô, cũng như các mối quan hệ giữa các sự vật như mối quan hệ giữa công ty và nhân viên, học sinh và giáo viên ...
+OOP là một phương pháp để mô hình hóa các sự vật cụ thể như ô tô, cũng như các mối quan hệ giữa các sự vật như mối quan hệ giữa công ty và nhân viên, học sinh và giáo viên...
 OOP mô hình hóa các thực thể trong thế giới thực thành các đối tượng phần mềm, có một số dữ liệu được liên kết với
 chúng và có thể thực hiện các chức năng nhất định.
 
@@ -39,7 +39,7 @@ Mỗi đối tượng được tạo ra từ một lớp được gọi là mộ
 
 #### Property (Thuộc tính) và Method (Phương thức)
 
-OOP tập trung vào biểu diễn các thực thể thế giới thực (ví dụ: Xe hơi, Người dùng, Animal ...) dưới dạng các đối tượng có thuộc tính (data/fields) và phương thức (hàm).
+OOP tập trung vào biểu diễn các thực thể thế giới thực (ví dụ: Xe hơi, Người dùng, Animal...) dưới dạng các đối tượng có thuộc tính (data/fields) và phương thức (hàm).
 Ví dụ, trong một lớp Dog ta có các thuộc tính như name (tên chó), age (tuổi chó) và phương thức như bark() (hành
 động chó sủa).
 
@@ -736,3 +736,397 @@ dog = Dog() # This will not raise an error
 dog.speak()  # This will raise an error
 # Output: NotImplementedError: Subclasses must implement this method
 ```
+
+---
+
+## Luyện tập
+
+<details>
+<summary>Câu hỏi trắc nghiệm</summary>
+
+1. Trong Python, phương thức khởi tạo của lớp được định nghĩa bằng tên nào?
+
+A. `__start__`
+B. `__init__`
+C. `__construct__`
+D. `__new__`
+
+2. Cho đoạn code:
+
+```python
+class A:
+    x = 10
+
+a1 = A()
+a2 = A()
+a1.x = 20
+print(a2.x)
+```
+
+Kết quả in ra là gì?
+
+A. 10
+B. 20
+C. None
+D. Lỗi
+
+3. Khái niệm nào sau đây thể hiện Polymorphism?
+
+A. Giấu chi tiết cài đặt, chỉ để lộ giao diện cần thiết
+B. Nhiều lớp có thể định nghĩa cùng một phương thức với hành vi khác nhau
+C. Khả năng kế thừa thuộc tính và phương thức từ lớp cha
+D. Sử dụng property để bảo vệ dữ liệu nội bộ
+
+4. Trong Python, để tạo lớp trừu tượng, ta cần import module nào?
+
+A. `abstract`
+B. `abc`
+C. `abstractbase`
+D. `oop`
+
+5. Đoạn code sau in ra gì?
+
+```python
+class A:
+    def greet(self):
+        return "Hello from A"
+
+class B(A):
+    def greet(self):
+        return "Hello from B"
+
+class C(A):
+    pass
+
+class D(B, C):
+    pass
+
+d = D()
+print(d.greet())
+```
+
+A. Hello from A
+B. Hello from B
+C. Hello from C
+D. Lỗi do đa kế thừa
+
+6. Cho lớp:
+
+```python
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        return self._name
+```
+
+Câu nào đúng?
+
+A. Có thể gán trực tiếp `p.name = "Nam"` để đổi tên
+B. `name` chỉ đọc, không thể gán trực tiếp
+C. `name` bị ẩn hoàn toàn, không thể đọc
+D. Sử dụng `p.get_name()` để đọc
+
+7. `@staticmethod` khác `@classmethod` ở điểm nào?
+
+A. `staticmethod` nhận cls làm tham số đầu tiên
+B. `classmethod` không cần đối tượng instance để gọi
+C. `staticmethod` không truy cập được cả class-level và instance-level
+D. `classmethod` chỉ dùng trong abstract class
+
+8. Trong Python, `__str__()` và `__repr__()` khác nhau thế nào?
+
+A. `__str__()` dành cho người dùng, `__repr__()` dành cho lập trình viên
+B. `__str__()` luôn ưu tiên gọi trước `__repr__()`
+C. `__repr__()` không thể override
+D. Không có sự khác biệt
+
+9. Khi nào nên dùng composition thay vì inheritance?
+
+A. Khi lớp con cần tái sử dụng logic của lớp cha nhưng không phải là một kiểu của lớp cha
+B. Khi muốn override toàn bộ hành vi lớp cha
+C. Khi cần chia sẻ static method giữa nhiều lớp
+D. Khi muốn thay đổi MRO
+
+10. Cho đoạn code:
+
+```python
+class Engine:
+    def start(self): return "Engine started"
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+    def start(self):
+        return self.engine.start()
+
+c = Car()
+print(c.start())
+```
+
+Quan hệ giữa Car và Engine là gì?
+
+A. Inheritance (Kế thừa)
+B. Polymorphism (Đa hình)
+C. Composition (Thành phần)
+D. Encapsulation (Đóng gói)
+
+</details>
+
+<details>
+<summary>Đáp án</summary>
+
+1. B
+2. A
+3. B
+4. B
+5. B
+6. B
+7. C
+8. A
+9. A
+10. C
+
+</details>
+
+<details>
+<summary>Bài tập thực hành</summary>
+
+**1. Lớp đơn giản: `Rectangle`** Viết lớp `Rectangle` có thuộc tính width và height. Cài đặt: phương thức khởi tạo `__init__()`, phương thức `area()` trả về diện tích, phương thức `perimeter()` trả về chu vi, phương thức `__str__()` để in dạng `"Rectangle(width=..., height=...)"`.
+
+**2. Tính đóng gói (Encapsulation) & thuộc tính (property)** Viết lớp `BankAccount` với: thuộc tính riêng `_balance` (không truy cập trực tiếp từ ngoài), phương thức `deposit(amount)` và `withdraw(amount)` (nếu rút vượt quá, `raise ValueError`), `@property balance` để đọc số dư (không cho phép ghi trực tiếp).
+
+**3. Lớp trừu tượng (`ABC`) và `interface`** Sử dụng `ABC` để định nghĩa `Shape` trừu tượng với phương thức `abstract area()` và `perimeter()`. Cài đặt `Circle` và `Square` kế thừa `Shape`.
+
+**4. Operator overloading (`__add__`, `__repr__`)** Viết lớp `Vector2D` biểu diễn vectơ 2 chiều với x, y. Cài đặt `__add__` để cộng hai vectơ, `__repr__` để in đối tượng.
+
+**5. Classmethod & Staticmethod** Viết lớp `Temperature` với: thuộc tính `instance celsius`, `@classmethod from_fahrenheit(cls, f)` trả về instance từ độ F, `@staticmethod c_to_f(c)` trả về giá trị Fahrenheit từ Celsius.
+
+**6. Polymorphism nâng cao: danh sách Shape** Cho `Shape (abstract)` có `area()`. Viết hàm `total_area(shapes: list[Shape])` trả về tổng diện tích của các hình khác nhau (Circle, Rectangle, Square). Thử nghiệm với danh sách hỗn hợp.
+
+**7. Thiết kế bài toán thực tế: TodoList với serialization** Xây dựng hệ `TodoItem` và `TodoList`: `TodoItem` có title, done (bool), toggle() để đổi trạng thái, `TodoList` quản lý danh sách `TodoItem` với phương thức `add(item)`, `remove(title)`, `list_all()` trả danh sách, thêm phương thức `to_dict()` và `from_dict()` để serialize/deserialze (ví dụ lưu/đọc JSON).
+
+</details>
+
+<details>
+<summary>Lời giải</summary>
+
+1. Lớp đơn giản: `Rectangle`
+
+```python
+class Rectangle:
+    def __init__(self, width: float, height: float):
+        self.width = width
+        self.height = height
+
+    def area(self) -> float:
+        return self.width * self.height
+
+    def perimeter(self) -> float:
+        return 2 * (self.width + self.height)
+
+    def __str__(self) -> str:
+        return f"Rectangle(width={self.width}, height={self.height})"
+
+# Ví dụ sử dụng
+r = Rectangle(3, 4)
+print(r)               # Rectangle(width=3, height=4)
+print(r.area())        # 12
+print(r.perimeter())   # 14
+```
+
+2. Tính đóng gói (Encapsulation) & thuộc tính (property)
+
+```python
+class BankAccount:
+    def __init__(self, initial: float = 0.0):
+        if initial < 0:
+            raise ValueError("Initial balance cannot be negative")
+        self._balance = float(initial)
+
+    @property
+    def balance(self) -> float:
+        return self._balance
+
+    def deposit(self, amount: float) -> None:
+        if amount <= 0:
+            raise ValueError("Deposit amount must be positive")
+        self._balance += amount
+
+    def withdraw(self, amount: float) -> None:
+        if amount <= 0:
+            raise ValueError("Withdraw amount must be positive")
+        if amount > self._balance:
+            raise ValueError("Insufficient funds")
+        self._balance -= amount
+
+# Ví dụ
+acc = BankAccount(100)
+acc.deposit(50)
+try:
+    acc.withdraw(200)
+except ValueError as e:
+    print("Lỗi:", e)   # Lỗi: Insufficient funds
+print(acc.balance)     # 150.0
+```
+
+3. Lớp trừu tượng (`ABC`) và `interface`
+
+```python
+class Animal:
+    def speak(self) -> str:
+        raise NotImplementedError("Subclasses must implement speak()")
+
+class Dog(Animal):
+    def speak(self) -> str:
+        return "Woof"
+
+class Cat(Animal):
+    def speak(self) -> str:
+        return "Meow"
+
+def animal_says(animal: Animal) -> None:
+    print(animal.speak())
+
+# Ví dụ
+animal_says(Dog())  # Woof
+animal_says(Cat())  # Meow
+```
+
+4. Operator overloading (`__add__`, `__repr__`)
+
+```python
+class Vector2D:
+    def __init__(self, x: float, y: float):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        if not isinstance(other, Vector2D):
+            return NotImplemented
+        return Vector2D(self.x + other.x, self.y + other.y)
+
+    def __repr__(self):
+        return f"Vector2D(x={self.x}, y={self.y})"
+
+# Ví dụ
+v1 = Vector2D(1, 2)
+v2 = Vector2D(3, 4)
+print(v1 + v2)  # Vector2D(x=4, y=6)
+```
+
+5. Classmethod & Staticmethod
+
+```python
+class Temperature:
+    def __init__(self, celsius: float):
+        self.celsius = float(celsius)
+
+    @classmethod
+    def from_fahrenheit(cls, f: float):
+        c = (f - 32) * 5.0 / 9.0
+        return cls(c)
+
+    @staticmethod
+    def c_to_f(c: float) -> float:
+        return c * 9.0 / 5.0 + 32
+
+# Ví dụ
+t = Temperature.from_fahrenheit(98.6)
+print(t.celsius)           # 37.0
+print(Temperature.c_to_f(0))  # 32.0
+```
+
+6. Polymorphism nâng cao: danh sách Shape
+
+```python
+# Sử dụng Shape, Circle, Rectangle từ bài trước; nếu chưa có, định nghĩa nhanh:
+from abc import ABC, abstractmethod
+import math
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self) -> float:
+        ...
+
+class Circle(Shape):
+    def __init__(self, radius: float): self.radius = radius
+    def area(self): return math.pi * self.radius ** 2
+
+class Rectangle(Shape):
+    def __init__(self, w, h): self.w = w; self.h = h
+    def area(self): return self.w * self.h
+
+class Square(Shape):
+    def __init__(self, side): self.side = side
+    def area(self): return self.side * self.side
+
+def total_area(shapes: list[Shape]) -> float:
+    return sum(s.area() for s in shapes)
+
+# Ví dụ
+shapes = [Circle(1), Rectangle(2, 3), Square(4)]
+print(total_area(shapes))  # pi*1 + 6 + 16
+```
+
+7. Thiết kế bài toán thực tế: TodoList với serialization
+
+```python
+import json
+from typing import List, Dict
+
+class TodoItem:
+    def __init__(self, title: str, done: bool = False):
+        self.title = title
+        self.done = bool(done)
+
+    def toggle(self):
+        self.done = not self.done
+
+    def to_dict(self) -> Dict:
+        return {"title": self.title, "done": self.done}
+
+    @classmethod
+    def from_dict(cls, d: Dict):
+        return cls(d["title"], d.get("done", False))
+
+    def __repr__(self):
+        return f"TodoItem(title={self.title!r}, done={self.done})"
+
+class TodoList:
+    def __init__(self):
+        self._items: List[TodoItem] = []
+
+    def add(self, item: TodoItem):
+        self._items.append(item)
+
+    def remove(self, title: str):
+        self._items = [it for it in self._items if it.title != title]
+
+    def list_all(self) -> List[TodoItem]:
+        return list(self._items)
+
+    def to_json(self) -> str:
+        return json.dumps([it.to_dict() for it in self._items])
+
+    @classmethod
+    def from_json(cls, s: str):
+        data = json.loads(s)
+        tl = cls()
+        for d in data:
+            tl.add(TodoItem.from_dict(d))
+        return tl
+
+# Ví dụ
+tl = TodoList()
+tl.add(TodoItem("Write report"))
+tl.add(TodoItem("Read paper", True))
+js = tl.to_json()
+print(js)
+tl2 = TodoList.from_json(js)
+print(tl2.list_all())
+```
+
+</details>
