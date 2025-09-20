@@ -1,7 +1,7 @@
 ---
 time: 12/26/2021
 title: Câu lệnh điều kiện trong Python
-description: "Câu lệnh điều kiện là một trong những cấu trúc cơ bản nhất trong lập trình giúp chương trình thực hiện các hành động khác nhau dựa trên điều kiện đầu vào. Trong Python, câu lệnh điều kiện được thực hiện thông qua các từ khóa if, elif và else."
+description: Câu lệnh điều kiện là một trong những cấu trúc cơ bản nhất trong lập trình giúp chương trình thực hiện các hành động khác nhau dựa trên điều kiện đầu vào. Trong Python, câu lệnh điều kiện được thực hiện thông qua các từ khóa `if`, `elif` và `else`. Bên cạnh đó, câu lệnh `pass` và cấu trúc một dòng (inline structure) cũng là những phần quan trọng cần nắm vững khi làm việc với câu lệnh điều kiện trong Python.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python_logo.png
 tags: [python]
 is_highlight: false

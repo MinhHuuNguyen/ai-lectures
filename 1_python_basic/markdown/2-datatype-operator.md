@@ -1,7 +1,7 @@
 ---
 time: 12/23/2021
 title: Kiểu dữ liệu và toán tử trong Python
-description: Để bắt đầu với bất kỳ ngôn ngữ lập trình nào, và Python cũng không ngoại lệ, chúng ta cần hiểu rõ về kiểu dữ liệu và toán tử cơ bản.
+description: Để bắt đầu với bất kỳ ngôn ngữ lập trình nào, và Python cũng không ngoại lệ, chúng ta cần hiểu rõ về kiểu dữ liệu và toán tử cơ bản. Các kiểu dữ liệu giúp chúng ta lưu trữ và thao tác với dữ liệu một cách hiệu quả, trong khi các toán tử cho phép thực hiện các phép toán và so sánh giữa các giá trị. Bài viết này sẽ giới thiệu về các kiểu dữ liệu phổ biến trong Python như số học, xâu chuỗi, tập hợp, từ điển, cũng như các toán tử cơ bản như toán tử số học, so sánh và logic.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python_logo.png
 tags: [python]
 is_highlight: false

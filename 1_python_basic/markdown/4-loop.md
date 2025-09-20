@@ -1,7 +1,7 @@
 ---
 time: 12/30/2021
 title: Vòng lặp trong Python
-description: "Vòng lặp là một cấu trúc cơ bản trong lập trình giúp chương trình thực hiện một hành động nào đó lặp đi lặp lại. Vòng lặp giúp giảm thiểu việc lặp lại mã nguồn, giúp chương trình trở nên ngắn gọn và dễ đọc. Trong Python, có hai loại vòng lặp cơ bản là vòng lặp `for` và vòng lặp `while`."
+description: Vòng lặp là một cấu trúc cơ bản trong lập trình giúp chương trình thực hiện một hành động nào đó lặp đi lặp lại. Vòng lặp giúp giảm thiểu việc lặp lại mã nguồn, giúp chương trình trở nên ngắn gọn và dễ đọc. Trong Python, có hai loại vòng lặp cơ bản là vòng lặp `for` và vòng lặp `while`. Ngoài ra, còn có các câu lệnh hỗ trợ vòng lặp như `break`, `continue` và `else` trong vòng lặp.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python_logo.png
 tags: [python]
 is_highlight: false
