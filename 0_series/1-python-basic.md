@@ -9,6 +9,7 @@ is_published: true
 ---
 
 ## Bài 0: Cài đặt môi trường lập trình Python
+
 1. Cài đặt pip và virtualenv
 2. Cài đặt Anaconda - Miniconda
 3. Thực thi các câu lệnh Python
@@ -16,6 +17,7 @@ is_published: true
 ([bài viết chi tiết](/blog/cai-dat-moi-truong-lap-trinh-python))
 
 ## Bài 1: Giới thiệu chung về ngôn ngữ lập trình Python
+
 1. Tại sao ngôn ngữ lập trình Python lại phổ biến?
 2. Các ứng dụng của ngôn ngữ lập trình Python
 3. Một số thao tác lập trình cơ bản với Python
@@ -23,6 +25,7 @@ is_published: true
 ([bài viết chi tiết](/blog/gioi-thieu-chung-ve-ngon-ngu-lap-trinh-python))
 
 ## Bài 2: Kiểu dữ liệu và toán tử trong Python
+
 1. Kiểm tra kiểu dữ liệu của một biến
 2. Kiểu dữ liệu số học và giá trị chân lý
 3. Kiểu dữ liệu xâu chuỗi
@@ -34,6 +37,7 @@ is_published: true
 ([bài viết chi tiết](/blog/kieu-du-lieu-va-toan-tu-trong-python))
 
 ## Bài 3: Câu lệnh điều kiện trong Python
+
 1. Câu lệnh `if`
 2. Câu lệnh `if-else`
 3. Câu lệnh `if-elif-else`
@@ -44,6 +48,7 @@ is_published: true
 ([bài viết chi tiết](/blog/cau-lenh-dieu-kien-trong-python))
 
 ## Bài 4: Vòng lặp trong Python
+
 1. Vòng lặp `for`
 2. Một số hàm hỗ trợ vòng lặp `for`
 3. Vòng lặp `while`
@@ -55,10 +60,15 @@ is_published: true
 ([bài viết chi tiết](/blog/vong-lap-trong-python))
 
 ## Bài 5: Hàm trong Python
+
 1. Hàm đơn giản với câu lệnh `def`
 2. Hàm lambda
 
 ([bài viết chi tiết](/blog/ham-trong-python))
 
-
 ## Bài 6: Lập trình hướng đối tượng trong Python
+
+1. Lý thuyết chung về lập trình hướng đối tượng (OOP)
+2. Lập trình hướng đối tượng trong Python
+
+([bài viết chi tiết](/blog/lap-trinh-huong-doi-tuong-trong-python))
