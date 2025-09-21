@@ -3,7 +3,7 @@ time: 01/13/2022
 title: Thư viện tính toán khoa học NumPy
 description: NumPy là một thư viện Python mạnh mẽ hỗ trợ tính toán khoa học và toán học trên mảng nhiều chiều. NumPy cung cấp một loạt các hàm và phương thức giúp thực hiện các phép toán cơ bản và nâng cao trên dữ liệu mảng nhanh chóng và hiệu quả.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/1-numpy/banner.png
-tags: [python]
+tags: [python, data-analysis]
 is_highlight: false
 is_published: true
 ---
@@ -40,6 +40,27 @@ Kết quả là tiết kiệm bộ nhớ và giảm tải cho bộ thông dịch
 Nhờ những ưu điểm trên, NumPy đặc biệt hiệu quả trong tính toán khoa học.
 Trong các phép tính số học trên mảng, NumPy có thể nhanh hơn Python thuần từ hàng chục đến hàng trăm lần.
 Tuy nhiên, lưu ý rằng lợi ích tốc độ này chỉ đạt được khi ta tận dụng phép toán vector hóa; nếu dùng NumPy nhưng vẫn lặp từng phần tử bằng Python (ví dụ, dùng vòng for duyệt mảng NumPy), hiệu năng có thể chậm hơn do phải chuyển đổi qua lại giữa Python và NumPy.
+
+#### Cài đặt và sử dụng NumPy
+
+Để sử dụng NumPy, trước hết ta cần cài đặt thư viện này.
+Nếu chưa cài, ta có thể dùng pip:
+
+```bash
+pip install numpy
+```
+
+hoặc nếu dùng Anaconda:
+
+```bash
+conda install numpy
+```
+
+Sau khi cài đặt, ta có thể import NumPy trong mã Python như sau:
+
+```python
+import numpy as np
+```
 
 ## 2. Kiểu dữ liệu numpy.ndarray
 
