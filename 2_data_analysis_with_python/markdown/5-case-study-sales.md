@@ -1,7 +1,7 @@
 ---
 time: 03/15/2022
 title: "[CASE STUDY] Thực hành phân tích bộ dữ liệu 1C Company Sales"
-description: Scikit-learn là một thư viện mã nguồn mở cung cấp nhiều công cụ học máy phổ biến và mạnh mẽ. Scikit-learn hỗ trợ xây dựng, huấn luyện và đánh giá mô hình học máy một cách dễ dàng và hiệu quả. Scikit-learn được sử dụng rộng rãi trong cả quá trình nghiên cứu phát triển và triển khai các ứng dụng học máy.
+description: Bài thực hành này được thực hiện trên bộ dữ liệu này được lấy từ cuộc thi Predict Future Sales trên Kaggle và qua một số chỉnh sửa để phù hợp với mục đích phân tích và thực hành sử dụng thư viện Pandas.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.png
 tags: [python, data-analysis, case-study]
 is_highlight: false
@@ -49,7 +49,7 @@ Bạn được cung cấp dữ liệu bán hàng lịch sử hàng ngày. Bộ d
     - `shop_name`: Tên cửa hàng.
     - `item_category_name`: Tên danh mục sản phẩm.
 
-## 3. Câu hỏi
+## 3. Câu hỏi phân tích
 
 ### 3.1. Câu 1:
 
