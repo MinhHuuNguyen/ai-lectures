@@ -12,7 +12,15 @@ is_published: true
 
 NumPy là một thư viện Python mạnh mẽ hỗ trợ tính toán khoa học và toán học trên mảng nhiều chiều. NumPy cung cấp một loạt các hàm và phương thức giúp thực hiện các phép toán cơ bản và nâng cao trên dữ liệu mảng nhanh chóng và hiệu quả.
 
-### [Bài 2: Thư viện xử lý dữ liệu dạng bảng Pandas](/blog/thu-vien-xu-ly-du-lieu-bang-pandas/)
+###### 1. Giới thiệu chung về thư viện NumPy
+
+###### 2. Kiểu dữ liệu numpy.ndarray
+
+###### 3. Thao tác và toán tử cơ bản với numpy.ndarray
+
+###### 4. Các hàm thống kê và logic trong NumPy
+
+### [Bài 2: Thư viện xử lý dữ liệu dạng bảng Pandas](/blog/thu-vien-xu-ly-du-lieu-dang-bang-pandas/)
 
 Pandas là một thư viện mã nguồn mở cung cấp cấu trúc dữ liệu và công cụ xử lý dữ liệu mạnh mẽ, dễ sử dụng. Pandas hỗ trợ đọc, ghi, xử lý và phân tích dữ liệu dạng bảng nhanh chóng và hiệu quả.
 
