@@ -18,7 +18,7 @@ Theo một báo cáo từ McKinsey & Company:
 
 ## 2. Mô tả bộ dữ liệu
 
-Bộ dữ liệu này được lấy từ cuộc thi [Predict Future Sales](https://www.kaggle.com/competitions/competitive-data-science-predict-future-sales/data) trên Kaggle và qua một số chỉnh sửa để phù hợp với mục đích phân tích và thực hành sử dụng thư viện Pandas.
+Bộ dữ liệu này được lấy từ cuộc thi [Predict Future Sales](https://www.kaggle.com/competitions/competitive-data-science-predict-future-sales) trên Kaggle và qua một số chỉnh sửa để phù hợp với mục đích phân tích và thực hành sử dụng thư viện Pandas.
 
 ```bibtex
 @misc{competitive-data-science-predict-future-sales,
