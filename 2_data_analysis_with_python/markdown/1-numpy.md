@@ -73,10 +73,10 @@ shape là bộ kích thước của mảng theo mỗi chiều.
 Ta kiểm tra shape bằng thuộc tính `.shape` của ndarray.
 
 Ví dụ:
-    - mảng 1 chiều (vector) có `shape = (n,)` trong đó n là số phần tử trong mảng
-    - mảng 2 chiều (ma trận) có `shape = (n, m)` trong đó n là số hàng, m là số cột
-    - mảng 3 chiều có `shape = (n, m, k)` trong đó n, m, k là kích thước theo từng chiều
-    - mảng N chiều có `shape = (d1, d2, ..., dN)` trong đó di là kích thước theo chiều i
+- mảng 1 chiều (vector) có `shape = (n,)` trong đó n là số phần tử trong mảng
+- mảng 2 chiều (ma trận) có `shape = (n, m)` trong đó n là số hàng, m là số cột
+- mảng 3 chiều có `shape = (n, m, k)` trong đó n, m, k là kích thước theo từng chiều
+- mảng N chiều có `shape = (d1, d2, ..., dN)` trong đó di là kích thước theo chiều i
 
 
 ```python
@@ -151,7 +151,7 @@ print(arr.itemsize)  # Output: 4 (vì int32 chiếm 4 bytes)
 
 Ngoài `np.array()`, NumPy cung cấp nhiều hàm để tạo mảng nhanh cho các trường hợp phổ biến:
 - `np.zeros(shape, dtype)`: Tạo mảng với mọi phần tử `= 0` theo shape yêu cầu.
-- `np.ones(shape, dtype)`: Tạo mảng với mọi phần tử `= 1`.
+- `np.ones(shape, dtype)`: Tạo mảng với mọi phần tử `= 1` theo shape yêu cầu.
 - `np.arange(start, stop, step)`: Tương tự range của Python, tạo mảng các số nguyên (hoặc số thực) cách đều.
 - `np.linspace(start, stop, num)`: Tạo mảng gồm num giá trị nằm trong khoảng `[start, stop]` chia đều.
 - `np.eye(N)` hoặc `np.identity(N)`: Tạo ma trận đơn vị kích thước NxN (các đường chéo `= 1`, còn lại `= 0`).
