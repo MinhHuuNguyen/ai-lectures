@@ -74,7 +74,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/line_plot_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/line_plot_matplotlib.png" style="width: 550px;"/>
 
 #### Seaborn
 
@@ -101,7 +101,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/line_plot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/line_plot_seaborn.png" style="width: 550px;"/>
 
 ### 2.2. Biểu đồ cột (Bar Plot)
 
@@ -124,7 +124,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/bar_plot_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/bar_plot_matplotlib.png" style="width: 550px;"/>
 
 Hoặc ta có thể vẽ biểu đồ cột nhưng nằm ngang:
 
@@ -143,7 +143,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/barh_plot_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/barh_plot_matplotlib.png" style="width: 550px;"/>
 
 #### Seaborn
 
@@ -170,7 +170,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/bar_plot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/bar_plot_seaborn.png" style="width: 550px;"/>
 
 Hoặc ta có thể vẽ biểu đồ cột nhưng nằm ngang:
 
@@ -195,7 +195,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/barh_plot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/barh_plot_seaborn.png" style="width: 550px;"/>
 
 ### 2.3. Biểu đồ phân tán (Scatter Plot)
 
@@ -220,7 +220,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/scatter_plot_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/scatterplot_matplotlib.png" style="width: 550px;"/>
 
 #### Seaborn
 
@@ -247,7 +247,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/scatter_plot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/scatterplot_seaborn.png" style="width: 550px;"/>
 
 ### 2.4. Biểu đồ tròn (Pie Plot)
 
@@ -269,7 +269,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/pie_plot_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/pie_plot_matplotlib.png" style="width: 550px;"/>
 
 #### Seaborn
 
@@ -297,7 +297,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/histogram_plot_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/histogram_plot_matplotlib.png" style="width: 550px;"/>
 
 #### Seaborn
 
@@ -319,7 +319,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/histogram_plot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/histogram_plot_seaborn.png" style="width: 550px;"/>
 
 ## 3. Một số câu lệnh khác trong Matplotlib
 
@@ -347,7 +347,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/legend_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/legend_matplotlib.png" style="width: 550px;"/>
 
 ### 3.2. Lưu biểu đồ (Save Figure)
 
@@ -391,7 +391,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/figure_size_matplotlib.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/figsize_matplotlib.png" style="width: 750px;"/>
 
 ### 3.4. Tuỳ chỉnh màu sắc và kiểu dáng (Color and Style)
 
@@ -414,7 +414,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/color_style_matplotlib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/color_style_matplotlib.png" style="width: 550px;"/>
 
 ### 3.5. Hiển thị nhiều biểu đồ trong cùng một hình (Subplots)
 
@@ -449,7 +449,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/subplots_matplotlib.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/subplots_matplotlib.png" style="width: 750px;"/>
 
 ## 3. Các biểu đồ nâng cao với Seaborn
 
@@ -481,7 +481,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/hue_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/hue_seaborn.png" style="width: 550px;"/>
 
 ### 3.2. Biểu đồ phân tán (Scatter Plot) nâng cao với Seaborn
 
@@ -511,7 +511,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/regplot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/regplot_seaborn.png" style="width: 550px;"/>
 
 Ta cũng có thể bổ sung thêm histogram cho trục X và Y bằng cách sử dụng `jointplot`:
 
@@ -539,7 +539,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/jointplot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/jointplot_seaborn.png" style="width: 550px;"/>
 
 Ta còn có thể thêm đường hồi quy vào biểu đồ `jointplot`:
 
@@ -567,7 +567,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/jointplot_reg_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/jointplot_reg_seaborn.png" style="width: 550px;"/>
 
 ### 3.3. Biểu đồ hộp (Box Plot) và biểu đồ violin (Violin Plot)
 
@@ -596,7 +596,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/boxplot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/boxplot_seaborn.png" style="width: 550px;"/>
 
 Hoặc vẽ biểu đồ violin:
 
@@ -622,7 +622,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/violinplot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/violinplot_seaborn.png" style="width: 550px;"/>
 
 #### Giải thích thêm về biểu đồ hộp và biểu đồ violin
 
@@ -654,7 +654,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/heatmap_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/heatmap_seaborn.png" style="width: 550px;"/>
 
 ### 3.5. Biểu đồ đôi (Pair Plot)
 
@@ -683,7 +683,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/pairplot_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/pairplot_seaborn.png" style="width: 750px;"/>
 
 ## 4. Một số tính năng hữu ích khác của Matplotlib và Seaborn
 
@@ -708,4 +708,4 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/data_seaborn.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/data_seaborn.png" style="width: 550px;"/>
