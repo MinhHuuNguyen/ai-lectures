@@ -35,4 +35,4 @@ Mô tả các trường dữ liệu như sau:
 
 ## 4. Lời giải tham khảo
 
-Bạn có thể tham khảo lời giải chi tiết trong [notebook này](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/2_data_analysis_with_python/notebook/7-case-study-bank-transaction/bank_transaction.ipynb).
+Bạn có thể tham khảo lời giải chi tiết trong [notebook này](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/2_data_analysis_with_python/notebook/7-case-study-bank-transactions/bank_transactions.ipynb).
