@@ -205,9 +205,10 @@ Ví dụ vẽ biểu đồ phân tán với Matplotlib gồm trục X là chiề
 
 ```python
 import matplotlib.pyplot as plt
+import numpy as np
 
-height = [150, 160, 170, 180, 190]
-weight = [55, 50, 65, 80, 90]
+height = np.random.randint(150, 200, 50)  # Chiều cao giả lập
+weight = np.random.randint(50, 100, 50)   # Cân nặng giả lập
 
 plt.scatter(height, weight, color='green')
 plt.title('Height vs Weight')
@@ -219,7 +220,7 @@ plt.show()
 
 Ta thu được biểu đồ như sau:
 
-<img src="" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/scatter_plot_matplotlib.png" style="width: 700px;"/>
 
 #### Seaborn
 
@@ -228,24 +229,25 @@ Ví dụ vẽ biểu đồ phân tán với Seaborn:
 ```python
 import seaborn as sns
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+sns.set_theme(style="darkgrid")
 
 data = {
-    'Height': [150, 160, 170, 180, 190],
-    'Weight': [55, 50, 65, 80, 90]
+    'Height': np.random.randint(150, 200, 50),  # Chiều cao giả lập
+    'Weight': np.random.randint(50, 100, 50)    # Cân nặng giả lập
 }
 df = pd.DataFrame(data)
 sns.scatterplot(data=df, x='Height', y='Weight', color='green')
 plt.title('Height vs Weight')
 plt.xlabel('Height (cm)')
 plt.ylabel('Weight (kg)')
-plt.grid()
 plt.show()
 ```
 
 Ta thu được biểu đồ như sau:
 
-<img src="" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/scatter_plot_seaborn.png" style="width: 700px;"/>
 
 ### 2.4. Biểu đồ tròn (Pie Plot)
 
