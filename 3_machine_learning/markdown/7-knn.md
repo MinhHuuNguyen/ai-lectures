@@ -1,6 +1,6 @@
 ---
 time: 08/05/2022
-title: Mô hình phân lớp K-Nearest Neighbors (KNN)
+title: Mô hình K Nearest Neighbors (KNN)
 description: KNN là một trong những mô hình machine learning đơn giản và dễ hiểu nhất, có thể được sử dụng cho cả bài toán phân loại và hồi quy.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/banner.png
 tags: [machine-learning]

@@ -8,8 +8,6 @@ is_highlight: false
 is_published: true
 ---
 
-### [Bài 0: Cài đặt môi trường lập trình Python](/blog/cai-dat-moi-truong-lap-trinh-python)
-
 ---
 
 ### [Bài 1: Giới thiệu chung về ngôn ngữ lập trình Python](/blog/gioi-thieu-chung-ve-ngon-ngu-lap-trinh-python)

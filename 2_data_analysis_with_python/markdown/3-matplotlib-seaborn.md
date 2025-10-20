@@ -321,7 +321,7 @@ Ta thu được biểu đồ như sau:
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/histogram_plot_seaborn.png" style="width: 550px;"/>
 
-## 3. Một số câu lệnh khác trong Matplotlib
+## 3. Một số câu lệnh chức năng bổ sung trong Matplotlib
 
 ### 3.1. Chú thích biểu đồ (Legend)
 
@@ -451,9 +451,9 @@ Ta thu được biểu đồ như sau:
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/subplots_matplotlib.png" style="width: 750px;"/>
 
-## 3. Các biểu đồ nâng cao với Seaborn
+## 4. Các biểu đồ nâng cao với Seaborn
 
-### 3.1. Tham số `hue` trong các biểu đồ
+### 4.1. Tham số `hue` trong các biểu đồ
 
 Nhiều hàm vẽ của Seaborn hỗ trợ tham số `hue`, cho phép phân loại dữ liệu theo một biến khác.
 Ví dụ, ta có thể vẽ biểu đồ cột với phân loại theo giới tính:
@@ -483,7 +483,7 @@ Ta thu được biểu đồ như sau:
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/hue_seaborn.png" style="width: 550px;"/>
 
-### 3.2. Biểu đồ phân tán (Scatter Plot) nâng cao với Seaborn
+### 4.2. Biểu đồ phân tán (Scatter Plot) nâng cao với Seaborn
 
 Ta có thể nâng cấp biểu đồ phân tán trong Seaborn với đường hồi quy (regression line) thành biểu đồ `regplot`.
 Ví dụ:
@@ -569,7 +569,7 @@ Ta thu được biểu đồ như sau:
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/jointplot_reg_seaborn.png" style="width: 550px;"/>
 
-### 3.3. Biểu đồ hộp (Box Plot) và biểu đồ violin (Violin Plot)
+### 4.3. Biểu đồ hộp (Box Plot) và biểu đồ violin (Violin Plot)
 
 Biểu đồ hộp (box plot) và biểu đồ violin (violin plot) là hai loại biểu đồ thống kê phổ biến để hiển thị phân phối của dữ liệu số.
 Ví dụ vẽ biểu đồ hộp:
@@ -632,7 +632,7 @@ Nó giúp ta nhanh chóng nhận biết phân phối, độ lệch và các giá
 Nó không chỉ hiển thị các đặc trưng thống kê như biểu đồ hộp mà còn thể hiện phân phối của dữ liệu thông qua hình dạng của "violin".
 Điều này giúp ta hiểu rõ hơn về cách dữ liệu phân bố, đặc biệt là khi có nhiều điểm dữ liệu hoặc phân phối không đồng đều.
 
-### 3.4. Biểu đồ nhiệt (Heatmap)
+### 4.4. Biểu đồ nhiệt (Heatmap)
 
 Biểu đồ nhiệt (heatmap) là một công cụ trực quan hóa dữ liệu dạng bảng, trong đó các giá trị được biểu diễn bằng màu sắc.
 Ví dụ vẽ biểu đồ nhiệt:
@@ -656,7 +656,7 @@ Ta thu được biểu đồ như sau:
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/heatmap_seaborn.png" style="width: 550px;"/>
 
-### 3.5. Biểu đồ đôi (Pair Plot)
+### 4.5. Biểu đồ đôi (Pair Plot)
 
 Biểu đồ đôi (pair plot) là một công cụ trực quan hóa mối quan hệ giữa các biến trong một DataFrame.
 Ví dụ vẽ biểu đồ đôi:
@@ -685,9 +685,9 @@ Ta thu được biểu đồ như sau:
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/3-matplotlib-seaborn/pairplot_seaborn.png" style="width: 750px;"/>
 
-## 4. Một số tính năng hữu ích khác của Matplotlib và Seaborn
+## 5. Một số tính năng hữu ích khác của Matplotlib và Seaborn
 
-### 4.1. Một số bộ dữ liệu mẫu (Sample Datasets) trong Seaborn
+### 5.1. Một số bộ dữ liệu mẫu (Sample Datasets) trong Seaborn
 
 Seaborn cung cấp một số bộ dữ liệu mẫu (sample datasets) để người dùng có thể thực hành và thử nghiệm các hàm vẽ biểu đồ.
 Ví dụ, ta có thể sử dụng bộ dữ liệu `tips` để vẽ biểu đồ:

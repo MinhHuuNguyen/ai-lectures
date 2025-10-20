@@ -31,7 +31,7 @@ AlphaGo là một hệ thống trí tuệ nhân tạo phát triển bởi Google
 AlphaGo không chỉ đơn thuần là một chương trình máy tính chơi cờ vây, mà còn ứng dụng kỹ thuật học sâu và học tăng cường để phân tích và đưa ra quyết định trong trò chơi.
 Hệ thống này đã đạt được một khả năng đánh cờ đáng kinh ngạc, thậm chí khi đối mặt với những nước đi sáng tạo và phức tạp mà trước đây được xem là khó khăn đối với máy tính.
 
-<video width="1000" controls>
+<video width="1000" autoplay controls muted loop>
     <source src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_alphago.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
@@ -43,7 +43,7 @@ Sự thành công của AlphaGo đã thể hiện sự tiến bộ đáng kinh n
 AutoPilot của Tesla là một hệ thống lái tự động được tích hợp vào các xe điện sản xuất bởi Tesla, một công ty đổi mới trong lĩnh vực ô tô tự lái.
 AutoPilot cho phép xe tự động thực hiện nhiều tác vụ lái xe, như duy trì làn đường, duyệt qua giao lộ, và tự động điều khiển tốc độ, giữ khoảng cách an toàn.
 
-<video width="1000" controls>
+<video width="1000" autoplay controls muted loop>
     <source src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_tesla_autopilot.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>

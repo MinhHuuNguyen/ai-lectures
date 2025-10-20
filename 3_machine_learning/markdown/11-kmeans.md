@@ -1,6 +1,6 @@
 ---
 time: 08/13/2022
-title: Mô hình K-means Clustering
+title: Mô hình K Means Clustering
 description: Bên cạnh các mô hình học có giám sát, mô hình học không giám sát cũng đóng một vai trò quan trọng trong Machine Learning. Trong bài viết này, chúng ta sẽ tìm hiểu về mô hình phân cụm K-means Clustering, mô hình giúp phân chia dữ liệu thành các cụm dựa trên đặc trưng của chúng.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/banner.png
 tags: [machine-learning]
