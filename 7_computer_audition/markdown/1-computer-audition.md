@@ -1,5 +1,5 @@
 ---
-time: 02/16/2023
+time: 03/27/2023
 title: Âm thanh máy tính Computer Audition
 description: Computer audition là tổ hợp các bài toán con trong lĩnh vực trí tuệ nhân tạo, nhằm giúp máy tính có thể hiểu và xử lý âm thanh. Computer audition là một trong những lĩnh vực nghiên cứu có rất nhiều ứng dụng thực tiễn trong đời sống giúp nâng cao hiệu quả công việc của con người và tự động hoá nhiều quy trình.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/banner.png

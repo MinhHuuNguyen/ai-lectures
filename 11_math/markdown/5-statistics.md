@@ -1,16 +1,13 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
-description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags:
+time: 12/26/2022
+title: Thống kê dữ liệu
+description: Thống kê dữ liệu là nền tảng quan trọng trong machine learning, giúp hiểu và mô tả đặc trưng của dữ liệu trước khi xây dựng mô hình. Thông qua các khái niệm như trung bình, phương sai, độ lệch chuẩn, phân phối xác suất và kiểm định giả thuyết, nhà nghiên cứu có thể đánh giá xu hướng, mức độ biến động và mối quan hệ giữa các biến. Việc phân tích thống kê giúp phát hiện dữ liệu ngoại lai, mất cân bằng hay nhiễu, từ đó hỗ trợ tiền xử lý và lựa chọn mô hình phù hợp. Nhờ đó, mô hình học máy đạt hiệu quả và độ chính xác cao hơn.
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.png
+tags: [math]
 is_highlight: false
-is_published: false
+is_published: true
 ---
 
-# Thống kê dữ liệu
 
 ## 1. Các đặc tính của dữ liệu
 

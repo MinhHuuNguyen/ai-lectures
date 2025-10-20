@@ -1,16 +1,12 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
-description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags:
+time: 01/03/2023
+title: Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)
+description: Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP) là hai phương pháp thống kê quan trọng trong machine learning dùng để ước lượng tham số mô hình. MLE tìm giá trị tham số làm cực đại xác suất quan sát dữ liệu, tập trung hoàn toàn vào thông tin từ dữ liệu huấn luyện. Trong khi đó, MAP kết hợp cả dữ liệu và kiến thức tiên nghiệm (prior) thông qua định lý Bayes, cho phép ước lượng ổn định hơn khi dữ liệu hạn chế hoặc nhiễu. Cả hai phương pháp đều đóng vai trò cốt lõi trong các mô hình xác suất và suy luận Bayes hiện đại.
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.png
+tags: [math]
 is_highlight: false
-is_published: false
+is_published: true
 ---
-
-# Maximum likelihood estimation và Maximum a posteriori estimation
 
 Một cách khái quát, quá trình giải quyết một bài toán bằng Machine Learning thường trải qua ba bước:
 - Modelling: Lựa chọn và xây dựng mô hình phù hợp cho bài toán

@@ -1,13 +1,11 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
-description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags:
+time: 01/07/2023
+title: Giải tích toán học Calculus
+description: Giải tích toán học (Calculus) đóng vai trò trọng yếu trong machine learning, đặc biệt trong việc tối ưu hóa mô hình. Các khái niệm như đạo hàm, vi phân và gradient được sử dụng để cập nhật tham số mô hình nhằm giảm thiểu hàm mất mát. Nhờ giải tích, thuật toán gradient descent và các biến thể của nó có thể tìm ra điểm cực tiểu của hàm mục tiêu, giúp mô hình học được từ dữ liệu. Ngoài ra, giải tích còn hỗ trợ hiểu rõ sự biến thiên của đầu ra theo đầu vào, góp phần vào việc phân tích độ nhạy và ổn định của hệ thống học máy.
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-probability/banner.png
+tags: [math]
 is_highlight: false
-is_published: false
+is_published: true
 ---
 
 # Đạo hàm với vector và ma trận

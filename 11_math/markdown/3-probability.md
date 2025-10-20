@@ -2,13 +2,13 @@
 time: 12/19/2022
 title: Một số khái niệm cơ bản trong xác suất
 description: Xác suất là một trong những khái niệm quan trọng nhất trong thống kê và học máy. Nó giúp chúng ta hiểu rõ hơn về cách mà các biến ngẫu nhiên tương tác với nhau và cách mà chúng ta có thể dự đoán các kết quả trong tương lai. Bài viết này sẽ giúp bạn hiểu rõ hơn về các khái niệm cơ bản trong xác suất, bao gồm biến ngẫu nhiên, không gian mẫu, biến cố, kết quả, phân phối xác suất, xác suất đồng thời, xác suất biên và xác suất điều kiện.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-probability/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.png
 tags: [math]
 is_highlight: false
 is_published: true
 ---
 
-## 1. Biến ngẫu nhiên
+## 1. Biến ngẫu nhiên và các khái niệm liên quan
 
 Một ví dụ thực tế thường được dùng để giải thích các khái niệm trong xác suất là ví dụ tung xúc xắc, ở đây ta sẽ sử dụng ví dụ này để minh hoạ các khái niệm.
 
@@ -115,7 +115,7 @@ Từ hai công thức rút gọn trên, ta có mối quan hệ giữa xác suấ
 
 $$ p(x, y) = p(x|y)p(y) = p(y|x)p(x) $$
 
-### 2.4. Định lý Bayes (Bayes' theorem)
+## 3. Định lý Bayes (Bayes' theorem)
 
 Định lý Bayes là một trong những định lý quan trọng nhất trong xác suất thống kê, được đặt tên theo nhà toán học người Anh Thomas Bayes.
 

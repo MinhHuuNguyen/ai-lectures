@@ -2,7 +2,7 @@
 time: 01/14/2023
 title: Giá trị riêng eigenvalues và vector riêng eigenvectors
 description: Trong đại số tuyến tính, eigenvector và eigenvalue là các công cụ cơ bản để phân tích đặc tính của các phép biến đổi tuyến tính. Qua bài viết này, ta sẽ tìm hiểu về bản chất, tính chất, cách tính và ứng dụng phong phú của eigenvector–eigenvalue trong các bài toán ứng dụng.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-vector-matrix/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.png
 tags: [math]
 is_highlight: false
 is_published: true
@@ -48,3 +48,38 @@ Ta có thể sử dụng giá trị riêng của ma trận $A$ để xác địn
 
 Từ độ lớn của các giá trị riêng, ta có thể lựa chọn các giá trị riêng lớn nhất và các vector riêng tương ứng, tạo ra các thành phần chính (principal components) của ma trận $A$.
 Từ thành phần chính này, ta có thể tạo ra ma trận mới $A'$ với kích thước nhỏ hơn ma trận $A$ nhưng vẫn giữ được thông tin quan trọng nhất của ma trận $A$.
+
+
+https://chatgpt.com/share/682bf36c-91d4-8001-8f4d-459e1917c9a6
+
+
+## 3. Ví dụ cách tính
+
+Giả sử ta có ma trận vuông $A$ có kích thước $4 \times 4$ như sau:
+$$
+A = \begin{pmatrix}
+  4 & 2 & 1 & 3 \\
+  1 & 3 & 2 & 4 \\
+  2 & 4 & 3 & 1 \\
+  3 & 1 & 4 & 2
+\end{pmatrix}
+$$
+
+Ta sẽ tìm eigenvalue và eigenvector của ma trận $A$.
+
+### 3.1 Lập phương trình đặc trưng
+
+Đầu tiên, ta cần lập phương trình đặc trưng của ma trận $A$:
+
+$$ det(A - \lambda I) = 0 $$
+$$ trong đó $I$ là ma trận đơn vị $4 \times 4$.
+$$
+$$
+A - \lambda I = \begin{pmatrix}
+  4 - \lambda & 2 & 1 & 3 \\
+  1 & 3 - \lambda & 2 & 4 \\
+  2 & 4 & 3 - \lambda & 1 \\
+  3 & 1 & 4 & 2 - \lambda
+\end{pmatrix}
+$$
+$$

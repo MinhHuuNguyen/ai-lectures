@@ -1,20 +1,20 @@
 ---
 time: 01/10/2023
-title: Các phân phối xác suất
+title: Các phân phối xác suất cơ bản
 description: Trong machine learning, phân phối xác suất là công cụ quan trọng để mô hình hóa dữ liệu và sự không chắc chắn. Nhiều thuật toán dựa trên giả thiết rằng dữ liệu tuân theo các phân phối xác suất nhất định. Hiểu rõ các phân phối này giúp lựa chọn mô hình và giải thuật thích hợp trong các bài toán học máy.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-probability/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.png
 tags: [math]
 is_highlight: false
 is_published: true
 ---
 
-## 1. Tổng quan
+## 1. Tổng quan và định lý giới hạn trung tâm (Central Limit Theorem)
 
 Trong machine learning, phân phối xác suất là công cụ quan trọng để mô hình hóa dữ liệu và sự không chắc chắn.
 Nhiều thuật toán dựa trên giả thiết rằng dữ liệu tuân theo các phân phối xác suất nhất định.
 Hiểu rõ các phân phối này giúp lựa chọn mô hình và giải thuật thích hợp trong các bài toán học máy.
 
-## 2. Định lý giới hạn trung tâm (Central Limit Theorem)
+#### Định lý giới hạn trung tâm (Central Limit Theorem)
 
 Định lý giới hạn trung tâm (Central Limit Theorem - CLT) là một trong những định lý quan trọng nhất trong thống kê và xác suất.
 
@@ -23,9 +23,9 @@ Hiểu rõ các phân phối này giúp lựa chọn mô hình và giải thuậ
 **Ý nghĩa thực tiễn:** Giúp dùng phân phối chuẩn để ước lượng hoặc kiểm định giả thuyết cho dữ liệu không chuẩn (miễn là kích thước mẫu đủ lớn, thường là $n \geq 30$). 
 Điều này rất hữu ích trong thống kê và học máy, vì nhiều phương pháp dựa trên giả định phân phối chuẩn.
 
-## 3. Hàm khối xác suất, Hàm mật độ xác suất, Hàm phân phối xác suất
+## 2. Hàm khối xác suất, Hàm mật độ xác suất, Hàm phân phối xác suất
 
-### 3.3. Hàm khối xác suất (PMF - Probability Mass Function)
+### 2.3. Hàm khối xác suất (PMF - Probability Mass Function)
 
 Hàm khối xác suất (PMF - Probability Mass Function) là một hàm xác định xác suất của các biến ngẫu nhiên rời rạc.
 Nói cách khác, hàm khối xác suất giúp ta tính toán được xác suất mà một biến ngẫu nhiên rời rạc nhận giá trị rời rạc nào đó.
@@ -40,7 +40,7 @@ Tính chất:
 - $0 \leq p(x_i) \leq 1$
 - $\sum_{i=1}^n p(x_i) = 1$
 
-### 3.2. Hàm mật độ xác suất (PDF - Probability Density Function)
+### 2.2. Hàm mật độ xác suất (PDF - Probability Density Function)
 
 Hàm mật độ xác suất (PDF - Probability Density Function) là một hàm xác định xác suất của các biến ngẫu nhiên liên tục.
 Nói cách khác, hàm mật độ xác suất giúp ta tính toán được xác suất mà một biến ngẫu nhiên liên tục nhận giá trị trong một khoảng giá trị nào đó.
@@ -53,7 +53,7 @@ Tính chất:
 - $0 \leq p(x) \leq 1$
 - $\int_{-\infty}^{\infty} p(x) dx = 1$
 
-### 3.1. Hàm phân phối xác suất (CDF - Cumulative Distribution Function)
+### 2.1. Hàm phân phối xác suất (CDF - Cumulative Distribution Function)
 
 Hàm phân phối xác suất (CDF - Cumulative Distribution Function) là một hàm xác định xác suất của các biến ngẫu nhiên rời rạc hoặc liên tục, CDF cho biết xác suất để biến ngẫu nhiên nhận giá trị nhỏ hơn hoặc bằng một giá trị $x$ nào đó.
 
@@ -77,7 +77,7 @@ $$ F(x) = \int_{-\infty}^{x} p(t) dt $$
 - Hàm phân phối xác suất (CDF) là xác suất của các biến ngẫu nhiên rời rạc hoặc liên tục với các giá trị nhỏ hơn hoặc bằng một giá trị nào đó.
 - CDF có thể được tính bằng cách cộng dồn PMF hoặc tích phân PDF.
 
-## 4. Kullback-Leibler divergence (KL divergence)
+## 3. Kullback-Leibler divergence (KL divergence)
 
 KL divergence (viết đầy đủ là Kullback–Leibler divergence) là một khái niệm trong lý thuyết thông tin và xác suất, dùng để đo mức độ khác biệt giữa hai phân phối xác suất. 
 
@@ -101,12 +101,12 @@ trong đó:
 - $D_{KL}(P || Q)$ là KL divergence từ $P$ đến $Q$
 - $D_{KL}(P || Q) \geq 0$ với $D_{KL}(P || Q) = 0$ khi và chỉ khi $P = Q$.
 
-## 5. Phân phối chuẩn
+## 4. Phân phối chuẩn (Normal distribution)
 
 Phân phối chuẩn (hay Normal/Gaussian distribution) là phân phối liên tục cơ bản và rất phổ biến.
 Phân phối chuẩn là phân phối mô tả biến ngẫu nhiên liên tục nhận giá trị thực $x \in (-\infty, \infty)$
 
-### 5.1. Phân phối chuẩn một biến (Univariate Normal Distribution)
+### 4.1. Phân phối chuẩn một biến (Univariate Normal Distribution)
 
 Phân phối chuẩn một biến được mô tả bởi hai tham số:
 - Kỳ vọng (mean), ký hiệu là $\mu$
@@ -136,7 +136,7 @@ $$ \hat{\sigma}^2 = \frac{1}{N - 1} \sum_{i=1}^N (x_i - \hat{\mu})^2 $$
 - Độ lệch chuẩn $\sigma$ được ước lượng bằng:
 $$ \hat{\sigma} = \sqrt{\hat{\sigma}^2} $$
 
-### 5.2. Phân phối chuẩn nhiều biến (Multivariate normal distribution)
+### 4.2. Phân phối chuẩn nhiều biến (Multivariate normal distribution)
 
 Phân phối chuẩn nhiều biến là dạng tổng quát của phân phối chuẩn một biến, được sử dụng để mô tả biến ngẫu nhiên liên tục nhiều chiều.
 
@@ -174,7 +174,7 @@ $$ \hat{\Sigma} = \frac{1}{N - 1} \sum_{i=1}^N (x_i - \hat{\mu})(x_i - \hat{\mu}
 - Độ lệch chuẩn $\sigma$ được ước lượng bằng:
 $$ \hat{\sigma} = \sqrt{\hat{\Sigma}} $$
 
-## 6. Phân phối đều (Uniform distribution)
+## 5. Phân phối đều (Uniform distribution)
 
 Trái ngược với phân phối chuẩn, phân phối biểu diễn biến ngẫu nhiên có những giá trị có xác suất xuất hiện cao hơn các giá trị khác, phân phối đều được sử dụng để mô tả biến ngẫu nhiên liên tục có xác suất nhận các giá trị trong một khoảng xác định là như nhau.
 
@@ -194,7 +194,7 @@ Ví dụ: Ta có thể dùng phân phối đều để khởi tạo trọng số
 
 Ví dụ: Ta có thể dùng phân phối đều để sinh mẫu dữ liệu ngẫu nhiên đều trong khoảng nhất định. 
 
-## 7. Phân phối Bernoulli (Bernoulli distribution)
+## 6. Phân phối Bernoulli (Bernoulli distribution)
 
 Phân phối Bernoulli là phân phối xác suất rời rạc cơ bản dành cho biến ngẫu nhiên nhị phân: nó mô tả trường hợp khi đầu ra chỉ nhận một trong hai giá trị $x ∈ {0, 1}$.
 
@@ -220,3 +220,25 @@ Ví dụ: Tung một đồng xu có xác suất ra mặt ngửa là $p$ là m�
 Phân phối Bernoulli được ứng dụng nhiều trong machine learning khi mô hình hóa nhãn nhị phân (nói cách khác, được sử dụng trong bài toán phân lớp nhị phân).
 
 Ví dụ: Trong bài toán binary classification của mô hình logistic regression, xác suất dự đoán nhãn positive được hiểu là $p$, và kết quả nhãn có thể xem như một biến Bernoulli với xác suất thành công đó.
+
+
+#### 2.2. Phân phối phân loại (Categorical distribution)
+
+Phân phối phân loại là dạng tổng quát của phân phối Bernoulli.
+Thay vì biến ngẫu nhiên nhị phân của phân phối Bernoulli, biến ngẫu nhiên trong phân phối phân loại có thể nhận một trong nhiều giá trị từ một tập hợp $\{1, 2, ..., K\}$.
+
+Nếu có $K$ giá trị đầu ra có thể đạt được, phân phối phân loại sẽ được mô tả bởi $K$ tham số và viết dưới dạng vector: $\lambda = [\lambda_1, \lambda_2, ..., \lambda_K]$ với các $\lambda_K$ không âm và có tổng bằng 1.
+Mỗi giá trị $\lambda_K$ thể hiện xác suất để biến ngẫu nhiên nhận giá trị $K$, ký hiệu là $p(x) = \text{Cat}_x [\lambda]$.
+
+Trong thực tế, ta thường ký hiệu tập hợp các giá trị đầu ra $\{1, 2, ..., K\}$ dưới dạng one-hot $\mathbf{x} \in \{\mathbf{e}_1, \mathbf{e}_2, ..., \mathbf{e}_K\}$ với $\mathbf{e}_K$ là vector gồm K phần tử, trong đó phần từ thứ $K$ bằng 1 còn các phần tử còn lại bằng 0.
+
+Từ đó, xác suất để biến ngẫu nhiên $x$ nhận giá trị $\mathbf{e}_k$ được xác nhận như sau:
+
+$$
+p(\mathbf{x} = \mathbf{e}_k) = \prod_{j=1}^K \lambda_j^{x_j} = \lambda_k
+$$
+
+Tích này sẽ gồm các thừa số $\lambda_j^{x_j} = 1$ ở các vị trí $x_j = 0, \forall j \neq k$ và thừa số $\lambda_j^{x_j} = \lambda_k$ ở vị trí $x_j = 1, j = k$.
+
+
+

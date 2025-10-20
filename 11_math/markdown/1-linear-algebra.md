@@ -1,13 +1,11 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
-description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags:
+time: 12/16/2022
+title: Đại số tuyến tính Linear Algebra
+description: Đại số tuyến tính là nền tảng toán học cốt lõi trong machine learning, cung cấp ngôn ngữ và công cụ để biểu diễn và xử lý dữ liệu dưới dạng vector, ma trận và tensor. Các phép toán như nhân ma trận, chuẩn hóa vector hay phân rã ma trận được sử dụng trong hầu hết các thuật toán học máy, từ hồi quy tuyến tính đến mạng nơ-ron sâu. Nhờ đại số tuyến tính, việc tối ưu hóa mô hình, biểu diễn đặc trưng và xử lý dữ liệu quy mô lớn trở nên hiệu quả và chính xác hơn.
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.png
+tags: [math]
 is_highlight: false
-is_published: false
+is_published: true
 ---
 
 # Kiến thức cơ bản về vector và ma trận
