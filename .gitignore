@@ -19,6 +19,7 @@ events.out.tfevents*
 
 # Documentation and presentations
 *.pdf
+!books/**/*.pdf
 *.pptx
 *.ppt
 *.docx
