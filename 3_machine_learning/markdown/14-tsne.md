@@ -2,7 +2,7 @@
 time: 08/23/2022
 title: Mô hình tSNE
 description: Các feature vectors trong các bài toán machine learning thực tế có thể có số chiều rất lớn và số lượng các điểm dữ liệu cũng lớn dần theo thời gian. Điều này có thể được gọi là Curse of Dimensionality, Lời nguyền của số chiều. Trong các thuật toán giảm chiều dữ liệu, t-SNE là một đại diện nổi bật cho phương pháp giảm chiều dữ liệu phi tuyến tính.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -23,7 +23,7 @@ Chiếu dữ liệu từ không gian nhiều chiều sang không gian ít chiề
 Tìm ra mối quan hệ giữa các điểm dữ liệu và cố gắng duy trì được mối quan hệ này trên không gian mới có số chiều thấp hơn.
 Đại diện là mô hình t-distributed Stochastic Neighbor Embedding (t-SNE).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/idea.png" width="600"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/idea.jpeg" width="600"/>
 
 t-distributed Stochastic Neighbor Embedding (t-SNE) là một phương pháp giảm chiều dữ liệu phi tuyến tính được ra đời từ năm 2008 bởi Laurens van der Maaten và Geoffrey Hinton.
 
@@ -33,7 +33,7 @@ t-SNE duy trì các cặp điểm dữ liệu gần nhau trong không gian ban �
 
 Tham khảo về khái niệm, ý nghĩa và cách tính toán giá trị khoảng cách KL divergence trong bài viết [này](/blog/cac-phan-phoi-xac-suat).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/kl_divergence.png" width="700"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/kl_divergence.jpeg" width="700"/>
 
 Một cách khái quát, KL divergence (viết đầy đủ là Kullback–Leibler divergence) dùng để đo mức độ khác biệt giữa hai phân phối xác suất. 
 KL divergence không phải là một khoảng cách thực sự mà là một thước đo độ mất mát thông tin khi ta dùng phân phối $Q$ để xấp xỉ phân phối $P$.
@@ -45,7 +45,7 @@ Ta cần giảm số chiều của dữ liệu từ $n$ xuống $k$ với $k < n
 
 Nghĩa là bộ dữ liệu sau khi giảm chiều sẽ có dạng $x_1, x_2, ..., x_m \in R^k$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/data_3d.png" width="500"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/data_3d.jpeg" width="500"/>
 
 ### 3.1. Bước 1: Tính ma trận xác suất tương đồng
 
@@ -71,7 +71,7 @@ trong đó:
 
 Các giá trị trên đường chéo của ma trận xác suất tương đồng $P$ là $p_{ii} = 0$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/p_matrixx.png" width="500"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/14-tsne/p_matrixx.jpeg" width="500"/>
 
 Mô hình t-SNE sẽ tính toán ma trận xác suất tương đồng $P$ để đo đạc khoảng cách (sự tương đồng) giữa các điểm dữ liệu trong không gian nhiều chiều.
 

@@ -2,7 +2,7 @@
 time: 03/17/2023
 title: Học tăng cường Reinforcement Learning
 description: Reinforcement Learning là một mô hình học máy trong đó một hệ thống học tập tự động từ kinh nghiệm tương tác với môi trường. Nó liên quan đến việc ra quyết định nào đó để tối đa hóa một phần thưởng tích lũy. Reinforcement Learning mô phỏng quá trình học tập của con người và động vật, trong đó họ học từ kinh nghiệm và phản hồi từ môi trường.
-banner_url: 
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/9_reinforcement_learning/images/1-reinforcement-learning/banner.jpeg
 tags: [deep-learning, reinforcement-learning]
 is_highlight: false
 is_published: false
@@ -86,7 +86,7 @@ trong đó:
 
 Mục tiêu chính của quá trình huấn luyện mô hình Reinforcement learning là tìm ra Policy tối ưu nhất để Agent có thể tối đa hóa Reward (Phần thưởng) mà nó nhận được.
 
-<img src="https://www.kdnuggets.com/wp-content/uploads/awan_reinforcement_learning_newbies_1.png" style="width: 1200px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 2.2. Environment (Môi trường)
 

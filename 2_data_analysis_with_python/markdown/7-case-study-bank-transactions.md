@@ -2,7 +2,7 @@
 time: 03/11/2022
 title: "[CASE STUDY] Phân tích Phân khúc khách hàng của ngân hàng (Bank Customer Segmentation)"
 description: Hầu hết các ngân hàng có một lượng lớn khách hàng với các đặc điểm khác nhau về độ tuổi, thu nhập, giá trị, lối sống và nhiều yếu tố khác. Phân khúc khách hàng là quá trình chia tập dữ liệu khách hàng thành các nhóm cụ thể dựa trên những đặc điểm chung.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.jpeg
 tags: [python, data-analysis, case-study]
 is_highlight: false
 is_published: true

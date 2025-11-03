@@ -2,7 +2,7 @@
 time: 10/18/2022
 title: Nén mô hình mạng nơ ron Model Compression
 description: Các mô hình mạng nơ ron có kích thước lớn và phức tạp có thể đạt được độ chính xác cao trên các bài toán khác nhau. Tuy nhiên, việc triển khai các mô hình này trên các thiết bị có tài nguyên hạn chế như các thiết bị di động hoặc các thiết bị IoT là một thách thức lớn. Nén mô hình mạng nơ ron là một giải pháp giúp giảm kích thước mô hình, tăng tốc độ tính toán và giảm tài nguyên cần thiết cho việc triển khai mô hình mà không làm suy giảm hiệu suất quá nhiều.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/banner.jpeg
 tags: [machine-learning, deep-learning]
 is_highlight: false
 is_published: false
@@ -20,19 +20,19 @@ is_published: false
 - Thay vì lưu trữ các trọng số dưới dạng số thực 32-bit, ta có thể lưu trữ chúng dưới dạng số nguyên 8-bit hoặc 16-bit.
 - Việc giảm số lượng bit giúp giảm dung lượng mô hình, tăng tốc độ tính toán và giảm tài nguyên cần thiết cho việc triển khai mô hình.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/quantization.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/quantization.jpeg" style="width: 900px;"/>
 
 #### Uniform quantization và Non-uniform quantization
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/uniform_non_uniform_quantization.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/uniform_non_uniform_quantization.jpeg" style="width: 900px;"/>
 
 #### Symmetric quantization và Asymmetric quantization
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/symmetric_asymmetric_quantization.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/symmetric_asymmetric_quantization.jpeg" style="width: 900px;"/>
 
 ### 2.1. Post-Training Quantization (PTQ)
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/ptq.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/ptq.jpeg" style="width: 900px;"/>
 
 #### Dynamic Quantization (Stochastic Quantization)
 
@@ -40,7 +40,7 @@ is_published: false
 
 ### 2.2. Quantization Aware Training (QAT)
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/qat_ptq.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/qat_ptq.jpeg" style="width: 900px;"/>
 
 ## 3. Model Pruning (Cắt tỉa mô hình)
 
@@ -51,7 +51,7 @@ is_published: false
 
 ## 4. Knowledge distillation (Truyền thụ kiến thức)
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/distillation.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/distillation.jpeg" style="width: 900px;"/>
 
 - Knowledge distillation là phương pháp huấn luyện một mô hình mới (student model) sao cho nó học từ một mô hình mạnh hơn (teacher model).
 - Mô hình mạnh hơn thường có kích thước lớn và phức tạp, trong khi mô hình mới cần có kích thước nhỏ và tốc độ tính toán nhanh.
@@ -63,7 +63,7 @@ is_published: false
 - Low-rank approximation là phương pháp xấp xỉ ma trận trọng số của mô hình bằng cách phân rã ma trận trọng số thành tích của hai ma trận có hạng thấp hơn.
 - Việc xấp xỉ ma trận trọng số giúp giảm dung lượng mô hình, tăng tốc độ tính toán và giảm tài nguyên cần thiết cho việc triển khai mô hình.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/low_rank_approximation.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/low_rank_approximation.jpeg" style="width: 900px;"/>
 
 
 <!-- # Quantization

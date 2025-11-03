@@ -2,7 +2,7 @@
 time: 03/25/2023
 title: "[SERIES] Xử lý ngôn ngữ tự nhiên Natural Language Processing"
 description: Xử lý ngôn ngữ tự nhiên là một lĩnh vực con của trí tuệ nhân tạo, tập trung vào việc tương tác giữa máy tính và con người thông qua ngôn ngữ tự nhiên. NLP có rất nhiều ứng dụng trong đời sống, từ tìm kiếm thông tin đến trợ lý ảo.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/banner.jpeg
 tags: [deep-learning, natural-language-processing, series]
 is_highlight: false
 is_published: true

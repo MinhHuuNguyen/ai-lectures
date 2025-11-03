@@ -2,7 +2,7 @@
 time: 08/16/2022
 title: Mô hình DBSCAN
 description: Khác với K-means Clustering, mô hình phân cụm DBSCAN Clustering không yêu cầu số lượng cụm cần phân chia trước. Trong bài viết này, chúng ta sẽ tìm hiểu về mô hình DBSCAN Clustering, mô hình giúp phân chia dữ liệu thành các cụm dựa trên mật độ của chúng.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -43,13 +43,13 @@ Cho $D$ là bộ dữ liệu cần được phân cụm, **vùng lận cận eps
 
 $$N_{eps}(p) = \{q \in D | dist(p, q) \leq eps\}$$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/epsilon.png" width="400"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/epsilon.jpeg" width="400"/>
 
 ### 2.2. Core Point
 
 Trong bộ dữ liệu $D$, một điểm dữ liệu $p$ được gọi là **core point** nếu nó có số lượng "người hàng xóm" trong **vùng lận cận epsilon** của nó lớn hơn hoặc bằng giá trị $minSample$ (hoặc $minPts$).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/core_point.png" width="800"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/core_point.jpeg" width="800"/>
 
 ### 2.3. Directly Density Reachable
 
@@ -59,21 +59,21 @@ $$ q \in N_{eps}(p) $$
 
 $$ |N_{eps}(p)| \geq min_sample $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/directly_density_reachable.png" width="400"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/directly_density_reachable.jpeg" width="400"/>
 
 ### 2.4. Density Reachable
 
 Với hai giá trị $eps$ và $minSample$, một điểm dữ liệu $q$ được gọi là **density reachable** từ một điểm dữ liệu $p$ nếu tồn tại một chuỗi các điểm dữ liệu $p, p_1, p_2, \ldots, p_n, q$ liên tiếp từ $p$ đến $q$ sao cho mỗi điểm trong chuỗi đều là **directly density reachable** từ điểm trước đó.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/density_reachable_2.png" width="600"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/density_reachable_2.jpeg" width="600"/>
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/density_reachable_3.png" width="800"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/density_reachable_3.jpeg" width="800"/>
 
 ### 2.5. Density Connected
 
 Với hai giá trị $eps$ và $minSample$, hai điểm dữ liệu $p$ và $q$ được gọi là **density connected** nếu tồn tại một điểm dữ liệu $o$ sao cho cả $p$ và $q$ đều là **density reachable** từ $o$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/density_connected.png" width="800"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/density_connected.jpeg" width="800"/>
 
 ### 2.6. Cluster
 
@@ -87,7 +87,7 @@ Với hai giá trị $eps$ và $minSample$, các cụm $C_1, C_2, \ldots, C_n$ l
 
 $$ noise = \{p \in D | \forall i: p \notin C_i\} $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/noise.png" width="800"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/noise.jpeg" width="800"/>
 
 ## 3. Các bước của thuật toán
 

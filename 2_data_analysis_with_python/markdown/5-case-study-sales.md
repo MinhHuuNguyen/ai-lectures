@@ -2,7 +2,7 @@
 time: 03/15/2022
 title: "[CASE STUDY] Thực hành phân tích bộ dữ liệu 1C Company Sales"
 description: Bài thực hành này được thực hiện trên bộ dữ liệu này được lấy từ cuộc thi Predict Future Sales trên Kaggle và qua một số chỉnh sửa để phù hợp với mục đích phân tích và thực hành sử dụng thư viện Pandas.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.jpeg
 tags: [python, data-analysis, case-study]
 is_highlight: false
 is_published: true

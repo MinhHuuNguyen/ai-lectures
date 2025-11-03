@@ -2,7 +2,7 @@
 time: 07/19/2022
 title: Thuật toán tối ưu Gradient Descent
 description: Trong Machine Learning, ta thường dùng phép toán đạo hàm để tối ưu hàm loss. Tuy nhiên, trong đa số các trường hợp, việc tính đạo hàm của hàm loss là không thể hoặc rất khó khăn, đặc biệt khi kiến trúc mô hình phức tạp và bộ dữ liệu lớn. Trong bài viết này, chúng ta sẽ tìm hiểu về thuật toán tối ưu Gradient Descent, một trong những phương pháp phổ biến nhất để tối ưu hàm loss trong Machine Learning.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -23,7 +23,7 @@ $$\Rightarrow  f(-5) = (-5)^2 + 10 \times (-5) + 4 = -21$$
 Ta thu được nghiệm tối ưu của bài toán là $x = -5$ và giá trị tối ưu của hàm số là $f(-5) = -21$.
 Từ đó, ta vẽ được đồ thị của hàm số như sau:
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/example_graph.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/example_graph.jpeg" style="width: 600px;"/>
 
 Trong Machine Learning, ta thường phải đi tìm nghiệm tối ưu và giá trị tối ưu của hàm loss (thông thường giá trị tối ưu chính là giá trị cực tiểu của hàm loss).
 Ví dụ trong mô hình Linear Regression, ta tìm giá trị tối ưu của hàm loss Mean Squared Error (MSE).
@@ -33,7 +33,7 @@ Trong toán học, ta có giá trị cực tiểu địa phương và giá trị
 - Giá trị cực tiểu toàn cục là (global minimum) giá trị nhỏ nhất của hàm số trên toàn miền xác định.
 - Global minimum là một trường hợp đặc biệt của local minimum, là local minimum nhỏ nhất trong toàn bộ miền xác định.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/local_global_minimum.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/local_global_minimum.jpeg" style="width: 600px;"/>
 
 Về lý thuyết, ta luôn mong muốn tìm được global minimum của hàm loss.
 Tuy nhiên, trong thực tế, việc tìm được global minimum là không dễ dàng, đặc biệt khi hàm loss có dạng phức tạp, bộ dữ liệu lớn, hoặc mô hình phức tạp.
@@ -50,7 +50,7 @@ Xét ví dụ về hàm số như trên $f(x) = x^2 + 10x + 4$, ta đã có nghi
 
 Ta sẽ sử dụng thuật toán Gradient Descent để xấp xỉ nghiệm tối ưu và giá trị tối ưu này của hàm số.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/fx_vs_gradient_fx.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/fx_vs_gradient_fx.jpeg" style="width: 600px;"/>
 
 Ta ký hiệu nghiệm tối ưu của hàm số là $x^*$ và giá trị tối ưu của hàm số là $f(x^*)$.
 Xét giá trị $x^t$ nào đó bất kỳ, ta có

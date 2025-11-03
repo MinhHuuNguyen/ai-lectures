@@ -2,7 +2,7 @@
 time: 03/20/2023
 title: Trí tuệ nhân tạo tạo sinh Generative AI
 description: Trí tuệ nhân tạo tạo sinh (Generative AI) là lĩnh vực nghiên cứu và ứng dụng trong trí tuệ nhân tạo nhằm tạo ra nội dung mới, bao gồm văn bản, hình ảnh, âm thanh và video. Các mô hình GenAI như GPT, DALL-E, Stable Diffusion đã đạt được những tiến bộ đáng kể trong việc tạo ra nội dung chất lượng cao, mở ra nhiều cơ hội mới trong các lĩnh vực sáng tạo, nghệ thuật và truyền thông. Tuy nhiên, nó cũng đặt ra những thách thức về đạo đức, bảo mật và quyền sở hữu trí tuệ cần được giải quyết.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm.jpeg
 tags: [deep-learning, generative-ai]
 is_highlight: true
 is_published: true
@@ -15,7 +15,7 @@ is_published: true
 Generative AI - GenAI (trí tuệ nhân tạo tạo sinh) là một lĩnh vực của AI tập trung vào khả năng tạo ra nội dung mới dựa trên kiến thức học được từ dữ liệu có sẵn.
 Khác với AI truyền thống chỉ phân tích hay dự đoán trên dữ liệu, AI tạo sinh có thể sinh ra dữ liệu mới ở nhiều định dạng như văn bản, hình ảnh, âm thanh, video, mã code, thậm chí mô hình 3D.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/gen_ai_predictive_ai.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/gen_ai_predictive_ai.jpeg" style="width: 600px;"/>
 
 Các mô hình GenAI khác với các mô hình Predictive AI (AI dự đoán) ở điểm:
 - **Predictive AI** tìm kiếm mối quan hệ ẩn trong dữ liệu để dự đoán kết quả, dự đoán xu hướng, dự đoán giá trị ...
@@ -31,7 +31,7 @@ Năm 2014 đánh dấu cột mốc quan trọng với sự ra đời của Gener
 
 Tiếp đó, năm 2017, kiến trúc Transformer được giới thiệu, mở đường cho các mô hình sinh ngôn ngữ hiện đại – GPT (Generative Pre-trained Transformer) đầu tiên ra đời năm 2018, rồi GPT-2 (2019), GPT-3 (2020), GPT-3.5 (2022) và GPT-4 (2023) của OpenAI.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/gpt_series.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/gpt_series.jpeg" style="width: 600px;"/>
 
 Đến năm 2021, loạt mô hình tạo hình ảnh từ văn bản xuất hiện: DALL-E của OpenAI, kế đó Midjourney và Stable Diffusion, đánh dấu khả năng tạo ra tác phẩm nghệ thuật số chất lượng cao từ vài dòng mô tả.
 
@@ -47,7 +47,7 @@ Với nền tảng là lượng dữ liệu văn bản khổng lồ trên khắp
 Sau đó, với các kỹ thuật để đồng nhất dữ liệu đầu vào, các mô hình LLM có thể nhận thêm hình ảnh hoặc âm thanh, video để tạo ra các đầu ra đa phương thức.
 Các loại dữ liệu khác nhau có thể được kết hợp để nâng cao chất lượng đầu ra.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/gen_ai_tasks.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/gen_ai_tasks.jpeg" style="width: 600px;"/>
 
 Bản chất các bài toán của GenAI là các bài toán như text-to-text, text-to-image, text-to-video, text-to-3D, text-to-task, image-to-image, text+image-to-image ...
 
@@ -70,11 +70,11 @@ Kết quả là LLM học được cách dự đoán từ ngữ tiếp theo tron
 
 Nội dung chi tiết mô hình Transformer và các mô hình LLM có thể được tìm thấy trong [bài viết này](/blog/mo-hinh-transformer).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm.jpeg" style="width: 600px;"/>
 
 Một số mô hình tiêu biểu như: **ChatGPT** của OpenAI, **Gemini** của Google, **Claude** của Anthropic, **LLaMA** của Meta, **DeepSeek** của DeepSeek AI Lab, **Mistral** của Mistral AI, **Grok** của xAI ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm2slm.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/llm2slm.jpeg" style="width: 600px;"/>
 
 Trong thời gian gần đây, một hướng nghiên cứu mới cũng nhận được nhiều sự quan tâm là Small Language Model (SLM) - mô hình ngôn ngữ nhỏ.
 SLM là các mô hình ngôn ngữ có kích thước nhỏ hơn LLM nhưng vẫn có khả năng sinh văn bản chất lượng cao.
@@ -86,7 +86,7 @@ Một số mô hình SLM tiêu biểu như: **LLaMA 2** của Meta, **Mistral 7B
 Bên cạnh văn bản, GenAI còn có khả năng tạo ra hình ảnh mới – đây là lĩnh vực bùng nổ mạnh mẽ trong vài năm qua.
 Hai phương pháp kỹ thuật nổi bật để sinh ảnh bằng AI hiện nay là mạng đối nghịch tạo sinh (GAN) và mô hình khuếch tán (Diffusion).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/vlm.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/vlm.jpeg" style="width: 600px;"/>
 
 Những mô hình này đã chứng minh khả năng sáng tạo vô hạn về thị giác.
 Từ một dòng prompt (mô tả) ngắn gọn, AI có thể vẽ ra chân dung, phong cảnh, tranh biếm họa, thiết kế sản phẩm ... theo phong cách tùy chọn.
@@ -102,7 +102,7 @@ Một số mô hình tiêu biểu như: **DALL-E** của OpenAI, **Midjourney**,
 Hallucination là hiện tượng mà mô hình GenAI tạo ra thông tin rất khó đọc, khó hiểu hoặc đưa ra thông tin sai lệch, gây hiểu lầm.
 Đây là một trong những thách thức lớn nhất của GenAI.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/hallucination_problem.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/hallucination_problem.jpeg" style="width: 600px;"/>
 
 Các mô hình GenAI hoạt động như “hộp đen” phức tạp.
 Điều này dẫn đến khó khăn trong việc giải thích quyết định của AI và kiểm soát đầu ra.
@@ -115,7 +115,7 @@ Một kỹ thuật thường được dùng để giảm thiểu hiện tượng
 GenAI học từ dữ liệu do con người tạo ra từ trước đến nay, nên nó mang theo các định kiến, sai lệch trong dữ liệu đó.
 Ví dụ, nếu dữ liệu huấn luyện chứa nhiều định kiến về giới tính, chủng tộc, mô hình có thể tạo ra nội dung phân biệt đối xử, phân biệt chủng tộc, hoặc thể hiện các định kiến xã hội khác.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/bias_problem.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/bias_problem.jpeg" style="width: 600px;"/>
 
 Đã có trường hợp AI tạo sinh văn bản đưa ra câu trả lời phân biệt chủng tộc hay giới, hoặc AI vẽ hình ảnh với định kiến nghề nghiệp (như bác sĩ thường vẽ thành nam giới).
 Việc mô hình khuếch đại định kiến xã hội là nguy hiểm, đòi hỏi phải có biện pháp lọc dữ liệu và điều chỉnh mô hình để giảm bias.
@@ -125,7 +125,7 @@ Việc mô hình khuếch đại định kiến xã hội là nguy hiểm, đòi
 Đào tạo và vận hành các mô hình GenAI khổng lồ tiêu tốn nguồn lực tính toán rất lớn, có thể tốn hàng triệu đô la chi phí hạ tầng GPU và điện năng.
 Việc tiêu thụ điện năng khổng lồ của các trung tâm dữ liệu để chạy AI đang trở thành vấn đề về phát triển bền vững.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/environment_problem.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/environment_problem.jpeg" style="width: 600px;"/>
 
 Các mô hình càng lớn, năng lượng càng tăng theo cấp số nhân, gây phát thải carbon đáng kể.
 Thách thức đặt ra là làm sao tối ưu mô hình để tiết kiệm năng lượng, hoặc sử dụng nguồn điện tái tạo, nhằm giảm tác động xấu đến môi trường.
@@ -138,7 +138,7 @@ Có lo ngại rằng AI có thể vô tình tái tạo lại thông tin cá nhâ
 Quyền riêng tư của người dùng cũng bị đe dọa khi AI có khả năng tổng hợp và phân tích lượng lớn dữ liệu cá nhân.
 Tuy nhiên, hiện nay, các công ty lớn phát triển mô hình GenAI đều cam kết tuân thủ các quy định về bảo vệ dữ liệu cá nhân (như GDPR ở châu Âu) và không sử dụng dữ liệu cá nhân mà không có sự đồng ý của người dùng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/privacy_security_problem.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/privacy_security_problem.jpeg" style="width: 600px;"/>
 
 Về bản quyền, nếu AI được huấn luyện trên hàng triệu hình ảnh hay bài hát có bản quyền, đầu ra của AI được xem là phái sinh từ những tác phẩm đó hay là hoàn toàn mới?
 
@@ -146,7 +146,7 @@ Nhiều nghệ sĩ lo ngại AI “học lỏm” phong cách của họ và t�
 Đã có các vụ kiện về việc dữ liệu huấn luyện vi phạm bản quyền của nghệ sĩ.
 Hiện nay, các bộ luật và quy định về bản quyền liên quan đến AI vẫn đang trong quá trình hình thành và chưa rõ ràng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/responsible_ethical_ai.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/responsible_ethical_ai.jpeg" style="width: 600px;"/>
 
 Các hệ thống GenAI có thể được dùng để tự động hóa giao tiếp thay cho con người với chất lượng đáng kinh ngạc.
 Tuy nhiên, điều này khiến cho GenAI có thể bị kẻ xấu lợi dụng để tạo nội dung giả mạo phục vụ ý đồ xấu.
@@ -157,7 +157,7 @@ Ví dụ: AI có thể tạo ra video deepfake ghép mặt một chính trị gi
 
 Sau khi đã huấn luyện mô hình với hầu như toàn bộ dữ liệu trên Internet, để tiếp tục phát triển GenAI, các nhà nghiên cứu cần phải giải quyết những thách thức mới liên quan đến dữ liệu huấn luyện đa dạng và chất lượng, (đặc biệt là dữ liệu có gán nhãn).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/evaluation_problem.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/evaluation_problem.jpeg" style="width: 600px;"/>
 
 Bên cạnh đó, đánh giá chất lượng mô hình tạo sinh cũng không đơn giản (vì đầu ra có thể không cố định đúng/sai mà mang tính sáng tạo, chủ quan).
 Người ta phải nghĩ ra các tiêu chí như tính đa dạng, độ chân thực, mức độ phù hợp ý định... để đánh giá mô hình
@@ -172,7 +172,7 @@ Những mô hình như GPT-4, Google Gemini... cho thấy AI đang tiến tới 
 Điều này mở ra khả năng xây dựng các trợ lý AI tổng quát giống trong phim khoa học viễn tưởng – có thể nghe, nhìn, trò chuyện, và hỗ trợ con người trong mọi tình huống.
 Bên cạnh việc “to hơn”, các nghiên cứu cũng đang làm cho mô hình “thông minh hơn”: cải thiện khả năng suy luận logic, ghi nhớ lâu hơn, tương tác cảm xúc...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/reasoning_development.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/reasoning_development.jpeg" style="width: 600px;"/>
 
 Một xu hướng khác là phổ cập và thương mại hóa GenAI trong mọi ngóc ngách đời sống.
 Sau thành công của ChatGPT, các “ông lớn” công nghệ đua nhau tích hợp AI tạo sinh vào sản phẩm của mình:
@@ -181,7 +181,7 @@ Sau thành công của ChatGPT, các “ông lớn” công nghệ đua nhau tí
 - Adobe thêm AI tạo hình ảnh vào **Photoshop** (tính năng Generative Fill)
 - Amazon đưa AI vào **trợ lý nhà thông minh Alexa**
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/career.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/3-generative-ai/career.jpeg" style="width: 600px;"/>
 
 GenAI cũng tạo ra nhiều cơ hội nghề nghiệp mới trong các lĩnh vực như:
 - **Nhóm Kỹ thuật & nghiên cứu:**

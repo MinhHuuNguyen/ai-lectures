@@ -2,7 +2,7 @@
 time: 08/06/2022
 title: Mô hình Support Vector Machine (SVM)
 description: SVM là mô hình machine learning dựa vào khoảng cách giữa các điểm dữ liệu và đường phân lớp để tìm ra được đường phân lớp tốt nhất. SVM thường là mô hình phân lớp có độ chính xác cao hơn so với mô hình Logistic Regression (mạng nơ ron với 1 layer).
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -16,7 +16,7 @@ Câu hỏi mà SVM đặt ra là: "Trong các đường phân lớp được t�
 
 Mô hình SVM đề xuất ra các tiêu chí và phương pháp để tìm ra đường phân lớp tốt nhất trong số các đường phân lớp có thể có.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/comparison.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/comparison.jpeg" style="width: 600px;"/>
 
 ## 2. Công thức tính khoảng cách từ 1 điểm
 
@@ -54,7 +54,7 @@ Và mô hình SVM sử dụng rất nhiều công thức tính khoảng cách n�
 
 Mô hình SVM tìm ra đường phân lớp tốt nhất bằng cách tối ưu hoá khoảng cách giữa các điểm dữ liệu và đường phân lớp.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/compare_distance.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/compare_distance.jpeg" style="width: 600px;"/>
 
 Trong hình trên, khi so sánh khoảng cách giữa điểm dữ liệu gần nhất của mỗi lớp (lớp vàng và lớp tím đậm) với hai đường phân lớp xanh dương và đỏ:
 - Khoảng cách giữa điểm dữ liệu gần nhất của lớp vàng đến đường phân lớp đỏ ngắn hơn so với khoảng cách giữa điểm dữ liệu gần nhất của lớp tím đậm đến đường phân lớp đỏ.
@@ -66,7 +66,7 @@ Mô hình SVM cho rằng đường phân lớp tốt là đường phân lớp c
 
 Ngoài ra, SVM cũng gọi khoảng cách giữa điểm dữ liệu gần nhất của mỗi lớp đến đường phân lớp là **margin**.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/compare_margin.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/compare_margin.jpeg" style="width: 600px;"/>
 
 Trong hình trên, ta thấy:
 - Margin của lớp vàng đến đường phân lớp xanh dương bằng với margin của lớp tím đến đường phân lớp xanh dương.
@@ -86,7 +86,7 @@ Xét bộ dữ liệu huấn luyện trong không gian hai chiều $D = \{(x_1, 
 Ta gọi phương trình đường phân lớp trong không gian hai chiều là:
 $$ w_1x_1 + w_2x_2 + b = 0 $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/complex_optimization.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/complex_optimization.jpeg" style="width: 600px;"/>
 
 Từ đó, với mỗi điểm dữ liệu $(x_i, y_i)$, ta có thể tính được khoảng cách từ điểm dữ liệu đến đường phân lớp là:
 
@@ -102,7 +102,7 @@ $$ \max_{w, b} (\min_{i=1}^n d_i) = \max_{w, b} (\min_{i=1}^n \frac{|w_1x_{i1} +
 
 Khi ta cực đại hoá khoảng cách nhỏ nhất giữa các điểm dữ liệu và đường phân lớp, ta sẽ thu được margin lớn nhất có thể và margin này sẽ bằng nhau cho tất cả các lớp dữ liệu.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/simple_optimization.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/simple_optimization.jpeg" style="width: 600px;"/>
 
 Tuy nhiên, hàm mục tiêu phía trên rất khó để tối ưu, do đó, ta biến đổi hàm mục tiêu trên bằng việc quy ước hai đường thẳng song song với đường phân lớp là:
 
@@ -125,16 +125,16 @@ Ta tối ưu hàm mục tiêu trên bằng cách sử dụng các thuật toán 
 Mô hình SVM mà ta đã đề cập ở trên là mô hình Hard Margin SVM.
 Hard Margin SVM chỉ hoạt động được khi dữ liệu là phân lớp tuyến tính (linearly separable), tức là có thể tìm ra được đường phân lớp mà không có điểm dữ liệu nào bị phân lớp sai.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/linearly_separable.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/linearly_separable.jpeg" style="width: 600px;"/>
 
 Nếu trường hợp dữ liệu có điểm dữ liệu nhiễu (noise), khi đó, mô hình Hard Margin SVM vẫn có thể tìm ra được đường phân lớp tốt nhất, tuy nhiên, margin lúc này sẽ rất nhỏ.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/linearly_separable_with_noise.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/linearly_separable_with_noise.jpeg" style="width: 600px;"/>
 
 Hơn nữa, trong trường hợp bộ dữ liệu phân bố "almost linearly separable", tức là khái quát thì các lớp dữ liệu vẫn phân tách được với nhau, tuy nhiên, có một vài điểm dữ liệu thuộc lớp này nhưng lại nằm rất gần với các điểm dữ liệu thuộc lớp khác.
 Trong trường hợp này, mô hình Hard Margin SVM sẽ không thể tìm ra được đường phân lớp, hay nói cách khác, Hard Margin SVM không thể hoạt động được, vô nghiệm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/almost_linearly_separable.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/almost_linearly_separable.jpeg" style="width: 600px;"/>
 
 Để giải quyết vấn đề này, mô hình SVM đã được mở rộng thành mô hình Soft Margin SVM.
 Mô hình Soft Margin SVM cho phép một số điểm dữ liệu bị phân lớp sai hoặc một số điểm dữ liệu nằm trong vùng nguy hiểm, tức là nằm trong khoảng cách margin.
@@ -151,7 +151,7 @@ trong đó giá trị $\xi_i$ có các trường hợp sau:
 - Nếu điểm dữ liệu được phân lớp đúng và nằm trong margin, thì $\xi_i = d_i$ và $d_i < 1$.
 - Nếu điểm dữ liệu bị phân lớp sai, thì $\xi_i = d_i$ và $d_i \geq 1$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/c_value_comparison.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/c_value_comparison.jpeg" style="width: 900px;"/>
 
 Tham số $C$ là trong hàm mục tiêu trên là tham số điều chỉnh để cân bằng giữa độ rộng của margin và số điểm dữ liệu bị phân lớp sai hoặc nằm trong vùng nguy hiểm.
 - $C$ càng lớn thì độ rộng của margin càng nhỏ, số lượng điểm dữ liệu bị phân lớp sai hoặc nằm trong vùng nguy hiểm càng ít.
@@ -160,13 +160,13 @@ Tham số $C$ là trong hàm mục tiêu trên là tham số điều chỉnh đ�
 
 ## 6. Mô hình Kernel SVM
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/kernel_svm_1.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/kernel_svm_1.jpeg" style="width: 600px;"/>
 
 Mô hình Hard Margin SVM hoạt động tốt với bộ dữ liệu linearly separable.
 Mô hình Soft Margin SVM hoạt động tốt với bộ dữ liệu "almost linearly separable".
 Tuy nhiên, trong trường hợp bộ dữ liệu không thể phân lớp được bằng đường thẳng (non-linearly separable), thì cả hai mô hình trên đều không hoạt động được.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/kernel_svm_2.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/kernel_svm_2.jpeg" style="width: 600px;"/>
 
 Lúc này, mô hình SVM đã được mở rộng thành mô hình Kernel SVM.
 - Đầu tiên, Kernel SVM sử dụng một hàm kernel để biến đổi không gian dữ liệu đầu vào thành không gian dữ liệu mới, trong đó các lớp dữ liệu có thể phân lớp được bằng đường thẳng.
@@ -174,4 +174,4 @@ Lúc này, mô hình SVM đã được mở rộng thành mô hình Kernel SVM.
 - Cuối cùng, mô hình Kernel SVM sẽ biến đổi đường phân lớp trong không gian dữ liệu mới về lại không gian dữ liệu đầu vào.
 Đường phân lớp trong không gian dữ liệu đầu vào sẽ là đường cong (non-linear) và có thể phân lớp được các lớp dữ liệu.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/kernel_svm_3.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/8-svm/kernel_svm_3.jpeg" style="width: 600px;"/>

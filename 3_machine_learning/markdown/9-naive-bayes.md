@@ -2,7 +2,7 @@
 time: 08/09/2022
 title: Mô hình Naive Bayes Classification
 description: Naive Bayes là một mô hình machine learning điển hình, đại diện cho các mô hình dựa vào xác suất thống kê. Mô hình này được sử dụng rộng rãi trong các bài toán phân loại, đặc biệt là phân loại văn bản
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -44,7 +44,7 @@ trong đó:
 - $P(y)$ là xác suất mà lớp $y$ xảy ra.
 - $P(x)$ là phân phối xác suất của dữ liệu đầu vào $x$ nói chung.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/spam_vs_not_spam.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/spam_vs_not_spam.jpeg" style="width: 600px;"/>
 
 Ví dụ: Xét bài toán phân lớp các email thành 2 lớp: spam và không spam. Từ bộ dữ liệu train, ta có thể hiểu các khái niệm trên như sau:
 - $x$ là một email bất kỳ mà mô hình cần phân lớp.
@@ -78,7 +78,7 @@ Từ công thức trên, ta có thể thấy rằng, để tính toán xác su�
 - $P(x|y)$: phân phối xác suất của dữ liệu đầu vào $x$ thuộc về lớp $y$.
 - $P(y)$: xác suất mà lớp $y$ xảy ra.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/calculate_py.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/calculate_py.jpeg" style="width: 600px;"/>
 
 Đối với thành phần $P(y)$, ta có thể tính toán được khá dễ dàng từ bộ dữ liệu train.
 Ta tính toán xác suất mà lớp $y$ xảy ra bằng cách đếm số lượng các mẫu dữ liệu thuộc về lớp $y$ trong bộ dữ liệu train, chia cho tổng số lượng mẫu dữ liệu trong bộ dữ liệu train.
@@ -92,7 +92,7 @@ Ví dụ: Trong bộ dữ liệu train có 1000 mẫu dữ liệu, trong đó c�
 - $P(y=spam) = \frac{300}{1000} = 0.3$
 - $P(y=not\ spam) = \frac{700}{1000} = 0.7$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/calculate_pxy.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/calculate_pxy.jpeg" style="width: 600px;"/>
 
 Đối với thành phần $P(x|y)$, giá trị này khó tính toán hơn vì $x$ là một vector có thể có nhiều chiều (hay dữ liệu đầu vào có nhiều đặc trưng).
 
@@ -137,7 +137,7 @@ $$ y_{pred} = \arg\max_{y} \left( \sum_{i=1}^{n} \log(P(x_i|y)) + \log(P(y)) \ri
 
 Xét ví dụ bài toán Phân lớp văn bản: Phân lớp các lời nhận xét về món ăn thành 2 lớp: tích cực và tiêu cực.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/food_positive_negative.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/9-naive-bayes/food_positive_negative.jpeg" style="width: 600px;"/>
 
 Ta có bộ dữ liệu train như sau:
 

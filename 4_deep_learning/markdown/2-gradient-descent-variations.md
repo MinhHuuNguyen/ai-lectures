@@ -2,7 +2,7 @@
 time: 10/01/2022
 title: Các biến thể nâng cấp của thuật toán tối ưu Gradient descent
 description: Gradient Descent là một thuật toán tối ưu hóa quan trọng trong Machine Learning, nhưng có thể gặp một số vấn đề trong quá trình hội tụ. Trong bài viết này, chúng ta sẽ tìm hiểu về các biến thể nâng cấp của Gradient Descent như Stochastic Gradient Descent (SGD), Mini-batch Gradient Descent, Momentum Gradient Descent, Nesterov Accelerated Gradient (NAG), và các thuật toán tối ưu hóa khác như AdaGrad, RMSProp, Adam, và nhiều biến thể khác.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/banner.jpeg
 tags: [deep-learning]
 is_highlight: false
 is_published: true
@@ -24,7 +24,7 @@ $$ w^{t+1} = w^t - \eta \cdot L'(w^t, X, y) $$
 
 Trong bài viết này, chúng ta sẽ tìm hiểu về các biến thể nâng cấp của Gradient Descent để giải quyết một số vấn đề trong quá trình hội tụ.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/problems.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/problems.jpeg" style="width: 600px;"/>
 
 Các biến thể nâng cấp này giúp giải quyết ba vấn đề chính của thuật toán Gradient Descent nguyên bản:
 - **Vấn đề 1:** Gradient descent phải tính toán với tất cả các phần tử trong bộ dữ liệu cho mỗi lần cập nhật trọng số của mô hình.
@@ -35,7 +35,7 @@ Các biến thể nâng cấp này giúp giải quyết ba vấn đề chính c�
 
 Từ thuật toán Gradient Descent, chúng ta có thể nâng cấp lên hai biến thể khác là Stochastic Gradient Descent (SGD) và Mini-batch Gradient Descent giúp giải quyết vấn đề này.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_sgd_mini_batch_gd.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_sgd_mini_batch_gd.jpeg" style="width: 600px;"/>
 
 Trong hai biến thể này, chúng ta sẽ không tính toán gradient dựa trên toàn bộ dữ liệu huấn luyện, từ đó, giảm thiểu thời gian tính toán và tăng tốc độ hội tụ của thuật toán.
 
@@ -81,7 +81,7 @@ Về lý thuyết, kích thước mini-batch càng lớn thì quá trình hội 
 
 ### 3.1. Momentum Gradient Descent
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/momentum.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/momentum.jpeg" style="width: 600px;"/>
 
 Momentum Gradient Descent thêm một yếu tố "momentum" để lưu trữ thông tin về hướng và độ lớn của các bước di chuyển trước đó của các bước cập nhật.
 Điều này giúp thuật toán "nhớ" hướng di chuyển trước đó và giúp cho quá trình cập nhật trọng số của mô hình mượt mà hơn.
@@ -156,7 +156,7 @@ AdaGrad tự động điều chỉnh learning rate dựa trên lịch sử gradi
 Tuy nhiên, một vấn đề của AdaGrad là sau một thời gian dài, learning rate có thể giảm quá mức do việc tích luỹ tổng bình phương gradient, dẫn đến quá trình hội tụ chậm lại.
 Điều này có thể xảy ra khi các trọng số không còn thay đổi nhiều nữa, và learning rate trở nên quá nhỏ để tiếp tục cập nhật trọng số.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_ada_grad_rms_prop.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/gd_ada_grad_rms_prop.jpeg" style="width: 600px;"/>
 
 ### 4.2. Root Mean Square Propagation (RMSProp)
 
@@ -182,7 +182,7 @@ Adam là một biến thể rất phổ biến và mạnh mẽ của thuật to�
 
 Adam tận dụng thông tin từ gradient và moment của các bước cập nhật trước đó để điều chỉnh learning rate cho từng tham số.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/adam.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/2-gradient-descent-variations/adam.jpeg" style="width: 600px;"/>
 
 Ý tưởng chính là kết hợp cả yếu tố "momentum" (theo dõi hướng di chuyển trước) và yếu tố "adaptive learning rate" (tự động điều chỉnh learning rate) để cải thiện tốc độ hội tụ và ổn định của quá trình tối ưu hóa.
 

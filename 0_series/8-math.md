@@ -2,7 +2,7 @@
 time: 02/16/2023
 title: "[SERIES] Toán trong Machine Learning"
 description: Toán trong Machine Learning là nền tảng giúp mô hình học và ra quyết định chính xác. Nó bao gồm các lĩnh vực như đại số tuyến tính, giải tích, xác suất – thống kê và tối ưu hóa. Nhờ toán học, ta hiểu được cách mô hình hoạt động, huấn luyện hiệu quả hơn và cải thiện khả năng tổng quát hóa trong các bài toán thực tế.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0_series/images/8-math/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0_series/images/8-math/banner.jpeg
 tags: [math, series]
 is_highlight: false
 is_published: true
@@ -14,13 +14,13 @@ is_published: true
 
 Đại số tuyến tính là nền tảng toán học cốt lõi trong machine learning, cung cấp ngôn ngữ và công cụ để biểu diễn và xử lý dữ liệu dưới dạng vector, ma trận và tensor. Các phép toán như nhân ma trận, chuẩn hóa vector hay phân rã ma trận được sử dụng trong hầu hết các thuật toán học máy, từ hồi quy tuyến tính đến mạng nơ-ron sâu. Nhờ đại số tuyến tính, việc tối ưu hóa mô hình, biểu diễn đặc trưng và xử lý dữ liệu quy mô lớn trở nên hiệu quả và chính xác hơn.
 
-###### 1. 
+###### 1. Giới thiệu chung về Đại số tuyến tính
 
-###### 2. 
+###### 2. Các khái niệm ma trận đặc biệt
 
-###### 3. 
+###### 3. Các phép toán cơ bản trên vector và ma trận
 
-###### 4. 
+###### 4. Một số ứng dụng trong Machine Learning
 
 ---
 

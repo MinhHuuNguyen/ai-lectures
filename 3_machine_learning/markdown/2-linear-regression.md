@@ -2,7 +2,7 @@
 time: 07/16/2022
 title: Mô hình hồi quy tuyến tính Linear Regression
 description: Mô hình Linear Regression là một trong những mô hình đơn giản nhất trong các Machine Learning. Mô hình Linear Regression thường được sử dụng để dự đoán giá trị của một biến liên tục dựa trên một hoặc nhiều biến đầu vào.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -33,7 +33,7 @@ Trong bài toán này, chúng ta sẽ xây dựng mô hình Machine Learning d�
 Theo dữ liệu thực tế, giá nhà thường tăng theo diện tích của căn nhà, nghĩa là diện tích nhà càng lớn thì giá nhà càng cao và ngược lại.
 Tuy điều này không hoàn toàn đúng với tất cả các điểm dữ liệu, nhưng nếu xét một cách khái quát trên toàn bộ dữ liệu, ta có thể thấy mối quan hệ này khá rõ ràng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price.jpeg" style="width: 800px;"/>
 
 Từ đó, việc xây dựng một mô hình Linear Regression để dự đoán giá nhà dựa vào diện tích cụ thể là việc tìm một hàm số nhận đầu vào là diện tích nhà và trả về giá nhà tương ứng.
 Với mỗi một giá trị diện tích nhà, mô hình sẽ tính toán ra được giá nhà tương ứng.
@@ -114,7 +114,7 @@ Tuy nhiên, ta mong muốn rằng giá trị Predicted Price càng gần với g
 
 Từ đó, mục tiêu của quá trình huấn luyện mô hình Linear Regression là tìm ra các trọng số $w_1, w_2, ..., w_n$ và bias $b$ sao cho giá trị Predicted Price càng gần với giá trị House Price thực tế càng tốt.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price_pred_vs_label.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price_pred_vs_label.jpeg" style="width: 800px;"/>
 
 Giống như con người, mô hình Linear Regression cũng học từ dữ liệu thông qua việc tính toán sai số giữa giá trị Predicted Price và giá trị House Price thực tế.
 Về cơ bản, sai số này càng nhỏ thì mô hình càng tốt.
@@ -188,7 +188,7 @@ MAE không nhạy cảm với các điểm dữ liệu có giá trị dự đoá
 Việc tối ưu mô hình Linear Regression là việc tìm ra các trọng số $w_1, w_2, ..., w_n$ và bias $b$ sao cho giá trị loss của mô hình là nhỏ nhất.
 Để làm được điều này, ta cần sử dụng một phương pháp tối ưu quen thuộc là sử dụng phép toán Đạo hàm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price_before_after.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price_before_after.jpeg" style="width: 800px;"/>
 
 Để ký hiệu toán học được đơn giản, ta sẽ sử dụng biến $w$ để ký hiệu tập hợp các trọng số $w_1, w_2, ..., w_n$ và bias $b$.
 Nghĩa là $w = [w_1, w_2, ..., w_n, b]$.

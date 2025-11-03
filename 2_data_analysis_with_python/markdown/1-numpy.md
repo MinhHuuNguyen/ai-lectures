@@ -2,7 +2,7 @@
 time: 01/13/2022
 title: Thư viện tính toán khoa học NumPy
 description: NumPy là một thư viện Python mạnh mẽ hỗ trợ tính toán khoa học và toán học trên mảng nhiều chiều. NumPy cung cấp một loạt các hàm và phương thức giúp thực hiện các phép toán cơ bản và nâng cao trên dữ liệu mảng nhanh chóng và hiệu quả.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/1-numpy/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/1-numpy/banner.jpeg
 tags: [python, data-analysis]
 is_highlight: false
 is_published: true
@@ -13,7 +13,7 @@ is_published: true
 NumPy (Numerical Python) là một thư viện mã nguồn mở hỗ trợ tính toán khoa học mạnh mẽ và là nền tảng cho khoa học dữ liệu trong Python.
 Thư viện này cung cấp cấu trúc dữ liệu mảng N chiều (ndarray) giúp thực hiện các phép toán trên tập dữ liệu lớn một cách hiệu quả hơn rất nhiều so với dùng danh sách (list) thông thường của Python.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/1-numpy/base_lib.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/1-numpy/base_lib.jpeg" style="width: 700px;"/>
 
 Đối với lĩnh vực khoa học dữ liệu và AI, NumPy có vai trò rất quan trọng vì nó giúp thao tác hiệu quả trên mảng dữ liệu lớn và tính toán ma trận nhanh chóng.
 Nhiều thư viện phổ biến như Pandas, SciPy, Scikit-Learn, TensorFlow, PyTorch... đều dựa trên hoặc tương thích với NumPy.

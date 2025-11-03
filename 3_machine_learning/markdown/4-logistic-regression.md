@@ -32,7 +32,7 @@ Giả sử, với một hình ảnh nào đó, mô hình trả đầu ra là 0.8
 - Giả sử, ta chọn ngưỡng tự tin là 0.5, lúc này, với giá trị đầu ra là 0.8, ta sẽ phân loại hình ảnh đó thuộc lớp chó (lớp positive).
 Một giả sử khác, nếu ta chọn ngưỡng tự tin là 0.9, lúc này, với giá trị đầu ra là 0.8, ta sẽ phân loại hình ảnh đó thuộc lớp mèo (lớp negative).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/binary_cls.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/binary_cls.jpeg" style="width: 800px;"/>
 
 ## 2. Ý tưởng chung của logistic regression
 
@@ -64,7 +64,7 @@ $$ \sigma(z) = \frac{1}{1 + e^{-z}} $$
 
 Giá trị đầu ra của hàm Sigmoid có thể được hiểu như giá trị xác suất mà điểm dữ liệu thuộc lớp positive (được đại diện bởi số 1).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/sigmoid.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/sigmoid.jpeg" style="width: 600px;"/>
 
 Ưu điểm của hàm Sigmoid là nó có đạo hàm dễ tính toán.
 Điều này giúp ta có thể tối ưu mô hình logistic regression bằng các thuật toán tối ưu như gradient descent.
@@ -72,7 +72,7 @@ Giá trị đầu ra của hàm Sigmoid có thể được hiểu như giá tr�
 Nhược điểm của hàm Sigmoid là hàm có gradient rất nhỏ khi đầu vào là các giá trị rất lớn lớn hoặc rất nhỏ.
 Điều này dẫn đến hiện tượng vanishing gradient, làm cho việc tối ưu mô hình trở nên khó khăn hơn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/binary_cls_with_sigmoid.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/binary_cls_with_sigmoid.jpeg" style="width: 1000px;"/>
 
 ### 3.2. Hàm loss Binary Cross Entropy
 
@@ -164,14 +164,14 @@ Hay trong ví dụ cụ thể về bài toán phân lớp ảnh chó hay mèo, m
 
 Tuy nhiên, trong một số trường hợp, với dữ liệu đầu vào có nhiều thông tin hơn, hay nói cách khác, ***dữ liệu đầu vào có thể có nhiều label***, ta phải giải quyết bài toán phân lớp nhiều label (multi-label classification).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_label_cls.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_label_cls.jpeg" style="width: 800px;"/>
 
 Lúc này mô hình logistic regression cần trả lời giúp ta câu hỏi "Trong ảnh có hình ảnh của chó hay không có hình ảnh của chó?, có hình ảnh của mèo hay không có hình ảnh của mèo? có hình ảnh của gà hay không có hình ảnh của gà? ..."
 Do đó, cùng lúc, mô hình logistic regression cần giải quyết nhiều bài toán binary classification.
 
 Thay vì phép biến đổi tuyến tính $WX$ cho đầu ra là một giá trị và ta dùng giá trị đó làm đầu vào cho hàm Sigmoid, trong trường hợp này, mô hình logistic regression thực hiện phép biến đổi tuyến tính $WX$ cho đầu ra là một vector và ta áp dụng hàm Sigmoid lên từng phần tử của vector.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_label_cls_with_sigmoid.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_label_cls_with_sigmoid.jpeg" style="width: 1000px;"/>
 
 Đến đây, ta thu được một dãy các giá trị xác suất mà mỗi giá trị lần lượt tương ứng với lời dự đoán của mô hình logistic regression trên từng câu hỏi "có hình ảnh của chó hay không có hình ảnh của chó?, có hình ảnh của mèo hay không có hình ảnh của mèo? có hình ảnh của gà hay không có hình ảnh của gà? ..."
 
@@ -197,7 +197,7 @@ trong đó:
 
 Có một trường hợp giống với multi-label classification là ta làm việc với nhiều lớp dữ liệu khác nhau, nhưng khác so với bài toán multi-label classification là mỗi ***dữ liệu đầu vào chỉ có thể có một label***, ta gọi bài toán này là bài toán multi-class classification.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_class_cls.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_class_cls.jpeg" style="width: 800px;"/>
 
 Trong bài toán này, mô hình logistic regression cần trả lời giúp ta câu hỏi "Trong ảnh có hình ảnh của chó hay của mèo hay của gà?".
 Lúc này, phép biến đổi tuyến tính $WX$ cho đầu ra là một vector và ta sử dụng hàm kích hoạt nhận đầu vào là cả vector này và trả đầu ra là một vector mới với các giá trị nằm trong khoảng $[0, 1]$ và tổng các giá trị trong vector này bằng 1.
@@ -227,12 +227,12 @@ $$ \hat{y} = Softmax(z) = \left[\frac{e^{z_1}}{\sum_{i=1}^K e^{z_i}}, \frac{e^{z
 
 Từng giá trị trên vector đầu ra của hàm Softmax có thể được hiểu như giá trị xác suất mà điểm dữ liệu thuộc lớp số 1, lớp số 2, lớp số 3, ... tương ứng với các lớp dữ liệu khác nhau.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/softmax.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/softmax.jpeg" style="width: 600px;"/>
 
 Ưu điểm của hàm Softmax là nó có đạo hàm dễ tính toán.
 Điều này giúp ta có thể tối ưu mô hình logistic regression bằng các thuật toán tối ưu như gradient descent.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_class_cls_with_softmax.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/multi_class_cls_with_softmax.jpeg" style="width: 1000px;"/>
 
 ### 6.2. Hàm loss Categorical Cross Entropy
 
@@ -311,7 +311,7 @@ Trong bài toán phân lớp nhị phân, ta vẫn có thể sử dụng hàm So
 
 Từ đó, bài toán phân lớp nhị phân sẽ trở thành bài toán phân lớp nhiều lớp với 2 lớp dữ liệu là lớp số 1 (lớp positive) và lớp số 2 (lớp negative).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/binary_cls_with_softmax.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/binary_cls_with_softmax.jpeg" style="width: 1000px;"/>
 
 ## 7. Hàm kích hoạt Tanh
 
@@ -319,7 +319,7 @@ Hàm Tanh nhận đầu vào là bất kỳ giá trị nào trong khoảng $[- \
 
 $$ \text{Tanh}(z) = \frac{e^{z} - e^{-z}}{e^{z} + e^{-z}} $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/tanh.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/tanh.jpeg" style="width: 600px;"/>
 
 Ta có thể dễ dàng biến đổi khoảng giá trị đầu ra của hàm Tanh từ $[-1, 1]$ về giống như Sigmoid $[0, 1]$ thông qua công thức
 

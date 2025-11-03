@@ -2,7 +2,7 @@
 time: 03/04/2023
 title: Mô hình Transformer
 description: Mô hình seq2seq (sequence-to-sequence) là kiến trúc mạng nơ-ron được sử dụng để chuyển đổi một chuỗi đầu vào thành một chuỗi đầu ra. Tuy nhiên, mô hình seq2seq truyền thống gặp khó khăn trong việc xử lý các chuỗi dài do phụ thuộc vào RNN/LSTM. Năm 2017, Transformer ra mắt đã giải quyết vấn đề này bằng cách sử dụng cơ chế Attention hoàn toàn, cho phép mô hình học được mối quan hệ giữa các từ trong chuỗi mà không cần tuần tự.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/banner.jpeg
 tags: [deep-learning, natural-language-processing]
 is_highlight: true
 is_published: true
@@ -15,7 +15,7 @@ is_published: true
 Mô hình Transformer được giới thiệu trong bài báo ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) của Google vào năm 2017.
 Hình dưới mô tả kiến trúc của Transformer được lấy từ bài báo trên.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/transformer.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/transformer.jpeg" style="width: 600px;"/>
 
 Mô hình Transformer đã cách mạng hóa lĩnh vực xử lý ngôn ngữ tự nhiên (NLP) và trở thành một bước đột phá lớn trong việc xử lý các tác vụ ngôn ngữ nói riêng và trong học sâu nói chung.
 
@@ -68,7 +68,7 @@ BERT chỉ dùng phần Encoder của Transformer và huấn luyện theo phươ
 - Với phương pháp **Masked Language Model**, một số từ trong câu bị che đi (mask) và mô hình phải đoán những từ này dựa vào cả ngữ cảnh bên trái lẫn phải của từ đó, do đó, BERT là mô hình hai chiều (bidirectional).
 - Với phương pháp **Next Sentence Prediction**, mô hình sẽ được huấn luyện để dự đoán xem một câu có phải là câu tiếp theo của một câu khác hay không, do đó, BERT có thể hiểu được mối quan hệ giữa các câu trong văn bản.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert.jpeg" style="width: 1000px;"/>
 
 Trên hình, một cặp câu A và B được đưa vào mô hình BERT
 - Để phục vụ cho bài toán **Masked Language Model**:
@@ -82,7 +82,7 @@ Trên hình, một cặp câu A và B được đưa vào mô hình BERT
 Với phương pháp huấn luyện này, BERT có thể học được các biểu diễn ngữ nghĩa của từ trong ngữ cảnh, câu trong đoạn văn bản.
 Ngoài ra, với cách huấn luyện self-supervised này, BERT có thể được huấn luyện trên một lượng dữ liệu lớn mà không cần gán nhãn, giúp tận dụng tốt các tập dữ liệu lớn về văn bản có sẵn trên internet.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert_finetune.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert_finetune.jpeg" style="width: 1000px;"/>
 
 Từ đó, BERT được sử dụng như một mô hình pretrained rất tốt cho các tác vụ NLP khác nhau như phân loại văn bản, gán nhãn thực thể, trả lời câu hỏi, v.v.
 Để sử dụng BERT cho các tác vụ NLP khác, ta sẽ sử dụng **Fine-tuning** bằng cách thêm một lớp đầu ra (output layer) phù hợp với tác vụ cụ thể trong khi giữ nguyên các tham số của mô hình BERT đã được huấn luyện trước đó.
@@ -110,7 +110,7 @@ RoBERTa sử dụng phương pháp Byte-Pair Encoding (BPE) để mã hóa token
 Mô hình DistilBERT được giới thiệu bởi Hugging Face vào năm 2019 trong bài báo ["DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"](https://arxiv.org/abs/1910.01108).
 Hình ảnh dưới đây được lấy từ bài báo, là thống kê về kích thước của các mô hình ngôn ngữ tại thời điểm mà bài báo được công bố.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/distil_bert.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/distil_bert.jpeg" style="width: 900px;"/>
 
 DistilBERT sử dụng phương pháp **Knowledge Distillation** để giảm kích thước mô hình và là một phiên bản nhẹ hơn của BERT với kích thước mô hình nhỏ hơn (chỉ 66 triệu tham số so với 110 triệu của BERT-Base), thời gian dự đoán nhanh hơn (60% so với BERT-Base) và hiệu suất được duy trì gần như tương đương với BERT-Base (97% hiệu suất của BERT-Base).
 
@@ -121,13 +121,13 @@ Mô hình BART (Bidirectional and Auto-Regressive Transformers) được giới 
 BART kết hợp giữa BERT và GPT, sử dụng kiến trúc Transformer với cả phần Encoder và Decoder.
 Hình ảnh dưới đây được lấy từ bài báo, mô tả kiến trúc của BART.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bart.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bart.jpeg" style="width: 800px;"/>
 
 BART được huấn luyện theo phương pháp **Denoising Autoencoder**, tức là mô hình sẽ học cách phục hồi một chuỗi văn bản bị nhiễu (noisy) về trạng thái ban đầu.
 BART có thể được sử dụng cho nhiều tác vụ NLP khác nhau như sinh văn bản, dịch máy, tóm tắt văn bản, v.v.
 BART có thể được sử dụng như một mô hình pretrained cho các tác vụ NLP khác nhau bằng cách fine-tune mô hình với các tập dữ liệu cụ thể.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bart_train.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bart_train.jpeg" style="width: 800px;"/>
 
 #### Pho-BERT
 
@@ -155,7 +155,7 @@ Giá trị mà hai mô hình này mang lại cho các tác vụ NLP khác là kh
 
 Hình ảnh dưới đây được lấy từ bài báo, mô tả cách thức huấn luyện mô hình GPT.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt.jpeg" style="width: 1000px;"/>
 
 Đối với bài toán **text classification** (phân lớp văn bản), mô hình GPT sẽ đơn giản là nhận đầu vào là một chuỗi văn bản, sau đó đưa đầu ra qua một lớp softmax để dự đoán nhãn của văn bản.
 
@@ -176,7 +176,7 @@ Ngoài ra, GPT-2 còn được huấn luyện không chỉ với dữ liệu vă
 
 Hình ảnh dưới đây được lấy từ bài báo, mô tả cách thức huấn luyện mô hình GPT-2 với tác vụ dịch thuật giữa tiếng Anh và tiếng Pháp.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt2.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt2.jpeg" style="width: 800px;"/>
 
 #### GPT-3
 
@@ -184,14 +184,14 @@ Mô hình GPT-3 được giới thiệu vào năm 2020 trong bài báo ["Languag
 
 GPT-3 có kích thước mô hình khổng lồ lên đến 175 tỷ tham số và được huấn luyện trên hàng trăm tỷ token văn bản, dung lượng dữ liệu huấn luyện lên tới 570GB.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt3_in_context_learning.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt3_in_context_learning.jpeg" style="width: 1000px;"/>
 
 Trong quá trình huấn luyện GPT-2, nhóm tác giả đã phát hiện ra rằng, với một lượng dữ liệu huấn luyện đủ lớn và kích thước mô hình đủ lớn, mô hình có thể học được cách thực hiện các tác vụ khác nhau mà không cần phải huấn luyện lại (fine-tuning) cho từng tác vụ cụ thể.
 Điều này được gọi là **In-context Learning** (học trong ngữ cảnh), tức là mô hình có thể học được cách thực hiện các tác vụ khác nhau chỉ bằng cách cung cấp ví dụ (ví dụ: câu hỏi và câu trả lời) trong đầu vào mà không cần phải huấn luyện lại mô hình.
 
 Ví dụ: Khi được học lặp đi lặp lại về các phép tính cộng đủ nhiều, 1 + 0 = 1, 0 + 10 = 10, ... mô hình có thể suy diễn được rằng 100 + 0 = 100 mà không cần phải huấn luyện lại mô hình.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt3_zero_one_few_shot.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt3_zero_one_few_shot.jpeg" style="width: 1000px;"/>
 
 Trong bài báo, nhóm tác giả đã thử nghiệm và đánh giá năng lực của GPT-3 với ba phương pháp học là **Zero-shot**, **One-shot** và **Few-shot**, cả ba phương pháp này đều chỉ thực hiện trong quá trình inference (dự đoán) mà không cần huấn luyện và cập nhật lại các trọng số của mô hình.
 - **Zero-shot**: Mô hình không được cung cấp ví dụ nào trong đầu vào, chỉ được cung cấp mô tả về tác vụ cần thực hiện.
@@ -207,7 +207,7 @@ Phương pháp này cho phép mô hình học từ phản hồi của con ngư�
 
 Hình ảnh dưới đây mô tả quá trình huấn luyện mô hình GPT-3.5 với phương pháp RLHF.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt3p5.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt3p5.jpeg" style="width: 1000px;"/>
 
 Các bước trong quá trình huấn luyện RLHF mô hình GPT-3.5 bao gồm:
 - Bước 1: **Pre-training**: Tương tự như GPT-3.
@@ -225,7 +225,7 @@ GPT-4 được công bố là một mô hình đa phương thức (multimodal) c
 GPT-4 mặc dù vẫn yếu hơn so với con người trong một số tác vụ, nhưng cũng đã đạt được những kết quả ấn tượng trong các bài kiểm tra chuẩn hóa và các tác vụ khác nhau.
 Hình ảnh dưới đây mô tả một số kết quả mà GPT-4 đã đạt được trong các bài kiểm tra chuẩn hóa, so sánh với GPT-3.5.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt4.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt4.jpeg" style="width: 1000px;"/>
 
 #### Một số phiên bản khác nhau của ChatGPT
 
@@ -245,7 +245,7 @@ Hình ảnh dưới đây mô tả một số kết quả mà GPT-4 đã đạt 
 Mô hình T5 (Text-to-Text Transfer Transformer) được giới thiệu bởi Google Research vào năm 2019 trong bài báo ["Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"](https://arxiv.org/abs/1910.10683).
 T5 chuyển đổi mọi tác vụ xử lý ngôn ngữ tự nhiên (NLP) thành dạng bài toán text-to-text, tức là nhận đầu vào và sinh đầu ra đều dưới dạng văn bản.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/t5.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/t5.jpeg" style="width: 1000px;"/>
 
 T5 sử dụng kiến trúc Transformer truyền thống với cơ chế attention giúp mô hình học được sự phụ thuộc giữa các từ trong văn bản một cách hiệu quả.
 T5 cũng chia sẻ tham số giữa encoder và decoder để tối ưu hóa dung lượng và hiệu quả huấn luyện.
@@ -269,7 +269,7 @@ Mỗi miếng ảnh được flatten thành vector và đưa qua một lớp emb
 Vision Transformer được giới thiệu bởi Google Research vào năm 2020 trong bài báo ["An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://arxiv.org/abs/2010.11929).
 Hình ảnh dưới đây mô tả kiến trúc của ViT.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/vit.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/vit.jpeg" style="width: 900px;"/>
 
 Bộ các vector của các patch ảnh sẽ được thêm một vector đặc biệt [CLS] (như BERT) và cộng embedding vị trí vào từng patch để giữ thông tin thứ tự pixel.
 Toàn bộ chuỗi patch kèm [CLS] này được đưa qua bộ mã hoá của Transformer giống hệt như ngôn ngữ tự nhiên.

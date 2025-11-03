@@ -113,7 +113,7 @@ Trong thực tế, quy trình xây dựng mô hình Machine Learning có thể p
 Thư viện Scikit-learn (hay Sklearn) là một trong những thư viện Machine Learning phổ biến và mạnh mẽ dành cho ngôn ngữ lập trình Python.
 Scikit-learn cung cấp một loạt các công cụ và thuật toán cho việc xây dựng và đào tạo các mô hình Machine Learning một cách dễ dàng và hiệu quả.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/sklearn_map.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/sklearn_map.jpeg" style="width: 1200px;"/>
 
 Một số đặc điểm chính của thư viện Scikit-learn:
 - **Dễ sử dụng:** Scikit-learn thiết kế với mục tiêu đơn giản hóa quá trình xây dựng mô hình. Cú pháp đơn giản và tài liệu phong phú giúp người dùng nhanh chóng làm quen và sử dụng thư viện.

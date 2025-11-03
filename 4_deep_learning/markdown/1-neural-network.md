@@ -2,7 +2,7 @@
 time: 08/30/2022
 title: Mô hình mạng nơ ron đơn giản Neural network
 description: Mô hình mạng nơ ron đơn giản Neural network là một mô hình tính toán lấy cảm hứng từ cấu trúc và hoạt động của bộ não con người. Mô hình mạng nơ ron đơn giản là nền tảng cho sự phát triển của các mô hình mạng nơ ron phức tạp hơn được sử dụng trong các mô hình Trí tuệ nhân tạo nổi tiếng hiện nay.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/banner.jpeg
 tags: [deep-learning]
 is_highlight: false
 is_published: true
@@ -13,7 +13,7 @@ is_published: true
 Mạng nơ ron nhân tạo (Artificial Neural Network – ANN) là một mô hình tính toán lấy cảm hứng từ cấu trúc và hoạt động của bộ não con người.
 Mỗi mạng nơ ron gồm nhiều "nơ ron nhân tạo" (artificial neurons) được kết nối với nhau theo một trật tự nhất định, giúp mô hình học được các mối quan hệ phi tuyến tính giữa dữ liệu đầu vào và đầu ra.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/ann_vs_biological.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/ann_vs_biological.jpeg" style="width: 600px;"/>
 
 Mô hình mạng nơ ron đơn giản là phiên bản phức tạp hơn của các mô hình machine learning như Linear Regression hay Logistic Regression nhưng nó cũng là nền tảng cho sự phát triển của các mô hình mạng nơ ron phức tạp hơn được sử dụng trong các mô hình Trí tuệ nhân tạo nổi tiếng hiện nay.
 
@@ -31,7 +31,7 @@ Xét hàm XOR với đầu vào là 2 biến nhị phân $x_1$ và $x_2$ và đ�
 Ta có thể phát biểu hàm XOR như sau: "Nếu $x_1$ và $x_2$ khác nhau thì $y$ bằng 1, nếu giống nhau thì $y$ bằng 0".
 Hình ảnh này được lấy từ bài báo [– Understanding LSTM - a tutorial into Long Short-Term Memory Recurrent Neural Networks](https://arxiv.org/abs/1909.09586).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/xor.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/xor.jpeg" style="width: 600px;"/>
 
 Hàm XOR là một ví dụ kinh điển cho thấy giới hạn của các mô hình tuyến tính, không thể dùng một mô hình tuyến tính để học và mô phỏng được hàm XOR.
 Điều này là nền tảng cho sự ra đời của các mô hình mạng nơ ron phức tạp hơn.
@@ -41,13 +41,13 @@ Hàm XOR là một ví dụ kinh điển cho thấy giới hạn của các mô 
 Các nơ ron trong neural network được kết nối với nhau tạo thành các lớp (layer).
 Ta có lớp nhận đầu vào được gọi là input layer, các lớp tính toán ở giữa được gọi là hidden layer, lớp trả đầu ra được gọi là output layer.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/dnn.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/dnn.jpeg" style="width: 800px;"/>
 
 Với kiến trúc này, neural network cho phép sử dụng rất nhiều các loại layer khác nhau, có các chức năng khác nhau.
 
 Hình ảnh này được lấy từ bài báo [– Understanding LSTM - a tutorial into Long Short-Term Memory Recurrent Neural Networks](https://arxiv.org/abs/1909.09586) giúp mô tả chi tiết hơn vị trí của các phép toán bên trong của một nơ ron.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/inside_neuron.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/inside_neuron.jpeg" style="width: 800px;"/>
 
 Ngoài ra, với kiến trúc gồm các layer, neural network cho phép người dùng tăng / giảm kích thước của mô hình dễ dàng thông qua việc tăng / giảm số lượng layer và tăng / giảm kích thước của từng layer.
 
@@ -63,7 +63,7 @@ trong đó:
 - W là trọng số của neural network tại linear layer đó
 - y là ma trận đầu ra của linear layer, kết quả của phép biến đổi tuyến tính
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear.jpeg" style="width: 800px;"/>
 
 Bản thân Linear layer cũng đã là một mô hình machine learning, cụ thể là một mô hình hồi quy tuyến tính (linear regression).
 
@@ -84,7 +84,7 @@ trong đó:
 
 Khi sử dụng hàm ReLU cho một vector hoặc ma trận, ta sử dụng hàm ReLU cho từng phần tử trên vector hay ma trận.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/relu_activation.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/relu_activation.jpeg" style="width: 600px;"/>
 
 Các activation layer, đặc biệt là ReLU được đặt xen kẽ giữa các linear layer với vai trò giúp cho các linear layer có nghĩa.
 Điều này đồng nghĩa với việc, nếu không có các activation layer đặt giữa các linear layer thì nhiều các linear layer đặt chồng lên nhau cũng không khác gì so với việc chỉ có một linear layer.
@@ -103,7 +103,7 @@ $$ y = W_4 X $$
 Trong đó, $W_4 = W_3W_2W_1$ là một trọng số duy nhất của mô hình.
 Điều này có nghĩa là, nếu không có activation layer nào ở giữa các linear layer thì mô hình mạng nơ ron này không khác gì so với một mô hình hồi quy tuyến tính với trọng số là $W_4$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear_activation.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear_activation.jpeg" style="width: 600px;"/>
 
 #### 3.2.2. Một số biến thể của ReLU
 
@@ -116,7 +116,7 @@ trong đó:
 - $\gamma$ là giá trị rất nhỏ, thường được lựa chọn là 0.01
 - y là giá trị đầu ra của hàm ReLU
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/leaky_relu_activation.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/leaky_relu_activation.jpeg" style="width: 600px;"/>
 
 ##### Parametric ReLU (PReLU): Giống như Leaky ReLU nhưng $\gamma$ là một trọng số của mô hình, được học trong quá trình huấn luyện mô hình.
 
@@ -132,7 +132,7 @@ trong đó:
 - $\alpha$ là một trọng số của mô hình, thường được lựa chọn là 1
 - y là giá trị đầu ra của hàm ReLU
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/elu_activation.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/elu_activation.jpeg" style="width: 600px;"/>
 
 ### 3.3. Normalization layer
 
@@ -142,7 +142,7 @@ Sự bất ổn định có thể dẫn đến việc neural network có kết q
 Sự ra đời của các Normalization layer đã giúp cải thiện đáng kể tình trạng này.
 Các normalization layer nói chung giúp chuẩn hoá đầu ra của mỗi layer trong neural network từ đó giúp ổn định hoá quá trình huấn luyện.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear_activation_norm.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear_activation_norm.jpeg" style="width: 600px;"/>
 
 #### 3.3.1. Batch normalization layer
 
@@ -165,7 +165,7 @@ Nói cách khác, trong batch normalization layer, ta tính giá trị trung bì
 
 Các phương pháp normalization khác nhau sẽ có cách tính giá trị trung bình và phương sai khác nhau.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/normalization.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/normalization.jpeg" style="width: 600px;"/>
 
 ##### Layer normalization layer: Thường được sử dụng trong các mô hình dạng chuỗi như Recurrent Neural Network (RNN) hay Transformer.
 
@@ -181,7 +181,7 @@ Ta có Dropout layer là một lớp giúp phần nào đó giảm bớt hiện 
 Cụ thể, tại mỗi vòng lặp trong suốt quá trình huấn luyện mô hình, dropout layer sẽ ngẫu nhiên lựa chọn một số các nơ ron trong neural network, chính xác hơn là lựa chọn ngẫu nhiên một số các trọng số của mô hình và gán giá trị bằng 0.
 Từ đó, ta sẽ giảm được độ phức tạp của mô hình mạng neural network, từ đó giảm được hiện tượng overfit.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/drop_out.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/drop_out.jpeg" style="width: 600px;"/>
 
 Một kỹ thuật hiện đại hơn được xây dựng với ý tưởng tương tự với Dropout layer là Regularization.
 
@@ -195,7 +195,7 @@ Quá trình huấn luyện mạng nơ ron, bản chất, không quá khác biệ
 
 Feedforward là quá trình neural network nhận đầu vào input layer, thực hiện các phép tính toán qua các linear layer, activation layer, normalization layer ... để trả đầu ra output layer.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/training.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/training.jpeg" style="width: 600px;"/>
 
 ### 4.2. Tính toán giá trị loss sử dụng các Loss function
 

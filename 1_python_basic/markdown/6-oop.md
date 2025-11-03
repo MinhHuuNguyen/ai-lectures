@@ -2,7 +2,7 @@
 time: 03/04/2022
 title: Lập trình hướng đối tượng trong Python
 description: Lập trình hướng đối tượng (OOP) là một mô hình lập trình tổ chức thiết kế phổ biến được sử dụng trong nhiều lĩnh vực khác nhau như phát triển phần mềm, lập trình game, lập trình web, quản lý dữ liệu, và trí tuệ nhân tạo. Cho đến nay, đã có nhiều ngôn ngữ lập trình hỗ trợ OOP, trong đó Python là một trong những ngôn ngữ phổ biến và dễ học nhất.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python_logo.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python_logo.jpeg
 tags: [python]
 is_highlight: false
 is_published: true
@@ -13,7 +13,7 @@ is_published: true
 Lập trình hướng đối tượng (Object-Oriented Programming, OOP) là một mô hình lập trình tổ chức thiết kế phần mềm xung quanh các đối tượng (objects), thay vì chỉ tập trung vào hàm hay logic.
 Mỗi đối tượng là một thực thể phần mềm đóng gói thông tin và các hàm xử lý thông tin đó.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/banner.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/banner.jpeg" style="width: 700px;"/>
 
 Ví dụ:
 - Trong lập trình game, một đối tượng có thể là một nhân vật (character) với các thuộc tính như tên, sức khỏe, vị trí, và các phương thức như di chuyển, tấn công, né đòn.
@@ -32,7 +32,7 @@ chúng và có thể thực hiện các chức năng nhất định.
 
 Class (Lớp) đóng vai trò như một khuôn mẫu (blueprint) để tạo ra các đối tượng - “Class defines a set of attributes and methods that the created objects (instances) can have.”
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/class_instance.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/class_instance.jpeg" style="width: 700px;"/>
 
 Mỗi đối tượng được tạo ra từ một lớp được gọi là một instance (thể hiện) của lớp đó.
 Đối tượng được xem là thực thể cụ thể của lớp, có trạng thái và hành vi riêng biệt.
@@ -43,7 +43,7 @@ OOP tập trung vào biểu diễn các thực thể thế giới thực (ví d�
 Ví dụ, trong một lớp Dog ta có các thuộc tính như name (tên chó), age (tuổi chó) và phương thức như bark() (hành
 động chó sủa).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/property_method.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/property_method.jpeg" style="width: 700px;"/>
 
 Trong lớp, thuộc tính (attribute) là các biến dữ liệu, còn phương thức (method) là hàm được định nghĩa bên trong lớp.
 
@@ -61,7 +61,7 @@ Các tính chất của OOP như **Tính đóng gói (Encapsulation)** giúp b�
 Tính đóng gói (Encapsulation) là việc đóng gói dữ liệu và phương thức trong một lớp, bảo vệ trạng thái bên trong của đối tượng và hạn chế truy cập trực tiếp từ bên ngoài.
 Nhờ đóng gói, ta chỉ cho phép thao tác lên dữ liệu thông qua các phương thức công khai, giúp tăng tính an toàn và ổn định cho mã nguồn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/encapsulation.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/encapsulation.jpeg" style="width: 700px;"/>
 
 Ví dụ:
 Trong một lớp `BankAccount`, ta có thể đóng gói các thuộc tính như `account_number` (số tài khoản), `balance` (số dư) và phương thức như `deposit()` (gửi tiền), `withdraw()` (rút tiền).
@@ -83,7 +83,7 @@ Tính đa hình (Polymorphism) là khả năng cho phép cùng một tên phươ
 Polymorphism cho phép đối xử với đối tượng qua giao diện chung mà không cần quan tâm chi tiết lớp cụ thể.
 Điều này giúp tăng tính linh hoạt và khả năng mở rộng của mã nguồn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/polymorphism.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/polymorphism.jpeg" style="width: 700px;"/>
 
 Ví dụ: Cả lớp `Cat` và `Dog` đều có phương thức `speak()`, nhưng `Cat().speak()` có thể trả về `"Meow"` trong khi `Dog().speak()` trả về `"Woof"`.
 
@@ -97,7 +97,7 @@ Tính kế thừa (Inheritance) cho phép một lớp con (subclass) kế thừa
 Lớp con có thể tái sử dụng, mở rộng hoặc ghi đè (override) chức năng của lớp cha mà không cần viết lại mã nguồn từ đầu.
 Điều này giúp tăng khả năng mở rộng và tái sử dụng mã nguồn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/inheritance.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/inheritance.jpeg" style="width: 700px;"/>
 
 Ví dụ: Lớp `Dog` và `Cat` có thể kế thừa từ lớp `Animal` chung, giúp chia sẻ các thuộc tính và phương thức cơ bản như `name` và `speak()`.
 
@@ -111,7 +111,7 @@ Tính trừu tượng (Abstraction) là việc ẩn chi tiết cài đặt bên 
 Lớp trừu tượng (abstract class) có thể định nghĩa các phương thức chưa triển khai, buộc các lớp con triển khai chúng.
 Nhờ trừu tượng, lập trình viên chỉ cần quan tâm đến cái “làm được gì” của đối tượng, chứ không cần lo “thao tác như thế nào”.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/abstraction.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/6-oop/abstraction.jpeg" style="width: 700px;"/>
 
 Ví dụ: Lớp `Animal` có thể là một lớp trừu tượng với phương thức `speak()` chưa được triển khai, buộc các lớp con như `Dog` và `Cat` phải định nghĩa phương thức này để có thể kế thừa từ `Animal`.
 

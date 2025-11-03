@@ -2,7 +2,7 @@
 time: 08/19/2022
 title: Mô hình PCA
 description: Làm việc trực tiếp trên dữ liệu có số chiều cao gây ra khó khăn cả về việc lưu trữ và tốc độ tính toán. Do đó, giảm chiều dữ liệu là một bài toán có tính ứng dụng cao trong Machine Learning, giúp lưu trữ và xử lý dữ liệu với hiệu năng tốt hơn. PCA là mô hình giảm chiều dữ liệu đại diện cho nhóm các mô hình tuyến tính, dựa vào các phép toán trên ma trận để giảm chiều dữ liệu.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -21,7 +21,7 @@ Chiếu dữ liệu từ không gian nhiều chiều sang không gian ít chiề
 Tìm ra mối quan hệ giữa các điểm dữ liệu và cố gắng duy trì được mối quan hệ này trên không gian mới có số chiều thấp hơn.
 Đại diện là mô hình t-distributed Stochastic Neighbor Embedding (t-SNE).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/idea.png" width="400"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/idea.jpeg" width="400"/>
 
 Principal Component Analysis (PCA) là một phương pháp giảm chiều dữ liệu tuyến tính được ra đời từ năm 1901 bởi Karl Pearson.
 

@@ -2,7 +2,7 @@
 time: 10/08/2022
 title: Transfer learning, weakly, semi, un và self supervised learning
 description: Transfer learning là một kỹ thuật quan trọng trong machine learning và deep learning, giúp cải thiện hiệu suất mô hình khi dữ liệu có hạn hoặc tăng tốc quá trình huấn luyện. Ngoài ra, các kỹ thuật weakly, semi, un và self supervised learning cũng đóng vai trò quan trọng trong việc tận dụng dữ liệu không có nhãn hoặc có nhãn không chính xác để cải thiện chất lượng mô hình.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/banner.jpeg
 tags: [machine-learning, deep-learning]
 is_highlight: false
 is_published: true
@@ -16,7 +16,7 @@ Tuy nhiên, điểm mạnh nhất của các mô hình supervised learning chín
 Các mô hình supervised learning yêu cầu sử dụng dữ liệu có nhãn trong xuyên suốt quá trình huấn luyện mô hình.
 Điều này tạo ra rào cản khi ta muốn tăng thêm lượng dữ liệu nhằm cải thiện độ chính xác của mô hình.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/annotation_levels.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/annotation_levels.jpeg" style="width: 800px;"/>
 
 Hình ảnh trên được lấy từ bài báo [Weakly Supervised Object Localization and Detection: A Survey](https://arxiv.org/abs/2104.07918), mô tả các cấp độ của dữ liệu có nhãn annotation levels từ dễ đến khó và chi phí cần để gán nhãn được các cấp độ này từ rẻ, đến đắt và đến mức độ khó mà chỉ có thể gán nhãn bởi các chuyên gia trong lĩnh vực.
 Ngoài ra, sơ đồ phía trên cũng thể hiện được một số trường hợp weak label như:
@@ -35,11 +35,11 @@ Một số giải pháp có thể được sử dụng để giảm thiểu và 
 Hình ảnh dưới đây được lấy từ bài báo [A Comprehensive Survey on Transfer Learning](https://arxiv.org/abs/1911.02685), mô tả đơn giản về kiến thức mà mô hình đã được học được kế thừa sang các bài toán mới.
 Ví dụ, mô hình đã được học với dữ liệu cờ tướng có thể được sử dụng để giải quyết bài toán cờ vua, mô hình đã được học với dữ liệu về đàn violin có thể được sử dụng để giải quyết bài toán đàn piano, mô hình đã được học với dữ liệu về xe đạp có thể được sử dụng để giải quyết bài toán xe máy.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/transfer_examples.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/transfer_examples.jpeg" style="width: 500px;"/>
 
 Một thống kê được lấy từ bài báo [Deep transfer learning for image classification: a survey](https://arxiv.org/abs/2205.09904) cho thấy rằng kích thước của mô hình càng hơn thì độ chính xác của mô hình càng cao, tương tự, mô hình được huấn luyện trên bộ dữ liệu lớn hơn thì độ chính xác của mô hình càng cao.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/transfer_statistics.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/transfer_statistics.jpeg" style="width: 1000px;"/>
 
 Điều này đặt ra vấn đề việc làm thế nào để tăng được kích thước của mô hình song hành với kích thước của bộ dữ liệu huấn luyện mô hình, để cực đại hoá độ chính xác của mô hình.
 Không những thế, ta cần cực đại hoá độ chính xác của mô hình với một lượng chi phí cực tiểu, cả chi phí chuẩn bị dữ liệu và chi phí huấn luyện mô hình.
@@ -47,7 +47,7 @@ Không những thế, ta cần cực đại hoá độ chính xác của mô hì
 Từ đó, việc sử dụng transfer learning với những mô hình đã được huấn luyện trước trên những bộ dữ liệu public lớn gần như trở thành một tiêu chuẩn trong quá trình phát triển mô hình machine learning và deep learning.
 Không những vậy, một số mô hình được huấn luyện trên những bộ dữ liệu đặc thù private, thậm chí còn được bán với chi phí không rẻ để được sử dụng transfer learning cho các mô hình mới.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/transfer_architecture.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/transfer_architecture.jpeg" style="width: 1000px;"/>
 
 Phương án đơn giản nhất để sử dụng transfer learning là ta sẽ sử dụng phần backbone của mô hình đã được huấn luyện trước, sau đó thêm một vài lớp fully connected (FC) để phù hợp với bài toán mới.
 
@@ -72,7 +72,7 @@ Yêu cầu tiên quyết của zero-shot learning là mô hình được sử d�
 
 Ví dụ: Một hệ thống phân loại động vật được huấn luyện trên "mèo", "chó", "voi" nhưng có thể nhận diện "hươu cao cổ" dựa trên mô tả bằng ngôn ngữ tự nhiên như “động vật cổ dài, ăn lá cây, sống ở châu Phi”.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/zero_one_few_shot.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/zero_one_few_shot.jpeg" style="width: 700px;"/>
 
 **One-shot learning** yêu cầu mô hình học được khái niệm hoặc nhiệm vụ chỉ từ một ví dụ duy nhất.
 
@@ -95,7 +95,7 @@ Hình ảnh dưới đây được lấy từ bài báo [A Brief Introduction to
 - **Inexact supervision data** là những bộ dữ liệu mà nhãn của một số điểm dữ liệu không đúng như những gì chúng ta cần cho bài toán.
 - **Inaccurate supervision data** là những bộ dữ liệu mà nhãn của một số điểm dữ liệu không chính xác hoàn toàn, không hoàn toàn là ground-truth.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/weak_supervision.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/weak_supervision.jpeg" style="width: 900px;"/>
 
 Đối với **Incomplete supervision data**, ta có các phương pháp semi supervised learning hay self supervised learning giúp tận dụng dữ liệu không có label để cải thiện chất lượng của mô hình huấn luyện trên dữ liệu có label.
 
@@ -124,7 +124,7 @@ Nếu ta có thể sử dụng bộ dữ liệu này để huấn luyện mô h�
 Graph-based Semi-supervised Learning hoạt động dựa trên giả định cơ bản rằng có thể trích xuất một đồ thị từ tập dữ liệu gốc, trong đó mỗi đỉnh (node) đại diện cho một điểm dữ liệu và mỗi cạnh (edge) thể hiện mức độ tương đồng giữa các cặp đỉnh.
 Cụ thể hơn, phương pháp này được xây dựng dựa trên giả định Graph Smoothness Assumption: **"Nếu hai đỉnh gần nhau trên đồ thị (tức là kết nối mạnh), thì chúng nên có vector đại diện tương tự nhau (gần nhau trong không gian vector đại diện)."**
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_graph_based.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_graph_based.jpeg" style="width: 900px;"/>
 
 Hình ảnh trên đây được lấy từ bài báo [Semi-Supervised and Unsupervised Deep Visual Learning: A Survey](https://arxiv.org/abs/2208.11296), mô tả cách thức hoạt động của Graph-based Semi-supervised Learning.
 
@@ -160,7 +160,7 @@ Khi áp dụng GANs và VAEs vào semi supervised learning, ta gọi là **semi 
 Nguyên lý nền tảng của phương pháp này là sử dụng lượng dữ liệu không có nhãn để huấn luyện mô hình GANs hoặc VAEs.
 Ta kỳ vọng rằng trong quá trình này, mô hình sẽ học được các đặc trưng từ bộ dữ liệu không có nhãn và cải thiện hiệu suất trên bài toán của bộ dữ liệu có nhãn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_gan_based.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_gan_based.jpeg" style="width: 900px;"/>
 
 Hình ảnh trên đây được lấy từ bài báo [Semi-Supervised and Unsupervised Deep Visual Learning: A Survey](https://arxiv.org/abs/2208.11296), mô tả cách thức hoạt động của semi supervised GANs.
 Thành phần Discriminator của mô hình GANs ở đây bên cạnh việc phân biệt giữa dữ liệu thật từ bộ dữ liệu (kết hợp giữa có nhãn và không có nhãn) và dữ liệu sinh ra từ Generator, còn có nhiệm vụ phân loại các dữ liệu có nhãn thành các lớp khác nhau.
@@ -190,7 +190,7 @@ Self-training là phương pháp mà ta sẽ huấn luyện một mô hình trê
 
 Hai hình ảnh dưới đây được lấy từ bài báo [A Survey on Deep Semi-supervised Learning](https://arxiv.org/abs/2103.00550), mô tả cách thức hoạt động của self-training.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_pseudo_labels.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_pseudo_labels.jpeg" style="width: 600px;"/>
 
 Trong quá trình sử dụng các pseudo label của self-training, ta cần chú ý đến việc lọc ra những pseudo label có độ tin cậy cao để sử dụng cho việc huấn luyện.
 
@@ -202,7 +202,7 @@ Việc chia sẻ các dự đoán này với nhau mang lại những góc nhìn 
 
 Hai hình ảnh dưới đây được lấy từ bài báo [A Survey on Deep Semi-supervised Learning](https://arxiv.org/abs/2103.00550), mô tả cách thức hoạt động của self-training.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_co_training.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_co_training.jpeg" style="width: 600px;"/>
 
 Trong co-training, thường ta sẽ sử dụng hai mô hình khác nhau với hai kiến trúc khác nhau để huấn luyện song song.
 Co-training là kỹ thuật nền tảng cho các kỹ thuật khác trong semi supervised learning và self supervised learning.
@@ -215,11 +215,11 @@ Hai hình ảnh dưới đây được lấy từ bài báo [Semi-Supervised and
 Consistency Regularization là phương pháp mà ta sẽ huấn luyện mô hình để dự đoán cùng một label cho cùng một dữ liệu đầu vào nhưng với các biến thể khác nhau của nó.
 Các biến thể khác nhau này có thể được sinh ra nhờ các kỹ thuật xử lý dữ liệu nhưng cũng có thể được sinh ra nhờ việc thêm noise vào trong mô hình.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_consistency_regularization.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_consistency_regularization.jpeg" style="width: 800px;"/>
 
 Contrastive Learning là phương pháp mà ta sẽ huấn luyện mô hình để phân biệt giữa các cặp dữ liệu tương tự và không tương tự.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_contrastive_learning.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/semi_contrastive_learning.jpeg" style="width: 800px;"/>
 
 Hai kỹ thuật này, hiện nay được sử dụng rất nhiều trong self supervised learning, ta sẽ tìm hiểu kỹ hơn trong phần giới thiệu về self supervised learning.
 
@@ -229,7 +229,7 @@ Hai kỹ thuật này, hiện nay được sử dụng rất nhiều trong self 
 
 Hình ảnh dưới đây được lấy từ bài báo [Semi-Supervised and Unsupervised Deep Visual Learning: A Survey](https://arxiv.org/abs/2208.11296), mô tả ý tưởng transfer learning trong self supervised learning.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_supervised_learning.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_supervised_learning.jpeg" style="width: 700px;"/>
 
 Hay nói cách khác, self supervised learning là quá trình ta tự định nghĩa bài toán mới, tự sinh ra label cho dữ liệu và huấn luyện mô hình.
 Từ đó, ta kỳ vọng rằng mô hình sau quá trình self supervised learning sẽ cung cấp nhiều thông tin hữu ích cho việc huấn luyện mô hình trên bài toán ban đầu.
@@ -245,7 +245,7 @@ Pretext task **Autoencoders** là một trong những phương pháp phổ biế
 Trong phương pháp này, mô hình sẽ được huấn luyện để mã hoá (encode) dữ liệu đầu vào thành một biểu diễn (representation) và sau đó giải mã (decode) biểu diễn này trở lại thành dữ liệu đầu vào ban đầu.
 Mục tiêu của mô hình là giảm thiểu sự khác biệt giữa dữ liệu đầu vào và dữ liệu đầu ra sau khi giải mã.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_autoencoders.png" style="width: 700px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_autoencoders.jpeg" style="width: 700px;"/>
 
 Hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Representation Learning](https://arxiv.org/abs/2308.11455), mô tả cách thức hoạt động của pretext task **Autoencoders**.
 
@@ -258,7 +258,7 @@ Một phiên bản khác cũng hướng đến việc khôi phục lại dữ li
 Trong phương pháp này, dữ liệu đầu vào sẽ được chia thành các mảnh nhỏ (patches) và một phần các patches sẽ bị che đi (mask) và mô hình sẽ được huấn luyện để khôi phục lại phần dữ liệu đã bị che.
 Tuy nhiên, thay vì phải huấn luyện phần decoder để phục dựng lại toàn bộ ảnh đầu vào, trong **Masked Autoencoders**, mô hình chỉ cần học để tìm lại đúng các patches đã bị che đi.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_masked.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_masked.jpeg" style="width: 900px;"/>
 
 Hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Representation Learning](https://arxiv.org/abs/2308.11455), mô tả cách thức hoạt động của pretext task **Masked Autoencoders**.
 
@@ -271,7 +271,7 @@ Pretext task **Rotation Transformation** là một phương pháp self supervise
 Trong phương pháp này, dữ liệu đầu vào sẽ được xoay một góc ngẫu nhiên (0, 90, 180 hoặc 270 độ) và góc xoay này sẽ được sử dụng làm nhãn (label) cho mô hình.
 Mô hình sẽ được huấn luyện để dự đoán góc xoay của dữ liệu sau khi xoay.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_rotation.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_rotation.jpeg" style="width: 900px;"/>
 
 Hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Representation Learning](https://arxiv.org/abs/2308.11455), mô tả cách thức hoạt động của pretext task **Rotation Transformation**.
 
@@ -283,7 +283,7 @@ Một pretext task khác cũng hướng đến việc hiểu cấu trúc không 
 Trong phương pháp này, dữ liệu đầu vào sẽ được chia thành các mảnh nhỏ (patches) và các mảnh này sẽ được xáo trộn ngẫu nhiên.
 Mô hình sẽ được huấn luyện để dự đoán thứ tự của các mảnh này, tức là xác định cách sắp xếp các mảnh để chúng tạo thành một bức tranh hoàn chỉnh.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_jigsaw.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_jigsaw.jpeg" style="width: 900px;"/>
 
 Hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Representation Learning](https://arxiv.org/abs/2308.11455), mô tả cách thức hoạt động của pretext task **Jigsaw puzzle**.
 
@@ -294,7 +294,7 @@ Tương tự như pretext task **Rotation Transformation**, mô hình sau khi đ
 Pretext task **Image Transformation** là một phương pháp self supervised learning với dữ liệu hình ảnh, trong đó, mô hình sẽ được huấn luyện để dự đoán các biến thể của dữ liệu đầu vào.
 Pretext task này tương tự với ý tưởng được sử dụng trong **Consistency Regularization** trong semi supervised learning.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_transformations.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_transformations.jpeg" style="width: 800px;"/>
 
 Một số biến thể của dữ liệu ảnh đầu vào được sử dụng là:
 - **Gaussian noise**: Thêm nhiễu Gaussian vào ảnh đầu vào.
@@ -307,7 +307,7 @@ Một số biến thể của dữ liệu ảnh đầu vào được sử dụng
 
 Các kỹ thuật xử lý ảnh này khá giống với các kỹ thuật được sử dụng trong **Data Augmentation** trong quá trình huấn luyện mô hình với dữ liệu có nhãn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_transformations_train.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_transformations_train.jpeg" style="width: 600px;"/>
 
 Hai hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Representation Learning](https://arxiv.org/abs/2308.11455), mô tả cách thức hoạt động của pretext task **Image Transformation**.
 Trong sơ đồ trên:
@@ -324,13 +324,13 @@ Một nghiên cứu khá đột phá trong self supervised learning là mô hìn
 Kiến trúc này bao gồm hai mô hình: một mô hình Teacher và một mô hình Student.
 Hai mô hình Teacher và Student này có cùng kiến trúc mô hình nhưng sử dụng bộ trọng số khác nhau.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_dino_teacher_student.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_dino_teacher_student.jpeg" style="width: 600px;"/>
 
 Hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Representation Learning](https://arxiv.org/abs/2308.11455), mô tả cách thức chuẩn bị dữ liệu cho mô hình Teacher và Student trong DINO.
 Mô hình Teacher sẽ được học trên hai miếng crop lớn (với tổng diện tích trên 50% diện tích của dữ liệu đầu vào) của mỗi dữ liệu đầu vào, trong khi mô hình Student sẽ được học trên các miếng crop nhỏ hơn (với tổng diện tích dưới 50% diện tích của dữ liệu đầu vào) của cùng một dữ liệu đầu vào.
 Điều này mang lại nhiều thông tin của ảnh đầu vào hơn cho mô hình Teacher, trong khi mô hình Student sẽ học được các đặc trưng chi tiết và nhỏ hơn của ảnh đầu vào.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_dino.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_dino.jpeg" style="width: 600px;"/>
 
 Hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Representation Learning](https://arxiv.org/abs/2308.11455), mô tả cách thức huấn luyện mô hình Teacher và Student trong DINO.
 
@@ -339,7 +339,7 @@ Hình ảnh trên được lấy từ bài báo [A Survey on Self-Supervised Rep
 - Mô hình Student được cập nhật trọng số dựa trên gradient của hàm loss trên.
 - Mô hình Teacher được cập nhật trọng số bằng cách sử dụng một hàm moving average của trọng số của mô hình Student, giúp mô hình cả hai ổn định hơn trong quá trình huấn luyện, nói cách khác, hai mô hình Teacher và Student sẽ có trọng số gần giống nhau, "luôn nhìn về cùng một hướng" trong quá trình huấn luyện.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_dino_results.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/self_dino_results.jpeg" style="width: 900px;"/>
 
 Hình ảnh trên được lấy từ bài báo [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294), mô tả kết quả của mô hình DINO.
 Kết quả cho thấy mô hình DINO có thể học được các đặc trưng của ảnh đầu vào mà không cần sử dụng bất kỳ nhãn nào.
@@ -353,7 +353,7 @@ Phương pháp **Masked language modelling** là phương pháp, trong đó, m�
 
 Đây là một trong những phương pháp phổ biến nhất trong self supervised learning với dữ liệu văn bản, được sử dụng trong các mô hình như BERT.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert.jpeg" style="width: 900px;"/>
 
 Xét ví dụ trên hình được lấy từ bài báo ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805), một cặp câu A và B được đưa vào mô hình BERT. Để phục vụ cho bài toán **Masked Language Model**:
 - Trên hai câu này, một lượng khoảng 15% số lượng token đã được che đi (mask).
@@ -366,7 +366,7 @@ Phương pháp **Standard Language Modeling** là phương pháp yêu cầu mô 
 
 Hình ảnh dưới đây được lấy từ bài báo ["Improving Language Understanding by Generative Pre-Training"](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf), mô tả cách thức huấn luyện **Standard Language Modeling**.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt.jpeg" style="width: 900px;"/>
 
 Đối với bài toán **text classification** (phân lớp văn bản), mô hình GPT sẽ đơn giản là nhận đầu vào là một chuỗi văn bản, sau đó đưa đầu ra qua một lớp softmax để dự đoán nhãn của văn bản.
 
@@ -381,7 +381,7 @@ Phương pháp **Next Sentence Prediction** là phương pháp, trong đó, mô 
 
 Đây là một trong những phương pháp phổ biến nhất trong self supervised learning với dữ liệu văn bản, được sử dụng trong các mô hình như BERT.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/bert.jpeg" style="width: 900px;"/>
 
 Xét ví dụ trên hình được lấy từ bài báo ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805), một cặp câu A và B được đưa vào mô hình BERT. Để phục vụ cho bài toán **Next Sentence Prediction**:
 - Input của mô hình sẽ được thêm một token đặc biệt [CLS] ở đầu câu A và nhiệm vụ của mô hình là dự đoán giá trị của token này là 1 (IsNext) hoặc 0 (NotNext) để xác định xem câu B có phải là câu tiếp theo của câu A hay không.
@@ -394,7 +394,7 @@ Contrastive Language-Image Pre-Training (CLIP) là một mô hình được gi�
 CLIP đề xuất một phương pháp huấn luyện mô hình Computer vision sử dụng dữ liệu ngôn ngữ tự nhiên (text) thay vì các nhãn thủ công truyền thống.
 CLIP học cách liên kết hình ảnh và văn bản thông qua **contrastive learning**, sao cho vector đại diện của ảnh và vector đại diện của mô tả văn bản tương ứng sẽ gần nhau trong không gian đặc trưng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/clip.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/clip.jpeg" style="width: 1000px;"/>
 
 Cụ thể hơn, CLIP gồm hai thành phần chính:
 - **Image Encoder**: Mã hoá hình ảnh thành vector đặc trưng, có thể sử dụng các mô hình ResNet hoặc Vision Transformer (ViT).

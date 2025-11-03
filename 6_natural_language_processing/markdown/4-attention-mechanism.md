@@ -2,7 +2,7 @@
 time: 02/26/2023
 title: Cơ chế Attention Attention Mechanism
 description: Attention là cơ chế giúp mô hình học sâu tập trung (attend) vào các thành phần quan trọng trong dữ liệu đầu vào, tương tự như con người chú ý đến chi tiết nổi bật. Cơ chế này ra đời (2014) nhằm khắc phục hạn chế của RNN/LSTM cũ khi phải mã hóa toàn bộ chuỗi vào một vector cố định. Theo kết quả nghiên cứu, Transformer (2017) – kiến trúc dùng hoàn toàn attention – đã trở thành nền tảng của các mô hình ngôn ngữ lớn (LLMs) như GPT, BERT hiện đại. Trong thị giác máy tính, cơ chế Attention cũng được áp dụng thành công qua Vision Transformer (ViT) và các mô hình DETR.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/banner.jpeg
 tags: [deep-learning, natural-language-processing, computer-vision]
 is_highlight: true
 is_published: true
@@ -19,7 +19,7 @@ Trong bài toán xử lý ngôn ngữ tự nhiên, cả Encoder và Decoder thư
 Điểm đặc biệt của mô hình này là nó có thể xử lý các bài toán dịch máy machine translation, tóm tắt văn bản text summarization, hỏi đáp question answering, nơi độ dài chuỗi đầu vào và đầu ra có thể khác nhau.
 Mô hình Seq2Seq đã mang lại kết quả ấn tượng trong các tác vụ NLP này.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/seq2seq.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/seq2seq.jpeg" style="width: 1000px;"/>
 
 Trong thực tế, kiến trúc thường bao gồm:
 - Encoder: xử lý chuỗi đầu vào và sinh ra trạng thái ẩn cuối cùng (vector ngữ cảnh) chứa thông tin chung về toàn bộ đầu vào.
@@ -46,7 +46,7 @@ Cơ chế này cũng cho phép xử lý song song (parallelization), tận dụn
 
 Hình ảnh dưới đây được lấy từ bài báo [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) của Bahdanau et al. vào năm 2014 thể hiện kết quả của phép Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/attention_example.png" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/attention_example.jpeg" style="width: 900px;"/>
 
 Tuy nhiên, hạn chế lớn nhất của Attention là chi phí tính toán cao, đặc biệt là với chuỗi đầu vào dài hoặc hình ảnh lớn.
 Cụ thể, với một chuỗi đầu vào có độ dài $n$, chi phí tính toán của Attention là $O(n^2)$ do phải tính toán độ tương đồng giữa tất cả các cặp từ trong chuỗi.
@@ -155,7 +155,7 @@ Phiên bản Dot-Product Attention, khi độ dài của Query và Key tăng lê
 Để giải quyết vấn đề này, Scaled Dot-Product Attention được giới thiệu được giới thiệu trong bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả cơ chế Scaled Dot-Product Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/scaled_dot_product_attention.png" style="width: 250px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/scaled_dot_product_attention.jpeg" style="width: 250px;"/>
 
 Trong phiên bản này, giá trị dot product giữa Query và Key sẽ được chia cho căn bậc hai của kích thước của Key để giảm thiểu ảnh hưởng của độ dài:
 
@@ -173,7 +173,7 @@ Multi-Head Attention là một phiên bản mở rộng của cơ chế Attentio
 Multi-Head Attention được giới thiệu được giới thiệu trong bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả cơ chế Multi-Head Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/multi_head_attention.png" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/multi_head_attention.jpeg" style="width: 400px;"/>
 
 Thay vì chỉ có một phép attention, Transformer sử dụng đa đầu (Multi-Head): chia đầu vào thành $h$ “head” con, mỗi head học ba ma trận trọng số $W_i^Q, W_i^K, W_i^V$ riêng. Mỗi head tính attention độc lập:
 
@@ -194,7 +194,7 @@ Từ đó, Self-Attention cho phép mô hình học được mối quan hệ gi�
 Self-Attention được giới thiệu trong bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả kết quả của một lớp Self-Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/self_attention.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/self_attention.jpeg" style="width: 800px;"/>
 
 Ví dụ: Xét một câu "The rabbit is running on the grass". Giả sử mỗi từ trong câu là một token.
 Ta có thể sử dụng Self-Attention để tính toán mối quan hệ đôi một giữa các từ trong câu này.
@@ -211,7 +211,7 @@ Với chuỗi rất dài (hàng nghìn token), Attention chuẩn tốn $O(n^2)$ 
 
 Hình ảnh này được lấy từ bài báo [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) mô tả cơ chế Local Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/local_attention.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/local_attention.jpeg" style="width: 600px;"/>
 
 - **Local (sliding window) attention:**
 Mỗi token chỉ attend tới một cửa sổ giới hạn quanh nó (ví dụ 128 token trước và sau) thay vì toàn bộ chuỗi. Điều này giúp giảm chi phí tính toán và bộ nhớ, nhưng vẫn giữ được mối quan hệ cục bộ.
@@ -222,7 +222,7 @@ Mô hình nhóm các token thành các block và chỉ cho phép attend trong bl
 
 Hình ảnh này được lấy từ bài báo [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) mô tả cơ chế Global Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/global_attention.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/global_attention.jpeg" style="width: 600px;"/>
 
 Các cơ chế trên hướng đến mục tiêu cân bằng giữa hiệu quả tính toán và khả năng mô hình hóa phụ thuộc dài hạn.
 Các kỹ thuật này giảm chi phí so với Transformer gốc, nhưng có thể hy sinh một phần khả năng phát hiện phụ thuộc xa (tuy nhiên thường chấp nhận được trong thực tế).
@@ -233,7 +233,7 @@ Ví dụ, Longformer có thể xử lý văn bản dài hàng nghìn từ với 
 Ý tưởng của Cross-Attention được giới thiệu đầu tiên từ bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017 nhưng không được gọi là Cross-Attention.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả cách thức hoạt động của Cross-Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/cross_attention.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/cross_attention.jpeg" style="width: 600px;"/>
 
 Cái tên Cross-Attention được sử dụng bắt đầu từ hai bài báo [Cross‑Attention Multi‑Scale Vision Transformer](https://arxiv.org/abs/2103.14899) và [CAT: Cross Attention in Vision Transformer](https://arxiv.org/abs/2106.05786) khi các tác giả nghiên cứu cách sử dụng Cross-Attention trong mô hình Vision Transformer kết hợp giữa dữ liệu hình ảnh và văn bản.
 
@@ -248,7 +248,7 @@ FlashAttention là một kỹ thuật tối ưu hóa trong mô hình Transformer
 Thuật toán này được giới thiệu trong bài báo [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135) của Dao et al. vào năm 2022 và phiên bản mới nhất là FlashAttention-2 được giới thiệu trong bài báo [FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning](https://arxiv.org/abs/2307.08691) của Dao et al. vào năm 2023.
 Hình ảnh dưới đây được lấy từ bài báo mô tả cách thức hoạt động của Flash Attention.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/flash_attention.png" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/flash_attention.jpeg" style="width: 1000px;"/>
 
 FlashAttention giải quyết hai vấn đề lớn trong các tính toán attention tiêu chuẩn là Chiếm nhiều bộ nhớ và Chậm khi chuỗi dài.
 Cả hai vấn đề này đều gây ra sự tốn kém về tài nguyên tính toán.

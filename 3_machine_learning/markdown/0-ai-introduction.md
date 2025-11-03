@@ -2,7 +2,7 @@
 time: 07/09/2022
 title: Giới thiệu chung về Trí tuệ nhân tạo Artificial Intelligence
 description: Trí tuệ nhân tạo - Artificial Intelligence là một lĩnh vực nghiên cứu và ứng dụng các phương pháp máy tính để mô phỏng và mở rộng khả năng tư duy của con người. Trong những năm gần đây, AI đã phát triển mạnh mẽ và đóng góp rất nhiều ứng dụng từ hỗ trợ con người đến tự động hóa các công việc. Bài giới thiệu này sẽ giới thiệu chung về Trí tuệ nhân tạo - AI, Máy học - Machine Learning và Học sâu - Deep Learning.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/ai_vs_ml_vs_dl.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/ai_vs_ml_vs_dl.jpeg
 tags: [machine-learning , deep-learning]
 is_highlight: false
 is_published: true
@@ -14,7 +14,7 @@ is_published: true
 
 Dưới đây là một đoạn hội thoại ngắn giữa ChatGPT và một người dùng về nội dung liên quan đến lịch sử và ta có thể thấy rằng ChatGPT có khả năng tương tác với con người khá tốt.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_chatgpt.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_chatgpt.jpeg" style="width: 1200px;"/>
 
 Đầu tiên, câu trả lời của ChatGPT có tính cấu trúc đồng nhất, gồm các phần: số thứ tự, tên viết bằng tiếng việt có dấu, chữ tượng hình tiếng trung trong ngoặc, dấu gạch ngang, đoạn giới thiệu ngắn bằng tiếng anh.
 
@@ -55,7 +55,7 @@ Mặc dù được gọi là "lái tự động," AutoPilot vẫn cần sự gi�
 
 Hình ảnh dưới đây là một hình ảnh được sinh ra bởi MidJourney, một hệ thống trí tuệ nhân tạo và hơn nữa, hình ảnh này đã dành chiến thắng trong một cuộc thi về ảnh.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_midjourney.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_midjourney.jpeg" style="width: 1200px;"/>
 
 Thẩm mỹ hình ảnh là một lĩnh vực khá trừu tượng và mang tính cá nhân hoá cao.
 Nên việc MidJourney nói riêng hay AI nói chung chiến thắng con người trong một cuộc thi như vậy là một bước tiến lớn trong việc ứng dụng trí tuệ nhân tạo vào các lĩnh vực khác nhau cũng như gây ra nhiều tranh cãi về vai trò của con người trong tương lai.
@@ -87,7 +87,7 @@ Hệ thống điểm tín dụng xã hội của Trung Quốc đã nhận nhiề
 
 ### 1.7. Các ứng dụng trong các lĩnh vực khác nhau
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_others.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_others.jpeg" style="width: 1200px;"/>
 
 ## 2. Trí tuệ nhân tạo - Artificial Intelligence, Máy học - Machine Learning và Học sâu - Deep Learning
 
@@ -99,7 +99,7 @@ Trí tuệ nhân tạo được quan tâm từ những năm 1950, tuy nhiên, ch
 
 Trí tuệ nhân tạo giống như là một đích đến cuối cùng, một mục tiêu lớn mà các nhà nghiên cứu và kỹ sư máy tính hướng tới.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/ai_vs_ml_vs_dl.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/ai_vs_ml_vs_dl.jpeg" style="width: 1200px;"/>
 
 ### 2.2. Máy học - Machine Learning
 
@@ -116,7 +116,7 @@ Nói cách khác, Machine Learning sử dụng mạng nơ-ron để học đư�
 Deep Learning trong những năm gần đây đã trở thành một trong những lĩnh vực nghiên cứu và ứng dụng phổ biến nhất và thành công nhất của trí tuệ nhân tạo.
 Những ứng dụng phổ biến nhất của Deep Learning có thể kể đến như Chat GPT, AlphaGo, Autopilot, và nhiều ứng dụng khác.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/deep_learning_reasons.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/deep_learning_reasons.jpeg" style="width: 1200px;"/>
 
 Về lý thuyết, Deep learning là một phần con của Machine Learning, tuy nhiên, trong thực tế hiện nay, chúng ta có thể chia Machine Learning thành 2 nhóm: Machine Learning truyền thống và Deep Learning.
 Lý do mà Deep Learning mạnh mẽ và phổ biến hiện nay nhờ **khả năng hấp thụ dữ liệu lớn** của mô hình mạng nơ ron.
@@ -135,7 +135,7 @@ Trong lập trình truyền thống, chúng ta cần xác định từng bước
 Lập trình truyền thống thường yêu cầu kiến thức chuyên sâu về ngôn ngữ lập trình, thuật toán, cấu trúc dữ liệu, và nhiều kỹ năng khác.
 Nó cũng đòi hỏi thời gian và công sức lớn để viết và duy trì mã nguồn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/traditional_programming_vs_machine_learning.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/traditional_programming_vs_machine_learning.jpeg" style="width: 1200px;"/>
 
 ### 3.2. Machine Learning
 
@@ -160,7 +160,7 @@ Python có nhiều thư viện hỗ trợ mạnh mẽ cho:
 - Machine Learning: NumPy, Pandas, Matplotlib, Scikit-learn ...
 - Deep Learning: TensorFlow, PyTorch, Keras ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/tools_libraries.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/tools_libraries.jpeg" style="width: 1200px;"/>
 
 Ngoài ngôn ngữ lập trình Python và các thư viện nói trên, với sự quan tâm dành cho Deep learning, những Kỹ sư Trí tuệ nhân tạo cũng có thể cần sử dụng đến ngôn ngữ lập trình khác như C++, CUDA ...
 

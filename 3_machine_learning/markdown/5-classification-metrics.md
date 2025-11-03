@@ -2,7 +2,7 @@
 time: 07/30/2022
 title: Metrics đánh giá cho bài toán classification
 description: Bài toán classification là một trong những bài toán phổ biến nhất trong machine learning. Để đánh giá được chất lượng của mô hình sao cho chính xác và khách quan nhất, ta cần xây dựng bộ các metrics đánh giá cho bài toán classification. Có nhiều metrics khác nhau cho bài toán classification, các chỉ số này có những điểm mạnh và điểm yếu riêng. Trong bài viết này, ta sẽ cùng nhau tìm hiểu về các metrics đánh giá cho bài toán classification.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -67,7 +67,7 @@ Confusion matrix là công cụ giúp trực quan hoá cả lời dự đoán c�
 Confusion matrix là ma trận vuông gồm các cột là các lời dự đoán của mô hình và các hàng là các label đúng của điểm dữ liệu đó hoặc ngược lại.
 Đối với bài toán binary classification, confusion matrix là một ma trận có kích thước $2 \times 2$.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_definition.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_definition.jpeg" style="width: 500px;"/>
 
 Từ đó, confusion matrix tạo ra 4 giá trị: True Positive (TP), False Positive (FP), True Negative (TN) và False Negative (FN).
 - TP là số luợng các điểm dữ liệu mà mô hình dự đoán **đúng là lớp positive** tương ứng với label của chúng là postive.
@@ -80,24 +80,24 @@ Xét các ví dụ trên, giả sử ta coi lớp positive là lớp **sản ph�
 
 **Ví dụ 1:** Ta có TP = 40, TN = 50, FP = 5, FN = 5.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_1.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_1.jpeg" style="width: 500px;"/>
 
 **Ví dụ 2:** Ta có TP = 5, TN = 50, FP = 40, FN = 5.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_2.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_2.jpeg" style="width: 500px;"/>
 
 **Ví dụ 3:** Ta có TP = 5, TN = 85, FP = 5, FN = 5.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_3.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_3.jpeg" style="width: 500px;"/>
 
 **Ví dụ 4:** Ta có TP = 8, TN = 85, FP = 2, FN = 5.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_4.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_example_4.jpeg" style="width: 500px;"/>
 
 Với các giá trị TP, TN, FP và FN, ta có công thức của accuracy như sau:
 $$ \text{accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}} $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_accuracy.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_accuracy.jpeg" style="width: 500px;"/>
 
 ## 4. Recall - Precision - F score - Specificity
 
@@ -121,7 +121,7 @@ $$ \text{recall} = \frac{8}{8 + 2} = \frac{8}{10} = 80\% $$
 
 Từ đây, ta có thể khẳng định rằng mô hình trong ví dụ 4 là mô hình khá tốt trong khi mô hình trong ví dụ 3 là mô hình kém.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_recall.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_recall.jpeg" style="width: 500px;"/>
 
 **Ví dụ 5:** Ta có bộ dữ liệu đánh giá **không cân bằng** gồm 100 sản phẩm, trong đó có 90 sản phẩm tốt và 10 sản phẩm lỗi.
 - Trong 10 sản phẩm lỗi, mô hình dự đoán **đúng** 10 sản phẩm là lỗi và **sai** 0 sản phẩm là tốt.
@@ -142,7 +142,7 @@ Với chỉ số precision, ta có thể tính được trên ví dụ 5 như sa
 $$ \text{precision} = \frac{10}{10 + 70} = \frac{10}{80} = 12.5\% $$
 Và với chỉ số precision = 12.5%, ta có thể thấy rằng mô hình này có độ chính xác thấp và **đây là một mô hình kém**.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_precision.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_precision.jpeg" style="width: 500px;"/>
 
 Các chỉ số đánh giá ra đời nhằm mục đích đánh giá và so sánh các mô hình machine learning với nhau, để chọn ra mô hình có độ chính xác cao nhất.
 Tuy nhiên, việc quan sát đồng thời cả precision và recall thường gây ra khó khăn, liệu rằng với một mô hình có precision cao hơn nhưng recall thấp hơn và một mô hình có recall cao hơn nhưng precision thấp hơn thì mô hình nào tốt hơn?
@@ -180,27 +180,27 @@ $$
 \text{specificity} = \frac{\text{TN}}{\text{TN + FP}}
 $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_specificity.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_specificity.jpeg" style="width: 500px;"/>
 
 ## 5. Confusion matrix trong bài toán multi-class classification
 
 Tương tự đối với bài toán multi-class classification, confusion matrix là một ma trận vuông có kích thước $n \times n$, trong đó $n$ là số lớp dữ liệu trong bài toán phân loại.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class.jpeg" style="width: 500px;"/>
 
 Với việc xây dựng được confusion matrix, ta cũng có thể tính toán được các chỉ số đánh giá cho mô hình như accuracy, recall, precision, F1 score và specificity.
 
 - **Accuracy**
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class_accuracy.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class_accuracy.jpeg" style="width: 500px;"/>
 
 - **Recall với class A là lớp positive**
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class_recall_a.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class_recall_a.jpeg" style="width: 500px;"/>
 
 - **Precision với class A là lớp positive**
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class_precision_a.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class_precision_a.jpeg" style="width: 500px;"/>
 
 Trong thư viện scikit-learn, 
 

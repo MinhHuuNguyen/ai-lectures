@@ -2,7 +2,7 @@
 time: 08/13/2022
 title: Mô hình K Means Clustering
 description: Bên cạnh các mô hình học có giám sát, mô hình học không giám sát cũng đóng một vai trò quan trọng trong Machine Learning. Trong bài viết này, chúng ta sẽ tìm hiểu về mô hình phân cụm K-means Clustering, mô hình giúp phân chia dữ liệu thành các cụm dựa trên đặc trưng của chúng.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -29,17 +29,17 @@ Nói cách khác, mô hình K-means Clustering giúp phân chia dữ liệu thà
 
 - **Bước 5**: Lặp lại **Bước 3** và **Bước 4** cho đến khi không có sự thay đổi nào trong việc gán điểm dữ liệu vào các cụm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_init.png" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_init.jpeg" style="width: 400px;"/>
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_1.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_1.jpeg" style="width: 800px;"/>
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_2.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_2.jpeg" style="width: 800px;"/>
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_3.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_3.jpeg" style="width: 800px;"/>
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_4.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_4.jpeg" style="width: 800px;"/>
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_5.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_step_5.jpeg" style="width: 800px;"/>
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/example_animation.gif" style="width: 400px;"/>
 
@@ -54,7 +54,7 @@ trong đó:
 
 Khoảng cách Euclidean thường được sử dụng trong đa số các trường hợp.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/euclidean.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/7-knn/euclidean.jpeg" style="width: 500px;"/>
 
 ## 4. Tối ưu trong mô hình K-means
 
@@ -168,7 +168,7 @@ for k in K:
     inertia.append(km.inertia_)
 ```
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/elbow_method.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/elbow_method.jpeg" style="width: 800px;"/>
 
 ### 6.2. Phương pháp Silhouette
 
@@ -195,7 +195,7 @@ for k in K:
     silhouette_scores.append(score)
 ```
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/silhouette_method.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/11-kmeans/silhouette_method.jpeg" style="width: 800px;"/>
 
 ## 7. Các biến thể nâng cấp của mô hình
 

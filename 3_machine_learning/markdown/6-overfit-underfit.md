@@ -2,7 +2,7 @@
 time: 08/02/2022
 title: Hiện tượng Overfit và Underfit
 description: Trong quá trình huấn luyện mô hình machine learning, ta thường gặp phải hiện tượng overfit và underfit. Hai hiện tượng này khiến cho việc huấn luyện mô hình gặp nhiều khó khăn và gây ra sự sai sót trong quá trình đánh giá mô hình.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/banner.jpeg
 tags: [machine-learning]
 is_highlight: false
 is_published: true
@@ -15,7 +15,7 @@ Trong đó, bộ dữ liệu train đại diện cho những dữ liệu mà mô
 
 Việc lựa chọn mô hình machine learning phù hợp để học bộ dữ liệu train và cho kết quả dự đoán tốt trên bộ dữ liệu test là điều quan trọng nhất trong quá trình huấn luyện nhưng ko dễ để thực hiện.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/model_vs_data_complexity.png" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/model_vs_data_complexity.jpeg" style="width: 500px;"/>
 
 Trong quá trình huấn luyện mô hình machine learning, ta cần xem xét đến độ phức tạp của mô hình tương quan với độ phức tạp của bộ dữ liệu train.
 - Độ phức tạp của mô hình thể hiện khả năng mà mô hình có thể học được những quy luật, xu hướng trong bộ dữ liệu train.
@@ -49,7 +49,7 @@ Biểu hiện của hiện tượng underfit là giá trị loss của mô hình
 
 Ta chỉ cần quan sát thấy giá trị loss trên bộ train thấp là đã có thể nhận biết được mô hình đang bị underfit, giá trị loss trên bộ test thấp là điều hiển nhiên kéo theo.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/underfit_loss.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/underfit_loss.jpeg" style="width: 800px;"/>
 
 Ngoài chỉ số loss, ta cũng có thể sử dụng các chỉ số khác như accuracy, precision, recall, ... đối với bài toán classification hay R2 score ... đối với bài toán regression để đánh giá hiện tượng underfit.
 
@@ -82,7 +82,7 @@ Nhưng chỉ cần khác một chút, đưa cho mô hình những điểm dữ l
 Biểu hiện của hiện tượng overfit là giá trị loss của mô hình trên cả bộ train và bộ test đều giảm dần trong giai đoạn đầu.
 Tuy nhiên, sau một thời gian, giá trị loss trên bộ train tiếp tục giảm nhưng giá trị loss trên bộ test lại tăng lên.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/overfit_loss.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/overfit_loss.jpeg" style="width: 800px;"/>
 
 Ngoài chỉ số loss, ta cũng có thể sử dụng các chỉ số khác như accuracy, precision, recall, ... đối với bài toán classification hay R2 score ... đối với bài toán regression trên cả bộ dữ liệu train và bộ dữ liệu test để đánh giá hiện tượng overfit.
 
@@ -176,7 +176,7 @@ Ta sẽ phân tích và cải thiện mô hình dựa trên kết quả trên b�
 Việc xuất hiện thêm bộ dữ liệu validation sẽ giúp ta có được một cái nhìn tổng quan hơn về mô hình.
 Mô hình cần phải cho ra những dự đoán tốt trên cả ba bộ dữ liệu train, validation và test.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/train_vs_val_vs_test.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/train_vs_val_vs_test.jpeg" style="width: 800px;"/>
 
 | **Giai đoạn** | **Mục đích chính** | **Ý chính cần nhớ** |
 |---------------|-------------------|---------------------|

@@ -2,7 +2,7 @@
 time: 12/19/2021
 title: Giới thiệu chung về ngôn ngữ lập trình Python
 description: Bài viết này sẽ giới thiệu một số ứng dụng và lý do khiến Python trở nên phổ biến. Ngoài ra, chúng ta cũng sẽ tìm hiểu một số thao tác lập trình cơ bản với Python như import thư viện, comment, đặt tên biến dữ liệu, ...
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python_logo.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/python_logo.jpeg
 tags: [python]
 is_highlight: false
 is_published: true
@@ -16,7 +16,7 @@ Python is a programming language that lets you work more quickly and integrate y
 
 Đây là một câu mô tả về Python trên trang chủ của ngôn ngữ lập trình này. Python là một ngôn ngữ lập trình được sử dụng rộng rãi trong thời gian gần đây trong lĩnh vực trí tuệ nhân tạo, khoa học dữ liệu, phân tích dữ liệu, và nhiều lĩnh vực khác. 
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/tiobe_index_2025.png" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/1_python_basic/images/1-introduction/tiobe_index_2025.jpeg" style="width: 1200px;"/>
 Danh sách các ngôn ngữ lập trình phổ biến nhất trên thế giới theo https://www.tiobe.com/tiobe-index/.
 
 Một lý do khiến Python trở nên phổ biến là vì nó đơn giản và gần gũi với ngôn ngữ tự nhiên, tiếng Anh. Điều này khiến cho ai ai cũng có thể học Python mà không cần phải có kiến thức nền tảng chuyên sâu về lập trình.

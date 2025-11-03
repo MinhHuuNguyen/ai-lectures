@@ -2,7 +2,7 @@
 time: 03/22/2022
 title: "[CASE STUDY] Phân tích và dự báo với bộ dữ liệu Credit Scoring"
 description: Bài thực hành này được thực hiện trên bộ dữ liệu này được lấy từ cuộc thi Give Me Some Credit trên Kaggle và qua một số chỉnh sửa để phù hợp với mục đích phân tích và thực hành sử dụng thư viện Pandas.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.jpeg
 tags: [python, data-analysis, case-study]
 is_highlight: false
 is_published: true

@@ -2,7 +2,7 @@
 time: 10/31/2022
 title: "[SERIES] Thị giác máy tính Computer Vision"
 description: Computer vision là tổ hợp các bài toán con trong lĩnh vực trí tuệ nhân tạo, nhằm giúp máy tính có thể hiểu và xử lý hình ảnh, video. Computer vision là một trong những lĩnh vực nghiên cứu có rất nhiều ứng dụng thực tiễn trong đời sống.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/banner.jpeg
 tags: [deep-learning, computer-vision, series]
 is_highlight: false
 is_published: true
