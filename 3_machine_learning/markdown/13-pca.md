@@ -124,7 +124,7 @@ U
 = \begin{bmatrix}
 u^1_1 & u^1_2 & ... & u^1_k \\
 u^2_1 & u^2_2 & ... & u^2_k \\
-\vdots & \vdots & \ddots & \vdots \\
+... & ... & ... & ... \\
 u^n_1 & u^n_2 & ... & u^n_k
 \end{bmatrix}
 $$

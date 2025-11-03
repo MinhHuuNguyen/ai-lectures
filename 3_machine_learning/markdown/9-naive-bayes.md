@@ -219,19 +219,21 @@ Xét văn bản mới: "thật ngon và tuyệt".
 Ta tách từ trong văn bản này: "thật", "ngon", "và", "tuyệt"
 
 Ta tính toán xác suất điều kiện $P(y|x)$ cho từng lớp $y$ như sau:
-- Đối với lớp $y=Positive$:
-$$ log(P(y=Positive|x)) \propto \log(P(thật|y=Positive)) + \log(P(ngon|y=Positive)) + \log(P(và|y=Positive)) + \log(P(tuyệt|y=Positive)) + \log(P(y=Positive)) $$
-$$ log(P(y=Positive|x)) \propto \log(0.15) + \log(0.10) + \log(0.15) + \log(0.15) + \log(0.5) $$
-$$ log(P(y=Positive|x)) \propto -1.897 + -2.303 + -1.897 + -1.897 + -0.693 $$
-$$ log(P(y=Positive|x)) \propto -8.687 $$
+- Đối với lớp y là Positive $y=Pos$:
 
-- Đối với lớp $y=Negative$:
-$$ log(P(y=Negative|x)) \propto \log(P(thật|y=Negative)) + \log(P(ngon|y=Negative)) + \log(P(và|y=Negative)) + \log(P(tuyệt|y=Negative)) + \log(P(y=Negative)) $$
-$$ log(P(y=Negative|x)) \propto \log(0.05) + \log(0.10) + \log(0.15) + \log(0.05) + \log(0.5) $$
-$$ log(P(y=Negative|x)) \propto -2.996 + -2.303 + -1.897 + -2.996 + -0.693 $$
-$$ log(P(y=Negative|x)) \propto -10.885 $$
+$$ log(P(y=Pos|x)) \propto \log(P(that|y=Pos)) + \log(P(ngon|y=Pos)) + \log(P(va|y=Pos)) + \log(P(tuyet|y=Pos)) + \log(P(y=Pos)) $$
+$$ log(P(y=Pos|x)) \propto \log(0.15) + \log(0.10) + \log(0.15) + \log(0.15) + \log(0.5) $$
+$$ log(P(y=Pos|x)) \propto -1.897 + -2.303 + -1.897 + -1.897 + -0.693 $$
+$$ log(P(y=Pos|x)) \propto -8.687 $$
 
-Từ kết quả trên, ta đưa ra dự đoán cho văn bản mới thuộc lớp Positive vì $log(P(y=Positive|x)) > log(P(y=Negative|x))$.
+- Đối với lớp y là Negative $y=Neg$:
+
+$$ log(P(y=Neg|x)) \propto \log(P(that|y=Neg)) + \log(P(ngon|y=Neg)) + \log(P(va|y=Neg)) + \log(P(tuyet|y=Neg)) + \log(P(y=Neg)) $$
+$$ log(P(y=Neg|x)) \propto \log(0.05) + \log(0.10) + \log(0.15) + \log(0.05) + \log(0.5) $$
+$$ log(P(y=Neg|x)) \propto -2.996 + -2.303 + -1.897 + -2.996 + -0.693 $$
+$$ log(P(y=Neg|x)) \propto -10.885 $$
+
+Từ kết quả trên, ta đưa ra dự đoán cho văn bản mới thuộc lớp Positive vì $log(P(y=Pos|x)) > log(P(y=Neg|x))$.
 
 ## 5. Ưu và nhược điểm của Naive Bayes Classification
 

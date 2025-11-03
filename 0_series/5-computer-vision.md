@@ -1,5 +1,5 @@
 ---
-time: 10/31/2022
+time: 05/23/2022
 title: "[SERIES] Thị giác máy tính Computer Vision"
 description: Computer vision là tổ hợp các bài toán con trong lĩnh vực trí tuệ nhân tạo, nhằm giúp máy tính có thể hiểu và xử lý hình ảnh, video. Computer vision là một trong những lĩnh vực nghiên cứu có rất nhiều ứng dụng thực tiễn trong đời sống.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/banner.jpeg
@@ -8,49 +8,74 @@ is_highlight: false
 is_published: true
 ---
 
-## Bài 1: Thị giác máy tính Computer Vision
+---
 
-1. Giới thiệu chung về lĩnh vực Computer vision
-2. Các bài toán con của Computer vision
-3. Ảnh raster và ảnh vector trong máy tính
-4. Không gian màu Color Space
-5. Workflow dự án Computer vision
+### [Bài 1: Thị giác máy tính Computer Vision](/blog/thi-giac-may-tinh-computer-vision)
 
-([bài viết chi tiết](/blog/thi-giac-may-tinh-computer-vision/))
+Computer vision là tổ hợp các bài toán con trong lĩnh vực trí tuệ nhân tạo, nhằm giúp máy tính có thể hiểu và xử lý hình ảnh, video. Computer vision là một trong những lĩnh vực nghiên cứu có rất nhiều ứng dụng thực tiễn trong đời sống giúp nâng cao hiệu quả công việc của con người và tự động hoá nhiều quy trình.
 
-## Bài 2: Mạng nơ ron tích chập Convolutional Neural Network
+###### 1. Giới thiệu chung về lĩnh vực Computer vision
 
-1. Công thức của phép nhân tích chập Convolution
-2. Các tham số quan trọng của phép convolution
-3. Kiến trúc mạng nơ ron tích chập Convolution Neural Network CNN
-4. Các mô hình CNN nổi tiếng
+###### 2. Các bài toán con của Computer vision
 
-([bài viết chi tiết](/blog/mang-no-ron-tich-chap-convolutional-neural-network/))
+###### 3. Ảnh raster và ảnh vector trong máy tính
 
-## Bài 3: Xử lý ảnh (Image processing) và tăng cường dữ liệu (Data augmentation)
+###### 4. Không gian màu Color Space
 
-([bài viết chi tiết](/blog/image-processing-data-augmentation/))
+###### 5. Workflow dự án Computer vision
 
-## Bài 4: Giới thiệu bài toán Object detection
+---
 
-([bài viết chi tiết](/blog/object-detection/))
+### [Bài 2: Mạng nơ ron tích chập Convolutional Neural Network](/blog/mang-no-ron-tich-chap-convolutional-neural-network)
 
-## Bài 5: Giới thiệu bài toán Image segmentation
+Mạng nơ ron tích chập Convolutional Neural Network (CNN) là một trong những kiến trúc mạng nơ ron phổ biến nhất trong lĩnh vực Computer Vision. CNN được xây dựng dựa trên phép nhân tích chập convolution, giúp mô hình học được các đặc tính không gian của ảnh đầu vào, giúp trích xuất các đặc trưng quan trọng của ảnh đầu vào.
 
-([bài viết chi tiết](/blog/image-segmentation/))
+###### 1. Công thức của phép nhân tích chập Convolution
 
-## Bài 6: Giới thiệu bài toán Image generation
+###### 2. Các tham số quan trọng của phép convolution
 
-([bài viết chi tiết](/blog/image-generation/))
+###### 3. Kiến trúc mạng nơ ron tích chập Convolution Neural Network CNN
 
-## Bài 7: Hệ sinh thái các bài toán khuôn mặt
+###### 4. Các mô hình CNN nổi tiếng
 
-([bài viết chi tiết](/blog/face-ecosystem/))
+---
 
-## Bài 8: Trực quan hoá mô hình CNN
-    
-([bài viết chi tiết](/blog/cnn-visualization/))
+### [Bài 3: Xử lý ảnh (Image processing) và tăng cường dữ liệu (Data augmentation)](/blog/image-processing-data-augmentation/)
 
-## Bài 9: Các mô hình xử lý dữ liệu video
+*Mình sẽ viết bài này trong thời gian tới*
 
-([bài viết chi tiết](/blog/video-processing/))
+---
+
+### [Bài 4: Giới thiệu bài toán Object detection](/blog/object-detection/)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+---
+
+### [Bài 5: Giới thiệu bài toán Image segmentation](/blog/image-segmentation/)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+---
+
+### [Bài 6: Giới thiệu bài toán Image generation](/blog/image-generation/)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+---
+
+### [Bài 7: Hệ sinh thái các bài toán khuôn mặt](/blog/face-ecosystem/)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+---
+
+### [Bài 8: Trực quan hoá mô hình CNN](/blog/cnn-visualization/)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+---
+
+### [Bài 9: Các mô hình xử lý dữ liệu video](/blog/video-processing/)
+
+*Mình sẽ viết bài này trong thời gian tới*

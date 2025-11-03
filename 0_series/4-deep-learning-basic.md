@@ -1,5 +1,5 @@
 ---
-time: 09/24/2022
+time: 05/19/2022
 title: "[SERIES] Deep learning cơ bản"
 description: Deep Learning trong những năm gần đây đã trở thành một trong những lĩnh vực nghiên cứu và ứng dụng phổ biến nhất và thành công nhất của trí tuệ nhân tạo. Về lý thuyết, Deep learning là một phần con của Machine Learning, tuy nhiên, trong thực tế hiện nay, chúng ta có thể chia Machine Learning thành 2 nhóm gồm Machine Learning truyền thống và Deep Learning. Lý do mà Deep Learning mạnh mẽ và phổ biến hiện nay nhờ khả năng hấp thụ dữ liệu lớn của mô hình mạng nơ ron.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/ai_vs_ml_vs_dl.jpeg

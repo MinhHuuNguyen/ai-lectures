@@ -1,5 +1,5 @@
 ---
-time: 10/08/2022
+time: 04/09/2022
 title: Transfer learning, weakly, semi, un và self supervised learning
 description: Transfer learning là một kỹ thuật quan trọng trong machine learning và deep learning, giúp cải thiện hiệu suất mô hình khi dữ liệu có hạn hoặc tăng tốc quá trình huấn luyện. Ngoài ra, các kỹ thuật weakly, semi, un và self supervised learning cũng đóng vai trò quan trọng trong việc tận dụng dữ liệu không có nhãn hoặc có nhãn không chính xác để cải thiện chất lượng mô hình.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/5-transfer-weakly-semi-un-self-supervised-learning/banner.jpeg

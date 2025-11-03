@@ -1,5 +1,5 @@
 ---
-time: 10/18/2022
+time: 04/12/2022
 title: Nén mô hình mạng nơ ron Model Compression
 description: Các mô hình mạng nơ ron có kích thước lớn và phức tạp có thể đạt được độ chính xác cao trên các bài toán khác nhau. Tuy nhiên, việc triển khai các mô hình này trên các thiết bị có tài nguyên hạn chế như các thiết bị di động hoặc các thiết bị IoT là một thách thức lớn. Nén mô hình mạng nơ ron là một giải pháp giúp giảm kích thước mô hình, tăng tốc độ tính toán và giảm tài nguyên cần thiết cho việc triển khai mô hình mà không làm suy giảm hiệu suất quá nhiều.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/6-model-compression/banner.jpeg

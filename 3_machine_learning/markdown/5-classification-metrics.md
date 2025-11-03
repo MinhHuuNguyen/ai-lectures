@@ -202,9 +202,9 @@ Với việc xây dựng được confusion matrix, ta cũng có thể tính to�
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_3class_precision_a.jpeg" style="width: 500px;"/>
 
-Trong thư viện scikit-learn, 
+<!-- Trong thư viện scikit-learn, 
 
-<!-- ## 6. Chỉ số ROC - AUC
+## 6. Chỉ số ROC - AUC
 
 ROC (Receiver Operating Characteristic) là một biểu đồ thể hiện mối quan hệ giữa tỷ lệ dương tính thực sự (True Positive Rate - TPR) và tỷ lệ âm tính giả (False Positive Rate - FPR) của một mô hình phân loại nhị phân.
 

@@ -1,5 +1,5 @@
 ---
-time: 02/19/2023
+time: 07/02/2022
 title: Xử lý ngôn ngữ tự nhiên Natural language processing
 description: Natural language processing là một lĩnh vực con của machine learning và deep learning giúp máy tính có khả năng hiểu và xử lý được thông tin dưới dạng văn bản. Ngôn ngữ là một phần không thể thiếu trong cuộc sống của con người, và việc máy tính có khả năng hiểu được ngôn ngữ tự nhiên của con người là một bước tiến lớn trong việc phát triển trí tuệ nhân tạo.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/banner.jpeg

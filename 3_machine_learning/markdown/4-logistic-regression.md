@@ -76,7 +76,7 @@ Nhược điểm của hàm Sigmoid là hàm có gradient rất nhỏ khi đầu
 
 ### 3.2. Hàm loss Binary Cross Entropy
 
-Giả sử, ta sử dụng bộ dữ liệu gồm có m phần tử $X = [x^1, x^2, \dots, x^i, \dots, x^m]$.
+Giả sử, ta sử dụng bộ dữ liệu gồm có m phần tử $X = [x^1, x^2, ..., x^i, ..., x^m]$.
 Xét điểm dữ liệu $x^i$, ta có $\sigma(W x^i)$ là xác suất mà mô hình dự đoán điểm dữ liệu $x^i$ thuộc lớp số 1 và $1 - \sigma(W x^i)$ là xác suất mà điểm dữ liệu $x^i$ thuộc lớp số 0.
 
 $$ P(y^i = 1 | x^i, W) = \sigma(W x^i) = \hat{y}^i $$
@@ -123,7 +123,7 @@ trong đó:
 
 ### 3.3. Tối ưu mô hình với hàm Sigmoid và hàm loss Binary Cross Entropy
 
-Xét bộ dữ liệu đầu vào $X = [x^1, x^2, \dots, x^i, \dots, x^m]$.
+Xét bộ dữ liệu đầu vào $X = [x^1, x^2, ..., x^i, ..., x^m]$.
 
 $$ z = WX $$
 $$ \hat{y} = \sigma(z) $$
@@ -223,7 +223,7 @@ Mô hình logistic regression giải quyết bài toán multi-class classificati
 Hàm Softmax là một làm số phi tuyến nhận đầu vào là một vector gồm bất kỳ giá trị nào trong khoảng $[- \infty, \infty]$ và trả đầu ra là một vector mới gồm các giá trị nằm trong khoảng $[0, 1]$ và tổng các giá trị trong vector này bằng 1.
 Từ đó, hàm Softmax là một logistic activation function phù hợp để giải quyết bài toán phân lớp nhiều lớp (multi-class classification).
 
-$$ \hat{y} = Softmax(z) = \left[\frac{e^{z_1}}{\sum_{i=1}^K e^{z_i}}, \frac{e^{z_2}}{\sum_{i=1}^K e^{z_i}}, \dots, \frac{e^{z_K}}{\sum_{i=1}^K e^{z_i}}\right] $$
+$$ \hat{y} = Softmax(z) = \left[\frac{e^{z_1}}{\sum_{i=1}^K e^{z_i}}, \frac{e^{z_2}}{\sum_{i=1}^K e^{z_i}}, ..., \frac{e^{z_K}}{\sum_{i=1}^K e^{z_i}}\right] $$
 
 Từng giá trị trên vector đầu ra của hàm Softmax có thể được hiểu như giá trị xác suất mà điểm dữ liệu thuộc lớp số 1, lớp số 2, lớp số 3, ... tương ứng với các lớp dữ liệu khác nhau.
 
@@ -239,7 +239,7 @@ Từng giá trị trên vector đầu ra của hàm Softmax có thể được h
 Với việc thay đổi logistic activation function, ta cần một hàm loss khác để tính toán giá trị loss trên tất cả các lớp trong bộ dữ liệu.
 Hàm loss này được gọi là hàm loss **Categorical Cross Entropy** và ta cũng có thể hiểu, Categorical Cross Entropy là một phiên bản khái quát hơn của Binary cross entropy.
 
-Giả sử, ta sử dụng bộ dữ liệu gồm có m phần tử $X = [x^1, x^2, \dots, x^i, \dots, x^m]$ và K lớp trong bộ dữ liệu.
+Giả sử, ta sử dụng bộ dữ liệu gồm có m phần tử $X = [x^1, x^2, ..., x^i, ..., x^m]$ và K lớp trong bộ dữ liệu.
 Xét điểm dữ liệu $x^i$, với hàm Softmax, ta thu được vector gồm các giá trị xác suất mà điểm dữ liệu $x^i$ thuộc lớp số 1, lớp số 2, lớp số 3, ... tương ứng với các lớp dữ liệu khác nhau.
 
 $$ P(y^i = k | x^i, W) = Softmax(W_kX) = \hat{y}^i_k $$

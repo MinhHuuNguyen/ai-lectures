@@ -1,5 +1,5 @@
 ---
-time: 11/04/2022
+time: 05/03/2022
 title: Mạng nơ ron tích chập Convolutional Neural Network
 description: Mạng nơ ron tích chập Convolutional Neural Network (CNN) là một trong những kiến trúc mạng nơ ron phổ biến nhất trong lĩnh vực Computer Vision. CNN được xây dựng dựa trên phép nhân tích chập convolution, giúp mô hình học được các đặc tính không gian của ảnh đầu vào, giúp trích xuất các đặc trưng quan trọng của ảnh đầu vào.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/2-convolution-neural-network/banner.jpeg

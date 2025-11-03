@@ -185,7 +185,7 @@ Tiêu chuẩn hoá thường được sử dụng khi dữ liệu có giả đ�
 Để huấn luyện mô hình dự báo chuỗi thời gian, ta thường chuyển đổi chuỗi thời gian thành dạng giám sát bằng cách tạo các đặc trưng là các giá trị trễ (lag features) của chuỗi.
 Khi dữ liệu đã được biến đổi như vậy, bất cứ mô hình hồi quy nào cũng có thể được huấn luyện để dự đoán bước tiếp theo
 
-Nếu dự báo giá trị tại thời điểm $t+1$, ta có thể dùng giá trị tại các bước trước $t, t-1, \dots, t-p$ làm các biến đầu vào.
+Nếu dự báo giá trị tại thời điểm $t+1$, ta có thể dùng giá trị tại các bước trước $t, t-1, ..., t-p$ làm các biến đầu vào.
 Trong đó, $p$ là số bước trễ mà ta muốn sử dụng làm đặc trưng, thường được gọi là window size.
 
 Ví dụ: Xét bộ dữ liệu về doanh thu hàng tháng trong 5 năm từ tháng 1 năm 2018 đến tháng 12 năm 2022, tức là ta có 60 điểm dữ liệu.

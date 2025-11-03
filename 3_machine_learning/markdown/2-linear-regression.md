@@ -188,7 +188,7 @@ MAE không nhạy cảm với các điểm dữ liệu có giá trị dự đoá
 Việc tối ưu mô hình Linear Regression là việc tìm ra các trọng số $w_1, w_2, ..., w_n$ và bias $b$ sao cho giá trị loss của mô hình là nhỏ nhất.
 Để làm được điều này, ta cần sử dụng một phương pháp tối ưu quen thuộc là sử dụng phép toán Đạo hàm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price_before_after.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/2-linear-regression/house_price_before_after.jpeg" style="width: 1000px;"/>
 
 Để ký hiệu toán học được đơn giản, ta sẽ sử dụng biến $w$ để ký hiệu tập hợp các trọng số $w_1, w_2, ..., w_n$ và bias $b$.
 Nghĩa là $w = [w_1, w_2, ..., w_n, b]$.

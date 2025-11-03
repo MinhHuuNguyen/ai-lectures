@@ -1,5 +1,5 @@
 ---
-time: 10/01/2022
+time: 04/05/2022
 title: Các biến thể nâng cấp của thuật toán tối ưu Gradient descent
 description: Gradient Descent là một thuật toán tối ưu hóa quan trọng trong Machine Learning, nhưng có thể gặp một số vấn đề trong quá trình hội tụ. Trong bài viết này, chúng ta sẽ tìm hiểu về các biến thể nâng cấp của Gradient Descent như Stochastic Gradient Descent (SGD), Mini-batch Gradient Descent, Momentum Gradient Descent, Nesterov Accelerated Gradient (NAG), và các thuật toán tối ưu hóa khác như AdaGrad, RMSProp, Adam, và nhiều biến thể khác.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/3-gradient-descent/banner.jpeg

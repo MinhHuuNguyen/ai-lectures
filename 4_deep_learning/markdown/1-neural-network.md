@@ -1,5 +1,5 @@
 ---
-time: 08/30/2022
+time: 03/29/2022
 title: Mô hình mạng nơ ron đơn giản Neural network
 description: Mô hình mạng nơ ron đơn giản Neural network là một mô hình tính toán lấy cảm hứng từ cấu trúc và hoạt động của bộ não con người. Mô hình mạng nơ ron đơn giản là nền tảng cho sự phát triển của các mô hình mạng nơ ron phức tạp hơn được sử dụng trong các mô hình Trí tuệ nhân tạo nổi tiếng hiện nay.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/banner.jpeg
@@ -202,17 +202,21 @@ Feedforward là quá trình neural network nhận đầu vào input layer, thự
 Hàm loss được sinh ra để đo đạc độ lệch (hay độ sai khác) giữa lời dự đoán của mô hình và giá trị thực tế đúng trong bộ dữ liệu.
 Từ giá trị độ lệch này, mô hình sẽ được huấn luyện và tối ưu giúp độ chính xác của mô hình cải thiện dần theo thời gian.
 
-Chúng ta đã nghiên cứu về khá loại hàm loss khác nhau, đối với hai bài toán cơ bản trong Machine Learning là Regression và Classification, ta có:
-- Đối với bài toán Regression:
-    - **Mean absolute error**:
-    $$ MAE(\hat{y}, y) = \frac{1}{N}\sum_{i=1}^{N} |\hat{y}_i - y_i| $$
-    - **Mean squared error**:
-    $$ MSE(\hat{y}, y) = \frac{1}{N}\sum_{i=1}^{N} (\hat{y}_i - y_i)^2 $$
-- Đối với bài toán Classification:
-    - **Binary cross entropy**:
-    $$BCE(\hat{y}, y) = - \sum_{i=1}^{N} (y^i \log \hat{y}^i + (1 - y^i) \log(1 - \hat{y}^i)) $$
-    - **Categorical cross entropy** hay **Cross entropy**:
-    $$ CE(\hat{y}, y) = - \sum_{i=1}^{N} \sum_{j=1}^{K} (y^{ij} \log \hat{y}^{ij})$$
+Chúng ta đã nghiên cứu về khá loại hàm loss khác nhau, đối với hai bài toán cơ bản trong Machine Learning là Regression và Classification.
+
+#### Đối với bài toán Regression:
+
+- **Mean absolute error**:
+$$ MAE(\hat{y}, y) = \frac{1}{N}\sum_{i=1}^{N} |\hat{y}_i - y_i| $$
+- **Mean squared error**:
+$$ MSE(\hat{y}, y) = \frac{1}{N}\sum_{i=1}^{N} (\hat{y}_i - y_i)^2 $$
+
+#### Đối với bài toán Classification:
+
+- **Binary cross entropy**:
+$$BCE(\hat{y}, y) = - \sum_{i=1}^{N} (y^i \log \hat{y}^i + (1 - y^i) \log(1 - \hat{y}^i)) $$
+- **Categorical cross entropy** hay **Cross entropy**:
+$$ CE(\hat{y}, y) = - \sum_{i=1}^{N} \sum_{j=1}^{K} (y^{ij} \log \hat{y}^{ij})$$
 
 ### 4.3. Tính toán đạo hàm và cập nhật trọng số của mô hình - Model Backpropagation
 
