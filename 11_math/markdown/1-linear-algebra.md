@@ -23,11 +23,11 @@ Do đó, bất kỳ đối tượng toán học nào thoả mãn hai tính chấ
 
 Ví dụ: Trong hình học giải tích, một vector hình học được biểu diễn dưới dạng một mũi tên trong không gian tọa độ.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector.jpeg" style="width: 400px;"/>
 
 Một cách cụ thể hơn, trong đại số tuyến tính, **vector là một dãy các số thực được sắp xếp theo thứ tự, có thể biểu diễn dưới dạng cột hoặc dạng hàng**.
 
-Cho một số nguyên dương $n \in N$, một vector $x$ gồm $n$ phần tử được biểu diễn như sau.
+Cho một số nguyên dương $n \in N$, một vector cột $x$ gồm $n$ phần tử được biểu diễn như sau.
 
 $$
 x =
@@ -36,12 +36,16 @@ x_{1} \\
 x_{2} \\
 ... \\
 x_{n}
-\end{bmatrix} , x_{i} \in R
+\end{bmatrix}, x_{i} \in R
 $$
+
+Một vector được gọi là vector cột hay vector hàng không quá quan trọng trong đại số tuyến tính, vì ta có thể dễ dàng chuyển đổi giữa hai dạng này thông qua phép chuyển vị (transpose).
+Việc biểu diễn vector dưới dạng cột hay hàng thường phụ thuộc vào ngữ cảnh sử dụng trong các phép toán.
 
 ### 1.2. Ma trận
 
-Cho hai số nguyên dương $m, n \in N$, một ma trận các giá trị thực $A$ là nhóm $m \times n$ giá trị thực $a_{ij}$ (với $i = 1, ..., m$ và $j = 1, ..., n$) được sắp xếp theo thứ tự thành hình chữ nhật gồm $m$ hàng và $n$ cột.
+Cho hai số nguyên dương $m, n \in N$, một ma trận các giá trị số thực $A$ là nhóm $m \times n$ giá trị thực $a_{ij}$ (với $i = 1, ..., m$ và $j = 1, ..., n$) được sắp xếp theo thứ tự thành hình chữ nhật gồm $m$ hàng và $n$ cột.
+
 Các hàng hoặc cột trong ma trận được gọi là các vector hàng hoặc vector cột.
 
 $$
@@ -49,12 +53,13 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
+... & ... & ... & ... \\
 a_{m1} & a_{m2} & ... & a_{mn}
-\end{bmatrix} , a_{ij} \in R
+\end{bmatrix}, a_{ij} \in R
 $$
 
-Ma trận A ở trên gồm m hàng, n cột và $m*n$ giá trị thực, do đó, ma trận A được ký hiệu $A \in R^{m \times n}$.
+Ma trận A ở trên gồm m hàng, n cột và $m * n$ giá trị thực, do đó, ma trận A được ký hiệu $A \in R^{m \times n}$.
+
 Trong một số trường hợp, ta có thể ký hiệu ma trận $A \in R^{m \times n}$ dưới dạng vector $a \in R^{mn}$ bằng cách ghép các cột của ma trận lại tạo ra một vector dài.
 
 $$
@@ -72,9 +77,8 @@ a_{m2} \\
 a_{1n} \\
 a_{2n} \\
 ... \\
-a_{mn} \\
-\end{bmatrix}
-, a_{ij} \in R
+a_{mn}
+\end{bmatrix}, a_{ij} \in R
 $$
 
 ### 1.3. Tensor
@@ -82,10 +86,15 @@ $$
 Tensor là một khái niệm tổng quát hoá của vector và ma trận.
 Cụ thể, vector là tensor bậc nhất (1D), ma trận là tensor bậc hai (2D), và tensor có thể có bậc cao hơn (3D, 4D, ..., nD).
 
+Hình ảnh dưới đây được lấy từ cuốn sách [Deep Learning with PyTorch](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/deep_learning_pytorch_stevens.pdf) của nhóm tác giả Eli Stevens, Luca Antiga và Thomas Viehmann, minh họa các khái niệm về vector, ma trận và tensor.
+
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/tensor.jpeg" style="width: 800px;"/>
 
 Một tensor bậc $n$ có thể được biểu diễn như một mảng đa chiều với $n$ chỉ số.
 Ví dụ, một tensor bậc ba có thể được biểu diễn như một khối lập phương gồm các giá trị thực.
+
+Khi làm việc với những loại dữ liệu phức tạp như hình ảnh màu (có ba kênh RGB) hoặc chuỗi video (có thêm chiều thời gian), tensor trở thành công cụ hữu ích để biểu diễn và xử lý dữ liệu này một cách hiệu quả.
+Ngoài ra, khi làm việc với những mô hình deep learning phức tạp, tensor giúp biểu diễn các tham số và trọng số của mô hình một cách trực quan và dễ dàng thao tác.
 
 Tensor là khái niệm được sử dụng rất nhiều trong các thư viện deep learning như TensorFlow, PyTorch ...
 
@@ -95,12 +104,12 @@ Không gian vector (vector space) là một tập hợp các vector, trong đó 
 
 Không gian vector thường được sử dụng để biểu diễn dữ liệu trong machine learning, nơi mỗi vector đại diện cho một điểm dữ liệu trong không gian nhiều chiều, khi đó, không gian vector được gọi là không gian dữ liệu (data space).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector_space.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector_space.jpeg" style="width: 600px;"/>
 
 Trong lĩnh vực xử lý ngôn ngữ tự nhiên, không gian vector được sử dụng để biểu diễn các từ dưới dạng các vector trong không gian nhiều chiều.
 Trong đó, các từ có ý nghĩa tương tự sẽ được biểu diễn bởi các vector gần nhau trong không gian này.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/data_space.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/data_space.jpeg" style="width: 600px;"/>
 
 Gần đây, có những mô hình machine learning có khả năng biểu diễn không chỉ từ mà còn cả hình ảnh dưới dạng vector trong cùng một không gian vector, điều này giúp việc tìm kiếm thông tin đa phương tiện trở nên hiệu quả hơn.
 
@@ -115,8 +124,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{m1} & a_{m2} & ... & a_{mn} \\
+... & ... & ... & ... \\
+a_{m1} & a_{m2} & ... & a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 ,
@@ -125,8 +134,8 @@ B =
 \begin{bmatrix}
 b_{11} & b_{12} & ... & b_{1n} \\
 b_{21} & b_{22} & ... & b_{2n} \\
-... & ... & & ... \\
-b_{m1} & b_{m2} & ... & b_{mn} \\
+... & ... & ... & ... \\
+b_{m1} & b_{m2} & ... & b_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -134,8 +143,8 @@ $$
 $$
 A = B \Leftrightarrow
 \begin{cases}
-  a_{ij} = b_{ij} \\
-  \forall i = 1, 2, ..., m; j = 1, 2, ..., n
+a_{ij} = b_{ij} \\
+\forall i = 1, 2, ..., m; j = 1, 2, ..., n
 \end{cases}
 $$
 
@@ -148,8 +157,8 @@ $$
 \begin{bmatrix}
 0 & 0 & ... & 0 \\
 0 & 0 & ... & 0 \\
-... & ... & & ... \\
-0 & 0 & ... & 0 \\
+... & ... & ... & ... \\
+0 & 0 & ... & 0
 \end{bmatrix}
 $$
 
@@ -162,8 +171,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{m1} & a_{m2} & ... & a_{mn} \\
+... & ... & ... & ... \\
+a_{m1} & a_{m2} & ... & a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 ,
@@ -172,8 +181,8 @@ a_{m1} & a_{m2} & ... & a_{mn} \\
 \begin{bmatrix}
 - a_{11} & - a_{12} & ... & - a_{1n} \\
 - a_{21} & - a_{22} & ... & - a_{2n} \\
-... & ... & & ... \\
-- a_{m1} & - a_{m2} & ... & - a_{mn} \\
+... & ... & ... & ... \\
+- a_{m1} & - a_{m2} & ... & - a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -187,8 +196,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{n1} & a_{n2} & ... & a_{nn} \\
+... & ... & ... & ... \\
+a_{n1} & a_{n2} & ... & a_{nn}
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -204,8 +213,8 @@ A_1 =
 \begin{bmatrix}
 a_{11} & 0 & ... & 0 \\
 a_{21} & a_{22} & ... & 0 \\
-... & ... & & ... \\
-a_{n1} & a_{n2} & ... & a_{nn} \\
+... & ... & ... & ... \\
+a_{n1} & a_{n2} & ... & a_{nn}
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -215,8 +224,8 @@ A_2 =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 0 & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-0 & 0 & ... & a_{nn} \\
+... & ... & ... & ... \\
+0 & 0 & ... & a_{nn}
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -232,8 +241,8 @@ A_1 =
 \begin{bmatrix}
 1 & 0 & ... & 0 \\
 0 & 1 & ... & 0 \\
-... & ... & & ... \\
-0 & 0 & ... & 1 \\
+... & ... & ... & ... \\
+0 & 0 & ... & 1
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -248,8 +257,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{m1} & a_{m2} & ... & a_{mn} \\
+... & ... & ... & ... \\
+a_{m1} & a_{m2} & ... & a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -259,8 +268,8 @@ A^T =
 \begin{bmatrix}
 a_{11} & a_{21} & ... & a_{m1} \\
 a_{12} & a_{22} & ... & a_{m2} \\
-... & ... & & ... \\
-a_{1n} & a_{2n} & ... & a_{mn} \\
+... & ... & ... & ... \\
+a_{1n} & a_{2n} & ... & a_{mn}
 \end{bmatrix}
 \in R^{n \times m}
 $$
@@ -275,8 +284,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{12} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{1n} & a_{2n} & ... & a_{nn} \\
+... & ... & ... & ... \\
+a_{1n} & a_{2n} & ... & a_{nn}
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -286,8 +295,8 @@ A^T =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{12} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{1n} & a_{2n} & ... & a_{nn} \\
+... & ... & ... & ... \\
+a_{1n} & a_{2n} & ... & a_{nn}
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -303,7 +312,7 @@ $$
 A =
 \begin{bmatrix}
 a_{11} & a_{12} \\
-a_{21} & a_{22} \\
+a_{21} & a_{22}
 \end{bmatrix}
 \in R^{2 \times 2}
 $$
@@ -312,7 +321,7 @@ $$
 A^{-1} = \frac{1}{a_{11}a_{22} - a_{12}a_{21}}
 \begin{bmatrix}
 a_{22} & - a_{12} \\
-- a_{21} & a_{11} \\
+- a_{21} & a_{11}
 \end{bmatrix}
 \in R^{2 \times 2}
 $$
@@ -421,10 +430,10 @@ Ta có hai bộ phim với thang điểm trên từng thể loại như sau:
 - Phim 2: nhiều yếu tố hài (5 điểm) và hành động (5 điểm), ít yếu tố lãng mạn (1 điểm): $b_2 = \begin{bmatrix} 5 & 1 & 5 \end{bmatrix}$
 
 Áp dụng tích vô hướng, ta có thể tính toán được mức độ tương đồng giữa sở thích của khán giả và các tính chất của phim:
-- Đối với phim 1: $a \cdot b_1 = 5 * 4 + 1 * 5 + 3 * 1 = 28 $.
-- Đối với phim 2: $a \cdot b_2 = 5 * 5 + 1 * 1 + 3 * 5 = 41 $.
+- Đối với phim 1: $a \cdot b_1 = 5 * 4 + 1 * 5 + 3 * 1 = 28$.
+- Đối với phim 2: $a \cdot b_2 = 5 * 5 + 1 * 1 + 3 * 5 = 41$.
 
-Do đó, ta có thể kết luận rằng người khán giả này có khả năng cao hơn sẽ thích phim 2.
+Do đó, ta có thể kết luận rằng người khán giả này có khả năng cao hơn sẽ thích phim 2 hơn so với phim 1 vì điểm số tích vô hướng của phim 2 (41) cao hơn phim 1 (28).
 
 ### 3.2. Các phép toán trên ma trận
 
@@ -435,8 +444,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{m1} & a_{m2} & ... & a_{mn} \\
+... & ... & ... & ... \\
+a_{m1} & a_{m2} & ... & a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 ,
@@ -445,8 +454,8 @@ B =
 \begin{bmatrix}
 b_{11} & b_{12} & ... & b_{1n} \\
 b_{21} & b_{22} & ... & b_{2n} \\
-... & ... & & ... \\
-b_{m1} & b_{m2} & ... & b_{mn} \\
+... & ... & ... & ... \\
+b_{m1} & b_{m2} & ... & b_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -456,8 +465,8 @@ A + B =
 \begin{bmatrix}
 a_{11} + b_{11} & a_{12} + b_{12} & ... & a_{1n} + b_{1n} \\
 a_{21} + b_{21} & a_{22} + b_{22} & ... & a_{2n} + b_{2n} \\
-... & ... & & ... \\
-a_{m1} + b_{m1} & a_{m2} + b_{m2} & ... & a_{mn} + b_{mn} \\
+... & ... & ... & ... \\
+a_{m1} + b_{m1} & a_{m2} + b_{m2} & ... & a_{mn} + b_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -475,8 +484,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{m1} & a_{m2} & ... & a_{mn} \\
+... & ... & ... & ... \\
+a_{m1} & a_{m2} & ... & a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 ,
@@ -488,8 +497,8 @@ x \cdot A =
 \begin{bmatrix}
 x \cdot a_{11} & x \cdot a_{12} & ... & x \cdot a_{1n} \\
 x \cdot a_{21} & x \cdot a_{22} & ... & x \cdot a_{2n} \\
-... & ... & & ... \\
-x \cdot a_{m1} & x \cdot a_{m2} & ... & x \cdot a_{mn} \\
+... & ... & ... & ... \\
+x \cdot a_{m1} & x \cdot a_{m2} & ... & x \cdot a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -503,8 +512,8 @@ A =
 \begin{bmatrix}
 a_{11} & a_{12} & ... & a_{1n} \\
 a_{21} & a_{22} & ... & a_{2n} \\
-... & ... & & ... \\
-a_{m1} & a_{m2} & ... & a_{mn} \\
+... & ... & ... & ... \\
+a_{m1} & a_{m2} & ... & a_{mn}
 \end{bmatrix}
 \in R^{m \times n}
 ,
@@ -513,8 +522,8 @@ B =
 \begin{bmatrix}
 b_{11} & b_{12} & ... & b_{1k} \\
 b_{21} & b_{22} & ... & b_{2k} \\
-... & ... & & ... \\
-b_{n1} & b_{n2} & ... & b_{nk} \\
+... & ... & ... & ... \\
+b_{n1} & b_{n2} & ... & b_{nk}
 \end{bmatrix}
 \in R^{n \times k}
 $$
@@ -524,8 +533,8 @@ AB =
 \begin{bmatrix}
 c_{11} & c_{12} & ... & c_{1k} \\
 c_{21} & c_{22} & ... & c_{2k} \\
-... & ... & & ... \\
-c_{m1} & c_{m2} & ... & c_{mk} \\
+... & ... & ... & ... \\
+c_{m1} & c_{m2} & ... & c_{mk}
 \end{bmatrix}
 \in R^{m \times k}
 $$
@@ -542,18 +551,46 @@ Phép nhân ma trận với ma trận có các tính chất:
 - Không có tính chất giao hoán
 - Tính chất kết hợp: $(AB)C = A(BC)$
 - Tính chất phân phối giữa phép nhân và phép cộng ma trận:
-    - A(B + C) = AB + AC
-    - (B + C)D = BD + CD
+  - A(B + C) = AB + AC
+  - (B + C)D = BD + CD
 - Nhân với ma trận đơn vị:
-    - AI = A
-    - BI = B
-    - Nếu A là ma trận vuông: AI = IA = A
+  - AI = A
+  - BI = B
+  - Nếu A là ma trận vuông: AI = IA = A
 
 ## 4. Một số ứng dụng trong Machine Learning
 
 ### 4.1. Bài toán Giảm chiều Dữ liệu (Dimensionality Reduction)
 
+Giảm chiều dữ liệu (Dimensionality reduction) là quá trình giảm số chiều của dữ liệu trong không gian đa chiều.
+Mục tiêu của quá trình này là làm cho việc xử lý và phân tích dữ liệu trở nên hiệu quả hơn mà không làm mất đi quá nhiều thông tin quan trọng.
+
+Có hai loại chính của mô hình giảm chiều dữ liệu: **Giảm chiều dữ liệu tuyến tính** và **Giảm chiều dữ liệu phi tuyến tính**.
+Ở đây, ta sẽ nói về việc ứng dụng đại số tuyến tính trong giảm chiều dữ liệu tuyến tính, cụ thể là phương pháp **Phân tích thành phần chính (Principal Component Analysis - PCA)**.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/13-pca/idea.jpeg" style="width: 500px;"/>
+
+PCA giúp giảm số chiều của dữ liệu bằng cách tìm kiếm các thành phần chính (principal components) mà giữ lại nhiều phương sai nhất trong dữ liệu.
+Điều này giúp bảo toàn sự biến động lớn nhất trong dữ liệu.
+
+Nói cách khác, PCA sẽ đánh giá mức độ quan trọng của từng chiều dữ liệu và loại bỏ những chiều không quan trọng, từ đó giảm số chiều của dữ liệu.
+
+Để làm được điều này PCA sử dụng hai khái niệm quan trọng trong đại số tuyến tính là **Eigenvector** là vector riêng và **Eigenvalue** là giá trị riêng.
+
+Để hiểu rõ hơn về hai khái niệm **Eigenvector** và **Eigenvalue** cũng như là cách áp dụng hai khái niệm này trong mô hình PCA, bạn có thể tham khảo bài viết [Giá trị riêng eigenvalues và vector riêng eigenvectors](/blog/gia-tri-rieng-eigenvalues-va-vector-rieng-eigenvectors) và bài viết [Mô hình PCA](/blog/mo-hinh-pca).
+
 ### 4.2. Phép biến đổi tuyến tính và mạng Nơ-ron (Neural Networks)
 
-### 4.3. Chuẩn hoá và khoảng cách
+Phép biến đổi tuyến tính (Linear transformation) là một phép biến đổi giữa hai không gian vector mà giữ nguyên các phép toán cộng vector và nhân vector với một số vô hướng.
+Phép biến đổi tuyến tính có thể được biểu diễn dưới dạng **phép nhân ma trận**.
 
+Trong mạng nơ-ron, mỗi lớp của mạng có thể được xem như một phép biến đổi tuyến tính áp dụng lên đầu vào của lớp đó.
+Ý nghĩa của việc sử dụng phép biến đổi tuyến tính trong mạng nơ-ron là giúp mô hình học được các đặc trưng phức tạp từ dữ liệu đầu vào thông qua việc kết hợp các trọng số và bias.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/dnn.jpeg" style="width: 500px;"/>
+
+Nói cách khác, việc biến đổi tuyến tính từ dữ liệu ban đầu sang không gian đặc trưng mới giúp mạng nơ-ron có khả năng biểu diễn và trích xuất được ra những đặc trưng quan trọng của dữ liệu, từ đó cải thiện hiệu suất của mô hình trong các nhiệm vụ như phân loại, hồi quy hay nhận dạng mẫu.
+
+Để hiểu rõ hơn về sử dụng phép biến đổi tuyến tính (hay phép nhân ma trận) trong mô hình mạng nơ ron, bạn có thể tham khảo bài viết [Mô hình hồi quy tuyến tính Linear Regression](/blog/mo-hinh-hoi-quy-tuyen-tinh-linear-regression) và bài viết [Mô hình mạng nơ ron đơn giản Neural network](/blog/mo-hinh-mang-no-ron-don-gian-neural-network).
+
+<!-- ### 4.3. Chuẩn hoá và khoảng cách -->

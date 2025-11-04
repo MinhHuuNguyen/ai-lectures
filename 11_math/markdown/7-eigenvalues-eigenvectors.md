@@ -50,7 +50,7 @@ Từ độ lớn của các giá trị riêng, ta có thể lựa chọn các gi
 Từ thành phần chính này, ta có thể tạo ra ma trận mới $A'$ với kích thước nhỏ hơn ma trận $A$ nhưng vẫn giữ được thông tin quan trọng nhất của ma trận $A$.
 
 
-https://chatgpt.com/share/682bf36c-91d4-8001-8f4d-459e1917c9a6
+<!-- https://chatgpt.com/share/682bf36c-91d4-8001-8f4d-459e1917c9a6
 
 
 ## 3. Ví dụ cách tính
@@ -82,4 +82,4 @@ A - \lambda I = \begin{pmatrix}
   3 & 1 & 4 & 2 - \lambda
 \end{pmatrix}
 $$
-$$
+$$ -->
