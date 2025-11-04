@@ -10,6 +10,24 @@ is_published: true
 
 ---
 
+### [Bài 0: Cài đặt môi trường lập trình Python](/blog/cai-dat-moi-truong-lap-trinh-python)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+Để khởi đầu việc sử dụng ngôn ngữ lập trình Python, ta cần cài đặt môi trường lập trình Python. Một số công cụ quản lý môi trường và thư viện Python phổ biến hiện nay là pip, virtualenv, Anaconda và uv. Bài viết này sẽ hướng dẫn bạn cách cài đặt và sử dụng các công cụ này.
+
+###### 1. Cài đặt ngôn ngữ lập trình Python
+
+###### 2. Quản lý môi trường Python với virtualenv
+
+###### 3. Quản lý môi trường Python với Anaconda / Miniconda
+
+###### 4. Thực thi các câu lệnh Python
+
+###### 5. Giới thiệu về uv package manager
+
+---
+
 ### [Bài 1: Giới thiệu chung về ngôn ngữ lập trình Python](/blog/gioi-thieu-chung-ve-ngon-ngu-lap-trinh-python)
 
 Bài viết này sẽ giới thiệu một số ứng dụng và lý do khiến Python trở nên phổ biến. Ngoài ra, chúng ta cũng sẽ tìm hiểu một số thao tác lập trình cơ bản với Python như import thư viện, comment, đặt tên biến dữ liệu, ...

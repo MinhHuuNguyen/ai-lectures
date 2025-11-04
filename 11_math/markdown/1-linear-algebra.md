@@ -2,7 +2,7 @@
 time: 12/16/2022
 title: Đại số tuyến tính Linear Algebra
 description: Đại số tuyến tính là nền tảng toán học cốt lõi trong machine learning, cung cấp ngôn ngữ và công cụ để biểu diễn và xử lý dữ liệu dưới dạng vector, ma trận và tensor. Các phép toán như nhân ma trận, chuẩn hóa vector hay phân rã ma trận được sử dụng trong hầu hết các thuật toán học máy, từ hồi quy tuyến tính đến mạng nơ-ron sâu. Nhờ đại số tuyến tính, việc tối ưu hóa mô hình, biểu diễn đặc trưng và xử lý dữ liệu quy mô lớn trở nên hiệu quả và chính xác hơn.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true
@@ -23,7 +23,7 @@ Do đó, bất kỳ đối tượng toán học nào thoả mãn hai tính chấ
 
 Ví dụ: Trong hình học giải tích, một vector hình học được biểu diễn dưới dạng một mũi tên trong không gian tọa độ.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector.jpeg" style="width: 600px;"/>
 
 Một cách cụ thể hơn, trong đại số tuyến tính, **vector là một dãy các số thực được sắp xếp theo thứ tự, có thể biểu diễn dưới dạng cột hoặc dạng hàng**.
 
@@ -32,28 +32,26 @@ Cho một số nguyên dương $n \in N$, một vector $x$ gồm $n$ phần tử
 $$
 x =
 \begin{bmatrix}
-x_{1}
-x_{2}
-\dots
+x_{1} \\
+x_{2} \\
+... \\
 x_{n}
-\end{bmatrix}
-, x_{i} \in R
+\end{bmatrix} , x_{i} \in R
 $$
 
 ### 1.2. Ma trận
 
-Cho hai số nguyên dương $m, n \in N$, một ma trận các giá trị thực $A$ là nhóm $m \times n$ giá trị thực $a_{ij}$ (với $i = 1, \dots, m$ và $j = 1, \dots, n$) được sắp xếp theo thứ tự thành hình chữ nhật gồm $m$ hàng và $n$ cột.
+Cho hai số nguyên dương $m, n \in N$, một ma trận các giá trị thực $A$ là nhóm $m \times n$ giá trị thực $a_{ij}$ (với $i = 1, ..., m$ và $j = 1, ..., n$) được sắp xếp theo thứ tự thành hình chữ nhật gồm $m$ hàng và $n$ cột.
 Các hàng hoặc cột trong ma trận được gọi là các vector hàng hoặc vector cột.
 
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} & a_{m2} & \dots & a_{mn} \\
-\end{bmatrix}
-, a_{ij} \in R
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{m1} & a_{m2} & ... & a_{mn}
+\end{bmatrix} , a_{ij} \in R
 $$
 
 Ma trận A ở trên gồm m hàng, n cột và $m*n$ giá trị thực, do đó, ma trận A được ký hiệu $A \in R^{m \times n}$.
@@ -64,16 +62,16 @@ a =
 \begin{bmatrix}
 a_{11} \\
 a_{21} \\
-\dots \\
+... \\
 a_{m1} \\
 a_{12} \\
 a_{22} \\
-\dots \\
+... \\
 a_{m2} \\
-\dots \\
+... \\
 a_{1n} \\
 a_{2n} \\
-\dots \\
+... \\
 a_{mn} \\
 \end{bmatrix}
 , a_{ij} \in R
@@ -84,7 +82,7 @@ $$
 Tensor là một khái niệm tổng quát hoá của vector và ma trận.
 Cụ thể, vector là tensor bậc nhất (1D), ma trận là tensor bậc hai (2D), và tensor có thể có bậc cao hơn (3D, 4D, ..., nD).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/tensor.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/tensor.jpeg" style="width: 800px;"/>
 
 Một tensor bậc $n$ có thể được biểu diễn như một mảng đa chiều với $n$ chỉ số.
 Ví dụ, một tensor bậc ba có thể được biểu diễn như một khối lập phương gồm các giá trị thực.
@@ -97,12 +95,12 @@ Không gian vector (vector space) là một tập hợp các vector, trong đó 
 
 Không gian vector thường được sử dụng để biểu diễn dữ liệu trong machine learning, nơi mỗi vector đại diện cho một điểm dữ liệu trong không gian nhiều chiều, khi đó, không gian vector được gọi là không gian dữ liệu (data space).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector_space.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/vector_space.jpeg" style="width: 800px;"/>
 
 Trong lĩnh vực xử lý ngôn ngữ tự nhiên, không gian vector được sử dụng để biểu diễn các từ dưới dạng các vector trong không gian nhiều chiều.
 Trong đó, các từ có ý nghĩa tương tự sẽ được biểu diễn bởi các vector gần nhau trong không gian này.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/data_space.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/data_space.jpeg" style="width: 800px;"/>
 
 Gần đây, có những mô hình machine learning có khả năng biểu diễn không chỉ từ mà còn cả hình ảnh dưới dạng vector trong cùng một không gian vector, điều này giúp việc tìm kiếm thông tin đa phương tiện trở nên hiệu quả hơn.
 
@@ -115,20 +113,20 @@ Hai ma trận được gọi là bằng nhau nếu từng giá trị ở từng 
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} & a_{m2} & \dots & a_{mn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{m1} & a_{m2} & ... & a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 ,
 
 B =
 \begin{bmatrix}
-b_{11} & b_{12} & \dots & b_{1n} \\
-b_{21} & b_{22} & \dots & b_{2n} \\
-\dots & \dots & & \dots \\
-b_{m1} & b_{m2} & \dots & b_{mn} \\
+b_{11} & b_{12} & ... & b_{1n} \\
+b_{21} & b_{22} & ... & b_{2n} \\
+... & ... & & ... \\
+b_{m1} & b_{m2} & ... & b_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -137,7 +135,7 @@ $$
 A = B \Leftrightarrow
 \begin{cases}
   a_{ij} = b_{ij} \\
-  \forall i = 1, 2, \dots, m; j = 1, 2, \dots, n
+  \forall i = 1, 2, ..., m; j = 1, 2, ..., n
 \end{cases}
 $$
 
@@ -148,10 +146,10 @@ Ma trận không là ma trận gồm tất cả các giá trị là số 0.
 $$
 0^{m \times n} =
 \begin{bmatrix}
-0 & 0 & \dots & 0 \\
-0 & 0 & \dots & 0 \\
-\dots & \dots & & \dots \\
-0 & 0 & \dots & 0 \\
+0 & 0 & ... & 0 \\
+0 & 0 & ... & 0 \\
+... & ... & & ... \\
+0 & 0 & ... & 0 \\
 \end{bmatrix}
 $$
 
@@ -162,20 +160,20 @@ Hai ma trận được gọi là đối nhau nếu từng giá trị ở từng 
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} & a_{m2} & \dots & a_{mn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{m1} & a_{m2} & ... & a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 ,
 
 - A =
 \begin{bmatrix}
-- a_{11} & - a_{12} & \dots & - a_{1n} \\
-- a_{21} & - a_{22} & \dots & - a_{2n} \\
-\dots & \dots & & \dots \\
-- a_{m1} & - a_{m2} & \dots & - a_{mn} \\
+- a_{11} & - a_{12} & ... & - a_{1n} \\
+- a_{21} & - a_{22} & ... & - a_{2n} \\
+... & ... & & ... \\
+- a_{m1} & - a_{m2} & ... & - a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -187,15 +185,15 @@ Ma trận vuông là ma trận có số hàng bằng số cột
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{n1} & a_{n2} & ... & a_{nn} \\
 \end{bmatrix}
 \in R^{n \times n}
 $$
 
-Các phần từ có vị trí hàng bằng vị trí cột tạo nên **đường chéo chính** của ma trận, cụ thể, đường chéo chính gồm các phần tử $a_{11}, a_{22}, a_{33}, \dots, a_{nn}$.
+Các phần từ có vị trí hàng bằng vị trí cột tạo nên **đường chéo chính** của ma trận, cụ thể, đường chéo chính gồm các phần tử $a_{11}, a_{22}, a_{33}, ..., a_{nn}$.
 
 ### 2.5. Ma trận tam giác (Triangular matrix)
 
@@ -204,10 +202,10 @@ Xuất phát từ ma trận vuông, ma trận tam giác có toàn bộ các ph�
 $$
 A_1 =
 \begin{bmatrix}
-a_{11} & 0 & \dots & 0 \\
-a_{21} & a_{22} & \dots & 0 \\
-\dots & \dots & & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\
+a_{11} & 0 & ... & 0 \\
+a_{21} & a_{22} & ... & 0 \\
+... & ... & & ... \\
+a_{n1} & a_{n2} & ... & a_{nn} \\
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -215,10 +213,10 @@ $$
 $$
 A_2 =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-0 & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-0 & 0 & \dots & a_{nn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+0 & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+0 & 0 & ... & a_{nn} \\
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -232,10 +230,10 @@ Xuất phát từ ma trận vuông, ma trận đơn vị là ma trận có toàn
 $$
 A_1 =
 \begin{bmatrix}
-1 & 0 & \dots & 0 \\
-0 & 1 & \dots & 0 \\
-\dots & \dots & & \dots \\
-0 & 0 & \dots & 1 \\
+1 & 0 & ... & 0 \\
+0 & 1 & ... & 0 \\
+... & ... & & ... \\
+0 & 0 & ... & 1 \\
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -248,10 +246,10 @@ Ma trận chuyển vị của ma trận $A$ được ký hiệu là $A^T$
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} & a_{m2} & \dots & a_{mn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{m1} & a_{m2} & ... & a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -259,10 +257,10 @@ $$
 $$
 A^T =
 \begin{bmatrix}
-a_{11} & a_{21} & \dots & a_{m1} \\
-a_{12} & a_{22} & \dots & a_{m2} \\
-\dots & \dots & & \dots \\
-a_{1n} & a_{2n} & \dots & a_{mn} \\
+a_{11} & a_{21} & ... & a_{m1} \\
+a_{12} & a_{22} & ... & a_{m2} \\
+... & ... & & ... \\
+a_{1n} & a_{2n} & ... & a_{mn} \\
 \end{bmatrix}
 \in R^{n \times m}
 $$
@@ -275,10 +273,10 @@ $A = A^T$ thì $A$ và $A^T$ là hai ma trận đối xứng.
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{12} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{1n} & a_{2n} & \dots & a_{nn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{12} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{1n} & a_{2n} & ... & a_{nn} \\
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -286,10 +284,10 @@ $$
 $$
 A^T =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{12} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{1n} & a_{2n} & \dots & a_{nn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{12} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{1n} & a_{2n} & ... & a_{nn} \\
 \end{bmatrix}
 \in R^{n \times n}
 $$
@@ -328,14 +326,14 @@ $$
 $$
 a =
 \begin{bmatrix}
-a_{1} & a_{2} & \dots & a_{n}
+a_{1} & a_{2} & ... & a_{n}
 \end{bmatrix}
 \in R^{n}
 ,
 
 b =
 \begin{bmatrix}
-b_{1} & b_{2} & \dots & b_{n}
+b_{1} & b_{2} & ... & b_{n}
 \end{bmatrix}
 \in R^{n}
 $$
@@ -343,7 +341,7 @@ $$
 $$
 a + b =
 \begin{bmatrix}
-a_{1} + b_{1} & a_{2} + b_{2} & \dots & a_{n} + b_{n}
+a_{1} + b_{1} & a_{2} + b_{2} & ... & a_{n} + b_{n}
 \end{bmatrix}
 \in R^{n}
 $$
@@ -359,7 +357,7 @@ Phép cộng vector có các tính chất tương tự với phép cộng số h
 $$
 a =
 \begin{bmatrix}
-a_{1} & a_{2} & \dots & a_{n}
+a_{1} & a_{2} & ... & a_{n}
 \end{bmatrix}
 \in R^{n}
 ,
@@ -370,7 +368,7 @@ $$
 $$
 x \cdot a =
 \begin{bmatrix}
-x \cdot a_{1} & x \cdot a_{2} & \dots & x \cdot a_{n}
+x \cdot a_{1} & x \cdot a_{2} & ... & x \cdot a_{n}
 \end{bmatrix}
 \in R^{n}
 $$
@@ -385,20 +383,20 @@ Tích vô hướng còn có tên gọi khác là scalar product.
 $$
 a =
 \begin{bmatrix}
-a_{1} & a_{2} & \dots & a_{n}
+a_{1} & a_{2} & ... & a_{n}
 \end{bmatrix}
 \in R^{n}
 ,
 
 b =
 \begin{bmatrix}
-b_{1} & b_{2} & \dots & b_{n}
+b_{1} & b_{2} & ... & b_{n}
 \end{bmatrix}
 \in R^{n}
 $$
 
 $$
-a \cdot b = a_{1} \cdot b_{1} + a_{2} \cdot b_{2} + \dots + a_{n} \cdot b_{n} \in R
+a \cdot b = a_{1} \cdot b_{1} + a_{2} \cdot b_{2} + ... + a_{n} \cdot b_{n} \in R
 $$
 
 Tích vô hướng là một phép toán rất quan trọng trong đại số tuyến tính vì nó có thể được sử dụng để đánh giá độ tương đồng của hai vector, phép đánh giá này được gọi là **cosine similarity**.
@@ -435,20 +433,20 @@ Do đó, ta có thể kết luận rằng người khán giả này có khả n�
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} & a_{m2} & \dots & a_{mn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{m1} & a_{m2} & ... & a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 ,
 
 B =
 \begin{bmatrix}
-b_{11} & b_{12} & \dots & b_{1n} \\
-b_{21} & b_{22} & \dots & b_{2n} \\
-\dots & \dots & & \dots \\
-b_{m1} & b_{m2} & \dots & b_{mn} \\
+b_{11} & b_{12} & ... & b_{1n} \\
+b_{21} & b_{22} & ... & b_{2n} \\
+... & ... & & ... \\
+b_{m1} & b_{m2} & ... & b_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -456,10 +454,10 @@ $$
 $$
 A + B =
 \begin{bmatrix}
-a_{11} + b_{11} & a_{12} + b_{12} & \dots & a_{1n} + b_{1n} \\
-a_{21} + b_{21} & a_{22} + b_{22} & \dots & a_{2n} + b_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} + b_{m1} & a_{m2} + b_{m2} & \dots & a_{mn} + b_{mn} \\
+a_{11} + b_{11} & a_{12} + b_{12} & ... & a_{1n} + b_{1n} \\
+a_{21} + b_{21} & a_{22} + b_{22} & ... & a_{2n} + b_{2n} \\
+... & ... & & ... \\
+a_{m1} + b_{m1} & a_{m2} + b_{m2} & ... & a_{mn} + b_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -475,10 +473,10 @@ Phép cộng ma trận có các tính chất tương tự với phép cộng s�
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} & a_{m2} & \dots & a_{mn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{m1} & a_{m2} & ... & a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 ,
@@ -488,10 +486,10 @@ $$
 $$
 x \cdot A =
 \begin{bmatrix}
-x \cdot a_{11} & x \cdot a_{12} & \dots & x \cdot a_{1n} \\
-x \cdot a_{21} & x \cdot a_{22} & \dots & x \cdot a_{2n} \\
-\dots & \dots & & \dots \\
-x \cdot a_{m1} & x \cdot a_{m2} & \dots & x \cdot a_{mn} \\
+x \cdot a_{11} & x \cdot a_{12} & ... & x \cdot a_{1n} \\
+x \cdot a_{21} & x \cdot a_{22} & ... & x \cdot a_{2n} \\
+... & ... & & ... \\
+x \cdot a_{m1} & x \cdot a_{m2} & ... & x \cdot a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 $$
@@ -503,20 +501,20 @@ Phép nhân ma trận với một số vô hướng có tính chất giao hoán:
 $$
 A =
 \begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & & \dots \\
-a_{m1} & a_{m2} & \dots & a_{mn} \\
+a_{11} & a_{12} & ... & a_{1n} \\
+a_{21} & a_{22} & ... & a_{2n} \\
+... & ... & & ... \\
+a_{m1} & a_{m2} & ... & a_{mn} \\
 \end{bmatrix}
 \in R^{m \times n}
 ,
 
 B =
 \begin{bmatrix}
-b_{11} & b_{12} & \dots & b_{1k} \\
-b_{21} & b_{22} & \dots & b_{2k} \\
-\dots & \dots & & \dots \\
-b_{n1} & b_{n2} & \dots & b_{nk} \\
+b_{11} & b_{12} & ... & b_{1k} \\
+b_{21} & b_{22} & ... & b_{2k} \\
+... & ... & & ... \\
+b_{n1} & b_{n2} & ... & b_{nk} \\
 \end{bmatrix}
 \in R^{n \times k}
 $$
@@ -524,10 +522,10 @@ $$
 $$
 AB =
 \begin{bmatrix}
-c_{11} & c_{12} & \dots & c_{1k} \\
-c_{21} & c_{22} & \dots & c_{2k} \\
-\dots & \dots & & \dots \\
-c_{m1} & c_{m2} & \dots & c_{mk} \\
+c_{11} & c_{12} & ... & c_{1k} \\
+c_{21} & c_{22} & ... & c_{2k} \\
+... & ... & & ... \\
+c_{m1} & c_{m2} & ... & c_{mk} \\
 \end{bmatrix}
 \in R^{m \times k}
 $$

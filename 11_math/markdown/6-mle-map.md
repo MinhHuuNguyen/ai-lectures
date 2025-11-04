@@ -2,7 +2,7 @@
 time: 01/03/2023
 title: Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)
 description: Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP) là hai phương pháp thống kê quan trọng trong machine learning dùng để ước lượng tham số mô hình. MLE tìm giá trị tham số làm cực đại xác suất quan sát dữ liệu, tập trung hoàn toàn vào thông tin từ dữ liệu huấn luyện. Trong khi đó, MAP kết hợp cả dữ liệu và kiến thức tiên nghiệm (prior) thông qua định lý Bayes, cho phép ước lượng ổn định hơn khi dữ liệu hạn chế hoặc nhiễu. Cả hai phương pháp đều đóng vai trò cốt lõi trong các mô hình xác suất và suy luận Bayes hiện đại.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true
@@ -28,17 +28,17 @@ Có hai cách đánh giá tham số thường được dùng là Maximum Likelih
 
 ### 1.1. Ý tưởng chung
 
-Với MLE, ta sẽ bắt đầu với một bộ dữ liệu huấn luyện gồm có N phần tử $X = {x_1, x_2, \dots, x_N}$.
+Với MLE, ta sẽ bắt đầu với một bộ dữ liệu huấn luyện gồm có N phần tử $X = {x_1, x_2, ..., x_N}$.
 Ta giả sử rằng bộ dữ liệu này tuân theo một phân phối xác suất nào đó, và xây dựng được mô hình Machine Learning thống kê được đại diện bởi tham số $\theta$.
 
 Maximum Likelihood Estimation là việc đi tìm bộ tham số $\theta$ sao cho xác suất sau đây đạt giá trị lớn nhất:
 
 $$
-\theta = \max_{\theta} p(\mathbf{x}_1, \dots, \mathbf{x}_N | \theta)
+\theta = \max_{\theta} p(\mathbf{x}_1, ..., \mathbf{x}_N | \theta)
 $$
 
 Mục tiêu ở đây là tìm được mô hình thống kê hay cụ thể hơn là tham số $\theta$ sao cho có thể mô tả được chính xác nhất bộ dữ liệu $X$.
-Do đó, ta có $p(\mathbf{x}_1| \theta)$ là xác suất mà điểm dữ liệu $x_1$ xuất hiện với điều kiện là tham số $\theta$ và $p(\mathbf{x}_1, \dots, \mathbf{x}_N | \theta)$ là xác suất mà toàn bộ bộ dữ liệu $X$ cùng xuất hiện với tham số $\theta$.
+Do đó, ta có $p(\mathbf{x}_1| \theta)$ là xác suất mà điểm dữ liệu $x_1$ xuất hiện với điều kiện là tham số $\theta$ và $p(\mathbf{x}_1, ..., \mathbf{x}_N | \theta)$ là xác suất mà toàn bộ bộ dữ liệu $X$ cùng xuất hiện với tham số $\theta$.
 Giá trị xác suất này được gọi là likelihood.
 
 Ta đi tìm tham số $\theta$ để cực đại hoá likelihood, chính là cách để ta tìm tham số $\theta$ sao cho tạo ra được mô hình xác suất phản ảnh đúng nhất bộ dữ liệu huấn luyện cho trước.
@@ -53,7 +53,7 @@ Khi các điểm dữ liệu được coi là độc lập với nhau, xác su�
 Từ đó, ta có biểu thức:
 
 $$
-p(\mathbf{x}_1, \dots, \mathbf{x}_N | \theta) \approx \prod_{n = 1}^N p(\mathbf{x}_n |\theta)
+p(\mathbf{x}_1, ..., \mathbf{x}_N | \theta) \approx \prod_{n = 1}^N p(\mathbf{x}_n |\theta)
 $$
 
 Tuy nhiên, việc tối ưu một tích các giá trị xác suất thường khó khăn hơn việc tối ưu một tổng (do tích các xác suất có thể dẫn tới lỗi số học trong máy tính).
@@ -86,10 +86,10 @@ Trong một số trường hợp cụ thể, bên cạnh việc xây dựng mô 
 Ngược lại với MLE, MAP có biểu thức sau:
 
 $$
-\theta = \arg\max_{\theta} \underbrace{p(\theta | \mathbf{x}_1, \dots, \mathbf{x}_N)}_{\text{posterior}}
+\theta = \arg\max_{\theta} \underbrace{p(\theta | \mathbf{x}_1, ..., \mathbf{x}_N)}_{\text{posterior}}
 $$
 
-$p(\theta | \mathbf{x}_1, \dots, \mathbf{x}_N)$ được gọi là Xác suất hậu nghiệm (Posterior Probability).
+$p(\theta | \mathbf{x}_1, ..., \mathbf{x}_N)$ được gọi là Xác suất hậu nghiệm (Posterior Probability).
 Xác suất hậu nghiệm là xác suất được điều chỉnh hoặc cập nhật của một biến cố xảy ra sau khi xem xét thông tin mới.
 
 Vậy tại sao xác suất hậu nghiệm lại có thể giúp ta bổ sung thêm thông tin mới?
@@ -99,8 +99,8 @@ Vậy tại sao xác suất hậu nghiệm lại có thể giúp ta bổ sung th
 Áp dụng quy tắc Bayes
 
 $$
-\theta = \arg\max_{\theta} \underbrace{p(\theta | \mathbf{x}_1, \dots, \mathbf{x}_N)}_{\text{posterior}} = 
-\arg\max_{\theta} \left[ \frac{\overbrace{p(\mathbf{x}_1, \dots, \mathbf{x}_N | \theta)}^{\text{likelihood}} \overbrace{p(\theta)}^{\text{prior}}}{\underbrace{p(\mathbf{x}_1, \dots, \mathbf{x}_N)}_{\text{evidence}}} \right]
+\theta = \arg\max_{\theta} \underbrace{p(\theta | \mathbf{x}_1, ..., \mathbf{x}_N)}_{\text{posterior}} = 
+\arg\max_{\theta} \left[ \frac{\overbrace{p(\mathbf{x}_1, ..., \mathbf{x}_N | \theta)}^{\text{likelihood}} \overbrace{p(\theta)}^{\text{prior}}}{\underbrace{p(\mathbf{x}_1, ..., \mathbf{x}_N)}_{\text{evidence}}} \right]
 $$
 
 Trong Maximum A Posteriori (MAP), ta có một khái niệm được gọi là prior, đại diện cho những kiến thức đã có trước của con người muốn định hướng cho mô hình.
@@ -109,7 +109,7 @@ Evidence là giá trị xác suất hiển nhiên xảy ra, độc lập với m
 Do evidence là độc lập với tham số $\theta$, ta có thể loại nó ra khỏi biểu thức tối ưu của $\theta$.
 
 $$
-\theta = \arg\max_{\theta} \underbrace{p(\theta | \mathbf{x}_1, \dots, \mathbf{x}_N)}_{\text{posterior}} = \left[ \arg\max_{\theta} \underbrace{p(\mathbf{x}_1, \dots, \mathbf{x}_N | \theta)}_{likelihood} \underbrace{p(\theta)}_{prior} \right] = \arg\max_{\theta} \left[ \prod_{i=1}^N p(\mathbf{x}_i | \theta) p(\theta) \right]
+\theta = \arg\max_{\theta} \underbrace{p(\theta | \mathbf{x}_1, ..., \mathbf{x}_N)}_{\text{posterior}} = \left[ \arg\max_{\theta} \underbrace{p(\mathbf{x}_1, ..., \mathbf{x}_N | \theta)}_{likelihood} \underbrace{p(\theta)}_{prior} \right] = \arg\max_{\theta} \left[ \prod_{i=1}^N p(\mathbf{x}_i | \theta) p(\theta) \right]
 $$
 
 Ta thấy điểm khác biệt giữa MAP và MLE nằm ở việc bổ sung thêm prior $p(\theta)$ vào trong biểu thức tối ưu.

@@ -2,17 +2,23 @@
 time: 01/07/2023
 title: Giải tích toán học Calculus
 description: Giải tích toán học (Calculus) đóng vai trò trọng yếu trong machine learning, đặc biệt trong việc tối ưu hóa mô hình. Các khái niệm như đạo hàm, vi phân và gradient được sử dụng để cập nhật tham số mô hình nhằm giảm thiểu hàm mất mát. Nhờ giải tích, thuật toán gradient descent và các biến thể của nó có thể tìm ra điểm cực tiểu của hàm mục tiêu, giúp mô hình học được từ dữ liệu. Ngoài ra, giải tích còn hỗ trợ hiểu rõ sự biến thiên của đầu ra theo đầu vào, góp phần vào việc phân tích độ nhạy và ổn định của hệ thống học máy.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-probability/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true
 ---
 
-# Đạo hàm với vector và ma trận
+## 1. Giới thiệu chung về Giải tích toán học
 
-## 1. Đạo hàm cơ bản
+Giải tích toán học (Calculus) đóng vai trò trọng yếu trong machine learning, đặc biệt trong việc tối ưu hóa mô hình.
+Các khái niệm như đạo hàm, vi phân và gradient được sử dụng để cập nhật tham số mô hình nhằm giảm thiểu hàm mất mát.
 
-### 1.1. Đạo hàm là gì?
+Nhờ giải tích, thuật toán gradient descent và các biến thể của nó có thể tìm ra điểm cực tiểu của hàm mục tiêu, giúp mô hình học được từ dữ liệu.
+Ngoài ra, giải tích còn hỗ trợ hiểu rõ sự biến thiên của đầu ra theo đầu vào, góp phần vào việc phân tích độ nhạy và ổn định của hệ thống học máy.
+
+### 1.1. Giới hạn và tính liên tục của hàm số
+
+### 1.2. Tính khả vi của hàm số
 
 Theo toán học giải tích, đạo hàm thực chất là một đại lượng được dùng để mô tả sự biến thiên của hàm số tại một điểm nào đó.
 
@@ -37,7 +43,9 @@ trong đó:
 $\Delta x$ là số gia của đối số tại x0.
 $\Delta f(x)$ được gọi là số gia tương ứng của hàm số.
 
-### 1.2. Các quy tắc tính đạo hàm
+## 2. Các quy tắc và công thức tính đạo hàm
+
+### 2.1. Các quy tắc tính đạo hàm
 - Đạo hàm của hằng số bằng 0:
 
 $$
@@ -69,16 +77,15 @@ f'(g(x)) = f'(g)g'(x)
 $$
 
 
-### 1.3. Đạo hàm của các hàm sơ cấp
+### 2.2. Đạo hàm của các hàm sơ cấp
 
-<img src="https://giasuhanoigioi.edu.vn/wp-content/uploads/2019/03/cong-thuc-dao-ham-3.png" style="height: 600px;"/>
+<img src="" style="height: 600px;"/>
 
+### 2.3. Đạo hàm hàm số nhiều biến - Đạo hàm với vector và ma trận
 
-## 2. Đạo hàm với vector và ma trận
+#### Khái niệm đạo hàm riêng
 
-## 2.1. Hàm số có đầu ra là một số vô hướng
-
-### 2.1.1. Hàm số nhận đầu vào là một vector
+#### Tính đạo hàm với hàm số nhận đầu vào là một vector, trả đầu ra là một số vô hướng
 
 Xét hàm số $f(\mathbf{x}): \mathbb{R}^n \rightarrow \mathbb{R}$, đạo hàm của hàm $f$ theo vector $x$ được định nghĩa như sau
 
@@ -88,7 +95,7 @@ $$
 \begin{matrix}
 \frac{\partial f(\mathbf{x})}{\partial x_1} \ 
 \frac{\partial f(\mathbf{x})}{\partial x_2} \ 
-\vdots \ 
+... \ 
 \frac{\partial f(\mathbf{x})}{\partial x_n}
 \end{matrix}
 \right] \in \mathbb{R}^n
@@ -106,15 +113,15 @@ $$
 \nabla^2 f(\mathbf{x}) \triangleq
 \left[
 \begin{matrix}
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_1^2} & \frac{\partial^2 f(\mathbf{x})}{\partial x_1x_2} & \dots & \frac{\partial^2 f(\mathbf{x})}{\partial x_1x_n} \\ 
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_2x_1} & \frac{\partial^2 f(\mathbf{x})}{\partial x_2^2} & \dots & \frac{\partial^2 f(\mathbf{x})}{\partial x_2x_n} \\ 
-    \vdots & \vdots & \ddots & \vdots \\
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_nx_1} & \frac{\partial^2 f(\mathbf{x})}{\partial x_nx_2} & \dots & \frac{\partial^2 f(\mathbf{x})}{\partial x_n^2} \\ 
+    \frac{\partial^2 f(\mathbf{x})}{\partial x_1^2} & \frac{\partial^2 f(\mathbf{x})}{\partial x_1x_2} & ... & \frac{\partial^2 f(\mathbf{x})}{\partial x_1x_n} \\ 
+    \frac{\partial^2 f(\mathbf{x})}{\partial x_2x_1} & \frac{\partial^2 f(\mathbf{x})}{\partial x_2^2} & ... & \frac{\partial^2 f(\mathbf{x})}{\partial x_2x_n} \\ 
+    ... & ... & \ddots & ... \\
+    \frac{\partial^2 f(\mathbf{x})}{\partial x_nx_1} & \frac{\partial^2 f(\mathbf{x})}{\partial x_nx_2} & ... & \frac{\partial^2 f(\mathbf{x})}{\partial x_n^2} \\ 
 \end{matrix}
 \right] \in \mathbb{S}^{n}
 $$
 
-### 2.1.2. Hàm số nhận đầu vào là một ma trận
+#### Tính đạo hàm với hàm số nhận đầu vào là một ma trận, trả đầu ra là một số vô hướng
 
 Xét hàm số $f(\mathbf{x}): \mathbb{R}^{n \times m} \rightarrow \mathbb{R}$, đạo hàm của hàm $f$ theo ma trận $x$ được định nghĩa như sau
 
@@ -122,10 +129,10 @@ $$
 \nabla_{\mathbf{x}} f(\mathbf{x}) \triangleq 
 \left[
 \begin{matrix}
-    \frac{\partial f(\mathbf{X})}{\partial x_{11}} & \frac{\partial f(\mathbf{X})}{\partial x_{12}} & \dots & \frac{\partial f(\mathbf{X})}{\partial x_{1m}} \\
-    \frac{\partial f(\mathbf{X})}{\partial x_{21}} & \frac{\partial f(\mathbf{X})}{\partial x_{22}} & \dots & \frac{\partial f(\mathbf{X})}{\partial x_{2m}} \\
-    \vdots & \vdots & \ddots & \vdots \\
-    \frac{\partial f(\mathbf{X})}{\partial x_{n1}} & \frac{\partial f(\mathbf{X})}{\partial x_{n2}} & \dots & \frac{\partial f(\mathbf{X})}{\partial x_{nm}} 
+    \frac{\partial f(\mathbf{X})}{\partial x_{11}} & \frac{\partial f(\mathbf{X})}{\partial x_{12}} & ... & \frac{\partial f(\mathbf{X})}{\partial x_{1m}} \\
+    \frac{\partial f(\mathbf{X})}{\partial x_{21}} & \frac{\partial f(\mathbf{X})}{\partial x_{22}} & ... & \frac{\partial f(\mathbf{X})}{\partial x_{2m}} \\
+    ... & ... & \ddots & ... \\
+    \frac{\partial f(\mathbf{X})}{\partial x_{n1}} & \frac{\partial f(\mathbf{X})}{\partial x_{n2}} & ... & \frac{\partial f(\mathbf{X})}{\partial x_{nm}} 
 \end{matrix}
 \right] \in \mathbb{R}^{n \times m}
 $$
@@ -173,9 +180,7 @@ $$
 \right]
 $$
 
-## 2.2. Hàm số có đầu ra là một vector
-
-### 2.2.1. Hàm số nhận đầu vào là một số vô hướng
+#### Tính đạo hàm với hàm số nhận đầu vào là một số vô hướng, trả đầu ra là một vector
 
 Xét hàm số $f(x): \mathbb{R} \rightarrow \mathbb{R}^n$, cụ thể
 
@@ -185,7 +190,7 @@ v(x) =
 \begin{matrix}
     v_1(x) \\
     v_2(x) \\
-    \dots \\
+    ... \\
     v_n(x)
 \end{matrix}
 \right]
@@ -197,7 +202,7 @@ $$
 \nabla v(x) \triangleq 
 \left[
 \begin{matrix}
-    \frac{\partial v_1(x)}{\partial x} & \frac{\partial v_2(x)}{\partial x} & \dots & \frac{\partial v_n(x)}{\partial x}
+    \frac{\partial v_1(x)}{\partial x} & \frac{\partial v_2(x)}{\partial x} & ... & \frac{\partial v_n(x)}{\partial x}
 \end{matrix}
 \right]
 $$
@@ -208,12 +213,12 @@ $$
 \nabla^2 v(x) \triangleq 
 \left[
 \begin{matrix}
-    \frac{\partial^2 v_1(x)}{\partial x^2} & \frac{\partial^2 v_2(x)}{\partial x^2} & \dots & \frac{\partial^2 v_n(x)}{\partial x^2}
+    \frac{\partial^2 v_1(x)}{\partial x^2} & \frac{\partial^2 v_2(x)}{\partial x^2} & ... & \frac{\partial^2 v_n(x)}{\partial x^2}
 \end{matrix}
 \right]
 $$
 
-### 2.2.2. Hàm số nhận đầu vào là một vector
+#### Tính đạo hàm với hàm số nhận đầu vào là một vector, trả đầu ra là một vector
 
 Xét hàm số $f(x): \mathbb{R}^k \rightarrow \mathbb{R}^n$, lúc này, đạo hàm bậc nhất của nó là
 
@@ -222,16 +227,16 @@ $$
 \nabla h(\mathbf{x}) &\triangleq &
 \left[
 \begin{matrix}
-    \frac{\partial h_1(\mathbf{x})}{\partial x_1} & \frac{\partial h_2(\mathbf{x})}{\partial x_1} & \dots & \frac{\partial h_n(\mathbf{x})}{\partial x_1} \\ 
-    \frac{\partial h_1(\mathbf{x})}{\partial x_2} & \frac{\partial h_2(\mathbf{x})}{\partial x_2} & \dots & \frac{\partial h_n(\mathbf{x})}{\partial x_2} \\ 
-    \vdots & \vdots & \ddots & \vdots \\
-    \frac{\partial h_1(\mathbf{x})}{\partial x_k} & \frac{\partial h_2(\mathbf{x})}{\partial x_k} & \dots & \frac{\partial h_n(\mathbf{x})}{\partial x_k}
+    \frac{\partial h_1(\mathbf{x})}{\partial x_1} & \frac{\partial h_2(\mathbf{x})}{\partial x_1} & ... & \frac{\partial h_n(\mathbf{x})}{\partial x_1} \\ 
+    \frac{\partial h_1(\mathbf{x})}{\partial x_2} & \frac{\partial h_2(\mathbf{x})}{\partial x_2} & ... & \frac{\partial h_n(\mathbf{x})}{\partial x_2} \\ 
+    ... & ... & \ddots & ... \\
+    \frac{\partial h_1(\mathbf{x})}{\partial x_k} & \frac{\partial h_2(\mathbf{x})}{\partial x_k} & ... & \frac{\partial h_n(\mathbf{x})}{\partial x_k}
 \end{matrix}
 \right] \\ 
 & = & 
 \left[
 \begin{matrix}
-    \nabla h_1(\mathbf{x}) & \nabla h_2(\mathbf{x}) & \dots & \nabla h_n(\mathbf{x})
+    \nabla h_1(\mathbf{x}) & \nabla h_2(\mathbf{x}) & ... & \nabla h_n(\mathbf{x})
 \end{matrix}
 \right] \in \mathbf{R}^{k\times n}
 \end{eqnarray}

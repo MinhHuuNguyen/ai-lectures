@@ -1,10 +1,8 @@
 ---
-slug: object-detection
-time: 11/09/2024
-title: Giới thiệu chung về bài toán Object detection
+time: 05/10/2022
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
+banner_url:
 tags: [deep-learning, computer-vision]
 is_highlight: false
 is_published: false
@@ -18,7 +16,7 @@ Bài toán object detection là một bài toán rất phổ biến trong comput
 Tính ứng dụng của bài toán object detection trong thực tiễn là rất lớn trong nhiều ngành nghề khác nhau.
 Object detection được sử dụng trong y tế giúp xác định vị trí bị bệnh trong cơ thể, trong bảo mật giúp định vị vị trí của con người trong những khu vực cấm, trong nông nghiệp giúp xác định số lượng nông sản, trong hệ thống xe tự hành ...
 
-<img src="https://i.imgur.com/zsla1eq.png" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 Bài toán object detection là sự tổng hợp của hai bài toán con: object localization và image classification. 
 - Object localization là bài toán định vị vị trí của object trong ảnh: nhận đầu vào là một ảnh và trả đầu ra là một hoặc nhiều bbox của từng đối tượng.
@@ -33,7 +31,7 @@ Các mô hình thuộc nhóm two-stage ra đời khá sớm từ năm 2014 đế
 - Region proposals module: module nhận đầu vào là ảnh ban đầu và trả đầu ra là các khu vực trên ảnh mà có khả năng chứa đối tượng.
 - Feature extraction module: module nhận đầu vào là các region từ Region proposals module giúp xác định chính xác đối tượng trong khu vực đó là đối tượng nào và tinh chỉnh toạ độ của khu vực chính xác hơn.
 
-<img src="https://www.researchgate.net/publication/353284602/figure/fig3/AS:1046072046673927@1626414419841/Two-stage-vs-one-stage-object-detection-models.ppm" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 2.2. Nhóm các mô hình single-stage
 
@@ -53,7 +51,7 @@ Intersection Over Union (gọi tắt là IoU) là chỉ số được tính toá
 
 IoU được tính bằng thương của diện tích giao của hai bbox và diện tích hợp của hai bbox.
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/iou.png" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 1.2. TP, FP, FN và TN
 
@@ -65,7 +63,7 @@ Từ khái niệm về IoU, ta có các khái niệm:
 
 Đối với các bài toán object detection có nhiều class hơn 2 (class object và class background), bbox prediction được gọi là TP không những phải thoả mãn yêu cầu về IoU mà còn phải thoả mãn yêu cầu về class dự đoán phải đúng.
 
-<img src="https://pyimagesearch.com/wp-content/uploads/2016/09/iou_examples.png" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 Trong quá trình đánh giá mô hình object detection, ta thường sử dụng ba ngưỡng là 0.5, 0.75 và 0.9.
 
@@ -87,7 +85,7 @@ $$
 
 Precision x Recall curve là một biểu đồ giúp đánh giá tương quan về đánh đổi giữa precision và recall.
 
-<img src="https://www.statology.org/wp-content/uploads/2021/09/precisionRecall2.png" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 2.2. Average Precision (AP) và Mean Average Precision (mAP)
 
@@ -104,19 +102,19 @@ Ngoài ra, đối với những mô hình object detection với nhiều class o
 
 Ta có các bbox prediction màu đỏ (được ký hiệu các ký tự A, B, C ... Y) với các chỉ số confidence bên cạnh, các bbox groundtruth màu xanh lá.
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/samples_1_v2.png" style="width: 1000px;"/>
+<img src="" style="width: 1200px;"/>
 
 Với việc lấy IoU $\geq$ 0.3, ta có từng bbox prediction là các bbox TP hay FN như bảng dưới
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/table_1_v2.png" style="width: 500px;"/>
+<img src="" style="width: 1200px;"/>
 
 Sau khi xác định các bbox prediction là TP hay FN, ta sắp xếp chúng theo thứ tự về confidence để tính toán Precision và Recall.
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/table_2_v2.png" style="width: 900px;"/>
+<img src="" style="width: 1200px;"/>
 
 Với mỗi cặp giá trị Precision và Recall vừa tính toán được, ta thu được Precision x Recall curve
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/precision_recall_example_1_v2.png" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 Tiếp theo, ta xấp xỉ đường Precision trên bằng một đường gọi là Interpolated Precision.
 Đến đây, ta có hai cách để tính đường interpolated precision.
@@ -126,7 +124,7 @@ Tiếp theo, ta xấp xỉ đường Precision trên bằng một đường gọ
 Cách đầu tiên được gọi là 11-point interpolation, ta chia trục recall của Precision x Recall curve thành 10 phần với 11 mốc recall (0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1).
 Với mỗi mốc recall, ta lấy chỉ số precision cao nhất mà nhận chỉ số recall lớn hơn hoặc bằng mốc recall đang xét.
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/11-pointInterpolation.png" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 Cuối cùng, ta tính AP bằng cách lấy trung bình cộng của các giá trị precision lấy được ở bước trên.
 
@@ -142,11 +140,11 @@ $$
 
 Cách thứ hai được gọi là all-point interpolation, ta tính interpolated precision với chính xác các mốc recall của Precision x Recall curve.
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/interpolated_precision_v2.png" style="width: 750px;"/>
+<img src="" style="width: 750px;"/>
 
 Cuối cùng, ta tính toán AuC của đường interpolated precision để thu được chỉ số AP cần tính
 
-<img src="https://raw.githubusercontent.com/rafaelpadilla/Object-Detection-Metrics/master/aux_images/interpolated_precision-AUC_v2.png" style="width: 750px;"/>
+<img src="" style="width: 750px;"/>
 
 $$
 \text{AP} = \text{A1} + \text{A2} + \text{A3} + \text{A4}

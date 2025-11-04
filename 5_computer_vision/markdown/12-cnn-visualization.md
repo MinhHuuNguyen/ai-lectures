@@ -1,10 +1,8 @@
 ---
-slug: cnn-visualization
-time: 11/09/2024
-title: Trực quan hoá mô hình CNN
+time: 06/20/2022
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
+banner_url:
 tags: [deep-learning, computer-vision]
 is_highlight: false
 is_published: false

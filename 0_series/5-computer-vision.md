@@ -40,42 +40,42 @@ Mạng nơ ron tích chập Convolutional Neural Network (CNN) là một trong n
 
 ---
 
-### [Bài 3: Xử lý ảnh (Image processing) và tăng cường dữ liệu (Data augmentation)](/blog/image-processing-data-augmentation/)
+### [Bài 3: Xử lý ảnh (Image processing) và tăng cường dữ liệu (Data augmentation)]()
 
 *Mình sẽ viết bài này trong thời gian tới*
 
 ---
 
-### [Bài 4: Giới thiệu bài toán Object detection](/blog/object-detection/)
+### [Bài 4: Giới thiệu bài toán Object detection]()
 
 *Mình sẽ viết bài này trong thời gian tới*
 
 ---
 
-### [Bài 5: Giới thiệu bài toán Image segmentation](/blog/image-segmentation/)
+### [Bài 5: Giới thiệu bài toán Image segmentation]()
 
 *Mình sẽ viết bài này trong thời gian tới*
 
 ---
 
-### [Bài 6: Giới thiệu bài toán Image generation](/blog/image-generation/)
+### [Bài 6: Giới thiệu bài toán Image generation]()
 
 *Mình sẽ viết bài này trong thời gian tới*
 
 ---
 
-### [Bài 7: Hệ sinh thái các bài toán khuôn mặt](/blog/face-ecosystem/)
+### [Bài 7: Hệ sinh thái các bài toán khuôn mặt]()
 
 *Mình sẽ viết bài này trong thời gian tới*
 
 ---
 
-### [Bài 8: Trực quan hoá mô hình CNN](/blog/cnn-visualization/)
+### [Bài 8: Trực quan hoá mô hình CNN]()
 
 *Mình sẽ viết bài này trong thời gian tới*
 
 ---
 
-### [Bài 9: Các mô hình xử lý dữ liệu video](/blog/video-processing/)
+### [Bài 9: Các mô hình xử lý dữ liệu video]()
 
 *Mình sẽ viết bài này trong thời gian tới*

@@ -2,7 +2,7 @@
 time: 12/26/2022
 title: Thống kê dữ liệu
 description: Thống kê dữ liệu là nền tảng quan trọng trong machine learning, giúp hiểu và mô tả đặc trưng của dữ liệu trước khi xây dựng mô hình. Thông qua các khái niệm như trung bình, phương sai, độ lệch chuẩn, phân phối xác suất và kiểm định giả thuyết, nhà nghiên cứu có thể đánh giá xu hướng, mức độ biến động và mối quan hệ giữa các biến. Việc phân tích thống kê giúp phát hiện dữ liệu ngoại lai, mất cân bằng hay nhiễu, từ đó hỗ trợ tiền xử lý và lựa chọn mô hình phù hợp. Nhờ đó, mô hình học máy đạt hiệu quả và độ chính xác cao hơn.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true
@@ -64,7 +64,7 @@ Phương pháp chọn mẫu này dựa trên ý kiến các chuyên gia về đ�
 
 ### 2.2. Các đặc trưng của mẫu thống kê
 
-Với một mẫu dữ liệu gồm có $k$ giá trị khác nhau $x_1, x_2, \dots, x_k$, mỗi giá trị có tương ứng $n_1, n_2, \dots, n_k$ phần tử và tổng số phần từ $n = n_1 + n_2 + \dots + n_k$
+Với một mẫu dữ liệu gồm có $k$ giá trị khác nhau $x_1, x_2, ..., x_k$, mỗi giá trị có tương ứng $n_1, n_2, ..., n_k$ phần tử và tổng số phần từ $n = n_1 + n_2 + ... + n_k$
 
 #### 2.2.1. Trung bình / kỳ vọng (Mean / expectation)
 
@@ -119,7 +119,7 @@ Tuy nhiên, trong trường hợp mẫu dữ liệu có nhiều các phần tử
 Đi kèm với trung vị, ta có thêm giá trị đặc trưng tứ phân vị (quantiles): tứ phân vị thứ nhất (giá trị ở vị trí 25%), tứ phân vị thứ hai (giá trị ở vị trí 50% hay là trung vị), tứ phân vị thứ ba (giá trị ở vị trí 75%).
 Các giá trị này được sử dụng để xây dựng biểu đồ Box plot và Violin plot, được sử dụng nhiều trong quá trình trực quan hoá dữ liệu.
 
-<img src="https://drive.google.com/uc?id=1sEu0dkLwmasnshPnPy_kxaamrrOzENlB" style="height: 600px;"/>
+<img src="" style="height: 600px;"/>
 
 
 #### 2.2.5. Mốt (Mode)
@@ -134,7 +134,7 @@ Trong thống kê dữ liệu, bài toán ước lượng tham số là một b�
 
 Bài toán này được phát biểu như sau:
 Cho biến ngẫu nhiên X tuân theo một phân phôi xác suất đã biết nhưng ta chưa biết tham số $\phi$ của phân phối đó.
-Do đó, ta phải xác định giá trị của $\phi$ dựa trên các thông tin thu được từ một mẫu dữ liệu $X = {x_0, x_1, \dots, x_n}$.
+Do đó, ta phải xác định giá trị của $\phi$ dựa trên các thông tin thu được từ một mẫu dữ liệu $X = {x_0, x_1, ..., x_n}$.
 Quá trình đi xác định một tham số $\phi$ chưa biết được gọi là quá trình ước lượng tham số.
 Giá trị tìm được được gọi là ước lượng điểm, ký hiệu là $\hat{\phi}$ do $\hat{\phi}$ là một giá trị cụ thể.
 Ngoài ra, còn có ước lượng khoảng hay khoảng tin cậy.
@@ -153,7 +153,7 @@ Khi thống kê dữ liệu, ta có thể bắt gặp những trường hợp b�
 Với những bộ dữ liệu như vậy, việc vẽ phân phối tần suất xuất hiện sẽ xuất hiện trạng thái được gọi là long tail.
 Phân phối khi đó được gọi là phân phối long tail (long tail distribution).
 
-<img src="https://drive.google.com/uc?id=143JkO68UFSqmwwPE7ucT2ofiJJ7IZeIf" style="height: 400px;"/>
+<img src="" style="height: 400px;"/>
 
 Nếu như đối với phân phối long tail, ta tập trung góc nhìn vào phần "đuôi" của phân phối, thì phân phối lệch là một góc nhìn khác khi ta tập trung vào phần đỉnh của phân phối.
 
@@ -170,10 +170,10 @@ Có ba loại độ lệch:
 
 Độ lệch được coi là đáng kể nếu độ lớn của giá trị tuyệt đối của nó lớn hơn 0.5.
 
-<img src="https://drive.google.com/uc?id=1IY2BjGa2pk2r0nN5M6X8BvQ5XKaE7BbB" style="height: 400px;"/>
+<img src="" style="height: 400px;"/>
 
 
-<img src="https://drive.google.com/uc?id=1tXCPja0zcWCG07B082lyb6Np2S3XYVd5" style="height: 400px;"/>
+<img src="" style="height: 400px;"/>
 
 
 #### 3.2. Phân phối nhọn (Kurtosis distribution)
@@ -197,9 +197,9 @@ Có ba loại độ nhọn:
 
 Độ nhọn được coi là đáng kể nếu độ lớn của giá trị tuyệt đối của nó lớn hơn 1.
 
-<img src="https://drive.google.com/uc?id=1l3H0CRhHAdBDsFswYMgWdbmjlifb150y" style="height: 400px;"/>
+<img src="" style="height: 400px;"/>
 
-<img src="https://drive.google.com/uc?id=1nqIy9EPioTZoJefWDNHV0nig487Av0sh" style="height: 400px;"/>
+<img src="" style="height: 400px;"/>
 
 #### 3.3. Phân phối đa thức (Multimodal distribution)
 
@@ -208,7 +208,7 @@ Phân phối có một đỉnh (một mốt) được gọi là unimodal.
 Phân phối có hai đỉnh (hai mốt) được gọi là bimodal
 Phân phối có nhiều đỉnh (nhiều mốt) được gọi là multimodal.
 
-<img src="https://drive.google.com/uc?id=1y8Hnj6tToWIUjA8rXSKT3ttxQbWu1m86" style="height: 400px;"/>
+<img src="" style="height: 400px;"/>
 
 
 

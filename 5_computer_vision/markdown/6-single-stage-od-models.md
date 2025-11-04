@@ -1,10 +1,8 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
+time: 05/31/2022
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
+banner_url:
 tags: [deep-learning, computer-vision]
 is_highlight: false
 is_published: false
@@ -18,7 +16,7 @@ Feature Pyramid Networks (gọi tắt là FPN) được giới thiệu như mộ
 
 ### 1.1. So sánh các kiến trúc pyramid khác nhau
 
-<img src="https://production-media.paperswithcode.com/methods/new_teaser_TMZlD2J.jpg" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 Ý tưởng về việc xây dựng và sử dụng các đặc trưng của ảnh với nhiều kích thước khác nhau không mới, tuy nhiên, các giải pháp đã có vào th đó đều vướng phải một số vấn đề:
 - Featurized image pyramid: Sử dụng nhiều kích thước ảnh khác nhau để tạo ra feature maps đạt được hiệu quả cao về độ chính xác, nhưng phương pháp này khiến cho mô hình trở nên cồng kềnh và tốn rất nhiều thời gian để xử lý và gần như bất khả thi để có thể train được.
@@ -35,11 +33,11 @@ Tuy nhiên, điểm giống nhau của các nghiên cứu có thiết kế theo 
 Trong khi đó, đối với FPN, nhóm tác giả đưa ra quyết định dự đoán trên từng feature maps trong suốt quá trình top-down. 
 Từ đó, đặc biệt nâng cao chất lượng của mô hình object detection khi có thể vừa trích xuất được thông tin của các đối tượng có kích thước lớn từ các feature map có kích thước nhỏ vừa trích xuất được thông tin của các đối tượng có kích thước nhỏ từ các feature map có kích thước lớn.
 
-<img src="https://media.arxiv-vanity.com/render-output/6504128/x2.png" style="width: 500px;"/>
+<img src="" style="width: 1200px;"/>
 
 Kiến trúc FPN có thể được áp dụng với nhiều backbone Conv khác nhau như AlexNet, VGG hay ResNet, cụ thể trong nghiên cứu, nhóm tác giả lựa chọn ResNet làm backbone. 
 
-<img src="https://pic2.zhimg.com/80/v2-dacf2d16e42d6bb90596f947ec0044f9_1440w.webp" style="width: 500px;"/>
+<img src="" style="width: 1200px;"/>
 
 Kiến trúc FPN có thể được chia làm hai phần:
 - Bottom-up pathway: là quá trình mà ta đưa ảnh đầu vào qua backbone như ResNet và thu được các feature map.
@@ -65,12 +63,12 @@ Vẫn còn một câu hỏi cần phải được giải quyết đó là làm s
 
 Các mô hình single-stage object detection ở thời điểm ban đầu đa phần chỉ sử dụng một backbone kết hợp thêm với các lớp Conv và lớp fully connected để đưa ra dự đoán về lớp của đối tượng trong ảnh và độ lệch của bbox so với groundtruth.
 
-<img src="https://i.stack.imgur.com/xA4qz.png" style="width: 1200px;"/>
+<img src="" style="width: 1200px;"/>
 
 Việc loại bỏ Region proposals module khiến các mô hình single-stage object detection cần phải xây dựng một phương pháp riêng nhằm đề xuất ra các anchor chứa đối tượng.
 Hai mô hình single-stage object detection nổi tiếng vào thời điểm đó là YOLO và SSD có các cách đề xuất ra anchor tương tự với nhau.
 
-<img src="https://leimao.github.io/images/blog/2019-04-15-YOLOs/yolo_v1_diagram.png" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 YOLO đề xuất ra các anchor thông qua việc chia ảnh đầu vào thành dạng grid có kích thước SxS và với mỗi grid sẽ trả đầu ra dự đoán có kích thước SxS(Bx5+C).
 Nếu tâm của một bbox nằm trong ô nào trên grid, ô đó sẽ cần phải được dự đoán là chứa đối tượng. 
@@ -82,7 +80,7 @@ Thay vì được học là 1 nếu anchor có IoU cao với groundtruth bbox v�
 
 Trong nghiên cứu, nhóm tác giả của YOLO sử dụng S = 7,B = 2,C = 20.
 
-<img src="https://www.researchgate.net/profile/Dumitru-Erhan/publication/286513835/figure/fig1/AS:613509750616127@1523283531509/SSD-framework-a-SSD-only-needs-an-input-image-and-ground-truth-boxes-for-each-object.png" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 SSD cũng sử dụng feature maps như là các dạng grid của ảnh đầu vào nhưng thay vì sử dụng một grid như YOLO thì SSD sử dụng nhiều grid từ nhiều feature maps có cách kích thước khác nhau.
 Với mỗi grid tạo bởi một feature maps có kích thước mxn, SSD trả đầu ra dự đoán có kích thước mxn(k(c+4)). 
@@ -107,7 +105,7 @@ Cụ thể hơn, với số lượng lớn các khu vực không chứa đối t
 Để giải quyết vấn đề mất cân bằng dữ liệu nói trên, nhóm tác giả của RetinaNet đã đề xuất hàm Focal loss dựa trên nền tảng của hàm binary cross entropy loss giải quyết vấn đề mất cân bằng dữ liệu nghiêm trọng.
 Nhóm tác giả chú thích rằng hàm Focal loss hiệu quả đối với cả bài toán phân lớp với nhiều hơn hai lớp nhưng để đơn giản hoá, nhóm tác giả sử dụng hàm binary cross entropy loss.
 
-<img src="https://velog.velcdn.com/images/xuio/post/3013e178-bd81-4f89-9f6b-fa194d10f9e5/image.png" style="width: 500px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 5.3. Kiến trúc mô hình RetinaNet
 
@@ -115,7 +113,7 @@ RetinaNet là mô hình single-stage object detection gồm có các thành ph�
 - Phần backbone Feature Pyramid Networks được sử dụng nhằm trích xuất đặc trưng của ảnh đầu vào với nhiều kích thước đặc trưng khác nhau.
 - Phần trích xuất anchor được thực hiện tương tự với cách trích xuất của mô hình RPN.
 
-<img src="https://developers.arcgis.com/python/guide/images/retinanet.png" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 - Phần Classification Subnet được chia sẻ giữa tất cả các feature maps của backbone FPN, gồm các lớp Conv 3x3xC và lớp Conv cuối cùng 3x3xKA.
 Trong đó, 

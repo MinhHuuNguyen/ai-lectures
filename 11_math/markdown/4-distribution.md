@@ -2,7 +2,7 @@
 time: 01/10/2023
 title: Các phân phối xác suất cơ bản
 description: Trong machine learning, phân phối xác suất là công cụ quan trọng để mô hình hóa dữ liệu và sự không chắc chắn. Nhiều thuật toán dựa trên giả thiết rằng dữ liệu tuân theo các phân phối xác suất nhất định. Hiểu rõ các phân phối này giúp lựa chọn mô hình và giải thuật thích hợp trong các bài toán học máy.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true
@@ -85,7 +85,7 @@ KL divergence không phải là một khoảng cách thực sự (như khoảng 
 
 $$ D_{KL}(P || Q) \neq D_{KL}(Q || P) $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/kl_divergence.png" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-distribution/kl_divergence.jpeg" style="width: 800px;"/>
 
 Giả sử $P(x)$ và $Q(x)$ là hai phân phối xác suất trên cùng một tập biến ngẫu nhiên rời rạc $x$, KL divergence từ $P$ đến $Q$ được định nghĩa là:
 

@@ -2,7 +2,7 @@
 time: 01/14/2023
 title: Giá trị riêng eigenvalues và vector riêng eigenvectors
 description: Trong đại số tuyến tính, eigenvector và eigenvalue là các công cụ cơ bản để phân tích đặc tính của các phép biến đổi tuyến tính. Qua bài viết này, ta sẽ tìm hiểu về bản chất, tính chất, cách tính và ứng dụng phong phú của eigenvector–eigenvalue trong các bài toán ứng dụng.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.png
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true

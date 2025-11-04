@@ -282,3 +282,23 @@ Mô hình mạng nơ ron đơn giản Neural network là một mô hình tính t
 ###### 3. Kiến trúc và các lớp trong mạng nơ ron
 
 ###### 4. Huấn luyện mạng nơ ron
+
+---
+
+### [Bài 16: Mô hình LDA](/blog/mo-hinh-lda)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+---
+
+### [Bài 17: Kỹ thuật Ensemble Learning](/blog/ky-thuat-ensemble-learning)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+###### 1. Ý tưởng chung của Ensemble Learning
+
+###### 2. Phân loại kỹ thuật Ensemble Learning
+
+###### 3. Mô hình Random Forest
+
+###### 4. Mô hình GBM và XGBoost

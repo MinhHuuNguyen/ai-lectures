@@ -1,10 +1,8 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
+time: 05/27/2022
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
+banner_url:
 tags: [deep-learning, computer-vision]
 is_highlight: false
 is_published: false
@@ -16,7 +14,7 @@ Các mô hình thuộc nhóm two-stage ra đời khá sớm từ năm 2014 đế
 - Region proposals module: module nhận đầu vào là ảnh ban đầu và trả đầu ra là các khu vực trên ảnh mà có khả năng chứa đối tượng.
 - Feature extraction module: module nhận đầu vào là các region từ Region proposals module giúp xác định chính xác đối tượng trong khu vực đó là đối tượng nào và tinh chỉnh toạ độ của khu vực chính xác hơn.
 
-<img src="https://www.researchgate.net/publication/353284602/figure/fig3/AS:1046072046673927@1626414419841/Two-stage-vs-one-stage-object-detection-models.ppm" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 Tiêu biểu trong nhóm các mô hình two-stage object detection là nhóm các mô hình R-CNN, Fast R-CNN và Faster RCNN
 
@@ -32,7 +30,7 @@ Là một trong số các mô hình two-stage, R-CNN bao gồm hai thành phần
 - Region proposals module của R-CNN là thuật toán Selective Search: nhận đầu vào là ảnh, Selective Search trả đầu ra là khoảng 2000 khu vực có khả năng có chứa đối tượng.
 - Feature extraction module của R-CNN là một mô hình phân lớp ảnh, cụ thể theo nghiên cứu là AlexNet: nhận đầu vào là ảnh, AlexNet đánh giá xem ảnh đó chứa đối tượng hay không và nếu có thì khu vực đó chứa đối tượng nào.
 
-<img src="https://i.imgur.com/npdeMCI.png" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 1.2. Vấn đề tồn đọng của mô hình R-CNN
 
@@ -50,7 +48,7 @@ Là một phiên bản nâng cấp của R-CNN, nên Fast R-CNN cũng bao gồm 
 - Feature extraction module của Fast R-CNN là một mô hình phân lớp ảnh, cụ thể là VGG16.
 Các thành phần của Fast R-CNN không có thay đổi gì quá nổi bật so với R-CNN, tuy nhiên, điểm khác biệt mang lại giá trị của Fast R-CNN nằm ở cách mà nó kết hợp hai thành phần trên.
 
-<img src="https://uniduc.com/vi/public/uploads/img/images/pon/fast-RCNN.png" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 Khác với R-CNN, Fast R-CNN đưa toàn bộ ảnh ban đầu qua các lớp conv và pooling của Feature extraction module để tạo ra được đặc trưng của toàn bộ ảnh.
 
@@ -66,14 +64,14 @@ Tuy nhiên, ta lại cần các đặc trưng này có cùng kích thước đ�
 
 Có hai phương pháp pooling phổ biến là maxpooling và average pooling.
 
-<img src="https://www.researchgate.net/profile/Nura-Aljaafari/publication/332092821/figure/fig4/AS:779719519764482@1562911028330/Example-of-max-pooling-and-average-pooling-operations-In-this-example-a-4x4-image-is.jpg" style="width: 400px;"/>
+<img src="" style="width: 1200px;"/>
 
 
 Trong khi đó, RoIs pooling được giới thiệu không hoạt động giống như Max Pooling hay Average Pooling thông thường.
 
 Thay vì yêu cầu ta phải định nghĩa kernel và stride của lớp pooling, RoI pooling yêu cầu ta phải định nghĩa kích thước của đặc trưng đầu ra, từ đó, RoI pooling sẽ tính toán và chia đặc trưng đầu vào thành các vùng trước khi thực hiện phép max pooling.
 
-<img src="https://drive.google.com/uc?id=1VcpGjBDBkqJvXA6h8bQdy0xTShGk_rV9" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 2.3 Vấn đề tồn đọng của mô hình Fast R-CNN
 
@@ -93,7 +91,7 @@ Việc thay thế các thuật toán bằng một kiến trúc deep learning hư
 Mô hình RPN nhận đầu vào là ảnh với kích thước bất kỳ và trả đầu ra là toạ độ của các khu vực và xác suất khu vực đó là đối tượng nào trong các lớp đối tượng. 
 Nhằm tiết kiệm chi phí tính toán, mô hình RPN dùng chung phần Feature extraction module với Fast R-CNN.
 
-<img src="https://uniduc.com/vi/public/uploads/img/images/pon/faster-RCNN.png" style="width: 900px;"/>
+<img src="" style="width: 1200px;"/>
 
 Mô hình RPN nhận đầu vào là feature maps từ Feature extraction module và trả đầu ra là các region proposal gọi là các anchor.
 Cụ thể:
@@ -130,7 +128,7 @@ Việc lựa chọn này giúp tỷ lệ anchor positive và negative trở nên
 
 Nhóm tác giả cho rằng, việc train mô hình RPN và Fast R-CNN cần phải diễn ra đồng thời, vì từ đó, việc chia sẻ chung thành phần backbone Conv mới trở nên hiệu quả.
 
-<img src="https://www.researchgate.net/publication/341871095/figure/fig1/AS:902168047521793@1592105032301/Network-structure-diagram-of-Faster-R-CNN-Faster-R-CNN-is-mainly-divided-into-the.ppm" style="width: 500px;"/>
+<img src="" style="width: 1200px;"/>
 
 Nhóm tác giả nêu ra ba phương án để train RPN kết hợp với Fast R-CNN:
 - Cách 1: Alternating training:

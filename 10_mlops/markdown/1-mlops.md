@@ -1,11 +1,9 @@
 ---
-slug: machine-learning
-time: 11/09/2024
-title: 
+time: 02/19/2023
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags:
+banner_url:
+tags: [deep-learning, machine-learning, mlops]
 is_highlight: false
 is_published: false
 ---
@@ -20,7 +18,7 @@ Data Drift (biến đổi dữ liệu) và Concept Drift (biến đổi khái ni
 
 Chúng liên quan đến sự thay đổi của dữ liệu và mô hình trong thời gian, và chúng đề cập đến những thách thức mà bạn cần phải đối mặt khi triển khai các hệ thống học máy trong môi trường thực tế.
 
-<img src="https://www.iguazio.com/wp-content/uploads/2022/04/image.png" style="width: 700px;"/>
+<img src="" style="width: 1200px;"/>
 
 #### 1.1.1. Data Drift (Biến đổi dữ liệu):
 
@@ -76,7 +74,7 @@ Tương tự như Online Learning, Incremental Learning cho phép mô hình cậ
 
 Data-Centric và Model-Centric là hai phương pháp tiếp cận khác nhau trong lĩnh vực Machine Learning và Deep Learning, với sự tập trung vào các khía cạnh quan trọng khác nhau của quá trình phát triển mô hình.
 
-<img src="https://images.viblo.asia/855cadf0-33bd-4e69-9eae-ffccaf38372a.png" style="width: 700px;"/>
+<img src="https://images.viblo.asia/855cadf0-33bd-4e69-9eae-ffccaf38372a.jpeg" style="width: 1200px;"/>
 
 #### 1.2.1. Data-Centric (Tập trung vào dữ liệu):
 
@@ -117,7 +115,7 @@ Dữ liệu là yếu tố cốt lõi trong Machine Learning, và việc quản 
 Đưa mô hình từ môi trường phát triển sang môi trường sản phẩm có thể gặp nhiều khó khăn.
 Đồng thời, duy trì và cập nhật mô hình trong thời gian thực cũng đòi hỏi quy trình tự động hóa.
 
-<img src="https://www.compact.nl/wordpress/wp-content/uploads/2022/10/C-2022-3-Maliutin-2t-groot.png" style="width: 800px;"/>
+<img src="https://www.compact.nl/wordpress/wp-content/uploads/2022/10/C-2022-3-Maliutin-2t-groot.jpeg" style="width: 1200px;"/>
 
 ### 2.2. Khái niệm
 
@@ -130,7 +128,7 @@ MLOps kết hợp các phương pháp đã biết từ DevOps (quản lý phát 
 
 MLOps đòi hỏi sự hợp tác giữa các nhà khoa học dữ liệu và các lập trình viên, người xây dựng và đào tạo mô hình, cùng với các chuyên gia IT, người xử lý hạ tầng và triển khai các mô hình.
 
-<img src="https://www.ml4devs.com/images/illustrations/ml-lifecycle-fusing-model-and-software-development.webp" style="width: 1000px;"/>
+<img src="https://www.ml4devs.com/images/illustrations/ml-lifecycle-fusing-model-and-software-development.webp" style="width: 1200px;"/>
 
 ### 2.3. Lợi ích chung mà MLOps mang lại
 
@@ -163,7 +161,7 @@ Các nền tảng của các nhà cung cấp dịch vụ đám mây:
 - Google Cloud AI Platform:
 Đây là một dịch vụ chuyên về Machine Learning của Google Cloud Platform.
 
-<img src="https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/_images/orchestrate-mlops-azure-databricks-01.png" style="width: 1200px;"/>
+<img src="https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/_images/orchestrate-mlops-azure-databricks-01.jpeg" style="width: 1200px;"/>
 
 ## 3. Các thành phần trong kiến trúc của MLOps
 
@@ -195,7 +193,7 @@ Các công cụ và luồng làm việc tự động có thể được sử d�
 Trước khi sử dụng dữ liệu cho việc đào tạo mô hình, nó cần phải được kiểm tra và xác thực để đảm bảo tính chính xác và đáng tin cậy.
 - Xác thực an toàn và quyền truy cập (Security and Access Control): Dữ liệu là tài sản quý giá và cần phải được bảo vệ. Hệ thống nhập dữ liệu cần xác thực an toàn và quản lý quyền truy cập để đảm bảo tính riêng tư và bảo mật của dữ liệu.
 
-<img src="https://adataanalyst.com/wp-content/uploads/2021/05/Infra-Tooling3.png" style="width: 1200px;"/>
+<img src="https://adataanalyst.com/wp-content/uploads/2021/05/Infra-Tooling3.jpeg" style="width: 1200px;"/>
 
 ### 3.2. Model Training (Đào tạo mô hình):
 

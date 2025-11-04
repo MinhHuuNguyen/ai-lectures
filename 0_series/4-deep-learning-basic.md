@@ -211,3 +211,35 @@ Transfer learning là một kỹ thuật quan trọng trong machine learning và
 ###### 6. Giới thiệu về self supervised learning
 
 ###### 7. Contrastive Language-Image Pre-Training (CLIP)
+
+---
+
+### [Bài 13: Học tăng cường Reinforcement Learning](/blog/hoc-tang-cuong-reinforcement-learning/)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+###### 1. Giới thiệu chung về Reinforcement learning
+
+###### 2. Các khái niệm cơ bản trong Reinforcement learning
+
+###### 3. Quá trình quyết định Markov (Markov Decision Process - MDP)
+
+###### 4. Phương pháp Monte Carlo
+
+###### 5. Phân nhóm các thuật toán Reinforcement learning
+
+---
+
+### [Bài 14: Nén mô hình mạng nơ ron Model Compression](/blog/nen-mo-hinh-mang-no-ron-model-compression/)
+
+*Mình sẽ viết bài này trong thời gian tới*
+
+###### 1. Giới thiệu chung về Model Compression
+
+###### 2. Model Quantization (Lượng tử hóa mô hình)
+
+###### 3. Model Pruning (Cắt tỉa mô hình)
+
+###### 4. Knowledge distillation (Truyền thụ kiến thức)
+
+###### 5. Matrix low-rank approximation (Xấp xỉ ma trận hạng thấp)

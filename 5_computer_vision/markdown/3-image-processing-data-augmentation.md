@@ -1,10 +1,8 @@
 ---
-slug: image-processing-data-augmentation
-time: 11/09/2024
-title: Xử lý ảnh (Image processing) và tăng cường dữ liệu (Data augmentation)
+time: 05/07/2022
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
+banner_url:
 tags: [deep-learning, computer-vision]
 is_highlight: false
 is_published: false
@@ -130,7 +128,7 @@ Kết hợp nhiều biến đổi lại với nhau để tạo ra sự đa dạn
     - Tính trung bình có trọng số tương ứng cho nhãn của hai hình ảnh.
 - Mix Up giúp mô hình học được tính toàn cầu của các đối tượng và giảm thiểu overfitting bằng cách tạo ra đa dạng trong dữ liệu huấn luyện.
 
-<img src="https://www.researchgate.net/profile/Zihan-Yang-4/publication/357823193/figure/fig4/AS:1169970583080960@1655954132026/Sample-images-using-the-Mixup-Cutout-and-Cutmix-augmentation-methods-40.ppm" style="width: 800px;"/>
+<img src="" style="width: 1200px;"/>
 
 ### 3.2. Cut Out:
 
