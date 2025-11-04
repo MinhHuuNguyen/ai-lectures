@@ -1,13 +1,9 @@
 ---
-slug: pytorch-training-pipeline
-time: 11/09/2024
-title: Huấn luyện mô hình với PyTorch
+time: 12/08/2023
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags: [deep-learning, pytorch]
+banner_url:
+tags: [python, pytorch]
 is_highlight: false
 is_published: false
 ---
-
-# ClearML Model Deployment

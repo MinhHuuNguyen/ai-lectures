@@ -5,5 +5,5 @@ description: Scikit-learn là một thư viện mã nguồn mở cung cấp nhi�
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/4-scikit-learn/banner.jpeg
 tags: [python]
 is_highlight: false
-is_published: true
+is_published: false
 ---

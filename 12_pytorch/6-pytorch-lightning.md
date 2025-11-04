@@ -1,13 +1,9 @@
 ---
-slug: pytorch-lightning
-time: 11/09/2024
-title: Giới thiệu về thư viện PyTorch Lightning
+time: 12/12/2023
+title:
 description:
-author: Nguyễn Hữu Minh
-banner_url: 
-tags: [deep-learning, pytorch]
+banner_url:
+tags: [python, pytorch]
 is_highlight: false
 is_published: false
 ---
-
-# ClearML Model Deployment
