@@ -2,7 +2,7 @@
 time: 01/10/2023
 title: Các phân phối xác suất cơ bản
 description: Trong machine learning, phân phối xác suất là công cụ quan trọng để mô hình hóa dữ liệu và sự không chắc chắn. Nhiều thuật toán dựa trên giả thiết rằng dữ liệu tuân theo các phân phối xác suất nhất định. Hiểu rõ các phân phối này giúp lựa chọn mô hình và giải thuật thích hợp trong các bài toán học máy.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.jpeg
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true

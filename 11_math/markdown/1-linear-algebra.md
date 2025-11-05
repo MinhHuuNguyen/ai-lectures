@@ -62,24 +62,9 @@ Ma trận A ở trên gồm m hàng, n cột và $m * n$ giá trị thực, do �
 
 Trong một số trường hợp, ta có thể ký hiệu ma trận $A \in R^{m \times n}$ dưới dạng vector $a \in R^{mn}$ bằng cách ghép các cột của ma trận lại tạo ra một vector dài.
 
-$$
-a =
-\begin{bmatrix}
-a_{11} \\
-a_{21} \\
-... \\
-a_{m1} \\
-a_{12} \\
-a_{22} \\
-... \\
-a_{m2} \\
-... \\
-a_{1n} \\
-a_{2n} \\
-... \\
-a_{mn}
-\end{bmatrix}, a_{ij} \in R
-$$
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa cách chuyển đổi từ ma trận sang vector bằng cách ghép các cột của ma trận.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/reshape.jpeg" style="width: 400px;"/>
 
 ### 1.3. Tensor
 
@@ -477,6 +462,10 @@ Phép cộng ma trận có các tính chất tương tự với phép cộng s�
 - Tính chất cộng với ma trận 0: $A + 0 = A$
 - Tính chất cộng với ma trận đối: $A + (-A) = 0$
 
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/mathematics_for_machine_learning_deisenroth.pdf) giải thích vì sao phép nhân ma trận không có tính chất giao hoán.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/multiplication.jpeg" style="width: 400px;"/>
+
 #### Phép nhân ma trận với một số vô hướng
 
 $$
@@ -583,6 +572,31 @@ Nói cách khác, PCA sẽ đánh giá mức độ quan trọng của từng chi
 
 Phép biến đổi tuyến tính (Linear transformation) là một phép biến đổi giữa hai không gian vector mà giữ nguyên các phép toán cộng vector và nhân vector với một số vô hướng.
 Phép biến đổi tuyến tính có thể được biểu diễn dưới dạng **phép nhân ma trận**.
+
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/mathematics_for_machine_learning_deisenroth.pdf) mô tả phép biến đổi tuyến tính từ không gian vector $R^2$ sang không gian vector $R^2$ thông qua phép nhân ma trận lần lượt với các ma trận khác nhau.
+
+$$
+A_1 =
+\begin{bmatrix}
+cos(\pi/4) & -sin(\pi/4) \\
+sin(\pi/4) & cos(\pi/4)
+\end{bmatrix}
+,
+A_2 =
+\begin{bmatrix}
+2 & 0 \\
+0 & 1
+\end{bmatrix}
+,
+A_3 =
+\frac{1}{2}
+\begin{bmatrix}
+3 & -1 \\
+1 & -1
+\end{bmatrix}
+$$
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear_transformation.jpeg" style="width: 500px;"/>
 
 Trong mạng nơ-ron, mỗi lớp của mạng có thể được xem như một phép biến đổi tuyến tính áp dụng lên đầu vào của lớp đó.
 Ý nghĩa của việc sử dụng phép biến đổi tuyến tính trong mạng nơ-ron là giúp mô hình học được các đặc trưng phức tạp từ dữ liệu đầu vào thông qua việc kết hợp các trọng số và bias.

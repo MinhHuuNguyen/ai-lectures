@@ -2,7 +2,7 @@
 time: 12/19/2022
 title: Một số khái niệm cơ bản trong xác suất
 description: Xác suất là một trong những khái niệm quan trọng nhất trong thống kê và học máy. Nó giúp chúng ta hiểu rõ hơn về cách mà các biến ngẫu nhiên tương tác với nhau và cách mà chúng ta có thể dự đoán các kết quả trong tương lai. Bài viết này sẽ giúp bạn hiểu rõ hơn về các khái niệm cơ bản trong xác suất, bao gồm biến ngẫu nhiên, không gian mẫu, biến cố, kết quả, phân phối xác suất, xác suất đồng thời, xác suất biên và xác suất điều kiện.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/banner.jpeg
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.jpeg
 tags: [math]
 is_highlight: false
 is_published: true

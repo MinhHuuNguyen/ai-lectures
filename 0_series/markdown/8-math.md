@@ -2,7 +2,7 @@
 time: 02/16/2023
 title: "[SERIES] Toán trong Machine Learning"
 description: Toán trong Machine Learning là nền tảng giúp mô hình học và ra quyết định chính xác. Nó bao gồm các lĩnh vực như đại số tuyến tính, giải tích, xác suất – thống kê và tối ưu hóa. Nhờ toán học, ta hiểu được cách mô hình hoạt động, huấn luyện hiệu quả hơn và cải thiện khả năng tổng quát hóa trong các bài toán thực tế.
-banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/0_series/images/8-math/banner.jpeg
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/banner.jpeg
 tags: [math, series]
 is_highlight: false
 is_published: true
@@ -28,13 +28,11 @@ is_published: true
 
 Giải tích toán học (Calculus) đóng vai trò trọng yếu trong machine learning, đặc biệt trong việc tối ưu hóa mô hình. Các khái niệm như đạo hàm, vi phân và gradient được sử dụng để cập nhật tham số mô hình nhằm giảm thiểu hàm mất mát. Nhờ giải tích, thuật toán gradient descent và các biến thể của nó có thể tìm ra điểm cực tiểu của hàm mục tiêu, giúp mô hình học được từ dữ liệu. Ngoài ra, giải tích còn hỗ trợ hiểu rõ sự biến thiên của đầu ra theo đầu vào, góp phần vào việc phân tích độ nhạy và ổn định của hệ thống học máy.
 
-###### 1. 
+###### 1. Các khái niệm cơ bản
 
-###### 2. 
+###### 2. Các quy tắc và công thức tính đạo hàm
 
-###### 3. 
-
-###### 4. 
+###### 3. Một số ứng dụng trong Machine Learning
 
 ---
 
