@@ -17,7 +17,7 @@ Nhờ đại số tuyến tính, việc tối ưu hóa mô hình, biểu diễn 
 
 ### 1.1. Vector
 
-Theo cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/mathematics_for_machine_learning_deisenroth.pdf) của nhóm tác giả Marc Peter Deisenroth, A. Aldo Faisal và Cheng Soon Ong, một cách khái quát, **vector là một đối tượng đặc biệt, trong đó, chúng có thể cộng lại với nhau và nhân với một giá trị để tạo thành một đối tượng mới cùng loại**.
+Theo cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) của nhóm tác giả Marc Peter Deisenroth, A. Aldo Faisal và Cheng Soon Ong, một cách khái quát, **vector là một đối tượng đặc biệt, trong đó, chúng có thể cộng lại với nhau và nhân với một giá trị để tạo thành một đối tượng mới cùng loại**.
 
 Do đó, bất kỳ đối tượng toán học nào thoả mãn hai tính chất trên sẽ được được xem xét là một vector.
 
@@ -62,7 +62,7 @@ Ma trận A ở trên gồm m hàng, n cột và $m * n$ giá trị thực, do �
 
 Trong một số trường hợp, ta có thể ký hiệu ma trận $A \in R^{m \times n}$ dưới dạng vector $a \in R^{mn}$ bằng cách ghép các cột của ma trận lại tạo ra một vector dài.
 
-Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa cách chuyển đổi từ ma trận sang vector bằng cách ghép các cột của ma trận.
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa cách chuyển đổi từ ma trận sang vector bằng cách ghép các cột của ma trận.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/reshape.jpeg" style="width: 400px;"/>
 
@@ -462,7 +462,7 @@ Phép cộng ma trận có các tính chất tương tự với phép cộng s�
 - Tính chất cộng với ma trận 0: $A + 0 = A$
 - Tính chất cộng với ma trận đối: $A + (-A) = 0$
 
-Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/mathematics_for_machine_learning_deisenroth.pdf) giải thích vì sao phép nhân ma trận không có tính chất giao hoán.
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) giải thích vì sao phép nhân ma trận không có tính chất giao hoán.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/multiplication.jpeg" style="width: 400px;"/>
 
@@ -573,7 +573,7 @@ Nói cách khác, PCA sẽ đánh giá mức độ quan trọng của từng chi
 Phép biến đổi tuyến tính (Linear transformation) là một phép biến đổi giữa hai không gian vector mà giữ nguyên các phép toán cộng vector và nhân vector với một số vô hướng.
 Phép biến đổi tuyến tính có thể được biểu diễn dưới dạng **phép nhân ma trận**.
 
-Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/books/mathematics_for_machine_learning_deisenroth.pdf) mô tả phép biến đổi tuyến tính từ không gian vector $R^2$ sang không gian vector $R^2$ thông qua phép nhân ma trận lần lượt với các ma trận khác nhau.
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) mô tả phép biến đổi tuyến tính từ không gian vector $R^2$ sang không gian vector $R^2$ thông qua phép nhân ma trận lần lượt với các ma trận khác nhau.
 
 $$
 A_1 =
