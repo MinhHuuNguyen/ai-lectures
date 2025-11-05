@@ -596,7 +596,7 @@ A_3 =
 \end{bmatrix}
 $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/1-neural-network/linear_transformation.jpeg" style="width: 500px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/linear_transformation.jpeg" style="width: 800px;"/>
 
 Trong mạng nơ-ron, mỗi lớp của mạng có thể được xem như một phép biến đổi tuyến tính áp dụng lên đầu vào của lớp đó.
 Ý nghĩa của việc sử dụng phép biến đổi tuyến tính trong mạng nơ-ron là giúp mô hình học được các đặc trưng phức tạp từ dữ liệu đầu vào thông qua việc kết hợp các trọng số và bias.
