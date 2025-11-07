@@ -42,31 +42,15 @@ Xác suất là một trong những khái niệm quan trọng nhất trong thố
 
 ###### 1. Biến ngẫu nhiên và các khái niệm liên quan
 
-###### 2. Xác suất đồng thời, xác suất biên và xác suất điều kiện
-
-###### 3. Định lý Bayes (Bayes' theorem)
-
----
-
-### [Bài 4: Các phân phối xác suất cơ bản](/blog/cac-phan-phoi-xac-suat-co-ban)
-
-Trong machine learning, phân phối xác suất là công cụ quan trọng để mô hình hóa dữ liệu và sự không chắc chắn. Nhiều thuật toán dựa trên giả thiết rằng dữ liệu tuân theo các phân phối xác suất nhất định. Hiểu rõ các phân phối này giúp lựa chọn mô hình và giải thuật thích hợp trong các bài toán học máy.
-
-###### 1. Tổng quan và định lý giới hạn trung tâm (Central Limit Theorem)
-
 ###### 2. Hàm khối xác suất, Hàm mật độ xác suất, Hàm phân phối xác suất
 
-###### 3. Kullback-Leibler divergence (KL divergence)
+###### 3. Xác suất đồng thời, xác suất biên và xác suất điều kiện
 
-###### 4. Phân phối chuẩn (Normal distribution)
-
-###### 5. Phân phối đều (Uniform distribution)
-
-###### 6. Phân phối Bernoulli (Bernoulli distribution)
+###### 4. Định lý Bayes (Bayes' theorem)
 
 ---
 
-### [Bài 5: Thống kê dữ liệu](/blog/thong-ke-du-lieu)
+### [Bài 4: Thống kê dữ liệu](/blog/thong-ke-du-lieu)
 
 Thống kê dữ liệu là nền tảng quan trọng trong machine learning, giúp hiểu và mô tả đặc trưng của dữ liệu trước khi xây dựng mô hình. Thông qua các khái niệm như trung bình, phương sai, độ lệch chuẩn, phân phối xác suất và kiểm định giả thuyết, nhà nghiên cứu có thể đánh giá xu hướng, mức độ biến động và mối quan hệ giữa các biến. Việc phân tích thống kê giúp phát hiện dữ liệu ngoại lai, mất cân bằng hay nhiễu, từ đó hỗ trợ tiền xử lý và lựa chọn mô hình phù hợp. Nhờ đó, mô hình học máy đạt hiệu quả và độ chính xác cao hơn.
 
@@ -80,7 +64,7 @@ Thống kê dữ liệu là nền tảng quan trọng trong machine learning, gi
 
 ---
 
-### [Bài 6: Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)](/blog/maximum-likelihood-estimation-mle-va-maximum-a-posteriori-map)
+### [Bài 5: Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)](/blog/maximum-likelihood-estimation-mle-va-maximum-a-posteriori-map)
 
 Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP) là hai phương pháp thống kê quan trọng trong machine learning dùng để ước lượng tham số mô hình. MLE tìm giá trị tham số làm cực đại xác suất quan sát dữ liệu, tập trung hoàn toàn vào thông tin từ dữ liệu huấn luyện. Trong khi đó, MAP kết hợp cả dữ liệu và kiến thức tiên nghiệm (prior) thông qua định lý Bayes, cho phép ước lượng ổn định hơn khi dữ liệu hạn chế hoặc nhiễu. Cả hai phương pháp đều đóng vai trò cốt lõi trong các mô hình xác suất và suy luận Bayes hiện đại.
 
