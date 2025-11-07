@@ -63,9 +63,19 @@ Do đó, hàm số $g(x)$ là liên tục tại mọi điểm trên trục số 
 Đạo hàm của hàm số tại một điểm đo lường tốc độ biến thiên tức thời của hàm số tại điểm đó.
 Nói cách khác, đạo hàm cho biết hàm số thay đổi như thế nào khi đối số thay đổi một cách rất nhỏ.
 
-Đạo hàm của hàm số $f(x)$ tại điểm $x_0$ được định nghĩa như sau:
+Đạo hàm của hàm số $y = f(x)$ tại điểm $x_0$ được định nghĩa như sau:
 
-$$ f'(x_0) = \lim_{x \to x_0} \frac{f(x)-f(x_0)}{x-x_0} $$
+$$ f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} $$
+
+trong đó:
+- $f'(x_0)$ là đạo hàm của hàm số tại điểm $x_0$.
+- $\Delta x$ là một số rất nhỏ, đại diện cho sự thay đổi của đối số $x$.
+- $f(x_0 + \Delta x) - f(x_0)$ là sự thay đổi tương ứng của hàm số khi đối số thay đổi.
+- $\frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$ được gọi là differential quotient (tỷ số vi phân).
+
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa về tỷ số vi phân.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/derivative.jpeg" style="width: 400px;"/>
 
 Nếu giới hạn trên tồn tại, ta nói rằng hàm số $f(x)$ khả vi tại điểm $x_0$, và $f'(x_0)$ được gọi là đạo hàm của hàm số tại điểm đó.
 
@@ -134,50 +144,50 @@ Ví dụ: Xét hàm số $f(x, y) = x^2y + 3xy^2$.
 
 #### Tính đạo hàm với hàm số nhận đầu vào là một vector, trả đầu ra là một số vô hướng
 
-Xét hàm số $f(\mathbf{x}): \mathbb{R}^n \rightarrow \mathbb{R}$, đạo hàm của hàm $f$ theo vector $x$ được định nghĩa như sau
+Xét hàm số $f(x): \mathbb{R}^n \rightarrow \mathbb{R}$, đạo hàm của hàm $f$ theo vector $x$ được định nghĩa như sau
 
 $$
-\nabla_{\mathbf{x}} f(\mathbf{x}) \triangleq 
+\nabla_{x} f(x) \triangleq 
 \left[
 \begin{matrix}
-\frac{\partial f(\mathbf{x})}{\partial x_1} \ 
-\frac{\partial f(\mathbf{x})}{\partial x_2} \ 
-... \ 
-\frac{\partial f(\mathbf{x})}{\partial x_n}
+\frac{\partial f(x)}{\partial x_1} \\
+\frac{\partial f(x)}{\partial x_2} \\
+... \\
+\frac{\partial f(x)}{\partial x_n}
 \end{matrix}
 \right] \in \mathbb{R}^n
 $$
 
 trong đó
-- $\frac{\partial f(\mathbf{x})}{\partial x_i}$ là đạo hàm của hàm $f$ theo thành phần thứ $i$ của vector $x$, và các thành phần còn lại là hằng số.
+- $\frac{\partial f(x)}{\partial x_i}$ là đạo hàm của hàm $f$ theo thành phần thứ $i$ của vector $x$, và các thành phần còn lại là hằng số.
 
 Đạo hàm của hàm số này là một vector có cùng chiều với vector đang lấy đạo hàm.
 Đạo hàm bậc hai của hàm số trên là một ma trận vuông đối xứng được định nghĩa như sau:
 
 $$
-\nabla^2 f(\mathbf{x}) \triangleq
+\nabla^2_{x} f(x) \triangleq
 \left[
 \begin{matrix}
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_1^2} & \frac{\partial^2 f(\mathbf{x})}{\partial x_1x_2} & ... & \frac{\partial^2 f(\mathbf{x})}{\partial x_1x_n} \\ 
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_2x_1} & \frac{\partial^2 f(\mathbf{x})}{\partial x_2^2} & ... & \frac{\partial^2 f(\mathbf{x})}{\partial x_2x_n} \\ 
-    ... & ... & \ddots & ... \\
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_nx_1} & \frac{\partial^2 f(\mathbf{x})}{\partial x_nx_2} & ... & \frac{\partial^2 f(\mathbf{x})}{\partial x_n^2} \\ 
+    \frac{\partial^2 f(x)}{\partial x_1^2} & \frac{\partial^2 f(x)}{\partial x_1x_2} & ... & \frac{\partial^2 f(x)}{\partial x_1x_n} \\ 
+    \frac{\partial^2 f(x)}{\partial x_2x_1} & \frac{\partial^2 f(x)}{\partial x_2^2} & ... & \frac{\partial^2 f(x)}{\partial x_2x_n} \\ 
+    ... & ... & ... & ... \\
+    \frac{\partial^2 f(x)}{\partial x_nx_1} & \frac{\partial^2 f(x)}{\partial x_nx_2} & ... & \frac{\partial^2 f(x)}{\partial x_n^2}
 \end{matrix}
-\right] \in \mathbb{S}^{n}
+\right] \in \mathbb{R}^{n \times n}
 $$
 
 #### Tính đạo hàm với hàm số nhận đầu vào là một ma trận, trả đầu ra là một số vô hướng
 
-Xét hàm số $f(\mathbf{x}): \mathbb{R}^{n \times m} \rightarrow \mathbb{R}$, đạo hàm của hàm $f$ theo ma trận $x$ được định nghĩa như sau
+Xét hàm số $f(x): \mathbb{R}^{n \times m} \rightarrow \mathbb{R}$, đạo hàm của hàm $f$ theo ma trận $x$ được định nghĩa như sau
 
 $$
-\nabla_{\mathbf{x}} f(\mathbf{x}) \triangleq 
+\nabla_{x} f(x) \triangleq 
 \left[
 \begin{matrix}
-    \frac{\partial f(\mathbf{X})}{\partial x_{11}} & \frac{\partial f(\mathbf{X})}{\partial x_{12}} & ... & \frac{\partial f(\mathbf{X})}{\partial x_{1m}} \\
-    \frac{\partial f(\mathbf{X})}{\partial x_{21}} & \frac{\partial f(\mathbf{X})}{\partial x_{22}} & ... & \frac{\partial f(\mathbf{X})}{\partial x_{2m}} \\
+    \frac{\partial f(X)}{\partial x_{11}} & \frac{\partial f(X)}{\partial x_{12}} & ... & \frac{\partial f(X)}{\partial x_{1m}} \\
+    \frac{\partial f(X)}{\partial x_{21}} & \frac{\partial f(X)}{\partial x_{22}} & ... & \frac{\partial f(X)}{\partial x_{2m}} \\
     ... & ... & \ddots & ... \\
-    \frac{\partial f(\mathbf{X})}{\partial x_{n1}} & \frac{\partial f(\mathbf{X})}{\partial x_{n2}} & ... & \frac{\partial f(\mathbf{X})}{\partial x_{nm}} 
+    \frac{\partial f(X)}{\partial x_{n1}} & \frac{\partial f(X)}{\partial x_{n2}} & ... & \frac{\partial f(X)}{\partial x_{nm}} 
 \end{matrix}
 \right] \in \mathbb{R}^{n \times m}
 $$
@@ -186,16 +196,16 @@ $$
 
 Tóm lại, đối với hàm số nhận đầu vào là một vector (hoặc một ma trận), đạo hàm của hàm số đó cũng là một vector (hoặc một ma trận) trong đó các phần tử được tính bằng cách đạo hàm hàm số đó với các phần tử ở vị trí tương ứng là biến, các phần tử còn lại được coi là hằng số.
 
-Ví dụ: Xét hàm số $f: \mathbb{R}^2 \rightarrow \mathbb{R}$, $f(\mathbf{x}) = x_1 ^2 + 2x_1x_2 + \sin(x_1) + 2$.
+Ví dụ: Xét hàm số $f: \mathbb{R}^2 \rightarrow \mathbb{R}$, $f(x) = x_1 ^2 + 2x_1x_2 + \sin(x_1) + 2$.
 
 Đạo hàm bậc nhất của hàm số là
 
 $$
-\nabla f(\mathbf{x}) =
+\nabla f(x) =
 \left[
 \begin{matrix}
-    \frac{\partial f(\mathbf{x})}{\partial x_1} \ 
-    \frac{\partial f(\mathbf{x})}{\partial x_2}
+    \frac{\partial f(x)}{\partial x_1} \ 
+    \frac{\partial f(x)}{\partial x_2}
 \end{matrix}
 \right] = \left[
 \begin{matrix}
@@ -208,11 +218,11 @@ $$
 Đạo hàm bậc hai của hàm số là
 
 $$
-\nabla^2 f(\mathbf{x}) = 
+\nabla^2 f(x) = 
 \left[
 \begin{matrix}
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_1^2} & \frac{\partial f^2(\mathbf{x})}{\partial x_1x_2} \\
-    \frac{\partial^2 f(\mathbf{x})}{\partial x_2x_1} & \frac{\partial f^2(\mathbf{x})}{\partial x_2^2}
+    \frac{\partial^2 f(x)}{\partial x_1^2} & \frac{\partial f^2(x)}{\partial x_1x_2} \\
+    \frac{\partial^2 f(x)}{\partial x_2x_1} & \frac{\partial f^2(x)}{\partial x_2^2}
 \end{matrix}
 \right] =
 \left[
@@ -228,13 +238,13 @@ $$
 Xét hàm số $f(x): \mathbb{R} \rightarrow \mathbb{R}^n$, cụ thể
 
 $$
-v(x) = 
+f(x) = 
 \left[
 \begin{matrix}
-    v_1(x) \\
-    v_2(x) \\
+    f_1(x) \\
+    f_2(x) \\
     ... \\
-    v_n(x)
+    f_n(x)
 \end{matrix}
 \right]
 $$
@@ -242,10 +252,10 @@ $$
 Đạo hàm của hàm $f$ theo giá trị $x$ được định nghĩa như sau
 
 $$
-\nabla v(x) \triangleq 
+\nabla f(x) \triangleq 
 \left[
 \begin{matrix}
-    \frac{\partial v_1(x)}{\partial x} & \frac{\partial v_2(x)}{\partial x} & ... & \frac{\partial v_n(x)}{\partial x}
+    \frac{\partial f_1(x)}{\partial x} & \frac{\partial f_2(x)}{\partial x} & ... & \frac{\partial f_n(x)}{\partial x}
 \end{matrix}
 \right]
 $$
@@ -253,37 +263,40 @@ $$
 Và đạo hàm bậc hai của $f$ theo giá trị $x$ có dạng
 
 $$
-\nabla^2 v(x) \triangleq 
+\nabla^2 f(x) \triangleq 
 \left[
 \begin{matrix}
-    \frac{\partial^2 v_1(x)}{\partial x^2} & \frac{\partial^2 v_2(x)}{\partial x^2} & ... & \frac{\partial^2 v_n(x)}{\partial x^2}
+    \frac{\partial^2 f_1(x)}{\partial x^2} & \frac{\partial^2 f_2(x)}{\partial x^2} & ... & \frac{\partial^2 f_n(x)}{\partial x^2}
 \end{matrix}
 \right]
 $$
+
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa về kích thước của ma trận đầu ra sau phép tính đạo hàm.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/derivative_shape.jpeg" style="width: 400px;"/>
+
+trong đó:
+- Nếu $f: \mathbb{R} \rightarrow \mathbb{R}$ thì đạo hàm là một số vô hướng $\nabla f(x) \in \mathbb{R}$.
+- Nếu $f: \mathbb{R}^k \rightarrow \mathbb{R}$ thì đạo hàm là một vector có $k$ phần tử, cụ thể là $\nabla f(x) \in \mathbb{R}^{1 \times k}$.
+- Nếu $f: \mathbb{R} \rightarrow \mathbb{R}^n$ thì đạo hàm là một vector có $n$ phần tử, cụ thể là $\nabla f(x) \in \mathbb{R}^{n \times 1}$.
+- Nếu $f: \mathbb{R}^k \rightarrow \mathbb{R}^n$ thì đạo hàm là một ma trận có kích thước $n \times k$, cụ thể là $\nabla f(x) \in \mathbb{R}^{n \times k}$.
 
 #### Tính đạo hàm với hàm số nhận đầu vào là một vector, trả đầu ra là một vector
 
 Xét hàm số $f(x): \mathbb{R}^k \rightarrow \mathbb{R}^n$, lúc này, đạo hàm bậc nhất của nó là
 
 $$
-\begin{eqnarray}
-\nabla h(\mathbf{x}) &\triangleq &
+\nabla_{x} f(x) \triangleq
 \left[
 \begin{matrix}
-    \frac{\partial h_1(\mathbf{x})}{\partial x_1} & \frac{\partial h_2(\mathbf{x})}{\partial x_1} & ... & \frac{\partial h_n(\mathbf{x})}{\partial x_1} \\ 
-    \frac{\partial h_1(\mathbf{x})}{\partial x_2} & \frac{\partial h_2(\mathbf{x})}{\partial x_2} & ... & \frac{\partial h_n(\mathbf{x})}{\partial x_2} \\ 
-    ... & ... & \ddots & ... \\
-    \frac{\partial h_1(\mathbf{x})}{\partial x_k} & \frac{\partial h_2(\mathbf{x})}{\partial x_k} & ... & \frac{\partial h_n(\mathbf{x})}{\partial x_k}
+    \frac{\partial f_1(x)}{\partial x_1} & \frac{\partial f_1(x)}{\partial x_2} & ... & \frac{\partial f_1(x)}{\partial x_k} \\
+    \frac{\partial f_2(x)}{\partial x_1} & \frac{\partial f_2(x)}{\partial x_2} & ... & \frac{\partial f_2(x)}{\partial x_k} \\
+    ... & ... & ... & ... \\
+    \frac{\partial f_n(x)}{\partial x_1} & \frac{\partial f_n(x)}{\partial x_2} & ... & \frac{\partial f_n(x)}{\partial x_k} \\
 \end{matrix}
-\right] \\ 
-& = & 
-\left[
-\begin{matrix}
-    \nabla h_1(\mathbf{x}) & \nabla h_2(\mathbf{x}) & ... & \nabla h_n(\mathbf{x})
-\end{matrix}
-\right] \in \mathbf{R}^{k\times n}
-\end{eqnarray}
+\right] \in \mathbb{R}^{n \times k}
 $$
+
 
 ## 3. Một số ứng dụng trong Machine Learning
 
