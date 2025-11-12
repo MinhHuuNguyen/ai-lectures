@@ -388,7 +388,6 @@ Phân phối có nhiều đỉnh (nhiều mốt) được gọi là multimodal.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/multimodal.jpeg" style="width: 600px;"/>
 
-
 ## 5. Kullback-Leibler divergence (KL divergence)
 
 KL divergence (viết đầy đủ là Kullback–Leibler divergence) là một khái niệm trong lý thuyết thông tin và xác suất, dùng để đo mức độ khác biệt giữa hai phân phối xác suất. 

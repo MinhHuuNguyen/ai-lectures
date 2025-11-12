@@ -197,4 +197,4 @@ Trong đó:
 - $p(x)$ là xác suất biên của biến ngẫu nhiên $x$, được gọi là **evidence**.
 
 Định lý Bayes được sử dụng rất nhiều, trong hai thuật toán nền tảng cho nhiều mô hình Machine learning là Maximum Likelihood Estimation (MLE) và Maximum A Posteriori Estimation (MAP).
-Để hiểu rõ hơn về hai thuật toán này, bạn có thể tham khảo bài viết về [Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)](/blog/maximum-likelihood-estimation-mle-va-maximum-a-posteriori-map).
+Để hiểu rõ hơn về hai thuật toán này, bạn có thể tham khảo bài viết về [Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)](/blog/thuat-toan-maximum-likelihood-estimation-mle-va-maximum-a-posteriori-map/).
