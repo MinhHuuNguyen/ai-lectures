@@ -66,7 +66,7 @@ Thống kê dữ liệu là nền tảng quan trọng trong machine learning, gi
 
 ---
 
-### [Bài 5: Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)](/blog/thuat-toan-maximum-likelihood-estimation-mle-va-maximum-a-posteriori-map/)
+### [Bài 5: Thuật toán Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP)](/blog/thuat-toan-maximum-likelihood-estimation-mle-va-maximum-a-posteriori-map)
 
 Maximum Likelihood Estimation (MLE) và Maximum A Posteriori (MAP) là hai phương pháp thống kê quan trọng trong machine learning dùng để ước lượng tham số mô hình. MLE tìm giá trị tham số làm cực đại xác suất quan sát dữ liệu, tập trung hoàn toàn vào thông tin từ dữ liệu huấn luyện. Trong khi đó, MAP kết hợp cả dữ liệu và kiến thức tiên nghiệm (prior) thông qua định lý Bayes, cho phép ước lượng ổn định hơn khi dữ liệu hạn chế hoặc nhiễu. Cả hai phương pháp đều đóng vai trò cốt lõi trong các mô hình xác suất và suy luận Bayes hiện đại.
 
