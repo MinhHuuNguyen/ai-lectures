@@ -26,7 +26,7 @@ Là những kiểu dữ liệu không biểu thị bằng giá trị số, mà b
     - Mã hoá nhúng (Embedding encoding): Biểu diễn mỗi loại dưới dạng một vector trong không gian nhiều chiều.
     Phương pháp này thường áp dụng với dữ liệu phi cấu trúc như văn bản, hình ảnh và thường sử dụng trong các mô hình học sâu (deep learning) để biểu diễn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/data_space.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/data_space.jpeg" style="width: 600px;"/>
 
 #### Dữ liệu định lượng
 
@@ -38,7 +38,7 @@ Là dữ liệu được biểu thị ngay bằng giá trị số mà không c�
     - Dữ liệu liên tục: Dữ liệu được biểu diễn dưới các giá trị là các số thực.
 - Các dữ liệu định tính, sau khi được mã hoá, có thể được xử lý, phân tích, thống kê như dữ liệu định lượng.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/quantitative_data.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/quantitative_data.jpeg" style="width: 800px;"/>
 
 ### 1.2. Hình dạng dữ liệu
 
@@ -65,7 +65,7 @@ Dữ liệu phi cấu trúc thường bao gồm văn bản tự nhiên (natural 
 
 Ví dụ: dữ liệu email, dữ liệu hình ảnh từ camera giám sát, dữ liệu video từ các nền tảng chia sẻ video ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/structured_semi_structured_unstructured.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/structured_semi_structured_unstructured.jpeg" style="width: 800px;"/>
 
 Bất kể dữ liệu có cấu trúc, bán cấu trúc hay phi cấu trúc, việc chuyển đổi chúng thành dạng có thể phân tích và thống kê là bước quan trọng trong quá trình xử lý dữ liệu.
 
@@ -87,7 +87,7 @@ Mục tiêu của thống kê mô tả là cung cấp cái nhìn tổng quan v�
 Do đó, ta chỉ có thể làm việc với tập sample và kỳ vọng rằng tập sample có thể phản ảnh được hầu như toàn bộ bản chất của tập population.
 Điều này dẫn đến bài toán về việc chọn mẫu thống kê sao cho đại diện nhất cho tập population.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/population_sample.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/population_sample.jpeg" style="width: 700px;"/>
 
 #### Phương pháp chọn mẫu ngẫu nhiên
 
@@ -139,7 +139,7 @@ Tuy nhiên, giá trị trung bình trong một số trường hợp không thể
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa các giá trị trung bình, mốt và trung vị trong một mẫu dữ liệu.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/mean_modes_median.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/mean_modes_median.jpeg" style="width: 600px;"/>
 
 Mốt (mode) là giá trị xuất hiện nhiều nhất trong mẫu dữ liệu và được ký hiệu là $M_o$.
 
@@ -180,7 +180,7 @@ Hai giá trị này cung cấp thông tin về khoảng phân bố dữ liệu t
 - Kết hợp cùng các giá trị như trung bình, trung vị giúp đánh giá sâu hơn về phân bố của dữ liệu.
 - ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/box_plot.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/box_plot.jpeg" style="width: 600px;"/>
 
 ## 3. Các phân phối dữ liệu theo lý thuyết
 
@@ -195,7 +195,7 @@ Hai giá trị này cung cấp thông tin về khoảng phân bố dữ liệu t
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa về sự tương quan của các đặc trưng của dữ liệu.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/data_correlation.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/data_correlation.jpeg" style="width: 700px;"/>
 
 ### 3.2. Phân phối chuẩn (Normal distribution)
 
@@ -234,7 +234,7 @@ $$ \hat{\sigma} = \sqrt{\hat{\sigma}^2} $$
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa phân phối chuẩn một biến và phân phối chuẩn nhiều biến.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/uni_vs_multivariate.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/uni_vs_multivariate.jpeg" style="width: 700px;"/>
 
 #### Phân phối chuẩn nhiều biến (Multivariate normal distribution)
 
@@ -263,7 +263,7 @@ $$ P(x) = \frac{1}{(2\pi)^{D/2} |\Sigma|^{1/2}} \exp \left(\frac{1}{2} (x - \mu)
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa phân phối chuẩn nhiều biến.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/multivariate_normal_distribution.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/multivariate_normal_distribution.jpeg" style="width: 600px;"/>
 
 ##### Tính toán tham số của phân phối chuẩn nhiều biến
 
@@ -294,7 +294,7 @@ $$ P(x) = \begin{cases} \frac{1}{b - a} & \text{if } a \leq x \leq b \\ 0 & \tex
 Phân phối đều thường được sử dụng khi không có thông tin thiên lệch nào, tức tất cả giá trị trong khoảng $[a,b]$ đều khả dụng như nhau.
 Nói cách khác, khi ta cần tạo sự ngẫu nhiên mà không ưu tiên giá trị nào, phân phối này là lựa chọn hợp lý.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/uniform.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/uniform.jpeg" style="width: 600px;"/>
 
 Ví dụ: Ta có thể dùng phân phối đều để khởi tạo trọng số ban đầu (random initialization) trong mạng nơ-ron
 
@@ -327,7 +327,7 @@ Phân phối Bernoulli được ứng dụng nhiều trong machine learning khi 
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf).
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/bernoulli.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/5-statistics/bernoulli.jpeg" style="width: 300px;"/>
 
 Ví dụ: Trong bài toán binary classification của mô hình logistic regression, xác suất dự đoán nhãn positive được hiểu là $p$, và kết quả nhãn có thể xem như một biến Bernoulli với xác suất thành công đó.
 
