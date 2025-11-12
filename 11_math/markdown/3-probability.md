@@ -73,7 +73,7 @@ Tính chất:
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa phân phối xác suất rời rạc và phân phối xác suất liên tục.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/discrete_continuous_distribution.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/discrete_continuous_distribution.jpeg" style="width: 900px;"/>
 
 ### 2.2. Hàm mật độ xác suất (PDF - Probability Density Function)
 
@@ -134,7 +134,7 @@ Với $x$ là biến ngẫu nhiên rời rạc, $y$ là biến ngẫu nhiên li�
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa xác suất đồng thời của hai biến ngẫu nhiên rời rạc.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/discrete_joint_distribution.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/discrete_joint_distribution.jpeg" style="width: 400px;"/>
 
 ### 3.2. Xác suất biên (Marginal probability)
 
@@ -154,7 +154,7 @@ Trong một số tài liệu, để đơn giản hoá việc ký hiệu toán h�
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa xác suất biên và xác suất điều kiện của hai biến ngẫu nhiên.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/marginal_conditional_distribution.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/marginal_conditional_distribution.jpeg" style="width: 800px;"/>
 
 ### 3.3. Xác suất điều kiện (Conditional probability)
 
