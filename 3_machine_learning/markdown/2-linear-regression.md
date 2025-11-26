@@ -106,7 +106,6 @@ $$ house\_price = w_1 \cdot house\_size + w_2 \cdot location + w_3 \cdot utility
 | 9  | 132        | ĐN       | Normal  | West      | 1990       | 697         | 855.4           |
 | 10 | 112        | HP       | Good    | East      | 1997       | 575         | 773.1           |
 
-
 ## 3. Huấn luyện mô hình
 
 Với mỗi điểm dữ liệu, áp dụng công thức Linear Regression, ta sẽ có giá trị Predicted Price tương ứng.
