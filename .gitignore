@@ -17,6 +17,10 @@ checkpoint*.weights.h5
 # Logs
 events.out.tfevents*
 
+# Output files
+output_1_pyspark*
+output_2_pyspark*
+
 # Documentation and presentations
 *.pdf
 !books/**/*.pdf
