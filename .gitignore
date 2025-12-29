@@ -13,6 +13,7 @@ __pycache__
 *.pt
 *.onnx
 checkpoint*.weights.h5
+5_computer_vision/notebook/4-object-detection/lg_innotek/model_ckpts
 
 # Logs
 events.out.tfevents*
