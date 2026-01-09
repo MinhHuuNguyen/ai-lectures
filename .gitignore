@@ -11,6 +11,7 @@ __pycache__
 2_data_analysis_with_python/notebook/11-pytorch-lightning/tb_logs
 3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/dog_cat_dataset
 3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/results
+4_deep_learning/notebook/6-model-compression/cifar-10-*
 7_computer_audition/notebook/1-computer-audition/audio_as_image
 
 # Checkpoint files

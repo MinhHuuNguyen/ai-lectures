@@ -1,5 +1,5 @@
 ---
-time: 12/05/2023
+time: 
 title:
 description:
 banner_url:

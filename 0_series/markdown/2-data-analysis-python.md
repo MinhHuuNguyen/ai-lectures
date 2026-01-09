@@ -10,7 +10,7 @@ is_published: true
 
 ---
 
-### [Bài 1: Thư viện tính toán khoa học NumPy](/blog/thu-vien-tinh-toan-khoa-hoc-numpy/)
+### [Bài 1: Thư viện tính toán khoa học NumPy](/blog/thu-vien-tinh-toan-khoa-hoc-numpy)
 
 NumPy là một thư viện Python mạnh mẽ hỗ trợ tính toán khoa học và toán học trên mảng nhiều chiều. NumPy cung cấp một loạt các hàm và phương thức giúp thực hiện các phép toán cơ bản và nâng cao trên dữ liệu mảng nhanh chóng và hiệu quả.
 
@@ -24,7 +24,7 @@ NumPy là một thư viện Python mạnh mẽ hỗ trợ tính toán khoa học
 
 ---
 
-### [Bài 2: Thư viện xử lý dữ liệu dạng bảng Pandas](/blog/thu-vien-xu-ly-du-lieu-dang-bang-pandas/)
+### [Bài 2: Thư viện xử lý dữ liệu dạng bảng Pandas](/blog/thu-vien-xu-ly-du-lieu-dang-bang-pandas)
 
 Pandas là một thư viện mã nguồn mở cung cấp cấu trúc dữ liệu và công cụ xử lý dữ liệu mạnh mẽ, dễ sử dụng. Pandas hỗ trợ đọc, ghi, xử lý và phân tích dữ liệu dạng bảng nhanh chóng và hiệu quả.
 
@@ -40,7 +40,7 @@ Pandas là một thư viện mã nguồn mở cung cấp cấu trúc dữ liệu
 
 ---
 
-### [Bài 3: Trực quan hoá dữ liệu với Matplotlib và Seaborn](/blog/truc-quan-hoa-du-lieu-voi-matplotlib-va-seaborn/)
+### [Bài 3: Trực quan hoá dữ liệu với Matplotlib và Seaborn](/blog/truc-quan-hoa-du-lieu-voi-matplotlib-va-seaborn)
 
 Matplotlib và Seaborn là hai thư viện trực quan hoá dữ liệu phổ biến trong Python. Cả hai thư viện này cung cấp các công cụ mạnh mẽ giúp tạo ra các biểu đồ đẹp mắt, dễ đọc và dễ hiểu. Sự kết hợp giữa Matplotlib và Seaborn giúp người dùng có thể tận dụng được ưu điểm của cả hai thư viện để trực quan hoá dữ liệu một cách hiệu quả.
 
