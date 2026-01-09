@@ -4,6 +4,8 @@
 __pycache__
 
 # Datasets
+2_data_analysis_with_python/notebook/10-pytorch-basic/data*
+2_data_analysis_with_python/notebook/10-pytorch-basic/.vector_cache
 3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/dog_cat_dataset
 3_machine_learning/notebook/11-kmeans-12-dbscan/image_clustering/results
 7_computer_audition/notebook/1-computer-audition/audio_as_image
