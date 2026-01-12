@@ -15,6 +15,7 @@ __pycache__
 5_computer_vision/notebook/3-image-processing-data-augmentation/opencv_basic/output*
 5_computer_vision/notebook/13-video-processing/optical_flow/key_frames
 5_computer_vision/notebook/13-video-processing/optical_flow/clipped
+5_computer_vision/notebook/4-object-detection/brain_tumor_detection/brain_tumor_mri_dataset_coco
 7_computer_audition/notebook/1-computer-audition/audio_as_image
 
 # Checkpoint files
