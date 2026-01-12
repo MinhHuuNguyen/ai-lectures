@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "albumentations>=2.0.8",
+    "grad-cam>=1.5.5",
     "imageio>=2.37.0",
     "jupyter>=1.1.1",
     "librosa>=0.11.0",
