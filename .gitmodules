@@ -1,3 +1,6 @@
 [submodule "0_practice_coding/0_public_repositories/yolov5"]
 	path = 0_practice_coding/0_public_repositories/yolov5_code/yolov5
 	url = https://github.com/ultralytics/yolov5.git
+[submodule "5_computer_vision/notebook/4-object-detection/brain_tumor_detection/yolov9"]
+	path = 5_computer_vision/notebook/4-object-detection/brain_tumor_detection/yolov9
+	url = https://github.com/WongKinYiu/yolov9.git
