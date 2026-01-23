@@ -4,3 +4,6 @@
 [submodule "5_computer_vision/notebook/4-object-detection/brain_tumor_detection/yolov9"]
 	path = 5_computer_vision/notebook/4-object-detection/brain_tumor_detection/yolov9
 	url = https://github.com/WongKinYiu/yolov9.git
+[submodule "5_computer_vision/notebook/7-image-segmentation/carvana_image_masking/Pytorch-UNet"]
+	path = 5_computer_vision/notebook/7-image-segmentation/carvana_image_masking/Pytorch-UNet
+	url = https://github.com/milesial/Pytorch-UNet.git
