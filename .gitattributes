@@ -1,0 +1,2 @@
+2_data_analysis_with_python/notebook/6-case-study-m5/data/sell_prices.csv filter=lfs diff=lfs merge=lfs -text
+2_data_analysis_with_python/notebook/6-case-study-m5/data/sales.csv filter=lfs diff=lfs merge=lfs -text
