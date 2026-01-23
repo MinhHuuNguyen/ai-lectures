@@ -1,7 +1,16 @@
-cd yolov9
-uv init
-uv add -r requirements.txt
+cd yolov9_venv
+# uv init
+# uv add -r requirements.txt
 . ./.venv/bin/activate
+
+cd ../yolov9
+
+python detect_dual.py \
+    --source ../yolov9_test_images/test_image_2.jpg \
+    --img 640 \
+    --device cpu \
+    --weights ../yolov9-c.pt \
+    --name yolov9_c_640_detect
 
 python train_dual.py \
     --workers 1 \
@@ -14,5 +23,5 @@ python train_dual.py \
     --name yolov9-c \
     --hyp hyp.scratch-high.yaml \
     --min-items 0 \
-    --epochs 5 \
+    --epochs 50 \
     --close-mosaic 15

@@ -21,6 +21,7 @@ __pycache__
 # Checkpoint files
 *.pth
 *.pt
+!5_computer_vision/notebook/4-object-detection/brain_tumor_detection/yolov9-c.pt
 *.onnx
 checkpoint*.weights.h5
 2_data_analysis_with_python/notebook/4-scikit-learn/*.joblib

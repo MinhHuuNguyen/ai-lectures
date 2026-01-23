@@ -3,5 +3,25 @@ name = "yolov9-venv"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.8"
-dependencies = []
+requires-python = ">=3.9"
+dependencies = [
+    "albumentations>=1.0.3",
+    "gitpython>=3.1.46",
+    "ipython>=8.18.1",
+    "matplotlib>=3.2.2",
+    "numpy>=1.18.5",
+    "opencv-python>=4.1.1",
+    "pandas>=1.1.4",
+    "pillow==9.5.0",
+    "psutil>=7.2.1",
+    "pycocotools>=2.0",
+    "pyyaml>=5.3.1",
+    "requests>=2.23.0",
+    "scipy>=1.4.1",
+    "seaborn>=0.11.0",
+    "tensorboard>=2.4.1",
+    "thop>=0.1.1",
+    "torch==2.3.1",
+    "torchvision==0.18.1",
+    "tqdm>=4.64.0",
+]
