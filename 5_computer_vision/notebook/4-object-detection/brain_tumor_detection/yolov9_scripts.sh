@@ -9,8 +9,9 @@ python detect_dual.py \
     --source ../yolov9_test_images/test_image_2.jpg \
     --img 640 \
     --device cpu \
-    --weights ../yolov9-c.pt \
-    --name yolov9_c_640_detect
+    --weights ../ckpt_yolov9_pretrained_coco.pt \
+    --name ckpt_yolov9_pretrained_coco_detect
+
 
 python train_dual.py \
     --workers 1 \
@@ -25,3 +26,11 @@ python train_dual.py \
     --min-items 0 \
     --epochs 50 \
     --close-mosaic 15
+
+
+python detect_dual.py \
+    --source ../brain_tumor_mri_dataset/test/y170_jpg.rf.a8208cf093d8dde49b3857e1381c190b.jpg \
+    --img 640 \
+    --device cpu \
+    --weights ../runs_yolov9_brain_tumor_mri_dataset/weights/best.pt \
+    --name runs_yolov9_brain_tumor_mri_dataset_detect

@@ -21,7 +21,9 @@ __pycache__
 # Checkpoint files
 *.pth
 *.pt
-!5_computer_vision/notebook/4-object-detection/brain_tumor_detection/yolov9-c.pt
+!5_computer_vision/notebook/4-object-detection/brain_tumor_detection/ckpt_yolov9_pretrained_coco.pt
+!5_computer_vision/notebook/4-object-detection/brain_tumor_detection/runs_yolov9_brain_tumor_mri_dataset/weights/best.pt
+!5_computer_vision/notebook/4-object-detection/brain_tumor_detection/runs_yolov9_brain_tumor_mri_dataset/events.out.tfevents.1769156631.server131.2869228.0
 *.onnx
 checkpoint*.weights.h5
 2_data_analysis_with_python/notebook/4-scikit-learn/*.joblib
