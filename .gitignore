@@ -2,6 +2,7 @@
 .ipynb_checkpoints
 .DS_Store
 __pycache__
+milesial_Pytorch-UNet_master
 
 # Datasets
 2_data_analysis_with_python/notebook/10-pytorch-basic/data*
@@ -35,6 +36,8 @@ events.out.tfevents*
 # Output files
 output_1_pyspark*
 output_2_pyspark*
+5_computer_vision/notebook/7-image-segmentation/carvana_image_masking/*output.jpg
+5_computer_vision/notebook/7-image-segmentation/carvana_image_masking/trusted_list
 
 # Documentation and presentations
 *.pdf
