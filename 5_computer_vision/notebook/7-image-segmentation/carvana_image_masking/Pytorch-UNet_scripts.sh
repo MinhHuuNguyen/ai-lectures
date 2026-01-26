@@ -33,4 +33,4 @@ python predict.py \
 # From: device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # To: device = torch.device('cpu')
 
-python train.py --epochs 50 --batch-size 8
+python train.py --epochs 50 --batch-size 2
