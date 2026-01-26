@@ -1,0 +1,16 @@
+[project]
+name = "pytorch-unet-venv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "matplotlib==3.6.2",
+    "numpy==1.23.5",
+    "pillow==9.3.0",
+    "torch==2.3.0",
+    "torchvision==0.18.0",
+    "tqdm==4.64.1",
+    "urllib3==1.26.15",
+    "wandb==0.13.5",
+]

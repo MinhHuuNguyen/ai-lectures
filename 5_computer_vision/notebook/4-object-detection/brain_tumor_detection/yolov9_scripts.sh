@@ -1,6 +1,6 @@
 cd yolov9_venv
 # uv init
-# uv add -r requirements.txt
+# uv add -r ../yolov9/requirements.txt
 . ./.venv/bin/activate
 
 cd ../yolov9
