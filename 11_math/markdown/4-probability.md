@@ -18,7 +18,7 @@ Trong ví dụ về tung xúc xắc, biến ngẫu nhiên là số chấm thu đ
 **Không gian mẫu (sample space) là tập hợp tất cả các giá trị mà một biến ngẫu nhiên có thể nhận.**
 Trong ví dụ về tung xúc xắc, không gian mẫu là tập hợp tất cả các khả năng mà mặt trên của xúc xắc có thể nhận, cụ thể là 1 chấm, 2 chấm, 3 chấm, 4 chấm, 5 chấm, và 6 chấm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/random_variable_sample_space.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/4-probability/random_variable_sample_space.jpeg" style="width: 600px;"/>
 
 **Biến cố (event) là một sự kiện xảy ra giúp ta nhận được một kết quả của biến ngẫu nhiên.**
 Trong ví dụ về tung xúc xắc, biến cố là sự kiện ta tung xúc xắc.
@@ -26,7 +26,7 @@ Trong ví dụ về tung xúc xắc, biến cố là sự kiện ta tung xúc x�
 **Kết quả (outcome) là giá trị mà biến ngẫu nhiên nhận được sau khi biến cố xảy ra.**
 Trong ví dụ về tung xúc xắc, sau khi tung xúc xắc, ta thu được kết quả là 1 chấm chả hạn.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/event_outcome.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/4-probability/event_outcome.jpeg" style="width: 600px;"/>
 
 Khi ta thực hiện lặp đi lặp lại nhiều lần, ta có thể thu được nhiều kết quả khác nhau đối với cùng biến ngẫu nhiên, sẽ có những kết quả xuất hiện nhiều lần hơn các kết quả khác, sẽ có những kết quả xuất hiện ít lần hơn các lần khác, sẽ có những kết quả có số lần xuất hiện xấp xỉ nhau.
 
@@ -41,7 +41,7 @@ Mỗi kết quả đầu ra trong không gian mẫu sẽ có một giá trị x�
 
 $$ \sum_{x} p(x) = 1 $$
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/discrete_continuous_random_variable.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/4-probability/discrete_continuous_random_variable.jpeg" style="width: 600px;"/>
 
 **Biến ngẫu nhiên liên tục là biến ngẫu nhiên mà không gian mẫu của nó là một khoảng giá trị cho trước, hay nói cách khác, không gian mẫu của nó là một tập hợp con của tập số thực.**
 Khoảng giá trị này có thể là hữu hạn (ví dụ: thời gian làm bài thi của một học sinh, nằm trong khoảng từ 0 phút đến 180 phút) hoặc là vô hạn (ví dụ: thời gian di chuyển từ điểm A đến điểm B của một chiếc xe).
@@ -73,7 +73,7 @@ Tính chất:
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa phân phối xác suất rời rạc và phân phối xác suất liên tục.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/discrete_continuous_distribution.jpeg" style="width: 900px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/4-probability/discrete_continuous_distribution.jpeg" style="width: 900px;"/>
 
 ### 2.2. Hàm mật độ xác suất (PDF - Probability Density Function)
 
@@ -134,7 +134,7 @@ Với $x$ là biến ngẫu nhiên rời rạc, $y$ là biến ngẫu nhiên li�
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa xác suất đồng thời của hai biến ngẫu nhiên rời rạc.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/discrete_joint_distribution.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/4-probability/discrete_joint_distribution.jpeg" style="width: 400px;"/>
 
 ### 3.2. Xác suất biên (Marginal probability)
 
@@ -154,7 +154,7 @@ Trong một số tài liệu, để đơn giản hoá việc ký hiệu toán h�
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa xác suất biên và xác suất điều kiện của hai biến ngẫu nhiên.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-probability/marginal_conditional_distribution.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/4-probability/marginal_conditional_distribution.jpeg" style="width: 800px;"/>
 
 ### 3.3. Xác suất điều kiện (Conditional probability)
 

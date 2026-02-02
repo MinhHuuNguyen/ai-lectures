@@ -75,7 +75,7 @@ trong đó:
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa về tỷ số vi phân.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/derivative.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-calculus/derivative.jpeg" style="width: 400px;"/>
 
 Nếu giới hạn trên tồn tại, ta nói rằng hàm số $f(x)$ khả vi tại điểm $x_0$, và $f'(x_0)$ được gọi là đạo hàm của hàm số tại điểm đó.
 
@@ -273,7 +273,7 @@ $$
 
 Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) minh họa về kích thước của ma trận đầu ra sau phép tính đạo hàm.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/2-calculus/derivative_shape.jpeg" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/3-calculus/derivative_shape.jpeg" style="width: 400px;"/>
 
 trong đó:
 - Nếu $f: \mathbb{R} \rightarrow \mathbb{R}$ thì đạo hàm là một số vô hướng $\nabla f(x) \in \mathbb{R}$.
