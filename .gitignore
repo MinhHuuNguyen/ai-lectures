@@ -5,6 +5,7 @@ __pycache__
 milesial_Pytorch-UNet_master
 
 # Datasets
+*.zip
 2_data_analysis_with_python/notebook/10-pytorch-basic/data*
 2_data_analysis_with_python/notebook/10-pytorch-basic/.vector_cache
 2_data_analysis_with_python/notebook/11-pytorch-lightning/ckpts
