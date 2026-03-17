@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  milvus:
+    image: milvusdb/milvus:2.4.10
+    container_name: milvus-standalone
+    environment:
+      - MILVUS_LOG_LEVEL=info
+    ports:
+      - "19530:19530"   # Milvus gRPC
+      - "9091:9091"     # Milvus REST
+    volumes:
+      - milvus_data:/var/lib/milvus
+    command: ["milvus", "run", "standalone"]
+volumes:
+  milvus_data:
