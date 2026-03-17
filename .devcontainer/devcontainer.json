@@ -1,0 +1,26 @@
+{
+  "name": "Minimal Python DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": false
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "${containerWorkspaceFolder}/venv/.venv/bin/python",
+        "python.terminal.activateEnvironment": true
+      }
+    }
+  },
+
+  "remoteEnv": {
+    "VIRTUAL_ENV": "${containerWorkspaceFolder}/venv/.venv",
+    "PATH": "${containerWorkspaceFolder}/venv/.venv/bin:${containerEnv:PATH}"
+  }
+}
