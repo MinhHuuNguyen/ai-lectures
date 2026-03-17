@@ -20,7 +20,7 @@
   },
 
   "remoteEnv": {
-    "VIRTUAL_ENV": "${containerWorkspaceFolder}/venv/.venv",
-    "PATH": "${containerWorkspaceFolder}/venv/.venv/bin:${containerEnv:PATH}"
+    "VIRTUAL_ENV": "${containerWorkspaceFolder}/venv/common_venv/.venv",
+    "PATH": "${containerWorkspaceFolder}/venv/common_venv/.venv/bin:${containerEnv:PATH}"
   }
 }
