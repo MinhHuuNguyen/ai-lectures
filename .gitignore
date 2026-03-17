@@ -1,3 +1,6 @@
+# API key and credentials files
+*.env
+
 # Auto generated files and folders
 .ipynb_checkpoints
 .DS_Store
