@@ -13,7 +13,7 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "python.defaultInterpreterPath": "${containerWorkspaceFolder}/venv/.venv/bin/python",
+        "python.defaultInterpreterPath": "${containerWorkspaceFolder}/venv/common_venv/.venv/bin/python",
         "python.terminal.activateEnvironment": true
       }
     }
