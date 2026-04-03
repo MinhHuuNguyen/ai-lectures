@@ -40,15 +40,27 @@ Mạng nơ ron tích chập Convolutional Neural Network (CNN) là một trong n
 
 ---
 
-### [Bài 3: Xử lý ảnh (Image processing) và tăng cường dữ liệu (Data augmentation)]()
+### [Bài 3: Kỹ thuật xử lý hình ảnh Image processing và tăng cường dữ liệu hình ảnh Image data augmentation](/blog/ky-thuat-xu-ly-hinh-anh-image-processing-va-tang-cuong-du-lieu-hinh-anh-image-data-augmentation)
 
-*Mình sẽ viết bài này trong thời gian tới*
+Xử lý ảnh là một lĩnh vực rộng lớn trong Thị giác máy tính, cung cấp các công cụ và thuật toán để thao tác và phân tích hình ảnh kỹ thuật số. Nó là nền tảng cho nhiều ứng dụng từ chỉnh sửa ảnh đơn giản đến phức tạp. Tăng cường dữ liệu ảnh là một kỹ thuật không thể thiếu trong việc xây dựng các mô hình Thị giác máy tính dựa trên mạng nơ ron hiện đại. Bằng cách sử dụng các phép xử lý ảnh để tạo ra dữ liệu huấn luyện đa dạng, chúng ta có thể xây dựng các mô hình AI chính xác hơn, mạnh mẽ hơn và có khả năng khái quát hóa tốt hơn trong thế giới thực.
+
+###### 1. Xử lý ảnh (Image Processing)
+
+###### 2. Tăng cường dữ liệu ảnh (Image data augmentation)
 
 ---
 
-### [Bài 4: Giới thiệu bài toán Object detection]()
+### [Bài 4:Bài toán object detection](/blog/bai-toan-object-detection)
 
-*Mình sẽ viết bài này trong thời gian tới*
+Object detection là bài toán kết hợp giữa hai bài toán object localization và object classification. Trong đó, mô hình giải quyết bài toán object detection đầu tiên sẽ định vị vị trí có thể chứa đối tượng trong ảnh (object localization), sau đó mô hình sẽ thực hiện phân lớp đối tượng để nhận diện đối tượng đó là đối tượng nào (object classification). Object detection là bài toán cực kỳ quan trọng và có nhiều ứng dụng trong lĩnh vực Computer vision.
+
+###### 1. Giới thiệu chung về object detection
+
+###### 2. Một số khái niệm trong object detection
+
+###### 3. Các metrics trong object detection
+
+###### 4. Các kỹ thuật data augmentation cho object detection
 
 ---
 

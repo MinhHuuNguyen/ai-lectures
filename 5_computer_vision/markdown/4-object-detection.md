@@ -1,59 +1,74 @@
 ---
 time: 05/10/2022
-title:
-description:
-banner_url:
+title: Bài toán object detection
+description: Object detection là bài toán kết hợp giữa hai bài toán object localization và object classification. Trong đó, mô hình giải quyết bài toán object detection đầu tiên sẽ định vị vị trí có thể chứa đối tượng trong ảnh (object localization), sau đó mô hình sẽ thực hiện phân lớp đối tượng để nhận diện đối tượng đó là đối tượng nào (object classification). Object detection là bài toán cực kỳ quan trọng và có nhiều ứng dụng trong lĩnh vực Computer vision.
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/4-object-detection/banner.jpeg
 tags: [deep-learning, computer-vision]
 is_highlight: false
-is_published: false
+is_published: true
 ---
 
-# Object detection
+## 1. Giới thiệu chung về object detection
 
-## 1. Giới thiệu chung bài toán object detection
-Bài toán object detection là một bài toán rất phổ biến trong computer vision và được coi là một trong số các bài toán machine learning kinh điển.
+Object detection là một bài toán rất phổ biến trong computer vision và được coi là một trong số các bài toán machine learning kinh điển.
 
-Tính ứng dụng của bài toán object detection trong thực tiễn là rất lớn trong nhiều ngành nghề khác nhau.
+Tính ứng dụng của Object detection trong thực tiễn là rất lớn trong nhiều ngành nghề khác nhau.
 Object detection được sử dụng trong y tế giúp xác định vị trí bị bệnh trong cơ thể, trong bảo mật giúp định vị vị trí của con người trong những khu vực cấm, trong nông nghiệp giúp xác định số lượng nông sản, trong hệ thống xe tự hành ...
 
-<img src="" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/object_detection.jpeg" style="width: 1000px;"/>
 
-Bài toán object detection là sự tổng hợp của hai bài toán con: object localization và image classification. 
-- Object localization là bài toán định vị vị trí của object trong ảnh: nhận đầu vào là một ảnh và trả đầu ra là một hoặc nhiều bbox của từng đối tượng.
-- Image classification là bài toán phân lớp ảnh: nhận đầu vào là một ảnh và trả đầu ra là lớp của đối tượng đó.
-Bài toán object detection kết hợp cả hai bài toán trên, yêu cầu mô hình vừa định vị vị trí của một hoặc nhiều đối tượng trong ảnh vừa xác định lớp của từng đối tượng đó.
+Bài toán object detection là sự tổng hợp của hai bài toán con: object localization và object classification. 
+- **Object localization**: là bài toán định vị vị trí của object trong ảnh, nhận đầu vào là một ảnh và trả đầu ra là một hoặc nhiều bbox của từng đối tượng.
+- **Object classification**: là bài toán phân lớp ảnh, nhận đầu vào là một ảnh và trả đầu ra là lớp của đối tượng đó.
 
-## 2. Khái quát các mô hình giải quyết bài toán object detection
+Object detection kết hợp cả hai bài toán trên, yêu cầu mô hình vừa định vị vị trí của một hoặc nhiều đối tượng trong ảnh vừa xác định lớp của từng đối tượng đó.
 
-### 2.1. Nhóm các mô hình two-stage
+### 1.1. Nhóm mô hình two-stage object detection
 
-Các mô hình thuộc nhóm two-stage ra đời khá sớm từ năm 2014 đến 2017. Nhóm này có đặc điểm chung về kiến trúc gồm hai phần:
-- Region proposals module: module nhận đầu vào là ảnh ban đầu và trả đầu ra là các khu vực trên ảnh mà có khả năng chứa đối tượng.
-- Feature extraction module: module nhận đầu vào là các region từ Region proposals module giúp xác định chính xác đối tượng trong khu vực đó là đối tượng nào và tinh chỉnh toạ độ của khu vực chính xác hơn.
+Các mô hình thuộc nhóm two-stage ra đời khá sớm từ năm 2014 đến 2017, với các cái tên nổi tiếng là R-CNN, Fast R-CNN, Faster R-CNN.
 
-<img src="" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/5-two-stage-od-models/banner.jpeg" style="width: 1000px;"/>
 
-### 2.2. Nhóm các mô hình single-stage
+Nhóm này có đặc điểm chung về kiến trúc gồm hai phần:
+- **Region proposals module**: module này nhận đầu vào là ảnh đầu vào cần thực thi object detection và trả đầu ra là các khu vực trên ảnh mà **có khả năng** chứa đối tượng.
+- **Feature extraction module**: module này nhận đầu vào là **các khu vực mà Region proposals module trả ra** và trả đầu ra giúp xác định chính xác đối tượng trong khu vực đó là đối tượng nào và tinh chỉnh toạ độ của khu vực để đưa ra lời dự đoán chính xác hơn.
 
-Các mô hình thuộc nhóm single-stage ra đời muộn hơn từ năm 2016 đến nay, tuy nhiên lại đang nhận được sự quan tâm rất lớn của giới nghiên cứu trong thời gian trở lại đây vì tính ứng dụng trong thực tiễn cao của chúng.
+### 1.2. Nhóm mô hình single-stage object detection
+
+Các mô hình thuộc nhóm single-stage ra đời muộn hơn từ năm 2016 đến nay, với các cái tên nổi tiếng là SSD, chuỗi các phiên bản của YOLO, RetinaNet.
+Hiện nay, các mô hình thuộc nhóm single-stage đang nhận được sự quan tâm rất lớn của giới nghiên cứu trong thời gian trở lại đây vì tính ứng dụng trong thực tiễn cao của chúng.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/6-single-stage-od-models/banner.jpeg" style="width: 1000px;"/>
 
 Các mô hình single-stage đều dựa vào động lực trong việc loại bỏ Region proposals module nhằm giảm khối lượng tính toán, qua đó tăng tốc độ và đưa mô hình đến gần hơn với khả năng chạy real-time.
 
+## 2. Một số khái niệm trong object detection
 
+### 2.1. Anchor
 
-# Metrics trong bài toán object detection
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/4-object-detection/anchor.jpeg" style="width: 1000px;"/>
 
-## 1. Một số khái niệm quan trọng
+### 2.2. Non-maximum suppression
 
-### 1.1. Intersection Over Union (IoU)
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/4-object-detection/nms.jpeg" style="width: 1000px;"/>
+
+### 2.3. Intersection Over Union (IoU)
 
 Intersection Over Union (gọi tắt là IoU) là chỉ số được tính toán dựa trên Jaccard Index nhằm đánh giá độ trùng nhau giữa 2 bbox trong bài toán object detection (bbox groundtruth và bbox prediction).
 
 IoU được tính bằng thương của diện tích giao của hai bbox và diện tích hợp của hai bbox.
 
-<img src="" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/4-object-detection/iou.jpeg" style="width: 1000px;"/>
 
-### 1.2. TP, FP, FN và TN
+## 3. Các metrics trong object detection
+
+Với đặc thù của bài toán object detection là tính toán 
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/4-object-detection/metrics.jpeg" style="width: 1000px;"/>
+
+### 3.1. TP, FP, FN và TN
+
+Các khái niệm TP, FP, FN và TN trong bài toán classification đã được chia sẻ trong bài viết [Metrics đánh giá cho bài toán classification](/blog/metrics-danh-gia-cho-bai-toan-classification).
 
 Từ khái niệm về IoU, ta có các khái niệm:
 - True Positive (TP): Bbox prediction được gọi là TP nếu IoU giữa bbox groundtruth và bbox prediction $\geq$ ngưỡng IoU (IoU threshold).
@@ -61,35 +76,39 @@ Từ khái niệm về IoU, ta có các khái niệm:
 - False Negative (FN): Là các bbox groundtruth không được dự đoán
 - True Negative (TN): Không được sử dụng trong bài toán object detection
 
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/4-object-detection/tp_fp_tn_fn.jpeg" style="width: 1000px;"/>
+
 Đối với các bài toán object detection có nhiều class hơn 2 (class object và class background), bbox prediction được gọi là TP không những phải thoả mãn yêu cầu về IoU mà còn phải thoả mãn yêu cầu về class dự đoán phải đúng.
 
-<img src="" style="width: 1200px;"/>
+Trong quá trình đánh giá mô hình object detection, ta thường sử dụng ba ngưỡng IoU là 0.5, 0.75 và 0.9.
 
-Trong quá trình đánh giá mô hình object detection, ta thường sử dụng ba ngưỡng là 0.5, 0.75 và 0.9.
+### 3.2. Precision và Recall
 
-### 1.3. Precision và Recall
+Các khái niệm TP, FP, FN và TN trong bài toán classification đã được chia sẻ trong bài viết [Metrics đánh giá cho bài toán classification](/blog/metrics-danh-gia-cho-bai-toan-classification).
 
 Tương tự như việc đánh giá mô hình classification, precision và recall cũng được sử dụng để đánh giá mô hình object detection.
 
-$$
-\text{precision} = \frac{\text{TP}}{\text{TP + FP}}
-$$
+$$ \text{precision} = \frac{\text{TP}}{\text{TP + FP}} $$
 
-$$
-\text{recall} = \frac{\text{TP}}{\text{TP + FN}}
-$$
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_precision.jpeg" style="width: 500px;"/>
 
-## 2. Các metrics phổ biến trong bài toán object detection
+$$ \text{recall} = \frac{\text{TP}}{\text{TP + FN}} $$
 
-### 2.1. Precision x Recall curve
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_recall.jpeg" style="width: 500px;"/>
+
+### 3.3. Precision x Recall curve
 
 Precision x Recall curve là một biểu đồ giúp đánh giá tương quan về đánh đổi giữa precision và recall.
 
-<img src="" style="width: 1200px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/precision_recall_curve.jpeg" style="width: 500px;"/>
 
-### 2.2. Average Precision (AP) và Mean Average Precision (mAP)
+### 3.4. Average Precision (AP) và Mean Average Precision (mAP)
 
 Average Precision (gọi tắt là AP) là metrics phổ biến nhất dùng đánh giá mô hình object detection.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/ap.jpeg" style="width: 500px;"/>
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/map.jpeg" style="width: 500px;"/>
 
 AP được tính bằng chỉ số Area under Curve (AuC) của Precision x Recall curve.
 Thay vì quan sát hai Precision x Recall curve xem đường nào tốt hơn thì ta tính toán ra một chỉ số để dễ dàng đánh giá được.
@@ -98,45 +117,42 @@ Trong thực tế, tên gọi Average Precision có nghĩa là Precision đượ
 
 Ngoài ra, đối với những mô hình object detection với nhiều class object khác nhau, ta có chỉ số Mean Average Precision (mAP) được tính bằng trung bình chỉ số AP trên tất cả các class object.
 
-### 2.3. Ví dụ minh hoạ việc tính toán AP
+#### Ví dụ minh hoạ việc tính toán AP
 
 Ta có các bbox prediction màu đỏ (được ký hiệu các ký tự A, B, C ... Y) với các chỉ số confidence bên cạnh, các bbox groundtruth màu xanh lá.
 
-<img src="" style="width: 1200px;"/>
+<img src="" style="width: 1000px;"/>
 
 Với việc lấy IoU $\geq$ 0.3, ta có từng bbox prediction là các bbox TP hay FN như bảng dưới
 
-<img src="" style="width: 1200px;"/>
+<img src="" style="width: 1000px;"/>
 
 Sau khi xác định các bbox prediction là TP hay FN, ta sắp xếp chúng theo thứ tự về confidence để tính toán Precision và Recall.
 
-<img src="" style="width: 1200px;"/>
+<img src="" style="width: 1000px;"/>
 
 Với mỗi cặp giá trị Precision và Recall vừa tính toán được, ta thu được Precision x Recall curve
 
-<img src="" style="width: 1200px;"/>
+<img src="" style="width: 1000px;"/>
 
 Tiếp theo, ta xấp xỉ đường Precision trên bằng một đường gọi là Interpolated Precision.
 Đến đây, ta có hai cách để tính đường interpolated precision.
 
-#### 11-point interpolation
+##### 11-point interpolation
 
 Cách đầu tiên được gọi là 11-point interpolation, ta chia trục recall của Precision x Recall curve thành 10 phần với 11 mốc recall (0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1).
 Với mỗi mốc recall, ta lấy chỉ số precision cao nhất mà nhận chỉ số recall lớn hơn hoặc bằng mốc recall đang xét.
 
-<img src="" style="width: 1200px;"/>
+<img src="" style="width: 1000px;"/>
 
 Cuối cùng, ta tính AP bằng cách lấy trung bình cộng của các giá trị precision lấy được ở bước trên.
 
+$$ \text{AP} = \frac{1}{11} \sum_{r \in \{0, 0.1, ... 0.9, 1 \}} \text{p}_{\text{interp}}(\text{r})
 $$
-\text{AP} = \frac{1}{11} \sum_{r \in \{0, 0.1, ... 0.9, 1 \}} \text{p}_{\text{interp}}(\text{r})
-$$
-
-$$
-\text{AP} = \frac{1}{11} (1 + 0.6666 + 0.4285 + 0.4285 + 0.4285 + 0 + 0 + 0 + 0 + 0 + 0 + 0) = 0.268372 \approx 26.84\%
+$$ \text{AP} = \frac{1}{11} (1 + 0.6666 + 0.4285 + 0.4285 + 0.4285 + 0 + 0 + 0 + 0 + 0 + 0 + 0) = 0.268372 \approx 26.84\%
 $$
 
-#### All-point interpolation
+##### All-point interpolation
 
 Cách thứ hai được gọi là all-point interpolation, ta tính interpolated precision với chính xác các mốc recall của Precision x Recall curve.
 
@@ -146,28 +162,55 @@ Cuối cùng, ta tính toán AuC của đường interpolated precision để th
 
 <img src="" style="width: 750px;"/>
 
-$$
-\text{AP} = \text{A1} + \text{A2} + \text{A3} + \text{A4}
-$$
-
-$$
-\text{A1} = (0.0666 - 0) \times 1 = 0.0666
-$$
-
-$$
-\text{A1} = (0.1333 - 0.0666) \times 0.0666 = 0.04446222
-$$
-
-$$
-\text{A1} = (0.4 - 0.1333) \times 0.4285 = 0.11428095
-$$
-
-$$
-\text{A1} = (0.4666 - 0.4) \times 0.3043 = 0.02026638
-$$
-
-$$
-\text{AP} = 0.0666 + 0.04446222 + 0.11428095 + 0.02026638 = 0.24560955 \approx 24.56\%
-$$
-
+$$ \text{AP} = \text{A1} + \text{A2} + \text{A3} + \text{A4}
+$$ 
+$$ \text{A1} = (0.0666 - 0) \times 1 = 0.0666
+$$ 
+$$ \text{A1} = (0.1333 - 0.0666) \times 0.0666 = 0.04446222
+$$ 
+$$ \text{A1} = (0.4 - 0.1333) \times 0.4285 = 0.11428095
+$$ 
+$$ \text{A1} = (0.4666 - 0.4) \times 0.3043 = 0.02026638
+$$ 
+$$ \text{AP} = 0.0666 + 0.04446222 + 0.11428095 + 0.02026638 = 0.24560955 \approx 24.56\%
+$$ 
 Hai cách tính chỉ số AP khác nhau là 11-point interpolation và All-point interpolation cho ta hai giá trị AP khác nhau một chút là 26.84% và 24.56%.
+
+## 4. Các kỹ thuật data augmentation cho object detection
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/augmentations.jpeg" style="width: 500px;"/>
+
+### 4.1. Mix Up:
+
+- Mục tiêu của Mix Up là tạo ra các hình ảnh mới bằng cách kết hợp thông tin từ hai hình ảnh gốc.
+- Quá trình Mix Up:
+    - Chọn ngẫu nhiên hai hình ảnh gốc và một hệ số α thuộc khoảng [0, 1].
+    - Kết hợp hai hình ảnh này bằng cách tính trung bình có trọng số của các pixel từ hai hình ảnh theo công thức: new_image = α * image1 + (1 - α) * image2.
+    - Tính trung bình có trọng số tương ứng cho nhãn của hai hình ảnh.
+- Mix Up giúp mô hình học được tính toàn cầu của các đối tượng và giảm thiểu overfitting bằng cách tạo ra đa dạng trong dữ liệu huấn luyện.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/mix_up.jpeg" style="width: 500px;"/>
+
+### 4.2. Cut Out:
+
+- Mục tiêu của Cut Out là ẩn đi một phần ngẫu nhiên của hình ảnh bằng một hình chữ nhật đen.
+- Quá trình Cut Out:
+    - Chọn ngẫu nhiên một vùng hình vuông có kích thước và vị trí ngẫu nhiên trên hình ảnh.
+    - Thay vùng này bằng một hình vuông đen.
+- Cut Out tạo ra một hiệu ứng giúp mô hình phải học cách xử lý đối tượng khi một phần của nó bị ẩn đi.
+Điều này giúp tăng khả năng tổng quát hóa và giảm khả năng overfitting.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/cut_out.jpeg" style="width: 500px;"/>
+
+### 4.3. Cut Mix:
+
+- Cut Mix là một biến thể phức tạp hơn của Cut Out, nó kết hợp hai hình ảnh lại với nhau để tạo ra một hình ảnh mới.
+- Quá trình Cut Mix:
+    - Chọn ngẫu nhiên một vùng hình vuông có kích thước và vị trí ngẫu nhiên trên một hình ảnh gốc.
+    - Chọn một hình ảnh khác và chọn một vùng tương tự.
+    - Thay vùng hình vuông trên hình ảnh gốc bằng vùng tương tự từ hình ảnh khác.
+    - Tính trung bình có trọng số của hai nhãn tương ứng với vùng hình vuông.
+- Cut Mix tạo ra hình ảnh mới chứa thông tin từ cả hai hình ảnh gốc và giảm bớt thông tin về đối tượng ban đầu.
+Điều này đặt ra một thách thức học hỏi cho mô hình.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/cut_mix.jpeg" style="width: 500px;"/>
