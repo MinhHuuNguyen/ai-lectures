@@ -1,151 +1,108 @@
 ---
 time: 05/07/2022
-title:
-description:
-banner_url:
+title: Kỹ thuật xử lý hình ảnh Image processing và tăng cường dữ liệu hình ảnh Image data augmentation
+description: Xử lý ảnh là một lĩnh vực rộng lớn trong Thị giác máy tính, cung cấp các công cụ và thuật toán để thao tác và phân tích hình ảnh kỹ thuật số. Nó là nền tảng cho nhiều ứng dụng từ chỉnh sửa ảnh đơn giản đến phức tạp. Tăng cường dữ liệu ảnh là một kỹ thuật không thể thiếu trong việc xây dựng các mô hình Thị giác máy tính dựa trên mạng nơ ron hiện đại. Bằng cách sử dụng các phép xử lý ảnh để tạo ra dữ liệu huấn luyện đa dạng, chúng ta có thể xây dựng các mô hình AI chính xác hơn, mạnh mẽ hơn và có khả năng khái quát hóa tốt hơn trong thế giới thực.
+banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/3-image-processing-data-augmentation/banner.jpeg
 tags: [deep-learning, computer-vision]
 is_highlight: false
-is_published: false
+is_published: true
 ---
 
-# Image processing và data augmentation
+## 1. Xử lý ảnh (Image Processing)
 
-## 1. Giới thiệu chung về image processing và data augmentation
-
-### 1.1. Giới thiệu về image processing
+### 1.1. Giới thiệu chung về Image Processing
 
 Image Processing (Xử lý ảnh) là một lĩnh vực trong khoa học máy tính và công nghệ thông tin dùng để xử lý và thay đổi hình ảnh hoặc video để trích xuất thông tin, cải thiện chất lượng, và thực hiện các nhiệm vụ khác liên quan đến hình ảnh.
 
-Các nhiệm vụ trong Image Processing bao gồm:
-- Làm sáng hoặc làm tối:
-Điều chỉnh độ sáng hoặc độ tối của hình ảnh để cải thiện hiển thị hoặc tạo ra hiệu ứng mong muốn.
-- Lọc ảnh:
-Áp dụng bộ lọc để loại bỏ nhiễu (noise) khỏi hình ảnh hoặc làm nổi bật các đặc điểm quan trọng.
-- Biến đổi hình dáng:
-Thay đổi kích thước, xoay, thu nhỏ, phóng to hoặc biến đổi hình dáng của hình ảnh.
-- Phát hiện và nhận dạng:
-Nhận biết các đối tượng, khuôn mặt, chữ viết, hoặc biểu đồ trong hình ảnh.
-- Trích xuất đặc trưng:
-Trích xuất các đặc trưng quan trọng từ hình ảnh, như cạnh, màu sắc, hình dáng, vị trí, v.v.
-- Biến đổi màu sắc:
-Thay đổi màu sắc của hình ảnh hoặc chuyển đổi hình ảnh sang không gian màu khác nhau.
-- Biểu đồ và tạo hiệu ứng hình ảnh:
-Tạo hiệu ứng đồ họa, cắt, ghép ảnh, thay đổi màu sắc, v.v.
-- Phân đoạn:
-Phân tách hình ảnh thành các vùng riêng biệt dựa trên màu sắc, độ sáng hoặc đặc trưng khác.
+- Đầu vào: Một hình ảnh (ví dụ: ảnh chụp, ảnh vệ tinh, ảnh y tế ...).
+- Đầu ra: Có thể là một hình ảnh khác (đã được cải thiện) hoặc một tập hợp các đặc trưng, thông tin về hình ảnh đó.
 
-### 1.2. Giới thiệu về data augmentation
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/3-image-processing-data-augmentation/image_processing.jpeg" style="width: 1000px;"/>
 
-Data Augmentation (Tăng cường dữ liệu) là một kỹ thuật quan trọng trong Machine Learning và Deep Learning, đặc biệt là trong việc xử lý dữ liệu hình ảnh.
+Để máy tính có thể "hiểu" và xử lý, hình ảnh được biểu diễn dưới dạng một ma trận các con số. Mỗi phần tử trong ma trận được gọi là một pixel (điểm ảnh).
 
-Kỹ thuật này bao gồm việc tạo ra các biến thể của dữ liệu huấn luyện bằng cách áp dụng các biến đổi đơn giản như xoay, phóng to, thu nhỏ, lật hình, thay đổi độ sáng, tăng cường nhiễu ... để tạo ra dữ liệu mới mà không thay đổi tính năng quan trọng của dữ liệu gốc.
+- Ảnh xám (Grayscale): Mỗi pixel có một giá trị duy nhất biểu thị cường độ sáng (thường từ 0 - đen đến 255 - trắng).
+- Ảnh màu (RGB): Mỗi pixel được biểu diễn bởi một bộ 3 giá trị, tương ứng với cường độ của ba kênh màu cơ bản: Đỏ (Red), Lục (Green), và Lam (Blue).
 
-Vai trò của data augmentation:
-- Tăng kích thước dữ liệu huấn luyện:
-    - Data Augmentation giúp tăng kích thước dữ liệu bằng cách tạo ra các biến thể của dữ liệu gốc mà không cần thu thập thêm dữ liệu mới.
-    - Điều này đặc biệt hữu ích khi bạn có ít dữ liệu.
-- Từ việc tăng kích thước của bộ dữ liệu huấn luyện, ta thu được các lợi ích đối với mô hình deep learning:
-    - Giảm overfitting:
-        - Overfitting xảy ra khi mô hình học cụ thể cho dữ liệu huấn luyện mà không thể tổng quát hóa cho dữ liệu mới.
-        - Khi bạn có ít dữ liệu huấn luyện, mô hình có nguy cơ overfitting cao.
-        - Sử dụng Data Augmentation giúp mô hình được đào tạo trên các biến thể của dữ liệu, giúp giảm thiểu nguy cơ overfitting.
-    - Cải thiện khả năng tổng quát hóa:
-        - Data Augmentation giúp mô hình trở nên tốt hơn trong việc tổng quát hóa và đối phó với dữ liệu thực tế.
-        - Mô hình được trang bị để xử lý nhiễu và biến đổi trong dữ liệu.
-        - Mô hình đã được đào tạo trên dữ liệu tăng cường có khả năng hoạt động tốt hơn khi tái sử dụng cho các ứng dụng khác hoặc tại các bài toán mới.
+### 1.2. Các cấp độ của Xử lý ảnh
 
-### 1.3. So sánh image processing và data augmentation
+- **Xử lý ảnh cấp thấp (Low-level Processing)**: Thực hiện các thao tác cơ bản trực tiếp trên các pixel với cả đầu vào và đầu ra đều là hình ảnh.
+Ví dụ:
+    - Giảm nhiễu (Noise Reduction): Loại bỏ các điểm ảnh nhiễu không mong muốn.
+    - Tăng cường độ tương phản (Contrast Enhancement): Làm cho hình ảnh rõ nét hơn.
+    - Làm sắc nét (Sharpening): Tăng cường các cạnh và chi tiết.
 
-- Điểm giống nhau:
-    - Liên quan đến hình ảnh:
-    Cả hai đều liên quan đến việc làm việc với hình ảnh.
-    - Sử dụng các phép biến đổi hình ảnh:
-    Cả hai đều sử dụng các thao tác như lọc, cắt, xoay, thay đổi kích thước, làm sáng tối, chuyển đổi màu sắc, và nhiều phép biến đổi khác...
-- Điểm khác nhau:
-    - Image Processing:
-        - Mục tiêu nhằm cải thiện hoặc thay đổi hình ảnh để giúp con người hoặc máy tính hiểu rõ hơn nội dung hình ảnh, loại bỏ nhiễu, cải thiện chất lượng, hoặc trích xuất thông tin cụ thể từ hình ảnh.
-        - Cần tinh chỉnh các giá trị để đạt được chính xác kết quả mong muốn.
-    - Data Augmentation:
-        - Mục tiêu nhằm tạo ra các biến thể của dữ liệu huấn luyện để cải thiện hiệu suất mô hình.
-        Không phải là để cải thiện hình ảnh ban đầu, mà để mô hình học được từ sự đa dạng và tránh overfitting.
-        - Không cần tinh chỉnh các giá trị để đạt được kết quả chính xác, chỉ cần tạo ra các biến thể của dữ liệu gốc mà không thay đổi đặc tính quan trọng của dữ liệu.
+- **Xử lý ảnh cấp trung (Mid-level Processing)**: Trích xuất các thuộc tính từ ảnh, phân nhóm các pixel thành các đối tượng với đầu vào là hình ảnh, đầu ra là các thuộc tính (ví dụ: các cạnh, đường viền, vùng).
+Ví dụ:
+    - Phân vùng ảnh (Image Segmentation): Chia hình ảnh thành nhiều vùng hoặc đối tượng có ý nghĩa.
+    - Trích xuất đặc trưng (Feature Extraction): Tìm các đặc điểm quan trọng như góc, cạnh, kết cấu (texture).
 
-## 2. Các kỹ thuật data augmentation cơ bản
+- **Xử lý ảnh cấp cao (High-level Processing)**: Hiểu và phân tích nội dung của hình ảnh, gần với cách con người nhận thức với đầu vào là hình ảnh, đầu ra là các hiểu biết về hình ảnh đó.
+Đây là nơi áp dụng các mô hình deep learning vào computer Vision.
+Ví dụ:
+    - Nhận dạng đối tượng (Object Recognition): Xác định trong ảnh có chứa đối tượng ("ô tô", "con người", "con mèo" ...)
+    - Phân loại ảnh (Image Classification): Gán nhãn cho toàn bộ bức ảnh ("cảnh bãi biển", "phòng khách" ...)
+    - Mô tả ảnh (Image Captioning): Mô tả nội dung của ảnh bằng văn bản.
 
-### 2.1. Rotate (Xoay):
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/3-image-processing-data-augmentation/rotate_flip_crop_resize.jpeg" style="width: 1000px;"/>
 
-Xoay hình ảnh một góc độ xác định. Điều này giúp mô hình học cách nhận dạng đối tượng ở các góc độ khác nhau.
+### 1.3. Một số thao tác phổ biến trong Xử lý ảnh
 
-### 2.2. Flip (Lật hình):
+#### Biến đổi không gian: Rotate, Flip, Crop, Resize
 
-Lật hình ảnh theo trục ngang hoặc trục dọc. Điều này tạo ra hình ảnh đối xứng và cải thiện khả năng tổng quát hóa.
+- Rotate (Xoay): Xoay hình ảnh một góc độ xác định.
+- Flip (Lật hình): Lật hình ảnh theo trục ngang hoặc trục dọc.
+- Crop (Cắt): Cắt ra một phần của hình ảnh và sử dụng nó.
+- Resize (Phóng to và thu nhỏ): Thay đổi kích thước hình ảnh.
 
-### 2.3. Crop (Cắt):
+#### Biến đổi chất lượng: Color, Brightness, Contrast, Saturation, Blur, Noise
 
-Cắt ra một phần của hình ảnh và sử dụng nó. Điều này giúp mô hình tập trung vào các phần quan trọng của hình ảnh.
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/3-image-processing-data-augmentation/color_bright_constrast_saturation.jpeg" style="width: 1000px;"/>
 
-### 2.4. Resize (Phóng to và thu nhỏ):
+- Color: Thay đổi màu sắc của hình ảnh.
+- Brightness: Thay đổi độ sáng của hình ảnh.
+- Contrast: Thay đổi độ tương phản của hình ảnh. Constrast là mức độ 
+- Saturation: Thay đổi độ bão hoà của hình ảnh. Saturation là mức độ 
+- Blur / De-blur: Tăng hoặc giảm mờ của hình ảnh.
+- Noise / De-noise: Tăng hoặc giảm nhiễu của hình ảnh.
 
-Thay đổi kích thước hình ảnh. Điều này giúp mô hình học cách nhận dạng đối tượng ở các kích thước khác nhau.
+#### Trích xuất thông tin: Edge detection, Corner detection, Image segmentation
 
-### 2.5. Thay đổi độ sáng, độ tương phản, độ bão hoà:
+- Edge detection:
+- Corner detection:
+- Image segmentation
 
-Tăng hoặc giảm độ sáng của hình ảnh. Điều này giúp mô hình học cách xử lý các điều kiện ánh sáng khác nhau.
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/3-image-processing-data-augmentation/edge_corner_segmentation.jpeg" style="width: 1000px;"/>
 
-### 2.6. Thay đổi màu sắc:
+#### Cắt dán hình ảnh
 
-Thay đổi màu sắc của hình ảnh, chẳng hạn như chuyển đổi sang không gian màu khác, thay đổi độ bão hòa, độ sáng, hoặc độ tương phản.
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-object-detection/cut_mix.jpeg" style="width: 500px;"/>
 
-### 2.7. Thêm nhiễu (noise):
+## 2. Tăng cường dữ liệu ảnh (Image data augmentation)
 
-Thêm nhiễu như nhiễu Gaussian, nhiễu Salt-and-Pepper, hoặc nhiễu khác vào hình ảnh. Điều này giúp mô hình trở nên bền vững hơn đối với nhiễu trong dữ liệu thực tế.
+### 2.1. Vấn đề thiếu dữ liệu và hiện tượng overfitting
 
-### 2.8. Thêm mờ (blur):
+Overfitting là hiện tượng xảy ra khi mô hình học thuộc phần lớn (hoặc thậm chí toàn bộ) bộ dữ liệu train.
+Lúc này, mô hình không còn khả năng khái quát hoá bộ dữ liệu nữa mà chỉ ghi nhớ các điểm dữ liệu trong bộ train.
 
-Thêm mờ vào hình ảnh. Điều này giúp mô hình trở nên bền vững hơn đối với nhiễu trong dữ liệu thực tế.
+Nguyên nhân dẫn đến hiện tượng overfit là do mô hình có độ phức tạp quá cao (mô hình quá phức tạp) so với bộ dữ liệu train quá đơn giản.
 
-### 2.9. Thêm độ nghiêng (shear):
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/3-image-processing-data-augmentation/data_augmentation_reason.jpeg" style="width: 500px;"/>
 
-Thêm độ nghiêng vào hình ảnh. Điều này giúp mô hình học cách nhận dạng đối tượng ở các góc độ khác nhau.
+Chi tiết hơn về hiện tượng overfit đã được chia sẻ trong bài viết [Hiện tượng Overfit và Underfit](/blog/hien-tuong-overfit-va-underfit).
 
-<!-- ### 2.10. Thêm biến dạng (distort):
+### 2.2. Giới thiệu chung về Image data augmentation
 
-Occlusion -->
+Data Augmentation (Tăng cường dữ liệu) là một kỹ thuật quan trọng trong Machine Learning và Deep Learning, đặc biệt là trong việc xử lý dữ liệu hình ảnh Image data augmentation.
 
+Kỹ thuật này bao gồm việc tạo ra các biến thể của dữ liệu huấn luyện bằng cách áp dụng các biến đổi đơn giản lên trên dữ liệu huấn luyện để tạo ra dữ liệu mới mà không thay đổi tính năng quan trọng của dữ liệu gốc.
+Đối với Image data augmentation, ta có thể sử dụng các kỹ thuật image processing như Rotate, Flip, Crop, Resize, Noise/Denoise, Blur/Deblur, Color Jitter ... 
 
-### 2.10. Kết hợp các biến đổi:
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/3-image-processing-data-augmentation/data_augmentation.jpeg" style="width: 500px;"/>
 
-Kết hợp nhiều biến đổi lại với nhau để tạo ra sự đa dạng trong dữ liệu. Ví dụ, có thể xoay và phóng to hình ảnh cùng lúc.
+Vai trò chính của data augmentation là giúp tăng kích thước dữ liệu huấn luyện bằng cách tạo ra các biến thể của dữ liệu gốc mà không cần thu thập thêm dữ liệu mới.
+Điều này đặc biệt hữu ích khi bạn có ít dữ liệu.
 
-## 3. Các kỹ thuật data augmentation nâng cao
+Từ việc tăng kích thước của bộ dữ liệu huấn luyện, ta thu được lợi ích đối với quá trình huấn luyện mô hình machine learning: **Giảm overfitting**.
 
-### 3.1. Mix Up:
-
-- Mục tiêu của Mix Up là tạo ra các hình ảnh mới bằng cách kết hợp thông tin từ hai hình ảnh gốc.
-- Quá trình Mix Up:
-    - Chọn ngẫu nhiên hai hình ảnh gốc và một hệ số α thuộc khoảng [0, 1].
-    - Kết hợp hai hình ảnh này bằng cách tính trung bình có trọng số của các pixel từ hai hình ảnh theo công thức: new_image = α * image1 + (1 - α) * image2.
-    - Tính trung bình có trọng số tương ứng cho nhãn của hai hình ảnh.
-- Mix Up giúp mô hình học được tính toàn cầu của các đối tượng và giảm thiểu overfitting bằng cách tạo ra đa dạng trong dữ liệu huấn luyện.
-
-<img src="" style="width: 1200px;"/>
-
-### 3.2. Cut Out:
-
-- Mục tiêu của Cut Out là ẩn đi một phần ngẫu nhiên của hình ảnh bằng một hình chữ nhật đen.
-- Quá trình Cut Out:
-    - Chọn ngẫu nhiên một vùng hình vuông có kích thước và vị trí ngẫu nhiên trên hình ảnh.
-    - Thay vùng này bằng một hình vuông đen.
-- Cut Out tạo ra một hiệu ứng giúp mô hình phải học cách xử lý đối tượng khi một phần của nó bị ẩn đi.
-Điều này giúp tăng khả năng tổng quát hóa và giảm khả năng overfitting.
-
-### 3.3. Cut Mix:
-
-- Cut Mix là một biến thể phức tạp hơn của Cut Out, nó kết hợp hai hình ảnh lại với nhau để tạo ra một hình ảnh mới.
-- Quá trình Cut Mix:
-    - Chọn ngẫu nhiên một vùng hình vuông có kích thước và vị trí ngẫu nhiên trên một hình ảnh gốc.
-    - Chọn một hình ảnh khác và chọn một vùng tương tự.
-    - Thay vùng hình vuông trên hình ảnh gốc bằng vùng tương tự từ hình ảnh khác.
-    - Tính trung bình có trọng số của hai nhãn tương ứng với vùng hình vuông.
-- Cut Mix tạo ra hình ảnh mới chứa thông tin từ cả hai hình ảnh gốc và giảm bớt thông tin về đối tượng ban đầu.
-Điều này đặt ra một thách thức học hỏi cho mô hình.
+### 2.3. So sánh image processing và data augmentation

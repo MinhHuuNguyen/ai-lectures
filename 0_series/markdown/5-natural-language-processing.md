@@ -26,7 +26,7 @@ Natural language processing là một lĩnh vực con của machine learning và
 
 ---
 
-### [Bài 2: Mạng nơ ron hồi quy Recurrent Neural Network](/blog/mang-no-ron-hoi-quy-recurrent-neural-network/)
+### [Bài 2: Mạng nơ ron hồi quy Recurrent Neural Network](/blog/mang-no-ron-hoi-quy-recurrent-neural-network)
 
 Mạng nơ ron hồi quy (RNN) là mô hình rất phổ biến trong thời gian trước đây với những kết quả đầy hứa hẹn trên các bài toán xử lý ngôn ngữ tự nhiên (NLP). Cho dù ở thời điểm hiện tại, với sự phát triển của cơ chế Attention và các mô hình Transformer đạt kết quả cao trên các bài toán xử lý ngôn ngữ, ý tưởng về cơ chế hoạt động của các mô hình RNN vẫn đáng chú ý và được áp dụng trong một số trường hợp cụ thể như lượng dữ liệu ít hoặc tài nguyên tính toán hạn chế.
 
@@ -38,13 +38,15 @@ Mạng nơ ron hồi quy (RNN) là mô hình rất phổ biến trong thời gia
 
 ###### 4. Các biến thể của RNN nói chung và LSTM nói riêng
 
-### [Bài 3: Xử lý dữ liệu văn bản Text data processing](/blog/xu-ly-du-lieu-van-ban-text-data-processing/)
+---
+
+### [Bài 3: Xử lý dữ liệu văn bản Text data processing](/blog/xu-ly-du-lieu-van-ban-text-data-processing)
 
 *Mình sẽ viết bài này trong thời gian tới với các nội dung như: Các kỹ thuật tokenization; Các kỹ thuật word embedding như TF-IDF, Bag of Words, Word2Vec, GloVe, BERT...; Các hàm xử lý văn bản với NLTK*
 
 ---
 
-### [Bài 4: Cơ chế Attention Attention Mechanism](/blog/co-che-attention-attention-mechanism/)
+### [Bài 4: Cơ chế Attention Attention Mechanism](/blog/co-che-attention-attention-mechanism)
 
 Attention là cơ chế giúp mô hình học sâu tập trung (attend) vào các thành phần quan trọng trong dữ liệu đầu vào, tương tự như con người chú ý đến chi tiết nổi bật. Cơ chế này ra đời (2014) nhằm khắc phục hạn chế của RNN/LSTM cũ khi phải mã hóa toàn bộ chuỗi vào một vector cố định. Theo kết quả nghiên cứu, Transformer (2017) – kiến trúc dùng hoàn toàn attention – đã trở thành nền tảng của các mô hình ngôn ngữ lớn (LLMs) như GPT, BERT hiện đại. Trong thị giác máy tính, cơ chế Attention cũng được áp dụng thành công qua Vision Transformer (ViT) và các mô hình DETR.
 
@@ -58,7 +60,7 @@ Attention là cơ chế giúp mô hình học sâu tập trung (attend) vào cá
 
 ---
 
-### [Bài 5: Mô hình Transformer](/blog/mo-hinh-transformer/)
+### [Bài 5: Mô hình Transformer](/blog/mo-hinh-transformer)
 
 Mô hình seq2seq (sequence-to-sequence) là kiến trúc mạng nơ-ron được sử dụng để chuyển đổi một chuỗi đầu vào thành một chuỗi đầu ra. Tuy nhiên, mô hình seq2seq truyền thống gặp khó khăn trong việc xử lý các chuỗi dài do phụ thuộc vào RNN/LSTM. Năm 2017, Transformer ra mắt đã giải quyết vấn đề này bằng cách sử dụng cơ chế Attention hoàn toàn, cho phép mô hình học được mối quan hệ giữa các từ trong chuỗi mà không cần tuần tự.
 
@@ -74,14 +76,14 @@ Mô hình seq2seq (sequence-to-sequence) là kiến trúc mạng nơ-ron đượ
 
 ---
 
-### [Bài 6: Bài toán nhận diện thực thể trong văn bản Named Entity Recognition NER](/blog/nhan-dien-thuc-the-named-entity-recognition-ner/)
+### [Bài 6: Bài toán nhận diện thực thể trong văn bản Named Entity Recognition NER](/blog/nhan-dien-thuc-the-named-entity-recognition-ner)
 
 *Mình sẽ viết bài này trong thời gian tới*
 
-### [Bài 7: Bài toán phân tích ngữ pháp trong văn bản Part-of-Speech Tagging](/blog/phan-tich-ngu-phap-part-of-speech-tagging/)
+### [Bài 7: Bài toán phân tích ngữ pháp trong văn bản Part-of-Speech Tagging](/blog/phan-tich-ngu-phap-part-of-speech-tagging)
 
 *Mình sẽ viết bài này trong thời gian tới*
 
-### [Bài 8: Bài toán gán tiêu đề cho ảnh Image Captioning](/blog/gian-tieu-de-cho-anh-image-captioning/)
+### [Bài 8: Bài toán gán tiêu đề cho ảnh Image Captioning](/blog/gian-tieu-de-cho-anh-image-captioning)
 
 *Mình sẽ viết bài này trong thời gian tới*

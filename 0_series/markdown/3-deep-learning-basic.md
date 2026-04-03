@@ -118,7 +118,7 @@ Natural language processing là một lĩnh vực con của machine learning và
 
 ---
 
-### [Bài 7: Mạng nơ ron hồi quy Recurrent Neural Network](/blog/mang-no-ron-hoi-quy-recurrent-neural-network/)
+### [Bài 7: Mạng nơ ron hồi quy Recurrent Neural Network](/blog/mang-no-ron-hoi-quy-recurrent-neural-network)
 
 Mạng nơ ron hồi quy (RNN) là mô hình rất phổ biến trong thời gian trước đây với những kết quả đầy hứa hẹn trên các bài toán xử lý ngôn ngữ tự nhiên (NLP). Cho dù ở thời điểm hiện tại, với sự phát triển của cơ chế Attention và các mô hình Transformer đạt kết quả cao trên các bài toán xử lý ngôn ngữ, ý tưởng về cơ chế hoạt động của các mô hình RNN vẫn đáng chú ý và được áp dụng trong một số trường hợp cụ thể như lượng dữ liệu ít hoặc tài nguyên tính toán hạn chế.
 
@@ -132,7 +132,7 @@ Mạng nơ ron hồi quy (RNN) là mô hình rất phổ biến trong thời gia
 
 ---
 
-### [Bài 8: Cơ chế Attention Attention Mechanism](/blog/co-che-attention-attention-mechanism/)
+### [Bài 8: Cơ chế Attention Attention Mechanism](/blog/co-che-attention-attention-mechanism)
 
 Attention là cơ chế giúp mô hình học sâu tập trung (attend) vào các thành phần quan trọng trong dữ liệu đầu vào, tương tự như con người chú ý đến chi tiết nổi bật. Cơ chế này ra đời (2014) nhằm khắc phục hạn chế của RNN/LSTM cũ khi phải mã hóa toàn bộ chuỗi vào một vector cố định. Theo kết quả nghiên cứu, Transformer (2017) – kiến trúc dùng hoàn toàn attention – đã trở thành nền tảng của các mô hình ngôn ngữ lớn (LLMs) như GPT, BERT hiện đại. Trong thị giác máy tính, cơ chế Attention cũng được áp dụng thành công qua Vision Transformer (ViT) và các mô hình DETR.
 
@@ -146,7 +146,7 @@ Attention là cơ chế giúp mô hình học sâu tập trung (attend) vào cá
 
 ---
 
-### [Bài 9: Mô hình Transformer](/blog/mo-hinh-transformer/)
+### [Bài 9: Mô hình Transformer](/blog/mo-hinh-transformer)
 
 Mô hình seq2seq (sequence-to-sequence) là kiến trúc mạng nơ-ron được sử dụng để chuyển đổi một chuỗi đầu vào thành một chuỗi đầu ra. Tuy nhiên, mô hình seq2seq truyền thống gặp khó khăn trong việc xử lý các chuỗi dài do phụ thuộc vào RNN/LSTM. Năm 2017, Transformer ra mắt đã giải quyết vấn đề này bằng cách sử dụng cơ chế Attention hoàn toàn, cho phép mô hình học được mối quan hệ giữa các từ trong chuỗi mà không cần tuần tự.
 
@@ -162,7 +162,7 @@ Mô hình seq2seq (sequence-to-sequence) là kiến trúc mạng nơ-ron đượ
 
 ---
 
-### [Bài 10: Dự báo chuỗi thời gian Time Series Forecasting](/blog/du-bao-chuoi-thoi-gian-time-series-forecasting/)
+### [Bài 10: Dự báo chuỗi thời gian Time Series Forecasting](/blog/du-bao-chuoi-thoi-gian-time-series-forecasting)
 
 Dự báo chuỗi thời gian là bài toán phổ biến mang tính ứng dụng cao của machine learning. Bài toán dự báo với dữ liệu Time series là lĩnh vực rộng với lịch sử lâu đời. Đối tượng cơ bản trong quá trình dự báo là chuỗi thời gian, là tập hợp các quan sát dữ liệu được thu thập theo thời gian.
 
@@ -178,7 +178,7 @@ Dự báo chuỗi thời gian là bài toán phổ biến mang tính ứng dụn
 
 ---
 
-### [Bài 11: Trí tuệ nhân tạo tạo sinh Generative AI](/blog/tri-tue-nhan-tao-tao-sinh-generative-ai/)
+### [Bài 11: Trí tuệ nhân tạo tạo sinh Generative AI](/blog/tri-tue-nhan-tao-tao-sinh-generative-ai)
 
 Trí tuệ nhân tạo tạo sinh (Generative AI) là lĩnh vực nghiên cứu và ứng dụng trong trí tuệ nhân tạo nhằm tạo ra nội dung mới, bao gồm văn bản, hình ảnh, âm thanh và video. Các mô hình GenAI như GPT, DALL-E, Stable Diffusion đã đạt được những tiến bộ đáng kể trong việc tạo ra nội dung chất lượng cao, mở ra nhiều cơ hội mới trong các lĩnh vực sáng tạo, nghệ thuật và truyền thông. Tuy nhiên, nó cũng đặt ra những thách thức về đạo đức, bảo mật và quyền sở hữu trí tuệ cần được giải quyết.
 
@@ -194,7 +194,7 @@ Trí tuệ nhân tạo tạo sinh (Generative AI) là lĩnh vực nghiên cứu 
 
 ---
 
-### [Bài 12: Transfer learning, weakly, semi, un và self supervised learning](/blog/transfer-learning-weakly-semi-un-va-self-supervised-learning/)
+### [Bài 12: Transfer learning, weakly, semi, un và self supervised learning](/blog/transfer-learning-weakly-semi-un-va-self-supervised-learning)
 
 Transfer learning là một kỹ thuật quan trọng trong machine learning và deep learning, giúp cải thiện hiệu suất mô hình khi dữ liệu có hạn hoặc tăng tốc quá trình huấn luyện. Ngoài ra, các kỹ thuật weakly, semi, un và self supervised learning cũng đóng vai trò quan trọng trong việc tận dụng dữ liệu không có nhãn hoặc có nhãn không chính xác để cải thiện chất lượng mô hình.
 
@@ -214,7 +214,7 @@ Transfer learning là một kỹ thuật quan trọng trong machine learning và
 
 ---
 
-### [Bài 13: Học tăng cường Reinforcement Learning](/blog/hoc-tang-cuong-reinforcement-learning/)
+### [Bài 13: Học tăng cường Reinforcement Learning](/blog/hoc-tang-cuong-reinforcement-learning)
 
 *Mình sẽ viết bài này trong thời gian tới*
 
@@ -230,7 +230,7 @@ Transfer learning là một kỹ thuật quan trọng trong machine learning và
 
 ---
 
-### [Bài 14: Nén mô hình mạng nơ ron Model Compression](/blog/nen-mo-hinh-mang-no-ron-model-compression/)
+### [Bài 14: Nén mô hình mạng nơ ron Model Compression](/blog/nen-mo-hinh-mang-no-ron-model-compression)
 
 *Mình sẽ viết bài này trong thời gian tới*
 
