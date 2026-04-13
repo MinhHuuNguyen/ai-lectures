@@ -58,13 +58,17 @@ Object detection là bài toán kết hợp giữa hai bài toán object localiz
 
 ###### 2. Một số khái niệm trong object detection
 
-###### 3. Các metrics trong object detection
+###### 3. Nhóm các phương pháp giải bài toán object detection
 
-###### 4. Các kỹ thuật data augmentation cho object detection
+###### 4. Các metrics trong object detection
+
+###### 5. Các kỹ thuật data augmentation cho object detection
+
+###### 6. Khó khăn khi huấn luyện mô hình giải bài toán object detection
 
 ---
 
-### [Bài 5: Giới thiệu bài toán Image segmentation]()
+### [Bài 5: Bài toán image segmentation](/blog/bai-toan-image-segmentation)
 
 *Mình sẽ viết bài này trong thời gian tới*
 
