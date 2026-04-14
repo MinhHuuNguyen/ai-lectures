@@ -70,7 +70,17 @@ Object detection là bài toán kết hợp giữa hai bài toán object localiz
 
 ### [Bài 5: Bài toán image segmentation](/blog/bai-toan-image-segmentation)
 
-*Mình sẽ viết bài này trong thời gian tới*
+Phân đoạn ảnh (Image Segmentation) là một trong những nhiệm vụ cốt lõi và quan trọng nhất của lĩnh vực thị giác máy tính. Mục tiêu của nó là phân chia một hình ảnh kỹ thuật số thành nhiều vùng hoặc đối tượng khác nhau. Việc phân nhóm các mô hình phân đoạn ảnh giúp chúng ta hiểu rõ hơn về cách tiếp cận, ưu nhược điểm và ứng dụng của từng loại. Các mô hình này có thể được phân thành hai nhóm chính là Phương pháp truyền thống và Phương pháp dựa trên Deep Learning. Hiện nay, các mô hình Deep Learning chiếm ưu thế tuyệt đối về độ chính xác và hiệu quả trong các bài toán phức tạp.
+
+###### 1. Giới thiệu chung về bài toán image segmentation
+
+###### 2. Nhóm các phương pháp giải bài toán image segmentation
+
+###### 3. Các metrics trong image segmentation
+
+###### 4. Các kỹ thuật data augmentation cho image segmentation
+
+###### 5. Khó khăn khi huấn luyện mô hình giải bài toán image segmentation
 
 ---
 
