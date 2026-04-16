@@ -84,7 +84,7 @@ Nếu yêu cầu mô hình phải dự đoán tọa độ (x, y, chiều rộng,
 Anchor ra đời để giải quyết vấn đề này. Thay vì bắt mô hình "vẽ" một chiếc hộp từ đầu, chúng ta cung cấp cho nó một loạt các "hộp mẫu" (chính là các anchor) ở mọi vị trí trên ảnh.
 Anchor (hay Anchor Box) là một tập hợp các hộp chữ nhật (bounding box) được định nghĩa trước với các kích thước và tỷ lệ khung hình (aspect ratio) khác nhau. Chúng được sử dụng như những "khuôn mẫu" hay "dự đoán ban đầu" để giúp mô hình mạng neuron học cách xác định vị trí và kích thước của các vật thể trong một bức ảnh.
 
-Khi có các Anchor được định nghĩa    trước, nhiệm vụ của mô hình giờ đây được đơn giản hóa thành hai việc:
+Khi có các Anchor được định nghĩa trước, nhiệm vụ của mô hình giờ đây được đơn giản hóa thành hai việc:
 - **Phân loại (Classification):** Với mỗi anchor, xác định xem nó có chứa vật thể nào không? Nếu có thì đó là vật thể gì (người, xe, chó, mèo...)?
 - **Tinh chỉnh (Regression):** Nếu anchor đó chứa vật thể, hãy điều chỉnh nhẹ tọa độ và kích thước của anchor đó để nó khớp chính xác với vật thể thật.
 
