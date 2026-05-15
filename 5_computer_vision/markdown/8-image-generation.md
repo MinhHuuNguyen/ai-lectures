@@ -342,53 +342,7 @@ Và ta có thể chỉ giữ lại những ảnh có NIMA score cao, loại bỏ
 - **Hạn chế:**
     - **Thiên kiến (Bias):** NIMA được huấn luyện trên một bộ dữ liệu cụ thể, do đó, nó có thể có "thiên kiến" và chấm điểm cao hơn cho những loại ảnh theo phong cách mà bộ dữ liệu này cho là đẹp, trong khi có thể chấm điểm thấp hơn cho các phong cách khác.
 
-#### 3.6.3. TOPIQ Score
-
-TOPIQ (viết tắt của Transformers for Objective Perceptual Image Quality) là một mô hình đánh giá chất lượng hình ảnh không tham chiếu (No-Reference Image Quality Assessment - NR-IQA).
-
-"Không tham chiếu" (No-Reference) là yếu tố then chốt. Điều này có nghĩa là TOPIQ có thể đánh giá chất lượng của một bức ảnh mà không cần một bức ảnh gốc "hoàn hảo" để so sánh. Đây chính là điều làm cho nó cực kỳ hữu ích trong bài toán sinh ảnh, vì ảnh do AI tạo ra vốn dĩ không có "bản gốc".
-"Chất lượng cảm nhận" (Perceptual Quality): Mục tiêu của TOPIQ là đưa ra một điểm số phản ánh cách con người cảm nhận về chất lượng của một bức ảnh. Nó không chỉ đo lường các yếu tố kỹ thuật như nhiễu (noise) hay độ mờ (blur), mà còn đánh giá cả tính thẩm mỹ, sự hài hòa, và các lỗi thường gặp trong ảnh AI (gọi là "artifacts").
-Dựa trên Transformer: Mô hình này sử dụng kiến trúc Transformer (cụ thể là Vision Transformer - ViT), cho phép nó hiểu được các mối quan hệ phức tạp giữa các phần khác nhau của hình ảnh để đưa ra đánh giá toàn diện.
-Tại sao các thước đo truyền thống không đủ?
-Trước khi có các mô hình như TOPIQ, việc đánh giá chất lượng ảnh AI gặp nhiều khó khăn:
-
-PSNR/SSIM: Các thước đo này yêu cầu một ảnh gốc để so sánh. Chúng chỉ hữu ích trong các bài toán như nén ảnh hoặc khử nhiễu, nhưng vô dụng với ảnh do AI tạo ra từ một câu lệnh văn bản (prompt).
-FID (Fréchet Inception Distance): Đây là một thước đo rất phổ biến, nhưng nó đo lường sự tương đồng về mặt phân phối giữa một tập hợp ảnh do AI tạo ra và một tập hợp ảnh thật. FID không đánh giá chất lượng của từng bức ảnh riêng lẻ. Một mô hình có thể có điểm FID tốt nhưng vẫn tạo ra nhiều ảnh chất lượng kém.
-TOPIQ ra đời để giải quyết chính những hạn chế này, tập trung vào chất lượng cảm nhận của từng sản phẩm đầu ra.
-
-Vai trò chính của TOPIQ Score trong Image Generation
-TOPIQ đóng vai trò như một "giám khảo AI" khách quan, có 4 vai trò chính sau đây:
-
-1. Đánh giá và So sánh các mô hình (Model Evaluation & Benchmarking)
-Đây là vai trò quan trọng nhất. TOPIQ cung cấp một thước đo chuẩn hóa và khách quan để so sánh hiệu suất giữa các mô hình sinh ảnh khác nhau.
-
-Ví dụ: Khi một công ty phát hành phiên bản mới của mô hình (ví dụ: Midjourney V5 vs. Midjourney V6, hoặc Stable Diffusion XL vs. Stable Diffusion 3), họ có thể chạy hàng ngàn prompt qua cả hai mô hình, sau đó dùng TOPIQ để chấm điểm các ảnh được tạo ra. Mô hình nào có điểm TOPIQ trung bình cao hơn thì được xem là có chất lượng hình ảnh tốt hơn về mặt cảm nhận.
-Nó giúp trả lời câu hỏi: "Mô hình nào tạo ra những bức ảnh trông 'đẹp' và 'thật' hơn trong mắt người dùng?"
-2. Tối ưu hóa quá trình huấn luyện mô hình (Training Optimization)
-Đây là một ứng dụng nâng cao và rất mạnh mẽ. Điểm TOPIQ có thể được tích hợp trực tiếp vào vòng lặp huấn luyện của mô hình sinh ảnh.
-
-Cơ chế hoạt động: Trong quá trình huấn luyện, mô hình sinh ảnh (Generator) sẽ cố gắng tạo ra một bức ảnh. Bức ảnh này sau đó được đưa qua mô hình TOPIQ để chấm điểm. Điểm số này được dùng như một tín hiệu "phần thưởng" (reward).
-Mục tiêu: Mô hình sinh ảnh sẽ được điều chỉnh (thông qua hàm mất mát - loss function) để không chỉ tạo ra ảnh khớp với prompt mà còn phải tối đa hóa điểm TOPIQ. Quá trình này được gọi là học tăng cường từ phản hồi của AI (Reinforcement Learning from AI Feedback - RLAIF).
-Kết quả: Mô hình sẽ học cách "né" việc tạo ra các ảnh có lỗi phổ biến (như sai số ngón tay, khuôn mặt biến dạng, chi tiết vô lý) và hướng tới việc tạo ra các ảnh có bố cục, màu sắc và chi tiết hài hòa hơn.
-3. Lọc và Xếp hạng kết quả đầu ra (Filtering and Ranking Outputs)
-Khi bạn nhập một prompt, các mô hình sinh ảnh thường tạo ra nhiều ảnh ứng viên (ví dụ: 4 ảnh một lúc). Không phải tất cả các ảnh này đều có chất lượng như nhau.
-
-Ứng dụng thực tế: Thay vì hiển thị cả 4 ảnh cho người dùng, hệ thống có thể chạy TOPIQ trên cả 4 ảnh một cách tự động.
-Sau đó, nó sẽ xếp hạng các ảnh từ cao đến thấp dựa trên điểm TOPIQ và ưu tiên hiển thị ảnh có điểm cao nhất cho người dùng.
-Điều này cải thiện đáng kể trải nghiệm người dùng, giúp họ nhận được kết quả tốt nhất ngay từ lần đầu tiên mà không cần phải tự mình lựa chọn.
-4. Phân tích và Gỡ lỗi mô hình (Model Analysis and Debugging)
-Các nhà nghiên cứu có thể sử dụng TOPIQ để chẩn đoán điểm yếu của mô hình.
-
-Ví dụ: Họ có thể tạo ra hàng loạt ảnh với các prompt thuộc nhiều chủ đề khác nhau (chân dung, phong cảnh, kiến trúc, văn bản...).
-Bằng cách phân tích điểm TOPIQ, họ có thể phát hiện ra rằng mô hình của mình hoạt động kém với một loại prompt cụ thể nào đó (ví dụ: "ảnh có nhiều bàn tay" hoặc "ảnh có chữ viết").
-Thông tin này rất quý giá để họ biết cần tập trung cải thiện vào khía cạnh nào trong các phiên bản tiếp theo.
-Hạn chế và Lưu ý
-Dù rất mạnh mẽ, TOPIQ cũng có những hạn chế:
-
-Không đo lường sự sáng tạo hay độ bám sát prompt: TOPIQ chỉ đánh giá chất lượng kỹ thuật và thẩm mỹ của ảnh. Nó không thể biết liệu bức ảnh có thực sự khớp với một prompt phức tạp hay không (ví dụ: "một phi hành gia đang cưỡi ngựa trên sao Hỏa"). Để đo lường yếu tố này, người ta phải dùng các thước đo khác như CLIP Score.
-Thiên kiến từ dữ liệu huấn luyện: "Gu" thẩm mỹ của TOPIQ phụ thuộc hoàn toàn vào bộ dữ liệu mà nó được huấn luyện. Nếu dữ liệu đó có thiên kiến về văn hóa hoặc nghệ thuật, TOPIQ cũng sẽ mang theo thiên kiến đó.
-
-#### 3.6.4. ArcFace Score
+#### 3.6.3. ArcFace Score
 
 ArcFace không được tạo ra cho bài toán sinh ảnh mà là một công nghệ đột phá trong lĩnh vực nhận dạng khuôn mặt (Face Recognition) được giới thiệu trong bài báo [ArcFace: Additive Angular Margin Loss for Deep Face Recognition](https://arxiv.org/pdf/1801.07698).
 
