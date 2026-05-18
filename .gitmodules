@@ -7,3 +7,12 @@
 [submodule "5_computer_vision/notebook/7-image-segmentation/carvana_image_masking/Pytorch-UNet"]
 	path = 5_computer_vision/notebook/7-image-segmentation/carvana_image_masking/Pytorch-UNet
 	url = https://github.com/milesial/Pytorch-UNet.git
+[submodule "5_computer_vision/notebook/8-image-generation/stylegan3"]
+	path = 5_computer_vision/notebook/8-image-generation/1_open_source_code_gans/stylegan3
+	url = https://github.com/NVlabs/stylegan3.git
+[submodule "5_computer_vision/notebook/8-image-generation/2_open_source_code_diffusion/stable-diffusion"]
+	path = 5_computer_vision/notebook/8-image-generation/2_open_source_code_diffusion/stable-diffusion
+	url = https://github.com/CompVis/stable-diffusion.git
+[submodule "5_computer_vision/notebook/8-image-generation/2_open_source_code_diffusion/ai-toolkit"]
+	path = 5_computer_vision/notebook/8-image-generation/2_open_source_code_diffusion/ai-toolkit
+	url = https://github.com/ostris/ai-toolkit.git
