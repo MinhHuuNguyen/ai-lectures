@@ -132,7 +132,7 @@ Nền tảng lý thuyết của Diffusion Models được giới thiệu vào n�
 - **Quá trình Thuận (Forward Process / Diffusion Process):** Thêm nhiễu vào ảnh.
 - **Quá trình Nghịch (Reverse Process / Denoising Process):** Loại bỏ nhiễu để tạo ra ảnh.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/blog-sharing/refs/heads/master/1_pixta_seminar/12_from_diffusion_to_flow/diffusion_model_img/banner.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/blog-sharing/refs/heads/master/1_pixta_seminar/12_from_diffusion_to_flow/diffusion_model_img/banner.jpg" style="width: 800px;"/>
 
 Ưu điểm của Diffusion Models là:
 - **Chất lượng và độ đa dạng ảnh vượt trội:** Diffusion Models có khả năng tạo ra những hình ảnh cực kỳ chi tiết, chân thực và đa dạng, vượt qua GANs.
