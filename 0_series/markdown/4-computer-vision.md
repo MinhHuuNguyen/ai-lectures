@@ -91,9 +91,15 @@ Các mô hình tạo sinh hình ảnh là một lĩnh vực đột phá, tập t
 
 ---
 
-### [Bài 7: Hệ sinh thái các bài toán khuôn mặt]()
+### [Bài 7: Hệ sinh thái các bài toán với dữ liệu khuôn mặt](/blog/he-sinh-thai-cac-bai-toan-voi-du-lieu-khuon-mat)
 
-*Mình sẽ viết bài này trong thời gian tới*
+Trong thị giác máy tính, hệ sinh thái khuôn mặt (facial ecosystem) không phải là một mô hình đơn lẻ mà là một tập hợp các mô hình chuyên biệt, hoạt động phối hợp với nhau để thực hiện một chuỗi các tác vụ phân tích, nhận dạng và xử lý khuôn mặt người từ hình ảnh hoặc video. Các mô hình này là nền tảng cho vô số ứng dụng trong đời sống, từ mở khoá điện thoại, chấm công, giám sát an ninh cho đến các hiệu ứng trên mạng xã hội.
+
+###### 1. Giới thiệu chung về hệ sinh thái các bài toán với dữ liệu khuôn mặt
+
+###### 2. Chi tiết từng bài toán trong hệ sinh thái khuôn mặt
+
+###### 3. Các thách thức chung của hệ sinh thái khuôn mặt
 
 ---
 
