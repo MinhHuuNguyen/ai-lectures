@@ -10,9 +10,6 @@ is_published: true
 
 ## 1. Giới thiệu chung về image generation
 
-> 🖼️ **[Ảnh placeholder #1 — Hero image generation]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A cheerful cat artist standing in front of a large canvas, holding a magic paintbrush. Three glowing input streams flow into the canvas from the left side: a text bubble saying 'a dog on the beach', a tiny vector arrow, and a small photo thumbnail. On the canvas appears a freshly generated image of a kawaii puppy on a sunset beach with sparkles around it. Soft pastel pink, purple, and yellow colors, minimal clean background, friendly creative atmosphere."*
-
 Bài toán image generation là nhiệm vụ xây dựng các mô hình có khả năng tạo ra hình ảnh mới sao cho chúng trông chân thực hoặc phù hợp với một mô tả đầu vào.
 Đầu vào có thể là một vector bất kỳ, một hình ảnh khác, một đoạn văn bản ...
 Đây là một hướng nghiên cứu quan trọng của trí tuệ nhân tạo, nơi máy học cách nắm bắt đặc trưng của dữ liệu ảnh để sinh ra ảnh chưa từng tồn tại trước đó.
@@ -48,9 +45,6 @@ Khác với image synthesis, bài toán này không tạo ảnh hoàn toàn từ
 Cụ thể, mô hình nhận đầu vào là một câu hoặc đoạn mô tả như "một chú chó đang chạy trên bãi biển lúc hoàng hôn", sau đó sinh ra một bức ảnh phù hợp với nội dung ngữ nghĩa, bối cảnh và chi tiết thị giác được nhắc đến trong văn bản.
 Mục tiêu của bài toán này là tạo ảnh vừa chân thực, vừa đúng với mô tả, đồng thời vẫn đảm bảo tính đa dạng và thẩm mỹ trong kết quả sinh ra.
 
-> 🖼️ **[Ảnh placeholder #2 — Text-to-image flow]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. On the left, a cat wearing reading glasses holds a paper scroll with the Vietnamese prompt 'một chú chó chạy trên bãi biển lúc hoàng hôn'. An arrow labeled 'Text-to-Image AI' points to the right, where a glowing canvas frame appears showing a kawaii puppy running on a sunset beach with pink and orange clouds, palm tree silhouettes, and soft waves. Tiny sparkles around the canvas. Soft pastel colors, minimal clean background."*
-
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/inpainting_outpainting.jpeg" style="width: 500px;"/>
 
 **Image inpainting** là bài toán khôi phục hoặc điền vào những vùng bị thiếu, bị che khuất, hoặc bị hư hỏng trong ảnh sao cho phần được sinh ra tự nhiên và phù hợp với ngữ cảnh xung quanh.
@@ -82,8 +76,7 @@ Trong ví dụ này:
 - Quá trình bạn học từ ảnh thật chính là **Encoder (Bộ mã hóa)**.
 - Quá trình bạn vẽ ra ảnh mới chính là **Decoder (Bộ giải mã)**.
 
-> 🖼️ **[Ảnh placeholder #3 — VAE Encoder–Decoder pipeline]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A pipeline from left to right: an input photo of a cute bear face → enters a pink funnel-shaped 'Encoder' that compresses it into a small floating sketchbook labeled 'Latent Space' showing two tiny Gaussian curves (μ, σ); → from the sketchbook, a sampled blue dot exits → enters a mirror-image funnel 'Decoder' on the right → outputs a freshly drawn bear face that looks similar but slightly different. A bear-artist mascot oversees the whole pipeline. Soft pastel pink and lavender colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/vae_encoder_decoder_pipeline.jpeg" style="width: 800px;"/>
 
 Về mặt kỹ thuật, kiến trúc VAE bao gồm:
 - **Encoder $q_\phi(z|x)$:** nhận ảnh đầu vào $x$ và ánh xạ vào hai vector tham số của phân phối Gaussian — vector trung bình $\mu$ và vector độ lệch chuẩn $\sigma$.
@@ -97,8 +90,7 @@ $$\mathcal{L}_{VAE} = \underbrace{\mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x|z)]}_
 - **Reconstruction Loss:** đảm bảo ảnh tái tạo $\hat{x}$ giống ảnh gốc $x$.
 - **KL Divergence:** ràng buộc phân phối latent $q_\phi(z|x)$ gần với prior $p(z) = \mathcal{N}(0, I)$, tạo nên một không gian latent mượt mà, liên tục.
 
-> 🖼️ **[Ảnh placeholder #4 — Latent space interpolation]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A horizontal row of 7 cute cat faces showing a smooth morphing animation from left (happy smiling cat) → middle (neutral cat) → right (sad teary cat). Below the row, a soft pastel rainbow gradient line labeled 'Latent Space' with 7 tiny dots aligned under each cat face. Tiny floating sparkles between faces showing 'continuous interpolation'. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/latent_space_interpolation.jpeg" style="width: 800px;"/>
 
 #### Ưu và nhược điểm
 
@@ -113,8 +105,7 @@ $$\mathcal{L}_{VAE} = \underbrace{\mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x|z)]}_
 Do hàm mất mát có thành phần tái tạo (reconstruction loss) thường dùng sai số bình phương trung bình (MSE), mô hình có xu hướng tạo ra các ảnh "trung bình", an toàn, dẫn đến kết quả bị mờ và thiếu các chi tiết sắc nét so với GANs.
 - **Vấn đề "Prior Hole":** Đôi khi, Decoder có thể học cách "lờ đi" thông tin từ không gian ẩn và chỉ tạo ra một kết quả trung bình cho mọi đầu vào, làm cho mô hình trở nên vô dụng.
 
-> 🖼️ **[Ảnh placeholder #5 — VAE blurry vs GAN sharp]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style, split into two side-by-side panels with a soft divider. Left panel labeled 'VAE': a bear-artist holding a paintbrush, showing a blurry, fuzzy painting of a cat face — the cat looks dreamy and averaged-out. Right panel labeled 'GAN': a fox-forger artist showing a crisp, sharp painting of a cat face with clear whiskers, bright eyes, and fine details. A small comparison emoji '🌫️ vs ✨' between them. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/vae_blurry_vs_gan_sharp.jpeg" style="width: 800px;"/>
 
 #### Một số mô hình tiêu biểu trong nhóm
 
@@ -144,9 +135,6 @@ Quá trình "đối đầu" này tiếp tục, cả hai cùng tiến bộ.
 - Cuối cùng, khi trò chơi đạt đến trạng thái cân bằng, kẻ làm giả sẽ tạo ra những tác phẩm giả hoàn hảo đến mức chuyên gia chỉ có thể đoán bừa (với xác suất 50/50) xem nó là thật hay giả.
 Khi đó, chúng ta đã có một Generator cực kỳ tài năng, có khả năng tạo ra những hình ảnh siêu thực.
 
-> 🖼️ **[Ảnh placeholder #6 — Generator vs Discriminator adversarial game]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. On the left, a sneaky fox artist labeled 'Generator (Kẻ làm giả)' painting fake cat portraits at an easel with sparkly noise vectors flowing into their brush. On the right, a wise owl detective labeled 'Discriminator (Chuyên gia)' wearing a monocle, examining paintings on a table — half real cat photos, half fox-painted ones — holding a sign showing 'Real ✓ / Fake ✗'. A glowing feedback arrow loops between them showing they learn from each other. Soft pastel orange and teal colors, minimal clean background, friendly competitive vibe."*
-
 Về mặt toán học, GAN tối ưu hoá hàm minimax:
 
 $$\min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{data}}[\log D(x)] + \mathbb{E}_{z \sim p_z}[\log(1 - D(G(z)))]$$
@@ -158,8 +146,7 @@ $$\min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{data}}[\log D(x)] + \mathbb{E}_{
 
 Training loop alternate giữa hai bước: cập nhật $D$ vài bước → cập nhật $G$ một bước, lặp lại cho đến khi cân bằng.
 
-> 🖼️ **[Ảnh placeholder #7 — Mode collapse]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. Left side labeled 'Training data': a colorful grid of 12 diverse cat photos — different breeds, colors, poses, expressions. An arrow labeled 'GAN với mode collapse' points to the right. Right side labeled 'Generator output': 12 nearly identical orange tabby kittens, all the same pose, looking slightly confused. A small sad emoji '😅' and a 'Mode Collapse!' label in red. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/gan_mode_collapse.jpeg" style="width: 800px;"/>
 
 #### Ưu và nhược điểm
 
@@ -172,8 +159,7 @@ Do đó, chỉ cần đưa một vector nhiễu (noise vector) vào và nhận n
 - **Quá trình huấn luyện không ổn định:** Việc cân bằng giữa Generator và Discriminator rất khó. Nếu một trong hai thành phần mạnh hơn quá nhiều, quá trình học sẽ sụp đổ và không hội tụ.
 - **Mode Collapse:** Generator có thể overfit bằng cách chỉ học và tạo ra **một vài** ảnh trông rất thật mà lừa được Discriminator. Kết quả là mô hình chỉ sinh ra được một vài loại ảnh giống nhau, thiếu sự đa dạng, dù tập dữ liệu huấn luyện rất phong phú.
 
-> 🖼️ **[Ảnh placeholder #8 — StyleGAN style mixing]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. Three cat portraits arranged in a row: left labeled 'Source A (coarse style)' showing a fluffy gray cat with a round face shape and big ears; middle labeled '= Style Mixing Result' showing a hybrid cat with A's face shape and B's color/texture; right labeled 'Source B (fine style)' showing a sleek black-and-white tuxedo cat with sharp whiskers. Small arrows showing 'coarse: shape, pose' flowing from A and 'fine: color, texture' flowing from B into the middle. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/stylegan_style_mixing.jpeg" style="width: 800px;"/>
 
 #### Một số mô hình tiêu biểu trong nhóm
 
@@ -202,14 +188,11 @@ Quy trình sinh ảnh bằng Transformer thường gồm ba bước:
 
 3. **Bước 3 — Decode trở lại ảnh:** đưa chuỗi token đã sinh qua decoder của VQ-VAE để khôi phục ảnh ở không gian pixel.
 
-> 🖼️ **[Ảnh placeholder #9 — Image tokenization với VQ-VAE]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. Left: a cute cat photo. Middle: an arrow labeled 'VQ-VAE Encoder' pointing to a 16×16 grid where each cell is a small colored tile representing a token (some red, some blue, some yellow). Right: a 'Codebook' shown as a small box of 8 colored swatches with index numbers, with arrows mapping each grid cell back to a swatch. Tiny robot mascot pointing at the codebook with a magnifying glass. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/vqvae_tokenization.jpeg" style="width: 800px;"/>
 
-> 🖼️ **[Ảnh placeholder #10 — Autoregressive token generation]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A friendly pastel robot mascot sitting at a desk, writing tokens one by one onto a 4×4 grid from top-left to bottom-right in raster order. The first 6 tiles are already filled with colorful glowing tokens, the 7th tile has a glowing pen drawing it now, the remaining tiles are empty dotted squares. A speech bubble from the robot says 'Token 7 / 16…'. Above the desk, a thought bubble shows the Transformer architecture (stacked attention blocks). Soft pastel blue and pink colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/autoregressive_token_generation.jpeg" style="width: 800px;"/>
 
-> 🖼️ **[Ảnh placeholder #11 — MaskGIT vs Autoregressive]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style, split into two side-by-side panels. Left panel labeled 'Autoregressive (chậm)': a 4×4 grid being filled token by token from top-left, with a small clock showing many ticks. Right panel labeled 'MaskGIT (nhanh)': the same 4×4 grid starting all masked (gray ?), then in just 3 parallel steps the high-confidence tokens are unmasked together, the clock shows fewer ticks. A speed comparison arrow '⚡ 8× faster' between them. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/maskgit_vs_autoregressive.jpeg" style="width: 800px;"/>
 
 #### Ưu và nhược điểm
 
@@ -251,11 +234,9 @@ Nền tảng lý thuyết của Diffusion Models được giới thiệu vào n�
 - **Quá trình Thuận (Forward Process / Diffusion Process):** Thêm nhiễu vào ảnh.
 - **Quá trình Nghịch (Reverse Process / Denoising Process):** Loại bỏ nhiễu để tạo ra ảnh.
 
-> 🖼️ **[Ảnh placeholder #12 — Forward diffusion process]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A sequence of 6 frames from left to right showing a clear cute bear face gradually being covered in more and more pastel dust/noise particles. Frame 1: crisp bear. Frame 2: slightly grainy. Frame 3: visibly noisy. Frame 4: very noisy with bear barely visible. Frame 5: mostly noise. Frame 6: pure pastel TV-static. Each frame labeled 't=0, t=200, t=400, t=600, t=800, t=1000'. A bear sculptor mascot at the left watches sadly. Soft pastel pink/purple/yellow noise particles, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/forward_diffusion_process.jpeg" style="width: 800px;"/>
 
-> 🖼️ **[Ảnh placeholder #13 — Reverse denoising process]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A sequence of 6 frames from left to right showing pure pastel noise gradually being 'sculpted' into a clear cute bear face. Frame 1: pure pastel static. Frame 2-5: bear emerging step by step from the noise. Frame 6: crystal clear bear. A bear-sculptor mascot blowing 'magic dust away' with a glowing brush, with a 'U-Net ε_θ' label floating above. Tiny sparkles around the emerging bear. Soft pastel colors, minimal clean background, magical mood."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/reverse_denoising_process.jpeg" style="width: 800px;"/>
 
 Về mặt toán học:
 
@@ -273,11 +254,7 @@ $$\mathcal{L} = \mathbb{E}_{t, x_0, \epsilon} \left[ \| \epsilon - \epsilon_\the
 
 Lúc inference, bắt đầu từ $x_T \sim \mathcal{N}(0, I)$ và áp dụng quá trình nghịch lặp $T$ bước để ra $x_0$.
 
-> 🖼️ **[Ảnh placeholder #14 — U-Net architecture]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A U-shaped neural network architecture drawn as stacked rounded blocks: on the left side going down (encoder) the blocks get smaller and labeled 'Conv 256→128→64→32'; at the bottom a small bottleneck block; on the right side going up (decoder) the blocks get bigger 'Conv 32→64→128→256'. Dashed glowing arrows connect corresponding encoder-decoder blocks ('skip connections'). Input on top-left: noisy bear at t=500. Output on top-right: predicted noise ε. A small clock icon showing 't=500' fed into the bottleneck. Soft pastel colors, minimal clean background."*
-
-> 🖼️ **[Ảnh placeholder #15 — Latent vs Pixel Diffusion]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style, split into two panels. Top panel labeled 'Pixel Diffusion (chậm, tốn RAM)': denoising happens on a big 512×512 grid of bear pixels with many CPU/GPU sweat-drops emojis. Bottom panel labeled 'Latent Diffusion (nhanh, ít RAM)': first an encoder shrinks bear to a tiny 64×64 latent grid, denoising happens here much faster, then a decoder expands back to full 512×512 bear. A tiny 'VAE encoder/decoder' tag on the bottom panel. A speed comparison '8× faster, 1/8 RAM'. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/pixel_vs_latent_diffusion.jpeg" style="width: 800px;"/>
 
 #### Ưu và nhược điểm
 
@@ -336,8 +313,7 @@ Trực giác của IS dựa trên hai điều kiện cần đối với một m�
     - Nếu tổng hợp của các phân phối xác suất đầu ra $p(y|x)$ có entropy cao (tức là phân phối xác suất khá đồng đều giữa các lớp), nghĩa là mô hình sinh ra các ảnh phân bố đều trên nhiều lớp khác nhau.
     Suy ra, **Mô hình đang có sự đa dạng.**
 
-> 🖼️ **[Ảnh placeholder #16 — IS quality vs diversity]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A rabbit judge wearing a referee cap, sitting at a desk. Left of the desk: one cat photo entering an Inception-v3 box that outputs a sharp prediction bar chart with one tall bar 'CAT 99%' (low entropy, good quality), with a green check. Right of the desk: a stack of 100 diverse animal photos entering the same Inception-v3 box, outputting a flat bar chart spread across many classes (high entropy, good diversity), with another green check. Speech bubble from rabbit: 'IS = chất lượng × đa dạng'. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/inception_score_intuition.jpeg" style="width: 800px;"/>
 
 Cách thức tính toán:
 
@@ -390,8 +366,7 @@ Nó không chỉ nhìn vào đầu ra của lớp phân loại mà còn xem xét
 FID cũng sử dụng mô hình Inception-v3, tương tự IS nhưng thay vì lấy lớp đầu ra (softmax), FID lấy các vector đặc trưng (feature vectors) từ một layer trong model — thường là pool3 với 2048 chiều.
 Vector này được coi là một biểu diễn cô đọng về nội dung của ảnh và FID sẽ sử dụng vector này để đo đạc đánh giá.
 
-> 🖼️ **[Ảnh placeholder #17 — FID: hai phân phối Gaussian]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A 2D feature space plotted on soft pastel grid background. Two overlapping bell-shaped Gaussian distribution clouds: one blue labeled 'Real images N(μ_r, Σ_r)' with little kawaii cat icons inside, one pink labeled 'Generated images N(μ_g, Σ_g)' with little kawaii fox-painted cats inside. A double-headed arrow between the two means showing 'Fréchet distance'. A rabbit judge holding a small scoreboard 'FID = 3.5 (rất tốt)'. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/fid_gaussian_distributions.jpeg" style="width: 800px;"/>
 
 Các bước tính FID:
 
@@ -463,8 +438,7 @@ Kernel thường dùng là **Gaussian RBF**: $k(x, y) = \exp\left(-\dfrac{\|x - 
 
 Khác với FID — vốn giả định feature là Gaussian và tính khoảng cách Fréchet giữa hai Gaussian — MMD **không yêu cầu giả định phân phối**, nó so sánh đầy đủ mọi moment thông qua kernel trick.
 
-> 🖼️ **[Ảnh placeholder #18 — CMMD với CLIP encoder và kernel MMD]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A two-pan balance scale in the center. Left pan holds a basket labeled 'Ảnh thật' with kawaii real cat photos. Right pan holds a basket labeled 'Ảnh sinh ra' with kawaii AI-generated cats. Above the scale floats a glowing CLIP encoder box (drawn as a stylish robot with two eyes — one looking at images, one looking at text), turning both image batches into colorful embedding dots. A small 'Kernel MMD' sticker on the balance arm. A rabbit judge holding a card 'CMMD = 0.45 (low → similar)'. Soft pastel teal and pink colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/cmmd_clip_kernel_mmd.jpeg" style="width: 800px;"/>
 
 Quy trình tính CMMD:
 
@@ -536,8 +510,7 @@ Kết quả là một giá trị đo lường sự khác biệt về đặc trư
     - Điểm LPIPS cuối cùng là tổng của các khoảng cách ở mỗi lớp nhân với trọng số tương ứng đã học được.
 - LPIPS thường được dùng kèm với các metric khác như PSNR/SSIM/FID để có đánh giá toàn diện.
 
-> 🖼️ **[Ảnh placeholder #19 — LPIPS vs L2 trên 3 ảnh mèo]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. Three cute cat photos arranged in a row at the top, labeled: 'Original (gốc)', 'Shifted 1px (dịch nhẹ)', 'Blurred (mờ)'. Below each pair-comparison, two horizontal bar charts. Top chart labeled 'L2 distance (sai)': long bar for Original-vs-Shifted (red 'high!'), tiny bar for Original-vs-Blurred (green 'low'). Bottom chart labeled 'LPIPS (đúng tri giác)': tiny bar for Original-vs-Shifted (green 'low'), long bar for Original-vs-Blurred (red 'high'). A rabbit judge below pointing at LPIPS chart with a thumbs up. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/lpips_vs_l2.jpeg" style="width: 800px;"/>
 
 #### Ví dụ minh hoạ hạn chế của L1/L2
 
@@ -586,8 +559,7 @@ Có hai dạng đánh giá phổ biến:
 
 Để bảo đảm tin cậy, người ta thường thuê nhiều annotator (3-5 người cho mỗi ảnh), đo **inter-rater agreement** (ví dụ Krippendorff's alpha, Cohen's kappa) và loại bỏ annotator có agreement thấp.
 
-> 🖼️ **[Ảnh placeholder #20 — Pairwise human evaluation]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. Three rabbit judges sitting at a desk wearing referee caps, each holding a clipboard. In front of them on the desk, two cat photos side by side labeled 'Ảnh A' and 'Ảnh B'. A speech bubble from the middle rabbit asks 'Ảnh nào đẹp hơn?'. Above each rabbit's head, a thumb-up emoji pointing at their chosen image. On the right side of the panel, a Likert scale bar (1-5 stars) with a glowing star on '4'. Soft pastel colors, warm friendly judging atmosphere, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/pairwise_human_evaluation.jpeg" style="width: 800px;"/>
 
 #### Ví dụ
 
@@ -632,8 +604,7 @@ Chi tiết hơn về CLIP và một số biến thể nâng cấp đã được 
     - **Điểm cao (gần 1):** Hai vector gần như chỉ về cùng một hướng trong không gian vector, nghĩa là hình ảnh và văn bản có sự tương đồng ngữ nghĩa cao.
     - **Điểm thấp (gần 0 hoặc âm):** Hai vector chỉ về các hướng khác nhau, cho thấy hình ảnh và văn bản không liên quan.
 
-> 🖼️ **[Ảnh placeholder #21 — CLIP Score: text-image cosine]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. Top-left: a paper card with text 'một quả táo đỏ' goes into a 'Text Encoder' box that outputs a glowing pink arrow vector. Bottom-left: a kawaii red apple photo goes into an 'Image Encoder' box that outputs a glowing teal arrow vector. The two arrow vectors meet on the right in a small circular embedding space — pointing in almost the same direction. A small angle θ between them is labeled '≈ 18°' and 'cosine ≈ 0.95 ✓'. A rabbit judge holds a card 'CLIP Score: 0.32 (high)'. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/clip_score_cosine.jpeg" style="width: 800px;"/>
 
 #### Ví dụ
 
@@ -745,8 +716,7 @@ Nếu ta có một nhóm ảnh gốc của người A, ta có thể lấy trung 
 Ta lấy các vector đặc trưng này tính toán cosine similarity với vector tham chiếu ở Bước 1 để ra được ArcFace Score cho mỗi ảnh mới được sinh.
 - **Lọc các ảnh không đạt yêu cầu:** Ta cần phân tích để chọn ra một ngưỡng ArcFace Score Threshold phù hợp để lọc ra những ảnh mới sinh "giống" nhất với những ảnh gốc của người A.
 
-> 🖼️ **[Ảnh placeholder #22 — ArcFace identity preservation]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. In the center, a large reference photo of person A drawn as a kawaii bear character labeled 'Reference vector v_ref'. Around it in a circle, 5 generated bear portraits each with a small score label: 'sim 0.82 ✓', 'sim 0.71 ✓', 'sim 0.65 ✓', 'sim 0.42 ✗', 'sim 0.18 ✗' — the high-score ones drawn as similar-looking bears, the low-score ones as obviously different bear faces. A glowing 'threshold = 0.5' dashed circle separates accepted from rejected. A rabbit judge nodding approvingly at the high-score ones. Soft pastel colors, minimal clean background."*
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/arcface_identity_preservation.jpeg" style="width: 800px;"/>
 
 #### Ví dụ
 
@@ -777,9 +747,6 @@ Threshold thường dùng trong ứng dụng identity-preserving generation (Dre
 Cũng giống như các bài toán khác trong lĩnh vực liên quan đến Generative AI nói chung, image generation cũng gặp phải nhiều thách thức và khó khăn trong quá trình triển khai hiện tại và tương lai.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/challenges.jpeg" style="width: 800px;"/>
-
-> 🖼️ **[Ảnh placeholder #23 — Image generation challenges]**
-> **Prompt:** *"Horizontal landscape illustration in cute kawaii pastel style. A friendly cat police officer wearing a small cap and badge, standing in front of a large kawaii image generation machine (drawn as a colorful TV-like box with a robot arm holding a paintbrush). The cat officer holds up a row of caution signs in their paws: 'Bias', 'Bản quyền', 'Deepfake', 'Chi phí tính toán', 'Nội dung độc hại'. Around the machine, small worried-looking emoji clouds. Soft pastel yellow and orange caution-tape colors mixed with friendly pastel, minimal clean background, gentle warning vibe (not scary)."*
 
 - **Thiên lệch (Bias):** Dữ liệu huấn luyện thường không đa dạng (VD: gương mặt đa số là người da trắng ở nhiều dataset).
 Mô hình học theo và có thể tái tạo bias.
