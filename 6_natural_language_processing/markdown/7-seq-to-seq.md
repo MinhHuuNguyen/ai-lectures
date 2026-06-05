@@ -5,7 +5,7 @@ description: Sequence-to-Sequence (Seq2Seq) là họ mô hình ánh xạ một c
 banner_url:
 tags: [deep-learning, natural-language-processing]
 is_highlight: false
-is_published: true
+is_published: false
 ---
 
 ## 1. Giới thiệu chung về bài toán Sequence-to-Sequence

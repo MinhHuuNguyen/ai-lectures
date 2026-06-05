@@ -5,7 +5,7 @@ description: Các mô hình tạo sinh hình ảnh là một lĩnh vực đột 
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/8-image-generation/banner.jpeg
 tags: [deep-learning, computer-vision]
 is_highlight: false
-is_published: true
+is_published: false
 ---
 
 ## 1. Giới thiệu chung về image generation

@@ -5,7 +5,7 @@ description: Image captioning là bài toán xây dựng các mô hình có kh�
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/14-image-captioning/banner.jpeg
 tags: [deep-learning, computer-vision]
 is_highlight: false
-is_published: true
+is_published: false
 ---
 
 ## 1. Giới thiệu chung về image captioning

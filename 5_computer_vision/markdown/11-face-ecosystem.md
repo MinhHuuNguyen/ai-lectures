@@ -5,7 +5,7 @@ description: Trong thị giác máy tính, hệ sinh thái khuôn mặt (facial 
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/11-face-ecosystem/banner.jpeg
 tags: [deep-learning, computer-vision]
 is_highlight: false
-is_published: true
+is_published: false
 ---
 
 ## 1. Giới thiệu chung về hệ sinh thái các bài toán với dữ liệu khuôn mặt
