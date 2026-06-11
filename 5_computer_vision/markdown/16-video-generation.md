@@ -5,7 +5,7 @@ description: Sinh video (video generation) là bước phát triển tự nhiên
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/16-video-generation/banner.jpeg
 tags: [deep-learning, computer-vision]
 is_highlight: false
-is_published: true
+is_published: false
 ---
 
 ## 1. Giới thiệu chung về video generation

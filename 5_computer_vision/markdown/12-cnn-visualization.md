@@ -5,7 +5,7 @@ description: Trực quan hoá mô hình CNN (CNN Visualization hay Model Explain
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/12-cnn-visualization/banner.jpeg
 tags: [deep-learning, computer-vision]
 is_highlight: false
-is_published: true
+is_published: false
 ---
 
 ## 1. Giới thiệu về trực quan hoá mô hình CNN
