@@ -16,3 +16,6 @@
 [submodule "5_computer_vision/notebook/8-image-generation/2_open_source_code_diffusion/ai-toolkit"]
 	path = 5_computer_vision/notebook/8-image-generation/2_open_source_code_diffusion/ai-toolkit
 	url = https://github.com/ostris/ai-toolkit.git
+[submodule "5_computer_vision/notebook/11-face-ecosystem/face-analysis-demo"]
+	path = 5_computer_vision/notebook/11-face-ecosystem/face-analysis-demo
+	url = git@github.com:MinhHuuNguyen/face-analysis-demo.git
