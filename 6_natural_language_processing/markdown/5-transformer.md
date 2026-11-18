@@ -186,7 +186,7 @@ GPT-3 có kích thước mô hình khổng lồ lên đến 175 tỷ tham số v
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/5-transformer/gpt3_in_context_learning.jpeg" style="width: 1000px;"/>
 
-Trong quá trình huấn luyện GPT-2, nhóm tác giả đã phát hiện ra rằng, với một lượng dữ liệu huấn luyện đủ lớn và kích thước mô hình đủ lớn, mô hình có thể học được cách thực hiện các tác vụ khác nhau mà không cần phải huấn luyện lại (fine-tuning) cho từng tác vụ cụ thể.
+Trong bài báo về GPT-3, nhóm tác giả đã chỉ ra rằng, với một lượng dữ liệu huấn luyện đủ lớn và kích thước mô hình đủ lớn, mô hình có thể học được cách thực hiện các tác vụ khác nhau mà không cần phải huấn luyện lại (fine-tuning) cho từng tác vụ cụ thể.
 Điều này được gọi là **In-context Learning** (học trong ngữ cảnh), tức là mô hình có thể học được cách thực hiện các tác vụ khác nhau chỉ bằng cách cung cấp ví dụ (ví dụ: câu hỏi và câu trả lời) trong đầu vào mà không cần phải huấn luyện lại mô hình.
 
 Ví dụ: Khi được học lặp đi lặp lại về các phép tính cộng đủ nhiều, 1 + 0 = 1, 0 + 10 = 10, ... mô hình có thể suy diễn được rằng 100 + 0 = 100 mà không cần phải huấn luyện lại mô hình.

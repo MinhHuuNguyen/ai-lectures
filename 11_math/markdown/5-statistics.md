@@ -255,7 +255,7 @@ Giá trị hiệp phương sai nằm trong khoảng từ $(-\infty, \infty)$ tro
 - Giá trị bằng không biểu thị hai biến không có tương quan với nhau.
 
 ##### Vì sao ma trận hiệp phương sai lại là ma trận đối xứng xác định dương?
-Ma trận hiệp phương sai **luôn đối xứng qua đường chéo chính** và các phần từ trên đường chéo chính luôn dương nên **các trị riêng chính của chúng luôn dương** và ma trận hiệp phương sai là xác định dương.
+Ma trận hiệp phương sai **luôn đối xứng qua đường chéo chính** và **luôn nửa xác định dương**: với mọi vector $v$, $v^T \Sigma v = Var(v^T x) \geq 0$, nên các trị riêng của nó luôn không âm. Khi các biến không phụ thuộc tuyến tính với nhau, $v^T \Sigma v > 0$ với mọi $v \neq 0$, khi đó các trị riêng đều dương và ma trận hiệp phương sai là xác định dương.
 
 Hàm mật độ xác suất của phân phối chuẩn nhiều biến là:
 

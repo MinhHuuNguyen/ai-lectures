@@ -14,14 +14,14 @@ Computer Audition (Âm thanh máy tính) là một lĩnh vực nghiên cứu và
 
 Âm thanh được tạo ra khi một vật nào đó rung lên, dẫn đến các phân tử không khí va chạm vào nhau.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/pressure.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/pressure.jpeg" alt="Sóng âm là sự dao động của áp suất không khí" style="width: 800px;"/>
 
 Sự va chạm này dẫn đến việc có những điểm trong không gian có áp suất lớn hơn so với những điểm khác, điều này tạo ra sóng âm cơ học trong không khí.
 Sóng này truyền tải năng lượng từ điểm này đến điểm kia trong không gian.
 
 Đây cũng là lý do tại sao trong chân không, chúng ta không nghe thấy âm thanh.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/vacuum.jpeg" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/vacuum.jpeg" alt="Âm thanh không truyền được trong chân không" style="width: 600px;"/>
 
 ## 2. Các bài toán con của Computer audition
 
@@ -29,7 +29,7 @@ Sóng này truyền tải năng lượng từ điểm này đến điểm kia tr
 
 Là bài toán phân lớp nhận đầu vào là đoạn âm thanh và trả đầu ra là lớp tương ứng với đoạn âm thanh đó.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/classification.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/classification.jpeg" alt="Bài toán phân loại âm thanh" style="width: 800px;"/>
 
 ### 2.2. Phân tách âm thanh - Audio separation and segmentation
 
@@ -37,17 +37,17 @@ Là bài toán phân tách các đối tượng trong một đoạn âm thanh.
 - Audio separation: phân tách các đối tượng trong một đoạn âm thanh, ví dụ như phân tách lời nói của các nhân vật trong một đoạn hội thoại.
 - Audio segmentation: phân tách các đối tượng trong một đoạn âm thanh thành các đoạn âm
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/separation.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/separation.jpeg" alt="Bài toán tách nguồn âm thanh" style="width: 800px;"/>
 
 Bài toán này có ứng dụng trong việc tách lời nói của các nhân vật từ một đoạn hội thoại, tách lời và nhạc từ bài hát, tách nội dung và âm thanh background từ đoạn âm thanh ...
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/segmentation.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/segmentation.jpeg" alt="Bài toán phân đoạn âm thanh" style="width: 800px;"/>
 
 ### 2.3. Sinh âm thanh - Audio generation
 
 Là bài toán yêu cầu mô hình sinh ra dữ liệu âm thanh mới từ một số điều kiện ban đầu.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/generation.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/generation.jpeg" alt="Bài toán sinh âm thanh" style="width: 800px;"/>
 
 Bên trong của bài toán Audio generation gồm một số bài toán con như:
 - **Text to speech:** sinh âm thanh từ văn bản, là bài toán phổ biến nhất do nó có thể kế thừa kết quả của các mô hình xử lý ngôn ngữ tự nhiên NLP.
@@ -57,7 +57,7 @@ Bên trong của bài toán Audio generation gồm một số bài toán con nh�
 
 Là bài toán quan trọng nhất trong xử lý âm thanh, mang lại một hướng tiếp cận mới cho hầu hết các bài toán xử lý âm thanh.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/speech2text.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/speech2text.jpeg" alt="Bài toán chuyển giọng nói thành văn bản" style="width: 800px;"/>
 
 Thay vì ta giải quyết các bài toán trên dữ liệu audio, nếu ta xây dựng được một mô hình Speech to text tốt, ta hoàn toàn có thể giải quyết các bài toán đó thông qua các mô hình xử lý ngôn ngữ tự nhiên NLP.
 Lấy ví dụ, thay vì phân loại một đoạn âm thanh, ta có thể chuyển đổi đoạn âm thanh đó thành văn bản và phân loại văn bản đó.
@@ -77,7 +77,7 @@ Có hai kỹ thuật thường được dùng trong ADC: Sampling và Quantizati
 
 ### 3.1. Sampling
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_sampling.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_sampling.jpeg" alt="Lấy mẫu tín hiệu âm thanh trong bộ chuyển đổi ADC" style="width: 1000px;"/>
 
 Thay vì việc thu thập tất cả các giá trị trong tín hiệu analog liên tục, ý tưởng của Sampling là việc lấy ra các giá trị theo từng khoảng cố định và đều nhau.
 
@@ -86,7 +86,7 @@ Giá trị này giúp ta xây dựng âm thanh phù hợp nhất với ngưỡng
 
 ### 3.2. Quantization
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_quantization.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_quantization.jpeg" alt="Lượng tử hoá tín hiệu âm thanh trong bộ chuyển đổi ADC" style="width: 1000px;"/>
 
 Trong khi kỹ thuật Sampling lấy các giá trị đều theo các khoảng thời gian, kỹ thuật Qauntization chia đều giá trị cường độ của âm thanh thành các khoảng bằng nhau, cụ thể là các giá trị nguyên.
 
@@ -109,7 +109,7 @@ Ngưỡng nghe của con người là từ 20 Hz đến 20 kHz.
 Tần số dưới 20 Hz được gọi là Infrasound, tần số trên 20 kHz được gọi là Ultrasound.
 Con người không thể nghe được âm thanh ở hai ngưỡng Infrasound và Ultrasound, tuy nhiên, một số loài động vật có thể nghe được âm thanh ở hai ngưỡng này.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/I_F_P.jpeg" style="width: 800px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/I_F_P.jpeg" alt="Cường độ, tần số và pha của sóng âm" style="width: 800px;"/>
 
 ### 4.2. Cường độ (Intensity)
 
@@ -138,7 +138,7 @@ Hình ảnh biểu diễn sóng âm mà ta thường quan sát là mối quan h�
 - Trục y biểu diễn biên độ theo từng thời điểm trên trục thời gian.
 Cách biểu diễn này được gọi là Time Domain.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/time_domain.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/time_domain.jpeg" alt="Tín hiệu âm thanh trong miền thời gian" style="width: 1000px;"/>
 
 Hình ảnh của spectrum lại biểu diễn một góc nhìn khác của âm thanh, mô tả mối quan hệ giữa biên độ và tần số:
 - Trục x biểu diễn tần số
@@ -146,7 +146,7 @@ Hình ảnh của spectrum lại biểu diễn một góc nhìn khác của âm 
 Cách biểu diễn này được gọi là Frequency Domain.
 Khi ta quan sát được Frequency Domain, ta đang quan sát nó trong một khoảnh khắc trên trục thời gian.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/frequency_domain.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/frequency_domain.jpeg" alt="Tín hiệu âm thanh trong miền tần số" style="width: 1000px;"/>
 
 #### Spectrogram
 
@@ -156,7 +156,7 @@ Tuy nhiên, với sự phát triển của deep learning và đặc biệt là c
 
 Ta hoàn toàn có thể chuyển hoá được audio thành hình ảnh thông qua Spectrogram và xử lý audio thông qua xử lý hình ảnh của Spectrogram.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/spectrogram.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/spectrogram.jpeg" alt="Spectrogram của tín hiệu âm thanh" style="width: 1000px;"/>
 
 Kết hợp thông tin từ Time Domain và Frequency Domain, ta thu được Spectrogram.
 - Trục x là thời gian
@@ -176,7 +176,7 @@ Mel-spectrograms là một biến thể của Spectrogram, trong đó trục t�
 Thang đo Mel là một thang đo phi tuyến tính, trong đó các tần số thấp được phân bố dày đặc hơn so với các tần số cao.
 Nói cách khác, trong thang đo Mel, khoảng cách giữa các tần số được giảm đi ở các tần số thấp và mở rộng ra ở các tần số cao.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mel_spectrogram.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mel_spectrogram.jpeg" alt="Mel spectrogram của tín hiệu âm thanh" style="width: 1000px;"/>
 
 Ví dụ, nhìn vào trục tần số của Mel-spectrogram, ta thấy rằng khoảng cách giữa các tần số thấp là rất nhỏ, trong khi khoảng cách giữa các tần số cao là rất lớn.
 
@@ -189,7 +189,7 @@ Mel-frequency Cepstral Coefficients (MFCC) là một tập hợp các đặc tr�
 
 MFCC được tính toán từ Mel-spectrogram, bằng cách áp dụng biến đổi Discrete Cosine Transform (DCT) lên Mel-spectrogram để giảm số lượng đặc trưng và giữ lại các thông tin quan trọng nhất.
 
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mfcc.jpeg" style="width: 1000px;"/>
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/mfcc.jpeg" alt="Đặc trưng MFCC của tín hiệu âm thanh" style="width: 1000px;"/>
 
 MFCC giúp giảm thiểu ảnh hưởng của nhiễu và biến đổi trong quá trình thu thập âm thanh, đồng thời giữ lại các thông tin quan trọng về âm thanh.
 MFCC thường được sử dụng trong các mô hình học sâu để xử lý âm thanh, vì nó cung cấp một tập hợp các đặc trưng âm thanh có thể được sử dụng để huấn luyện các mô hình phân loại âm thanh hoặc nhận dạng giọng nói.

@@ -224,4 +224,4 @@ Ngược lại với quá trình Model feedforward, sau khi đưa kết quả d�
 
 Quá trình Backpropagation là quá trình tính toán đạo hàm tương ứng với mỗi trọng số của mô hình nhằm phục vụ cho quá trình tối ưu mô hình bằng thuật toán Gradient descent.
 Trong thực tế, ta sẽ không sử dụng thuật toán Gradient descent nguyên bản mà ta sẽ sử dụng các biến thể nâng cấp của Gradient descent nhằm cải thiện hiệu suất và giúp tối ưu mô hình đến giá trị tối ưu tốt hơn.
-Bài viết giới thiệu cụ thể về Các biến thể nâng cấp của Gradient descent, các bạn có thể xem ở [đây](/blog/cac-bien-the-nang-cap-cua-gradient-descent).
+Bài viết giới thiệu cụ thể về Các biến thể nâng cấp của Gradient descent, các bạn có thể xem ở [đây](/blog/cac-bien-the-nang-cap-cua-thuat-toan-toi-uu-gradient-descent).

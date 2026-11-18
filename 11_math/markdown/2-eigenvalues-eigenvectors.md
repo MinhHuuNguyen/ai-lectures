@@ -72,8 +72,7 @@ Ta sẽ tìm eigenvalue và eigenvector của ma trận $A$.
 Đầu tiên, ta cần lập phương trình đặc trưng của ma trận $A$:
 
 $$ det(A - \lambda I) = 0 $$
-$$ trong đó $I$ là ma trận đơn vị $4 \times 4$.
-$$
+trong đó $I$ là ma trận đơn vị $4 \times 4$.
 $$
 A - \lambda I = \begin{pmatrix}
   4 - \lambda & 2 & 1 & 3 \\

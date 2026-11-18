@@ -45,9 +45,9 @@ Lúc này, ta cần dùng đến những mô hình có độ phức tạp cao h�
 
 ### 2.2. Biểu hiện
 
-Biểu hiện của hiện tượng underfit là giá trị loss của mô hình trên cả bộ train và bộ test đều thấp.
+Biểu hiện của hiện tượng underfit là giá trị loss của mô hình trên cả bộ train và bộ test đều cao.
 
-Ta chỉ cần quan sát thấy giá trị loss trên bộ train thấp là đã có thể nhận biết được mô hình đang bị underfit, giá trị loss trên bộ test thấp là điều hiển nhiên kéo theo.
+Ta chỉ cần quan sát thấy giá trị loss trên bộ train cao là đã có thể nhận biết được mô hình đang bị underfit, giá trị loss trên bộ test cao là điều hiển nhiên kéo theo.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/6-overfit-underfit/underfit_loss.jpeg" style="width: 800px;"/>
 
