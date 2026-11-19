@@ -98,7 +98,7 @@ Là bài toán sắp xếp các ảnh theo thứ tự ưu tiên dựa trên mộ
 - **Face attribute classification:** là bài toán phân tích các đặc tính trên khuôn mặt người như giới tính, cảm xúc, độ tuổi, chủng tộc ...
 - **Face recognition:** là bài toán rất quan trọng và phổ biến hiện nay, face recognition là bài toán định danh khuôn mặt, đóng vai trò then chốt trong rất nhiều các hệ thống bảo mật hiện nay.
 Face recognition gồm hai bài toán con là:
-    - **Face indentification:** nhận đầu vào là một ảnh gương mặt người và trả đầu ra là định danh của gương mặt đó
+    - **Face identification:** nhận đầu vào là một ảnh gương mặt người và trả đầu ra là định danh của gương mặt đó
     - **Face verification:** nhận đầu vào là hai ảnh gương mặt người và trả đầu ra là kết quả hai gương mặt có phải của cùng một người hay không.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/face_ecosystem.jpeg" style="width: 1000px;"/>
@@ -112,7 +112,7 @@ Là bài toán làm việc với hình ảnh không có nhãn, ta phân cụm c�
 ### 2.9. Các bài toán liên quan đến video
 
 Bên cạnh hình ảnh, video cũng là một loại dữ liệu quan trọng nhận được nhiều sự quan tâm trong computer vision.
-Hầu như các bài toán trên dữ liêu hình ảnh đều có thể được áp dụng cho video như video classification, video object detection, video segmentation, video captioning ...
+Hầu như các bài toán trên dữ liệu hình ảnh đều có thể được áp dụng cho video như video classification, video object detection, video segmentation, video captioning ...
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/1-computer-vision/tracking.gif" style="width: 1000px;"/>
 
@@ -120,7 +120,7 @@ Nếu ta coi video là một chuỗi các hình ảnh được sắp xếp với
 Tuy nhiên, rào cản và cũng là bài toán lớn nhất mà các mô hình xử lý video cần phải giải quyết là khối lượng tính toán lớn, dẫn đến thời gian xử lý lâu và chi phí vận hành hệ thống lớn.
 Điều này là động lực để các nhà nghiên cứu phát triển những mô hình xử lý video với tốc độ cao và chất lượng được đảm bảo.
 
-Một trong số những bài toán ứng phổ biến nhất đối với dữ liệu video là object tracking, theo dõi đối tượng trong suốt thời lượng của video.
+Một trong số những bài toán ứng dụng phổ biến nhất đối với dữ liệu video là object tracking, theo dõi đối tượng trong suốt thời lượng của video.
 
 ## 3. Ảnh raster và ảnh vector trong máy tính
 
@@ -216,7 +216,7 @@ RGBA là một biến thể của không gian màu RGB, trong đó thêm một k
 Kênh alpha có giá trị từ 0 (hoàn toàn trong suốt) đến 255 (hoàn toàn không trong suốt).
 Điều này cho phép ảnh có thể có các vùng trong suốt, giúp dễ dàng chồng ghép ảnh với nền khác.
 
-### 4.4. Không gian màu HSV
+### 4.3. Không gian màu HSV
 
 Không gian màu HSV là một cách tự nhiên hơn để mô tả màu sắc, dựa trên 3 số liệu: H (Hue - Vùng màu), S (Saturation - Độ bão hòa) và V (Value - Độ sáng).
 
@@ -224,7 +224,7 @@ Không gian màu HSV là một cách tự nhiên hơn để mô tả màu sắc,
 
 HSV thường được sử dụng khi ta cần phân tích kỹ hơn về vùng sáng vùng tối của ảnh hay vùng có độ tương phản cao và vùng có độ tương phản thấp.
 
-## 4. Workflow dự án Computer vision
+## 5. Workflow dự án Computer vision
 
 Tương tự như workflow nói chung trong quá trình xây dựng mô hình deep learning, computer vision workflow cũng trải qua một số bước như **chuẩn bị dữ liệu**, **tiền xử lý dữ liệu**, **xây dựng mô hình**, **huấn luyện** và **đánh giá mô hình**, **kiểm thử mô hình**, **triển khai mô hình**.
 

@@ -57,9 +57,9 @@ Lúc này, bộ dữ liệu mà chúng ta sử dụng sẽ có nhiều thông ti
 | 4     | 44         | HP       | Good    | North     | 2000       | 251         |
 | 5     | 136        | HN       | Bad     | West      | 2020       | 723         |
 | 6     | 101        | HCM      | Normal  | East      | 2018       | 510         |
-| 7     | 90         | ĐN       | Good    | North     | 1988       | 496         |
+| 7     | 90         | DN       | Good    | North     | 1988       | 496         |
 | 8     | 50         | TB       | Bad     | South     | 1995       | 322         |
-| 9     | 132        | ĐN       | Normal  | West      | 1990       | 697         |
+| 9     | 132        | DN       | Normal  | West      | 1990       | 697         |
 | 10    | 112        | HP       | Good    | East      | 1997       | 575         |
 
 
@@ -101,9 +101,9 @@ $$ house\_price = w_1 \cdot house\_size + w_2 \cdot location + w_3 \cdot utility
 | 4  | 44         | HP       | Good    | North     | 2000       | 251         | 428.8           |
 | 5  | 136        | HN       | Bad     | West      | 2020       | 723         | 969.2           |
 | 6  | 101        | HCM      | Normal  | East      | 2018       | 510         | 781.0           |
-| 7  | 90         | ĐN       | Good    | North     | 1988       | 496         | 630.8           |
+| 7  | 90         | DN       | Good    | North     | 1988       | 496         | 630.8           |
 | 8  | 50         | TB       | Bad     | South     | 1995       | 322         | 444.5           |
-| 9  | 132        | ĐN       | Normal  | West      | 1990       | 697         | 855.4           |
+| 9  | 132        | DN       | Normal  | West      | 1990       | 697         | 855.4           |
 | 10 | 112        | HP       | Good    | East      | 1997       | 575         | 773.1           |
 
 ## 3. Huấn luyện mô hình
@@ -146,9 +146,9 @@ Trong đó:
 | 4  | 44         | HP       | Good    | North     | 2000       | 251         | 428.8           | 31612.84 |
 | 5  | 136        | HN       | Bad     | West      | 2020       | 723         | 969.2           | 60614.44 |
 | 6  | 101        | HCM      | Normal  | East      | 2018       | 510         | 781.0           | 73441.00 |
-| 7  | 90         | ĐN       | Good    | North     | 1988       | 496         | 630.8           | 18171.04 |
+| 7  | 90         | DN       | Good    | North     | 1988       | 496         | 630.8           | 18171.04 |
 | 8  | 50         | TB       | Bad     | South     | 1995       | 322         | 444.5           | 15006.25 |
-| 9  | 132        | ĐN       | Normal  | West      | 1990       | 697         | 855.4           | 25090.56 |
+| 9  | 132        | DN       | Normal  | West      | 1990       | 697         | 855.4           | 25090.56 |
 | 10 | 112        | HP       | Good    | East      | 1997       | 575         | 773.1           | 39243.61 |
 
 Từ bảng trên, ta có thể tính toán được giá trị loss của mô hình với toàn bộ dữ liệu bằng cách lấy trung bình của các giá trị loss của từng điểm dữ liệu.
@@ -180,7 +180,7 @@ Trong đó:
 - $\hat{y}_i$ là giá trị Predicted Price
 - $n$ là số lượng điểm dữ liệu
 
-MAE không nhạy cảm với các điểm dữ liệu có giá trị dự đoán lệch lớn so với giá trị thực tế như MSE, do đó, mô hình khi được huấn luyện bằng hàm loss này sẽ thường có xu hướng có thể có rất ít các giá trị dự đoán lệch, nhưng nếu lệch có thể lệch lớn.
+MAE không nhạy cảm với các điểm dữ liệu có giá trị dự đoán lệch lớn so với giá trị thực tế như MSE, do đó, mô hình khi được huấn luyện bằng hàm loss này ít bị ảnh hưởng bởi các điểm ngoại lai hơn, nên sai số của các dự đoán thường được phân bố đều hơn.
 
 ## 5. Phương pháp tối ưu mô hình
 
@@ -192,25 +192,25 @@ Việc tối ưu mô hình Linear Regression là việc tìm ra các trọng s�
 Để ký hiệu toán học được đơn giản, ta sẽ sử dụng biến $w$ để ký hiệu tập hợp các trọng số $w_1, w_2, ..., w_n$ và bias $b$.
 Nghĩa là $w = [w_1, w_2, ..., w_n, b]$.
 
-$$ loss = L(\hat{y}, y) = L(wx, y) = L(y_i, w_1x_1 + w_2x_2 + ... + w_nx_n + b, y) $$
+$$ loss = L(\hat{y}, y) = L(wX, y) = L(y_i, w_1x_1 + w_2x_2 + ... + w_nx_n + b, y) $$
 
 Đối với hàm loss MSE, ta có công thức độ lệch trên toàn bộ bộ dữ liệu thu gọn sau:
 $$ L(\hat{y}, y) = \frac{1}{n} \sum_{i=1}^{n} (\hat{y}_i - y_i)^2 = \frac{1}{n} (\hat{y} - y)^2 $$
 
 Từ kiến thức về hàm số đã được học từ trung học phổ thông, ta thực hiện đạo hàm hàm loss MSE theo trọng số $w$.
 
-$$ \frac{\partial L}{\partial w} = \frac{\partial L}{\partial \hat{y}} \frac{\partial \hat{y}}{\partial w} = 2(\hat{y} - y) \frac{\partial \hat{y}}{\partial w} = 2(y - wx) \frac{\partial wx}{\partial w} = 2(y - wx)x^{T}$$
+$$ \frac{\partial L}{\partial w} = \frac{\partial L}{\partial \hat{y}} \frac{\partial \hat{y}}{\partial w} = 2(\hat{y} - y) \frac{\partial \hat{y}}{\partial w} = 2(y - wX) \frac{\partial wX}{\partial w} = 2(y - wX)X^{T}$$
 
 và giải phương trình đạo hàm bằng 0, ta sẽ tìm ra được các giá trị cực trị của hàm loss.
-$$ 2(y - wx)x^{T} = 0 $$
-$$ yx^{T} - wxx^{T} = 0 $$
-$$ yx^{T} = wxx^{T} $$
-$$ w = (xx^{T})^{-1}yx^{T} $$
+$$ 2(y - wX)X^{T} = 0 $$
+$$ yX^{T} - wXX^{T} = 0 $$
+$$ yX^{T} = wXX^{T} $$
+$$ w = (XX^{T})^{-1}yX^{T} $$
 
 Với cách làm trên, ta có thể tính toán được trọng số $w$ tối ưu của mô hình Linear Regression sao cho giá trị loss MSE là nhỏ nhất.
 Tuy nhiên, cách làm như vậy có hai điểm yếu rất lớn:
-- Độ phức tạp tính toán: việc tính toán ma trận nghịch đảo $(xx^{T})^{-1}$ có độ phức tạp tính toán rất lớn, đặc biệt khi số lượng điểm dữ liệu lớn.
-- Độ ổn định: việc tính toán ma trận nghịch đảo $(xx^{T})^{-1}$ có thể dẫn đến vấn đề không ổn định nếu ma trận $xx^{T}$ không khả nghịch.
+- Độ phức tạp tính toán: việc tính toán ma trận nghịch đảo $(XX^{T})^{-1}$ có độ phức tạp tính toán rất lớn, đặc biệt khi số lượng điểm dữ liệu lớn.
+- Độ ổn định: việc tính toán ma trận nghịch đảo $(XX^{T})^{-1}$ có thể dẫn đến vấn đề không ổn định nếu ma trận $XX^{T}$ không khả nghịch.
 
 Để giải quyết vấn đề này, ta sử dụng một phương pháp tối ưu khác là Gradient Descent.
 Bài viết tiếp theo sẽ giới thiệu về phương pháp tối ưu Gradient Descent.

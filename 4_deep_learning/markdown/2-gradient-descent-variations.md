@@ -150,7 +150,7 @@ $$ w_{t+1} = w_{t} - \frac{\eta}{\sqrt{G_{t}} + \epsilon} \cdot L'(w_{t}) $$
 
 trong công thức trên, giá trị learning rate thật sự được sử dụng cho mỗi trọng số được tính toán lại dựa trên giá trị learning rate khởi tạo ban đầu theo ma trận đường chéo $G$.
 
-AdaGrad tự động điều chỉnh learning rate dựa trên lịch sử gradient của từng trọng số, giúp tối ưu hóa hiệu quả hơn trên các trọng có biến đổi khác biệt.
+AdaGrad tự động điều chỉnh learning rate dựa trên lịch sử gradient của từng trọng số, giúp tối ưu hóa hiệu quả hơn trên các trọng số có biến đổi khác biệt.
 Điều này cũng giúp việc lựa chọn learning rate trở nên dễ dàng hơn.
 
 Tuy nhiên, một vấn đề của AdaGrad là sau một thời gian dài, learning rate có thể giảm quá mức do việc tích luỹ tổng bình phương gradient, dẫn đến quá trình hội tụ chậm lại.
@@ -227,4 +227,4 @@ Một rule-of-thumb trong việc huấn luyện mô hình deep learning, **Nếu
 
 - **Nadam (Nesterov-accelerated Adaptive Moment Estimation):** Kết hợp cả Nesterov Accelerated Gradient và Adam.
 - **Adadelta:** Một biến thể của AdaGrad, không cần lưu trữ tổng bình phương gradient, mà sử dụng một cửa sổ trượt để tính toán.
-- **RAdam (Rectified Adam):** Một biến thể của Adam với cách cập nhật tốt hơn cho trạng thái không ổn định trong quá trình đầu tối ưu hóa.
+- **RAdam (Rectified Adam):** Một biến thể của Adam với cách cập nhật tốt hơn cho trạng thái không ổn định trong giai đoạn đầu quá trình tối ưu hóa.

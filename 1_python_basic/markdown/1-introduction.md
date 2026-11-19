@@ -88,7 +88,7 @@ conda install anaconda::pandas
 import pandas
 ```
 
-Nếu ra import thư viện `pandas` mà không cài đặt thư viện này trước, Python sẽ báo lỗi như sau:
+Nếu ta import thư viện `pandas` mà không cài đặt thư viện này trước, Python sẽ báo lỗi như sau:
 
 ```python
 import pandas
@@ -210,7 +210,7 @@ print(z) # Output: 0
 
 #### 3.4.2. Các quy tắc đặt tên biến
 
-Trong Pyton, ta có các quy tắc **BẮT BUỘC** và các quy tắc **KHUYẾN KHÍCH** khi đặt tên biến:
+Trong Python, ta có các quy tắc **BẮT BUỘC** và các quy tắc **KHUYẾN KHÍCH** khi đặt tên biến:
 
 Đối với các quy tắc bắt buộc:
 

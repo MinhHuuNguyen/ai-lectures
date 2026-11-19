@@ -41,7 +41,7 @@ $$ y = y^{R} + y^{G} + y^{B} + b $$
 
 ### 1.3. Một số kernel đặc biệt trong convolution
 
-Trước khi được sử dụng rộng rãi trong mạng nơ ron, tạo ra mang nơ ron tích chập CNN, phép convolution là một phép toán được sử dụng nhiều trong xử lý ảnh.
+Trước khi được sử dụng rộng rãi trong mạng nơ ron, tạo ra mạng nơ ron tích chập CNN, phép convolution là một phép toán được sử dụng nhiều trong xử lý ảnh.
 
 Ta có thể sử dụng các kernel đặc biệt để thực hiện các phép toán khác nhau giúp biến đổi ảnh đầu vào, tạo ra các ảnh đầu ra với các đặc điểm mong muốn.
 Phép convolution có thể được sử dụng để làm mờ ảnh, làm nét ảnh, phát hiện cạnh, phát hiện góc, phát hiện đường thẳng, phát hiện hình tròn, phát hiện hình chữ nhật ...
@@ -251,7 +251,7 @@ ResNet đã đạt được kết quả rất tốt trên bộ dữ liệu Image
 
 Một số phiên bản mô hình nâng cấp hơn của ResNet:
 - ResNeXt: cải tiến ResNet ở việc sử dụng group convolution để giảm kích thước của mô hình.
-- ResNest: cải tiến ResNeXt ở việc sử dụng split attention để cải thiện độ chính xác của mô hình.
+- ResNeSt: cải tiến ResNeXt ở việc sử dụng split attention để cải thiện độ chính xác của mô hình.
 
 ### 4.4. MobileNet
 

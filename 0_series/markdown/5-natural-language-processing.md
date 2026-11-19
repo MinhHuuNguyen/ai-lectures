@@ -80,10 +80,12 @@ Mô hình seq2seq (sequence-to-sequence) là kiến trúc mạng nơ-ron đượ
 
 *Mình sẽ viết bài này trong thời gian tới*
 
+---
 ### [Bài 7: Bài toán phân tích ngữ pháp trong văn bản Part-of-Speech Tagging](/blog/phan-tich-ngu-phap-part-of-speech-tagging)
 
 *Mình sẽ viết bài này trong thời gian tới*
 
-### [Bài 8: Bài toán gán tiêu đề cho ảnh Image Captioning](/blog/gian-tieu-de-cho-anh-image-captioning)
+---
+### [Bài 8: Bài toán gán tiêu đề cho ảnh Image Captioning](/blog/gan-tieu-de-cho-anh-image-captioning)
 
 *Mình sẽ viết bài này trong thời gian tới*

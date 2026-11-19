@@ -10,7 +10,7 @@ is_published: true
 
 ## 1. Giới thiệu chung về lĩnh vực Natural language processing
 
-Natural language processing (NLP) là một lĩnh con của machine learning và deep learning giúp máy tính có khả năng hiểu và xử lý được thông tin dưới dạng văn bản.
+Natural language processing (NLP) là một lĩnh vực con của machine learning và deep learning giúp máy tính có khả năng hiểu và xử lý được thông tin dưới dạng văn bản.
 
 Các mô hình giải quyết bài toán NLP thường hoạt động trên dữ liệu dạng văn bản, cụ thể hơn, dữ liệu có thể là một câu, một từ, một đoạn văn bản hay một tập hợp các từ.
 Một số mô hình deep learning thường kết hợp dữ liệu dạng văn bản với các loại dữ liệu khác để máy tính có khả năng phân tích và đưa ra câu trả lời giống với con người.
@@ -55,7 +55,7 @@ Cụ thể, PoS tagging tập trung vào việc phân loại các từ trong đo
 
 Là bài toán phân lớp các thực thể trong văn bản, nhận đầu vào là đoạn văn bản và trả đầu ra là danh sách các thực thể tương ứng với từng từ trong đoạn văn bản đó.
 
-Tuỳ thuộc vào từng bộ dữ liệu mà ta sẽ có danh sách các thực thể khác nhau, tuy nhiên, một số thực thể phổ biên trong bài NER là tên người, địa điểm, thời gian, số điện thoại, email ...
+Tuỳ thuộc vào từng bộ dữ liệu mà ta sẽ có danh sách các thực thể khác nhau, tuy nhiên, một số thực thể phổ biến trong bài NER là tên người, địa điểm, thời gian, số điện thoại, email ...
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/1-natural-language-processing/ner.jpeg" style="width: 1000px;"/>
 
@@ -93,7 +93,7 @@ Là bài toán dịch tự động, nhận đầu vào là một đoạn văn b�
 
 Là bài toán rất phổ biến trong NLP giúp ta xây dựng được những hệ thống trả lời tự động.
 
-Các mô hình chatbot cổ điển thường gặp phải vấn đề trong việc trả lời chưa thực sự chân thật và vấn đề về khả năng ghi nhớ đổi với những đoạn hội thoại dài.
+Các mô hình chatbot cổ điển thường gặp phải vấn đề trong việc trả lời chưa thực sự chân thật và vấn đề về khả năng ghi nhớ đối với những đoạn hội thoại dài.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_chatgpt.jpeg" style="width: 1200px;"/>
 

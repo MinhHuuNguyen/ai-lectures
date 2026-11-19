@@ -57,7 +57,7 @@ Hàm số phi tuyến là hàm số mà đồ thị của nó không phải là 
 
 ### 3.1. Công thức của hàm Sigmoid
 
-Hàm Sigmoid là một làm số phi tuyến nhận đầu vào là bất kỳ giá trị nào trong khoảng $[- \infty, \infty]$ và trả đầu ra nằm trong khoảng trong khoảng $[0, 1]$.
+Hàm Sigmoid là một hàm số phi tuyến nhận đầu vào là bất kỳ giá trị nào trong khoảng $[- \infty, \infty]$ và trả đầu ra nằm trong khoảng trong khoảng $[0, 1]$.
 Từ đó, hàm Sigmoid là một logistic activation function phù hợp để giải quyết bài toán phân lớp nhị phân (binary classification).
 
 $$ \sigma(z) = \frac{1}{1 + e^{-z}} $$
@@ -69,7 +69,7 @@ Giá trị đầu ra của hàm Sigmoid có thể được hiểu như giá tr�
 Ưu điểm của hàm Sigmoid là nó có đạo hàm dễ tính toán.
 Điều này giúp ta có thể tối ưu mô hình logistic regression bằng các thuật toán tối ưu như gradient descent.
 
-Nhược điểm của hàm Sigmoid là hàm có gradient rất nhỏ khi đầu vào là các giá trị rất lớn lớn hoặc rất nhỏ.
+Nhược điểm của hàm Sigmoid là hàm có gradient rất nhỏ khi đầu vào là các giá trị rất lớn hoặc rất nhỏ.
 Điều này dẫn đến hiện tượng vanishing gradient, làm cho việc tối ưu mô hình trở nên khó khăn hơn.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/4-logistic-regression/binary_cls_with_sigmoid.jpeg" style="width: 1000px;"/>
@@ -90,7 +90,7 @@ Tính toán trên toàn bộ bộ dữ liệu, ta có:
 $$ P(y|X, W) = \prod_{i=1}^m P(y^i| x^i, W) = \prod_{i=1}^m (\hat{y}^i)^{y^i} (1 - \hat{y}^i)^{(1 - y^i)} $$
 $$ P(y|X, W) = (\hat{y})^{y} (1 - \hat{y})^{(1 - y)} $$
 
-Đến đây, mô hình cần học ra được giá trị $W$ sao cho giá trị xác suất $P(y|X, W)$ là lớn nhất và tương đương, giá trị xác suất $- P(y|X, W)$ là nhỏ nhất.
+Đến đây, mô hình cần học ra được giá trị $W$ sao cho giá trị xác suất $P(y|X, W)$ là lớn nhất, tương đương với việc (sau khi lấy logarit) giá trị $- \log{P(y|X, W)}$ là nhỏ nhất.
 
 $$ {W}^{*} = \arg\max_{W} P(y|X, W) = \arg\min_{W} - P(y|X, W) $$
 
@@ -220,7 +220,7 @@ Mô hình logistic regression giải quyết bài toán multi-class classificati
 
 ### 6.1. Công thức của hàm Softmax
 
-Hàm Softmax là một làm số phi tuyến nhận đầu vào là một vector gồm bất kỳ giá trị nào trong khoảng $[- \infty, \infty]$ và trả đầu ra là một vector mới gồm các giá trị nằm trong khoảng $[0, 1]$ và tổng các giá trị trong vector này bằng 1.
+Hàm Softmax là một hàm số phi tuyến nhận đầu vào là một vector gồm bất kỳ giá trị nào trong khoảng $[- \infty, \infty]$ và trả đầu ra là một vector mới gồm các giá trị nằm trong khoảng $[0, 1]$ và tổng các giá trị trong vector này bằng 1.
 Từ đó, hàm Softmax là một logistic activation function phù hợp để giải quyết bài toán phân lớp nhiều lớp (multi-class classification).
 
 $$ \hat{y} = Softmax(z) = \left[\frac{e^{z_1}}{\sum_{i=1}^K e^{z_i}}, \frac{e^{z_2}}{\sum_{i=1}^K e^{z_i}}, ..., \frac{e^{z_K}}{\sum_{i=1}^K e^{z_i}}\right] $$
@@ -251,7 +251,7 @@ Tính toán trên toàn bộ bộ dữ liệu, ta có:
 $$ P(y|X, W) = \prod_{i=1}^m P(y^i | x^i, W) = \prod_{i=1}^m \prod_{k=1}^K \hat{y}^i_k $$
 $$ P(y|X, W) = \prod_{i=1}^m \prod_{k=1}^K (\hat{y}^i_k)^{y^i_k} $$
 
-Tương tự, ta đi tìm giá trị $W$ sao cho giá trị xác suất $P(y|X, W)$ là lớn nhất và tương đương, giá trị xác suất $- P(y|X, W)$ là nhỏ nhất.
+Tương tự, ta đi tìm giá trị $W$ sao cho giá trị xác suất $P(y|X, W)$ là lớn nhất, tương đương với việc (sau khi lấy logarit) giá trị $- \log{P(y|X, W)}$ là nhỏ nhất.
 
 $$ W^{*} = \arg\max_{W} P(y|X, W) = \arg\min_{W} - P(y|X, W) $$
 
@@ -279,7 +279,7 @@ Với K = 2, ta có thể hiểu rằng, hàm loss binary cross entropy là hàm
 
 ### 6.3. Tối ưu mô hình với hàm Softmax và hàm loss Categorical Cross Entropy
 
-Với việc ta thấy rằng hàm loss categorical cross entropy là một trường hợp đặc biệt của hàm loss binary cross entropy với K = 2, ta có thể áp dụng các công thức tính toán tương tự như trong bài toán phân lớp nhị phân.
+Với việc ta thấy rằng hàm loss binary cross entropy là một trường hợp đặc biệt của hàm loss categorical cross entropy với K = 2, ta có thể áp dụng các công thức tính toán tương tự như trong bài toán phân lớp nhị phân.
 
 Áp dụng chain rule, ta có
 $$ \frac{\partial \mathcal{L}}{\partial {W}}  = \frac{\partial \mathcal{L}}{\partial {\hat{y}}} \cdot \frac{\partial \hat{y}}{\partial {z}} \cdot \frac{\partial z}{\partial {W}} $$

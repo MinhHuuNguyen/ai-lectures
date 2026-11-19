@@ -119,12 +119,6 @@ Chu kỳ - Cycle thể hiện sự dao động của chuỗi thời gian xảy r
 
 Thời gian chu kỳ thường dài (vài năm) như chu kỳ kinh tế kéo dài 5–10 năm với các giai đoạn mở rộng và suy thoái.
 
-<!-- Độ dừng - Stationarity
-Periodogram
-Tính phụ thuộc nối tiếp - Serial dependence trong Time series
-https://www.kaggle.com/code/ryanholbrook/time-series-as-features -->
-
-
 ## 3. Time-step features và Lag features
 
 ### 3.1. Time-step features

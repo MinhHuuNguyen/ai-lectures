@@ -1,7 +1,7 @@
 ---
 time: 03/22/2022
 title: "[CASE STUDY] Phân tích và dự báo với bộ dữ liệu Credit Scoring"
-description: Bài thực hành này được thực hiện trên bộ dữ liệu này được lấy từ cuộc thi Give Me Some Credit trên Kaggle và qua một số chỉnh sửa để phù hợp với mục đích phân tích và thực hành sử dụng thư viện Pandas.
+description: Bài thực hành này được thực hiện trên bộ dữ liệu được lấy từ cuộc thi Give Me Some Credit trên Kaggle và qua một số chỉnh sửa để phù hợp với mục đích phân tích và thực hành sử dụng thư viện Pandas.
 banner_url: https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/2_data_analysis_with_python/images/2-pandas/banner.jpeg
 tags: [python, data-analysis, case-study]
 is_highlight: false
@@ -44,6 +44,15 @@ Bộ dữ liệu gồm 2 tệp `.csv`, tệp `train.csv` chứa dữ liệu hu�
 - `NumberOfDependents`: Số người phụ thuộc trong gia đình (không tính bản thân người vay), bao gồm vợ/chồng, con cái, v.v. **Kiểu dữ liệu: số nguyên**
 
 ## 3. Câu hỏi phân tích
+### 3.1. Câu 1: Khám phá dữ liệu
+- Số mẫu của mỗi nhãn `SeriousDlqin2yrs` là bao nhiêu? Dữ liệu có mất cân bằng không?
+- Vẽ phân phối của từng đặc trưng. Đặc trưng nào có giá trị bất thường?
+### 3.2. Câu 2: Tiền xử lý
+- Phát hiện và loại bỏ các mẫu ngoại lai (ví dụ theo quy tắc khoảng tứ phân vị IQR).
+- Xử lý giá trị thiếu ở `MonthlyIncome` và `NumberOfDependents`.
+### 3.3. Câu 3: Xây dựng mô hình
+- Huấn luyện mô hình Random Forest để dự đoán `SeriousDlqin2yrs`, đánh giá bằng ma trận nhầm lẫn (confusion matrix).
+- Đặc trưng nào quan trọng nhất đối với mô hình?
 
 ## 4. Lời giải tham khảo
 

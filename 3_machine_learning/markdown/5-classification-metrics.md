@@ -31,7 +31,7 @@ Giả sử, ta cần phải đánh giá một mô hình phân loại sản phẩ
 - Trong 55 sản phẩm tốt, mô hình dự đoán **đúng** 50 sản phẩm là tốt và **sai** 5 sản phẩm là lỗi.
 - Lúc này, ta có accuracy được tính như sau
 $$ \text{accuracy} = \frac{50 + 40}{100} = 90\% $$
-- Với chỉ số accuracy = 90%, ta có thể thấy rằng mô hình này có độ chính xác tương đối cao và **có thể đánh giá đây là một mô hình tốt**.
+- Với chỉ số accuracy = 90%, ta có thể thấy rằng mô hình này có accuracy tương đối cao và **có thể đánh giá đây là một mô hình tốt**.
 
 **Ví dụ 2:** Ta có bộ dữ liệu đánh giá **cân bằng** gồm 100 sản phẩm, trong đó có 55 sản phẩm tốt và 45 sản phẩm lỗi.
 - Trong 45 sản phẩm lỗi, mô hình dự đoán **đúng** 5 sản phẩm là lỗi và **sai** 40 sản phẩm là tốt.
@@ -45,14 +45,14 @@ $$ \text{accuracy} = \frac{50 + 5}{100} = 55\% $$
 - Trong 90 sản phẩm tốt, mô hình dự đoán **đúng** 85 sản phẩm là tốt và **sai** 5 sản phẩm là lỗi.
 - Lúc này, ta có accuracy được tính như sau:
 $$ \text{accuracy} = \frac{85 + 5}{100} = 90\% $$
-- Với chỉ số accuracy = 90%, ta có thể thấy rằng mô hình này có độ chính xác tương đối cao **nhưng ta không thể đánh giá được mô hình này có tốt hay không**.
+- Với chỉ số accuracy = 90%, ta có thể thấy rằng mô hình này có accuracy tương đối cao **nhưng ta không thể đánh giá được mô hình này có tốt hay không**.
 
 **Ví dụ 4:** Ta có bộ dữ liệu đánh giá **không cân bằng** gồm 100 sản phẩm, trong đó có 90 sản phẩm tốt và 10 sản phẩm lỗi.
 - Trong 10 sản phẩm lỗi, mô hình dự đoán **đúng** 8 sản phẩm là lỗi và **sai** 2 sản phẩm là tốt.
 - Trong 90 sản phẩm tốt, mô hình dự đoán **đúng** 85 sản phẩm là tốt và **sai** 5 sản phẩm là lỗi.
 - Lúc này, ta có accuracy được tính như sau:
 $$ \text{accuracy} = \frac{85 + 8}{100} = 93\% $$
-- Với chỉ số accuracy = 93%, ta có thể thấy rằng mô hình này có độ chính xác tương đối cao và **có thể đánh giá đây là một mô hình tốt**.
+- Với chỉ số accuracy = 93%, ta có thể thấy rằng mô hình này có accuracy tương đối cao và **có thể đánh giá đây là một mô hình tốt**.
 
 Với các ví dụ trên, ta có thể thấy rằng accuracy không thể đánh giá được chính xác chất lượng của mô hình trong trường hợp bộ dữ liệu mất cân bằng giữa các lớp dữ liệu.
 Đối với các bài toán phân loại mà số lượng các lớp dữ liệu không cân bằng, accuracy có thể dẫn đến những đánh giá sai lệch về chất lượng của mô hình.
@@ -70,10 +70,10 @@ Confusion matrix là ma trận vuông gồm các cột là các lời dự đoá
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/5-classification-metrics/cm_definition.jpeg" style="width: 500px;"/>
 
 Từ đó, confusion matrix tạo ra 4 giá trị: True Positive (TP), False Positive (FP), True Negative (TN) và False Negative (FN).
-- TP là số luợng các điểm dữ liệu mà mô hình dự đoán **đúng là lớp positive** tương ứng với label của chúng là postive.
-- TN là số luợng các điểm dữ liệu mà mô hình dự đoán **đúng là lớp negative** tương ứng với label của chúng là negative.
-- FP là số luợng các điểm dữ liệu mà mô hình dự đoán **sai là lớp positive** nhưng với label của chúng là negative.
-- FN là số luợng các điểm dữ liệu mà mô hình dự đoán **sai là lớp negative** nhưng với label của chúng là postive.
+- TP là số lượng các điểm dữ liệu mà mô hình dự đoán **đúng là lớp positive** tương ứng với label của chúng là positive.
+- TN là số lượng các điểm dữ liệu mà mô hình dự đoán **đúng là lớp negative** tương ứng với label của chúng là negative.
+- FP là số lượng các điểm dữ liệu mà mô hình dự đoán **sai là lớp positive** nhưng với label của chúng là negative.
+- FN là số lượng các điểm dữ liệu mà mô hình dự đoán **sai là lớp negative** nhưng với label của chúng là positive.
 Với các giá trị như trên, hiển nhiên, ta luôn mong muốn hai giá trị TP và TN lớn và hai giá trị FP và FN nhỏ.
 
 Xét các ví dụ trên, giả sử ta coi lớp positive là lớp **sản phẩm lỗi** và lớp negative là lớp **sản phẩm tốt**, ta có thể tính toán được confusion matrix như sau:
@@ -105,7 +105,7 @@ Từ confusion matrix, ta có thể tính toán được các chỉ số đánh 
 
 ### 4.1. Recall
 
-Recall được tính bằng việc lấy số lượng dự đoán **đúng là lớp positive** của mô hình chia cho **tổng số điểm dữ liệu thực sự là postive**.
+Recall được tính bằng việc lấy số lượng dự đoán **đúng là lớp positive** của mô hình chia cho **tổng số điểm dữ liệu thực sự là positive**.
 
 $$
 \text{recall} = \frac{\text{TP}}{\text{TP + FN}}
@@ -128,7 +128,7 @@ Từ đây, ta có thể khẳng định rằng mô hình trong ví dụ 4 là m
 - Trong 90 sản phẩm tốt, mô hình dự đoán **đúng** 20 sản phẩm là tốt và **sai** 70 sản phẩm là lỗi.
 - Lúc này, ta có các giá trị TP = 10, TN = 20, FP = 70, FN = 0 và ta tính được recall như sau:
 $$ \text{recall} = \frac{10}{10 + 0} = \frac{10}{10} = 100\% $$
-- Với chỉ số recall = 100%, ta có thể thấy rằng mô hình này có độ chính xác tương đối cao **nhưng ta không thể đánh giá mô hình này tốt được**.
+- Với chỉ số recall = 100%, ta có thể thấy rằng mô hình này có recall rất cao **nhưng ta không thể đánh giá mô hình này tốt được**.
 
 ### 4.2. Precision
 

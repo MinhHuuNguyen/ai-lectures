@@ -38,7 +38,7 @@ Ví dụ:
     - **Trích xuất đặc trưng (Feature Extraction):** Tìm các đặc điểm quan trọng như góc, cạnh, kết cấu (texture).
 
 - **Xử lý ảnh cấp cao (High-level Processing)**: Hiểu và phân tích nội dung của hình ảnh, gần với cách con người nhận thức với đầu vào là hình ảnh, đầu ra là các hiểu biết về hình ảnh đó.
-Đây là nơi áp dụng các mô hình deep learning vào computer Vision.
+Đây là nơi áp dụng các mô hình deep learning vào Computer Vision.
 Ví dụ:
     - **Nhận dạng đối tượng (Object Recognition):** Xác định trong ảnh có chứa đối tượng ("ô tô", "con người", "con mèo" ...)
     - **Phân loại ảnh (Image Classification):** Gán nhãn cho toàn bộ bức ảnh ("cảnh bãi biển", "phòng khách" ...)
@@ -127,4 +127,4 @@ Ngoài ra, về mục tiêu:
 - Image processing nhằm cải thiện chất lượng của ảnh hoặc trích xuất thông tin có ý nghĩa từ ảnh, thường phục vụ chất lượng và tính sẵn sàng của dữ liệu.
 - Image data augmentation nhắm vào việc làm tăng độ đa dạng của dữ liệu và giảm hiện tượng overfitting.
 
-Tóm lại, về độ chỉn chu và chính xác của phép xử lý, image processing cần được thực hiện một cách cẩn thận để đảm bảo rằng các đặc trưng quan trọng của ảnh không bị mất đi hoặc biến dạng quá mức, trong khi image data augmentation có thể chấp nhận một số biến đổi nhất định để tạo ra dữ liệu huấn luyện đa dạng hơn, miễn là các đặc trưng quan trọng vẫn được giữ nguyên.
+Tóm lại, về độ chuẩn xác và chính xác của phép xử lý, image processing cần được thực hiện một cách cẩn thận để đảm bảo rằng các đặc trưng quan trọng của ảnh không bị mất đi hoặc biến dạng quá mức, trong khi image data augmentation có thể chấp nhận một số biến đổi nhất định để tạo ra dữ liệu huấn luyện đa dạng hơn, miễn là các đặc trưng quan trọng vẫn được giữ nguyên.

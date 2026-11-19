@@ -70,7 +70,7 @@ Những thông tin này càng rõ ràng, càng hợp lý thì khả năng thu đ
 
 ### 2.1. Ý tưởng chung
 
-Với MLE, ta sẽ bắt đầu với một bộ dữ liệu huấn luyện gồm có N phần tử $X = {x_1, x_2, ..., x_N}$.
+Với MLE, ta sẽ bắt đầu với một bộ dữ liệu huấn luyện gồm có N phần tử $X = \{x_1, x_2, ..., x_N\}$.
 Ta giả sử rằng bộ dữ liệu này tuân theo một phân phối xác suất nào đó, và xây dựng được mô hình Machine Learning thống kê được đại diện bởi bộ tham số $\theta$.
 
 Mục tiêu ở đây là tìm được mô hình thống kê hay cụ thể hơn là bộ tham số $\theta$ sao cho có thể mô tả được chính xác nhất bộ dữ liệu $X$.
@@ -130,10 +130,10 @@ Ví dụ đối với bộ dữ liệu thống kê về kết quả thu được
 Bộ dữ liệu ghi nhận trong 10.000 lần tung đồng xu, có 8.000 lần ra mặt ngửa và 2.000 lần ra mặt sấp.
 Tỷ lệ ra mặt sấp lúc này là 1/5 = 20%.
 
-Tuy nhiên, với kiến thức của chúng ta, tỷ lệ ra mặt sấp và ra mặt ngửa đối khi tung đồng xu ra tương đối cân bằng nhau, loanh quanh ngưỡng 50%.
+Tuy nhiên, với kiến thức của chúng ta, tỷ lệ ra mặt sấp và ra mặt ngửa đôi khi tung đồng xu ra tương đối cân bằng nhau, loanh quanh ngưỡng 50%.
 Do đó, nếu ta xây dựng mô hình MLE trên bộ dữ liệu này thì có thể ta sẽ mắc phải hiện tượng overfitting.
 
-Trong một số trường hợp cụ thể, bên cạnh việc xây dựng mô hình và lựa chọn tham số dựa trên bộ dữ liệu huấn luyện, ta còn cần phải định nghĩa trước một số kiến thức cho mô hình, và từ đó ngăn chặn việc mô hình quá phụ thuộc và bộ dữ liệu huấn luyện dẫn đến sai sót trong kết quả.
+Trong một số trường hợp cụ thể, bên cạnh việc xây dựng mô hình và lựa chọn tham số dựa trên bộ dữ liệu huấn luyện, ta còn cần phải định nghĩa trước một số kiến thức cho mô hình, và từ đó ngăn chặn việc mô hình quá phụ thuộc vào bộ dữ liệu huấn luyện dẫn đến sai sót trong kết quả.
 
 Ngược lại với MLE, đối với MAP, ta đi tìm bộ tham số $\theta$ sao cho xác suất sau đây đạt giá trị lớn nhất, giá trị xác suất này được gọi là **posterior**:
 
@@ -155,7 +155,7 @@ Sự khác biệt chính giữa MLE và MAP nằm ở chỗ:
 
 ### 3.2. Prior knowledge trong MAP
 
-Ta sẽ ký hiệu gọn lại bộ dữ liệu huấn luyện gồm N phần tử là $\mathbf{X} = {\mathbf{x}_1, \mathbf{x}_2, ..., \mathbf{x}_N}$.
+Ta sẽ ký hiệu gọn lại bộ dữ liệu huấn luyện gồm N phần tử là $\mathbf{X} = \{\mathbf{x}_1, \mathbf{x}_2, ..., \mathbf{x}_N\}$.
 
 $$
 \theta = \arg\max_{\theta} p(\theta | \mathbf{x}_1, ..., \mathbf{x}_N) = \arg\max_{\theta} p(\theta | \mathbf{X})

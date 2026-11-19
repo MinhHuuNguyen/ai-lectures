@@ -38,7 +38,7 @@ Kiến trúc Transformer bao gồm hai phần chính là **Encoder** và **Decod
 - **Decoder**: Nhận đầu vào là chuỗi các vector biểu diễn từ phần Encoder và sinh ra chuỗi đầu ra tương ứng.
 
 Trong cả hai phần này đều sử dụng các phép Self-Attention và Multi-Head Attention.
-Ngoài ra, giữa trong quá trình decode, Transformer thực hiện **encoder-decoder attention** (sau này được gọi là **Cross-Attention**) để kết hợp thông tin từ chuỗi đầu vào với các output của chuỗi đầu ra.
+Ngoài ra, trong quá trình decode, Transformer thực hiện **encoder-decoder attention** (sau này được gọi là **Cross-Attention**) để kết hợp thông tin từ chuỗi đầu vào với các output của chuỗi đầu ra.
 
 ### 1.3. Positional Encoding
 

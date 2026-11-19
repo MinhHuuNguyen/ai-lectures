@@ -76,8 +76,7 @@ Trong Machine Learning, ta thường dùng phép toán đạo hàm để tối �
 
 ### [Bài 4: Mô hình hồi quy logistic Logistic Regression](/blog/mo-hinh-hoi-quy-logistic-logistic-regression)
 
-Mô hình hồi quy logistic Logistic regression
-description: Mô hình Linear regression là mô hình đơn giản để giải quyết bài toán regression, còn đối với bài toán classification, ta có mô hình Logistic regression. Mô hình Logistic regression có thể giải quyết bài toán phân lớp nhị phân (binary classification), bài toán phân lớp nhiều label (multi-label classification) và bài toán phân lớp nhiều lớp (multi-class classification).
+Mô hình Linear regression là mô hình đơn giản để giải quyết bài toán regression, còn đối với bài toán classification, ta có mô hình Logistic regression. Mô hình Logistic regression có thể giải quyết bài toán phân lớp nhị phân (binary classification), bài toán phân lớp nhiều label (multi-label classification) và bài toán phân lớp nhiều lớp (multi-class classification).
 
 ###### 1. Bài toán phân lớp nhị phân - Binary classification
 
@@ -163,7 +162,7 @@ SVM là mô hình machine learning dựa vào khoảng cách giữa các điểm
 
 ### [Bài 9: Mô hình Naive Bayes Classification](/blog/mo-hinh-naive-bayes-classification)
 
-Naive Bayes là một mô hình machine learning điển hình, đại diện cho các mô hình dựa vào xác suất thống kê. Mô hình này được sử dụng rộng rãi trong các bài toán phân loại, đặc biệt là phân loại văn bản
+Naive Bayes là một mô hình machine learning điển hình, đại diện cho các mô hình dựa vào xác suất thống kê. Mô hình này được sử dụng rộng rãi trong các bài toán phân loại, đặc biệt là phân loại văn bản.
 
 ###### 1. Tổng quan
 

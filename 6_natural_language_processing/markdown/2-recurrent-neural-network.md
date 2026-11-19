@@ -40,7 +40,7 @@ Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks (RNNs)
 
 Một số thành phần mang lại sự khác biệt giữa ý tưởng của RNN và mạng nơ ron truyền thống (Feedforward Neural Network):
 - Đầu tiên $h_i$ được tính bằng $h_i = f(W_X x_i + W_H h_{i-1})$.
-Với $i = 0$, tức là ở vị trí đầu tiên trọng mạng, lúc này ta chưa có giá trị $h_{-1}$.
+Với $i = 0$, tức là ở vị trí đầu tiên trong mạng, lúc này ta chưa có giá trị $h_{-1}$.
 Khi đó, ta thường khởi tạo ngẫu nhiên $h_{-1}$ hoặc khởi tạo $h_{-1}$ là vector 0.
 - Tiếp theo, trong RNN, $W_X, W_H, W_Y$ được sử dụng chung cho tất cả các lớp.
 Do đó, kết quả đầu ra tại mỗi thời điểm của RNN phụ thuộc hoàn toàn vào giá trị đầu vào và giá trị trạng thái ở thời điểm đó.
@@ -70,7 +70,7 @@ Backpropagation Through Time (BPTT) là một thuật toán được sử dụng
 BPTT là một biến thể của thuật toán lan truyền ngược (backpropagation), được thiết kế để xử lý các mạng nơ ron có cấu trúc hồi quy.
 
 BPTT cho phép cập nhật trọng số của RNN bằng cách lan truyền ngược qua thời gian, từ đầu ra cuối cùng trở về đầu vào ban đầu.
-BPTT hoạt động bằng cách "dérouler" (unroll) RNN theo thời gian, tức là biến RNN thành một mạng nơ ron truyền thống với nhiều lớp.
+BPTT hoạt động bằng cách "unroll" (unroll) RNN theo thời gian, tức là biến RNN thành một mạng nơ ron truyền thống với nhiều lớp.
 Điều này cho phép áp dụng thuật toán lan truyền ngược truyền thống để tính toán gradient và cập nhật trọng số.
 
 Ví dụ: Xét một RNN với 3 bước thời gian $h_1, h_2, h_3$ và giá trị loss là $L$.
@@ -155,7 +155,7 @@ Bot: "Một số cuốn sách hay về công nghệ mà tôi biết là: 'Artifi
 ### 4.1. RNN hai chiều (Bidirectional RNN) và LSTM hai chiều (BiLSTM)
 
 Với mô hình RNN hai chiều, đầu ra tại mỗi bước không những phụ thuộc vào các giá trị đầu vào và giá trị trạng thái phía trước mà còn phụ thuộc cả vào các giá trị phía sau.
-Ví dụ, đối với bài toán điền từ còn thiếu trong câu, ta cần phải xem xét cả các giá trị phía trước trước và phía sau của từ cần điền.
+Ví dụ, đối với bài toán điền từ còn thiếu trong câu, ta cần phải xem xét cả các giá trị phía trước và phía sau của từ cần điền.
 
 Hình ảnh này được lấy từ bài báo [Recurrent Neural Networks (RNNs): A gentle Introduction and Overview](https://arxiv.org/abs/1912.05911).
 

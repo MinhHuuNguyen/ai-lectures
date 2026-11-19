@@ -35,7 +35,7 @@ Là bài toán phân lớp nhận đầu vào là đoạn âm thanh và trả đ
 
 Là bài toán phân tách các đối tượng trong một đoạn âm thanh.
 - Audio separation: phân tách các đối tượng trong một đoạn âm thanh, ví dụ như phân tách lời nói của các nhân vật trong một đoạn hội thoại.
-- Audio segmentation: phân tách các đối tượng trong một đoạn âm thanh thành các đoạn âm
+- Audio segmentation: phân tách các đối tượng trong một đoạn âm thanh thành các đoạn âm thanh
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/separation.jpeg" alt="Bài toán tách nguồn âm thanh" style="width: 800px;"/>
 
@@ -70,8 +70,8 @@ Tín hiệu analog là một biểu đồ giữa thời gian và cường độ 
 Trong đó, mỗi giá trị cường độ là giá trị số thực, và mỗi giá trị cường độ thu được trong một đơn vị thời gian vô cùng nhỏ.
 Điều này dẫn đến việc lưu trữ tín hiệu analog là gần như bất khả thi do nó đòi hỏi bộ nhớ lưu trữ vô cùng lớn.
 
-Do đó, ta cần một bước chuyển đổi tín hiệu analog thành tín hiệu số sao cho tối ưu khả năng lữu trữ nhưng vẫn đảm bảo được tính tái tạo của âm thanh.
-Bước nay được gọi là Analog to Digital Conversion (ADC).
+Do đó, ta cần một bước chuyển đổi tín hiệu analog thành tín hiệu số sao cho tối ưu khả năng lưu trữ nhưng vẫn đảm bảo được tính tái tạo của âm thanh.
+Bước này được gọi là Analog to Digital Conversion (ADC).
 
 Có hai kỹ thuật thường được dùng trong ADC: Sampling và Quantization.
 
@@ -88,7 +88,7 @@ Giá trị này giúp ta xây dựng âm thanh phù hợp nhất với ngưỡng
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/7_computer_audition/images/1-computer-audition/adc_quantization.jpeg" alt="Lượng tử hoá tín hiệu âm thanh trong bộ chuyển đổi ADC" style="width: 1000px;"/>
 
-Trong khi kỹ thuật Sampling lấy các giá trị đều theo các khoảng thời gian, kỹ thuật Qauntization chia đều giá trị cường độ của âm thanh thành các khoảng bằng nhau, cụ thể là các giá trị nguyên.
+Trong khi kỹ thuật Sampling lấy các giá trị đều theo các khoảng thời gian, kỹ thuật Quantization chia đều giá trị cường độ của âm thanh thành các khoảng bằng nhau, cụ thể là các giá trị nguyên.
 
 Từ đó, khi ta thu thập cường độ của âm thanh tại một mốc thời gian bất kỳ (các mốc thời gian không nhất thiết phải cách đều nhau), ta sẽ lấy giá trị cường độ nguyên gần nhất với giá trị cường độ đúng tại mốc thời gian đó.
 

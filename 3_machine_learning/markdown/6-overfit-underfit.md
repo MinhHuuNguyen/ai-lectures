@@ -34,7 +34,7 @@ Nếu một mô hình không đủ phức tạp so với bộ dữ liệu, hoặ
 
 ### 2.1. Hiện tượng underfitting là gì?
 
-Underfitting là hiện tượng xảy ra khi mô hình không đủ sức để học ra được những quy luật, xu hướng trong bộ train và dẫn đến chất luợng của các dự đoán trên cả bộ train và bộ test đều thấp.
+Underfitting là hiện tượng xảy ra khi mô hình không đủ sức để học ra được những quy luật, xu hướng trong bộ train và dẫn đến chất lượng của các dự đoán trên cả bộ train và bộ test đều thấp.
 
 Ví dụ: Bài toán Định giá nhà
 - Với bộ dữ liệu đơn giản, input là diện tích ngôi nhà và output là giá của ngôi nhà đó, ta chỉ cần một mô hình machine learning đơn giản như Linear Regression để xử lý.
@@ -61,7 +61,7 @@ Có hai nguyên nhân chính dẫn đến hiện tượng underfit:
 
 Tương ứng, ta có hai giải pháp để giải quyết hiện tượng underfit:
 - Đối với **Nguyên nhân 1**, ta cần phải làm sạch bộ dữ liệu train bằng cách loại bỏ các điểm dữ liệu không tuân theo logic chung.
-- Đối với **Nguyên nhân 2**,, ta cần phải tăng độ phức tạp của mô hình bằng cách sử dụng một mô hình machine learning phức tạp hơn giúp mô hình học được bộ dữ liệu train dễ dàng hơn.
+- Đối với **Nguyên nhân 2**, ta cần phải tăng độ phức tạp của mô hình bằng cách sử dụng một mô hình machine learning phức tạp hơn giúp mô hình học được bộ dữ liệu train dễ dàng hơn.
 
 Trong thực tế, ta thường lựa chọn hoặc xây dựng những mô hình machine learning có độ phức tạp cao, dễ dàng học được bộ dữ liệu train (tức là dễ dàng vượt qua hiện tượng underfit).
 Lúc này các mô hình đó sẽ có xu hướng gặp phải hiện tượng overfit.
@@ -69,7 +69,7 @@ Và ta sẽ sử dụng các kỹ thuật để giảm thiểu hiện tượng o
 
 ## 3. Hiện tượng Overfitting
 
-### 3.1. Hiện tương overfitting là gì?
+### 3.1. Hiện tượng overfitting là gì?
 
 Overfitting là hiện tượng xảy ra khi mô hình học thuộc phần lớn (hoặc thậm chí toàn bộ) bộ dữ liệu train.
 Lúc này, mô hình không còn khả năng khái quát hoá bộ dữ liệu nữa mà chỉ ghi nhớ các điểm dữ liệu trong bộ train.
@@ -88,7 +88,7 @@ Ngoài chỉ số loss, ta cũng có thể sử dụng các chỉ số khác nh�
 
 ### 3.3. Giải pháp
 
-Nguyên nhân dẫn đến hiện tượng overfit là do mô hình có độ phức tạp quá cao (mô hình quá phức tạp) so với bộ dữ liệu train quá đơn giản.
+Nguyên nhân dẫn đến hiện tượng overfit là do mô hình có độ phức tạp quá cao (mô hình quá phức tạp) so với bộ dữ liệu train.
 Với bộ dữ liệu train đơn giản, có hai trường hợp xảy ra hiện tượng overfit:
 - Trường hợp 1: Bộ dữ liệu train không đủ khái quát để mô tả được bộ dữ liệu test.
 - Trường hợp 2: Bộ dữ liệu train đủ khái quát để mô tả được bộ dữ liệu test, nhưng mô hình lại quá phức tạp và thời gian huấn luyện quá lâu khiến cho mô hình ghi nhớ được các điểm dữ liệu trong bộ train.

@@ -89,7 +89,7 @@ Ví dụ: Cả lớp `Cat` và `Dog` đều có phương thức `speak()`, nhưn
 
 Trong các ngôn ngữ lập trình khác, ta có thể sử dụng tính đa hình thông qua các khái niệm như:
 - `Method Overriding`: Khi một lớp con định nghĩa lại phương thức của lớp cha với cùng tên và tham số, phương thức của lớp con sẽ được gọi thay vì phương thức của lớp cha.
-- `Method Overloading`: Khi một lớp có nhiều phương thức cùng tên nhưng khác tham số, phương thức phù hợp sẽ được gọi dựa trên số lượng và kiểu tham số truyền vào.
+- `Method Overloading`: Khi một lớp có nhiều phương thức cùng tên nhưng khác tham số, phương thức phù hợp sẽ được gọi dựa trên số lượng và kiểu tham số truyền vào. Lưu ý: Python không hỗ trợ overloading theo số lượng hoặc kiểu tham số như Java hoặc C++ (định nghĩa sau sẽ ghi đè định nghĩa trước), nên thường dùng tham số mặc định hoặc `*args` thay thế.
 
 #### Tính kế thừa (Inheritance)
 
@@ -498,7 +498,7 @@ print(cat.speak())
 # Output: Meow!
 ```
 
-### 2.5.Tính kế thừa và super()
+### 2.5. Tính kế thừa và super()
 
 Trong phần này, ta sẽ lấy ví dụ có một lớp cha (parent class) là Animal và hai lớp con (child classes) là Dog và Cat kế thừa từ lớp cha Animal.
 
@@ -583,7 +583,7 @@ print(dog.bark())
 #         Buddy is barking.
 ```
 
-#### Kế thừa đa hình (Multiple Inheritance)
+#### Đa kế thừa (Multiple Inheritance)
 
 Ví dụ về multiple inheritance trong Python:
 

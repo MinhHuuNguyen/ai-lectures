@@ -108,7 +108,7 @@ Một số kiểu dữ liệu phổ biến trong NumPy bao gồm:
 - Số thực: `float16`, `float32`, `float64`
 - Số phức: `complex64`, `complex128`
 - Boolean: `bool`
-- Chuỗi ký tự: `str_`, `unicode_`
+- Chuỗi ký tự: `str_`
 
 ```python
 import numpy as np
@@ -194,7 +194,7 @@ print(arr_ones)
 ### 3.2. Truy cập và cắt lát (slicing) mảng
 
 Cách truy cập phần tử của mảng NumPy tương tự như với list nhưng mạnh mẽ hơn.
-Ta sử dụng dấu với chỉ số (index) để lấy giá trị.
+Ta sử dụng dấu `[]` với chỉ số (index) để lấy giá trị.
 Lưu ý: Chỉ số của mảng bắt đầu từ 0 (giống Python list).
 
 - Với mảng 1 chiều: `a[i]` trả về phần tử tại vị trí i. Ví dụ: `a[0]` là phần tử đầu tiên.

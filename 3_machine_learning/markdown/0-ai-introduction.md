@@ -9,6 +9,7 @@ is_published: true
 ---
 
 ## 1. Một số ví dụ nổi tiếng về Trí tuệ nhân tạo
+*Lưu ý: thông tin về các ví dụ trong mục này được cập nhật đến năm 2023 và có thể đã thay đổi.*
 
 ### 1.1. ChatGPT - OpenAI
 
@@ -16,7 +17,7 @@ Dưới đây là một đoạn hội thoại ngắn giữa ChatGPT và một ng
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_chatgpt.jpeg" style="width: 1200px;"/>
 
-Đầu tiên, câu trả lời của ChatGPT có tính cấu trúc đồng nhất, gồm các phần: số thứ tự, tên viết bằng tiếng việt có dấu, chữ tượng hình tiếng trung trong ngoặc, dấu gạch ngang, đoạn giới thiệu ngắn bằng tiếng anh.
+Đầu tiên, câu trả lời của ChatGPT có tính cấu trúc đồng nhất, gồm các phần: số thứ tự, tên viết bằng tiếng Việt có dấu, chữ tượng hình tiếng trung trong ngoặc, dấu gạch ngang, đoạn giới thiệu ngắn bằng tiếng anh.
 
 Thứ hai, trong câu trả lời trên, ChatGPT có khả năng hoạt động đa ngôn ngữ.
 
@@ -53,7 +54,7 @@ Mặc dù được gọi là "lái tự động," AutoPilot vẫn cần sự gi�
 
 ### 1.4. MidJourney
 
-Hình ảnh dưới đây là một hình ảnh được sinh ra bởi MidJourney, một hệ thống trí tuệ nhân tạo và hơn nữa, hình ảnh này đã dành chiến thắng trong một cuộc thi về ảnh.
+Hình ảnh dưới đây là một hình ảnh được sinh ra bởi MidJourney, một hệ thống trí tuệ nhân tạo và hơn nữa, hình ảnh này đã giành chiến thắng trong cuộc thi mỹ thuật của hội chợ bang Colorado (Colorado State Fair) năm 2022, hạng mục Digital Arts/Digitally-Manipulated Photography. Tác phẩm có tên "Théâtre D'opéra Spatial" của Jason Allen ([nguồn: Smithsonian Magazine](https://www.smithsonianmag.com/smart-news/artificial-intelligence-art-wins-colorado-state-fair-180980703/), [nguồn: CBS News](https://www.cbsnews.com/colorado/news/ai-created-art-exhibit-first-place-colorado-state-fair-causing-controversy-jason-allen/)).
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/0-ai-introduction/example_midjourney.jpeg" style="width: 1200px;"/>
 

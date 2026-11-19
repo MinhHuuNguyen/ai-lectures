@@ -287,7 +287,7 @@ Quá trình Mix Up gồm các bước:
 
 ### 5.2. Cut Out:
 
-Mục tiêu của Cut Out là ẩn đi một phần ngẫu nhiên của hình ảnh bằng một hình chữ nhật đen.
+Mục tiêu của Cut Out là ẩn đi một phần ngẫu nhiên của hình ảnh bằng một hình vuông đen.
 
 Quá trình Cut Out gồm các bước:
 - Chọn ngẫu nhiên một vùng hình vuông có kích thước và vị trí ngẫu nhiên trên hình ảnh.

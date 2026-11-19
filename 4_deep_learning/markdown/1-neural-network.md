@@ -74,7 +74,7 @@ Bên cạnh các layer đó, còn rất nhiều các activation layer khác vớ
 
 #### 3.2.1. ReLU
 
-Khác với Sigmoid hay Softmax thường dược đặt ở layer cuối cùng trong neural network, ReLU (Rectified-Linear Unit) là một activation layer thường được đặt giữa các linear layer nằm giữa của neural network.
+Khác với Sigmoid hay Softmax thường được đặt ở layer cuối cùng trong neural network, ReLU (Rectified-Linear Unit) là một activation layer thường được đặt giữa các linear layer nằm giữa của neural network.
 
 $$ y = max(0, x) $$
 
@@ -136,7 +136,7 @@ trong đó:
 
 ### 3.3. Normalization layer
 
-Đối với các neural network các phức tạp và có kích thước mô hình lớn, quá trình huấn luyện càng khó khăn và bất ổn định.
+Đối với các neural network phức tạp và có kích thước mô hình lớn, quá trình huấn luyện càng khó khăn và bất ổn định.
 Sự bất ổn định có thể dẫn đến việc neural network có kết quả huấn luyện rất kém.
 
 Sự ra đời của các Normalization layer đã giúp cải thiện đáng kể tình trạng này.
@@ -202,7 +202,7 @@ Feedforward là quá trình neural network nhận đầu vào input layer, thự
 Hàm loss được sinh ra để đo đạc độ lệch (hay độ sai khác) giữa lời dự đoán của mô hình và giá trị thực tế đúng trong bộ dữ liệu.
 Từ giá trị độ lệch này, mô hình sẽ được huấn luyện và tối ưu giúp độ chính xác của mô hình cải thiện dần theo thời gian.
 
-Chúng ta đã nghiên cứu về khá loại hàm loss khác nhau, đối với hai bài toán cơ bản trong Machine Learning là Regression và Classification.
+Chúng ta đã nghiên cứu về khá nhiều loại hàm loss khác nhau, đối với hai bài toán cơ bản trong Machine Learning là Regression và Classification.
 
 #### Đối với bài toán Regression:
 

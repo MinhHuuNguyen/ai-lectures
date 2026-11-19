@@ -70,14 +70,14 @@ Ngoài ra, SVM cũng gọi khoảng cách giữa điểm dữ liệu gần nhấ
 
 Trong hình trên, ta thấy:
 - Margin của lớp vàng đến đường phân lớp xanh dương bằng với margin của lớp tím đến đường phân lớp xanh dương.
-- Margin của lớp vàng đến đường phân lớp đỏ bằng với margin của lớp tím đậm đến đường phân lớp tím.
-- Tuy nhiên, margin của đường phân lớp xanh dương lớn hơn margin của đường phân lớp tím.
+- Margin của lớp vàng đến đường phân lớp đỏ bằng với margin của lớp tím đậm đến đường phân lớp đỏ.
+- Tuy nhiên, margin của đường phân lớp xanh dương lớn hơn margin của đường phân lớp đỏ.
 
-Vậy trong trường hợp này, đường phân lớp xanh dương là đường phân lớp tốt hơn so với đường phân lớp tím.
+Vậy trong trường hợp này, đường phân lớp xanh dương là đường phân lớp tốt hơn so với đường phân lớp đỏ.
 
 Mô hình SVM tìm ra đường phân lớp tốt nhất, không những margin giữa các lớp là bằng nhau mà còn lớn nhất.
 
-Về lý thuyết, mô hình SVM luôn tìm ra đường phân lớp tốt nhất so sánh với mô hình Logistic Regression (mạng nơ ron với 1 layer).
+Về lý thuyết, mô hình SVM thường cho đường phân lớp có margin lớn hơn so với mô hình Logistic Regression (mạng nơ ron với 1 layer).
 
 ## 4. Tối ưu mô hình Hard Margin SVM
 
@@ -139,7 +139,7 @@ Trong trường hợp này, mô hình Hard Margin SVM sẽ không thể tìm ra 
 Để giải quyết vấn đề này, mô hình SVM đã được mở rộng thành mô hình Soft Margin SVM.
 Mô hình Soft Margin SVM cho phép một số điểm dữ liệu bị phân lớp sai hoặc một số điểm dữ liệu nằm trong vùng nguy hiểm, tức là nằm trong khoảng cách margin.
 
-Soft Margin SVM đánh đổi một số điểm dữ liệu bị phân lớp sai hoặc nguy hiểm với việc tăng độ rộng của margin, từ đó, giúp mô hình vẫn có thể hoạt động được trong trường hợp dữ liệu ""almost linearly separable".
+Soft Margin SVM đánh đổi một số điểm dữ liệu bị phân lớp sai hoặc nguy hiểm với việc tăng độ rộng của margin, từ đó, giúp mô hình vẫn có thể hoạt động được trong trường hợp dữ liệu "almost linearly separable".
 
 Để làm được điều này, mô hình Soft Margin SVM thêm một số hạng mới vào hàm mục tiêu của mô hình Hard Margin SVM.
 Hàm mục tiêu của mô hình Soft Margin SVM là:
@@ -156,7 +156,7 @@ trong đó giá trị $\xi_i$ có các trường hợp sau:
 Tham số $C$ là trong hàm mục tiêu trên là tham số điều chỉnh để cân bằng giữa độ rộng của margin và số điểm dữ liệu bị phân lớp sai hoặc nằm trong vùng nguy hiểm.
 - $C$ càng lớn thì độ rộng của margin càng nhỏ, số lượng điểm dữ liệu bị phân lớp sai hoặc nằm trong vùng nguy hiểm càng ít.
 - $C$ càng nhỏ thì độ rộng của margin càng lớn, số lượng điểm dữ liệu bị phân lớp sai hoặc nằm trong vùng nguy hiểm càng nhiều.
-- Nếu tham số $C$ bằng 0, thì mô hình Soft Margin SVM trở thành mô hình Hard Margin SVM.
+- Nếu tham số $C \to \infty$, thì mô hình Soft Margin SVM trở thành mô hình Hard Margin SVM (không chấp nhận điểm nào bị phân lớp sai). Ngược lại, nếu $C = 0$ thì lỗi phân lớp bị bỏ qua hoàn toàn.
 
 ## 6. Mô hình Kernel SVM
 

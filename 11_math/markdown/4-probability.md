@@ -24,7 +24,7 @@ Trong ví dụ về tung xúc xắc, không gian mẫu là tập hợp tất c�
 Trong ví dụ về tung xúc xắc, biến cố là sự kiện ta tung xúc xắc.
 
 **Kết quả (outcome) là giá trị mà biến ngẫu nhiên nhận được sau khi biến cố xảy ra.**
-Trong ví dụ về tung xúc xắc, sau khi tung xúc xắc, ta thu được kết quả là 1 chấm chả hạn.
+Trong ví dụ về tung xúc xắc, sau khi tung xúc xắc, ta thu được kết quả là 1 chấm chẳng hạn.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/4-probability/event_outcome.jpeg" style="width: 600px;"/>
 
@@ -32,7 +32,7 @@ Khi ta thực hiện lặp đi lặp lại nhiều lần, ta có thể thu đư�
 
 **Thông tin về tần suất xuất hiện của các kết quả đầu ra được gọi là phân phối xác suất (probability distribution) $p(x)$ của biến ngẫu nhiên.**
 
-Một biến ngẫu nhiên bất kỳ có thể là biến ngẫu nhiên rời rạc (discrete random variable) hoặc biến ngẫu nhiên liên tục liên tục (continuous random variable).
+Một biến ngẫu nhiên bất kỳ có thể là biến ngẫu nhiên rời rạc (discrete random variable) hoặc biến ngẫu nhiên liên tục (continuous random variable).
 
 **Biến ngẫu nhiên rời rạc là biến ngẫu nhiên mà không gian mẫu của nó là một tập hợp hữu hạn đếm được các giá trị.**
 Trong ví dụ trên về việc tung xúc xắc, ta đang xét đến một biến ngẫu nhiên rời rạc với không gian mẫu là {1 chấm, 2 chấm, 3 chấm, 4 chấm, 5 chấm, và 6 chấm}.
@@ -47,7 +47,7 @@ $$ \sum_{x} p(x) = 1 $$
 Khoảng giá trị này có thể là hữu hạn (ví dụ: thời gian làm bài thi của một học sinh, nằm trong khoảng từ 0 phút đến 180 phút) hoặc là vô hạn (ví dụ: thời gian di chuyển từ điểm A đến điểm B của một chiếc xe).
 
 Xác suất để nhận biến ngẫu nhiên liên tục nhận đầu ra chính xác bằng một giá trị nào đó thường được coi là bằng 0.
-Thay vào đó, ta sẽ tính toán xác suất để biến ngẫu nhiên nhận đầu ra nằm trong một khoảng giá trị nào đó, và được mô tả bởi hàm mật đô xác suất (probability density function).
+Thay vào đó, ta sẽ tính toán xác suất để biến ngẫu nhiên nhận đầu ra nằm trong một khoảng giá trị nào đó, và được mô tả bởi hàm mật độ xác suất (probability density function).
 Hàm mật độ xác suất luôn cho giá trị dương, và tích phân của nó trên toàn miền phải bằng 1.
 
 $$ \int p(x)dx = 1 $$
@@ -119,10 +119,10 @@ Trong thực tế, thông thường ta không chỉ quan sát một biến ngẫ
 ### 3.1. Xác suất đồng thời (Joint probability)
 
 Xét hai biến ngẫu nhiên $x$ và $y$, khi ta quan sát hai biến ngẫu nhiên này, ta sẽ thấy những cặp giá trị $x$ và $y$ xuất hiện nhiều hơn các cặp giá trị khác, hoặc những cặp giá trị $x$ và $y$ xuất hiện ít hơn các cặp giá trị khác.
-Điều này được biển diễn thông qua xác suất xảy ra đồng thời của $x$ và $y$, ký hiệu là $p(x, y)$.
+Điều này được biểu diễn thông qua xác suất xảy ra đồng thời của $x$ và $y$, ký hiệu là $p(x, y)$.
 
 Ví dụ: Ta xét $x$ là biến ngẫu nhiên về học lực của học sinh, $y$ là biến ngẫu nhiên về hạnh kiểm của học sinh.
-Ta có, $p(x=học lực giỏi, y=hạnh kiểm khá)$ là xác suất mà học sinh vừa nhận học lực giỏi vừa nhận hạnh kiểm khá.
+Ta có, $p(x=\text{học lực giỏi}, y=\text{hạnh kiểm khá})$ là xác suất mà học sinh vừa nhận học lực giỏi vừa nhận hạnh kiểm khá.
 
 Biến ngẫu nhiên $x$ và $y$ có thể gồm hai biến ngẫu nhiên rời rạc, hai biến ngẫu nhiên liên tục hoặc một biến ngẫu nhiên rời rạc một biến ngẫu nhiên liên tục.
 
@@ -159,7 +159,7 @@ Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACH
 ### 3.3. Xác suất điều kiện (Conditional probability)
 
 Xác suất điều kiện là xác suất của một (hoặc nhiều) biến ngẫu nhiên với điều kiện một (hoặc nhiều) biến ngẫu nhiên khác nhận giá trị nào đó cụ thể.
-Xác suất có điều kiện của biến ngẫu nhiên $x$ biết rằng biến ngẫu nhiên $y$ có giá trị $y*$ được ký hiệu là $p(x|y=y^*)$.
+Xác suất có điều kiện của biến ngẫu nhiên $x$ biết rằng biến ngẫu nhiên $y$ có giá trị $y^*$ được ký hiệu là $p(x|y=y^*)$.
 
 Ta có thể tính $p(x|y=y^*)$ thông qua xác suất đồng thời như sau:
 

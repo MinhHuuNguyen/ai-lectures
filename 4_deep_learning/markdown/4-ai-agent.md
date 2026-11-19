@@ -34,7 +34,7 @@ Hình ảnh dưới đây được lấy từ bài báo [Executable Code Actions
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/code_act_agent_example.jpeg" style="width: 1000px;"/>
 
-Khác với các hệ thống tự động hoá thông thường, AI Agent có mức độ "linh hoạt" cao hơn, đưa ra các output dựa tương ứng với các input và ngữ cảnh cụ thể mà không cần phải lập trình cứng (hard-code) cho từng tình huống.
+Khác với các hệ thống tự động hoá thông thường, AI Agent có mức độ "linh hoạt" cao hơn, đưa ra các output tương ứng với các input và ngữ cảnh cụ thể mà không cần phải lập trình cứng (hard-code) cho từng tình huống.
 Chính vì sự linh hoạt này, AI Agent có thể được áp dụng trong nhiều lĩnh vực khác nhau như trợ lý ảo, chatbot, hệ thống tự động hoá quy trình (RPA), và nhiều ứng dụng AI khác.
 
 Mặc dù có thể hoạt động độc lập, mỗi AI Agent thường chỉ đảm trách một nhiệm vụ hẹp, trong phạm vi hay domain cụ thể đã được định trước.
@@ -118,10 +118,7 @@ Những nghiên cứu sau này, quá trình reasoning của mô hình LLM đư�
 ### 2.3. Retrieval-Augmented Generation (RAG)
 
 GenAI nói chung và các LLM nói riêng hiện đang phải đối mặt với nhiều vấn đề và thách thức như đã được đề cập trong [bài viết này](/blog/tri-tue-nhan-tao-tao-sinh-generative-ai).
-Một trong những vấn đề lớn nhất là **ảo giác (hallucination)**, tức là mô hình GenAI tạo ra thông tin rất khó đọc, khó hiểu hoặc đưa ra thông tin sai lệch, gây hiểu lầm.
-Đây là một trong những thách thức lớn nhất của GenAI.
-
-Mô hình có thể “ảo tưởng” (hallucinate) tạo ra thông tin vô căn cứ mà trông rất có vẻ thuyết phục, gây hiểu lầm cho người dùng.
+Một trong những vấn đề lớn nhất là **ảo giác (hallucination)**: mô hình có thể tạo ra thông tin vô căn cứ mà trông rất thuyết phục, gây hiểu lầm cho người dùng (xem chi tiết ở bài viết trên).
 Một kỹ thuật thường được dùng để giảm thiểu hiện tượng này là **Retrieval-Augmented Generation (RAG)**, trong đó mô hình sẽ truy vấn cơ sở dữ liệu bên ngoài để lấy thêm thông tin trước khi tạo ra câu trả lời.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/4_deep_learning/images/4-ai-agent/llm_rag.jpeg" style="width: 600px;"/>

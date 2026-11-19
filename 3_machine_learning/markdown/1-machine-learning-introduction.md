@@ -70,6 +70,7 @@ Bài toán giảm chiều dữ liệu (Dimension Reduction) là một phần qua
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/dimensionality_reduction.jpeg" style="width: 1200px;"/>
 
 Mục tiêu chính của bài toán này là giảm chiều của dữ liệu mà vẫn duy trì tính chất quan trọng và giảm thiểu sự phức tạp.
+Tóm lại, bài toán giảm chiều dữ liệu nhằm mục tiêu giảm số chiều của dữ liệu mà vẫn duy trì thông tin quan trọng, từ đó giúp cải thiện hiệu suất và tốc độ xử lý trong các tác vụ Machine Learning.
 
 ## 4. Nhóm Học tăng cường - Reinforcement learning
 
@@ -78,7 +79,6 @@ Mô hình học từ các tương tác với môi trường và cố gắng tố
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/1-machine-learning-introduction/reinforcement.jpeg" style="width: 1200px;"/>
 
-Tóm lại, bài toán giảm chiều dữ liệu nhằm mục tiêu giảm số chiều của dữ liệu mà vẫn duy trì thông tin quan trọng, từ đó giúp cải thiện hiệu suất và tốc độ xử lý trong các tác vụ Machine Learning.
 
 ## 5. Nhóm Học bán giám sát - Semi-supervised learning và Học tự giám sát - Self-supervised learning
 
@@ -98,7 +98,7 @@ Quy trình này bao gồm các bước chính sau:
     - Data analysis - Phân tích dữ liệu: Dữ liệu được phân tích để hiểu rõ hơn về đặc trưng và cấu trúc của dữ liệu.
     - Data preprocessing - Tiền xử lý dữ liệu: Dữ liệu được tiền xử lý để chuẩn hóa, làm sạch và chuẩn bị cho quá trình huấn luyện mô hình.
     Dữ liệu sau khi được tiền xử lý sẽ được chia thành các tập dữ liệu con như training set, validation set và test set để sử dụng trong quá trình training và evaluate mô hình.
-- **Bước 3: Huấn luyện mô hình**: Ta lự chọn một mô hình phù hợp và huấn luyện mô hình trên tập dữ liệu đã được tiền xử lý ở trên.
+- **Bước 3: Huấn luyện mô hình**: Ta lựa chọn một mô hình phù hợp và huấn luyện mô hình trên tập dữ liệu đã được tiền xử lý ở trên.
     - Trong giai đoạn huấn luyện - training phase, mô hình sẽ được học trên bộ dữ liệu train và được đánh giá trên bộ dữ liệu validation để điều chỉnh tham số, tối ưu hoá độ chính xác.
     - Thông thường, sau khi train và validate, mô hình sẽ được đánh giá trên bộ dữ liệu test để đánh giá lần cuối về hiệu suất của mô hình.
     - Quá trình huấn luyện mô hình có thể được lặp lại nhiều lần để cải thiện hiệu suất của mô hình, cũng như việc ta có thể lựa chọn nhiều mô hình khác nhau trong giai đoạn này.

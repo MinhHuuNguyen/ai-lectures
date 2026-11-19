@@ -50,7 +50,7 @@ Xử lý ảnh là một lĩnh vực rộng lớn trong Thị giác máy tính, 
 
 ---
 
-### [Bài 4:Bài toán object detection](/blog/bai-toan-object-detection)
+### [Bài 4: Bài toán object detection](/blog/bai-toan-object-detection)
 
 Object detection là bài toán kết hợp giữa hai bài toán object localization và object classification. Trong đó, mô hình giải quyết bài toán object detection đầu tiên sẽ định vị vị trí có thể chứa đối tượng trong ảnh (object localization), sau đó mô hình sẽ thực hiện phân lớp đối tượng để nhận diện đối tượng đó là đối tượng nào (object classification). Object detection là bài toán cực kỳ quan trọng và có nhiều ứng dụng trong lĩnh vực Computer vision.
 
@@ -87,6 +87,10 @@ Phân đoạn ảnh (Image Segmentation) là một trong những nhiệm vụ c�
 ### [Bài 6: Bài toán sinh hình ảnh image generation](/blog/bai-toan-sinh-hinh-anh-image-generation)
 
 Các mô hình tạo sinh hình ảnh là một lĩnh vực đột phá, tập trung vào việc huấn luyện máy tính để tự tạo ra những hình ảnh mới, độc đáo và chân thực từ các dữ liệu đầu vào. Các mô hình này không chỉ đơn thuần "sao chép" hay "ghép" các phần của những bức ảnh có sẵn. Thay vào đó, chúng học các khái niệm, thuộc tính, phong cách và mối quan hệ giữa các đối tượng từ một tập dữ liệu khổng lồ. Từ đó, chúng có khả năng "tưởng tượng" và tổng hợp nên một hình ảnh hoàn toàn mới dựa trên yêu cầu của người dùng.
+###### 1. Giới thiệu chung về bài toán image generation
+###### 2. Nhóm các phương pháp giải bài toán image generation
+###### 3. Các metrics trong image generation
+###### 4. Khó khăn khi huấn luyện mô hình giải bài toán image generation
 
 
 ---
@@ -103,12 +107,12 @@ Trong thị giác máy tính, hệ sinh thái khuôn mặt (facial ecosystem) kh
 
 ---
 
-### [Bài 8: Trực quan hoá mô hình CNN]()
+### [Bài 8: Trực quan hoá mô hình CNN](/blog/truc-quan-hoa-mo-hinh-cnn)
 
 *Mình sẽ viết bài này trong thời gian tới*
 
 ---
 
-### [Bài 9: Các mô hình xử lý dữ liệu video]()
+### [Bài 9: Các mô hình xử lý dữ liệu video](/blog/cac-mo-hinh-xu-ly-du-lieu-video)
 
 *Mình sẽ viết bài này trong thời gian tới*

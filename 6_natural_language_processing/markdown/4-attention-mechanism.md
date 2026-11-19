@@ -51,14 +51,14 @@ Hình ảnh dưới đây được lấy từ bài báo [Neural Machine Translat
 Tuy nhiên, hạn chế lớn nhất của Attention là chi phí tính toán cao, đặc biệt là với chuỗi đầu vào dài hoặc hình ảnh lớn.
 Cụ thể, với một chuỗi đầu vào có độ dài $n$, chi phí tính toán của Attention là $O(n^2)$ do phải tính toán độ tương đồng giữa tất cả các cặp từ trong chuỗi.
 
-## 2. Cơ chế Attention cơ bản
+## 3. Cơ chế Attention cơ bản
 
 Cơ chế Attention làm việc trên đơn vị token, nghĩa là ta phải thực hiện tokenization trên câu đầu vào trước khi áp dụng Attention hoặc phải chia hình ảnh thành các patch nhỏ, mỗi patch là một token.
 
 Từ phần này, ta sẽ sử dụng khái niệm token để mô tả cách thức hoạt động của Attention.
 Phiên bản Attention ở đây được gọi là **Dot-Product Attention**, được giới thiệu trong bài báo [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) của Luong et al. vào năm 2015.
 
-### 2.1. Khái niệm Query - Key - Value
+### 3.1. Khái niệm Query - Key - Value
 
 Trong cơ chế Attention, mỗi token trong input đầu vào sẽ được ánh xạ thành một vector, bao gồm ba thành phần chính: Query, Key và Value.
 - **Query**: Là vector đại diện cho token hiện tại mà mô hình đang muốn tìm hiểu mối quan hệ với các token khác.
@@ -75,7 +75,7 @@ Ta sẽ lần lượt tính toán mối quan hệ giữa $Q$ và $K_{dog}$, $K_{
 
 Ta kỳ vọng rằng, với một mô hình attention tốt, trọng số sẽ cao nhất với token "dog" trong hình ảnh, thấp hơn với "cat" và thấp nhất với "bird".
 
-### 2.2. Khởi tạo Query, Key, Value
+### 3.2. Khởi tạo Query, Key, Value
 
 Để khởi tạo Query, Key và Value, ta thường sử dụng các ma trận trọng số để ánh xạ từ đầu vào (input) sang các vector này.
 - **Query**: $Q = XW_Q$
@@ -89,7 +89,7 @@ Trong đó:
 
 Trong quá trình huấn luyện, các ma trận trọng số này sẽ được cập nhật để tối ưu hoá khả năng của mô hình trong việc xác định mối quan hệ giữa các token.
 
-### 2.3. Công thức tính toán Attention
+### 3.3. Công thức tính toán Attention
 
 Xét ví dụ gồm một token dạng text là "dog" và một hình ảnh chứa ba đối tượng là "dog", "cat", "bird" (ở đây, ta tạm coi mỗi đối tượng là một token).
 - Query của token "dog" dạng text là vector $Q$ có độ dài $d_k$.
@@ -129,9 +129,9 @@ $$ \text{Attention}(Q, K, V) = \sum_{i} \alpha_i V_i $$
 
 Ở đây, ta hiểu kết quả của Attention là một vector mới đại diện cho token "dog" dạng text, được tính bằng cách kết hợp các Value của các token trong hình ảnh dựa trên trọng số của mối quan hệ.
 
-## 3. Một số phiên bản của cơ chế Attention
+## 4. Một số phiên bản của cơ chế Attention
 
-### 3.1. Additive Attention
+### 4.1. Additive Attention
 
 Additive Attention (còn gọi là Bahdanau Attention) là cơ chế attention được giới thiệu trong bài báo [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) của Bahdanau et al. vào năm 2014 và là phiên bản đầu tiên của cơ chế Attention.
 
@@ -148,11 +148,11 @@ Hàm softmax vẫn được sử dụng để chuẩn hoá các giá trị độ
 Phiên bản này phù hợp với mô hình nhỏ, chuỗi ngắn, nơi độ phi tuyến giúp tăng khả năng biểu diễn.
 Tuy nhiên, nó có chi phí tính toán cao hơn do sử dụng nhiều phép biến đổi tuyến tính và hàm phi tuyến.
 
-### 3.2. Scaled Dot-Product Attention
+### 4.2. Scaled Dot-Product Attention
 
 Phiên bản Dot-Product Attention, khi độ dài của Query và Key tăng lên, giá trị dot product có thể trở nên quá lớn trước khi áp dụng hàm softmax, dẫn đến gradient vanishing hoặc exploding trong quá trình huấn luyện.
 
-Để giải quyết vấn đề này, Scaled Dot-Product Attention được giới thiệu được giới thiệu trong bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017.
+Để giải quyết vấn đề này, Scaled Dot-Product Attention được giới thiệu trong bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả cơ chế Scaled Dot-Product Attention.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/scaled_dot_product_attention.jpeg" style="width: 250px;"/>
@@ -167,10 +167,10 @@ Hàm softmax vẫn được sử dụng để chuẩn hoá các giá trị độ
 
 Phiên bản này giúp cải thiện độ ổn định của quá trình huấn luyện và cho phép mô hình học được các mối quan hệ phức tạp hơn giữa các token.
 
-### 3.3. Multi-Head Attention
+### 4.3. Multi-Head Attention
 
 Multi-Head Attention là một phiên bản mở rộng của cơ chế Attention, cho phép mô hình học được nhiều mối quan hệ khác nhau giữa các token bằng cách sử dụng nhiều "đầu" Attention song song.
-Multi-Head Attention được giới thiệu được giới thiệu trong bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017.
+Multi-Head Attention được giới thiệu trong bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả cơ chế Multi-Head Attention.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/6_natural_language_processing/images/4-attention-mechanism/multi_head_attention.jpeg" style="width: 400px;"/>
@@ -187,7 +187,7 @@ Multi-Head Attention cũng là cách để tăng độ phức tạp của mô h�
 
 Multi-Head Attention là một phần rất quan trọng trong kiến trúc mô hình Transformer.
 
-### 3.4. Self-Attention
+### 4.4. Self-Attention
 
 Self-Attention là một phiên bản đặc biệt của cơ chế Attention, trong đó Query, Key và Value đều được lấy từ cùng một input đầu vào.
 Từ đó, Self-Attention cho phép mô hình học được mối quan hệ giữa các token của chính input đó để tạo ra một biểu diễn ngữ nghĩa tốt hơn cho mỗi token của input đó.
@@ -205,7 +205,7 @@ Từ đó, ta có thể xác định được từ nào là quan trọng nhất 
 Sau khi đưa vector embedding của các token của câu trên qua Self-Attention, ta sẽ thu được một biểu diễn mới cho mỗi token dựa trên mối quan hệ của token đó với các token khác trong câu.
 Tổng quan, các biểu diễn mới của từng token này sẽ thể hiện ngữ cảnh của câu một cách tốt hơn.
 
-### 3.5. Sparse, Local và Global Attention
+### 4.5. Sparse, Local và Global Attention
 
 Với chuỗi rất dài (hàng nghìn token), Attention chuẩn tốn $O(n^2)$ bộ nhớ và thời gian, nên các biến thể sparse/local được đề xuất.
 
@@ -228,7 +228,7 @@ Các cơ chế trên hướng đến mục tiêu cân bằng giữa hiệu quả
 Các kỹ thuật này giảm chi phí so với Transformer gốc, nhưng có thể hy sinh một phần khả năng phát hiện phụ thuộc xa (tuy nhiên thường chấp nhận được trong thực tế).
 Ví dụ, Longformer có thể xử lý văn bản dài hàng nghìn từ với bộ nhớ thấp hơn, nhờ tính chất local+global attention.
 
-### 3.6. Cross-Attention trong mô hình Encoder-Decoder
+### 4.6. Cross-Attention trong mô hình Encoder-Decoder
 
 Ý tưởng của Cross-Attention được giới thiệu đầu tiên từ bài báo [Attention Is All You Need](https://arxiv.org/abs/1706.03762) của Vaswani et al. vào năm 2017 nhưng không được gọi là Cross-Attention.
 Hình ảnh dưới đây được lấy từ bài báo này mô tả cách thức hoạt động của Cross-Attention.
@@ -241,7 +241,7 @@ Trong mô hình Encoder-Decoder, Cross-Attention là cơ chế cho phép Decoder
 Ở đây Query lấy từ Decoder (hoặc từ embedding của bước đầu ra trước), còn Key/Value lấy từ đầu ra của Encoder và các bước đầu ra trước đó của Decoder.
 Điều này cho phép Decoder khi sinh từ tại vị trí $i$ có thể “hỏi” thông tin từ toàn bộ chuỗi đầu vào đã mã hóa.
 
-### 3.7. Flash Attention
+### 4.7. Flash Attention
 
 FlashAttention là một kỹ thuật tối ưu hóa trong mô hình Transformer, được thiết kế để tăng tốc tính toán attention và giảm sử dụng bộ nhớ, đặc biệt là trong các mô hình lớn như GPT, BERT, hay ViT.
 

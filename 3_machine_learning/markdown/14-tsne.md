@@ -78,7 +78,7 @@ Mô hình t-SNE sẽ tính toán ma trận xác suất tương đồng $P$ để
 Lý do sử dụng giá trị xác suất thay vì các công thức tính khoảng cách thông thường như Euclidean distance là vì các giá trị xác suất có thể được sử dụng trong các không gian dữ liệu có số chiều khác nhau.
 
 Nghĩa là, hai điểm dữ liệu có xác suất tương đồng trong không gian nhiều chiều sẽ có xác suất tương đồng giữ nguyên như vậy trong không gian ít chiều và ngược lại.
-Trong khi đó, khoảng cách giữa hai điểm dữ liệu trong không gian nhiều chiều không thể sẽ cần phải được tính toán lại trong không gian ít chiều.
+Trong khi đó, khoảng cách giữa hai điểm dữ liệu trong không gian nhiều chiều cần phải được tính toán lại trong không gian ít chiều.
 
 ### 3.2. Bước 2: Khởi tạo ma trận xác suất tương đồng trong không gian ít chiều
 

@@ -77,7 +77,7 @@ Ví dụ: Giả sử ta có bộ dữ liệu khách hàng của một cửa hàn
 
 ### 1.3. Mẫu thống kê và thống kê mô tả
 
-Phần dữ liệu được thu thập và thống kê được gọi là **tập mẫu (sample set)** và nó có nguồn gốc từ một tập dữ liệu lớn hơn goi là **tập thế giới (population)**.
+Phần dữ liệu được thu thập và thống kê được gọi là **tập mẫu (sample set)** và nó có nguồn gốc từ một tập dữ liệu lớn hơn gọi là **tập thế giới (population)**.
 Tập sample sẽ mang thông tin nào đó về tập population, và các tập sample khác nhau có thể sẽ phản ánh những thông tin khác nhau của tập population.
 
 Thống kê mô tả (descriptive statistics) là quá trình tóm tắt và mô tả các đặc trưng chính của một tập dữ liệu, thường là tập mẫu.
@@ -100,7 +100,7 @@ Một số cách để chọn mẫu ngẫu nhiên như:
     - **Điểm yếu:** Phương pháp đòi hỏi phải biết toàn bộ tập population và vì thế chi phí chọn mẫu khá lớn.
     Ngoài ra, nếu một số loại dữ liệu trong tập population có tỷ lệ xuất hiện thấp, thì mẫu ngẫu nhiên đơn giản có thể không bao gồm các loại dữ liệu này, dẫn đến mẫu không đại diện đầy đủ cho tập population.
 - **Chọn mẫu phân nhóm:**
-    - Đầu tiên ta chia tập population thành các nhóm tương đốì thuần nhất.
+    - Đầu tiên ta chia tập population thành các nhóm tương đối thuần nhất.
     - Từ mỗi nhóm trích ra một mẫu ngẫu nhiên và tập hợp tất cả các mẫu đó cho ta một mẫu ngẫu nhiên phân nhóm.
     - Để phương pháp này hiệu quả, ta phải có hiểu biết nhất định về cấu trúc tập population để phân chia nhóm hợp lý.
     Sau này, mỗi nhóm sẽ có vai trò khác nhau phụ thuộc vào độ quan trọng của chúng trong tập population.
@@ -119,7 +119,7 @@ Phương pháp này thường được sử dụng trong một số trường h�
 
 ## 2. Các đặc trưng của mẫu thống kê
 
-Với một mẫu dữ liệu gồm có $k$ giá trị khác nhau $x_1, x_2, ..., x_k$, mỗi giá trị có tương ứng $n_1, n_2, ..., n_k$ phần tử và tổng số phần từ $n = n_1 + n_2 + ... + n_k$
+Với một mẫu dữ liệu gồm có $k$ giá trị khác nhau $x_1, x_2, ..., x_k$, mỗi giá trị có tương ứng $n_1, n_2, ..., n_k$ phần tử và tổng số phần tử $n = n_1 + n_2 + ... + n_k$
 
 ### 2.1. Trung bình / Kỳ vọng (Mean / Expectation)
 
@@ -130,7 +130,7 @@ $$
 $$
 
 Giá trị trung bình là một giá trị đặc trưng quan trọng của một mẫu dữ liệu.
-Giá trị trung bình thường được dùng làm đại diện cho tất cả các phần từ trong mẫu dữ liệu.
+Giá trị trung bình thường được dùng làm đại diện cho tất cả các phần tử trong mẫu dữ liệu.
 
 Tuy nhiên, giá trị trung bình trong một số trường hợp không thể đại diện được cho một mẫu dữ liệu, ví dụ như:
 - Mẫu dữ liệu có một số ít các phần tử ngoại lai (outlier) có giá trị lớn.
@@ -147,12 +147,12 @@ Mốt (mode) là giá trị xuất hiện nhiều nhất trong mẫu dữ liệu
 
 Trung vị của mẫu được ký hiệu là $M_e$ và được tính bằng cách sắp xếp mẫu thành dãy theo thứ tự tăng dần hoặc giảm dần:
 - Đối với mẫu có số lượng phần tử là số lẻ, trung vị của mẫu là số nằm ở đúng vị trí chính giữa của dãy.
-- Đối với mẫu có số lượng phần tử là số chẵn, trung vị của mẫu đuơc tính bằng trung bình cộng của hai số ở giữa của dãy.
+- Đối với mẫu có số lượng phần tử là số chẵn, trung vị của mẫu được tính bằng trung bình cộng của hai số ở giữa của dãy.
 
-Trung vị trong một số trường hợp cũng được sử dụng để làm đại diện cho tất cả các phần từ trong mẫu dữ liệu.
+Trung vị trong một số trường hợp cũng được sử dụng để làm đại diện cho tất cả các phần tử trong mẫu dữ liệu.
 Đặc biệt, trong trường hợp giá trị trung bình không thể đại diện tốt được cho một mẫu dữ liệu như mẫu dữ liệu có một số ít các phần tử ngoại lai có giá trị lớn.
 
-Tuy nhiên, trong trường hợp mẫu dữ liệu có nhiều các phần tử ngoại lại có giá trị nhỏ, trung vị không thể đại diện được tốt cho mẫu dữ liệu.
+Tuy nhiên, trong trường hợp mẫu dữ liệu có nhiều các phần tử ngoại lai có giá trị nhỏ, trung vị không thể đại diện được tốt cho mẫu dữ liệu.
 
 Đi kèm với trung vị, ta có thêm giá trị đặc trưng tứ phân vị (quantiles): tứ phân vị thứ nhất (giá trị ở vị trí 25%), tứ phân vị thứ hai (giá trị ở vị trí 50% hay là trung vị), tứ phân vị thứ ba (giá trị ở vị trí 75%).
 Các giá trị này được sử dụng để xây dựng biểu đồ Box plot và Violin plot, được sử dụng nhiều trong quá trình trực quan hoá dữ liệu.
@@ -246,7 +246,7 @@ Ta xét biến ngẫu nhiên $D$ chiều, phân phối chuẩn nhiều biến đ
 
 Ma trận hiệp phương sai là một ma trận vuông, trong đó:
 - Các phần tử nằm trên đường chéo chính lần lượt là phương sai của từng biến.
-- Các phần từ còn lại (không nằm trên đường chéo) là các hiệp phương sai của đôi một hai biến ngẫu nhiên khác nhau trong tập hợp.
+- Các phần tử còn lại (không nằm trên đường chéo) là các hiệp phương sai của đôi một hai biến ngẫu nhiên khác nhau trong tập hợp.
 
 Hiệp phương sai là độ đo sự biến thiên cùng nhau của hai biến ngẫu nhiên (phân biệt với phương sai - đo mức độ biến thiên của một biến).
 Giá trị hiệp phương sai nằm trong khoảng từ $(-\infty, \infty)$ trong đó:

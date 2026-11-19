@@ -122,4 +122,4 @@ Dùng cùng một giá trị K cho tất cả các điểm dữ liệu có thể
 
 Ta có một số chiến lược để điều chỉnh giá trị K cho từng điểm dữ liệu:
 - **Dựa vào khoảng cách:** Thay vì đếm đúng K láng giềng, ta hướng tới "lấy tất cả các điểm trong bán kính R cố định", hoặc lập bán kính sao cho luôn có ít nhất K_min hoặc K_max điểm trong bán kính đó.
-- **Elbow method:** Tính toán khoảng cách trung bình đến K láng giềng gần nhất và chọn K sao cho khoảng cách này là nhỏ nhất.
+- **Elbow method:** Tính toán khoảng cách trung bình đến K láng giềng gần nhất theo từng giá trị K, vẽ đường cong này và chọn K tại điểm "khuỷu" (elbow), nơi khoảng cách ngừng giảm nhanh. Không chọn K làm khoảng cách nhỏ nhất vì khoảng cách trung bình luôn nhỏ nhất khi K = 1.

@@ -39,7 +39,7 @@ conda install matplotlib
 conda install seaborn
 ```
 
-Sau khi cài đặt, ta có thể import NumPy trong mã Python như sau:
+Sau khi cài đặt, ta có thể import Matplotlib và Seaborn trong mã Python như sau:
 
 ```python
 import matplotlib.pyplot as plt
@@ -48,7 +48,7 @@ import seaborn as sns
 
 Matplotlib có hai module chính để vẽ biểu đồ là `pyplot` và `pylab`:
 - `pyplot`: Đây là module phổ biến và được sử dụng rộng rãi nhất trong Matplotlib. `pyplot` cung cấp giao diện theo dạng state-machine, tương tự như MATLAB, giúp bạn dễ dàng tạo và tuỳ chỉnh các biểu đồ.
-- `pylab`: Đây là một module kết hợp giữa `pyplot` và NumPy. Tuy nhiên, module này rất ít được sử dụng trong thực tế.
+- `pylab`: Đây là một module kết hợp giữa `pyplot` và NumPy. Tuy nhiên, module này rất ít được sử dụng trong thực tế và Matplotlib không còn khuyến nghị dùng `pylab` (nó nhập ngầm nhiều tên từ NumPy vào không gian tên chung); nên dùng `pyplot` và `import numpy as np` riêng.
 
 ## 2. Các biểu đồ cơ bản với Matplotlib và Seaborn
 
@@ -275,7 +275,7 @@ Ta thu được biểu đồ như sau:
 
 Seaborn không hỗ trợ trực tiếp biểu đồ tròn.
 
-### 2.6. Biểu đồ phân phối (Distribution Plot)
+### 2.5. Biểu đồ phân phối (Distribution Plot)
 
 #### Matplotlib
 
@@ -365,7 +365,7 @@ plt.title('Monthly Sales')
 plt.xlabel('Month')
 plt.ylabel('Sales')
 plt.grid()
-plt.savefig('monthly_sales.jpeg')  # Lưu biểu đồ dưới dạng file PNG
+plt.savefig('monthly_sales.jpeg')  # Lưu biểu đồ dưới dạng file JPEG
 plt.show()
 ```
 

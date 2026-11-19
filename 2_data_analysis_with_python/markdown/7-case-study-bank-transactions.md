@@ -17,7 +17,7 @@ Theo một báo cáo từ Ernst & Young:
 
 ## 2. Mô tả bộ dữ liệu
 
-Bộ dữ liệu này được lấy từ cuộc thi [Bank Customer Segmentation](https://www.kaggle.com/datasets/shivamb/bank-customer-segmentation) trên Kaggle.
+Bộ dữ liệu này được lấy từ bộ dữ liệu [Bank Customer Segmentation](https://www.kaggle.com/datasets/shivamb/bank-customer-segmentation) trên Kaggle.
 
 Bộ dữ liệu này bao gồm 1 tệp `.csv` chứa hơn 1 triệu giao dịch từ hơn 800.000 khách hàng của một ngân hàng tại Ấn Độ.
 Mô tả các trường dữ liệu như sau:
@@ -32,6 +32,15 @@ Mô tả các trường dữ liệu như sau:
 - `TransactionAmount (INR)`: Số tiền giao dịch (đơn vị: INR - Rupee Ấn Độ)
 
 ## 3. Câu hỏi phân tích
+### 3.1. Câu 1: Khám phá dữ liệu
+- Vẽ biểu đồ hộp (boxplot) của `CustAccountBalance`, `TransactionAmount (INR)` và `CustomerAge` (tuổi tính từ `CustomerDOB`). Dữ liệu có ngoại lai không?
+- Số lượng khách hàng theo giới tính `CustGender` là bao nhiêu? Có giá trị nào không hợp lệ không?
+- Những địa điểm `CustLocation` nào có trên 1000 khách hàng?
+### 3.2. Câu 2: Chỉ số RFM
+- Với mỗi khách hàng (`CustomerID`), tính ba chỉ số: Recency (thời gian từ lần giao dịch gần nhất), Frequency (số giao dịch) và Monetary (tổng số tiền giao dịch).
+- Vẽ phân phối của ba chỉ số này trước và sau khi loại bỏ bớt ngoại lai.
+### 3.3. Câu 3: Phân cụm khách hàng
+- Dùng K-Means để phân cụm khách hàng theo các đặc trưng đã tạo. Chọn số cụm bằng đường cong inertia và hệ số silhouette.
 
 ## 4. Lời giải tham khảo
 

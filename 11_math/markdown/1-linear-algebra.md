@@ -19,7 +19,7 @@ Nhờ đại số tuyến tính, việc tối ưu hóa mô hình, biểu diễn 
 
 Theo cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) của nhóm tác giả Marc Peter Deisenroth, A. Aldo Faisal và Cheng Soon Ong, một cách khái quát, **vector là một đối tượng đặc biệt, trong đó, chúng có thể cộng lại với nhau và nhân với một giá trị để tạo thành một đối tượng mới cùng loại**.
 
-Do đó, bất kỳ đối tượng toán học nào thoả mãn hai tính chất trên sẽ được được xem xét là một vector.
+Do đó, bất kỳ đối tượng toán học nào thoả mãn hai tính chất trên sẽ được xem xét là một vector.
 
 Ví dụ: Trong hình học giải tích, một vector hình học được biểu diễn dưới dạng một mũi tên trong không gian tọa độ.
 
@@ -187,7 +187,7 @@ a_{n1} & a_{n2} & ... & a_{nn}
 \in R^{n \times n}
 $$
 
-Các phần từ có vị trí hàng bằng vị trí cột tạo nên **đường chéo chính** của ma trận, cụ thể, đường chéo chính gồm các phần tử $a_{11}, a_{22}, a_{33}, ..., a_{nn}$.
+Các phần tử có vị trí hàng bằng vị trí cột tạo nên **đường chéo chính** của ma trận, cụ thể, đường chéo chính gồm các phần tử $a_{11}, a_{22}, a_{33}, ..., a_{nn}$.
 
 ### 2.5. Ma trận tam giác (Triangular matrix)
 
@@ -217,9 +217,9 @@ $$
 
 trong đó, ma trận $A_1$ được gọi là ma trận tam giác dưới, ma trận $A_2$ được gọi là ma trận tam giác trên. 
 
-### 2.6. Ma trận đơn vị (Indentity matrix)
+### 2.6. Ma trận đơn vị (Identity matrix)
 
-Xuất phát từ ma trận vuông, ma trận đơn vị là ma trận có toàn bộ các phần từ trên đường chéo chính bằng 1, các phần tử khác bằng 0.
+Xuất phát từ ma trận vuông, ma trận đơn vị là ma trận có toàn bộ các phần tử trên đường chéo chính bằng 1, các phần tử khác bằng 0.
 
 $$
 A_1 =
@@ -405,7 +405,7 @@ Ví dụ về sử dụng tích vô hướng trong hệ thống recommendation:
 
 Ta có thang điểm đánh giá sở thích của một khán giả trên từng thể loại phim khác nhau như sau:
 - Khán giả đó thích phim hài: 5 điểm
-- Khán giả đó không thích thích phim lãng mạn: 1 điểm
+- Khán giả đó không thích phim lãng mạn: 1 điểm
 - Khán giả đó trung lập với phim hành động: 3 điểm
 
 Từ đó, tạo thành một vector đại diện cho sở thích của khán giả $a = \begin{bmatrix} 5 & 1 & 3 \end{bmatrix}$.
@@ -462,9 +462,6 @@ Phép cộng ma trận có các tính chất tương tự với phép cộng s�
 - Tính chất cộng với ma trận 0: $A + 0 = A$
 - Tính chất cộng với ma trận đối: $A + (-A) = 0$
 
-Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) giải thích vì sao phép nhân ma trận không có tính chất giao hoán.
-
-<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/multiplication.jpeg" style="width: 400px;"/>
 
 #### Phép nhân ma trận với một số vô hướng
 
@@ -536,6 +533,9 @@ Ví dụ: $c_{34} = a_{31} * b_{14} + a_{32} * b_{24} + a_{33} * b_{34}$
 Phép nhân tích vô hướng trong vector hay phép nhân ma trận với ma trận là phép toán quan trọng trong linear transformation (phép biến đổi tuyến tính, được sử dụng rất nhiều trong machine learning và cụ thể là mạng nơ ron).
 
 
+Hình ảnh dưới đây được lấy từ cuốn sách [MATHEMATICS FOR MACHINE LEARNING](https://github.com/MinhHuuNguyen/ai-lectures/blob/master/books/mathematics_for_machine_learning_deisenroth.pdf) giải thích vì sao phép nhân ma trận không có tính chất giao hoán.
+
+<img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/11_math/images/1-linear-algebra/multiplication.jpeg" style="width: 400px;"/>
 Phép nhân ma trận với ma trận có các tính chất:
 - Không có tính chất giao hoán
 - Tính chất kết hợp: $(AB)C = A(BC)$
@@ -606,5 +606,3 @@ Trong mạng nơ-ron, mỗi lớp của mạng có thể được xem như một
 Nói cách khác, việc biến đổi tuyến tính từ dữ liệu ban đầu sang không gian đặc trưng mới giúp mạng nơ-ron có khả năng biểu diễn và trích xuất được ra những đặc trưng quan trọng của dữ liệu, từ đó cải thiện hiệu suất của mô hình trong các nhiệm vụ như phân loại, hồi quy hay nhận dạng mẫu.
 
 Để hiểu rõ hơn về sử dụng phép biến đổi tuyến tính (hay phép nhân ma trận) trong mô hình mạng nơ ron, bạn có thể tham khảo bài viết [Mô hình hồi quy tuyến tính Linear Regression](/blog/mo-hinh-hoi-quy-tuyen-tinh-linear-regression) và bài viết [Mô hình mạng nơ ron đơn giản Neural network](/blog/mo-hinh-mang-no-ron-don-gian-neural-network).
-
-<!-- ### 4.3. Chuẩn hoá và khoảng cách -->

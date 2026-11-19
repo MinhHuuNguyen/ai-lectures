@@ -218,7 +218,7 @@ Các bước thực hiện như sau:
 
 Mini-batch K-means là một biến thể của K-means Clustering nhằm cải thiện hiệu suất và tốc độ của thuật toán khi làm việc với tập dữ liệu lớn.
 
-Thay vì sử dụng toàn bộ tập dữ liệu để cập nhật tâm cụm trong mỗi vòng lặp, Mini-batch K-means sử dụng một tập con ngẫu nhiên (mini-batch) của dữ liệu để cập nhật tâm cụm.
+Thay vì sử dụng toàn bộ tập dữ liệu để cập nhật tâm cụm trong mỗi vòng lặp, Mini-batch K-means sử dụng một tập con ngẫu nhiên (mini-batch) của dữ liệu để cập nhật tâm cụm. Với mỗi mini-batch, mỗi điểm được gán vào tâm cụm gần nhất, sau đó tâm cụm được cập nhật theo trung bình trượt giữa tâm cũ và các điểm mới (mức cập nhật giảm dần theo số điểm đã được gán vào cụm đó).
 Điều này giúp giảm thiểu thời gian tính toán và bộ nhớ cần thiết cho thuật toán, đồng thời vẫn giữ được chất lượng phân cụm tương đối tốt.
 
 Các bước thực hiện như sau:

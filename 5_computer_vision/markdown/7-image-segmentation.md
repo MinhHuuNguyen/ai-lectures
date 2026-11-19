@@ -69,7 +69,7 @@ Các phương pháp này đều gặp phải những khó khăn và cho ra kết
 
 ### 2.2. Nhóm các phương pháp dựa trên Deep Learning
 
-Sự ra đời của các bộ dữ liệu có nhãn phục vụ cho segmentation như PASCAL VOC, COCO, ADE20K, Cityscapes, CamVid... tạo ra đề tảng cho sự phát triển của các mô hình deep learning.
+Sự ra đời của các bộ dữ liệu có nhãn phục vụ cho segmentation như PASCAL VOC, COCO, ADE20K, Cityscapes, CamVid... tạo ra nền tảng cho sự phát triển của các mô hình deep learning.
 Ngoài ra, các mô hình image segmentation cũng được kế thừa nhiều từ các ý tưởng xây dựng của các mô hình object detection.
 
 #### 2.2.1. Nhóm các mô hình dựa trên CNN
@@ -126,7 +126,7 @@ Sức mạnh của SAM đến từ việc nó được huấn luyện trên mộ
 
 Với sự ra đời của những mô hình rất phát triển dựa trên kiến trúc transformer cho bài toán image segmentation, các mô hình giải bài toán object detection cũng được hưởng lợi theo rất nhiều vì ta có thể hiểu: Khi đã giải được bài toán image segmentation thì sẽ giải được bài toán object detection.
 
-#### 2.3. Nhóm các mô hình self-supervised learning
+### 2.3. Nhóm các mô hình self-supervised learning
 
 Một trong số những mô hình đầu tiên và nổi bật trong nhóm này là mô hình DINO được giới thiệu trong bài báo [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294) sử dụng kiến trúc **Teacher - Student**.
 
@@ -329,7 +329,7 @@ Mất cân bằng dữ liệu giữa mask (vùng đối tượng quan tâm) và 
 Vấn đề này xảy ra khi số lượng pixel thuộc về background lớn hơn rất nhiều so với số lượng pixel của mask trong tập dữ liệu huấn luyện.
 Ví dụ điển hình là trong các bài toán y tế như phát hiện khối u, khối u (mask) chỉ chiếm một phần rất nhỏ trên toàn bộ ảnh chụp y khoa (background), hay trong bài toán phát hiện vết nứt trên đường, vết nứt cũng chỉ là một vài đường mảnh trên một bề mặt bê tông rộng lớn.
 
-Để giải quyết vấn đề này, phương pháp phổ biến nhất là sử dụng các hàm loss chuyên dụng như **Dice Loss** được giới thiệu trong [Generalised Dice overlap as a deep learning loss function for highly unbalanced segmentations](https://arxiv.org/pdf/1707.03237), **Tversky Loss** được giới thiệu trong [Tversky loss function for image segmentation using 3D fully convolutional deep networks](https://arxiv.org/pdf/1706.05721) và **Focal Los**s được giới thiệu trong [Focal Loss for Dense Object Detection](https://arxiv.org/pdf/1708.02002).
+Để giải quyết vấn đề này, phương pháp phổ biến nhất là sử dụng các hàm loss chuyên dụng như **Dice Loss** được giới thiệu trong [Generalised Dice overlap as a deep learning loss function for highly unbalanced segmentations](https://arxiv.org/pdf/1707.03237), **Tversky Loss** được giới thiệu trong [Tversky loss function for image segmentation using 3D fully convolutional deep networks](https://arxiv.org/pdf/1706.05721) và **Focal Loss** được giới thiệu trong [Focal Loss for Dense Object Detection](https://arxiv.org/pdf/1708.02002).
 Các hàm loss này được thiết kế để "trừng phạt" nặng hơn khi mô hình dự đoán sai các pixel thuộc lớp thiểu số (mask), giúp cân bằng lại tầm quan trọng của hai lớp.
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/5_computer_vision/images/7-image-segmentation/imbalance_data.jpeg" style="width: 700px;"/>

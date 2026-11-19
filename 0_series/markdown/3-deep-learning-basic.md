@@ -198,7 +198,7 @@ Trí tuệ nhân tạo tạo sinh (Generative AI) là lĩnh vực nghiên cứu 
 
 Transfer learning là một kỹ thuật quan trọng trong machine learning và deep learning, giúp cải thiện hiệu suất mô hình khi dữ liệu có hạn hoặc tăng tốc quá trình huấn luyện. Ngoài ra, các kỹ thuật weakly, semi, un và self supervised learning cũng đóng vai trò quan trọng trong việc tận dụng dữ liệu không có nhãn hoặc có nhãn không chính xác để cải thiện chất lượng mô hình.
 
-###### 1. Các vấn đề đối khi huấn luyện mô hình Supervised learning
+###### 1. Các vấn đề gặp phải khi huấn luyện mô hình Supervised learning
 
 ###### 2. Giới thiệu về Transfer learning
 

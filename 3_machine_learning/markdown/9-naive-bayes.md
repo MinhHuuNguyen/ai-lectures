@@ -26,7 +26,7 @@ Mô hình Naive Bayes Classification là một mô hình phân loại dựa vào
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
 trong đó:
-- $P(A|B)$ là xác suất điều kiện (conditional probability), xác xuất xảy ra của sự kiện A khi biết rằng sự kiện B đã xảy ra.
+- $P(A|B)$ là xác suất điều kiện (conditional probability), xác suất xảy ra của sự kiện A khi biết rằng sự kiện B đã xảy ra.
 - $P(B|A)$ là xác suất điều kiện (conditional probability), xác suất xảy ra của sự kiện B khi biết rằng sự kiện A đã xảy ra.
 - $P(A)$ là xác suất biên (marginal probability), xác suất xảy ra của sự kiện A.
 - $P(B)$ là xác suất biên (marginal probability), xác suất xảy ra của sự kiện B.
@@ -184,7 +184,7 @@ Ta tính toán xác suất mà từ $w$ xuất hiện thuộc về lớp $y$ b�
 
 $$ P(w|y) = \frac{N(w, y)}{N(y)} $$
 
-Để tránh trường hợp từ $w$ không xuất hiện trong các văn bản thuộc về lớp $y$, ta sử dụng kỹ thuật Laplace Smoothing (Laplace smoothing) để tính toán xác suất mà từ $w$ xuất hiện thuộc về lớp $y$ như sau:
+Để tránh trường hợp từ $w$ không xuất hiện trong các văn bản thuộc về lớp $y$, ta sử dụng kỹ thuật Laplace Smoothing để tính toán xác suất mà từ $w$ xuất hiện thuộc về lớp $y$ như sau:
 
 $$ P(w|y) = \frac{N(w, y) + 1}{N(y) + |V|} $$
 
@@ -221,14 +221,14 @@ Ta tách từ trong văn bản này: "thật", "ngon", "và", "tuyệt"
 Ta tính toán xác suất điều kiện $P(y|x)$ cho từng lớp $y$ như sau:
 - Đối với lớp y là Positive $y=Pos$:
 
-$$ log(P(y=Pos|x)) \propto \log(P(that|y=Pos)) + \log(P(ngon|y=Pos)) + \log(P(va|y=Pos)) + \log(P(tuyet|y=Pos)) + \log(P(y=Pos)) $$
+$$ log(P(y=Pos|x)) \propto \log(P(\text{thật}|y=Pos)) + \log(P(\text{ngon}|y=Pos)) + \log(P(\text{và}|y=Pos)) + \log(P(\text{tuyệt}|y=Pos)) + \log(P(y=Pos)) $$
 $$ log(P(y=Pos|x)) \propto \log(0.15) + \log(0.10) + \log(0.15) + \log(0.15) + \log(0.5) $$
 $$ log(P(y=Pos|x)) \propto -1.897 + -2.303 + -1.897 + -1.897 + -0.693 $$
 $$ log(P(y=Pos|x)) \propto -8.687 $$
 
 - Đối với lớp y là Negative $y=Neg$:
 
-$$ log(P(y=Neg|x)) \propto \log(P(that|y=Neg)) + \log(P(ngon|y=Neg)) + \log(P(va|y=Neg)) + \log(P(tuyet|y=Neg)) + \log(P(y=Neg)) $$
+$$ log(P(y=Neg|x)) \propto \log(P(\text{thật}|y=Neg)) + \log(P(\text{ngon}|y=Neg)) + \log(P(\text{và}|y=Neg)) + \log(P(\text{tuyệt}|y=Neg)) + \log(P(y=Neg)) $$
 $$ log(P(y=Neg|x)) \propto \log(0.05) + \log(0.10) + \log(0.15) + \log(0.05) + \log(0.5) $$
 $$ log(P(y=Neg|x)) \propto -2.996 + -2.303 + -1.897 + -2.996 + -0.693 $$
 $$ log(P(y=Neg|x)) \propto -10.885 $$

@@ -38,7 +38,7 @@ Trong toán học, ta có giá trị cực tiểu địa phương và giá trị
 Về lý thuyết, ta luôn mong muốn tìm được global minimum của hàm loss.
 Tuy nhiên, trong thực tế, việc tìm được global minimum là không dễ dàng, đặc biệt khi hàm loss có dạng phức tạp, bộ dữ liệu lớn, hoặc mô hình phức tạp.
 
-Vì vậy, thay vì việc tính toán trực tiếp ra các giá trị minimim, ta cần một giải pháp để xấp xỉ được các giá trị này.
+Vì vậy, thay vì việc tính toán trực tiếp ra các giá trị minimum, ta cần một giải pháp để xấp xỉ được các giá trị này.
 Và đó là thuật toán Gradient Descent.
 
 Ngoài ra, trong thực tế, việc tìm được nghiệm tối ưu ở local minimum cũng là một kết quả tốt nếu giá trị của hàm loss ở local minimum là đủ nhỏ.

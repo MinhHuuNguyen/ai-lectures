@@ -8,7 +8,7 @@ is_highlight: false
 is_published: true
 ---
 
-## 1. Các vấn đề đối khi huấn luyện mô hình Supervised learning
+## 1. Các vấn đề đôi khi huấn luyện mô hình Supervised learning
 
 Trong quá trình phát triển của machine learning và deep learning, các mô hình supervised learning vẫn cho ta những kết quả rất tốt trên nhiều bài toán khác nhau, trên cả dữ liệu hình ảnh Computer Vision, dữ liệu văn bản Natural Language Processing hay dữ liệu âm thanh Computer Audition ...
 
@@ -103,7 +103,7 @@ Ví dụ: Xét một bộ dữ liệu ảnh với 1000 ảnh đã có label đú
 Với mô hình A đã được huấn luyện trên 1000 ảnh có label.
 Nếu ta có thể tận dụng 1000 ảnh chưa có label kết hợp với 1000 ảnh đã có label để huấn luyện mô hình B, ta kỳ vọng rằng mô hình B sẽ đạt được độ chính xác cao hơn so với mô hình A.
 
-Đối với **Inaccurate supervision data**, ta có các phương pháp xác định và loại bỏ các dữ liệu có label không chính xác (dữ liệu có label noise) từ đó thu được bộ dữ liệu sạch và chất lượng của mô hình trên bộ dữ liệu sạch của tốt hơn.
+Đối với **Inaccurate supervision data**, ta có các phương pháp xác định và loại bỏ các dữ liệu có label không chính xác (dữ liệu có label noise) từ đó thu được bộ dữ liệu sạch và chất lượng của mô hình trên bộ dữ liệu sạch tốt hơn.
 
 Ví dụ: Xét một bộ dữ liệu ảnh với 1000 ảnh đã có label nhưng trong đó có 100 ảnh có label không đúng (label noise).
 Nếu ta có thể xác định và loại bỏ 100 ảnh này, ta sẽ thu được bộ dữ liệu sạch với 900 ảnh có label đúng.
@@ -139,7 +139,7 @@ Trong đó:
 - $w_{ij}$ là trọng số của cạnh giữa hai đỉnh $i$ và $j$ trong đồ thị.
 - $f(x_i)$ và $f(x_j)$ là các vector đại diện của hai điểm dữ liệu tương ứng.
 
-Cụ thể hơn, $w_{ij}$ được tính dựa trên độ tường đồng của hai điểm dữ liệu $i$ và $j$ trong không gian vector đại diện.
+Cụ thể hơn, $w_{ij}$ được tính dựa trên độ tương đồng của hai điểm dữ liệu $i$ và $j$ trong không gian vector đại diện.
 
 | Đỉnh trong đồ thị | Vector được mã hoá | $W_{ij}$ | $\|f(x_i) - f(x_j)\|^2$ | $W_{ij} \|f(x_i) - f(x_j)\|^2$ | Ý nghĩa                                                       |
 | ----------------- | ------------------ | -------- | ------------------ | ----------------------------------- | ------------------------------------------------------------- |
@@ -166,7 +166,7 @@ Hình ảnh trên đây được lấy từ bài báo [Semi-Supervised and Unsup
 Thành phần Discriminator của mô hình GANs ở đây bên cạnh việc phân biệt giữa dữ liệu thật từ bộ dữ liệu (kết hợp giữa có nhãn và không có nhãn) và dữ liệu sinh ra từ Generator, còn có nhiệm vụ phân loại các dữ liệu có nhãn thành các lớp khác nhau.
 
 Ngoài ra, có các mô hình GANs khác sử dụng thêm thành phần Encoder để mã hoá dữ liệu đầu vào (kết hợp giữa có nhãn và không có nhãn) thành các feature vector.
-Các feature vector này sẽ được sử dụng quá Generator để sinh ra dữ liệu giả.
+Các feature vector này sẽ được sử dụng qua Generator để sinh ra dữ liệu giả.
 Discriminator sẽ tiếp tục được huấn luyện để phân biệt giữa dữ liệu thật và dữ liệu giả, đồng thời phân loại các dữ liệu có nhãn thành các lớp khác nhau.
 
 Đối với semi supervised VAEs, ý tưởng tương tự khi sử dụng lượng dữ liệu (kết hợp giữa có nhãn và không có nhãn) để huấn luyện mô hình VAE.

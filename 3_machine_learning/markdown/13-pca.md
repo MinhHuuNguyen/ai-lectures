@@ -44,7 +44,7 @@ Tham khảo về khái niệm, ý nghĩa và cách tính toán ma trận hiệp 
 
 Một cách khái quát, ma trận hiệp phương sai là một ma trận vuông, trong đó:
 - Các phần tử nằm trên đường chéo chính lần lượt là phương sai của từng biến.
-- Các phần từ còn lại (không nằm trên đường chéo) là các hiệp phương sai của đôi một hai biến ngẫu nhiên khác nhau trong tập hợp.
+- Các phần tử còn lại (không nằm trên đường chéo) là các hiệp phương sai của đôi một hai biến ngẫu nhiên khác nhau trong tập hợp.
 
 Trong đó:
 - Giá trị phương sai thể hiện độ phân tán của một biến ngẫu nhiên.

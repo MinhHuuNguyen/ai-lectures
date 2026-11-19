@@ -39,7 +39,7 @@ Các khái niệm này sẽ giúp chúng ta hiểu rõ hơn về cách mà thu�
 
 ### 2.1. Epsilon Neighborhood
 
-Cho $D$ là bộ dữ liệu cần được phân cụm, **vùng lận cận epsilon** (Epsilon Neighborhood) của điểm dữ liệu $p$, ký hiệu là $N_{eps}(p)$, được định nghĩa là tập hợp tất cả các điểm dữ liệu $q$ trong $D$ mà khoảng cách giữa $p$ và $q$ nhỏ hơn epsilon.
+Cho $D$ là bộ dữ liệu cần được phân cụm, **vùng lân cận epsilon** (Epsilon Neighborhood) của điểm dữ liệu $p$, ký hiệu là $N_{eps}(p)$, được định nghĩa là tập hợp tất cả các điểm dữ liệu $q$ trong $D$ mà khoảng cách giữa $p$ và $q$ nhỏ hơn epsilon.
 
 $$N_{eps}(p) = \{q \in D | dist(p, q) \leq eps\}$$
 
@@ -47,13 +47,13 @@ $$N_{eps}(p) = \{q \in D | dist(p, q) \leq eps\}$$
 
 ### 2.2. Core Point
 
-Trong bộ dữ liệu $D$, một điểm dữ liệu $p$ được gọi là **core point** nếu nó có số lượng "người hàng xóm" trong **vùng lận cận epsilon** của nó lớn hơn hoặc bằng giá trị $minSample$ (hoặc $minPts$).
+Trong bộ dữ liệu $D$, một điểm dữ liệu $p$ được gọi là **core point** nếu nó có số lượng "người hàng xóm" trong **vùng lân cận epsilon** của nó lớn hơn hoặc bằng giá trị $minSample$ (hoặc $minPts$).
 
 <img src="https://raw.githubusercontent.com/MinhHuuNguyen/ai-lectures/refs/heads/master/3_machine_learning/images/12-dbscan/core_point.jpeg" width="800"/>
 
 ### 2.3. Directly Density Reachable
 
-Với hai giá trị $eps$ và $minSample$, một điểm dữ liệu $q$ được gọi là **directly density reachable** từ một điểm dữ liệu $p$ nếu $p$ là một **core point** và $q$ nằm trong vùng lận cận epsilon của $p$.
+Với hai giá trị $eps$ và $minSample$, một điểm dữ liệu $q$ được gọi là **directly density reachable** từ một điểm dữ liệu $p$ nếu $p$ là một **core point** và $q$ nằm trong vùng lân cận epsilon của $p$.
 
 $$ q \in N_{eps}(p) $$
 
@@ -97,13 +97,13 @@ Với các khái niệm đã được định nghĩa ở trên, chúng ta sẽ �
 - Thực hiện vòng lặp thuật toán với mỗi điểm dữ liệu trong bộ dữ liệu, giả sử với điểm dữ liệu đang xét là $p$.
     - **Bước 2**: Khởi tạo một cụm mới $C_i$.
     - **Bước 3**:
-        - Nếu điểm dữ liệu $p$ chưa thuộc về bất kỳ cụm nào, tiếp tục lượt lặp với điểm dữ liệu này.
+        - Nếu điểm dữ liệu $p$ chưa thuộc về bất kỳ cụm nào, tiếp tục lượt lặp với điểm dữ liệu này. Lưu ý: điểm đã bị đánh dấu là noise ở lượt trước vẫn có thể được gán vào một cụm ở lượt sau khi nó nằm trong vùng lân cận của một core point (khi đó nó là border point).
         - Nếu điểm dữ liệu $p$ đã thuộc về một cụm nào đó, đi đến lượt lặp với điểm dữ liệu tiếp theo.
-    - **Bước 4**: Lấy hết các điểm dữ liệu trong vùng lận cận epsilon của điểm dữ liệu $p$, ta được tập hợp pSeedList.
+    - **Bước 4**: Lấy hết các điểm dữ liệu trong vùng lân cận epsilon của điểm dữ liệu $p$, ta được tập hợp pSeedList.
         - Nếu số lượng trong pSeedList nhỏ hơn $minSample$, đánh dấu điểm dữ liệu này là **noise** và tiếp tục với điểm dữ liệu tiếp theo.
         - Nếu số lượng trong pSeedList lớn hơn hoặc bằng $minSample$, ta kết luận **p là một core point** và gán tất cả các điểm dữ liệu trong pSeedList vào cụm $C_i$.
     - Thực hiện vòng lặp với tất cả các điểm dữ liệu trong pSeedList để mở rộng cụm $C_i$, giả sử với điểm dữ liệu đang xét là $q$.
-        - **Bước 5**: Lấy hết các điểm dữ liệu trong vùng lận cận epsilon của điểm dữ liệu $q$, ta được tập hợp qSeedList.
+        - **Bước 5**: Lấy hết các điểm dữ liệu trong vùng lân cận epsilon của điểm dữ liệu $q$, ta được tập hợp qSeedList.
             - Nếu số lượng trong qSeedList nhỏ hơn $minSample$, tiếp tục với điểm dữ liệu tiếp theo trong pSeedList.
             - Nếu số lượng trong qSeedList lớn hơn hoặc bằng $minSample$, ta kết luận **q là một core point** và gán tất cả các điểm dữ liệu trong qSeedList vào cụm $C_i$.
         - **Bước 6**: Kết thúc vòng lặp với tất cả các điểm dữ liệu trong qSeedList.
@@ -127,7 +127,7 @@ Với các khái niệm đã được định nghĩa ở trên, chúng ta sẽ �
 
 ||eps rất lớn|eps rất nhỏ|
 |---|---|---|
-|**minSample rất lớn**|Điều kiện **core point** rất lỏng hoặc rất chặt. Tất cả các điểm dữ liệu đều là **noise** hoặc thuộc chung một cụm|Điều kiện **core point** rất chặt. Tất cả các điểm dữ liệu đều là **noise**|
+|**minSample rất lớn**|Kết quả phụ thuộc giá trị cụ thể: nếu vùng lân cận epsilon của các điểm chứa ít nhất $minSample$ điểm thì tất cả các điểm dữ liệu thuộc chung một cụm, ngược lại tất cả đều là **noise**|Điều kiện **core point** rất chặt. Tất cả các điểm dữ liệu đều là **noise**|
 |**minSample rất nhỏ**|Điều kiện **core point** rất lỏng. Tất cả các điểm dữ liệu sẽ thuộc chung một cụm|Điều kiện **core point** rất lỏng. Mỗi điểm sẽ là một cụm|
 
 Ta sẽ dựa vào những kết quả quan sát trên để tinh chỉnh các tham số đầu vào cho mô hình DBSCAN.
@@ -163,7 +163,7 @@ F = (25, 80)
 | F | 79.06 | 79.06 | 78.1 | 72.01 | 71.42 | 0     |
 
 - **Bước 2**: Tính Core Distance của từng điểm với $minSample = 2$.
-Với $minSample = 2$, Core Distance của một điểm dữ liệu $p$ được tính bằng khoảng cách giữa $p$ và điểm dữ liệu thứ $minSample$ trong vùng lận cận epsilon của nó.
+Với $minSample = 2$, Core Distance của một điểm dữ liệu $p$ được tính bằng khoảng cách giữa $p$ và điểm dữ liệu thứ $minSample$ trong vùng lân cận epsilon của nó.
 
 ```python
 core_distance(A) = 1.41
